@@ -66,24 +66,24 @@ Initiate SDK
 Callbacks
 --------
 ```swift
-        weak var weakSelf = self
-        self.initialSetupViewController.didReceiveBackButtonCallback = {
-            weakSelf?.handleBackButtonTapEvent()
-        }
+weak var weakSelf = self
+self.initialSetupViewController.didReceiveBackButtonCallback = {
+  weakSelf?.handleBackButtonTapEvent()
+}
         
-        self.initialSetupViewController.didReceiveFinishTransactionCallback = {(responseCode, result, transactionID, tokenizedCustomerEmail, tokenizedCustomerPassword, token, transactionState) in
-            self.launcherView.responseCodeLabel.text = "\(responseCode)"
-            self.launcherView.resultLabel.text = "\(result)"
-            self.launcherView.transactionIDLabel.text = "\(transactionID)"
-            self.launcherView.customerEmailLabel.text = "\(tokenizedCustomerEmail)"
-            self.launcherView.customerPasswordLabel.text = "\(tokenizedCustomerPassword)"
-            self.launcherView.transactionStateLabel.text = "\(transactionState)"
-            self.launcherView.tokenValueLabel.text = "\(token)"
+self.initialSetupViewController.didReceiveFinishTransactionCallback = {(responseCode, result, transactionID, tokenizedCustomerEmail, tokenizedCustomerPassword, token, transactionState) in
+  self.launcherView.responseCodeLabel.text = "\(responseCode)"
+  self.launcherView.resultLabel.text = "\(result)"
+  self.launcherView.transactionIDLabel.text = "\(transactionID)"
+  self.launcherView.customerEmailLabel.text = "\(tokenizedCustomerEmail)"
+  self.launcherView.customerPasswordLabel.text = "\(tokenizedCustomerPassword)"
+  self.launcherView.transactionStateLabel.text = "\(transactionState)"
+  self.launcherView.tokenValueLabel.text = "\(token)"
             
-            self.launcherView.responseView.isHidden = false
+  self.launcherView.responseView.isHidden = false
             
-            weakSelf?.handleBackButtonTapEvent()
-        }
+  weakSelf?.handleBackButtonTapEvent()
+}
 ```
 
 Paytabs
