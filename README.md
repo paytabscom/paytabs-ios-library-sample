@@ -1,4 +1,4 @@
-Paytabs ios library sample
+Paytabs iOS SDK Samples
 ========
 ![Paytabs-ios-library-v3.0.0](https://img.shields.io/badge/Paytabs%20iOS%20SDK-v3.0.0-green.svg)
 
