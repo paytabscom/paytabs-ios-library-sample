@@ -30,8 +30,14 @@ You have to include the following dependencies in your podfile:
   pod 'IQKeyboardManager'
 ```
 
+SDK Instance Variable
+---------------------
+```swift
+  var initialSetupViewController: PTFWInitialSetupViewController!
+```
+
 Initiate SDK
---------
+------------
 ```swift
  self.initialSetupViewController = PTFWInitialSetupViewController.init(
             nibName: ApplicationXIBs.kPTFWInitialSetupView,
@@ -68,26 +74,26 @@ Callbacks
 ```swift
 weak var weakSelf = self
 self.initialSetupViewController.didReceiveBackButtonCallback = {
-  weakSelf?.handleBackButtonTapEvent()
+    weakSelf?.handleBackButtonTapEvent()
 }
         
 self.initialSetupViewController.didReceiveFinishTransactionCallback = {(responseCode, result, transactionID, tokenizedCustomerEmail, tokenizedCustomerPassword, token, transactionState) in
-  self.launcherView.responseCodeLabel.text = "\(responseCode)"
-  self.launcherView.resultLabel.text = "\(result)"
-  self.launcherView.transactionIDLabel.text = "\(transactionID)"
-  self.launcherView.customerEmailLabel.text = "\(tokenizedCustomerEmail)"
-  self.launcherView.customerPasswordLabel.text = "\(tokenizedCustomerPassword)"
-  self.launcherView.transactionStateLabel.text = "\(transactionState)"
-  self.launcherView.tokenValueLabel.text = "\(token)"
+    self.launcherView.responseCodeLabel.text = "\(responseCode)"
+    self.launcherView.resultLabel.text = "\(result)"
+    self.launcherView.transactionIDLabel.text = "\(transactionID)"
+    self.launcherView.customerEmailLabel.text = "\(tokenizedCustomerEmail)"
+    self.launcherView.customerPasswordLabel.text = "\(tokenizedCustomerPassword)"
+    self.launcherView.transactionStateLabel.text = "\(transactionState)"
+    self.launcherView.tokenValueLabel.text = "\(token)"
             
-  self.launcherView.responseView.isHidden = false
+    self.launcherView.responseView.isHidden = false
             
-  weakSelf?.handleBackButtonTapEvent()
+    weakSelf?.handleBackButtonTapEvent()
 }
 ```
 
 Paytabs
---------
+-------
 [Support][2] | [Terms of Use][3] | [Privacy Policy][4]
 
 
