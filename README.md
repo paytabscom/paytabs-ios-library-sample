@@ -92,6 +92,16 @@ self.initialSetupViewController.didReceiveFinishTransactionCallback = {(response
 }
 ```
 
+Close SDK
+---------
+```swift
+private func handleBackButtonTapEvent() {
+    self.initialSetupViewController.willMove(toParentViewController: self)
+    self.initialSetupViewController.view.removeFromSuperview()
+    self.initialSetupViewController.removeFromParentViewController()
+}
+```
+
 Paytabs
 -------
 [Support][2] | [Terms of Use][3] | [Privacy Policy][4]
