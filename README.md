@@ -32,7 +32,7 @@ You have to include the following dependencies in your podfile:
 
 Initiate SDK
 --------
-```java
+```swift
  self.initialSetupViewController = PTFWInitialSetupViewController.init(
             nibName: ApplicationXIBs.kPTFWInitialSetupView,
             bundle: bundle,
@@ -61,7 +61,11 @@ Initiate SDK
             andWithAssigneeCode: "SDK",
             andWithThemeColor: UIColor(red:  CGFloat((self.launcherView.redThemeValue.text! as NSString).doubleValue/255), green: CGFloat((self.launcherView.greenThemeValue.text! as NSString).doubleValue/255), blue: CGFloat((self.launcherView.bluehemeValue.text! as NSString).doubleValue/255), alpha: 1.0),
             andIsThemeColorLight: self.launcherView.isLightTheme.isOn)
-        
+```
+
+Callbacks
+--------
+```swift
         weak var weakSelf = self
         self.initialSetupViewController.didReceiveBackButtonCallback = {
             weakSelf?.handleBackButtonTapEvent()
@@ -80,7 +84,6 @@ Initiate SDK
             
             weakSelf?.handleBackButtonTapEvent()
         }
-
 ```
 
 Paytabs
