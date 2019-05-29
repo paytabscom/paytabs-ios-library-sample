@@ -1,0 +1,6 @@
+framework module BIObjCHelpers {
+  umbrella header "BIObjCHelpers-umbrella.h"
+
+  export *
+  module * { export * }
+}
