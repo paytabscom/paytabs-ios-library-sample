@@ -19,11 +19,11 @@ class PTSRLauncherViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.launcherView.amountTextField.text = "1";
+        self.launcherView.amountTextField.text = "10";
         self.launcherView.customerEmailTextField.text = "humayun4206@gmail.com"
-        self.launcherView.currencyTextField.text = "BHD"
-        self.launcherView.merchantEmailTextField.text = "humayun@paytabs.com"
-        self.launcherView.merchantSecretKeyTextField.text = "NXKkEpuYSMpvpeYEQzisFh4oUZzCLNIzKsUpSpnLbNhB1ffSPxkvPpTKosmag5K1yEqq3OceBtPDI5vyDQ3sgXcFqzQGEAHcf8Di"
+        self.launcherView.currencyTextField.text = "SAR"
+        self.launcherView.merchantEmailTextField.text = "info@freesiashop.com"
+        self.launcherView.merchantSecretKeyTextField.text = "pDIPt8oSkqF0otNt4SICiExxavqRnRhMv0CZ80RsrxtP0gi591HrFfZPKqG7hYUNYwM7xEAYb3Nck6ht7ZVMeUCYlj6Ci1phyco5"
         
         self.launcherView.redThemeValue.text = "225"
         self.launcherView.greenThemeValue.text = "225"

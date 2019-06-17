@@ -22,4 +22,7 @@
 
 - (NSString *)urlencodedString;
 - (NSString *)strippedHTMLString;
+
++ (NSString *)getDeviceName;
+
 @end

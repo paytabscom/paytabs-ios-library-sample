@@ -16,7 +16,6 @@
 		5F68D7621F8B59500006C908 /* PTSRConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F68D7611F8B59500006C908 /* PTSRConstants.swift */; };
 		5F8187D51F8669CA0056F116 /* sample_runTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F8187D41F8669CA0056F116 /* sample_runTests.swift */; };
 		5F8187E01F8669CA0056F116 /* sample_runUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F8187DF1F8669CA0056F116 /* sample_runUITests.swift */; };
-		5F8B27282271D41C0017B6F9 /* paytabs-iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F8B27272271D41C0017B6F9 /* paytabs-iOS.framework */; };
 		5F9F48751FA8B4AB00F35ED7 /* ApplicationTextfields.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F9F48741FA8B4AA00F35ED7 /* ApplicationTextfields.swift */; };
 		5FA410E520F2077C0049B485 /* Resources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 5FA410E420F2077C0049B485 /* Resources.bundle */; };
 		5FB064EF1F8DE8B400599309 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FB064EE1F8DE8B400599309 /* MobileCoreServices.framework */; };
@@ -24,6 +23,7 @@
 		5FB065291F8E466500599309 /* PTSRLauncherView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F68D7491F8B56910006C908 /* PTSRLauncherView.xib */; };
 		5FB0652A1F8E466600599309 /* PTSRLauncherView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F68D7491F8B56910006C908 /* PTSRLauncherView.xib */; };
 		5FB0652B1F8E466700599309 /* PTSRLauncherView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F68D7491F8B56910006C908 /* PTSRLauncherView.xib */; };
+		5FEC385F22B7930500C56A71 /* paytabs-iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FEC385E22B7930500C56A71 /* paytabs-iOS.framework */; };
 		743CB2ACF585E1AF11A8865F /* Pods_sample_runUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA30FF5FCFEECE3BAA6C0B05 /* Pods_sample_runUITests.framework */; };
 		D207F07851B98453B12C19AF /* Pods_sample_run.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD20E762BFDA72751D782390 /* Pods_sample_run.framework */; };
 		D8183C15448CF148EC806659 /* Pods_sample_runTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBF3CB85CEB4F81845DF2EEA /* Pods_sample_runTests.framework */; };
@@ -65,11 +65,11 @@
 		5F8187DB1F8669CA0056F116 /* sample-runUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "sample-runUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F8187DF1F8669CA0056F116 /* sample_runUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sample_runUITests.swift; sourceTree = "<group>"; };
 		5F8187E11F8669CA0056F116 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5F8B27272271D41C0017B6F9 /* paytabs-iOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = "paytabs-iOS.framework"; sourceTree = "<group>"; };
 		5F9F48741FA8B4AA00F35ED7 /* ApplicationTextfields.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationTextfields.swift; sourceTree = "<group>"; };
 		5FA410E420F2077C0049B485 /* Resources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Resources.bundle; sourceTree = "<group>"; };
 		5FB064EE1F8DE8B400599309 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		5FB065271F8E444900599309 /* PTSRLauncherView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PTSRLauncherView.swift; sourceTree = "<group>"; };
+		5FEC385E22B7930500C56A71 /* paytabs-iOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = "paytabs-iOS.framework"; sourceTree = "<group>"; };
 		76BDC8437C8F1964309AEF63 /* Pods-sample-run.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sample-run.debug.xcconfig"; path = "Pods/Target Support Files/Pods-sample-run/Pods-sample-run.debug.xcconfig"; sourceTree = "<group>"; };
 		8046F1F182B7CEABB4B53FDC /* Pods-sample-runTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sample-runTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-sample-runTests/Pods-sample-runTests.release.xcconfig"; sourceTree = "<group>"; };
 		8D1DC554D279E2A36F01C71E /* Pods-sample-runUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sample-runUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-sample-runUITests/Pods-sample-runUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -84,7 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5F8B27282271D41C0017B6F9 /* paytabs-iOS.framework in Frameworks */,
+				5FEC385F22B7930500C56A71 /* paytabs-iOS.framework in Frameworks */,
 				5FB064EF1F8DE8B400599309 /* MobileCoreServices.framework in Frameworks */,
 				D207F07851B98453B12C19AF /* Pods_sample_run.framework in Frameworks */,
 			);
@@ -299,7 +299,7 @@
 		5F8187ED1F8669DE0056F116 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				5F8B27272271D41C0017B6F9 /* paytabs-iOS.framework */,
+				5FEC385E22B7930500C56A71 /* paytabs-iOS.framework */,
 				5FB064EE1F8DE8B400599309 /* MobileCoreServices.framework */,
 				FD20E762BFDA72751D782390 /* Pods_sample_run.framework */,
 				BBF3CB85CEB4F81845DF2EEA /* Pods_sample_runTests.framework */,

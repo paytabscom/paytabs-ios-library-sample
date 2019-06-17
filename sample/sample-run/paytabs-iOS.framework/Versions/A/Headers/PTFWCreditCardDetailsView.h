@@ -31,6 +31,8 @@
 
 @property (weak, nonatomic, nullable) IBOutlet UIView *navigationBarView;
 
+@property (weak, nonatomic, nullable) IBOutlet NSLayoutConstraint *bottomViewConstraint;
+
 //@property (weak, nonatomic, nullable) IBOutlet UIImageView *storeImageView;
 
 #pragma mark - Callbacks
