@@ -28,6 +28,7 @@ You have to include the following dependencies in your podfile:
   pod 'SBJson'
   pod 'PINCache'
   pod 'IQKeyboardManager'
+  pod 'PayCardsRecognizer' //In case if you are using OCR version 
 ```
 
 SDK Instance Variable
@@ -62,6 +63,7 @@ Initiate SDK
             andWithPhoneNumber: "0097335532915",
             andWithCustomerEmail: self.launcherView.customerEmailTextField.text!,
             andIsTokenization: self.launcherView.tokenizationSwitch.isOn,
+            andIsPreAuth: self.launcherView.preAuthSwitch.isOn,
             andWithMerchantEmail: self.launcherView.merchantEmailTextField.text!,
             andWithMerchantSecretKey: self.launcherView.merchantSecretKeyTextField.text!,
             andWithAssigneeCode: "SDK",

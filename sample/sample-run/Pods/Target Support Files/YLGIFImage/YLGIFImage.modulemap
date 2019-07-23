@@ -1,6 +1,0 @@
-framework module YLGIFImage {
-  umbrella header "YLGIFImage-umbrella.h"
-
-  export *
-  module * { export * }
-}
