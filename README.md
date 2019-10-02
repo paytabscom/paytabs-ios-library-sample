@@ -1,6 +1,6 @@
 Paytabs iOS SDK Samples
 ========
-![Paytabs-ios-library-v3.0.0](https://img.shields.io/badge/Paytabs%20iOS%20SDK-v3.0.0-green.svg)
+![Paytabs-ios-library-v4.0.1](https://img.shields.io/badge/Paytabs%20IOS%20library-v4.0.1-green.svg)
 
 For more information please see [the website][1].
 
@@ -8,100 +8,98 @@ For more information please see [the website][1].
 Download
 --------
 
-Download [the latest .framework and resources.bundle](sdk/iOSSDK_21102018.zip):
+Download [SDK V4.0.1 Lite version](https://raw.githubusercontent.com/paytabscom/paytabs-ios-library-sample/master/sdk/ios_sdk-v4.0.1-lite.zip)
+
+Download [SDK V4.0.1 OCR version](https://raw.githubusercontent.com/paytabscom/paytabs-ios-library-sample/master/sdk/ios_sdk-v4.0.1-ocr.zip)
 
 Read the documentation to know how to integrate your application with the library
-[documentation v3.0](docs/paytabs-ios-sdk-3.0.pdf)
+[documentation](https://dev.paytabs.com/docs/ios/)
 
 Static framework requires at minimum deployment target 9.0.
 
 You have to include the following dependencies in your podfile:
 ```groovy
-  pod 'BIObjCHelpers'
-  pod 'AFNetworking'
-  pod 'Mantle'
-  pod 'Reachability'
-  pod 'SDWebImage'
-  pod 'DGActivityIndicatorView'
-  pod 'Lockbox'
-  pod 'YLGIFImage'
-  pod 'SBJson'
-  pod 'PINCache'
-  pod 'IQKeyboardManager'
-  pod 'PayCardsRecognizer' //In case if you are using OCR version 
+  # Uncomment the next line to define a global platform for your project
+  # platform :ios, '9.0'
+
+  target 'sample-run' do
+    # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
+    use_frameworks!
+
+    # Pods for sample-run
+    pod 'BIObjCHelpers'
+    pod 'IQKeyboardManager', '~> 4.0.2'
+    pod 'AFNetworking'
+    pod 'Mantle'
+    pod 'Reachability'
+    pod 'Lockbox'
+    pod 'SBJson'
+    pod 'PINCache'
+    pod 'MBProgressHUD', '~> 1.1.0'
+    
+    # In case if you are using OCR version 
+    pod 'PayCardsRecognizer'
+
+  end
 ```
 
-SDK Instance Variable
----------------------
-```swift
-  var initialSetupViewController: PTFWInitialSetupViewController!
-```
-
-Initiate SDK
+Pay now
 ------------
-```swift
- self.initialSetupViewController = PTFWInitialSetupViewController.init(
-            nibName: ApplicationXIBs.kPTFWInitialSetupView,
-            bundle: bundle,
-            andWithViewFrame: self.view.frame,
-            andWithAmount: Float(self.launcherView.amountTextField.text!)!,
-            andWithCustomerTitle: "PayTabs",
-            andWithCurrencyCode: self.launcherView.currencyTextField.text!,
-            andWithTaxAmount: 0.0,
-            andWithSDKLanguage: (self.launcherView.isArabic.isOn) ? "ar" : "en",
-            andWithShippingAddress: "عُنوان البَريد الإلِكتْروني",
-            andWithShippingCity: "jeddah عَنوِن / يَكتُب العُنوان™™™ 29393 .. 48493 $",
-            andWithShippingCountry: "BHR",
-            andWithShippingState: "123",
-            andWithShippingZIPCode: "NBsdjbd.",
-            andWithBillingAddress: "عُنوان البَريد الإلِكتْروني",
-            andWithBillingCity: "Manama",
-            andWithBillingCountry: "BHR",
-            andWithBillingState: "Manama",
-            andWithBillingZIPCode: "0097",
-            andWithOrderID: "00987",
-            andWithPhoneNumber: "0097335532915",
-            andWithCustomerEmail: self.launcherView.customerEmailTextField.text!,
-            andIsTokenization: self.launcherView.tokenizationSwitch.isOn,
-            andIsPreAuth: self.launcherView.preAuthSwitch.isOn,
-            andWithMerchantEmail: self.launcherView.merchantEmailTextField.text!,
-            andWithMerchantSecretKey: self.launcherView.merchantSecretKeyTextField.text!,
-            andWithAssigneeCode: "SDK",
-            andWithThemeColor: UIColor(red:  CGFloat((self.launcherView.redThemeValue.text! as NSString).doubleValue/255), green: CGFloat((self.launcherView.greenThemeValue.text! as NSString).doubleValue/255), blue: CGFloat((self.launcherView.bluehemeValue.text! as NSString).doubleValue/255), alpha: 1.0),
-            andIsThemeColorLight: self.launcherView.isLightTheme.isOn)
-```
+```Swift
+let bundle = Bundle(url: Bundle.main.url(forResource: ApplicationResources.kFrameworkResourcesBundle, withExtension: "bundle")!)
+self.initialSetupViewController = PTFWInitialSetupViewController.init(
+    bundle: bundle,
+    andWithViewFrame: self.view.frame,
+    andWithAmount: 1.0,
+    andWithCustomerTitle: "PayTabs Sample App",
+    andWithCurrencyCode: "SAR",
+    andWithTaxAmount: 0.0,
+    andWithSDKLanguage: "en",
+    andWithShippingAddress: "Manama",
+    andWithShippingCity: "Manama",
+    andWithShippingCountry: "BHR",
+    andWithShippingState: "Manama",
+    andWithShippingZIPCode: "123456",
+    andWithBillingAddress: "Manama",
+    andWithBillingCity: "Manama",
+    andWithBillingCountry: "BHR",
+    andWithBillingState: "Manama",
+    andWithBillingZIPCode: "12345",
+    andWithOrderID: "12345",
+    andWithPhoneNumber: "0097333109781",
+    andWithCustomerEmail: "test@paytabs.com",
+    andIsTokenization: FALSE,
+    andIsPreAuth: FALSE,
+    andWithMerchantEmail: "",
+    andWithMerchantSecretKey: "",
+    andWithAssigneeCode: "SDK",
+    andWithThemeColor:UIColor.red,
+    andIsThemeColorLight: TRUE)
 
-Callbacks
---------
-```swift
-weak var weakSelf = self
+
 self.initialSetupViewController.didReceiveBackButtonCallback = {
-    weakSelf?.handleBackButtonTapEvent()
-}
-        
-self.initialSetupViewController.didReceiveFinishTransactionCallback = {(responseCode, result, transactionID, tokenizedCustomerEmail, tokenizedCustomerPassword, token, transactionState) in
-    self.launcherView.responseCodeLabel.text = "\(responseCode)"
-    self.launcherView.resultLabel.text = "\(result)"
-    self.launcherView.transactionIDLabel.text = "\(transactionID)"
-    self.launcherView.customerEmailLabel.text = "\(tokenizedCustomerEmail)"
-    self.launcherView.customerPasswordLabel.text = "\(tokenizedCustomerPassword)"
-    self.launcherView.transactionStateLabel.text = "\(transactionState)"
-    self.launcherView.tokenValueLabel.text = "\(token)"
-            
-    self.launcherView.responseView.isHidden = false
-            
-    weakSelf?.handleBackButtonTapEvent()
-}
-```
 
-Close SDK
----------
-```swift
-private func handleBackButtonTapEvent() {
-    self.initialSetupViewController.willMove(toParentViewController: self)
-    self.initialSetupViewController.view.removeFromSuperview()
-    self.initialSetupViewController.removeFromParentViewController()
 }
+
+self.initialSetupViewController.didStartPreparePaymentPage = {
+  // Start Prepare Payment Page
+  // Show loading indicator
+}
+self.initialSetupViewController.didFinishPreparePaymentPage = {
+  // Finish Prepare Payment Page
+  // Stop loading indicator
+}
+
+self.initialSetupViewController.didReceiveFinishTransactionCallback = {(responseCode, result, transactionID, tokenizedCustomerEmail, tokenizedCustomerPassword, token, transactionState) in
+  print("Response Code: \(responseCode)")
+  print("Response Result: \(result)")
+  
+  // In Case you are using tokenization
+  print("Tokenization Cutomer Email: \(tokenizedCustomerEmail)");
+  print("Tokenization Customer Password: \(tokenizedCustomerPassword)");
+  print("TOkenization Token: \(token)");
+}
+
 ```
 
 Paytabs
