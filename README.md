@@ -15,6 +15,7 @@ Download [SDK V4.0.1 OCR version](https://raw.githubusercontent.com/paytabscom/p
 Read the documentation to know how to integrate your application with the library
 [documentation](https://dev.paytabs.com/docs/ios/)
 
+
 Static framework requires at minimum deployment target 9.0.
 
 You have to include the following dependencies in your podfile:
@@ -109,7 +110,7 @@ Paytabs
 
 
 
- [1]: https://dev.paytabs.com/docs-apis/#ios-sdk
+ [1]: https://dev.paytabs.com/docs/ios/
  [2]: https://www.paytabs.com/en/support/
  [3]: https://www.paytabs.com/en/terms-of-use/
  [4]: https://www.paytabs.com/en/privacy-policy/
