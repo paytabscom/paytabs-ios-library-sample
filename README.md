@@ -47,7 +47,7 @@ You have to include the following dependencies in your podfile:
 Pay now
 ------------
 ```Swift
-let bundle = Bundle(url: Bundle.main.url(forResource: ApplicationResources.kFrameworkResourcesBundle, withExtension: "bundle")!)
+let bundle = Bundle(url: Bundle.main.url(forResource: "Resources", withExtension: "bundle")!)
 self.initialSetupViewController = PTFWInitialSetupViewController.init(
     bundle: bundle,
     andWithViewFrame: self.view.frame,
