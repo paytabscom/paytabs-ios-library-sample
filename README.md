@@ -1,6 +1,6 @@
 Paytabs iOS SDK Samples
 ========
-![Paytabs-ios-library-v4.0.2](https://img.shields.io/badge/Paytabs%20IOS%20library-v4.0.2-green.svg)
+![Paytabs-ios-library-v4.0.3](https://img.shields.io/badge/Paytabs%20IOS%20library-v4.0.3-green.svg)
 
 For more information please see [the website][1].
 
@@ -8,9 +8,9 @@ For more information please see [the website][1].
 Download
 --------
 
-Download [SDK V4.0.2 Lite version](https://raw.githubusercontent.com/paytabscom/paytabs-ios-library-sample/master/sdk/ios_sdk-v4.0.2-lite.zip)
+Download [SDK V4.0.3 Lite version](https://raw.githubusercontent.com/paytabscom/paytabs-ios-library-sample/master/sdk/ios_sdk-v4.0.3-lite.zip)
 
-Download [SDK V4.0.2 OCR version](https://raw.githubusercontent.com/paytabscom/paytabs-ios-library-sample/master/sdk/ios_sdk-v4.0.2-ocr.zip)
+Download [SDK V4.0.3 OCR version](https://raw.githubusercontent.com/paytabscom/paytabs-ios-library-sample/master/sdk/ios_sdk-v4.0.3-ocr.zip)
 
 Read the documentation to know how to integrate your application with the library
 [documentation](https://dev.paytabs.com/docs/ios/)
