@@ -47,8 +47,8 @@
                                             andWithCustomerEmail:@"rhegazy@paytabs.com"
                                             andIsTokenization:NO
                                             andIsPreAuth:NO
-                                            andWithMerchantEmail:@""
-                                            andWithMerchantSecretKey:@""
+                                            andWithMerchantEmail:@"rhegazy@paytabs.com"
+                                            andWithMerchantSecretKey:@"BIueZNfPLblJnMmPYARDEoP5x1WqseI3XciX0yNLJ8v7URXTrOw6dmbKn8bQnTUk6ch6L5SudnC8fz2HozNBVZlj7w9uq4Pwg7D1"
                                             andWithAssigneeCode:@"SDK"
                                             andWithThemeColor:[UIColor redColor]
                                             andIsThemeColorLight:YES];

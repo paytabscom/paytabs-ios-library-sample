@@ -1,6 +1,6 @@
 Paytabs iOS SDK Samples
 ========
-![Paytabs-ios-library-v4.0.4](https://img.shields.io/badge/Paytabs%20IOS%20library-v4.0.4-green.svg)
+![Paytabs-ios-library-v4.0.6](https://img.shields.io/badge/Paytabs%20IOS%20library-v4.0.6-green.svg)
 ![xcode-v11.3](https://img.shields.io/badge/xcode-v11.3-green.svg)
 
 For more information please see [the website][1].
@@ -9,15 +9,9 @@ For more information please see [the website][1].
 Download
 --------
 
-Download [SDK v4.0.4 Lite version](https://raw.githubusercontent.com/paytabscom/paytabs-ios-library-sample/master/sdk/ios_sdk-v4.0.4-lite.zip)
+Download [SDK v4.0.6 Lite version](https://raw.githubusercontent.com/paytabscom/paytabs-ios-library-sample/master/sdk/ios_sdk-v4.0.6-lite.zip)
 
-Download [SDK v4.0.4 OCR version](https://raw.githubusercontent.com/paytabscom/paytabs-ios-library-sample/master/sdk/ios_sdk-v4.0.4-ocr.zip)
-
-Prior to Xcode 11.0:
-
-Download [SDK v4.0.4 Lite version (Built with Xcode 10.1)](https://raw.githubusercontent.com/paytabscom/paytabs-ios-library-sample/master/sdk/ios_sdk-v4.0.4-lite-xcode10.1.zip)
-
-Download [SDK v4.0.4 OCR version (Built with Xcode 10.1)](https://raw.githubusercontent.com/paytabscom/paytabs-ios-library-sample/master/sdk/ios_sdk-v4.0.4-ocr-xcode10.1.zip)
+Download [SDK v4.0.6 OCR version](https://raw.githubusercontent.com/paytabscom/paytabs-ios-library-sample/master/sdk/ios_sdk-v4.0.6-ocr.zip)
 
 
 

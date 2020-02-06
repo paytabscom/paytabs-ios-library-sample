@@ -25,4 +25,6 @@
 
 #import <PINCache/PINCache.h>
 
+#import <PayCardsRecognizer/PayCardsRecognizer.h>
+
 #endif /* PTFWFrameworksHeaders_h */

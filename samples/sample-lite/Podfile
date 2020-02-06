@@ -15,5 +15,6 @@ target 'Sample' do
   pod 'SBJson'
   pod 'PINCache'
   pod 'MBProgressHUD', '~> 1.1.0'
-  
+  pod 'PayCardsRecognizer'
+
 end

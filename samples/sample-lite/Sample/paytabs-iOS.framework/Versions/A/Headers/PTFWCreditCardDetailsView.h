@@ -42,14 +42,11 @@
 @property (weak, nonatomic, nullable) IBOutlet UIView *creditCardCVVBackgroundView;
 @property (weak, nonatomic, nullable) IBOutlet UIView *creditCardnumberView;
 @property (weak, nonatomic, nullable) IBOutlet UIView *creditCardScannerView;
-@property (weak, nonatomic, nullable) IBOutlet UIView *genericSDKFooterView;
-@property (weak, nonatomic, nullable) IBOutlet UIView *mbmeSDKFooterView;
 
 @property (weak, nonatomic, nullable) IBOutlet UIScrollView *scrollView;
 
 @property (weak, nonatomic, nullable) IBOutlet NSLayoutConstraint *navigationBarHeightConstaint;
 @property (weak, nonatomic, nullable) IBOutlet NSLayoutConstraint *inputViewHeightConstraint;
-@property (weak, nonatomic, nullable) IBOutlet NSLayoutConstraint *footerHeightConstraint;
 @property (weak, nonatomic, nullable) IBOutlet NSLayoutConstraint *contentViewHeightConstraint;
 
 @property (weak, nonatomic, nullable) IBOutlet NSLayoutConstraint *navigationBarContentTopConstaint;
@@ -57,10 +54,6 @@
 @property (weak, nonatomic, nullable) IBOutlet NSLayoutConstraint *amountLabelTopConstaint;
 @property (weak, nonatomic, nullable) IBOutlet NSLayoutConstraint *nameLabelTopConstaint;
 @property (weak, nonatomic, nullable) IBOutlet NSLayoutConstraint *payNowTopConstaint;
-@property (weak, nonatomic, nullable) IBOutlet NSLayoutConstraint *footerContentBottomConstraint;
-@property (weak, nonatomic, nullable) IBOutlet NSLayoutConstraint *mbmeFooterContentBottomConstraint;
-@property (weak, nonatomic, nullable) IBOutlet NSLayoutConstraint *footerBottomSpaceConstraint;
-@property (weak, nonatomic, nullable) IBOutlet NSLayoutConstraint *mbmeFooterBottomSpaceConstraint;
 
 @property (weak, nonatomic, nullable) IBOutlet NSLayoutConstraint *leadingContentConstraint;
 @property (weak, nonatomic, nullable) IBOutlet NSLayoutConstraint *trailingContentConstraint;
@@ -72,8 +65,8 @@
 @property (nonatomic, copy, nullable) void(^didPressBackButtonCallback)(void);
 @property (nonatomic, copy, nullable) void(^didPressCameraButtonCallback)(void);
 @property (nonatomic, copy, nullable) void(^didPressCameraCloseButtonCallback)(void);
-@property (nonatomic, copy, nullable) void(^didPressExpiryMonthButtonCallback)(id sender);
-@property (nonatomic, copy, nullable) void(^didPressExpiryYearButtonCallback)(id sender);
+@property (nonatomic, copy, nullable) void(^didPressExpiryMonthButtonCallback)(id _Nullable sender);
+@property (nonatomic, copy, nullable) void(^didPressExpiryYearButtonCallback)(id _Nullable sender);
 @property (nonatomic, copy, nullable) void(^didPressPayNowButtonCallback)(void);
 
 @end

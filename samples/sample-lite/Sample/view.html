@@ -1,0 +1,66 @@
+{{define "title"}} {{dict "terminal_view"}} {{end}}
+{{define "content"}}
+{{$term:=$.Terminal}}
+<div id="terminal-feedback">{{if .NotifyBlock}}{{.DataStr "notifyBlock" | html}}{{end}}</div>
+<div class="card mb-3" id="terminal-update-card">
+  {{template "terminal_header" .}}
+  <div class="card-body">
+    {{template "transacion_class_selector"  .}}
+    {{template "payment_method_selector" .}}
+    <div class="form-group-mid"> <!-- Currencies -->
+      <div class="row">
+        <div class="col-2 col-form-label">{{dict "terminal_auth_currency"}}</div>
+        <div class="col-3 col-form-label">{{template "transaction_currency" .}}</div>
+        <div class="col-2 col-form-label">{{dict "terminal_payout_currency"}}</div>
+        <div class="col-3 col-form-label">{{template "payout_currency" .}}</div>
+      </div>
+    </div>
+
+    <div class="form-group-mid"> <!-- Industry Code -->
+      <div class="row">
+        {{template "terminal_industry" .}}
+      </div>
+    </div>
+
+    <div class="form-group-mid"> <!-- Merchant ID, Purchase Mode -->
+      <div class="row">
+        <div class="col-2 col-form-label">{{dict "terminal_cs_acq_mid"}}</div>
+        <div class="col-3 col-form-label">{{$term.AcqMid}}</div>
+        {{template "auth_options" .}}
+      </div>
+    </div>
+
+    <div class="form-group-mid"> <!-- Portal Organization ID -->
+      <div class="row">
+        <div class="col-v3 col-form-label">{{dict "terminal_cs_acq_user2"}}</div>
+        <div class="col-3 col-form-label">{{$term.AcqUser2}}</div>
+      </div>
+    </div>
+
+    <div class="form-group-mid"> <!-- Portal Username, Portal Password -->
+      <div class="row">
+        <div class="col-v3 col-form-label">{{dict "terminal_cs_acq_user1"}}</div>
+        <div class="col-3 col-form-label">{{$term.AcqUser1}}</div>
+        <div class="col-v3 col-form-label">{{dict "terminal_cs_acq_password1"}}</div>
+        <div class="col-3 col-form-label">{{$term.AcqPassword1}}</div>
+      </div>
+    </div>
+
+    <div class="form-group-mid"> <!-- Secure Hash -->
+      <div class="row">
+        <div class="col-2 col-form-label">{{dict "terminal_cs_acq_access_key"}}</div>
+        <div class="col-8"><textarea style="resize:none; height: 128px;" class="form-control display" id="term-acq-access-key" name="acqAccessKey" readonly="true" disabled>{{$term.AcqAccessKey}}</textarea></div>
+      </div>
+    </div>
+
+    <div class="form-group-mid"> <!-- CVV options, Live/Test options -->
+      <div class="row">
+        {{template "cvv_options" .}}
+        {{template "mode_options" .}}
+      </div>
+    </div>
+
+  </div> <!-- /card-body -->
+  {{template "terminal_footer" .}}
+</div>
+{{end}}
