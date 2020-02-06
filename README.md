@@ -1,7 +1,7 @@
 Paytabs iOS SDK Samples
 ========
 ![Paytabs-ios-library-v4.0.6](https://img.shields.io/badge/Paytabs%20IOS%20library-v4.0.6-green.svg)
-![xcode-v11.3](https://img.shields.io/badge/xcode-v11.3-green.svg)
+![xcode-v10.1](https://img.shields.io/badge/xcode-v10.1-green.svg)
 
 For more information please see [the website][1].
 
