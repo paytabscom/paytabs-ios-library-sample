@@ -40,7 +40,8 @@ You have to include the following dependencies in your podfile:
     pod 'SBJson'
     pod 'PINCache'
     pod 'MBProgressHUD', '~> 1.1.0'
-    
+    pod 'ActionSheetPicker-3.0'
+
     # In case if you are using OCR version 
     pod 'PayCardsRecognizer'
 
