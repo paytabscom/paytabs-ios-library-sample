@@ -1,4 +1,5 @@
 PODS:
+  - ActionSheetPicker-3.0 (2.4.2)
   - AFNetworking (3.2.1):
     - AFNetworking/NSURLSession (= 3.2.1)
     - AFNetworking/Reachability (= 3.2.1)
@@ -27,6 +28,7 @@ PODS:
   - SBJson (5.0.0)
 
 DEPENDENCIES:
+  - ActionSheetPicker-3.0
   - AFNetworking
   - BIObjCHelpers
   - IQKeyboardManager (~> 4.0.2)
@@ -40,6 +42,7 @@ DEPENDENCIES:
 
 SPEC REPOS:
   trunk:
+    - ActionSheetPicker-3.0
     - AFNetworking
     - BIObjCHelpers
     - IQKeyboardManager
@@ -52,6 +55,7 @@ SPEC REPOS:
     - SBJson
 
 SPEC CHECKSUMS:
+  ActionSheetPicker-3.0: 5b62e07b00bd970509cf5ece99cb7447eae5dd0d
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
   BIObjCHelpers: 378672b0f9309e4d2cbd4cabfb3afbe1ce225e40
   IQKeyboardManager: 8eab4d8111418414619d1df8e4779ce5d0f8d7e2
@@ -63,6 +67,6 @@ SPEC CHECKSUMS:
   Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
   SBJson: 73c848dc34be51fda282fab12bda6c426f5ead08
 
-PODFILE CHECKSUM: 0b3ca992e6225c9553b983b8982b76cab593211a
+PODFILE CHECKSUM: f990b05a3b49de3595a34c9b51680429d008a935
 
 COCOAPODS: 1.8.4

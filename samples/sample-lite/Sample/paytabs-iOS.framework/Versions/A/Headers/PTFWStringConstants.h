@@ -49,8 +49,6 @@ extern NSString * const kAuthorizationFailed;
 extern NSString * const kSomethingGoesWrong;
 extern NSString * const kOperationTimedOut;
 extern NSString * const kNetworkFailed;
-extern NSString * const kCameraPermission;
-extern NSString * const kArabicCameraPermission;
 
 extern NSString * const kEmptyAmount;
 extern NSString * const kEmptyCustomerTitle;
