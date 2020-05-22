@@ -9,9 +9,9 @@ For more information please see [the website][1].
 Download
 --------
 
-Download [SDK v4.0.7 Lite version](https://raw.githubusercontent.com/paytabscom/paytabs-ios-library-sample/master/sdk/ios_sdk-v4.0.7-lite.zip)
+Download [SDK v4.0.8 Lite version](https://raw.githubusercontent.com/paytabscom/paytabs-ios-library-sample/master/sdk/ios_sdk-v4.0.8-lite.zip)
 
-Download [SDK v4.0.7 OCR version](https://raw.githubusercontent.com/paytabscom/paytabs-ios-library-sample/master/sdk/ios_sdk-v4.0.7-ocr.zip)
+Download [SDK v4.0.8 OCR version](https://raw.githubusercontent.com/paytabscom/paytabs-ios-library-sample/master/sdk/ios_sdk-v4.0.8-ocr.zip)
 
 
 
