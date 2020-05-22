@@ -1,6 +1,6 @@
 Paytabs iOS SDK Samples
 ========
-![Paytabs-ios-library-v4.0.7](https://img.shields.io/badge/Paytabs%20IOS%20library-v4.0.7-green.svg)
+![Paytabs-ios-library-v4.0.8](https://img.shields.io/badge/Paytabs%20IOS%20library-v4.0.8-green.svg)
 ![xcode-v10.1](https://img.shields.io/badge/xcode-v10.1-green.svg)
 
 For more information please see [the website][1].
@@ -33,7 +33,7 @@ You have to include the following dependencies in your podfile:
     # Pods for sample-run
     pod 'BIObjCHelpers'
     pod 'IQKeyboardManager', '~> 4.0.2'
-    pod 'AFNetworking'
+    pod 'AFNetworking', '-> 4.0.1'
     pod 'Mantle'
     pod 'Reachability'
     pod 'Lockbox'
