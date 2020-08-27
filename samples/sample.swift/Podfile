@@ -7,17 +7,28 @@ target 'sample.swift' do
 
   # Pods for sample-run
   pod 'BIObjCHelpers'
-  pod 'IQKeyboardManager', '~> 4.0.2'
-  pod 'AFNetworking'
+  pod 'AFNetworking', '~> 4.0.1'
   pod 'Mantle'
   pod 'Reachability'
   pod 'Lockbox'
   pod 'SBJson'
   pod 'PINCache'
+  pod 'PayCardsRecognizer'
   pod 'MBProgressHUD', '~> 1.1.0'
   pod 'ActionSheetPicker-3.0'
+  pod 'IQKeyboardManager'
   
   # In case if you are using OCR version 
-  # pod 'PayCardsRecognizer'
+  pod 'PayCardsRecognizer'
 
 end
+
+#
+#post_install do |installer|
+#    installer.pods_project.targets.each do |target|
+#        target.build_configurations.each do |config|
+#            config.build_settings['BITCODE_GENERATION_MODE'] = 'bitcode'
+#            config.build_settings['ENABLE_BITCODE'] = 'YES'
+#        end
+#    end
+#end

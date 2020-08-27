@@ -1,2 +1,2 @@
 ${PODS_ROOT}/Target Support Files/Pods-sample.swift/Pods-sample.swift-resources.sh
-${PODS_ROOT}/IQKeyboardManager/IQKeyboardManager/Resources/IQKeyboardManager.bundle
+${PODS_ROOT}/../../../sdk_ocr/Resources.bundle

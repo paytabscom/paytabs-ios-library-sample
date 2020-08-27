@@ -7,18 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		406165D024F6C13000E5590A /* Resources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 406165CF24F6C13000E5590A /* Resources.bundle */; };
+		4089B61A24F7D24600D92E30 /* paytabs-iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4089B61924F7D24600D92E30 /* paytabs-iOS.framework */; };
 		CF27F7796779B8A283535D12 /* libPods-sample.swift.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EB9245EC9C379F3C705F02C /* libPods-sample.swift.a */; };
 		DC6890F72354854100A4F349 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6890F62354854100A4F349 /* AppDelegate.swift */; };
 		DC6890F92354854100A4F349 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6890F82354854100A4F349 /* ViewController.swift */; };
 		DC6890FC2354854100A4F349 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC6890FA2354854100A4F349 /* Main.storyboard */; };
 		DC6890FE2354854300A4F349 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC6890FD2354854300A4F349 /* Assets.xcassets */; };
 		DC6891012354854300A4F349 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC6890FF2354854300A4F349 /* LaunchScreen.storyboard */; };
-		DC689109235485E000A4F349 /* paytabs-iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC689108235485E000A4F349 /* paytabs-iOS.framework */; };
-		DC68910B235485E700A4F349 /* Resources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = DC68910A235485E700A4F349 /* Resources.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		362FC53C3C8632F5FAA655C9 /* Pods-sample.swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sample.swift.debug.xcconfig"; path = "Target Support Files/Pods-sample.swift/Pods-sample.swift.debug.xcconfig"; sourceTree = "<group>"; };
+		406165CF24F6C13000E5590A /* Resources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = Resources.bundle; path = "../../../../../../../Users/Adly/Downloads/paytabs-ios-library-sample-master-2/samples/sample.swift/sample.swift/Resources.bundle"; sourceTree = "<group>"; };
+		4089B61924F7D24600D92E30 /* paytabs-iOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = "paytabs-iOS.framework"; sourceTree = SOURCE_ROOT; };
 		7EB9245EC9C379F3C705F02C /* libPods-sample.swift.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-sample.swift.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F49F840BC45814038DA315C /* Pods-sample.swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sample.swift.release.xcconfig"; path = "Target Support Files/Pods-sample.swift/Pods-sample.swift.release.xcconfig"; sourceTree = "<group>"; };
 		DC6890F32354854100A4F349 /* sample.swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sample.swift.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -28,8 +30,6 @@
 		DC6890FD2354854300A4F349 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DC6891002354854300A4F349 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DC6891022354854300A4F349 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DC689108235485E000A4F349 /* paytabs-iOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = "paytabs-iOS.framework"; sourceTree = "<group>"; };
-		DC68910A235485E700A4F349 /* Resources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Resources.bundle; sourceTree = "<group>"; };
 		DC68910C235488DA00A4F349 /* sample.swift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "sample.swift-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -38,8 +38,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DC689109235485E000A4F349 /* paytabs-iOS.framework in Frameworks */,
 				CF27F7796779B8A283535D12 /* libPods-sample.swift.a in Frameworks */,
+				4089B61A24F7D24600D92E30 /* paytabs-iOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,11 +85,11 @@
 			isa = PBXGroup;
 			children = (
 				DC68910D23548AAC00A4F349 /* BridgeHeader */,
-				DC68910A235485E700A4F349 /* Resources.bundle */,
-				DC689108235485E000A4F349 /* paytabs-iOS.framework */,
 				DC6890F62354854100A4F349 /* AppDelegate.swift */,
 				DC6890F82354854100A4F349 /* ViewController.swift */,
 				DC6890FA2354854100A4F349 /* Main.storyboard */,
+				4089B61924F7D24600D92E30 /* paytabs-iOS.framework */,
+				406165CF24F6C13000E5590A /* Resources.bundle */,
 				DC6890FD2354854300A4F349 /* Assets.xcassets */,
 				DC6890FF2354854300A4F349 /* LaunchScreen.storyboard */,
 				DC6891022354854300A4F349 /* Info.plist */,
@@ -116,7 +116,7 @@
 				DC6890EF2354854100A4F349 /* Sources */,
 				DC6890F02354854100A4F349 /* Frameworks */,
 				DC6890F12354854100A4F349 /* Resources */,
-				5FFFF617994C1EEF880E2910 /* [CP] Copy Pods Resources */,
+				4A7FF950D37634759316345C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -168,7 +168,7 @@
 				DC6891012354854300A4F349 /* LaunchScreen.storyboard in Resources */,
 				DC6890FE2354854300A4F349 /* Assets.xcassets in Resources */,
 				DC6890FC2354854100A4F349 /* Main.storyboard in Resources */,
-				DC68910B235485E700A4F349 /* Resources.bundle in Resources */,
+				406165D024F6C13000E5590A /* Resources.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -197,21 +197,21 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		5FFFF617994C1EEF880E2910 /* [CP] Copy Pods Resources */ = {
+		4A7FF950D37634759316345C /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-sample.swift/Pods-sample.swift-resources-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-sample.swift/Pods-sample.swift-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			name = "[CP] Copy Pods Resources";
+			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-sample.swift/Pods-sample.swift-resources-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-sample.swift/Pods-sample.swift-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-sample.swift/Pods-sample.swift-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-sample.swift/Pods-sample.swift-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -370,10 +370,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = E4D8R9ZYJ8;
+				DEVELOPMENT_TEAM = F9P25Q2C5S;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/sample.swift",
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = sample.swift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -424,10 +425,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = E4D8R9ZYJ8;
+				DEVELOPMENT_TEAM = F9P25Q2C5S;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/sample.swift",
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = sample.swift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (

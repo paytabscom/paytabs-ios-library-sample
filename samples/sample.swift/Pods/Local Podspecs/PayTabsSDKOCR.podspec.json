@@ -1,0 +1,60 @@
+{
+  "name": "PayTabsSDKOCR",
+  "version": "4.0.9",
+  "summary": "PayTabs is an online payment gateway.",
+  "platforms": {
+    "ios": "9.0"
+  },
+  "homepage": "http://www.paytabs.com",
+  "license": "MIT",
+  "authors": {
+    "PayTabs": "m.adly@paytabs.com"
+  },
+  "source": {
+    "path": "."
+  },
+  "source_files": "sdk_ocr/paytabs-iOS.framework",
+  "resources": "sdk_ocr/Resources.bundle",
+  "ios": {
+    "vendored_frameworks": "sdk_ocr/paytabs-iOS.framework"
+  },
+  "xcconfig": {
+    "FRAMEWORK_SEARCH_PATHS": "'${PODS_ROOT}'/sdk_ocr/**",
+    "SWIFT_INCLUDE_PATHS": "'${PODS_TARGET_SRCROOT}'/sdk_ocr/**"
+  },
+  "dependencies": {
+    "BIObjCHelpers": [
+
+    ],
+    "IQKeyboardManager": [
+
+    ],
+    "AFNetworking": [
+      "> 4.0.0"
+    ],
+    "Mantle": [
+
+    ],
+    "Reachability": [
+
+    ],
+    "Lockbox": [
+
+    ],
+    "SBJson": [
+
+    ],
+    "PINCache": [
+
+    ],
+    "MBProgressHUD": [
+
+    ],
+    "ActionSheetPicker-3.0": [
+
+    ],
+    "PayCardsRecognizer": [
+
+    ]
+  }
+}
