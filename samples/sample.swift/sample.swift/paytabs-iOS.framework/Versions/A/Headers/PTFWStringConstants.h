@@ -50,6 +50,18 @@ extern NSString * const kSomethingGoesWrong;
 extern NSString * const kOperationTimedOut;
 extern NSString * const kNetworkFailed;
 
+extern NSString * const kAlertTitle_ar;
+extern NSString * const kErrorTitle_ar;
+extern NSString * const kSuccessTitle_ar;
+extern NSString * const kDismissTitle_ar;
+extern NSString * const kInternetNotAvailable_ar;
+extern NSString * const kInternetNotAccessible_ar;
+extern NSString * const kAuthorizationFailed_ar;
+extern NSString * const kSomethingGoesWrong_ar;
+extern NSString * const kOperationTimedOut_ar;
+extern NSString * const kNetworkFailed_ar;
+
+
 extern NSString * const kEmptyAmount;
 extern NSString * const kEmptyCustomerTitle;
 extern NSString * const kEmptyCurrencyCode;
@@ -95,6 +107,52 @@ extern NSString * const kInvalidSecretKey;
 extern NSString * const kInvalidCountryCode;
 extern NSString * const kInvalidMerchantApplePayIdentifier;
 
+extern NSString * const kEmptyAmount_ar;
+extern NSString * const kEmptyCustomerTitle_ar;
+extern NSString * const kEmptyCurrencyCode_ar;
+extern NSString * const kEmptyTaxAmount_ar;
+extern NSString * const kEmptySDKLanguage_ar;
+extern NSString * const kEmptyShippingAddress_ar;
+extern NSString * const kEmptyShippingCity_ar;
+extern NSString * const kEmptyShippingCountry_ar;
+extern NSString * const kEmptyShippingState_ar;
+extern NSString * const kEmptyShippingZIPCode_ar;
+extern NSString * const kEmptyBillingAddress_ar;
+extern NSString * const kEmptyBillingCity_ar;
+extern NSString * const kEmptyBillingCountry_ar;
+extern NSString * const kEmptyBillingState_ar;
+extern NSString * const kEmptyBillingZIPCode_ar;
+extern NSString * const kEmptyOrderID_ar;
+extern NSString * const kEmptyPhoneNumber_ar;
+extern NSString * const kEmptyCustomerEmail_ar;
+extern NSString * const kEmptyCustomerPassword_ar;
+extern NSString * const kEmptyPaytabsToken_ar;
+extern NSString * const kEmptyMerchantEmail_ar;
+extern NSString * const kEmptyMerchantSecretKey_ar;
+extern NSString * const kEmptyAssigneeCode_ar;
+extern NSString * const kEmptyTimeoutSeconds_ar;
+extern NSString * const kInvalidCustomerEmail_ar;
+extern NSString * const kInvalidMerchantEmail_ar;
+extern NSString * const kInvalidShippingAddress_ar;
+extern NSString * const kInvalidShippingCity_ar;
+extern NSString * const kInvalidShippingCountry_ar;
+extern NSString * const kInvalidShippingState_ar;
+extern NSString * const kInvalidShippingZIPCode_ar;
+extern NSString * const kInvalidBillingAddress_ar;
+extern NSString * const kInvalidBillingCity_ar;
+extern NSString * const kInvalidBillingCountry_ar;
+extern NSString * const kInvalidBillingState_ar;
+extern NSString * const kInvalidBillingZIPCode_ar;
+extern NSString * const kInvalidSDKLanguage_ar;
+extern NSString * const kInvalidPhoneNumber_ar;
+extern NSString * const kInvalidShippingCountryCode_ar;
+extern NSString * const kInvalidBillingCountryCode_ar;
+extern NSString * const kInvalidCurrencyCode_ar;
+extern NSString * const kInvalidSecretKey_ar;
+extern NSString * const kInvalidCountryCode_ar;
+extern NSString * const kInvalidMerchantApplePayIdentifier_ar;
+
+
 extern NSString * const kEmptyCreditCardNumber;
 extern NSString * const kEmptyCreditCardHolderName;
 extern NSString * const kEmptyCreditCardExpiryDate;
@@ -103,6 +161,16 @@ extern NSString * const kInvalidCreditCardHolderName;
 extern NSString * const kInvalidCreditCardNumber;
 extern NSString * const kInvalidCreditCardCVVNumber;
 extern NSString * const kInvalidCreditCardExpiryDate;
+
+extern NSString * const kEmptyCreditCardNumber_ar;
+extern NSString * const kEmptyCreditCardHolderName_ar;
+extern NSString * const kEmptyCreditCardExpiryDate_ar;
+extern NSString * const kEmptyCreditCardCVV_ar;
+extern NSString * const kInvalidCreditCardHolderName_ar;
+extern NSString * const kInvalidCreditCardNumber_ar;
+extern NSString * const kInvalidCreditCardCVVNumber_ar;
+extern NSString * const kInvalidCreditCardExpiryDate_ar;
+
 
 #pragma mark - Arabic
 extern NSString * const kArabicPleaseWait;

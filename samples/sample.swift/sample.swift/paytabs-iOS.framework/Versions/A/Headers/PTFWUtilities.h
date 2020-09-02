@@ -47,6 +47,8 @@
 #pragma mark - SDK Language
 - (void)setSDKLanguageWithLanguage: (NSString *)sdkLanguage;
 - (NSString *)getSDKLanguage;
+- (BOOL)isSDKLanguageArabic;
+- (BOOL)isSDKLanguageEnglish;
 
 #pragma mark - Theme
 - (void)setThemeColor: (UIColor *)themeColor;
