@@ -24,5 +24,6 @@
 - (NSString *)strippedHTMLString;
 
 + (NSString *)getDeviceName;
-
+- (NSString *)localized;
+- (NSString *)localized:(NSString*)lang;
 @end

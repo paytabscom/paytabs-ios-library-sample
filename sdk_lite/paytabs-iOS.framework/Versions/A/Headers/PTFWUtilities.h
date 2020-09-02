@@ -56,4 +56,7 @@
 - (void)setThemeColorType: (BOOL)isThemeLight;
 - (int)getThemeColorType;
 
+#pragma mark - Bundle
+@property(nonatomic, strong) NSBundle *bundle;
+@property(nonatomic, strong) NSDictionary *localizationsDictiionary;
 @end

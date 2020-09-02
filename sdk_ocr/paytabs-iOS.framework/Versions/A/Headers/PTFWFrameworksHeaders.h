@@ -25,6 +25,7 @@
 
 #import <PINCache/PINCache.h>
 
+#ifdef OCR_ENABLED
 #import <PayCardsRecognizer/PayCardsRecognizer.h>
-
+#endif
 #endif /* PTFWFrameworksHeaders_h */
