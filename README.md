@@ -6,12 +6,29 @@ Paytabs iOS SDK Samples
 For more information please see [the website][1].
 
 
-Download
---------
+## Installation
 
-Download [SDK v4.0.9 Lite version](https://raw.githubusercontent.com/paytabscom/paytabs-ios-library-sample/master/sdk/ios_sdk-v4.0.9-lite.zip)
+### CocoaPods
 
-Download [SDK v4.0.9 OCR version](https://raw.githubusercontent.com/paytabscom/paytabs-ios-library-sample/master/sdk/ios_sdk-v4.0.9-ocr.zip)
+[CocoaPods](https://cocoapods.org) is a dependency manager for Cocoa projects. For usage and installation instructions, visit their website. To integrate (PayTabs Lite or PayTabs OCR) into your Xcode project using CocoaPods, specify it in your `Podfile`:
+
+#### PayTabs Lite
+
+```ruby
+pod 'PayTabsSDKLite', '~> 4.0.10'
+```
+
+#### PayTabs OCR
+
+```ruby
+pod 'PayTabsSDKOCR', '~> 4.0.10'
+```
+
+### Manual
+
+Download [SDK v4.0.10 Lite version](https://raw.githubusercontent.com/paytabscom/paytabs-ios-library-sample/master/sdk/ios_sdk-v4.0.10-lite.zip)
+
+Download [SDK v4.0.10 OCR version](https://raw.githubusercontent.com/paytabscom/paytabs-ios-library-sample/master/sdk/ios_sdk-v4.0.10-ocr.zip)
 
 
 
@@ -48,8 +65,10 @@ You have to include the following dependencies in your podfile:
   end
 ```
 
-Pay now
-------------
+## Usage
+
+### Pay now
+
 ```Swift
 let bundle = Bundle(url: Bundle.main.url(forResource: "Resources", withExtension: "bundle")!)
 self.initialSetupViewController = PTFWInitialSetupViewController.init(
