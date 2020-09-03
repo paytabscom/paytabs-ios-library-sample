@@ -10,7 +10,7 @@ For more information please see [the website][1].
 
 ### CocoaPods
 
-[CocoaPods](https://cocoapods.org) is a dependency manager for Cocoa projects. For usage and installation instructions, visit their website. To integrate (PayTabs Lite or PayTabs OCR) into your Xcode project using CocoaPods, specify it in your `Podfile`:
+Simply add the following line to your `Podfile`:
 
 #### PayTabs Lite
 
@@ -38,8 +38,8 @@ Read the documentation to know how to integrate your application with the librar
 
 Static framework requires at minimum deployment target 9.0.
 
-You have to include the following dependencies in your podfile:
-```groovy
+You have to include the following dependencies in your  `Podfile:
+```ruby
   # Uncomment the next line to define a global platform for your project
   # platform :ios, '9.0'
 
@@ -65,6 +65,18 @@ You have to include the following dependencies in your podfile:
   end
 ```
 
+You might face an issue when you try installing the sdk manualy while "ENABLE_BITCODE" flag enabled, you will have to include the following script to your `Podfile`:
+
+```ruby
+post_install do |installer|
+    installer.pods_project.targets.each do |target|
+        target.build_configurations.each do |config|
+            config.build_settings['BITCODE_GENERATION_MODE'] = 'bitcode'
+            config.build_settings['ENABLE_BITCODE'] = 'YES'
+        end
+    end
+end
+```
 ## Usage
 
 ### Pay now
