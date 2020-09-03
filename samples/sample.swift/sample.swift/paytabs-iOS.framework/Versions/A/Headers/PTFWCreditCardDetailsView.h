@@ -60,6 +60,7 @@
 @property (weak, nonatomic, nullable) IBOutlet NSLayoutConstraint *leadingFormConstraint;
 @property (weak, nonatomic, nullable) IBOutlet NSLayoutConstraint *trailingFormConstraint;
 
+@property (weak, nonatomic, nullable) IBOutlet NSLayoutConstraint *cameraButtonWidthConstraint;
 
 #pragma mark - Callbacks
 @property (nonatomic, copy, nullable) void(^didPressBackButtonCallback)(void);

@@ -19,7 +19,7 @@ target 'sample.swift' do
   pod 'IQKeyboardManager'
   
   # In case if you are using OCR version 
-#  pod 'PayCardsRecognizer'
+  pod 'PayCardsRecognizer'
 
 end
 
