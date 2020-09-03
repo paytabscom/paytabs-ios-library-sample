@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "PayTabsSDKLite"
-  s.version      = "4.0.9"
+  s.version      = "4.0.10"
   s.summary      = "PayTabs is an online payment gateway."
   s.ios.deployment_target = '9.0'
   s.homepage     = "http://www.paytabs.com"
@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
 
   s.dependency 'BIObjCHelpers'
   s.dependency 'IQKeyboardManager'
-  s.dependency 'AFNetworking', '> 4.0.0'
+  s.dependency 'AFNetworking', '> 4.0.1'
   s.dependency 'Mantle'
   s.dependency 'Reachability'
   s.dependency 'Lockbox'
