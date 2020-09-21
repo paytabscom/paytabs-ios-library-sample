@@ -15,13 +15,13 @@ Simply add the following line to your `Podfile`:
 #### PayTabs Lite
 
 ```ruby
-pod 'PayTabsSDKLite', '~> 4.0.10'
+pod 'PayTabsSDKLite', '~> 4.0.8'
 ```
 
 #### PayTabs OCR
 
 ```ruby
-pod 'PayTabsSDKOCR', '~> 4.0.10'
+pod 'PayTabsSDKOCR', '~> 4.0.8'
 ```
 
 ### Manual
