@@ -12,60 +12,34 @@ For more information please see [the website][1].
 
 Simply add the following line to your `Podfile`:
 
-#### PayTabs Lite
-
 ```ruby
-pod 'PayTabsSDKLite', '~> 4.0.10'
-```
-
-#### PayTabs OCR
-
-```ruby
-pod 'PayTabsSDKOCR', '~> 4.0.10'
+pod 'PayTabs', '~> 4.1.0'
 ```
 
 ### Manual
 
-Download [SDK v4.0.10 Lite version](https://raw.githubusercontent.com/paytabscom/paytabs-ios-library-sample/master/sdk/ios_sdk-v4.0.10-lite.zip)
-
-Download [SDK v4.0.10 OCR version](https://raw.githubusercontent.com/paytabscom/paytabs-ios-library-sample/master/sdk/ios_sdk-v4.0.10-ocr.zip)
-
-
+Download [SDK] [sdk] and [resource bundle][bundle] 
 
 Read the documentation to know how to integrate your application with the library
 [documentation](https://dev.paytabs.com/docs/ios/)
-
 
 Static framework requires at minimum deployment target 9.0.
 
 You have to include the following dependencies in your  `Podfile:
 ```ruby
-  # Uncomment the next line to define a global platform for your project
-  # platform :ios, '9.0'
-
-  target 'sample-run' do
-    # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
-    use_frameworks!
-
-    # Pods for sample-run
-    pod 'BIObjCHelpers'
-    pod 'IQKeyboardManager', '~> 4.0.2'
-    pod 'AFNetworking', '-> 4.0.1'
-    pod 'Mantle'
-    pod 'Reachability'
-    pod 'Lockbox'
-    pod 'SBJson'
-    pod 'PINCache'
-    pod 'MBProgressHUD', '~> 1.1.0'
-    pod 'ActionSheetPicker-3.0'
-
-    # In case if you are using OCR version 
-    pod 'PayCardsRecognizer'
-
-  end
+  pod 'BIObjCHelpers'
+  pod 'AFNetworking', '~> 4.0.1'
+  pod 'Mantle'
+  pod 'Reachability'
+  pod 'Lockbox'
+  pod 'SBJson'
+  pod 'PINCache'
+  pod 'CardIO'
+  pod 'MBProgressHUD', '~> 1.1.0'
+  pod 'ActionSheetPicker-3.0'
 ```
 
-You might face an issue when you try installing the sdk manualy while "ENABLE_BITCODE" flag enabled, you will have to include the following script to your `Podfile`:
+You might face an issue when you try to install the SDK manually while "ENABLE_BITCODE" flag enabled, you will have to include the following script to your `Podfile`:
 
 ```ruby
 post_install do |installer|
@@ -79,39 +53,93 @@ end
 ```
 ## Usage
 
-### Pay now
+### Pay with PayTabs
 
-```Swift
+```swift
 let bundle = Bundle(url: Bundle.main.url(forResource: "Resources", withExtension: "bundle")!)
 self.initialSetupViewController = PTFWInitialSetupViewController.init(
     bundle: bundle,
     andWithViewFrame: self.view.frame,
-    andWithAmount: 1.0,
+    andWithAmount: 5.0,
     andWithCustomerTitle: "PayTabs Sample App",
-    andWithCurrencyCode: "SAR",
+    andWithCurrencyCode: "USD",
     andWithTaxAmount: 0.0,
     andWithSDKLanguage: "en",
-    andWithShippingAddress: "Manama",
-    andWithShippingCity: "Manama",
-    andWithShippingCountry: "BHR",
-    andWithShippingState: "Manama",
+    andWithShippingAddress: "Dubai",
+    andWithShippingCity: "Dubai",
+    andWithShippingCountry: "ARE",
+    andWithShippingState: "Dubai",
     andWithShippingZIPCode: "123456",
-    andWithBillingAddress: "Manama",
-    andWithBillingCity: "Manama",
-    andWithBillingCountry: "BHR",
-    andWithBillingState: "Manama",
+    andWithBillingAddress: "Dubai",
+    andWithBillingCity: "Dubai",
+    andWithBillingCountry: "ARE",
+    andWithBillingState: "Dubai",
     andWithBillingZIPCode: "12345",
     andWithOrderID: "12345",
-    andWithPhoneNumber: "0097333109781",
-    andWithCustomerEmail: "test@paytabs.com",
-    andIsTokenization: FALSE,
-    andIsPreAuth: FALSE,
-    andWithMerchantEmail: "",
-    andWithMerchantSecretKey: "",
+    andWithPhoneNumber: "009730000000",
+    andWithCustomerEmail: "test@example.com",
+    andIsTokenization:true,
+    andIsPreAuth: false,
+    andWithMerchantEmail: "test@example.com",
+    andWithMerchantSecretKey: "kuTEjyEMhpVSWTwXBSOSeiiDAeMCOdyeuFZKiXAlhzjSKqswUWAgbCaYFivjvYzCWaWJbRszhjZuEQqsUycVzLddSyMIaZiQLlRqlp",
     andWithAssigneeCode: "SDK",
     andWithThemeColor:UIColor.red,
-    andIsThemeColorLight: TRUE)
+    andIsThemeColorLight: false)
 
+
+self.initialSetupViewController.didReceiveBackButtonCallback = {
+    
+}
+
+self.initialSetupViewController.didStartPreparePaymentPage = {
+    // Start Prepare Payment Page
+    // Show loading indicator
+}
+self.initialSetupViewController.didFinishPreparePaymentPage = {
+    // Finish Prepare Payment Page
+    // Stop loading indicator
+}
+
+self.initialSetupViewController.didReceiveFinishTransactionCallback = {(responseCode, result, transactionID, tokenizedCustomerEmail, tokenizedCustomerPassword, token, transactionState, statementReference, traceCode) in
+    print("Response Code: \(responseCode)")
+    print("Response Result: \(result)")
+    print("Statement Reference: \(statementReference)");
+    print("Trace Code: \(traceCode)");
+    
+    // In Case you are using tokenization
+    print("Tokenization Cutomer Email: \(tokenizedCustomerEmail)");
+    print("Tokenization Customer Password: \(tokenizedCustomerPassword)");
+    print("Tokenization Token: \(token)");
+}
+
+self.view.addSubview(initialSetupViewController.view)
+self.addChild(initialSetupViewController)
+
+initialSetupViewController.didMove(toParent: self)
+
+```
+
+### Pay with Apple Pay
+
+Read the developer document [here][applepaydoc] to learn how to integrate Apple Pay with PayTabs. 
+
+```swift
+let bundle = Bundle(url: Bundle.main.url(forResource: "Resources", withExtension: "bundle")!)
+self.initialSetupViewController = PTFWInitialSetupViewController.init(applePayWith: bundle,
+    andWithViewFrame: view.frame,
+    andWithAmount: 1.0,
+    andWithCustomerTitle: "Pay With Apple Pay",
+    andWithCurrencyCode: "AED",
+    andWithCountryCode: "AE",
+    andWithSDKLanguage: "en",
+    andWithOrderID: "123456",
+    andIsTokenization: true,
+    andIsPreAuth: false,
+    andWithMerchantEmail: "test@example.com",
+    andWithMerchantSecretKey: "kuTEjyEMhpVSWTwXBSOSeiiDAeMCOdyeuFZKiXAlhzjSKqswUWAgbCaYFivjvYzCWaWJbRszhjZddQqsUycVzLSyMIaZiQLlRqlp",
+    andWithMerchantApplePayIdentifier: "merchant.bundleid",
+    andWithSupportedNetworks: [.visa, .masterCard, .amex],
+    andWithAssigneeCode: "SDK")
 
 self.initialSetupViewController.didReceiveBackButtonCallback = {
 
@@ -126,26 +154,35 @@ self.initialSetupViewController.didFinishPreparePaymentPage = {
   // Stop loading indicator
 }
 
-self.initialSetupViewController.didReceiveFinishTransactionCallback = {(responseCode, result, transactionID, tokenizedCustomerEmail, tokenizedCustomerPassword, token, transactionState) in
-  print("Response Code: \(responseCode)")
-  print("Response Result: \(result)")
-  
-  // In Case you are using tokenization
-  print("Tokenization Cutomer Email: \(tokenizedCustomerEmail)");
-  print("Tokenization Customer Password: \(tokenizedCustomerPassword)");
-  print("TOkenization Token: \(token)");
+self.initialSetupViewController.didReceiveFinishTransactionCallback = {(responseCode, result, transactionID, tokenizedCustomerEmail, tokenizedCustomerPassword, token, transactionState, statementReference, traceCode) in
+    print("Response Code: \(responseCode)")
+    print("Response Result: \(result)")
+    print("Statement Reference: \(statementReference)");
+    print("Trace Code: \(traceCode)");
+    
+    // In Case you are using tokenization
+    print("Tokenization Cutomer Email: \(tokenizedCustomerEmail)");
+    print("Tokenization Customer Password: \(tokenizedCustomerPassword)");
+    print("Tokenization Token: \(token)");
 }
 
+self.view.addSubview(initialSetupViewController.view)
+self.addChild(initialSetupViewController)
+initialSetupViewController.didMove(toParent: self)
 ```
 
-Paytabs
--------
+## Demo application
+
+Check our complete [sample][sample].
+
+## Paytabs
 [Support][2] | [Terms of Use][3] | [Privacy Policy][4]
-
-
-
 
  [1]: https://dev.paytabs.com/docs/ios/
  [2]: https://www.paytabs.com/en/support/
  [3]: https://www.paytabs.com/en/terms-of-use/
  [4]: https://www.paytabs.com/en/privacy-policy/
+ [sdk]: https://github.com/paytabscom/paytabs-ios-library-sample/tree/PT2/sources/paytabs-iOS.framework
+ [bundle]: https://github.com/paytabscom/paytabs-ios-library-sample/tree/PT2/sources/Resources.bundle
+ [sample]: https://github.com/paytabscom/paytabs-ios-library-sample/tree/PT2/sample
+ [applepaydoc]: https://dev.paytabs.com/docs/ios/#configure-apple-pay

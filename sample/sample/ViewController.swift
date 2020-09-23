@@ -43,11 +43,11 @@ class ViewController: UIViewController {
             andWithBillingState: "Dubai",
             andWithBillingZIPCode: "12345",
             andWithOrderID: "12345",
-            andWithPhoneNumber: "00201113655936",
-            andWithCustomerEmail: "m.adly@paytabs.com",
+            andWithPhoneNumber: "009730000000",
+            andWithCustomerEmail: "test@example.com",
             andIsTokenization:true,
             andIsPreAuth: false,
-            andWithMerchantEmail: "m.adly@paytabs.com",
+            andWithMerchantEmail: "test@example.com",
             andWithMerchantSecretKey: "kuTEjyEMhpVSWTwXBSOSeiiDAeMCOdyeuFZKiXAlhzjSKqswUWAgbCaYFivjvYzCWaWJbRszhjZuEQqsUycVzLSyMIaZiQLlRqlp",
             andWithAssigneeCode: "SDK",
             andWithThemeColor:UIColor.red,
@@ -87,7 +87,7 @@ class ViewController: UIViewController {
     
     @objc func applePayTap() {
         let bundle = Bundle(url: Bundle.main.url(forResource: "Resources", withExtension: "bundle")!)
-        self.initialSetupViewController = PTFWInitialSetupViewController.init(applePayWith: bundle, andWithViewFrame: view.frame, andWithAmount: 1.0, andWithCustomerTitle: "Pay With Apple Pay", andWithCurrencyCode: "AED", andWithCountryCode: "AE", andWithSDKLanguage: "en", andWithOrderID: "123456", andIsTokenization: true, andIsPreAuth: false, andWithMerchantEmail: "m.adly@paytabs.com", andWithMerchantSecretKey: "kuTEjyEMhpVSWTwXBSOSeiiDAeMCOdyeuFZKiXAlhzjSKqswUWAgbCaYFivjvYzCWaWJbRszhjZuEQqsUycVzLSyMIaZiQLlRqlp", andWithMerchantApplePayIdentifier: "merchant.com.paytabs.sample", andWithSupportedNetworks: [.visa, .masterCard, .amex], andWithAssigneeCode: "SDK")
+        self.initialSetupViewController = PTFWInitialSetupViewController.init(applePayWith: bundle, andWithViewFrame: view.frame, andWithAmount: 1.0, andWithCustomerTitle: "Pay With Apple Pay", andWithCurrencyCode: "AED", andWithCountryCode: "AE", andWithSDKLanguage: "en", andWithOrderID: "123456", andIsTokenization: true, andIsPreAuth: false, andWithMerchantEmail: "test@example.com", andWithMerchantSecretKey: "kuTEjyEMhpVSWTwXBSOSeiiDAeMCOdyeuFZKiXAlhzjSKqswUWAgbdddCaYFivjvYzCWaWJbRszhjZuEQqsUycVzLSyMIaZiQLlRqlp", andWithMerchantApplePayIdentifier: "merchant.bundleId", andWithSupportedNetworks: [.visa, .masterCard, .amex], andWithAssigneeCode: "SDK")
 
         self.initialSetupViewController.didReceiveBackButtonCallback = {
 
