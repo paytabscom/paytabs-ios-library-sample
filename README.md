@@ -1,17 +1,34 @@
 Paytabs iOS SDK Samples
 ========
-![Paytabs-ios-library-v4.0.8](https://img.shields.io/badge/Paytabs%20IOS%20library-v4.0.8-green.svg)
+![Paytabs-ios-library-v4.0.8](https://img.shields.io/badge/Paytabs%20IOS%20library-v4.0.10-green.svg)
 ![xcode-v10.1](https://img.shields.io/badge/xcode-v10.1-green.svg)
 
 For more information please see [the website][1].
 
 
-Download
---------
+## Installation
 
-Download [SDK v4.0.9 Lite version](https://raw.githubusercontent.com/paytabscom/paytabs-ios-library-sample/master/sdk/ios_sdk-v4.0.9-lite.zip)
+### CocoaPods
 
-Download [SDK v4.0.9 OCR version](https://raw.githubusercontent.com/paytabscom/paytabs-ios-library-sample/master/sdk/ios_sdk-v4.0.9-ocr.zip)
+Simply add the following line to your `Podfile`:
+
+#### PayTabs Lite
+
+```ruby
+pod 'PayTabsSDKLite', '~> 4.0.10'
+```
+
+#### PayTabs OCR
+
+```ruby
+pod 'PayTabsSDKOCR', '~> 4.0.10'
+```
+
+### Manual
+
+Download [SDK v4.0.10 Lite version](https://raw.githubusercontent.com/paytabscom/paytabs-ios-library-sample/master/sdk/ios_sdk-v4.0.10-lite.zip)
+
+Download [SDK v4.0.10 OCR version](https://raw.githubusercontent.com/paytabscom/paytabs-ios-library-sample/master/sdk/ios_sdk-v4.0.10-ocr.zip)
 
 
 
@@ -21,8 +38,8 @@ Read the documentation to know how to integrate your application with the librar
 
 Static framework requires at minimum deployment target 9.0.
 
-You have to include the following dependencies in your podfile:
-```groovy
+You have to include the following dependencies in your  `Podfile:
+```ruby
   # Uncomment the next line to define a global platform for your project
   # platform :ios, '9.0'
 
@@ -48,8 +65,22 @@ You have to include the following dependencies in your podfile:
   end
 ```
 
-Pay now
-------------
+You might face an issue when you try installing the sdk manualy while "ENABLE_BITCODE" flag enabled, you will have to include the following script to your `Podfile`:
+
+```ruby
+post_install do |installer|
+    installer.pods_project.targets.each do |target|
+        target.build_configurations.each do |config|
+            config.build_settings['BITCODE_GENERATION_MODE'] = 'bitcode'
+            config.build_settings['ENABLE_BITCODE'] = 'YES'
+        end
+    end
+end
+```
+## Usage
+
+### Pay now
+
 ```Swift
 let bundle = Bundle(url: Bundle.main.url(forResource: "Resources", withExtension: "bundle")!)
 self.initialSetupViewController = PTFWInitialSetupViewController.init(
