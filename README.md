@@ -2,7 +2,7 @@ PayTabs iOS SDK
 ========
 ![Paytabs-ios-library-v4.0.8](https://img.shields.io/badge/Paytabs%20IOS%20library-v4.0.10-green.svg)
 ![xcode-v10.1](https://img.shields.io/badge/xcode-v10.1-green.svg)
-[![CocoaPods](https://img.shields.io/cocoapods/v/PayTabs.svg?style=flat)](hhttps://cocoapods.org/pods/PayTabs)
+[![CocoaPods](https://img.shields.io/cocoapods/v/PayTabs.svg?style=flat)](https://cocoapods.org/pods/PayTabs)
 
 For more information please see [the website][1].
 
