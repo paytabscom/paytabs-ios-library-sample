@@ -2,7 +2,7 @@ Paytabs iOS SDK Samples
 ========
 ![Paytabs-ios-library-v4.0.8](https://img.shields.io/badge/Paytabs%20IOS%20library-v4.0.10-green.svg)
 ![xcode-v10.1](https://img.shields.io/badge/xcode-v10.1-green.svg)
-[![CocoaPods](https://img.shields.io/cocoapods/v/PayTabs.svg?style=flat)](http://cocoapods.org/?q=PayTabs)
+[![CocoaPods](https://img.shields.io/cocoapods/v/PayTabs.svg?style=flat)](hhttps://cocoapods.org/pods/PayTabs)
 
 For more information please see [the website][1].
 
@@ -19,14 +19,12 @@ pod 'PayTabs', '~> 4.1.0'
 
 ### Manual
 
-Download [SDK] [sdk] and [resource bundle][bundle] 
-
-Read the documentation to know how to integrate your application with the library
+Download [SDK][sdk] and [Resource bundle][bundle] then read the documentation to know how to integrate your application with the library
 [documentation](https://dev.paytabs.com/docs/ios/)
 
 Static framework requires at minimum deployment target 9.0.
 
-You have to include the following dependencies in your  `Podfile:
+You have to include the following dependencies in your  `Podfile`:
 ```ruby
   pod 'BIObjCHelpers'
   pod 'AFNetworking', '~> 4.0.1'
