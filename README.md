@@ -1,6 +1,6 @@
 Paytabs iOS SDK Samples
 ========
-![Paytabs-ios-library-v4.0.8](https://img.shields.io/badge/Paytabs%20IOS%20library-v4.0.10-green.svg)
+![Paytabs-ios-library-v4.0.8](https://img.shields.io/badge/Paytabs%20IOS%20library-v4.0.10.rc.1-green.svg)
 ![xcode-v10.1](https://img.shields.io/badge/xcode-v10.1-green.svg)
 
 For more information please see [the website][1].
@@ -12,16 +12,10 @@ For more information please see [the website][1].
 
 Simply add the following line to your `Podfile`:
 
-#### PayTabs Lite
+#### PayTabs SDK
 
 ```ruby
-pod 'PayTabsSDKLite', '~> 4.0.10'
-```
-
-#### PayTabs OCR
-
-```ruby
-pod 'PayTabsSDKOCR', '~> 4.0.10'
+pod 'PayTabsSDK', '~> 4.0.10.rc.1'
 ```
 
 ### Manual
@@ -29,7 +23,6 @@ pod 'PayTabsSDKOCR', '~> 4.0.10'
 Download [SDK v4.0.10 Lite version](https://raw.githubusercontent.com/paytabscom/paytabs-ios-library-sample/master/sdk/ios_sdk-v4.0.10-lite.zip)
 
 Download [SDK v4.0.10 OCR version](https://raw.githubusercontent.com/paytabscom/paytabs-ios-library-sample/master/sdk/ios_sdk-v4.0.10-ocr.zip)
-
 
 
 Read the documentation to know how to integrate your application with the library

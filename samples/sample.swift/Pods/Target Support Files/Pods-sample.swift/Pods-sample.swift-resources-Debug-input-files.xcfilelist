@@ -1,2 +1,2 @@
 ${PODS_ROOT}/Target Support Files/Pods-sample.swift/Pods-sample.swift-resources.sh
-${PODS_ROOT}/../../../sdk_ocr/Resources.bundle
+${PODS_ROOT}/../../../resources/Resources.bundle

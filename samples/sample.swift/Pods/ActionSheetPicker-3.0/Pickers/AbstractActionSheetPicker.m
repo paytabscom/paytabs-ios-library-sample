@@ -171,12 +171,6 @@ CG_INLINE BOOL isIPhone4() {
         self.filter = [CIFilter filterWithName:@"CIGaussianBlur"];
     }
 
-    if (@available(iOS 13.0, *)) {
-        self.pickerBackgroundColor = [UIColor secondarySystemBackgroundColor];
-        [self setTextColor: [UIColor labelColor]];
-        self.titleTextAttributes = @{ NSForegroundColorAttributeName : UIColor.labelColor };
-    }
-
     return self;
 }
 
