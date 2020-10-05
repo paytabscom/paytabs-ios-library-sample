@@ -1,5 +1,5 @@
 Pod::Spec.new do |s|
- s.name         = "PayTabsSDKOCR"
+  s.name         = "PayTabsSDK"
   s.version      = "4.0.10"
   s.summary      = "PayTabs is an online payment gateway."
   s.ios.deployment_target = '9.0'
