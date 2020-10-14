@@ -1,6 +1,6 @@
 Paytabs iOS SDK Samples
 ========
-![Paytabs-ios-library-v4.0.8](https://img.shields.io/badge/Paytabs%20IOS%20library-v4.0.10.rc.1-green.svg)
+![Paytabs-ios-library-v4.0.10](https://img.shields.io/badge/Paytabs%20IOS%20library-v4.0.10.rc.1-green.svg)
 ![xcode-v10.1](https://img.shields.io/badge/xcode-v10.1-green.svg)
 
 For more information please see [the website][1].
@@ -12,18 +12,15 @@ For more information please see [the website][1].
 
 Simply add the following line to your `Podfile`:
 
-#### PayTabs SDK
-
 ```ruby
 pod 'PayTabsSDK', '~> 4.0.10.rc.1'
 ```
 
 ### Manual
 
-Download [SDK v4.0.10 Lite version](https://raw.githubusercontent.com/paytabscom/paytabs-ios-library-sample/master/sdk/ios_sdk-v4.0.10-lite.zip)
+Download [SDK v4.0.10 Lite version](https://github.com/paytabscom/paytabs-ios-library-sample/raw/cocoapods_support/sdk/ios_sdk-v4.0.10-lite.zip)
 
-Download [SDK v4.0.10 OCR version](https://raw.githubusercontent.com/paytabscom/paytabs-ios-library-sample/master/sdk/ios_sdk-v4.0.10-ocr.zip)
-
+Download [SDK v4.0.10 OCR version](https://github.com/paytabscom/paytabs-ios-library-sample/raw/cocoapods_support/sdk/ios_sdk-v4.0.10-ocr.zip)
 
 Read the documentation to know how to integrate your application with the library
 [documentation](https://dev.paytabs.com/docs/ios/)
@@ -33,14 +30,7 @@ Static framework requires at minimum deployment target 9.0.
 
 You have to include the following dependencies in your  `Podfile:
 ```ruby
-  # Uncomment the next line to define a global platform for your project
-  # platform :ios, '9.0'
-
-  target 'sample-run' do
-    # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
-    use_frameworks!
-
-    # Pods for sample-run
+    # Paytabs dependencies
     pod 'BIObjCHelpers'
     pod 'IQKeyboardManager', '~> 4.0.2'
     pod 'AFNetworking', '-> 4.0.1'
@@ -54,8 +44,6 @@ You have to include the following dependencies in your  `Podfile:
 
     # In case if you are using OCR version 
     pod 'PayCardsRecognizer'
-
-  end
 ```
 
 You might face an issue when you try installing the sdk manualy while "ENABLE_BITCODE" flag enabled, you will have to include the following script to your `Podfile`:
