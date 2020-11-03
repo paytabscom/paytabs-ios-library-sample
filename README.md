@@ -1,6 +1,6 @@
 PayTabs iOS SDK
 ========
-![Paytabs-ios-library-v4.1.1](https://img.shields.io/badge/Paytabs%20IOS%20library-v4.1.1-green.svg)
+![Paytabs-ios-library-v4.1.1](https://img.shields.io/badge/Paytabs%20IOS%20library-v4.1.2-green.svg)
 ![xcode-v10.1](https://img.shields.io/badge/xcode-v10.1-green.svg)
 [![CocoaPods](https://img.shields.io/cocoapods/v/PayTabs.svg?style=flat)](http://cocoapods.org/?q=PayTabs)
 
@@ -14,7 +14,7 @@ For more information please see [the website][1].
 Simply add the following line to your `Podfile`:
 
 ```ruby
-pod 'PayTabs', '~> 4.1.1'
+pod 'PayTabs', '~> 4.1.2'
 ```
 
 ### Manual
@@ -81,6 +81,7 @@ self.initialSetupViewController = PTFWInitialSetupViewController.init(
     andIsPreAuth: false,
     andWithMerchantEmail: "test@example.com",
     andWithMerchantSecretKey: "kuTEjyEMhpVSWTwXBSOSeiiDAeMCOdyeuFZKiXAlhzjSKqswUWAgbCaYFivjvYzCWaWJbRszhjZuEQqsUycVzLddSyMIaZiQLlRqlp",
+    andWithMerchantCountryCode: "ae",
     andWithAssigneeCode: "SDK",
     andWithThemeColor:UIColor.red,
     andIsThemeColorLight: false)
@@ -137,7 +138,8 @@ self.initialSetupViewController = PTFWInitialSetupViewController.init(applePayWi
     andWithMerchantEmail: "test@example.com",
     andWithMerchantSecretKey: "kuTEjyEMhpVSWTwXBSOSeiiDAeMCOdyeuFZKiXAlhzjSKqswUWAgbCaYFivjvYzCWaWJbRszhjZddQqsUycVzLSyMIaZiQLlRqlp",
     andWithMerchantApplePayIdentifier: "merchant.bundleid",
-    andWithSupportedNetworks: [.visa, .masterCard, .amex],
+    andWithSupportedNetworks: [.visa, .masterCard, .amex, .mada],
+    andWithMerchantCountryCode: "ae",
     andWithAssigneeCode: "SDK")
 
 self.initialSetupViewController.didReceiveBackButtonCallback = {

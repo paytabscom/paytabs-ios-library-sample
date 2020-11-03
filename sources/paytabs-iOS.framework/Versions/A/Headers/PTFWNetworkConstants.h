@@ -43,10 +43,8 @@ typedef NS_ENUM(NSInteger, PTFWStatusCodes) {
     PTFWPreAuthNotEnabledTransaction                                   = 4047
 };
 
-FOUNDATION_EXTERN NSString *__nonnull const kPTFWNetworkAPIBaseURL;
-FOUNDATION_EXTERN NSString *__nonnull const kPTFWNetworkWebBaseURL;
-
-FOUNDATION_EXTERN NSString *__nonnull PTFWNetworkUserCallCreate(NSString *__nonnull call);
+//NSString * _Nullable kPTFWNetworkAPIBaseURL;
+//NSString * _Nullable kPTFWNetworkWebBaseURL;
 
 extern const struct PTFWNetworkUserCalls {
     __unsafe_unretained NSString * __nonnull validateSecretKey;

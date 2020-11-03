@@ -40,27 +40,12 @@
                            andIsPreAuth: (BOOL)isPreAuth
                    andWithMerchantEmail: (nonnull NSString *)merchantEmail
                andWithMerchantSecretKey: (nonnull NSString *)merchantSecretKey
+              andWithMerchantCountryCode: (nonnull NSString *)merchantCountryCode
                     andWithAssigneeCode: (nonnull NSString *)assigneeCode
                       andWithThemeColor: (nonnull UIColor *)themeColor
                    andIsThemeColorLight: (BOOL)isThemeLight;
-;
 
 // Intialize Apple Pay bottomsheet
-- (nonnull instancetype)initApplePayWithBundle: (NSBundle *_Nullable)nibBundleOrNil
-                               andWithViewFrame: (CGRect)viewFrame
-                                  andWithAmount: (float)amount
-                           andWithCustomerTitle: (nonnull NSString *)customerTitle
-                            andWithCurrencyCode: (nonnull NSString *)currencyCode
-                             andWithCountryCode: (nonnull NSString *)countryCode
-                             andWithSDKLanguage: (nonnull NSString *)sdkLanguage
-                                 andWithOrderID: (nonnull NSString *)orderID
-                                   andIsPreAuth: (BOOL)isPreAuth
-                           andWithMerchantEmail: (nonnull NSString *)merchantEmail
-                       andWithMerchantSecretKey: (nonnull NSString *)merchantSecretKey
-              andWithMerchantApplePayIdentifier: (nonnull NSString *)merchantApplePayIdentifier
-                       andWithSupportedNetworks: (nonnull NSArray<PKPaymentNetwork> *)supportedNetworks
-                            andWithAssigneeCode: (nonnull NSString *)assigneeCode;
-
 - (nonnull instancetype)initApplePayWithBundle:(NSBundle *_Nullable)nibBundleOrNil
                               andWithViewFrame:(CGRect)viewFrame
                                  andWithAmount:(float)amount
@@ -74,6 +59,7 @@
                           andWithMerchantEmail:(nonnull NSString *)merchantEmail
                       andWithMerchantSecretKey:(nonnull NSString *)merchantSecretKey
              andWithMerchantApplePayIdentifier:(nonnull NSString *)merchantApplePayIdentifier andWithSupportedNetworks:(nonnull NSArray<PKPaymentNetwork> *) supportedNetworks
+                    andWithMerchantCountryCode: (nonnull NSString *)merchantCountryCode
                            andWithAssigneeCode:(nonnull NSString *) assigneeCode;
 #pragma mark - Callbacks
 @property (nonatomic, copy, nullable) void(^didReceiveBackButtonCallback)(void);
