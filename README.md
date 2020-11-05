@@ -81,7 +81,7 @@ self.initialSetupViewController = PTFWInitialSetupViewController.init(
     andIsPreAuth: false,
     andWithMerchantEmail: "test@example.com",
     andWithMerchantSecretKey: "kuTEjyEMhpVSWTwXBSOSeiiDAeMCOdyeuFZKiXAlhzjSKqswUWAgbCaYFivjvYzCWaWJbRszhjZuEQqsUycVzLddSyMIaZiQLlRqlp",
-    andWithMerchantCountryCode: "ae",
+    andWithMerchantRegion: "emirates",
     andWithAssigneeCode: "SDK",
     andWithThemeColor:UIColor.red,
     andIsThemeColorLight: false)
@@ -139,7 +139,7 @@ self.initialSetupViewController = PTFWInitialSetupViewController.init(applePayWi
     andWithMerchantSecretKey: "kuTEjyEMhpVSWTwXBSOSeiiDAeMCOdyeuFZKiXAlhzjSKqswUWAgbCaYFivjvYzCWaWJbRszhjZddQqsUycVzLSyMIaZiQLlRqlp",
     andWithMerchantApplePayIdentifier: "merchant.bundleid",
     andWithSupportedNetworks: [.visa, .masterCard, .amex, .mada],
-    andWithMerchantCountryCode: "ae",
+    andWithMerchantRegion: "emirates", //country name
     andWithAssigneeCode: "SDK")
 
 self.initialSetupViewController.didReceiveBackButtonCallback = {

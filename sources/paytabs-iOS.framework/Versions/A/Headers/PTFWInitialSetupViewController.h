@@ -40,7 +40,7 @@
                            andIsPreAuth: (BOOL)isPreAuth
                    andWithMerchantEmail: (nonnull NSString *)merchantEmail
                andWithMerchantSecretKey: (nonnull NSString *)merchantSecretKey
-              andWithMerchantCountryCode: (nonnull NSString *)merchantCountryCode
+              andWithMerchantRegion: (nonnull NSString *)merchantRegion
                     andWithAssigneeCode: (nonnull NSString *)assigneeCode
                       andWithThemeColor: (nonnull UIColor *)themeColor
                    andIsThemeColorLight: (BOOL)isThemeLight;
@@ -59,7 +59,7 @@
                           andWithMerchantEmail:(nonnull NSString *)merchantEmail
                       andWithMerchantSecretKey:(nonnull NSString *)merchantSecretKey
              andWithMerchantApplePayIdentifier:(nonnull NSString *)merchantApplePayIdentifier andWithSupportedNetworks:(nonnull NSArray<PKPaymentNetwork> *) supportedNetworks
-                    andWithMerchantCountryCode: (nonnull NSString *)merchantCountryCode
+                    andWithMerchantRegion: (nonnull NSString *)merchantRegion
                            andWithAssigneeCode:(nonnull NSString *) assigneeCode;
 #pragma mark - Callbacks
 @property (nonatomic, copy, nullable) void(^didReceiveBackButtonCallback)(void);

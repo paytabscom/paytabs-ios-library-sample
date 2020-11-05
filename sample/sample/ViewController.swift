@@ -49,7 +49,7 @@ class ViewController: UIViewController {
             andIsPreAuth: false,
             andWithMerchantEmail: "test@example.com",
             andWithMerchantSecretKey: "kuTEjyEMhpVSWTwXBSOSeiiDAeMCOdyeuFZKiXAlhzjSKqswUWAgbCaYFivjvYzCWaWJbRszhjZuEQqsUycVzLSyMIaZiQLlRqlp",
-            andWithMerchantCountryCode: "ae",
+            andWithMerchantRegion: "emirates",
             andWithAssigneeCode: "SDK",
             andWithThemeColor:UIColor.red,
             andIsThemeColorLight: false)
@@ -88,7 +88,7 @@ class ViewController: UIViewController {
     
     @objc func applePayTap() {
         let bundle = Bundle(url: Bundle.main.url(forResource: "Resources", withExtension: "bundle")!)
-        self.initialSetupViewController = PTFWInitialSetupViewController.init(applePayWith: bundle, andWithViewFrame: view.frame, andWithAmount: 1.0, andWithCustomerTitle: "Pay With Apple Pay", andWithCurrencyCode: "AED", andWithCountryCode: "AE", andWithSDKLanguage: "en", andWithOrderID: "123456", andIsTokenization: true, andIsPreAuth: false, andWithMerchantEmail: "test@example.com", andWithMerchantSecretKey: "kuTEjyEMhpVSWTwXBSOSeiiDAeMCOdyeuFZKiXAlhzjSKqswUWAgbCaYFivjvYzCWaWJbRszhjZuEQqsUycVzLSyMIaZiQLlRqlp", andWithMerchantApplePayIdentifier: "merchant.bundleId", andWithSupportedNetworks: [.visa, .masterCard, .amex], andWithMerchantCountryCode: "ae", andWithAssigneeCode: "SDK")
+        self.initialSetupViewController = PTFWInitialSetupViewController.init(applePayWith: bundle, andWithViewFrame: view.frame, andWithAmount: 1.0, andWithCustomerTitle: "Pay With Apple Pay", andWithCurrencyCode: "AED", andWithCountryCode: "AE", andWithSDKLanguage: "en", andWithOrderID: "123456", andIsTokenization: true, andIsPreAuth: false, andWithMerchantEmail: "test@example.com", andWithMerchantSecretKey: "kuTEjyEMhpVSWTwXBSOSeiiDAeMCOdyeuFZKiXAlhzjSKqswUWAgbCaYFivjvYzCWaWJbRszhjZuEQqsUycVzLSyMIaZiQLlRqlp", andWithMerchantApplePayIdentifier: "merchant.bundleId", andWithSupportedNetworks: [.visa, .masterCard, .amex], andWithMerchantRegion: "emirates", andWithAssigneeCode: "SDK")
 
         self.initialSetupViewController.didReceiveBackButtonCallback = {
 

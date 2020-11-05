@@ -8,6 +8,14 @@
 
 #import <Foundation/Foundation.h>
 
+static NSString * UAE_REGION = @"emirates";
+static NSString * SAUDI_REGION = @"saudi";
+static NSString * EGYPT_REGION = @"egypt";
+static NSString * OMAN_REGION = @"oman";
+static NSString * JORDAN_REGION = @"jordan";
+static NSString * DEMO_REGION = @"demo";
+static NSString * GLOBAL_REGION = @"global";
+
 @interface PTFWStringConstants : NSObject
 
 #pragma mark - XIBs
