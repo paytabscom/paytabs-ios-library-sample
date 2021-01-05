@@ -135,7 +135,7 @@ self.initialSetupViewController = PTFWInitialSetupViewController.init(applePayWi
     andWithCustomerTitle: "Pay With Apple Pay",
     andWithCurrencyCode: "AED",
     andWithCountryCode: "AE",
-    andForceShippingInfo: false
+    andForceShippingInfo: false,
     andWithSDKLanguage: "en",
     andWithOrderID: "123456",
     andIsTokenization: true,
