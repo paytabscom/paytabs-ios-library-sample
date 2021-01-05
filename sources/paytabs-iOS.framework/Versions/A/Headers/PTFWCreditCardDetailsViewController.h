@@ -23,6 +23,7 @@
                     andWithCurrencyCode: (nonnull NSString *)currencyCode
                        andWithTaxAmount: (float)taxAmount
                      andWithSDKLanguage: (nonnull NSString *)sdkLanguage
+                  andIsShippingRequired: (BOOL) isShippingRequired
                  andWithShippingAddress: (nonnull NSString *)shippingAddress
                     andWithShippingCity: (nonnull NSString *)shippingCity
                  andWithShippingCountry: (nonnull NSString *)shippingCountry

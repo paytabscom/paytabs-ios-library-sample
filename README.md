@@ -1,6 +1,6 @@
 PayTabs iOS SDK
 ========
-![Paytabs-ios-library-v4.2.0](https://img.shields.io/badge/Paytabs%20IOS%20library-v4.2.0-green.svg)
+![Paytabs-ios-library-v4.3.0](https://img.shields.io/badge/Paytabs%20IOS%20library-v4.3.0-green.svg)
 ![xcode-v10.1](https://img.shields.io/badge/xcode-v10.1-green.svg)
 [![CocoaPods](https://img.shields.io/cocoapods/v/PayTabs.svg?style=flat)](http://cocoapods.org/?q=PayTabs)
 
@@ -14,7 +14,7 @@ For more information please see [the website][1].
 Simply add the following line to your `Podfile`:
 
 ```ruby
-pod 'PayTabs', '~> 4.2.0'
+pod 'PayTabs', '~> 4.3.0'
 ```
 
 ### Manual
@@ -25,6 +25,7 @@ Download [SDK][sdk] and [Resource bundle][bundle] then read the documentation to
 Static framework requires at minimum deployment target 9.0.
 
 You have to include the following dependencies in your  `Podfile`:
+
 ```ruby
   pod 'BIObjCHelpers'
   pod 'AFNetworking', '~> 4.0.1'
@@ -54,6 +55,38 @@ end
 
 ### Pay with PayTabs
 
+* To skip the shipping info use the following method
+
+```swift
+let bundle = Bundle(url: Bundle.main.url(forResource: "Resources", withExtension: "bundle")!)
+self.initialSetupViewController = PTFWInitialSetupViewController.init(
+    bundle: bundle,
+    andWithViewFrame: self.view.frame,
+    andWithAmount: 5.0,
+    andWithCustomerTitle: "PayTabs Sample App",
+    andWithCurrencyCode: "USD",
+    andWithTaxAmount: 0.0,
+    andWithSDKLanguage: "en",
+    andWithBillingAddress: "Dubai",
+    andWithBillingCity: "Dubai",
+    andWithBillingCountry: "ARE",
+    andWithBillingState: "Dubai",
+    andWithBillingZIPCode: "12345",
+    andWithOrderID: "12345",
+    andWithPhoneNumber: "009730000000",
+    andWithCustomerEmail: "test@example.com",
+    andIsTokenization:true,
+    andIsPreAuth: false,
+    andWithMerchantEmail: "test@example.com",
+    andWithMerchantSecretKey: "kuTEjyEMhpVSWTwXBSOSeiiDAeMCOdyeuFZKiXAlhzjSKqswUWAgbCaYFivjvYzCWaWJbRszhjZuEQqsUycVzLddSyMIaZiQLlRqlp",
+    andWithMerchantRegion: "emirates",
+    andWithAssigneeCode: "SDK",
+    andWithThemeColor:UIColor.red,
+    andIsThemeColorLight: false)
+```
+
+* To pass the billing & shipping info use the following method
+
 ```swift
 let bundle = Bundle(url: Bundle.main.url(forResource: "Resources", withExtension: "bundle")!)
 self.initialSetupViewController = PTFWInitialSetupViewController.init(
@@ -81,12 +114,44 @@ self.initialSetupViewController = PTFWInitialSetupViewController.init(
     andIsPreAuth: false,
     andWithMerchantEmail: "test@example.com",
     andWithMerchantSecretKey: "kuTEjyEMhpVSWTwXBSOSeiiDAeMCOdyeuFZKiXAlhzjSKqswUWAgbCaYFivjvYzCWaWJbRszhjZuEQqsUycVzLddSyMIaZiQLlRqlp",
-    andWithMerchantRegion: "emirates",
+    andWithMerchantRegion: "emirates",//egypt, saudi, oman, jordan
     andWithAssigneeCode: "SDK",
     andWithThemeColor:UIColor.red,
     andIsThemeColorLight: false)
 
+```
 
+### Pay with Apple Pay
+
+Read the developer document [here][applepaydoc] to learn how to integrate Apple Pay with PayTabs. 
+
+Use **andForceShippingInfo** parameter to make the shipping info mandatory or optional.
+
+```swift
+let bundle = Bundle(url: Bundle.main.url(forResource: "Resources", withExtension: "bundle")!)
+self.initialSetupViewController = PTFWInitialSetupViewController.init(applePayWith: bundle,
+    andWithViewFrame: view.frame,
+    andWithAmount: 1.0,
+    andWithCustomerTitle: "Pay With Apple Pay",
+    andWithCurrencyCode: "AED",
+    andWithCountryCode: "AE",
+    andForceShippingInfo: false
+    andWithSDKLanguage: "en",
+    andWithOrderID: "123456",
+    andIsTokenization: true,
+    andIsPreAuth: false,
+    andWithMerchantEmail: "test@example.com",
+    andWithMerchantSecretKey: "kuTEjyEMhpVSWTwXBSOSeiiDAeMCOdyeuFZKiXAlhzjSKqswUWAgbCaYFivjvYzCWaWJbRszhjZddQqsUycVzLSyMIaZiQLlRqlp",
+    andWithMerchantApplePayIdentifier: "merchant.bundleid",
+    andWithSupportedNetworks: [.visa, .masterCard, .amex, .mada],
+    andWithMerchantRegion: "emirates", //egypt, saudi, oman, jordan
+    andWithAssigneeCode: "SDK")
+
+```
+
+### Payment callbacks :
+
+```swift
 self.initialSetupViewController.didReceiveBackButtonCallback = {
     
 }
@@ -118,59 +183,16 @@ self.addChild(initialSetupViewController)
 initialSetupViewController.didMove(toParent: self)
 
 ```
+# Supported Merchant Region
+Pass the parameter `pt_merchant_region` with one value of the below list according to supported region.
 
-### Pay with Apple Pay
-
-Read the developer document [here][applepaydoc] to learn how to integrate Apple Pay with PayTabs. 
-
-```swift
-let bundle = Bundle(url: Bundle.main.url(forResource: "Resources", withExtension: "bundle")!)
-self.initialSetupViewController = PTFWInitialSetupViewController.init(applePayWith: bundle,
-    andWithViewFrame: view.frame,
-    andWithAmount: 1.0,
-    andWithCustomerTitle: "Pay With Apple Pay",
-    andWithCurrencyCode: "AED",
-    andWithCountryCode: "AE",
-    andWithSDKLanguage: "en",
-    andWithOrderID: "123456",
-    andIsTokenization: true,
-    andIsPreAuth: false,
-    andWithMerchantEmail: "test@example.com",
-    andWithMerchantSecretKey: "kuTEjyEMhpVSWTwXBSOSeiiDAeMCOdyeuFZKiXAlhzjSKqswUWAgbCaYFivjvYzCWaWJbRszhjZddQqsUycVzLSyMIaZiQLlRqlp",
-    andWithMerchantApplePayIdentifier: "merchant.bundleid",
-    andWithSupportedNetworks: [.visa, .masterCard, .amex, .mada],
-    andWithMerchantRegion: "emirates", //country name
-    andWithAssigneeCode: "SDK")
-
-self.initialSetupViewController.didReceiveBackButtonCallback = {
-
-}
-
-self.initialSetupViewController.didStartPreparePaymentPage = {
-  // Start Prepare Payment Page
-  // Show loading indicator
-}
-self.initialSetupViewController.didFinishPreparePaymentPage = {
-  // Finish Prepare Payment Page
-  // Stop loading indicator
-}
-
-self.initialSetupViewController.didReceiveFinishTransactionCallback = {(responseCode, result, transactionID, tokenizedCustomerEmail, tokenizedCustomerPassword, token, transactionState, statementReference, traceCode) in
-    print("Response Code: \(responseCode)")
-    print("Response Result: \(result)")
-    print("Statement Reference: \(statementReference)");
-    print("Trace Code: \(traceCode)");
-    
-    // In Case you are using tokenization
-    print("Tokenization Cutomer Email: \(tokenizedCustomerEmail)");
-    print("Tokenization Customer Password: \(tokenizedCustomerPassword)");
-    print("Tokenization Token: \(token)");
-}
-
-self.view.addSubview(initialSetupViewController.view)
-self.addChild(initialSetupViewController)
-initialSetupViewController.didMove(toParent: self)
-```
+* UAE = `emirates`
+* Egypt = `egypt`
+* Saudi Arabia = `saudi`
+* Oman = `oman`
+* Jordan = `jordan`
+* Global =`global`
+* Demo = `demo`
 
 ## Demo application
 

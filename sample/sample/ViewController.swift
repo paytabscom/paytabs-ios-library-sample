@@ -88,7 +88,7 @@ class ViewController: UIViewController {
     
     @objc func applePayTap() {
         let bundle = Bundle(url: Bundle.main.url(forResource: "Resources", withExtension: "bundle")!)
-        self.initialSetupViewController = PTFWInitialSetupViewController.init(applePayWith: bundle, andWithViewFrame: view.frame, andWithAmount: 1.0, andWithCustomerTitle: "Pay With Apple Pay", andWithCurrencyCode: "AED", andWithCountryCode: "AE", andWithSDKLanguage: "en", andWithOrderID: "123456", andIsTokenization: true, andIsPreAuth: false, andWithMerchantEmail: "test@example.com", andWithMerchantSecretKey: "kuTEjyEMhpVSWTwXBSOSeiiDAeMCOdyeuFZKiXAlhzjSKqswUWAgbCaYFivjvYzCWaWJbRszhjZuEQqsUycVzLSyMIaZiQLlRqlp", andWithMerchantApplePayIdentifier: "merchant.bundleId", andWithSupportedNetworks: [.visa, .masterCard, .amex], andWithMerchantRegion: "emirates", andWithAssigneeCode: "SDK")
+        self.initialSetupViewController = PTFWInitialSetupViewController.init(applePayWith: bundle, andWithViewFrame: view.frame, andWithAmount: 1.0, andWithCustomerTitle: "Pay With Apple Pay", andWithCurrencyCode: "AED", andWithCountryCode: "AE", andForceShippingInfo: false, andWithSDKLanguage: "en", andWithOrderID: "123456", andIsTokenization: true, andIsPreAuth: false, andWithMerchantEmail: "test@example.com", andWithMerchantSecretKey: "kuTEjyEMhpVSWTwXBSOSeiiDAeMCOdyeuFZKiXAlhzjSKqswUWAgbCaYFivjvYzCWaWJbRszhjZuEQqsUycVzLSyMIaZiQLlRqlp", andWithMerchantApplePayIdentifier: "merchant.bundleId", andWithSupportedNetworks: [.visa, .masterCard, .amex], andWithMerchantRegion: "emirates", andWithAssigneeCode: "SDK")
 
         self.initialSetupViewController.didReceiveBackButtonCallback = {
 

@@ -35,6 +35,7 @@
                                andWithBillingCountry: (nonnull NSString *)billingCountry
                                  andWithBillingState: (nonnull NSString *)billingState
                                andWithBillingZIPCode: (nonnull NSString *)billingZIPCode
+                               andIsShippingRequired: (BOOL) isShippingRequired
                               andWithShippingAddress: (nonnull NSString *)shippingAddress
                                  andWithShippingCity: (nonnull NSString *)shippingCity
                               andWithShippingCountry: (nonnull NSString *)shippingCountry

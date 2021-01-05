@@ -44,6 +44,7 @@
 @property (nonatomic, assign) float transactionExchangeRate;
 @property (nonatomic, assign) BOOL isTokenization;
 @property (nonatomic, assign) BOOL isExistingCustomer;
+@property (nonatomic, assign) BOOL isShippingRequired;
 
 #pragma mark - Callbacks
 @property (nonatomic, copy, nullable) void(^didFinishSuccessfullyCallback)(PTFWResponsePrepareTransaction *__nonnull responseObject);

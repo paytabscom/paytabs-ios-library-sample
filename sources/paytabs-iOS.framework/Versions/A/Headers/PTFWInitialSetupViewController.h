@@ -17,17 +17,41 @@
 
 // Intialize Paytabs Payment Page
 - (nonnull instancetype)initWithBundle: (NSBundle *_Nullable)nibBundleOrNil
+                      andWithViewFrame: (CGRect)viewFrame
+                         andWithAmount: (float)amount
+                  andWithCustomerTitle: (nonnull NSString *)customerTitle
+                   andWithCurrencyCode: (nonnull NSString *)currencyCode
+                      andWithTaxAmount: (float)taxAmount
+                    andWithSDKLanguage: (nonnull NSString *)sdkLanguage
+                andWithShippingAddress: (nonnull NSString *)shippingAddress
+                   andWithShippingCity: (nonnull NSString *)shippingCity
+                andWithShippingCountry: (nonnull NSString *)shippingCountry
+                  andWithShippingState: (nonnull NSString *)shippingState
+                andWithShippingZIPCode: (nonnull NSString *)shippingZIPCode
+                 andWithBillingAddress: (nonnull NSString *)billingAddress
+                    andWithBillingCity: (nonnull NSString *)billingCity
+                 andWithBillingCountry: (nonnull NSString *)billingCountry
+                   andWithBillingState: (nonnull NSString *)billingState
+                 andWithBillingZIPCode: (nonnull NSString *)billingZIPCode
+                        andWithOrderID: (nonnull NSString *)orderID
+                    andWithPhoneNumber: (nonnull NSString *)phoneNumber
+                  andWithCustomerEmail: (nonnull NSString *)customerEmail
+                     andIsTokenization: (BOOL)isTokenization
+                          andIsPreAuth: (BOOL)isPreAuth
+                  andWithMerchantEmail: (nonnull NSString *)merchantEmail
+              andWithMerchantSecretKey: (nonnull NSString *)merchantSecretKey
+               andWithMerchantRegion: (nonnull NSString *)merchantRegion
+                   andWithAssigneeCode: (nonnull NSString *)assigneeCode
+                     andWithThemeColor: (nonnull UIColor *)themeColor
+                  andIsThemeColorLight: (BOOL)isThemeLight;
+
+- (nonnull instancetype)initWithBundle: (NSBundle *_Nullable)nibBundleOrNil
                        andWithViewFrame: (CGRect)viewFrame
                           andWithAmount: (float)amount
                    andWithCustomerTitle: (nonnull NSString *)customerTitle
                     andWithCurrencyCode: (nonnull NSString *)currencyCode
                        andWithTaxAmount: (float)taxAmount
                      andWithSDKLanguage: (nonnull NSString *)sdkLanguage
-                 andWithShippingAddress: (nonnull NSString *)shippingAddress
-                    andWithShippingCity: (nonnull NSString *)shippingCity
-                 andWithShippingCountry: (nonnull NSString *)shippingCountry
-                   andWithShippingState: (nonnull NSString *)shippingState
-                 andWithShippingZIPCode: (nonnull NSString *)shippingZIPCode
                   andWithBillingAddress: (nonnull NSString *)billingAddress
                      andWithBillingCity: (nonnull NSString *)billingCity
                   andWithBillingCountry: (nonnull NSString *)billingCountry
@@ -40,10 +64,10 @@
                            andIsPreAuth: (BOOL)isPreAuth
                    andWithMerchantEmail: (nonnull NSString *)merchantEmail
                andWithMerchantSecretKey: (nonnull NSString *)merchantSecretKey
-              andWithMerchantRegion: (nonnull NSString *)merchantRegion
+                andWithMerchantRegion: (nonnull NSString *)merchantRegion
                     andWithAssigneeCode: (nonnull NSString *)assigneeCode
                       andWithThemeColor: (nonnull UIColor *)themeColor
-                   andIsThemeColorLight: (BOOL)isThemeLight;
+                  andIsThemeColorLight: (BOOL)isThemeLight;
 
 // Intialize Apple Pay bottomsheet
 - (nonnull instancetype)initApplePayWithBundle:(NSBundle *_Nullable)nibBundleOrNil
@@ -52,9 +76,10 @@
                           andWithCustomerTitle:(nonnull NSString *)customerTitle
                            andWithCurrencyCode:(nonnull NSString *)currencyCode
                             andWithCountryCode:(nonnull NSString *)countryCode
+                          andForceShippingInfo:(BOOL) forceShippingInfo
                             andWithSDKLanguage:(nonnull NSString *)sdkLanguage
                                 andWithOrderID:(nonnull NSString *)orderID
-                             andIsTokenization: (BOOL)isTokenization
+                             andIsTokenization:(BOOL)isTokenization
                                   andIsPreAuth:(BOOL)isPreAuth
                           andWithMerchantEmail:(nonnull NSString *)merchantEmail
                       andWithMerchantSecretKey:(nonnull NSString *)merchantSecretKey
