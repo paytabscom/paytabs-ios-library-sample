@@ -123,7 +123,49 @@ self.initialSetupViewController = PTFWInitialSetupViewController.init(
 
 ### Pay with Apple Pay
 
-Read the developer document [here][applepaydoc] to learn how to integrate Apple Pay with PayTabs. 
+----
+**Apple Pay Guidelines**
+
+The SDK doesn't add the apple pay button, please use [PKPaymentButton](https://developer.apple.com/documentation/passkit/pkpaymentbutton), and call our API once user click the button. You have to add the button according to [Apple human interface guidelines](https://developer.apple.com/design/human-interface-guidelines/apple-pay/overview/buttons-and-marks/).
+
+**Configure Apple Pay**
+
+Check [apple pay requirements](https://developer.apple.com/documentation/passkit/apple_pay/setting_up_apple_pay_requirements) before getting started with configuration.
+
+**Enable Apple Pay in XCode**
+
+1.  In the Project navigator of the main window, select the project (the root group with the same name as your app).
+
+2. In the project editor that appears on the right, select the target.
+
+3. Choose the target for the app from either the Project/Targets pop-up menu or in the Targets section of the outline view.
+
+4. Then click the **Signing & Capabilities** tab in the project editor.
+
+5. Click on ( **+ Capability**) to open the Capabilities library, The choose **Sing in with Apple** and double on it.
+
+![image](https://user-images.githubusercontent.com/69899730/104327365-5c76ae80-54f3-11eb-8fb9-95e66d31a343.png)
+
+5.  Add your merchant identifier ( [You will use it later with andWithMerchantApplePayIdentifier](https://dev1.paytabs.net/docs/docs/ios/#apple-pay))
+
+![image](https://user-images.githubusercontent.com/69899730/104327415-6a2c3400-54f3-11eb-80a1-d57a2f3861dc.png)
+
+**Payment processing certificate**
+
+1. Generate CSR via [PT2 merchant dashboard/ Certificate Management](https://merchant.paytabs.com/merchant/developers/certs) and Download generated CSR on [Apple Pay developer portal](https://developer.apple.com/apple-pay/).
+
+![](https://user-images.githubusercontent.com/69899730/104328421-76fd5780-54f4-11eb-8c38-885e0862748a.png)
+
+2. Download the certificate from Apple pay developer portal and upload it via [PT2 merchant dashboard/ Certificate Management](https://merchant.paytabs.com/merchant/developers/certs) and entering Merchant Identifier.
+
+![](https://user-images.githubusercontent.com/69899730/104328431-782e8480-54f4-11eb-8851-290cd5961dcd.png)
+
+**Apple Pay testing**
+
+To learn how to create Apple Pay sandbox tester and use test cards please visit this link [https://developer.apple.com/apple-pay/sandbox-testing/](https://developer.apple.com/apple-pay/sandbox-testing/)
+
+-----------
+**Now you are ready to start payment with Apple Pay**
 
 Use **andForceShippingInfo** parameter to make the shipping info mandatory or optional.
 
@@ -183,7 +225,7 @@ self.addChild(initialSetupViewController)
 initialSetupViewController.didMove(toParent: self)
 
 ```
-# Supported Merchant Region
+# Supported merchant region
 Pass the parameter `pt_merchant_region` with one value of the below list according to supported region.
 
 * UAE = `emirates`
