@@ -1,6 +1,6 @@
 PayTabs iOS SDK
 ========
-![Paytabs-ios-library-v4.3.0](https://img.shields.io/badge/Paytabs%20IOS%20library-v4.3.0-green.svg)
+![Paytabs-ios-library-v4.3.1](https://img.shields.io/badge/Paytabs%20IOS%20library-v4.3.1-green.svg)
 ![xcode-v10.1](https://img.shields.io/badge/xcode-v10.1-green.svg)
 [![CocoaPods](https://img.shields.io/cocoapods/v/PayTabs.svg?style=flat)](http://cocoapods.org/?q=PayTabs)
 
@@ -14,7 +14,7 @@ For more information please see [the website][1].
 Simply add the following line to your `Podfile`:
 
 ```ruby
-pod 'PayTabs', '~> 4.3.0'
+pod 'PayTabs', '~> 4.3.1'
 ```
 
 ### Manual
