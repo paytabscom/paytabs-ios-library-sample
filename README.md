@@ -247,7 +247,7 @@ Check our complete [sample][sample].
  [2]: https://www.paytabs.com/en/support/
  [3]: https://www.paytabs.com/en/terms-of-use/
  [4]: https://www.paytabs.com/en/privacy-policy/
- [sdk]: https://github.com/paytabscom/paytabs-ios-library-sample/tree/PT2/sources/paytabs-iOS.framework
- [bundle]: https://github.com/paytabscom/paytabs-ios-library-sample/tree/PT2/sources/Resources.bundle
- [sample]: https://github.com/paytabscom/paytabs-ios-library-sample/tree/PT2/sample
+ [sdk]: https://github.com/paytabscom/paytabs-ios-library-sample/tree/master/sources/paytabs-iOS.framework
+ [bundle]: https://github.com/paytabscom/paytabs-ios-library-sample/tree/master/sources/Resources.bundle
+ [sample]: https://github.com/paytabscom/paytabs-ios-library-sample/tree/master/sample
  [applepaydoc]: https://dev.paytabs.com/docs/ios/#configure-apple-pay
