@@ -1,0 +1,8 @@
+/* 
+  Localizable.strings
+  PayTabs
+
+  Created by Mohamed Adly on 11/30/20.
+  Copyright © 2020 PayTabs. All rights reserved.
+*/
+"paytabs_credit_card_screen_title" = "Name on Card";
