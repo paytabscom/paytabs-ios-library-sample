@@ -1,8 +1,8 @@
-![PayTabsSDK-v6.0.0-beta](https://img.shields.io/badge/PayTabsSDK-v6.0.0-beta-green.svg)
+![PayTabsSDK-v6.0.1-beta](https://img.shields.io/badge/PayTabsSDK-v6.0.1-beta-green.svg)
 [![CocoaPods](https://img.shields.io/cocoapods/v/PayTabs.svg?style=flat)](http://cocoapods.org/?q=PayTabsSDK)
 [![Platform](https://img.shields.io/cocoapods/p/PayTabsSDK.svg?style=flat)](https://github.com/paytabscom/paytabs-ios-library-sample/tree/PT2)
 
-#PayTabs SDK
+# PayTabs SDK
 **PayTabs SDk** makes the intergation with PayTabs payment gateway very easy by providing ready made payment screen that handles the credit card entry and billing & shipping info and complete the missing details. 
 
 ## Features
@@ -16,29 +16,29 @@
 * Supporting dark mode.
 
 
-##Requirements
+## Requirements
 * iOS 10.0+
 * Xcode 10.0+
 * [PayTabs Merchant Account](https://merchant.paytabs.com)
 
-##Installation
+## Installation
 
-###CocoaPods
+### CocoaPods
 [CocoaPods](https://cocoapods.org) is a dependency manager for Cocoa projects. For usage and installation instructions, visit their website. To integrate **PayTabs SDK** into your Xcode project using CocoaPods, specify it in your `Podfile`:
 
 ```ruby
-pod 'PayTabsSDK', '~> 6.0.0-beta'
+pod 'PayTabsSDK', '~> 6.0.1-beta'
 ```
-###Carthage
+### Carthage
 [Carthage](https://github.com/Carthage/Carthage) is a decentralized dependency manager that builds your dependencies and provides you with binary frameworks. To integrate **PayTabs SDK** into your Xcode project using Carthage, specify it in your `Cartfile`:
 
 ```ogdl
-github "paytabscom/paytabs-ios-library-sample" ~> 6.0.0-beta
+github "paytabscom/paytabs-ios-library-sample" ~> 6.0.1-beta
 ```
-###Manual
+### Manual
 Follow the below steps:
 
-1. Download the [framework]().
+1. Download the [framework](https://github.com/paytabscom/paytabs-ios-library-sample/tree/PT2/sources/PayTabs.framework).
 2. Navigate to `General` section of your `Target`.
 3. Drag `PayTabs.framework` file to `Frameworks, Libraries, and Embedded Content` section.
 
@@ -157,8 +157,8 @@ Use the following guide to cusomize the colors, font, and logo by configuring th
 ## Localization
 You can use the strings file below to copy the key and add it to your app localizable file and overwrite the value to yours. 
 
-* [English](englishstrings)
-* [Arabic](arabicstrings)
+* [English][englishstrings]
+* [Arabic][arabicstrings]
 
 ## Enums
 
