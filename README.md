@@ -1,5 +1,6 @@
-![PayTabsSDK-v6.0.1-beta](https://img.shields.io/badge/PayTabsSDK-v6.0.1-beta-green.svg)
-[![CocoaPods](https://img.shields.io/cocoapods/v/PayTabs.svg?style=flat)](http://cocoapods.org/?q=PayTabsSDK)
+[![CocoaPods](https://img.shields.io/cocoapods/v/PayTabsSDK.svg?style=flat)](http://cocoapods.org/?q=PayTabsSDK)
+[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
+[![License](https://img.shields.io/cocoapods/l/PayTabsSDK.svg?style=flat)][license]
 [![Platform](https://img.shields.io/cocoapods/p/PayTabsSDK.svg?style=flat)](https://github.com/paytabscom/paytabs-ios-library-sample/tree/PT2)
 
 # PayTabs SDK
@@ -19,7 +20,7 @@
 ## Requirements
 * iOS 10.0+
 * Xcode 10.0+
-* [PayTabs Merchant Account](https://merchant.paytabs.com)
+* Create a [PayTabs](www.paytabs.com) merchant account relative to your country.
 
 ## Installation
 
@@ -27,13 +28,13 @@
 [CocoaPods](https://cocoapods.org) is a dependency manager for Cocoa projects. For usage and installation instructions, visit their website. To integrate **PayTabs SDK** into your Xcode project using CocoaPods, specify it in your `Podfile`:
 
 ```ruby
-pod 'PayTabsSDK', '~> 6.0.1-beta'
+pod 'PayTabsSDK', '~> 6.0.2-beta'
 ```
 ### Carthage
 [Carthage](https://github.com/Carthage/Carthage) is a decentralized dependency manager that builds your dependencies and provides you with binary frameworks. To integrate **PayTabs SDK** into your Xcode project using Carthage, specify it in your `Cartfile`:
 
 ```ogdl
-github "paytabscom/paytabs-ios-library-sample" ~> 6.0.1-beta
+github "paytabscom/paytabs-ios-library-sample" ~> 6.0.2-beta
 ```
 ### Manual
 Follow the below steps:
@@ -141,13 +142,43 @@ PayTabs.startApplePayPayment(on: self,
 							 delegate: self)
 ```
 
+### Delegates
+Here you will receive the transaction details and errors.
 
+```swift
+extension ViewController: PayTabsPaymentDelegate {
+    func paytabs(didFinishTransaction transactionDetails: PayTabsTransactionDetails?, error: Error?) {
+        if let transactionDetails = transactionDetails {
+            print("Response Code: " + (transactionDetails.paymentResult?.responseCode ?? ""))
+            print("Result: " + (transactionDetails.paymentResult?.responseMessage ?? ""))
+            print("Token: " + (transactionDetails.token ?? ""))
+            print("Transaction Reference: " + (transactionDetails.transactionReference ?? ""))
+            print("Transaction Time: " + (transactionDetails.paymentResult?.transactionTime ?? "" ))
+        } else if let error = error {
+            // Handle errors
+        }
+    }
+}
+```
 
-### Demo application
+## Tokenisation
+To enable tokenisation, please follow the below instructions.
 
-Check our complete [example][example].
+1. Request token
 
-<img src="https://user-images.githubusercontent.com/13621658/109432386-905e5280-7a13-11eb-847c-63f2c554e2d1.png" width="370">
+```swift
+configuration.tokeniseType = .userOptinoal // read more about the tokeniseType in the enums section 
+configuration.tokenFormat = .hex32 // read more about the tokenFormat in the enums section  
+
+```
+After passing those parameters, you will receive token and transaction reference in the delegate, save them for future usage.
+
+2. Pass the token & transaction reference
+
+```swift
+configuration.token = token
+configuration.transactionReference = transactionreference
+```
 
 ## Theme
 Use the following guide to cusomize the colors, font, and logo by configuring the theme and pass it to the payment configuration.
@@ -192,6 +223,12 @@ public enum TokenFormat: String {
 }
 ```
 
+## Demo application
+
+Check our complete [example][example].
+
+<img src="https://user-images.githubusercontent.com/13621658/109432386-905e5280-7a13-11eb-847c-63f2c554e2d1.png" width="370">
+
 ## License
 
 See [LICENSE][license].
@@ -200,7 +237,7 @@ See [LICENSE][license].
 
 [Support][1] | [Terms of Use][2] | [Privacy Policy][3]
 
- [1]: https://www.paytabs.com/en/support/
+ [1]: https://support.paytabs.com/
  [2]: https://www.paytabs.com/en/terms-of-use/
  [3]: https://www.paytabs.com/en/privacy-policy/
  [license]: https://github.com/paytabscom/paytabs-ios-library-sample/blob/PT2/LICENSE
