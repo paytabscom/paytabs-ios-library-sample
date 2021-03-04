@@ -103,10 +103,10 @@ let configuration = PaymentSDKConfiguration(profileID: "*your profile id*",
                                     billingDetails: billingDetails)
 ```
 
-3. You are now ready to start payment and handle `PayTabsPaymentDelegate` 
+3. You are now ready to start payment and handle `PaymentSDKDelegate` 
 
 ```swift
-PayTabs.startCardPayment(on: self, 
+PaymentSDK.startCardPayment(on: self, 
 							 configuration: configuration,
 							 delegate: self)
 
