@@ -374,6 +374,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.paytabs.sample;
 				PRODUCT_NAME = "PayTabs Sample";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -404,6 +405,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.paytabs.sample;
 				PRODUCT_NAME = "PayTabs Sample";
 				PROVISIONING_PROFILE_SPECIFIER = "";

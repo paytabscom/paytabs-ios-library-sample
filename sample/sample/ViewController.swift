@@ -6,7 +6,7 @@
 //
 
 import UIKit
-import PayTabs
+import PaymentSDK
 import PassKit
 
 class ViewController: UIViewController {
@@ -31,8 +31,8 @@ class ViewController: UIViewController {
     let serverKey = "server key"
     let clientKey = "client key"
     
-    var billingDetails: PayTabsBillingDetails! {
-        return PayTabsBillingDetails(name: "Mohamed Adly",
+    var billingDetails: PaymentSDKBillingDetails! {
+        return PaymentSDKBillingDetails(name: "Mohamed Adly",
                                      email: "email@test.com",
                                      phone: "+2011111111",
                                      addressLine: "Street1",
@@ -42,8 +42,8 @@ class ViewController: UIViewController {
                                      zip: "12345")
     }
     
-    var shippingDetails: PayTabsShippingDetails! {
-        return PayTabsShippingDetails(name: "Mohamed Adly",
+    var shippingDetails: PaymentSDKShippingDetails! {
+        return PaymentSDKShippingDetails(name: "Mohamed Adly",
                                       email: "email@test.com",
                                       phone: "+201111111",
                                       addressLine: "Street1",
@@ -52,11 +52,11 @@ class ViewController: UIViewController {
                                       countryCode: "eg",
                                       zip: "12345")
     }
-    var configuration: PayTabsConfiguration! {
-        let theme = PayTabsTheme.default
+    var configuration: PaymentSDKConfiguration! {
+        let theme = PaymentSDKTheme.default
         theme.logoImage = UIImage(named: "Logo")
         
-        return PayTabsConfiguration(profileID: profileID,
+        return PaymentSDKConfiguration(profileID: profileID,
                                     serverKey: serverKey,
                                     clientKey: clientKey,
                                     cartID: "12345",
@@ -64,14 +64,14 @@ class ViewController: UIViewController {
                                     amount: 5.0,
                                     cartDescription: "Flowers",
                                     merchantCountryCode: "AE",
-                                    showBillingInfo: true,
+                                    showBillingInfo: false,
                                     screenTitle: "Pay with Card",
                                     billingDetails: billingDetails,
                                     theme: theme)
     }
     
-    var applePayConfiguration: PayTabsConfiguration! {
-        return PayTabsConfiguration(profileID: profileID,
+    var applePayConfiguration: PaymentSDKConfiguration! {
+        return PaymentSDKConfiguration(profileID: profileID,
                                     serverKey: serverKey,
                                     clientKey: clientKey,
                                     cartID: "12345",
@@ -87,12 +87,12 @@ class ViewController: UIViewController {
     }
     
     @IBAction func pay() {
-        PayTabs.startCardPayment(on: self, configuration: configuration,
+        PaymentSDK.startCardPayment(on: self, configuration: configuration,
                                  delegate: self)
     }
     
     @IBAction func payWithApplePay() {
-        PayTabs.startApplePayPayment(on: self,
+        PaymentSDK.startApplePayPayment(on: self,
                                      configuration: applePayConfiguration,
                                      delegate: self)
     }
@@ -105,8 +105,9 @@ class ViewController: UIViewController {
     }
 }
 
-extension ViewController: PayTabsPaymentDelegate {
-    func paytabs(didFinishTransaction transactionDetails: PayTabsTransactionDetails?, error: Error?) {
+extension ViewController: PaymentSDKDelegate {
+    
+    func paymentSDK(didFinishTransaction transactionDetails: PaymentSDKTransactionDetails?, error: Error?) {
         if let transactionDetails = transactionDetails {
             print("Response Code: " + (transactionDetails.paymentResult?.responseCode ?? ""))
             print("Result: " + (transactionDetails.paymentResult?.responseMessage ?? ""))
