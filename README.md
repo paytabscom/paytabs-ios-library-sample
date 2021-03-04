@@ -4,12 +4,12 @@
 [![Platform](https://img.shields.io/cocoapods/p/PayTabsSDK.svg?style=flat)](https://github.com/paytabscom/paytabs-ios-library-sample/tree/PT2)
 
 # PayTabs SDK
-**PayTabs SDk** makes the intergation with PayTabs payment gateway very easy by providing ready made payment screen that handles the credit card entry and billing & shipping info and complete the missing details. 
+**PayTabs SDk** makes the intergation with PayTabs payment gateway very easy by providing ready made payment screen that handles the card entry and billing & shipping info and complete the missing details. 
 
 ## Features
 
-* The SDk offers a ready-made credit card payment screen.
-* **Card Scanner** for quick & easy entry of credit details (iOS 13.0+). 
+* The SDk offers a ready-made card payment screen.
+* **Card Scanner** for quick & easy entry of card details (iOS 13.0+). 
 * Handle the missing required billing and shipping details.
 * Logo, colors, and fonts become easy to be customized.
 * **Apple Pay** supported.
@@ -28,46 +28,46 @@
 [CocoaPods](https://cocoapods.org) is a dependency manager for Cocoa projects. For usage and installation instructions, visit their website. To integrate **PayTabs SDK** into your Xcode project using CocoaPods, specify it in your `Podfile`:
 
 ```ruby
-pod 'PayTabsSDK', '~> 6.0.2-beta'
+pod 'PayTabsSDK', '~> 6.0.3-beta'
 ```
 ### Carthage
 [Carthage](https://github.com/Carthage/Carthage) is a decentralized dependency manager that builds your dependencies and provides you with binary frameworks. To integrate **PayTabs SDK** into your Xcode project using Carthage, specify it in your `Cartfile`:
 
 ```ogdl
-github "paytabscom/paytabs-ios-library-sample" ~> 6.0.2-beta
+github "paytabscom/paytabs-ios-library-sample" ~> 6.0.3-beta
 ```
 ### Manual
 Follow the below steps:
 
-1. Download the [framework](https://github.com/paytabscom/paytabs-ios-library-sample/tree/PT2/sources/PayTabs.framework).
+1. Download the [framework](https://github.com/paytabscom/paytabs-ios-library-sample/tree/PT2/sources/PaymentSDK.framework).
 2. Navigate to `General` section of your `Target`.
-3. Drag `PayTabs.framework` file to `Frameworks, Libraries, and Embedded Content` section.
+3. Drag `PaymentSDK.framework` file to `Frameworks, Libraries, and Embedded Content` section.
 
-![paytabs_manual_installation](https://user-images.githubusercontent.com/13621658/109430655-29d53680-7a0b-11eb-9d51-26c9af281384.jpg)
+![](https://user-images.githubusercontent.com/13621658/109430655-29d53680-7a0b-11eb-9d51-26c9af281384.jpg)
 
 ## Prerequisites
 Before starting the integrations with PayTabs SDK you should check the Prerequisites below:
 
-* To give **Credit Card Scanner** the access permission to the camera, you should add the following key & value to your app `info.plist` file. 
+* To give **Card Scanner** the access permission to the camera, you should add the following key & value to your app `info.plist` file. 
 ```xml
 <key>NSCameraUsageDescription</key>
 <string>Write here your message to the user</string>
 ```
 
 ## Usage
-Import the `PayTabs` in your code
+Import the `PaymentSDK` in your code
 
 ```swift
-import PayTabs
+import PaymentSDK
 
 ```
-### Pay with Credit Card
+### Pay with Card
 
 
 1. Configure the billing & shipping info, the shipping info is optional
 
 ```swift
-let billingDetails = PayTabsBillingDetails(name: "John Smith",
+let billingDetails = PaymentSDKBillingDetails(name: "John Smith",
                                      	   email: "email@test.com",
                                      	   phone: "+2011111111",
                                      	   addressLine: "address",
@@ -76,7 +76,7 @@ let billingDetails = PayTabsBillingDetails(name: "John Smith",
                                            countryCode: "ae", // ISO alpha 2
                                            zip: "12345")
                                                    
-let shippingDetails = PayTabsShippingDetails(name: "John Smith",
+let shippingDetails = PaymentSDKShippingDetails(name: "John Smith",
                                      	   email: "email@test.com",
                                      	   phone: "+2011111111",
                                      	   addressLine: "address",
@@ -87,10 +87,10 @@ let shippingDetails = PayTabsShippingDetails(name: "John Smith",
                                               
 ```
 
-2. Create object of `PayTabsConfiguration` and fill it with your credentials and payment details.
+2. Create object of `PaymentSDKConfiguration` and fill it with your credentials and payment details.
 
 ```
-let configuration = PayTabsConfiguration(profileID: "*your profile id*",
+let configuration = PaymentSDKConfiguration(profileID: "*your profile id*",
                                     serverKey: "*server key*",
                                     clientKey: "*client key*",
                                     cartID: "12345",
@@ -98,7 +98,7 @@ let configuration = PayTabsConfiguration(profileID: "*your profile id*",
                                     amount: 5.0,
                                     cartDescription: "Flowers",
                                     merchantCountryCode: "ae", // ISO alpha 2
-                                    showBillingInfo: true,
+                                    showBillingInfo: false,
                                     screenTitle: "Pay with Card",
                                     billingDetails: billingDetails)
 ```
@@ -114,10 +114,10 @@ PayTabs.startCardPayment(on: self,
 
 ### Pay with Apple Pay
 
-1. Do the steps 1 and 2 from **Pay with Credit Card** although you can ignore Billing & Shipping details and Apple Pay will handle it, also you must pass the **merchant name** and **merchant identifier**.
+1. Do the steps 1 and 2 from **Pay with Card** although you can ignore Billing & Shipping details and Apple Pay will handle it, also you must pass the **merchant name** and **merchant identifier**.
 
 ```
-let configuration = PayTabsConfiguration(profileID: "*your profile id*",
+let configuration = PaymentSDKConfiguration(profileID: "*your profile id*",
                                     serverKey: "*server key*",
                                     clientKey: "*client key*",
                                     cartID: "12345",
@@ -137,7 +137,7 @@ let configuration = PayTabsConfiguration(profileID: "*your profile id*",
 2. Call `startApplePayPayment` to start payment
 
 ```swift
-PayTabs.startApplePayPayment(on: self, 
+PaymentSDK.startApplePayPayment(on: self, 
 							 configuration: configuration,
 							 delegate: self)
 ```
@@ -146,8 +146,8 @@ PayTabs.startApplePayPayment(on: self,
 Here you will receive the transaction details and errors.
 
 ```swift
-extension ViewController: PayTabsPaymentDelegate {
-    func paytabs(didFinishTransaction transactionDetails: PayTabsTransactionDetails?, error: Error?) {
+extension ViewController: PaymentSDKDelegate {
+    func paymentSDK(didFinishTransaction transactionDetails: PaymentSDKTransactionDetails?, error: Error?) {
         if let transactionDetails = transactionDetails {
             print("Response Code: " + (transactionDetails.paymentResult?.responseCode ?? ""))
             print("Result: " + (transactionDetails.paymentResult?.responseMessage ?? ""))
