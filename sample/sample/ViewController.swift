@@ -12,16 +12,16 @@ import PassKit
 class ViewController: UIViewController {
     private let applePayButton = PKPaymentButton(paymentButtonType: .buy, paymentButtonStyle: .whiteOutline)
     @IBOutlet private weak var buttonStackView: UIStackView!
-    @IBOutlet private weak var paytabsButtons: UIButton! {
+    @IBOutlet private weak var payButtons: UIButton! {
         didSet{
-            paytabsButtons.layer.cornerRadius = 6
-            paytabsButtons.layer.borderWidth = 0.5
-            paytabsButtons.layer.borderColor = UIColor.black.cgColor
+            payButtons.layer.cornerRadius = 6
+            payButtons.layer.borderWidth = 0.5
+            payButtons.layer.borderColor = UIColor.black.cgColor
         }
     }
     
     override func viewDidLoad() {
-        self.title = "PayTabs Sample"
+        self.title = "ClickPay Sample"
         super.viewDidLoad()
         applePayButton.addTarget(self, action: #selector(payWithApplePay), for: .touchUpInside)
         buttonStackView.addArrangedSubview(applePayButton)

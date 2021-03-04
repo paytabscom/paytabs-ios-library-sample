@@ -18,11 +18,10 @@
 /* Begin PBXFileReference section */
 		13191A35FCDEFEDB7ADCDD4D /* Pods-PayTabs Sample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PayTabs Sample.release.xcconfig"; path = "Target Support Files/Pods-PayTabs Sample/Pods-PayTabs Sample.release.xcconfig"; sourceTree = "<group>"; };
 		362FC53C3C8632F5FAA655C9 /* Pods-sample.swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sample.swift.debug.xcconfig"; path = "Target Support Files/Pods-sample.swift/Pods-sample.swift.debug.xcconfig"; sourceTree = "<group>"; };
-		40B0A2DD251B871200D8D16F /* PayTabs Sample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "PayTabs Sample.entitlements"; sourceTree = "<group>"; };
 		5F229664F4C242E6E593BA57 /* Pods-PayTabs Sample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PayTabs Sample.debug.xcconfig"; path = "Target Support Files/Pods-PayTabs Sample/Pods-PayTabs Sample.debug.xcconfig"; sourceTree = "<group>"; };
 		9F49F840BC45814038DA315C /* Pods-sample.swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sample.swift.release.xcconfig"; path = "Target Support Files/Pods-sample.swift/Pods-sample.swift.release.xcconfig"; sourceTree = "<group>"; };
 		D50C89D0188086ACBEB0A5E9 /* libPods-PayTabs Sample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PayTabs Sample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		DC6890F32354854100A4F349 /* PayTabs Sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PayTabs Sample.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC6890F32354854100A4F349 /* PaymentSDK Sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PaymentSDK Sample.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC6890F62354854100A4F349 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DC6890F82354854100A4F349 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DC6890FB2354854100A4F349 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -65,7 +64,6 @@
 		DC6890EA2354854100A4F349 = {
 			isa = PBXGroup;
 			children = (
-				40B0A2DD251B871200D8D16F /* PayTabs Sample.entitlements */,
 				DC6890F52354854100A4F349 /* sample */,
 				DC6890F42354854100A4F349 /* Products */,
 				7E6FFD9B90D6D0AB15F98D0B /* Pods */,
@@ -76,7 +74,7 @@
 		DC6890F42354854100A4F349 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				DC6890F32354854100A4F349 /* PayTabs Sample.app */,
+				DC6890F32354854100A4F349 /* PaymentSDK Sample.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -97,9 +95,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		DC6890F22354854100A4F349 /* PayTabs Sample */ = {
+		DC6890F22354854100A4F349 /* PaymentSDK Sample */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DC6891052354854300A4F349 /* Build configuration list for PBXNativeTarget "PayTabs Sample" */;
+			buildConfigurationList = DC6891052354854300A4F349 /* Build configuration list for PBXNativeTarget "PaymentSDK Sample" */;
 			buildPhases = (
 				0FEE324CA21B29FC19AFF04C /* [CP] Check Pods Manifest.lock */,
 				DC6890EF2354854100A4F349 /* Sources */,
@@ -111,9 +109,9 @@
 			);
 			dependencies = (
 			);
-			name = "PayTabs Sample";
+			name = "PaymentSDK Sample";
 			productName = sample.swift;
-			productReference = DC6890F32354854100A4F349 /* PayTabs Sample.app */;
+			productReference = DC6890F32354854100A4F349 /* PaymentSDK Sample.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -145,7 +143,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				DC6890F22354854100A4F349 /* PayTabs Sample */,
+				DC6890F22354854100A4F349 /* PaymentSDK Sample */,
 			);
 		};
 /* End PBXProject section */
@@ -359,7 +357,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_ENTITLEMENTS = "PayTabs Sample.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = E4D8R9ZYJ8;
@@ -375,8 +373,8 @@
 					"@executable_path/Frameworks",
 				);
 				OTHER_LDFLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = com.paytabs.sample;
-				PRODUCT_NAME = "PayTabs Sample";
+				PRODUCT_BUNDLE_IDENTIFIER = com.paymentsdk.sample;
+				PRODUCT_NAME = "PaymentSDK Sample";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -390,7 +388,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_ENTITLEMENTS = "PayTabs Sample.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = E4D8R9ZYJ8;
@@ -406,8 +404,8 @@
 					"@executable_path/Frameworks",
 				);
 				OTHER_LDFLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = com.paytabs.sample;
-				PRODUCT_NAME = "PayTabs Sample";
+				PRODUCT_BUNDLE_IDENTIFIER = com.paymentsdk.sample;
+				PRODUCT_NAME = "PaymentSDK Sample";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -426,7 +424,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DC6891052354854300A4F349 /* Build configuration list for PBXNativeTarget "PayTabs Sample" */ = {
+		DC6891052354854300A4F349 /* Build configuration list for PBXNativeTarget "PaymentSDK Sample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DC6891062354854300A4F349 /* Debug */,

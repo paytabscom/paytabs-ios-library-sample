@@ -46,7 +46,7 @@
                     </view>
                     <connections>
                         <outlet property="buttonStackView" destination="s78-II-fGr" id="Lcb-9r-r8X"/>
-                        <outlet property="paytabsButtons" destination="Zoi-Dh-h69" id="6sa-yK-oyV"/>
+                        <outlet property="payButtons" destination="Zoi-Dh-h69" id="WZY-wA-OO1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

@@ -1,4 +1,4 @@
 
-target 'PayTabs Sample' do
- pod 'PayTabsSDK', '~> 6.0.4-beta'
+target 'PaymentSDK Sample' do
+ pod 'ClickPay', '~> 6.0.5-beta'
 end

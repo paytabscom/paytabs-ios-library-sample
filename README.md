@@ -1,10 +1,10 @@
-[![CocoaPods](https://img.shields.io/cocoapods/v/PayTabsSDK.svg?style=flat)](http://cocoapods.org/?q=PayTabsSDK)
+[![CocoaPods](https://img.shields.io/cocoapods/v/ClickPay.svg?style=flat)](http://cocoapods.org/?q=ClickPay)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
-[![License](https://img.shields.io/cocoapods/l/PayTabsSDK.svg?style=flat)][license]
-[![Platform](https://img.shields.io/cocoapods/p/PayTabsSDK.svg?style=flat)](https://github.com/paytabscom/paytabs-ios-library-sample/tree/PT2)
+[![License](https://img.shields.io/cocoapods/l/ClickPay.svg?style=flat)][license]
+[![Platform](https://img.shields.io/cocoapods/p/ClickPay.svg?style=flat)](https://github.com/paytabscom/paytabs-ios-library-sample/tree/clickpay)
 
-# PayTabs SDK
-**PayTabs SDk** makes the intergation with PayTabs payment gateway very easy by providing ready made payment screen that handles the card entry and billing & shipping info and complete the missing details. 
+# ClickPay SDK
+**ClickPay SDk** makes the intergation with ClickPay payment gateway very easy by providing ready made payment screen that handles the card entry and billing & shipping info and complete the missing details. 
 
 ## Features
 
@@ -25,28 +25,28 @@
 ## Installation
 
 ### CocoaPods
-[CocoaPods](https://cocoapods.org) is a dependency manager for Cocoa projects. For usage and installation instructions, visit their website. To integrate **PayTabs SDK** into your Xcode project using CocoaPods, specify it in your `Podfile`:
+[CocoaPods](https://cocoapods.org) is a dependency manager for Cocoa projects. For usage and installation instructions, visit their website. To integrate **ClickPay SDK** into your Xcode project using CocoaPods, specify it in your `Podfile`:
 
 ```ruby
-pod 'PayTabsSDK', '~> 6.0.4-beta'
+pod 'ClickPay', '~> 6.0.5-beta'
 ```
 ### Carthage
-[Carthage](https://github.com/Carthage/Carthage) is a decentralized dependency manager that builds your dependencies and provides you with binary frameworks. To integrate **PayTabs SDK** into your Xcode project using Carthage, specify it in your `Cartfile`:
+[Carthage](https://github.com/Carthage/Carthage) is a decentralized dependency manager that builds your dependencies and provides you with binary frameworks. To integrate **ClickPay SDK** into your Xcode project using Carthage, specify it in your `Cartfile`:
 
 ```ogdl
-github "paytabscom/paytabs-ios-library-sample" ~> 6.0.4-beta
+github "paytabscom/paytabs-ios-library-sample" ~> 6.0.5-beta
 ```
 ### Manual
 Follow the below steps:
 
-1. Download the [framework](https://github.com/paytabscom/paytabs-ios-library-sample/tree/PT2/sources/PaymentSDK.framework).
+1. Download the [framework](https://github.com/paytabscom/paytabs-ios-library-sample/tree/clickpay/sources/PaymentSDK.framework).
 2. Navigate to `General` section of your `Target`.
 3. Drag `PaymentSDK.framework` file to `Frameworks, Libraries, and Embedded Content` section.
 
 ![](https://user-images.githubusercontent.com/13621658/109430655-29d53680-7a0b-11eb-9d51-26c9af281384.jpg)
 
 ## Prerequisites
-Before starting the integrations with PayTabs SDK you should check the Prerequisites below:
+Before starting the integrations with ClickPay SDK you should check the Prerequisites below:
 
 * To give **Card Scanner** the access permission to the camera, you should add the following key & value to your app `info.plist` file. 
 ```xml
@@ -103,10 +103,10 @@ let configuration = PaymentSDKConfiguration(profileID: "*your profile id*",
                                     billingDetails: billingDetails)
 ```
 
-3. You are now ready to start payment and handle `PayTabsPaymentDelegate` 
+3. You are now ready to start payment and handle `PaymentSDKDelegate` 
 
 ```swift
-PayTabs.startCardPayment(on: self, 
+PaymentSDK.startCardPayment(on: self, 
 							 configuration: configuration,
 							 delegate: self)
 
@@ -233,14 +233,14 @@ Check our complete [example][example].
 
 See [LICENSE][license].
 
-## Paytabs
+## ClickPay
 
 [Support][1] | [Terms of Use][2] | [Privacy Policy][3]
 
  [1]: https://support.paytabs.com/
  [2]: https://www.paytabs.com/en/terms-of-use/
  [3]: https://www.paytabs.com/en/privacy-policy/
- [license]: https://github.com/paytabscom/paytabs-ios-library-sample/blob/PT2/LICENSE
- [example]: https://github.com/paytabscom/paytabs-ios-library-sample/tree/PT2/sample
- [englishstrings]: https://github.com/paytabscom/paytabs-ios-library-sample/tree/PT2/en.strings
- [arabicstrings]: https://github.com/paytabscom/paytabs-ios-library-sample/tree/PT2/ar.strings
+ [license]: https://github.com/paytabscom/paytabs-ios-library-sample/blob/clickpay/LICENSE
+ [example]: https://github.com/paytabscom/paytabs-ios-library-sample/tree/clickpay/sample
+ [englishstrings]: https://github.com/paytabscom/paytabs-ios-library-sample/tree/clickpay/en.strings
+ [arabicstrings]: https://github.com/paytabscom/paytabs-ios-library-sample/tree/clickpay/ar.strings
