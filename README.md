@@ -28,13 +28,13 @@
 [CocoaPods](https://cocoapods.org) is a dependency manager for Cocoa projects. For usage and installation instructions, visit their website. To integrate **ClickPay SDK** into your Xcode project using CocoaPods, specify it in your `Podfile`:
 
 ```ruby
-pod 'ClickPay', '~> 6.0.5-beta'
+pod 'ClickPay', '~> 6.0.7-beta'
 ```
 ### Carthage
 [Carthage](https://github.com/Carthage/Carthage) is a decentralized dependency manager that builds your dependencies and provides you with binary frameworks. To integrate **ClickPay SDK** into your Xcode project using Carthage, specify it in your `Cartfile`:
 
 ```ogdl
-github "paytabscom/paytabs-ios-library-sample" ~> 6.0.5-beta
+github "paytabscom/paytabs-ios-library-sample" ~> 6.0.7-beta
 ```
 ### Manual
 Follow the below steps:
@@ -114,7 +114,9 @@ PaymentSDK.startCardPayment(on: self,
 
 ### Pay with Apple Pay
 
-1. Do the steps 1 and 2 from **Pay with Card** although you can ignore Billing & Shipping details and Apple Pay will handle it, also you must pass the **merchant name** and **merchant identifier**.
+1. Follow the guide [Steps to configure Apple Pay][applepayguide] to learn how to configure ApplePay with ClickPay.
+
+2. Do the steps 1 and 2 from **Pay with Card** although you can ignore Billing & Shipping details and Apple Pay will handle it, also you must pass the **merchant name** and **merchant identifier**.
 
 ```
 let configuration = PaymentSDKConfiguration(profileID: "*your profile id*",
@@ -133,8 +135,9 @@ let configuration = PaymentSDKConfiguration(profileID: "*your profile id*",
                                     
 ```
 
+3. To force ApplePay validation on all user's billing info, pass **forceApplePayValidation** parameter in the configuration with **true**.
 
-2. Call `startApplePayPayment` to start payment
+4. Call `startApplePayPayment` to start payment
 
 ```swift
 PaymentSDK.startApplePayPayment(on: self, 
@@ -244,3 +247,4 @@ See [LICENSE][license].
  [example]: https://github.com/paytabscom/paytabs-ios-library-sample/tree/clickpay/sample
  [englishstrings]: https://github.com/paytabscom/paytabs-ios-library-sample/tree/clickpay/en.strings
  [arabicstrings]: https://github.com/paytabscom/paytabs-ios-library-sample/tree/clickpay/ar.strings
+[applepayguide]: https://github.com/paytabscom/paytabs-ios-library-sample/blob/clickpay/ApplePayConfiguration.md

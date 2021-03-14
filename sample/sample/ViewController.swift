@@ -82,8 +82,7 @@ class ViewController: UIViewController {
                                     merchantCountryCode: "AE",
                                     merchantIdentifier: "merchant.com.bundleID",
                                     paymentNetworks: nil,
-                                    forceShippingInfo: false,
-                                    billingDetails: billingDetails)
+                                    forceShippingInfo: false)
     }
     
     @IBAction func pay() {

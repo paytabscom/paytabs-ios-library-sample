@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "ClickPay"
-  s.version      = "6.0.5-beta"
+  s.version      = "6.0.7-beta"
   s.summary      = "ClickPay is an online payment gateway."
   s.ios.deployment_target = '10.0'
   s.homepage     = "https://github.com/paytabscom/paytabs-ios-library-sample/tree/clickpay"

@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "DC6890F22354854100A4F349"
-               BuildableName = "PayTabs Sample.app"
+               BuildableName = "PaymentSDK Sample.app"
                BlueprintName = "PaymentSDK Sample"
                ReferencedContainer = "container:sample.xcodeproj">
             </BuildableReference>
@@ -45,7 +45,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "DC6890F22354854100A4F349"
-            BuildableName = "PayTabs Sample.app"
+            BuildableName = "PaymentSDK Sample.app"
             BlueprintName = "PaymentSDK Sample"
             ReferencedContainer = "container:sample.xcodeproj">
          </BuildableReference>
@@ -62,7 +62,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "DC6890F22354854100A4F349"
-            BuildableName = "PayTabs Sample.app"
+            BuildableName = "PaymentSDK Sample.app"
             BlueprintName = "PaymentSDK Sample"
             ReferencedContainer = "container:sample.xcodeproj">
          </BuildableReference>
