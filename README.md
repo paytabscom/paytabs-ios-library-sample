@@ -28,20 +28,20 @@
 [CocoaPods](https://cocoapods.org) is a dependency manager for Cocoa projects. For usage and installation instructions, visit their website. To integrate **PayTabs SDK** into your Xcode project using CocoaPods, specify it in your `Podfile`:
 
 ```ruby
-pod 'PayTabsSDK', '~> 6.0.9-beta'
+pod 'PayTabsSDK', '~> 6.0.10-beta'
 ```
 ### Carthage
 [Carthage](https://github.com/Carthage/Carthage) is a decentralized dependency manager that builds your dependencies and provides you with binary frameworks. To integrate **PayTabs SDK** into your Xcode project using Carthage, specify it in your `Cartfile`:
 
 ```ogdl
-github "paytabscom/paytabs-ios-library-sample" ~> 6.0.9-beta
+github "paytabscom/paytabs-ios-library-sample" ~> 6.0.10-beta
 ```
 ### Manual
 Follow the below steps:
 
-1. Download the [framework](https://github.com/paytabscom/paytabs-ios-library-sample/tree/PT2/sources/PaymentSDK.framework).
+1. Download the [framework](https://github.com/paytabscom/paytabs-ios-library-sample/tree/PT2/sources/PaymentSDK.xcframework).
 2. Navigate to `General` section of your `Target`.
-3. Drag `PaymentSDK.framework` file to `Frameworks, Libraries, and Embedded Content` section.
+3. Drag `PaymentSDK.xcframework` file to `Frameworks, Libraries, and Embedded Content` section.
 
 ![](https://user-images.githubusercontent.com/13621658/109430655-29d53680-7a0b-11eb-9d51-26c9af281384.jpg)
 
@@ -103,10 +103,10 @@ let configuration = PaymentSDKConfiguration(profileID: "*your profile id*",
                                     billingDetails: billingDetails)
 ```
 
-3. You are now ready to start payment and handle `PaymentSDKDelegate` 
+3. You are now ready to start payment and handle `PaymentManagerDelegate` 
 
 ```swift
-PaymentSDK.startCardPayment(on: self, 
+PaymentManager.startCardPayment(on: self, 
 							 configuration: configuration,
 							 delegate: self)
 
@@ -143,7 +143,7 @@ configuration.simplifyApplePayValidation = true
 4. Call `startApplePayPayment` to start payment
 
 ```swift
-PaymentSDK.startApplePayPayment(on: self, 
+PaymentManager.startApplePayPayment(on: self, 
 							 configuration: configuration,
 							 delegate: self)
 ```
@@ -152,8 +152,8 @@ PaymentSDK.startApplePayPayment(on: self,
 Here you will receive the transaction details and errors.
 
 ```swift
-extension ViewController: PaymentSDKDelegate {
-    func paymentSDK(didFinishTransaction transactionDetails: PaymentSDKTransactionDetails?, error: Error?) {
+extension ViewController: PaymentManagerDelegate {
+    func paymentManager(didFinishTransaction transactionDetails: PaymentSDKTransactionDetails?, error: Error?) {
         if let transactionDetails = transactionDetails {
             print("Response Code: " + (transactionDetails.paymentResult?.responseCode ?? ""))
             print("Result: " + (transactionDetails.paymentResult?.responseMessage ?? ""))
