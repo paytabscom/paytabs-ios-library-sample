@@ -20,7 +20,7 @@
 ## Requirements
 * iOS 10.0+
 * Xcode 10.0+
-* Create a [ClickPay](www.paytabs.com) merchant account relative to your country.
+* Create a [ClickPay](https://merchant.clickpay.com.sa) merchant account relative to your country.
 
 ## Installation
 
@@ -41,9 +41,9 @@ Follow the below steps:
 
 1. Download the [framework](https://github.com/paytabscom/paytabs-ios-library-sample/tree/clickpay/sources/PaymentSDK.xcframework).
 2. Navigate to `General` section of your `Target`.
-3. Drag `PaymentSDK.framework` file to `Frameworks, Libraries, and Embedded Content` section.
+3. Drag `PaymentSDK.xcframework` file to `Frameworks, Libraries, and Embedded Content` section.
 
-![](https://user-images.githubusercontent.com/13621658/109430655-29d53680-7a0b-11eb-9d51-26c9af281384.jpg)
+![](https://user-images.githubusercontent.com/13621658/113698051-564c3480-96d4-11eb-8a87-4b9f646e2b5d.png)
 
 ## Prerequisites
 Before starting the integrations with ClickPay SDK you should check the Prerequisites below:
