@@ -20,7 +20,7 @@
 ## Requirements
 * iOS 10.0+
 * Xcode 10.0+
-* Create a [PayTabs](www.paytabs.com) merchant account relative to your country.
+* Create a [ClickPay](www.paytabs.com) merchant account relative to your country.
 
 ## Installation
 
@@ -28,18 +28,18 @@
 [CocoaPods](https://cocoapods.org) is a dependency manager for Cocoa projects. For usage and installation instructions, visit their website. To integrate **ClickPay SDK** into your Xcode project using CocoaPods, specify it in your `Podfile`:
 
 ```ruby
-pod 'ClickPay', '~> 6.0.7-beta'
+pod 'ClickPay', '~> 6.0.12'
 ```
 ### Carthage
 [Carthage](https://github.com/Carthage/Carthage) is a decentralized dependency manager that builds your dependencies and provides you with binary frameworks. To integrate **ClickPay SDK** into your Xcode project using Carthage, specify it in your `Cartfile`:
 
 ```ogdl
-github "paytabscom/paytabs-ios-library-sample" ~> 6.0.7-beta
+github "paytabscom/paytabs-ios-library-sample" ~> 6.0.12
 ```
 ### Manual
 Follow the below steps:
 
-1. Download the [framework](https://github.com/paytabscom/paytabs-ios-library-sample/tree/clickpay/sources/PaymentSDK.framework).
+1. Download the [framework](https://github.com/paytabscom/paytabs-ios-library-sample/tree/clickpay/sources/PaymentSDK.xcframework).
 2. Navigate to `General` section of your `Target`.
 3. Drag `PaymentSDK.framework` file to `Frameworks, Libraries, and Embedded Content` section.
 
@@ -103,10 +103,10 @@ let configuration = PaymentSDKConfiguration(profileID: "*your profile id*",
                                     billingDetails: billingDetails)
 ```
 
-3. You are now ready to start payment and handle `PaymentSDKDelegate` 
+3. You are now ready to start payment and handle `PaymentManagerDelegate` 
 
 ```swift
-PaymentSDK.startCardPayment(on: self, 
+PaymentManager.startCardPayment(on: self, 
 							 configuration: configuration,
 							 delegate: self)
 
@@ -130,8 +130,7 @@ let configuration = PaymentSDKConfiguration(profileID: "*your profile id*",
                                     merchantCountryCode: "ae", // ISO alpha 2
                                     merchantIdentifier: "merchant.com.bundleID",
                                     paymentNetworks: nil,
-                                    forceShippingInfo: false,
-                                    billingDetails: billingDetails)
+                                    forceShippingInfo: false)
                                     
 ```
 
@@ -140,7 +139,7 @@ let configuration = PaymentSDKConfiguration(profileID: "*your profile id*",
 4. Call `startApplePayPayment` to start payment
 
 ```swift
-PaymentSDK.startApplePayPayment(on: self, 
+PaymentManager.startApplePayPayment(on: self, 
 							 configuration: configuration,
 							 delegate: self)
 ```
@@ -149,8 +148,8 @@ PaymentSDK.startApplePayPayment(on: self,
 Here you will receive the transaction details and errors.
 
 ```swift
-extension ViewController: PaymentSDKDelegate {
-    func paymentSDK(didFinishTransaction transactionDetails: PaymentSDKTransactionDetails?, error: Error?) {
+extension ViewController: PaymentManagerDelegate {
+    func paymentManager(didFinishTransaction transactionDetails: PaymentSDKTransactionDetails?, error: Error?) {
         if let transactionDetails = transactionDetails {
             print("Response Code: " + (transactionDetails.paymentResult?.responseCode ?? ""))
             print("Result: " + (transactionDetails.paymentResult?.responseMessage ?? ""))
