@@ -86,12 +86,12 @@ class ViewController: UIViewController {
     }
     
     @IBAction func pay() {
-        PaymentSDK.startCardPayment(on: self, configuration: configuration,
+        PaymentManager.startCardPayment(on: self, configuration: configuration,
                                  delegate: self)
     }
     
     @IBAction func payWithApplePay() {
-        PaymentSDK.startApplePayPayment(on: self,
+        PaymentManager.startApplePayPayment(on: self,
                                      configuration: applePayConfiguration,
                                      delegate: self)
     }
@@ -104,9 +104,8 @@ class ViewController: UIViewController {
     }
 }
 
-extension ViewController: PaymentSDKDelegate {
-    
-    func paymentSDK(didFinishTransaction transactionDetails: PaymentSDKTransactionDetails?, error: Error?) {
+extension ViewController: PaymentManagerDelegate {
+    func paymentManager(didFinishTransaction transactionDetails: PaymentSDKTransactionDetails?, error: Error?) {
         if let transactionDetails = transactionDetails {
             print("Response Code: " + (transactionDetails.paymentResult?.responseCode ?? ""))
             print("Result: " + (transactionDetails.paymentResult?.responseMessage ?? ""))
