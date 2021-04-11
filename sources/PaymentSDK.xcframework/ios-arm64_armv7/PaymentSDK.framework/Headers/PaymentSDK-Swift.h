@@ -298,6 +298,7 @@ SWIFT_CLASS("_TtC10PaymentSDK14PaymentManager")
 @end
 
 
+
 @class PaymentSDKTransactionDetails;
 @class UIViewController;
 
@@ -645,6 +646,7 @@ SWIFT_CLASS("_TtC10PaymentSDK14PaymentManager")
 @interface PaymentManager : NSObject
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
+
 
 
 @class PaymentSDKTransactionDetails;
