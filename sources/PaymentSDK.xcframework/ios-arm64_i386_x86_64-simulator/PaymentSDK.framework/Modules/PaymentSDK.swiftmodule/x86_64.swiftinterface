@@ -455,9 +455,9 @@ public enum TokeniseType : Swift.Int, Swift.Codable, Swift.CaseIterable {
     get
   }
 }
-public enum AlternativePaymentMethod : Swift.String {
+public enum AlternativePaymentMethod : Swift.String, Swift.CaseIterable {
+  case card
   case mada
-  case ruPay
   case unionPay
   case stcPay
   case valu
@@ -465,12 +465,15 @@ public enum AlternativePaymentMethod : Swift.String {
   case omannet
   case knet
   case fawry
-  case sadad
-  case googlePay
   case knetdebit
+  public static func getType(type: Swift.String) -> PaymentSDK.AlternativePaymentMethod?
   public typealias RawValue = Swift.String
   public init?(rawValue: Swift.String)
   public var rawValue: Swift.String {
+    get
+  }
+  public typealias AllCases = [PaymentSDK.AlternativePaymentMethod]
+  public static var allCases: [PaymentSDK.AlternativePaymentMethod] {
     get
   }
 }
