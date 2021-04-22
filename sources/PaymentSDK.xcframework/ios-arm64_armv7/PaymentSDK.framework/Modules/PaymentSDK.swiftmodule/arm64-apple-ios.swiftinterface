@@ -403,7 +403,7 @@ extension CountryPickerView {
   public func getCountryByPhoneCode(_ phoneCode: Swift.String) -> PaymentSDK.Country?
   public func getCountryByCode(_ code: Swift.String) -> PaymentSDK.Country?
 }
-public enum TransactionType : Swift.String {
+public enum TransactionType : Swift.String, Swift.CaseIterable {
   case sale
   case authorize
   public typealias RawValue = Swift.String
@@ -411,13 +411,21 @@ public enum TransactionType : Swift.String {
   public var rawValue: Swift.String {
     get
   }
+  public typealias AllCases = [PaymentSDK.TransactionType]
+  public static var allCases: [PaymentSDK.TransactionType] {
+    get
+  }
 }
-public enum TransactionClass : Swift.String {
+public enum TransactionClass : Swift.String, Swift.CaseIterable {
   case ecom
   case recur
   public typealias RawValue = Swift.String
   public init?(rawValue: Swift.String)
   public var rawValue: Swift.String {
+    get
+  }
+  public typealias AllCases = [PaymentSDK.TransactionClass]
+  public static var allCases: [PaymentSDK.TransactionClass] {
     get
   }
 }
