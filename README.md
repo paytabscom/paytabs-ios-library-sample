@@ -1,7 +1,7 @@
 [![CocoaPods](https://img.shields.io/cocoapods/v/PayTabsSDK.svg?style=flat)](http://cocoapods.org/?q=PayTabsSDK)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 [![License](https://img.shields.io/cocoapods/l/PayTabsSDK.svg?style=flat)][license]
-[![Platform](https://img.shields.io/cocoapods/p/PayTabsSDK.svg?style=flat)](https://github.com/paytabscom/paytabs-ios-library-sample/tree/PT2)
+[![Platform](https://img.shields.io/cocoapods/p/PayTabsSDK.svg?style=flat)](https://github.com/paytabscom/paytabs-ios-library-sample/tree/master)
 
 # PayTabs SDK
 **PayTabs SDk** makes the intergation with PayTabs payment gateway very easy by providing ready made payment screen that handles the card entry and billing & shipping info and complete the missing details. 
@@ -28,22 +28,22 @@
 [CocoaPods](https://cocoapods.org) is a dependency manager for Cocoa projects. For usage and installation instructions, visit their website. To integrate **PayTabs SDK** into your Xcode project using CocoaPods, specify it in your `Podfile`:
 
 ```ruby
-pod 'PayTabsSDK', '~> 6.0.19'
+pod 'PayTabsSDK', '~> 6.0.21'
 ```
 ### Carthage
 [Carthage](https://github.com/Carthage/Carthage) is a decentralized dependency manager that builds your dependencies and provides you with binary frameworks. To integrate **PayTabs SDK** into your Xcode project using Carthage, specify it in your `Cartfile`:
 
 ```ogdl
-github "paytabscom/paytabs-ios-library-sample" ~> 6.0.19
+github "paytabscom/paytabs-ios-library-sample" ~> 6.0.21
 ```
 ### Manual
 Follow the below steps:
 
-1. Download the [framework](https://github.com/paytabscom/paytabs-ios-library-sample/tree/PT2/sources/PaymentSDK.xcframework).
+1. Download the [framework](https://github.com/paytabscom/paytabs-ios-library-sample/tree/master/sources/PaymentSDK.xcframework).
 2. Navigate to `General` section of your `Target`.
 3. Drag `PaymentSDK.xcframework` file to `Frameworks, Libraries, and Embedded Content` section.
 
-![](https://user-images.githubusercontent.com/13621658/109430655-29d53680-7a0b-11eb-9d51-26c9af281384.jpg)
+![](https://user-images.githubusercontent.com/13621658/117570428-5623c800-b0ca-11eb-9cd0-5e786ce7ec41.png)
 
 ## Prerequisites
 Before starting the integrations with PayTabs SDK you should check the Prerequisites below:
@@ -229,6 +229,21 @@ public enum TokenFormat: String {
 }
 ```
 
+* Transaction Type
+
+The default type is sale
+
+```swift
+public enum TransactionType: String, CaseIterable {
+    case sale
+    case authorize = "auth"
+}
+```
+
+```swift
+configuration.transactionType = .sale
+```
+
 ## Demo application
 
 Check our complete [example][example].
@@ -246,8 +261,8 @@ See [LICENSE][license].
  [1]: https://support.paytabs.com/
  [2]: https://www.paytabs.com/en/terms-of-use/
  [3]: https://www.paytabs.com/en/privacy-policy/
- [license]: https://github.com/paytabscom/paytabs-ios-library-sample/blob/PT2/LICENSE
- [example]: https://github.com/paytabscom/paytabs-ios-library-sample/tree/PT2/sample
- [englishstrings]: https://github.com/paytabscom/paytabs-ios-library-sample/tree/PT2/en.strings
- [arabicstrings]: https://github.com/paytabscom/paytabs-ios-library-sample/tree/PT2/ar.strings
- [applepayguide]: https://github.com/paytabscom/paytabs-ios-library-sample/blob/PT2/ApplePayConfiguration.md
+ [license]: https://github.com/paytabscom/paytabs-ios-library-sample/blob/master/LICENSE
+ [example]: https://github.com/paytabscom/paytabs-ios-library-sample/tree/master/sample
+ [englishstrings]: https://github.com/paytabscom/paytabs-ios-library-sample/tree/master/en.strings
+ [arabicstrings]: https://github.com/paytabscom/paytabs-ios-library-sample/tree/master/ar.strings
+ [applepayguide]: https://github.com/paytabscom/paytabs-ios-library-sample/blob/master/ApplePayConfiguration.md
