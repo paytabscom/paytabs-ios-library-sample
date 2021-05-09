@@ -1,9 +1,9 @@
 Pod::Spec.new do |s|
   s.name         = "PayTabs"
-  s.version      = "4.3.2"
+  s.version      = "4.3.3"
   s.summary      = "PayTabs is an online payment gateway."
   s.ios.deployment_target = '9.0'
-  s.homepage     = "https://github.com/paytabscom/paytabs-ios-library-sample/tree/master"
+  s.homepage     = "https://github.com/paytabscom/paytabs-ios-library-sample/tree/pt2_emulator"
   s.license      = "MIT"
   s.author       = { "PayTabs" => "m.adly@paytabs.com" }
   s.source   = { :git => 'https://github.com/paytabscom/paytabs-ios-library-sample.git', :tag => s.version.to_s }

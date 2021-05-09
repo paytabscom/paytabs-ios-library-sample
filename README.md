@@ -1,6 +1,6 @@
 PayTabs iOS SDK
 ========
-![Paytabs-ios-library-v4.3.2](https://img.shields.io/badge/Paytabs%20IOS%20library-v4.3.2-green.svg)
+![Paytabs-ios-library-v4.3.3](https://img.shields.io/badge/Paytabs%20IOS%20library-v4.3.3-green.svg)
 ![xcode-v10.1](https://img.shields.io/badge/xcode-v10.1-green.svg)
 [![CocoaPods](https://img.shields.io/cocoapods/v/PayTabs.svg?style=flat)](http://cocoapods.org/?q=PayTabs)
 
@@ -14,7 +14,7 @@ For more information please see [the website][1].
 Simply add the following line to your `Podfile`:
 
 ```ruby
-pod 'PayTabs', '~> 4.3.2'
+pod 'PayTabs', '~> 4.3.3'
 ```
 
 ### Manual
@@ -247,7 +247,7 @@ Check our complete [sample][sample].
  [2]: https://www.paytabs.com/en/support/
  [3]: https://www.paytabs.com/en/terms-of-use/
  [4]: https://www.paytabs.com/en/privacy-policy/
- [sdk]: https://github.com/paytabscom/paytabs-ios-library-sample/tree/master/sources/paytabs-iOS.framework
- [bundle]: https://github.com/paytabscom/paytabs-ios-library-sample/tree/master/sources/Resources.bundle
- [sample]: https://github.com/paytabscom/paytabs-ios-library-sample/tree/master/sample
+ [sdk]: https://github.com/paytabscom/paytabs-ios-library-sample/tree/pt2_emulator/sources/paytabs-iOS.framework
+ [bundle]: https://github.com/paytabscom/paytabs-ios-library-sample/tree/pt2_emulator/sources/Resources.bundle
+ [sample]: https://github.com/paytabscom/paytabs-ios-library-sample/tree/pt2_emulator/sample
  [applepaydoc]: https://dev.paytabs.com/docs/ios/#configure-apple-pay

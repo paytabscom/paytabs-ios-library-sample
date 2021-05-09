@@ -1,6 +1,6 @@
 
 target 'PayTabs Sample' do
- pod 'PayTabs', '~> 4.3.2'
+ pod 'PayTabs', '~> 4.3.3'
 end
 
 #To enable bitcode flag
