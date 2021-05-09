@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D6E2DFAB55BC904B232BC40C /* libPods-PayTabs Sample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D50C89D0188086ACBEB0A5E9 /* libPods-PayTabs Sample.a */; };
+		9DFA8A6E4037BF58D54B45D5 /* libPods-PayTabs Sample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 514C132188699F9079E7C9D9 /* libPods-PayTabs Sample.a */; };
 		DC6890F72354854100A4F349 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6890F62354854100A4F349 /* AppDelegate.swift */; };
 		DC6890F92354854100A4F349 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6890F82354854100A4F349 /* ViewController.swift */; };
 		DC6890FC2354854100A4F349 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC6890FA2354854100A4F349 /* Main.storyboard */; };
@@ -16,13 +16,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		13191A35FCDEFEDB7ADCDD4D /* Pods-PayTabs Sample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PayTabs Sample.release.xcconfig"; path = "Target Support Files/Pods-PayTabs Sample/Pods-PayTabs Sample.release.xcconfig"; sourceTree = "<group>"; };
-		362FC53C3C8632F5FAA655C9 /* Pods-sample.swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sample.swift.debug.xcconfig"; path = "Target Support Files/Pods-sample.swift/Pods-sample.swift.debug.xcconfig"; sourceTree = "<group>"; };
-		40B0A2D9251B835000D8D16F /* PayTabs Sample-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PayTabs Sample-Bridging-Header.h"; sourceTree = "<group>"; };
+		0D6F6517458BB0DB9CC8036F /* Pods-PayTabs Sample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PayTabs Sample.debug.xcconfig"; path = "Target Support Files/Pods-PayTabs Sample/Pods-PayTabs Sample.debug.xcconfig"; sourceTree = "<group>"; };
 		40B0A2DD251B871200D8D16F /* PayTabs Sample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "PayTabs Sample.entitlements"; sourceTree = "<group>"; };
-		5F229664F4C242E6E593BA57 /* Pods-PayTabs Sample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PayTabs Sample.debug.xcconfig"; path = "Target Support Files/Pods-PayTabs Sample/Pods-PayTabs Sample.debug.xcconfig"; sourceTree = "<group>"; };
-		9F49F840BC45814038DA315C /* Pods-sample.swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sample.swift.release.xcconfig"; path = "Target Support Files/Pods-sample.swift/Pods-sample.swift.release.xcconfig"; sourceTree = "<group>"; };
-		D50C89D0188086ACBEB0A5E9 /* libPods-PayTabs Sample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PayTabs Sample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		514C132188699F9079E7C9D9 /* libPods-PayTabs Sample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PayTabs Sample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A30F063AE6263105DB168312 /* Pods-PayTabs Sample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PayTabs Sample.release.xcconfig"; path = "Target Support Files/Pods-PayTabs Sample/Pods-PayTabs Sample.release.xcconfig"; sourceTree = "<group>"; };
 		DC6890F32354854100A4F349 /* PayTabs Sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PayTabs Sample.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC6890F62354854100A4F349 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DC6890F82354854100A4F349 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -37,17 +34,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D6E2DFAB55BC904B232BC40C /* libPods-PayTabs Sample.a in Frameworks */,
+				9DFA8A6E4037BF58D54B45D5 /* libPods-PayTabs Sample.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1D87BDEADE0BB39F07E0A49A /* Frameworks */ = {
+		00D9C02E6C0034E5FA8EEDC0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				D50C89D0188086ACBEB0A5E9 /* libPods-PayTabs Sample.a */,
+				514C132188699F9079E7C9D9 /* libPods-PayTabs Sample.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -55,10 +52,8 @@
 		7E6FFD9B90D6D0AB15F98D0B /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				362FC53C3C8632F5FAA655C9 /* Pods-sample.swift.debug.xcconfig */,
-				9F49F840BC45814038DA315C /* Pods-sample.swift.release.xcconfig */,
-				5F229664F4C242E6E593BA57 /* Pods-PayTabs Sample.debug.xcconfig */,
-				13191A35FCDEFEDB7ADCDD4D /* Pods-PayTabs Sample.release.xcconfig */,
+				0D6F6517458BB0DB9CC8036F /* Pods-PayTabs Sample.debug.xcconfig */,
+				A30F063AE6263105DB168312 /* Pods-PayTabs Sample.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -70,7 +65,7 @@
 				DC6890F52354854100A4F349 /* sample */,
 				DC6890F42354854100A4F349 /* Products */,
 				7E6FFD9B90D6D0AB15F98D0B /* Pods */,
-				1D87BDEADE0BB39F07E0A49A /* Frameworks */,
+				00D9C02E6C0034E5FA8EEDC0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -91,7 +86,6 @@
 				DC6890FD2354854300A4F349 /* Assets.xcassets */,
 				DC6890FF2354854300A4F349 /* LaunchScreen.storyboard */,
 				DC6891022354854300A4F349 /* Info.plist */,
-				40B0A2D9251B835000D8D16F /* PayTabs Sample-Bridging-Header.h */,
 			);
 			path = sample;
 			sourceTree = "<group>";
@@ -103,11 +97,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DC6891052354854300A4F349 /* Build configuration list for PBXNativeTarget "PayTabs Sample" */;
 			buildPhases = (
-				0FEE324CA21B29FC19AFF04C /* [CP] Check Pods Manifest.lock */,
+				FC8810A24C757BCAFDCC35B8 /* [CP] Check Pods Manifest.lock */,
 				DC6890EF2354854100A4F349 /* Sources */,
 				DC6890F02354854100A4F349 /* Frameworks */,
 				DC6890F12354854100A4F349 /* Resources */,
-				7DEF1F595A7376E210FA1C2A /* [CP] Copy Pods Resources */,
+				1AD6FE0FFD00C54AF9E73C64 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -166,7 +160,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0FEE324CA21B29FC19AFF04C /* [CP] Check Pods Manifest.lock */ = {
+		1AD6FE0FFD00C54AF9E73C64 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PayTabs Sample/Pods-PayTabs Sample-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PayTabs Sample/Pods-PayTabs Sample-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PayTabs Sample/Pods-PayTabs Sample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FC8810A24C757BCAFDCC35B8 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -186,23 +197,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		7DEF1F595A7376E210FA1C2A /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-PayTabs Sample/Pods-PayTabs Sample-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-PayTabs Sample/Pods-PayTabs Sample-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PayTabs Sample/Pods-PayTabs Sample-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -357,7 +351,7 @@
 		};
 		DC6891062354854300A4F349 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5F229664F4C242E6E593BA57 /* Pods-PayTabs Sample.debug.xcconfig */;
+			baseConfigurationReference = 0D6F6517458BB0DB9CC8036F /* Pods-PayTabs Sample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -371,15 +365,15 @@
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/sample/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.paytabs.sample;
 				PRODUCT_NAME = "PayTabs Sample";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_OBJC_BRIDGING_HEADER = "sample/PayTabs Sample-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -388,7 +382,7 @@
 		};
 		DC6891072354854300A4F349 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 13191A35FCDEFEDB7ADCDD4D /* Pods-PayTabs Sample.release.xcconfig */;
+			baseConfigurationReference = A30F063AE6263105DB168312 /* Pods-PayTabs Sample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -402,15 +396,15 @@
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/sample/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.paytabs.sample;
 				PRODUCT_NAME = "PayTabs Sample";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_OBJC_BRIDGING_HEADER = "sample/PayTabs Sample-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

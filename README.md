@@ -1,253 +1,268 @@
-PayTabs iOS SDK
-========
-![Paytabs-ios-library-v4.3.3](https://img.shields.io/badge/Paytabs%20IOS%20library-v4.3.3-green.svg)
-![xcode-v10.1](https://img.shields.io/badge/xcode-v10.1-green.svg)
-[![CocoaPods](https://img.shields.io/cocoapods/v/PayTabs.svg?style=flat)](http://cocoapods.org/?q=PayTabs)
+[![CocoaPods](https://img.shields.io/cocoapods/v/PayTabsSDK.svg?style=flat)](http://cocoapods.org/?q=PayTabsSDK)
+[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
+[![License](https://img.shields.io/cocoapods/l/PayTabsSDK.svg?style=flat)][license]
+[![Platform](https://img.shields.io/cocoapods/p/PayTabsSDK.svg?style=flat)](https://github.com/paytabscom/paytabs-ios-library-sample/tree/master)
 
-For more information please see [the website][1].
+# PayTabs SDK
+**PayTabs SDk** makes the intergation with PayTabs payment gateway very easy by providing ready made payment screen that handles the card entry and billing & shipping info and complete the missing details. 
 
+## Features
+
+* The SDk offers a ready-made card payment screen.
+* **Card Scanner** for quick & easy entry of card details (iOS 13.0+). 
+* Handle the missing required billing and shipping details.
+* Logo, colors, and fonts become easy to be customized.
+* **Apple Pay** supported.
+* The SDK size became very light because we removed all the third-party dependencies.
+* Supporting dark mode.
+
+
+## Requirements
+* iOS 10.0+, Swift 5.0+
+* Xcode 10.0+
+* Create a [PayTabs](www.paytabs.com) merchant account relative to your country.
 
 ## Installation
 
 ### CocoaPods
-
-Simply add the following line to your `Podfile`:
+[CocoaPods](https://cocoapods.org) is a dependency manager for Cocoa projects. For usage and installation instructions, visit their website. To integrate **PayTabs SDK** into your Xcode project using CocoaPods, specify it in your `Podfile`:
 
 ```ruby
-pod 'PayTabs', '~> 4.3.3'
+pod 'PayTabsSDK', '~> 6.0.21'
 ```
+### Carthage
+[Carthage](https://github.com/Carthage/Carthage) is a decentralized dependency manager that builds your dependencies and provides you with binary frameworks. To integrate **PayTabs SDK** into your Xcode project using Carthage, specify it in your `Cartfile`:
 
+```ogdl
+github "paytabscom/paytabs-ios-library-sample" ~> 6.0.21
+```
 ### Manual
+Follow the below steps:
 
-Download [SDK][sdk] and [Resource bundle][bundle] then read the documentation to know how to integrate your application with the library
-[documentation](https://dev.paytabs.com/docs/ios/)
+1. Download the [framework](https://github.com/paytabscom/paytabs-ios-library-sample/tree/master/sources/PaymentSDK.xcframework).
+2. Navigate to `General` section of your `Target`.
+3. Drag `PaymentSDK.xcframework` file to `Frameworks, Libraries, and Embedded Content` section.
 
-Static framework requires at minimum deployment target 9.0.
+![](https://user-images.githubusercontent.com/13621658/117570428-5623c800-b0ca-11eb-9cd0-5e786ce7ec41.png)
 
-You have to include the following dependencies in your  `Podfile`:
+## Prerequisites
+Before starting the integrations with PayTabs SDK you should check the Prerequisites below:
 
-```ruby
-  pod 'BIObjCHelpers'
-  pod 'AFNetworking', '~> 4.0.1'
-  pod 'Mantle'
-  pod 'Reachability'
-  pod 'Lockbox'
-  pod 'SBJson'
-  pod 'PINCache'
-  pod 'CardIO'
-  pod 'MBProgressHUD', '~> 1.1.0'
-  pod 'ActionSheetPicker-3.0'
+* To give **Card Scanner** the access permission to the camera, you should add the following key & value to your app `info.plist` file. 
+```xml
+<key>NSCameraUsageDescription</key>
+<string>Write here your message to the user</string>
 ```
 
-You might face an issue when you try to install the SDK manually while "ENABLE_BITCODE" flag enabled, you will have to include the following script to your `Podfile`:
-
-```ruby
-post_install do |installer|
-    installer.pods_project.targets.each do |target|
-        target.build_configurations.each do |config|
-            config.build_settings['BITCODE_GENERATION_MODE'] = 'bitcode'
-            config.build_settings['ENABLE_BITCODE'] = 'YES'
-        end
-    end
-end
-```
 ## Usage
-
-### Pay with PayTabs
-
-* To skip the shipping info use the following method
+Import the `PaymentSDK` in your code
 
 ```swift
-let bundle = Bundle(url: Bundle.main.url(forResource: "Resources", withExtension: "bundle")!)
-self.initialSetupViewController = PTFWInitialSetupViewController.init(
-    bundle: bundle,
-    andWithViewFrame: self.view.frame,
-    andWithAmount: 5.0,
-    andWithCustomerTitle: "PayTabs Sample App",
-    andWithCurrencyCode: "USD",
-    andWithTaxAmount: 0.0,
-    andWithSDKLanguage: "en",
-    andWithBillingAddress: "Dubai",
-    andWithBillingCity: "Dubai",
-    andWithBillingCountry: "ARE",
-    andWithBillingState: "Dubai",
-    andWithBillingZIPCode: "12345",
-    andWithOrderID: "12345",
-    andWithPhoneNumber: "009730000000",
-    andWithCustomerEmail: "test@example.com",
-    andIsTokenization:true,
-    andIsPreAuth: false,
-    andWithMerchantEmail: "test@example.com",
-    andWithMerchantSecretKey: "kuTEjyEMhpVSWTwXBSOSeiiDAeMCOdyeuFZKiXAlhzjSKqswUWAgbCaYFivjvYzCWaWJbRszhjZuEQqsUycVzLddSyMIaZiQLlRqlp",
-    andWithMerchantRegion: "emirates", //egypt, saudi, oman, jordan
-    andWithAssigneeCode: "SDK",
-    andWithThemeColor:UIColor.red,
-    andIsThemeColorLight: false)
+import PaymentSDK
+
+```
+### Pay with Card
+
+
+1. Configure the billing & shipping info, the shipping info is optional
+
+```swift
+let billingDetails = PaymentSDKBillingDetails(name: "John Smith",
+                                     	   email: "email@test.com",
+                                     	   phone: "+2011111111",
+                                     	   addressLine: "address",
+                                     	   city: "Dubai",
+                                           state: "Dubai",
+                                           countryCode: "ae", // ISO alpha 2
+                                           zip: "12345")
+                                                   
+let shippingDetails = PaymentSDKShippingDetails(name: "John Smith",
+                                     	   email: "email@test.com",
+                                     	   phone: "+2011111111",
+                                     	   addressLine: "address",
+                                     	   city: "Dubai",
+                                           state: "Dubai",
+                                           countryCode: "ae", // ISO alpha 2
+                                           zip: "12345")
+                                              
 ```
 
-* To pass the billing & shipping info use the following method
+2. Create object of `PaymentSDKConfiguration` and fill it with your credentials and payment details.
+
+```
+let configuration = PaymentSDKConfiguration(profileID: "*your profile id*",
+                                    serverKey: "*server key*",
+                                    clientKey: "*client key*",
+                                    cartID: "12345",
+                                    currency: "AED",
+                                    amount: 5.0,
+                                    cartDescription: "Flowers",
+                                    merchantCountryCode: "ae", // ISO alpha 2
+                                    showBillingInfo: false,
+                                    screenTitle: "Pay with Card",
+                                    billingDetails: billingDetails)
+```
+
+3. You are now ready to start payment and handle `PaymentManagerDelegate` 
 
 ```swift
-let bundle = Bundle(url: Bundle.main.url(forResource: "Resources", withExtension: "bundle")!)
-self.initialSetupViewController = PTFWInitialSetupViewController.init(
-    bundle: bundle,
-    andWithViewFrame: self.view.frame,
-    andWithAmount: 5.0,
-    andWithCustomerTitle: "PayTabs Sample App",
-    andWithCurrencyCode: "USD",
-    andWithTaxAmount: 0.0,
-    andWithSDKLanguage: "en",
-    andWithShippingAddress: "Dubai",
-    andWithShippingCity: "Dubai",
-    andWithShippingCountry: "ARE",
-    andWithShippingState: "Dubai",
-    andWithShippingZIPCode: "123456",
-    andWithBillingAddress: "Dubai",
-    andWithBillingCity: "Dubai",
-    andWithBillingCountry: "ARE",
-    andWithBillingState: "Dubai",
-    andWithBillingZIPCode: "12345",
-    andWithOrderID: "12345",
-    andWithPhoneNumber: "009730000000",
-    andWithCustomerEmail: "test@example.com",
-    andIsTokenization:true,
-    andIsPreAuth: false,
-    andWithMerchantEmail: "test@example.com",
-    andWithMerchantSecretKey: "kuTEjyEMhpVSWTwXBSOSeiiDAeMCOdyeuFZKiXAlhzjSKqswUWAgbCaYFivjvYzCWaWJbRszhjZuEQqsUycVzLddSyMIaZiQLlRqlp",
-    andWithMerchantRegion: "emirates", //egypt, saudi, oman, jordan
-    andWithAssigneeCode: "SDK",
-    andWithThemeColor:UIColor.red,
-    andIsThemeColorLight: false)
+PaymentManager.startCardPayment(on: self, 
+							 configuration: configuration,
+							 delegate: self)
 
 ```
 
 ### Pay with Apple Pay
 
-----
-**Apple Pay Guidelines**
+1. Follow the guide [Steps to configure Apple Pay][applepayguide] to learn how to configure ApplePay with PayTabs.
 
-The SDK doesn't add the apple pay button, please use [PKPaymentButton](https://developer.apple.com/documentation/passkit/pkpaymentbutton), and call our API once user click the button. You have to add the button according to [Apple human interface guidelines](https://developer.apple.com/design/human-interface-guidelines/apple-pay/overview/buttons-and-marks/).
-
-**Configure Apple Pay**
-
-Check [apple pay requirements](https://developer.apple.com/documentation/passkit/apple_pay/setting_up_apple_pay_requirements) before getting started with configuration.
-
-**Enable Apple Pay in XCode**
-
-1.  In the Project navigator of the main window, select the project (the root group with the same name as your app).
-
-2. In the project editor that appears on the right, select the target.
-
-3. Choose the target for the app from either the Project/Targets pop-up menu or in the Targets section of the outline view.
-
-4. Then click the **Signing & Capabilities** tab in the project editor.
-
-5. Click on ( **+ Capability**) to open the Capabilities library, The choose **Sing in with Apple** and double on it.
-
-![image](https://user-images.githubusercontent.com/69899730/104327365-5c76ae80-54f3-11eb-8fb9-95e66d31a343.png)
-
-5.  Add your merchant identifier ( [You will use it later with andWithMerchantApplePayIdentifier](https://dev1.paytabs.net/docs/docs/ios/#apple-pay))
-
-![image](https://user-images.githubusercontent.com/69899730/104327415-6a2c3400-54f3-11eb-80a1-d57a2f3861dc.png)
-
-**Payment processing certificate**
-
-1. Generate CSR via [PT2 merchant dashboard/ Certificate Management](https://merchant.paytabs.com/merchant/developers/certs) and Download generated CSR on [Apple Pay developer portal](https://developer.apple.com/apple-pay/).
-
-![](https://user-images.githubusercontent.com/69899730/104328421-76fd5780-54f4-11eb-8c38-885e0862748a.png)
-
-2. Download the certificate from Apple pay developer portal and upload it via [PT2 merchant dashboard/ Certificate Management](https://merchant.paytabs.com/merchant/developers/certs) and entering Merchant Identifier.
-
-![](https://user-images.githubusercontent.com/69899730/104328431-782e8480-54f4-11eb-8851-290cd5961dcd.png)
-
-**Apple Pay testing**
-
-To learn how to create Apple Pay sandbox tester and use test cards please visit this link [https://developer.apple.com/apple-pay/sandbox-testing/](https://developer.apple.com/apple-pay/sandbox-testing/)
-
------------
-**Now you are ready to start payment with Apple Pay**
-
-Use **andForceShippingInfo** parameter to make the shipping info mandatory or optional.
-
-```swift
-let bundle = Bundle(url: Bundle.main.url(forResource: "Resources", withExtension: "bundle")!)
-self.initialSetupViewController = PTFWInitialSetupViewController.init(applePayWith: bundle,
-    andWithViewFrame: view.frame,
-    andWithAmount: 1.0,
-    andWithCustomerTitle: "Pay With Apple Pay",
-    andWithCurrencyCode: "AED",
-    andWithCountryCode: "AE",
-    andForceShippingInfo: false,
-    andWithSDKLanguage: "en",
-    andWithOrderID: "123456",
-    andIsTokenization: true,
-    andIsPreAuth: false,
-    andWithMerchantEmail: "test@example.com",
-    andWithMerchantSecretKey: "kuTEjyEMhpVSWTwXBSOSeiiDAeMCOdyeuFZKiXAlhzjSKqswUWAgbCaYFivjvYzCWaWJbRszhjZddQqsUycVzLSyMIaZiQLlRqlp",
-    andWithMerchantApplePayIdentifier: "merchant.bundleid",
-    andWithSupportedNetworks: [.visa, .masterCard, .amex, .mada],
-    andWithMerchantRegion: "emirates", //egypt, saudi, oman, jordan
-    andWithAssigneeCode: "SDK")
+2. Do the steps 1 and 2 from **Pay with Card** although you can ignore Billing & Shipping details and Apple Pay will handle it, also you must pass the **merchant name** and **merchant identifier**.
 
 ```
+let configuration = PaymentSDKConfiguration(profileID: "*your profile id*",
+                                    serverKey: "*server key*",
+                                    clientKey: "*client key*",
+                                    cartID: "12345",
+                                    currency: "AED",
+                                    amount: 5.0,
+                                    merchantName: "Flowers Store",
+                                    cartDescription: "Flowers",
+                                    merchantCountryCode: "ae", // ISO alpha 2
+                                    merchantIdentifier: "merchant.com.bundleID",
+                                    paymentNetworks: nil,
+                                    forceShippingInfo: false)
+                                    
+```
 
-### Payment callbacks :
+3. To simplify ApplePay validation on all user's billing info, pass **simplifyApplePayValidation** parameter in the configuration with **true**.
 
 ```swift
-self.initialSetupViewController.didReceiveBackButtonCallback = {
-    
-}
+configuration.simplifyApplePayValidation = true
+```
 
-self.initialSetupViewController.didStartPreparePaymentPage = {
-    // Start Prepare Payment Page
-    // Show loading indicator
-}
-self.initialSetupViewController.didFinishPreparePaymentPage = {
-    // Finish Prepare Payment Page
-    // Stop loading indicator
-}
+4. Call `startApplePayPayment` to start payment
 
-self.initialSetupViewController.didReceiveFinishTransactionCallback = {(responseCode, result, transactionID, tokenizedCustomerEmail, tokenizedCustomerPassword, token, transactionState, statementReference, traceCode) in
-    print("Response Code: \(responseCode)")
-    print("Response Result: \(result)")
-    print("Statement Reference: \(statementReference)");
-    print("Trace Code: \(traceCode)");
-    
-    // In Case you are using tokenization
-    print("Tokenization Cutomer Email: \(tokenizedCustomerEmail)");
-    print("Tokenization Customer Password: \(tokenizedCustomerPassword)");
-    print("Tokenization Token: \(token)");
+```swift
+PaymentManager.startApplePayPayment(on: self, 
+							 configuration: configuration,
+							 delegate: self)
+```
+
+### Delegates
+Here you will receive the transaction details and errors.
+
+```swift
+extension ViewController: PaymentManagerDelegate {
+    func paymentManager(didFinishTransaction transactionDetails: PaymentSDKTransactionDetails?, error: Error?) {
+        if let transactionDetails = transactionDetails {
+            print("Response Code: " + (transactionDetails.paymentResult?.responseCode ?? ""))
+            print("Result: " + (transactionDetails.paymentResult?.responseMessage ?? ""))
+            print("Token: " + (transactionDetails.token ?? ""))
+            print("Transaction Reference: " + (transactionDetails.transactionReference ?? ""))
+            print("Transaction Time: " + (transactionDetails.paymentResult?.transactionTime ?? "" ))
+        } else if let error = error {
+            // Handle errors
+        }
+    }
 }
+```
 
-self.view.addSubview(initialSetupViewController.view)
-self.addChild(initialSetupViewController)
+## Tokenisation
+To enable tokenisation, please follow the below instructions.
 
-initialSetupViewController.didMove(toParent: self)
+1. Request token
+
+```swift
+configuration.tokeniseType = .userOptinoal // read more about the tokeniseType in the enums section 
+configuration.tokenFormat = .hex32 // read more about the tokenFormat in the enums section  
 
 ```
-# Supported merchant region
-Pass the parameter `pt_merchant_region` with one value of the below list according to supported region.
+After passing those parameters, you will receive token and transaction reference in the delegate, save them for future usage.
 
-* UAE = `emirates`
-* Egypt = `egypt`
-* Saudi Arabia = `saudi`
-* Oman = `oman`
-* Jordan = `jordan`
-* Global =`global`
-* Demo = `demo`
+2. Pass the token & transaction reference
+
+```swift
+configuration.token = token
+configuration.transactionReference = transactionreference
+```
+
+## Theme
+Use the following guide to cusomize the colors, font, and logo by configuring the theme and pass it to the payment configuration.
+
+![UI guide](https://user-images.githubusercontent.com/13621658/109432213-d7981380-7a12-11eb-9224-c8fc12b0024d.jpg)
+
+## Localization
+You can use the strings file below to copy the key and add it to your app localizable file and overwrite the value to yours. 
+
+* [English][englishstrings]
+* [Arabic][arabicstrings]
+
+## Enums
+
+Those enums will help you in customizing your configuration.
+
+* Tokenise types
+
+ The default type is none
+
+```swift
+public enum TokeniseType: Int, Codable {
+    case none // tokenise is off
+    case merchantMandatory // tokenise is forced
+    case userMandatory // tokenise is forced as per user approval
+    case userOptinoal // tokenise if optional as per user approval
+}
+```
+
+* Token formats
+
+The default format is hex32
+
+```swift
+public enum TokenFormat: String {
+    case none = "1"
+    case hex32 = "2"
+    case alphaNum20 = "3"
+    case digit22 = "4"
+    case digit16 = "5"
+    case alphaNum32 = "6"
+}
+```
+
+* Transaction Type
+
+The default type is sale
+
+```swift
+public enum TransactionType: String, CaseIterable {
+    case sale
+    case authorize = "auth"
+}
+```
+
+```swift
+configuration.transactionType = .sale
+```
 
 ## Demo application
 
-Check our complete [sample][sample].
+Check our complete [example][example].
+
+<img src="https://user-images.githubusercontent.com/13621658/109432386-905e5280-7a13-11eb-847c-63f2c554e2d1.png" width="370">
+
+## License
+
+See [LICENSE][license].
 
 ## Paytabs
-[Support][2] | [Terms of Use][3] | [Privacy Policy][4]
 
- [1]: https://dev.paytabs.com/docs/ios/
- [2]: https://www.paytabs.com/en/support/
- [3]: https://www.paytabs.com/en/terms-of-use/
- [4]: https://www.paytabs.com/en/privacy-policy/
- [sdk]: https://github.com/paytabscom/paytabs-ios-library-sample/tree/pt2_emulator/sources/paytabs-iOS.framework
- [bundle]: https://github.com/paytabscom/paytabs-ios-library-sample/tree/pt2_emulator/sources/Resources.bundle
- [sample]: https://github.com/paytabscom/paytabs-ios-library-sample/tree/pt2_emulator/sample
- [applepaydoc]: https://dev.paytabs.com/docs/ios/#configure-apple-pay
+[Support][1] | [Terms of Use][2] | [Privacy Policy][3]
+
+ [1]: https://support.paytabs.com/
+ [2]: https://www.paytabs.com/en/terms-of-use/
+ [3]: https://www.paytabs.com/en/privacy-policy/
+ [license]: https://github.com/paytabscom/paytabs-ios-library-sample/blob/master/LICENSE
+ [example]: https://github.com/paytabscom/paytabs-ios-library-sample/tree/master/sample
+ [englishstrings]: https://github.com/paytabscom/paytabs-ios-library-sample/tree/master/en.strings
+ [arabicstrings]: https://github.com/paytabscom/paytabs-ios-library-sample/tree/master/ar.strings
+ [applepayguide]: https://github.com/paytabscom/paytabs-ios-library-sample/blob/master/ApplePayConfiguration.md

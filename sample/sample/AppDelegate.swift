@@ -1,9 +1,8 @@
 //
 //  AppDelegate.swift
-//  sample.swift
+//  Sample
 //
-//  Created by Ramy Sabry on 10/14/19.
-//  Copyright © 2019 Paytabs. All rights reserved.
+//  Created by Mohamed Adly on 10/11/20.
 //
 
 import UIKit
@@ -43,4 +42,3 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
 }
-
