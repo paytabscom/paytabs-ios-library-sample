@@ -43,7 +43,7 @@ Follow the below steps:
 2. Navigate to `General` section of your `Target`.
 3. Drag `PaymentSDK.xcframework` file to `Frameworks, Libraries, and Embedded Content` section.
 
-![](https://user-images.githubusercontent.com/13621658/117570428-5623c800-b0ca-11eb-9cd0-5e786ce7ec41.png)
+![](https://user-images.githubusercontent.com/13621658/113698051-564c3480-96d4-11eb-8a87-4b9f646e2b5d.png)
 
 ## Prerequisites
 Before starting the integrations with PayTabs SDK you should check the Prerequisites below:
