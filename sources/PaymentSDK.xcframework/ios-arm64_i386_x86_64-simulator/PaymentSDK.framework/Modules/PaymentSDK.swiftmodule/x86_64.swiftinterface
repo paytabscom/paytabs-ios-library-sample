@@ -464,16 +464,14 @@ public enum TokeniseType : Swift.Int, Swift.Codable, Swift.CaseIterable {
   }
 }
 public enum AlternativePaymentMethod : Swift.String, Swift.CaseIterable {
-  case card
-  case mada
   case unionPay
   case stcPay
   case valu
   case meezaQR
   case omannet
-  case knet
+  case knetCredit
+  case knetDebit
   case fawry
-  case knetdebit
   public static func getType(type: Swift.String) -> PaymentSDK.AlternativePaymentMethod?
   public typealias RawValue = Swift.String
   public init?(rawValue: Swift.String)
@@ -643,6 +641,9 @@ extension PaymentSDKError : Foundation.LocalizedError {
   public var errorDescription: Swift.String? {
     get
   }
+}
+extension PaymentManager {
+  public static func startAlternativePaymentMethod(on rootViewController: UIKit.UIViewController, configuration: PaymentSDK.PaymentSDKConfiguration, delegate: PaymentSDK.PaymentManagerDelegate?)
 }
 extension PaymentSDK.SearchBarPosition : Swift.Equatable {}
 extension PaymentSDK.SearchBarPosition : Swift.Hashable {}

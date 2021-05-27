@@ -12,44 +12,72 @@ import PassKit
 class ViewController: UIViewController {
     private let applePayButton = PKPaymentButton(paymentButtonType: .buy, paymentButtonStyle: .whiteOutline)
     @IBOutlet private weak var buttonStackView: UIStackView!
-    @IBOutlet private weak var paytabsButtons: UIButton! {
+    @IBOutlet private weak var payWithCardButton: UIButton! {
         didSet{
-            paytabsButtons.layer.cornerRadius = 6
-            paytabsButtons.layer.borderWidth = 0.5
-            paytabsButtons.layer.borderColor = UIColor.black.cgColor
+            decorateButton(button: payWithCardButton)
         }
+    }
+    
+    @IBOutlet private weak var payWithSTCPayButton: UIButton! {
+        didSet{
+            decorateButton(button: payWithSTCPayButton)
+        }
+    }
+    
+    @IBOutlet private weak var payWithValuButton: UIButton! {
+        didSet{
+            decorateButton(button: payWithValuButton)
+        }
+    }
+    
+    @IBOutlet private weak var payWithKnetButton: UIButton! {
+        didSet{
+            decorateButton(button: payWithKnetButton)
+        }
+    }
+    
+    @IBOutlet private weak var payWithFawryButton: UIButton! {
+        didSet{
+            decorateButton(button: payWithFawryButton)
+        }
+    }
+    
+    private func decorateButton(button: UIButton) {
+        button.layer.cornerRadius = 6
+        button.layer.borderWidth = 0.5
+        button.layer.borderColor = UIColor.black.cgColor
     }
     
     override func viewDidLoad() {
         self.title = "PayTabs Sample"
         super.viewDidLoad()
         applePayButton.addTarget(self, action: #selector(payWithApplePay), for: .touchUpInside)
-        buttonStackView.addArrangedSubview(applePayButton)
+        buttonStackView.insertArrangedSubview(applePayButton, at: 1)
     }
     
-    let profileID = "your profile id"
+    let profileID = "profile id"
     let serverKey = "server key"
     let clientKey = "client key"
     
     var billingDetails: PaymentSDKBillingDetails! {
-        return PaymentSDKBillingDetails(name: "Mohamed Adly",
+        return PaymentSDKBillingDetails(name: "John Smith",
                                      email: "email@test.com",
-                                     phone: "+2011111111",
+                                     phone: "+97311111111",
                                      addressLine: "Street1",
-                                     city: "Cairo",
-                                     state: "Cairo",
-                                     countryCode: "eg",
+                                     city: "Dubai",
+                                     state: "Dubai",
+                                     countryCode: "ae",
                                      zip: "12345")
     }
     
     var shippingDetails: PaymentSDKShippingDetails! {
-        return PaymentSDKShippingDetails(name: "Mohamed Adly",
+        return PaymentSDKShippingDetails(name: "John Smith",
                                       email: "email@test.com",
-                                      phone: "+201111111",
+                                      phone: "+9731111111",
                                       addressLine: "Street1",
-                                      city: "Cairo",
-                                      state: "Cairo",
-                                      countryCode: "eg",
+                                      city: "Dubai",
+                                      state: "Dubai",
+                                      countryCode: "ae",
                                       zip: "12345")
     }
     var configuration: PaymentSDKConfiguration! {
@@ -57,32 +85,92 @@ class ViewController: UIViewController {
         theme.logoImage = UIImage(named: "Logo")
         
         return PaymentSDKConfiguration(profileID: profileID,
-                                    serverKey: serverKey,
-                                    clientKey: clientKey,
-                                    cartID: "12345",
-                                    currency: "AED",
-                                    amount: 5.0,
-                                    cartDescription: "Flowers",
-                                    merchantCountryCode: "AE",
-                                    showBillingInfo: false,
-                                    screenTitle: "Pay with Card",
-                                    billingDetails: billingDetails,
-                                    theme: theme)
+                                       serverKey: serverKey,
+                                       clientKey: clientKey,
+                                       currency: "USD",
+                                       amount: 5.0,
+                                       merchantCountryCode: "AE")
+            .cartDescription("Flowers")
+            .cartID("1234")
+            .screenTitle("Pay with Card")
+            .theme(theme)
+            .billingDetails(billingDetails)
     }
     
     var applePayConfiguration: PaymentSDKConfiguration! {
         return PaymentSDKConfiguration(profileID: profileID,
-                                    serverKey: serverKey,
-                                    clientKey: clientKey,
-                                    cartID: "12345",
-                                    currency: "AED",
-                                    amount: 5.0,
-                                    merchantName: "Flowers Store",
-                                    cartDescription: "Flowers",
-                                    merchantCountryCode: "AE",
-                                    merchantIdentifier: "merchant.com.bundleID",
-                                    paymentNetworks: nil,
-                                    forceShippingInfo: false)
+                                       serverKey: serverKey,
+                                       clientKey: clientKey,
+                                       currency: "AED",
+                                       amount: 5.0,
+                                       merchantCountryCode: "AE")
+            .cartDescription("Flowers")
+            .cartID("1234")
+            .screenTitle("Pay with Card")
+            .merchantName("Flowers Store")
+            .merchantAppleBundleID("merchant.com.bundleID")
+            .simplifyApplePayValidation(true)
+            
+    }
+    
+    var stcPayConfiguration: PaymentSDKConfiguration! {
+        return PaymentSDKConfiguration(profileID: profileID,
+                                       serverKey: serverKey,
+                                       clientKey: clientKey,
+                                       currency: "SAR",
+                                       amount: 5.0,
+                                       merchantCountryCode: "SA")
+            .cartDescription("Flowers")
+            .cartID("1234")
+            .screenTitle("Pay with Card")
+            .billingDetails(billingDetails)
+            .addAlternativePaymentMethod(.stcPay)
+            
+    }
+    
+    var valuConfiguration: PaymentSDKConfiguration! {
+        return PaymentSDKConfiguration(profileID: profileID,
+                                       serverKey: serverKey,
+                                       clientKey: clientKey,
+                                       currency: "EGP",
+                                       amount: 1000.0,
+                                       merchantCountryCode: "eg")
+            .cartDescription("Flowers")
+            .cartID("1234")
+            .screenTitle("Pay with Card")
+            .billingDetails(billingDetails)
+            .addAlternativePaymentMethod(.valu)
+            
+    }
+    
+    var knetDebitConfiguration: PaymentSDKConfiguration! {
+        return PaymentSDKConfiguration(profileID: profileID,
+                                       serverKey: serverKey,
+                                       clientKey: clientKey,
+                                       currency: "KWD",
+                                       amount: 5.0,
+                                       merchantCountryCode: "kw")
+            .cartDescription("Flowers")
+            .cartID("1234")
+            .screenTitle("Pay with Card")
+            .billingDetails(billingDetails)
+            .addAlternativePaymentMethod(.knetDebit)
+            
+    }
+    
+    var fawryConfiguration: PaymentSDKConfiguration! {
+        return PaymentSDKConfiguration(profileID: profileID,
+                                       serverKey: serverKey,
+                                       clientKey: clientKey,
+                                       currency: "EGP",
+                                       amount: 5.0,
+                                       merchantCountryCode: "eg")
+            .cartDescription("Flowers")
+            .cartID("1234")
+            .screenTitle("Pay with Card")
+            .billingDetails(billingDetails)
+            .addAlternativePaymentMethod(.fawry)
+            
     }
     
     @IBAction func pay() {
@@ -95,6 +183,32 @@ class ViewController: UIViewController {
                                      configuration: applePayConfiguration,
                                      delegate: self)
     }
+    
+    @IBAction func payWithSTCPay() {
+        PaymentManager.startAlternativePaymentMethod(on: self,
+                                     configuration: stcPayConfiguration,
+                                     delegate: self)
+    }
+    
+    @IBAction func payWithValu() {
+        PaymentManager.startAlternativePaymentMethod(on: self,
+                                     configuration: valuConfiguration,
+                                     delegate: self)
+    }
+    
+    @IBAction func payWithKnetDebit() {
+        PaymentManager.startAlternativePaymentMethod(on: self,
+                                     configuration: knetDebitConfiguration,
+                                     delegate: self)
+    }
+    
+    @IBAction func payWithFawry() {
+        PaymentManager.startAlternativePaymentMethod(on: self,
+                                     configuration: valuConfiguration,
+                                     delegate: self)
+    }
+    
+    
     func showError(message: String) {
         DispatchQueue.main.async {
             let alertController = UIAlertController.init(title: self.title, message: message, preferredStyle: .alert)
