@@ -1,5 +1,5 @@
-"payment_sdk_3d_secure_title" = "نظام الأمان الثلاثي الأبعاد";
-"payment_sdk_credit_card_screen_title" = "بطاقة الائتمان";
+"payment_sdk_redirection_title" = "نظام الأمان الثلاثي الأبعاد";
+"payment_sdk_credit_card_screen_title" = "عملية الدفع";
 "payment_sdk_card_name_on_card_title" = "الاسم على البطاقة";
 "payment_sdk_card_name_on_card_hint" = "John Smith";
 "payment_sdk_card_number" = "رقم البطاقة";
@@ -124,3 +124,8 @@
 "payment_sdk_credit_card_screen_save_card_label" = "حفظ معلومات البطاقة. للدفعات المستقبلية";
 "payment_sdk_credit_card_screen_save_card_mandatory_error" = "للمتابعة ، عليك حفظ معلومات البطاقة!";
 "payment_sdk_apple_pay_error_missing_merchant_name" = "اسم التاجر فارغ!";
+
+/*Fuzzy*/
+"payment_sdk_cancel_alert" = "هل أنت متأكد من إلغاء عملية الدفع؟";
+"payment_sdk_yes" = "نعم";
+"payment_sdk_no" = "لا";

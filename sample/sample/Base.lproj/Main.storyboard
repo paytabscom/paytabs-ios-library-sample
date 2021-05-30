@@ -17,21 +17,77 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="27" translatesAutoresizingMaskIntoConstraints="NO" id="s78-II-fGr">
-                                <rect key="frame" x="88.5" y="438" width="237" height="30"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="27" translatesAutoresizingMaskIntoConstraints="NO" id="N4w-js-vus">
+                                <rect key="frame" x="88.5" y="324" width="237" height="258"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zoi-Dh-h69">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L3z-si-ChX">
                                         <rect key="frame" x="0.0" y="0.0" width="237" height="30"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="237" id="aiM-U7-HkW"/>
+                                            <constraint firstAttribute="width" constant="237" id="vnG-n6-mmo"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
                                         <state key="normal" title="Pay With Card">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
-                                            <action selector="pay" destination="BYZ-38-t0r" eventType="touchUpInside" id="dy4-E5-soq"/>
+                                            <action selector="pay" destination="BYZ-38-t0r" eventType="touchUpInside" id="h0l-r9-X5S"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a0R-um-x1u">
+                                        <rect key="frame" x="0.0" y="57" width="237" height="30"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="237" id="nZI-VJ-bcT"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                                        <state key="normal" title="Pay With STCPay">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="payWithSTCPay" destination="BYZ-38-t0r" eventType="touchUpInside" id="Md6-8V-o2L"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ku7-jp-64f">
+                                        <rect key="frame" x="0.0" y="114" width="237" height="30"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="237" id="ZUl-Ld-MJl"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                                        <state key="normal" title="Pay With Valu">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="payWithValu" destination="BYZ-38-t0r" eventType="touchUpInside" id="rYv-Zg-PyT"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uY8-TZ-v0I">
+                                        <rect key="frame" x="0.0" y="171" width="237" height="30"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="237" id="dIG-03-34D"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                                        <state key="normal" title="Pay With KNet">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="payWithKnetDebit" destination="BYZ-38-t0r" eventType="touchUpInside" id="7tX-9s-9Xf"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TDh-Fq-pzA">
+                                        <rect key="frame" x="0.0" y="228" width="237" height="30"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="237" id="pDM-U8-SOa"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                                        <state key="normal" title="Pay With Fawry">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="payWithFawry" destination="BYZ-38-t0r" eventType="touchUpInside" id="N4I-7g-GEO"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -40,13 +96,17 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="s78-II-fGr" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Jyd-2P-VY5"/>
-                            <constraint firstItem="s78-II-fGr" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="vyJ-MQ-L3n"/>
+                            <constraint firstItem="N4w-js-vus" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="cbk-pf-uf6"/>
+                            <constraint firstItem="N4w-js-vus" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="ykU-lf-BIq"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="buttonStackView" destination="s78-II-fGr" id="Lcb-9r-r8X"/>
-                        <outlet property="payButtons" destination="Zoi-Dh-h69" id="WZY-wA-OO1"/>
+                        <outlet property="buttonStackView" destination="N4w-js-vus" id="Ngn-FY-7lg"/>
+                        <outlet property="payWithCardButton" destination="L3z-si-ChX" id="HQZ-oq-c0L"/>
+                        <outlet property="payWithFawryButton" destination="TDh-Fq-pzA" id="eJ0-Ec-TUQ"/>
+                        <outlet property="payWithKnetButton" destination="uY8-TZ-v0I" id="YxK-Hp-bp0"/>
+                        <outlet property="payWithSTCPayButton" destination="a0R-um-x1u" id="Jb0-mI-Dnq"/>
+                        <outlet property="payWithValuButton" destination="ku7-jp-64f" id="QTV-kK-9Hf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

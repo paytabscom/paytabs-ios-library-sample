@@ -1,5 +1,5 @@
-"payment_sdk_3d_secure_title" = "3D Secure";
-"payment_sdk_credit_card_screen_title" = "Credit Card";
+"payment_sdk_redirection_title" = "3D Secure";
+"payment_sdk_credit_card_screen_title" = "Payment Process";
 "payment_sdk_card_name_on_card_title" = "Name on Card";
 "payment_sdk_card_name_on_card_hint" = "John Smith";
 "payment_sdk_card_number" = "Card Number";
@@ -126,3 +126,8 @@
 "payment_sdk_credit_card_screen_save_card_label" = "Save card no. for future payments";
 "payment_sdk_credit_card_screen_save_card_mandatory_error" = "To continue, you have to save the card info!";
 "payment_sdk_apple_pay_error_missing_merchant_name" = "Merchant name is empty!";
+
+/*Fuzzy*/
+"payment_sdk_cancel_alert" = "Are you sure you want to cancel the payment?";
+"payment_sdk_yes" = "Yes";
+"payment_sdk_no" = "No";

@@ -28,13 +28,13 @@
 [CocoaPods](https://cocoapods.org) is a dependency manager for Cocoa projects. For usage and installation instructions, visit their website. To integrate **ClickPay SDK** into your Xcode project using CocoaPods, specify it in your `Podfile`:
 
 ```ruby
-pod 'ClickPay', '~> 6.0.22'
+pod 'ClickPay', '~> 6.1.1'
 ```
 ### Carthage
 [Carthage](https://github.com/Carthage/Carthage) is a decentralized dependency manager that builds your dependencies and provides you with binary frameworks. To integrate **ClickPay SDK** into your Xcode project using Carthage, specify it in your `Cartfile`:
 
 ```ogdl
-github "paytabscom/paytabs-ios-library-sample" ~> 6.0.22
+github "paytabscom/paytabs-ios-library-sample" ~> 6.1.1
 ```
 ### Manual
 Follow the below steps:
@@ -69,7 +69,7 @@ import PaymentSDK
 ```swift
 let billingDetails = PaymentSDKBillingDetails(name: "John Smith",
                                      	   email: "email@test.com",
-                                     	   phone: "+2011111111",
+                                     	   phone: "+96611111111",
                                      	   addressLine: "address",
                                      	   city: "Dubai",
                                            state: "Dubai",
@@ -78,7 +78,7 @@ let billingDetails = PaymentSDKBillingDetails(name: "John Smith",
                                                    
 let shippingDetails = PaymentSDKShippingDetails(name: "John Smith",
                                      	   email: "email@test.com",
-                                     	   phone: "+2011111111",
+                                     	   phone: "+96611111111",
                                      	   addressLine: "address",
                                      	   city: "Dubai",
                                            state: "Dubai",
@@ -90,17 +90,17 @@ let shippingDetails = PaymentSDKShippingDetails(name: "John Smith",
 2. Create object of `PaymentSDKConfiguration` and fill it with your credentials and payment details.
 
 ```
-let configuration = PaymentSDKConfiguration(profileID: "*your profile id*",
-                                    serverKey: "*server key*",
-                                    clientKey: "*client key*",
-                                    cartID: "12345",
-                                    currency: "AED",
-                                    amount: 5.0,
-                                    cartDescription: "Flowers",
-                                    merchantCountryCode: "ae", // ISO alpha 2
-                                    showBillingInfo: false,
-                                    screenTitle: "Pay with Card",
-                                    billingDetails: billingDetails)
+let configuration = PaymentSDKConfiguration(profileID: "profile id",
+                                       serverKey: "server key",
+                                       clientKey: "client key",
+                                       currency: "SAR",
+                                       amount: 5.0,
+                                       merchantCountryCode: "SA")
+            .cartDescription("Flowers")
+            .cartID("1234")
+            .screenTitle("Pay with Card")
+            .billingDetails(billingDetails)
+
 ```
 
 3. You are now ready to start payment and handle `PaymentManagerDelegate` 
@@ -116,21 +116,21 @@ PaymentManager.startCardPayment(on: self,
 
 1. Follow the guide [Steps to configure Apple Pay][applepayguide] to learn how to configure ApplePay with ClickPay.
 
-2. Do the steps 1 and 2 from **Pay with Card** although you can ignore Billing & Shipping details and Apple Pay will handle it, also you must pass the **merchant name** and **merchant identifier**.
+2. Do the steps 1 and 2 from **Pay with Card** although you can ignore Billing & Shipping details and Apple Pay will handle it, also you must pass the **merchant name** and **merchant identifier** parameters.
 
 ```
-let configuration = PaymentSDKConfiguration(profileID: "*your profile id*",
-                                    serverKey: "*server key*",
-                                    clientKey: "*client key*",
-                                    cartID: "12345",
-                                    currency: "AED",
-                                    amount: 5.0,
-                                    merchantName: "Flowers Store",
-                                    cartDescription: "Flowers",
-                                    merchantCountryCode: "ae", // ISO alpha 2
-                                    merchantIdentifier: "merchant.com.bundleID",
-                                    paymentNetworks: nil,
-                                    forceShippingInfo: false)
+let configuration = PaymentSDKConfiguration(profileID: profileID,
+                                       serverKey: serverKey,
+                                       clientKey: clientKey,
+                                       currency: "SAR",
+                                       amount: 5.0,
+                                       merchantCountryCode: "SA")
+            .cartDescription("Flowers")
+            .cartID("1234")
+            .screenTitle("Pay with Card")
+            .merchantName("Flowers Store")
+            .merchantAppleBundleID("merchant.com.bundleID")
+            .simplifyApplePayValidation(true)
                                     
 ```
 
@@ -142,6 +142,24 @@ let configuration = PaymentSDKConfiguration(profileID: "*your profile id*",
 PaymentManager.startApplePayPayment(on: self, 
 							 configuration: configuration,
 							 delegate: self)
+```
+
+### Pay with Alternative Payment Methods
+It becomes easy to integrate with other payment methods in your region like STCPay, OmanNet, KNet, Valu, Fawry, UnionPay, and Meeza, to serve a large sector of customers.
+
+1. Do the steps 1 and 2 from **Pay with Card**
+2. Choose one or more of the payment methods you want to support
+
+```swift
+configuration.alternativePaymentMethods = [.stcPay]
+```
+
+3. Call `startAlternativePaymentMethod` to start payment
+
+```swift
+PaymentManager.startAlternativePaymentMethod(on: self, 
+                             configuration: configuration,
+                             delegate: self)
 ```
 
 ### Delegates
@@ -233,6 +251,24 @@ The default type is sale
 public enum TransactionType: String, CaseIterable {
     case sale
     case authorize = "auth"
+}
+```
+
+```swift
+configuration.transactionType = .sale
+```
+* Alternative Payment Methods
+
+```swift
+public enum AlternativePaymentMethod: String {
+    case unionPay = "unionpay"
+    case stcPay = "stcpay"
+    case valu
+    case meezaQR = "meezaqr"
+    case omannet
+    case knetCredit  = "knetcredit"
+    case knetDebit  = "knetdebit"
+    case fawry
 }
 ```
 
