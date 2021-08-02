@@ -15,6 +15,7 @@
 * **Apple Pay** supported.
 * The SDK size became very light because we removed all the third-party dependencies.
 * Supporting dark mode.
+* Supporting alternative payment methods.
 
 
 ## Requirements
@@ -185,6 +186,21 @@ extension ViewController: PaymentManagerDelegate {
 }
 ```
 
+## Force Shipping Info Validation
+By default, the validation on shipping info is disabled.
+
+```swift
+configuration.forceShippingInfo = true
+```
+
+## Show Billing or Shipping Info Section
+By default, the billing and shipping info section is disappeared, sets its flag to `true` to let the SDK internally handle the missing billing & shipping info.
+
+```swift
+configuration.showBillingInfo = true
+configuration.showShippingInfo = true
+```
+
 ## Tokenisation
 To enable tokenisation, please follow the below instructions.
 
@@ -208,6 +224,14 @@ configuration.transactionReference = transactionreference
 Use the following guide to cusomize the colors, font, and logo by configuring the theme and pass it to the payment configuration.
 
 ![UI guide](https://user-images.githubusercontent.com/13621658/109432213-d7981380-7a12-11eb-9224-c8fc12b0024d.jpg)
+
+```swift
+let theme = PaymentSDKTheme.default
+theme.logoImage = UIImage(named: "Logo") //Change merchant logo.
+theme.backgroundColor = .blue
+theme.buttonFontColor = .red
+configuration.theme = theme
+```
 
 ## Localization
 You can use the strings file below to copy the key and add it to your app localizable file and overwrite the value to yours. 

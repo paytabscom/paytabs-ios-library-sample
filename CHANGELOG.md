@@ -1,3 +1,6 @@
+## 6.1.2 2021-08-2
+*Fixed localization issues.
+
 ## 6.1.0 2021-05-27
 *Added alternative payment methods.
 

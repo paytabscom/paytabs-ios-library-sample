@@ -125,7 +125,8 @@
 "payment_sdk_credit_card_screen_save_card_mandatory_error" = "للمتابعة ، عليك حفظ معلومات البطاقة!";
 "payment_sdk_apple_pay_error_missing_merchant_name" = "اسم التاجر فارغ!";
 
-/*Fuzzy*/
 "payment_sdk_cancel_alert" = "هل أنت متأكد من إلغاء عملية الدفع؟";
 "payment_sdk_yes" = "نعم";
 "payment_sdk_no" = "لا";
+"payment_sdk_error_empty_alternative_payment_methods" = "قائمة وسائل الدفع البديلة فارغة";
+"payment_sdk_country_list_search" = "بحث";

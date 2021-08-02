@@ -127,7 +127,8 @@
 "payment_sdk_credit_card_screen_save_card_mandatory_error" = "To continue, you have to save the card info!";
 "payment_sdk_apple_pay_error_missing_merchant_name" = "Merchant name is empty!";
 
-/*Fuzzy*/
 "payment_sdk_cancel_alert" = "Are you sure you want to cancel the payment?";
 "payment_sdk_yes" = "Yes";
 "payment_sdk_no" = "No";
+"payment_sdk_error_empty_alternative_payment_methods" = "Alternative payment methods list is empty";
+"payment_sdk_country_list_search" = "Search";

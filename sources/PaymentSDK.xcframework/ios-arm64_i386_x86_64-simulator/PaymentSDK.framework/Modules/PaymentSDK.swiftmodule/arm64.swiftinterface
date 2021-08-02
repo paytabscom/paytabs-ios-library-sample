@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.3.2 (swiftlang-1200.0.45 clang-1200.0.32.28)
+// swift-compiler-version: Apple Swift version 5.4.2 (swiftlang-1205.0.28.2 clang-1205.0.19.57)
 // swift-module-flags: -target arm64-apple-ios10.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name PaymentSDK
 import AVFoundation
 import CommonCrypto
@@ -66,8 +66,8 @@ open class PaymentSDKConfiguration : PaymentSDK.PaymentSDKMerchantConfiguration,
   public init(profileID: Swift.String, serverKey: Swift.String, clientKey: Swift.String, cartID: Swift.String, currency: Swift.String, amount: Swift.Double, cartDescription: Swift.String, languageCode: Swift.String? = nil, merchantCountryCode: Swift.String, tokeniseType: PaymentSDK.TokeniseType = .none, tokenFormat: PaymentSDK.TokenFormat = .hex32, token: Swift.String? = nil, transactionreference: Swift.String? = nil, serverIP: Swift.String? = nil, merchantIdentifier: Swift.String? = nil, paymentNetworks: [PassKit.PKPaymentNetwork]? = nil, forceShippingInfo: Swift.Bool = false, showBillingInfo: Swift.Bool = false, showShippingInfo: Swift.Bool = false, screenTitle: Swift.String? = nil, merchantName: Swift.String? = nil, hideCardScanner: Swift.Bool = false, billingDetails: PaymentSDK.PaymentSDKBillingDetails, shippingDetails: PaymentSDK.PaymentSDKShippingDetails? = nil, theme: PaymentSDK.PaymentSDKTheme? = PaymentSDKTheme.default)
   public init(profileID: Swift.String, serverKey: Swift.String, clientKey: Swift.String, cartID: Swift.String, currency: Swift.String, amount: Swift.Double, merchantName: Swift.String, cartDescription: Swift.String, languageCode: Swift.String? = nil, tokeniseType: PaymentSDK.TokeniseType = .none, tokenFormat: PaymentSDK.TokenFormat = .hex32, token: Swift.String? = nil, transactionreference: Swift.String? = nil, merchantCountryCode: Swift.String, serverIP: Swift.String? = nil, merchantIdentifier: Swift.String, paymentNetworks: [PassKit.PKPaymentNetwork]?, simplifyApplePayValidation: Swift.Bool = false, forceShippingInfo: Swift.Bool = false, billingDetails: PaymentSDK.PaymentSDKBillingDetails? = nil, shippingDetails: PaymentSDK.PaymentSDKShippingDetails? = nil)
   @objc deinit
-  required public init(from decoder: Swift.Decoder) throws
   open func encode(to encoder: Swift.Encoder) throws
+  required public init(from decoder: Swift.Decoder) throws
 }
 extension PaymentSDKConfiguration : Foundation.NSCopying {
   @objc dynamic public func copy(with zone: ObjectiveC.NSZone? = nil) -> Any
@@ -149,10 +149,10 @@ public struct UIConfiguration {
 @objc @_inheritsConvenienceInitializers public class CountryPickerViewController : UIKit.UITableViewController {
   public var searchController: UIKit.UISearchController?
   @objc override dynamic public func viewDidLoad()
-  @objc deinit
   @objc override dynamic public init(style: UIKit.UITableView.Style)
   @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
   @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
 }
 extension CountryPickerViewController {
   @objc override dynamic public func numberOfSections(in tableView: UIKit.UITableView) -> Swift.Int
@@ -177,20 +177,20 @@ extension CountryPickerViewController : UIKit.UISearchControllerDelegate {
   @objc dynamic public func willPresentSearchController(_ searchController: UIKit.UISearchController)
   @objc dynamic public func willDismissSearchController(_ searchController: UIKit.UISearchController)
 }
-@_hasMissingDesignatedInitializers public class PaymentSDKBillingDetails : Swift.Codable {
-  public var name: Swift.String?
-  public var email: Swift.String?
-  public var phone: Swift.String?
-  public var addressLine: Swift.String?
-  public var city: Swift.String?
-  public var state: Swift.String?
-  public var countryCode: Swift.String?
-  public var zip: Swift.String?
-  public init()
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class PaymentSDKBillingDetails : ObjectiveC.NSObject, Swift.Codable {
+  @objc public var name: Swift.String?
+  @objc public var email: Swift.String?
+  @objc public var phone: Swift.String?
+  @objc public var addressLine: Swift.String?
+  @objc public var city: Swift.String?
+  @objc public var state: Swift.String?
+  @objc public var countryCode: Swift.String?
+  @objc public var zip: Swift.String?
+  @objc override dynamic public init()
   public init(name: Swift.String?, email: Swift.String?, phone: Swift.String?, addressLine: Swift.String?, city: Swift.String?, state: Swift.String?, countryCode: Swift.String?, zip: Swift.String?)
   @objc deinit
-  required public init(from decoder: Swift.Decoder) throws
   public func encode(to encoder: Swift.Encoder) throws
+  required public init(from decoder: Swift.Decoder) throws
 }
 extension PaymentSDKBillingDetails : Foundation.NSCopying {
   @objc dynamic public func copy(with zone: ObjectiveC.NSZone? = nil) -> Any
@@ -306,41 +306,41 @@ extension PaymentSDKTheme : Foundation.NSCopying {
   @objc dynamic public func copy(with zone: ObjectiveC.NSZone? = nil) -> Any
 }
 @_hasMissingDesignatedInitializers @objc public class PaymentResultViewModel : ObjectiveC.NSObject, Swift.Codable {
-  final public let responseStatus: Swift.String?, responseCode: Swift.String?, responseMessage: Swift.String?
-  final public let transactionTime: Swift.String?, acquirerMessage: Swift.String?, acquirerRRN: Swift.String?
-  @objc deinit
+  @objc final public let responseStatus: Swift.String?, responseCode: Swift.String?, responseMessage: Swift.String?
+  @objc final public let transactionTime: Swift.String?, acquirerMessage: Swift.String?, acquirerRRN: Swift.String?
   @objc override dynamic public init()
-  required public init(from decoder: Swift.Decoder) throws
+  @objc deinit
   public func encode(to encoder: Swift.Encoder) throws
+  required public init(from decoder: Swift.Decoder) throws
 }
 @_hasMissingDesignatedInitializers @objc public class PaymentInfoViewModel : ObjectiveC.NSObject, Swift.Codable {
-  public var cardType: Swift.String?, cardScheme: Swift.String?, paymentDescription: Swift.String?
-  @objc deinit
+  @objc public var cardType: Swift.String?, cardScheme: Swift.String?, paymentDescription: Swift.String?
   @objc override dynamic public init()
-  required public init(from decoder: Swift.Decoder) throws
+  @objc deinit
   public func encode(to encoder: Swift.Encoder) throws
+  required public init(from decoder: Swift.Decoder) throws
 }
-@_hasMissingDesignatedInitializers @objc public class PaymentSDKTransactionDetails : ObjectiveC.NSObject, Swift.Codable {
-  final public let token: Swift.String?, transactionReference: Swift.String?
-  final public let transactionType: Swift.String?, cartID: Swift.String?, cartDescription: Swift.String?
-  final public let cartCurrency: Swift.String?, cartAmount: Swift.String?
-  final public let paymentResult: PaymentSDK.PaymentResultViewModel?
-  final public let paymentInfo: PaymentSDK.PaymentInfoViewModel?
-  final public let billingDetails: PaymentSDK.PaymentSDKBillingDetails?
-  final public let shippingDetails: PaymentSDK.PaymentSDKShippingDetails?
-  @objc deinit
+@_hasMissingDesignatedInitializers @objc open class PaymentSDKTransactionDetails : ObjectiveC.NSObject, Swift.Codable {
+  @objc final public let token: Swift.String?, transactionReference: Swift.String?
+  @objc final public let transactionType: Swift.String?, cartID: Swift.String?, cartDescription: Swift.String?
+  @objc final public let cartCurrency: Swift.String?, cartAmount: Swift.String?
+  @objc final public let paymentResult: PaymentSDK.PaymentResultViewModel?
+  @objc final public let paymentInfo: PaymentSDK.PaymentInfoViewModel?
+  @objc final public let billingDetails: PaymentSDK.PaymentSDKBillingDetails?
+  @objc final public let shippingDetails: PaymentSDK.PaymentSDKShippingDetails?
   @objc override dynamic public init()
+  @objc deinit
+  open func encode(to encoder: Swift.Encoder) throws
   required public init(from decoder: Swift.Decoder) throws
-  public func encode(to encoder: Swift.Encoder) throws
 }
 public typealias CPVCountry = PaymentSDK.Country
 public enum SearchBarPosition {
   case tableViewHeader, navigationBar, hidden
   public static func == (a: PaymentSDK.SearchBarPosition, b: PaymentSDK.SearchBarPosition) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
   public var hashValue: Swift.Int {
     get
   }
-  public func hash(into hasher: inout Swift.Hasher)
 }
 public struct Country : Swift.Equatable {
   public let name: Swift.String
@@ -406,26 +406,26 @@ extension CountryPickerView {
 public enum TransactionType : Swift.String, Swift.CaseIterable {
   case sale
   case authorize
-  public typealias RawValue = Swift.String
   public init?(rawValue: Swift.String)
-  public var rawValue: Swift.String {
+  public typealias AllCases = [PaymentSDK.TransactionType]
+  public typealias RawValue = Swift.String
+  public static var allCases: [PaymentSDK.TransactionType] {
     get
   }
-  public typealias AllCases = [PaymentSDK.TransactionType]
-  public static var allCases: [PaymentSDK.TransactionType] {
+  public var rawValue: Swift.String {
     get
   }
 }
 public enum TransactionClass : Swift.String, Swift.CaseIterable {
   case ecom
   case recur
-  public typealias RawValue = Swift.String
   public init?(rawValue: Swift.String)
-  public var rawValue: Swift.String {
+  public typealias AllCases = [PaymentSDK.TransactionClass]
+  public typealias RawValue = Swift.String
+  public static var allCases: [PaymentSDK.TransactionClass] {
     get
   }
-  public typealias AllCases = [PaymentSDK.TransactionClass]
-  public static var allCases: [PaymentSDK.TransactionClass] {
+  public var rawValue: Swift.String {
     get
   }
 }
@@ -437,13 +437,13 @@ public enum TokenFormat : Swift.String, Swift.CaseIterable {
   case digit16
   case alphaNum32
   public static func getType(type: Swift.String) -> PaymentSDK.TokenFormat?
-  public typealias RawValue = Swift.String
   public init?(rawValue: Swift.String)
-  public var rawValue: Swift.String {
+  public typealias AllCases = [PaymentSDK.TokenFormat]
+  public typealias RawValue = Swift.String
+  public static var allCases: [PaymentSDK.TokenFormat] {
     get
   }
-  public typealias AllCases = [PaymentSDK.TokenFormat]
-  public static var allCases: [PaymentSDK.TokenFormat] {
+  public var rawValue: Swift.String {
     get
   }
 }
@@ -453,13 +453,13 @@ public enum TokeniseType : Swift.Int, Swift.Codable, Swift.CaseIterable {
   case userMandatory
   case userOptinoal
   public static func getType(type: Swift.Int) -> PaymentSDK.TokeniseType?
-  public typealias RawValue = Swift.Int
   public init?(rawValue: Swift.Int)
-  public var rawValue: Swift.Int {
+  public typealias AllCases = [PaymentSDK.TokeniseType]
+  public typealias RawValue = Swift.Int
+  public static var allCases: [PaymentSDK.TokeniseType] {
     get
   }
-  public typealias AllCases = [PaymentSDK.TokeniseType]
-  public static var allCases: [PaymentSDK.TokeniseType] {
+  public var rawValue: Swift.Int {
     get
   }
 }
@@ -473,13 +473,13 @@ public enum AlternativePaymentMethod : Swift.String, Swift.CaseIterable {
   case knetDebit
   case fawry
   public static func getType(type: Swift.String) -> PaymentSDK.AlternativePaymentMethod?
-  public typealias RawValue = Swift.String
   public init?(rawValue: Swift.String)
-  public var rawValue: Swift.String {
+  public typealias AllCases = [PaymentSDK.AlternativePaymentMethod]
+  public typealias RawValue = Swift.String
+  public static var allCases: [PaymentSDK.AlternativePaymentMethod] {
     get
   }
-  public typealias AllCases = [PaymentSDK.AlternativePaymentMethod]
-  public static var allCases: [PaymentSDK.AlternativePaymentMethod] {
+  public var rawValue: Swift.String {
     get
   }
 }
@@ -544,10 +544,10 @@ public enum PaymentSDKError : Swift.Error {
   case somethingWentWrong
   case emptyAlternativePaymentMethods
   public static func == (a: PaymentSDK.PaymentSDKError, b: PaymentSDK.PaymentSDKError) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
   public var hashValue: Swift.Int {
     get
   }
-  public func hash(into hasher: inout Swift.Hasher)
 }
 @objc @_inheritsConvenienceInitializers public class NibView : UIKit.UIView {
   @objc override dynamic public init(frame: CoreGraphics.CGRect)
@@ -585,16 +585,16 @@ public struct PayModels {
   public static func startCardPayment(on rootViewController: UIKit.UIViewController, configuration: PaymentSDK.PaymentSDKConfiguration, delegate: PaymentSDK.PaymentManagerDelegate?)
   public static func pay(rootViewController: UIKit.UIViewController, cardInputView: PaymentSDK.PaymentSDKCardInputView, profileId: Swift.String, cartID: Swift.String, currency: Swift.String, amount: Swift.Double, cartDescription: Swift.String, languageCode: Swift.String?, serverIP: Swift.String?, billingDetails: PaymentSDK.PaymentSDKBillingDetails?, shippingDetails: PaymentSDK.PaymentSDKShippingDetails?)
   public static func pay(rootViewController: UIKit.UIViewController, configuration: PaymentSDK.PaymentSDKConfiguration, cardInputView: PaymentSDK.PaymentSDKCardInputView)
-  @objc deinit
   @objc override dynamic public init()
+  @objc deinit
 }
 public enum Model : Swift.String {
   case simulator, iPod1, iPod2, iPod3, iPod4, iPod5, iPod6, iPod7, iPad2, iPad3, iPad4, iPadAir, iPadAir2, iPadAir3, iPadAir4, iPad5, iPad6, iPad7, iPad8, iPadMini, iPadMini2, iPadMini3, iPadMini4, iPadMini5, iPadPro9_7, iPadPro10_5, iPadPro11, iPadPro2_11, iPadPro12_9, iPadPro2_12_9, iPadPro3_12_9, iPadPro4_12_9, iPhone4, iPhone4S, iPhone5, iPhone5S, iPhone5C, iPhone6, iPhone6Plus, iPhone6S, iPhone6SPlus, iPhoneSE, iPhone7, iPhone7Plus, iPhone8, iPhone8Plus, iPhoneX, iPhoneXS, iPhoneXSMax, iPhoneXR, iPhone11, iPhone11Pro, iPhone11ProMax, iPhoneSE2, iPhone12Mini, iPhone12, iPhone12Pro, iPhone12ProMax, AppleWatch1, AppleWatchS1, AppleWatchS2, AppleWatchS3, AppleWatchS4, AppleWatchS5, AppleWatchSE, AppleWatchS6, AppleTV1, AppleTV2, AppleTV3, AppleTV4, AppleTV_4K, unrecognized
+  public init?(rawValue: Swift.String)
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
   }
-  public init?(rawValue: Swift.String)
 }
 extension UIDevice {
   public var type: PaymentSDK.Model {
@@ -619,20 +619,20 @@ public struct CreditCardValidationType : Swift.Equatable {
   public var regex: Swift.String
   public init(dict: [Swift.String : Any])
 }
-@_hasMissingDesignatedInitializers public class PaymentSDKShippingDetails : Swift.Codable {
-  public var name: Swift.String?
-  public var email: Swift.String?
-  public var phone: Swift.String?
-  public var addressLine: Swift.String?
-  public var city: Swift.String?
-  public var state: Swift.String?
-  public var countryCode: Swift.String?
-  public var zip: Swift.String?
-  public init()
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class PaymentSDKShippingDetails : ObjectiveC.NSObject, Swift.Codable {
+  @objc public var name: Swift.String?
+  @objc public var email: Swift.String?
+  @objc public var phone: Swift.String?
+  @objc public var addressLine: Swift.String?
+  @objc public var city: Swift.String?
+  @objc public var state: Swift.String?
+  @objc public var countryCode: Swift.String?
+  @objc public var zip: Swift.String?
+  @objc override dynamic public init()
   public init(name: Swift.String?, email: Swift.String?, phone: Swift.String?, addressLine: Swift.String?, city: Swift.String?, state: Swift.String?, countryCode: Swift.String?, zip: Swift.String?)
-  required public init(from decoder: Swift.Decoder) throws
   @objc deinit
   public func encode(to encoder: Swift.Encoder) throws
+  required public init(from decoder: Swift.Decoder) throws
 }
 extension PaymentSDKShippingDetails : Foundation.NSCopying {
   @objc dynamic public func copy(with zone: ObjectiveC.NSZone? = nil) -> Any
