@@ -91,53 +91,6 @@ extension PKPaymentMethodType : Swift.CustomStringConvertible {
     get
   }
 }
-public protocol CountryPickerViewDelegate : AnyObject {
-  func countryPickerView(_ countryPickerView: PaymentSDK.CountryPickerView, didSelectCountry country: PaymentSDK.Country)
-  func countryPickerView(_ countryPickerView: PaymentSDK.CountryPickerView, willShow viewController: PaymentSDK.CountryPickerViewController)
-  func countryPickerView(_ countryPickerView: PaymentSDK.CountryPickerView, didShow viewController: PaymentSDK.CountryPickerViewController)
-}
-public protocol CountryPickerViewDataSource : AnyObject {
-  func preferredCountries(in countryPickerView: PaymentSDK.CountryPickerView) -> [PaymentSDK.Country]
-  func sectionTitleForPreferredCountries(in countryPickerView: PaymentSDK.CountryPickerView) -> Swift.String?
-  func showOnlyPreferredSection(in countryPickerView: PaymentSDK.CountryPickerView) -> Swift.Bool
-  func sectionTitleLabelFont(in countryPickerView: PaymentSDK.CountryPickerView) -> UIKit.UIFont
-  func sectionTitleLabelColor(in countryPickerView: PaymentSDK.CountryPickerView) -> UIKit.UIColor?
-  func cellLabelFont(in countryPickerView: PaymentSDK.CountryPickerView) -> UIKit.UIFont
-  func cellLabelColor(in countryPickerView: PaymentSDK.CountryPickerView) -> UIKit.UIColor?
-  func cellImageViewSize(in countryPickerView: PaymentSDK.CountryPickerView) -> CoreGraphics.CGSize
-  func cellImageViewCornerRadius(in countryPickerView: PaymentSDK.CountryPickerView) -> CoreGraphics.CGFloat
-  func navigationTitle(in countryPickerView: PaymentSDK.CountryPickerView) -> Swift.String?
-  func closeButtonNavigationItem(in countryPickerView: PaymentSDK.CountryPickerView) -> UIKit.UIBarButtonItem?
-  func searchBarPosition(in countryPickerView: PaymentSDK.CountryPickerView) -> PaymentSDK.SearchBarPosition
-  func showPhoneCodeInList(in countryPickerView: PaymentSDK.CountryPickerView) -> Swift.Bool
-  func showCountryCodeInList(in countryPickerView: PaymentSDK.CountryPickerView) -> Swift.Bool
-  func showCheckmarkInList(in countryPickerView: PaymentSDK.CountryPickerView) -> Swift.Bool
-  func localeForCountryNameInList(in countryPickerView: PaymentSDK.CountryPickerView) -> Foundation.Locale
-  func excludedCountries(in countryPickerView: PaymentSDK.CountryPickerView) -> [PaymentSDK.Country]
-}
-extension CountryPickerViewDataSource {
-  public func preferredCountries(in countryPickerView: PaymentSDK.CountryPickerView) -> [PaymentSDK.Country]
-  public func sectionTitleForPreferredCountries(in countryPickerView: PaymentSDK.CountryPickerView) -> Swift.String?
-  public func showOnlyPreferredSection(in countryPickerView: PaymentSDK.CountryPickerView) -> Swift.Bool
-  public func sectionTitleLabelFont(in countryPickerView: PaymentSDK.CountryPickerView) -> UIKit.UIFont
-  public func sectionTitleLabelColor(in countryPickerView: PaymentSDK.CountryPickerView) -> UIKit.UIColor?
-  public func cellLabelFont(in countryPickerView: PaymentSDK.CountryPickerView) -> UIKit.UIFont
-  public func cellLabelColor(in countryPickerView: PaymentSDK.CountryPickerView) -> UIKit.UIColor?
-  public func cellImageViewCornerRadius(in countryPickerView: PaymentSDK.CountryPickerView) -> CoreGraphics.CGFloat
-  public func cellImageViewSize(in countryPickerView: PaymentSDK.CountryPickerView) -> CoreGraphics.CGSize
-  public func navigationTitle(in countryPickerView: PaymentSDK.CountryPickerView) -> Swift.String?
-  public func closeButtonNavigationItem(in countryPickerView: PaymentSDK.CountryPickerView) -> UIKit.UIBarButtonItem?
-  public func searchBarPosition(in countryPickerView: PaymentSDK.CountryPickerView) -> PaymentSDK.SearchBarPosition
-  public func showPhoneCodeInList(in countryPickerView: PaymentSDK.CountryPickerView) -> Swift.Bool
-  public func showCountryCodeInList(in countryPickerView: PaymentSDK.CountryPickerView) -> Swift.Bool
-  public func showCheckmarkInList(in countryPickerView: PaymentSDK.CountryPickerView) -> Swift.Bool
-  public func localeForCountryNameInList(in countryPickerView: PaymentSDK.CountryPickerView) -> Foundation.Locale
-  public func excludedCountries(in countryPickerView: PaymentSDK.CountryPickerView) -> [PaymentSDK.Country]
-}
-extension CountryPickerViewDelegate {
-  public func countryPickerView(_ countryPickerView: PaymentSDK.CountryPickerView, willShow viewController: PaymentSDK.CountryPickerViewController)
-  public func countryPickerView(_ countryPickerView: PaymentSDK.CountryPickerView, didShow viewController: PaymentSDK.CountryPickerViewController)
-}
 public struct UIConfiguration {
 }
 @_hasMissingDesignatedInitializers public class PaymentSDKCardParams {
@@ -145,37 +98,6 @@ public struct UIConfiguration {
     get
   }
   @objc deinit
-}
-@objc @_inheritsConvenienceInitializers public class CountryPickerViewController : UIKit.UITableViewController {
-  public var searchController: UIKit.UISearchController?
-  @objc override dynamic public func viewDidLoad()
-  @objc override dynamic public init(style: UIKit.UITableView.Style)
-  @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
-  @objc required dynamic public init?(coder: Foundation.NSCoder)
-  @objc deinit
-}
-extension CountryPickerViewController {
-  @objc override dynamic public func numberOfSections(in tableView: UIKit.UITableView) -> Swift.Int
-  @objc override dynamic public func tableView(_ tableView: UIKit.UITableView, numberOfRowsInSection section: Swift.Int) -> Swift.Int
-  @objc override dynamic public func tableView(_ tableView: UIKit.UITableView, cellForRowAt indexPath: Foundation.IndexPath) -> UIKit.UITableViewCell
-  @objc override dynamic public func tableView(_ tableView: UIKit.UITableView, titleForHeaderInSection section: Swift.Int) -> Swift.String?
-  @objc override dynamic public func sectionIndexTitles(for tableView: UIKit.UITableView) -> [Swift.String]?
-  @objc override dynamic public func tableView(_ tableView: UIKit.UITableView, sectionForSectionIndexTitle title: Swift.String, at index: Swift.Int) -> Swift.Int
-}
-extension CountryPickerViewController {
-  @objc override dynamic public func tableView(_ tableView: UIKit.UITableView, willDisplayHeaderView view: UIKit.UIView, forSection section: Swift.Int)
-  @objc override dynamic public func tableView(_ tableView: UIKit.UITableView, didSelectRowAt indexPath: Foundation.IndexPath)
-}
-extension CountryPickerViewController : UIKit.UISearchResultsUpdating {
-  @objc dynamic public func updateSearchResults(for searchController: UIKit.UISearchController)
-}
-extension CountryPickerViewController : UIKit.UISearchBarDelegate {
-  @objc dynamic public func searchBarTextDidBeginEditing(_ searchBar: UIKit.UISearchBar)
-  @objc dynamic public func searchBarCancelButtonClicked(_ searchBar: UIKit.UISearchBar)
-}
-extension CountryPickerViewController : UIKit.UISearchControllerDelegate {
-  @objc dynamic public func willPresentSearchController(_ searchController: UIKit.UISearchController)
-  @objc dynamic public func willDismissSearchController(_ searchController: UIKit.UISearchController)
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class PaymentSDKBillingDetails : ObjectiveC.NSObject, Swift.Codable {
   @objc public var name: Swift.String?
@@ -333,75 +255,52 @@ extension PaymentSDKTheme : Foundation.NSCopying {
   open func encode(to encoder: Swift.Encoder) throws
   required public init(from decoder: Swift.Decoder) throws
 }
-public typealias CPVCountry = PaymentSDK.Country
-public enum SearchBarPosition {
-  case tableViewHeader, navigationBar, hidden
-  public static func == (a: PaymentSDK.SearchBarPosition, b: PaymentSDK.SearchBarPosition) -> Swift.Bool
-  public func hash(into hasher: inout Swift.Hasher)
-  public var hashValue: Swift.Int {
-    get
-  }
+public protocol CountryPickerViewDelegate : AnyObject {
+  func countryPickerView(_ countryPickerView: PaymentSDK.CountryPickerView, didSelectCountry country: PaymentSDK.Country)
+  func countryPickerView(_ countryPickerView: PaymentSDK.CountryPickerView, willShow viewController: PaymentSDK.CountryPickerViewController)
+  func countryPickerView(_ countryPickerView: PaymentSDK.CountryPickerView, didShow viewController: PaymentSDK.CountryPickerViewController)
 }
-public struct Country : Swift.Equatable {
-  public let name: Swift.String
-  public let code: Swift.String
-  public let phoneCode: Swift.String
-  public func localizedName(_ locale: Foundation.Locale = Locale.current) -> Swift.String?
-  public var flag: UIKit.UIImage {
-    get
-  }
+public protocol CountryPickerViewDataSource : AnyObject {
+  func preferredCountries(in countryPickerView: PaymentSDK.CountryPickerView) -> [PaymentSDK.Country]
+  func sectionTitleForPreferredCountries(in countryPickerView: PaymentSDK.CountryPickerView) -> Swift.String?
+  func showOnlyPreferredSection(in countryPickerView: PaymentSDK.CountryPickerView) -> Swift.Bool
+  func sectionTitleLabelFont(in countryPickerView: PaymentSDK.CountryPickerView) -> UIKit.UIFont
+  func sectionTitleLabelColor(in countryPickerView: PaymentSDK.CountryPickerView) -> UIKit.UIColor?
+  func cellLabelFont(in countryPickerView: PaymentSDK.CountryPickerView) -> UIKit.UIFont
+  func cellLabelColor(in countryPickerView: PaymentSDK.CountryPickerView) -> UIKit.UIColor?
+  func cellImageViewSize(in countryPickerView: PaymentSDK.CountryPickerView) -> CoreGraphics.CGSize
+  func cellImageViewCornerRadius(in countryPickerView: PaymentSDK.CountryPickerView) -> CoreGraphics.CGFloat
+  func navigationTitle(in countryPickerView: PaymentSDK.CountryPickerView) -> Swift.String?
+  func closeButtonNavigationItem(in countryPickerView: PaymentSDK.CountryPickerView) -> UIKit.UIBarButtonItem?
+  func searchBarPosition(in countryPickerView: PaymentSDK.CountryPickerView) -> PaymentSDK.SearchBarPosition
+  func showPhoneCodeInList(in countryPickerView: PaymentSDK.CountryPickerView) -> Swift.Bool
+  func showCountryCodeInList(in countryPickerView: PaymentSDK.CountryPickerView) -> Swift.Bool
+  func showCheckmarkInList(in countryPickerView: PaymentSDK.CountryPickerView) -> Swift.Bool
+  func localeForCountryNameInList(in countryPickerView: PaymentSDK.CountryPickerView) -> Foundation.Locale
+  func excludedCountries(in countryPickerView: PaymentSDK.CountryPickerView) -> [PaymentSDK.Country]
 }
-public func == (lhs: PaymentSDK.Country, rhs: PaymentSDK.Country) -> Swift.Bool
-public func != (lhs: PaymentSDK.Country, rhs: PaymentSDK.Country) -> Swift.Bool
-@objc @_inheritsConvenienceInitializers public class CountryPickerView : PaymentSDK.NibView {
-  @objc @IBOutlet weak public var flagImageView: UIKit.UIImageView! {
-    @objc get
-    @objc set
-  }
-  @objc @IBOutlet weak public var countryDetailsLabel: UIKit.UILabel!
-  public var showCountryCodeInView: Swift.Bool {
-    get
-    set
-  }
-  public var showPhoneCodeInView: Swift.Bool {
-    get
-    set
-  }
-  public var showCountryNameInView: Swift.Bool {
-    get
-    set
-  }
-  public var font: UIKit.UIFont {
-    get
-    set
-  }
-  public var textColor: UIKit.UIColor {
-    get
-    set
-  }
-  public var flagSpacingInView: CoreGraphics.CGFloat {
-    get
-    set
-  }
-  weak public var dataSource: PaymentSDK.CountryPickerViewDataSource?
-  weak public var delegate: PaymentSDK.CountryPickerViewDelegate?
-  weak public var hostViewController: UIKit.UIViewController?
-  public var selectedCountry: PaymentSDK.Country {
-    get
-  }
-  @objc override dynamic public init(frame: CoreGraphics.CGRect)
-  @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
-  public func showCountriesList(from viewController: UIKit.UIViewController)
-  final public let countries: [PaymentSDK.Country]
-  @objc deinit
+extension CountryPickerViewDataSource {
+  public func preferredCountries(in countryPickerView: PaymentSDK.CountryPickerView) -> [PaymentSDK.Country]
+  public func sectionTitleForPreferredCountries(in countryPickerView: PaymentSDK.CountryPickerView) -> Swift.String?
+  public func showOnlyPreferredSection(in countryPickerView: PaymentSDK.CountryPickerView) -> Swift.Bool
+  public func sectionTitleLabelFont(in countryPickerView: PaymentSDK.CountryPickerView) -> UIKit.UIFont
+  public func sectionTitleLabelColor(in countryPickerView: PaymentSDK.CountryPickerView) -> UIKit.UIColor?
+  public func cellLabelFont(in countryPickerView: PaymentSDK.CountryPickerView) -> UIKit.UIFont
+  public func cellLabelColor(in countryPickerView: PaymentSDK.CountryPickerView) -> UIKit.UIColor?
+  public func cellImageViewCornerRadius(in countryPickerView: PaymentSDK.CountryPickerView) -> CoreGraphics.CGFloat
+  public func cellImageViewSize(in countryPickerView: PaymentSDK.CountryPickerView) -> CoreGraphics.CGSize
+  public func navigationTitle(in countryPickerView: PaymentSDK.CountryPickerView) -> Swift.String?
+  public func closeButtonNavigationItem(in countryPickerView: PaymentSDK.CountryPickerView) -> UIKit.UIBarButtonItem?
+  public func searchBarPosition(in countryPickerView: PaymentSDK.CountryPickerView) -> PaymentSDK.SearchBarPosition
+  public func showPhoneCodeInList(in countryPickerView: PaymentSDK.CountryPickerView) -> Swift.Bool
+  public func showCountryCodeInList(in countryPickerView: PaymentSDK.CountryPickerView) -> Swift.Bool
+  public func showCheckmarkInList(in countryPickerView: PaymentSDK.CountryPickerView) -> Swift.Bool
+  public func localeForCountryNameInList(in countryPickerView: PaymentSDK.CountryPickerView) -> Foundation.Locale
+  public func excludedCountries(in countryPickerView: PaymentSDK.CountryPickerView) -> [PaymentSDK.Country]
 }
-extension CountryPickerView {
-  public func setCountryByName(_ name: Swift.String)
-  public func setCountryByPhoneCode(_ phoneCode: Swift.String)
-  public func setCountryByCode(_ code: Swift.String)
-  public func getCountryByName(_ name: Swift.String) -> PaymentSDK.Country?
-  public func getCountryByPhoneCode(_ phoneCode: Swift.String) -> PaymentSDK.Country?
-  public func getCountryByCode(_ code: Swift.String) -> PaymentSDK.Country?
+extension CountryPickerViewDelegate {
+  public func countryPickerView(_ countryPickerView: PaymentSDK.CountryPickerView, willShow viewController: PaymentSDK.CountryPickerViewController)
+  public func countryPickerView(_ countryPickerView: PaymentSDK.CountryPickerView, didShow viewController: PaymentSDK.CountryPickerViewController)
 }
 public enum TransactionType : Swift.String, Swift.CaseIterable {
   case sale
@@ -543,6 +442,7 @@ public enum PaymentSDKError : Swift.Error {
   case userNotAuthorizeForSelectedNetworks
   case somethingWentWrong
   case emptyAlternativePaymentMethods
+  case applePayOnSimulatorNotSupported
   public static func == (a: PaymentSDK.PaymentSDKError, b: PaymentSDK.PaymentSDKError) -> Swift.Bool
   public func hash(into hasher: inout Swift.Hasher)
   public var hashValue: Swift.Int {
@@ -573,6 +473,37 @@ extension PaymentSDKCardInputView {
 extension PaymentManager {
   public static func startApplePayPayment(on rootViewController: UIKit.UIViewController, configuration: PaymentSDK.PaymentSDKConfiguration, delegate: PaymentSDK.PaymentManagerDelegate?)
 }
+@objc @_inheritsConvenienceInitializers public class CountryPickerViewController : UIKit.UITableViewController {
+  public var searchController: UIKit.UISearchController?
+  @objc override dynamic public func viewDidLoad()
+  @objc override dynamic public init(style: UIKit.UITableView.Style)
+  @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+extension CountryPickerViewController {
+  @objc override dynamic public func numberOfSections(in tableView: UIKit.UITableView) -> Swift.Int
+  @objc override dynamic public func tableView(_ tableView: UIKit.UITableView, numberOfRowsInSection section: Swift.Int) -> Swift.Int
+  @objc override dynamic public func tableView(_ tableView: UIKit.UITableView, cellForRowAt indexPath: Foundation.IndexPath) -> UIKit.UITableViewCell
+  @objc override dynamic public func tableView(_ tableView: UIKit.UITableView, titleForHeaderInSection section: Swift.Int) -> Swift.String?
+  @objc override dynamic public func sectionIndexTitles(for tableView: UIKit.UITableView) -> [Swift.String]?
+  @objc override dynamic public func tableView(_ tableView: UIKit.UITableView, sectionForSectionIndexTitle title: Swift.String, at index: Swift.Int) -> Swift.Int
+}
+extension CountryPickerViewController {
+  @objc override dynamic public func tableView(_ tableView: UIKit.UITableView, willDisplayHeaderView view: UIKit.UIView, forSection section: Swift.Int)
+  @objc override dynamic public func tableView(_ tableView: UIKit.UITableView, didSelectRowAt indexPath: Foundation.IndexPath)
+}
+extension CountryPickerViewController : UIKit.UISearchResultsUpdating {
+  @objc dynamic public func updateSearchResults(for searchController: UIKit.UISearchController)
+}
+extension CountryPickerViewController : UIKit.UISearchBarDelegate {
+  @objc dynamic public func searchBarTextDidBeginEditing(_ searchBar: UIKit.UISearchBar)
+  @objc dynamic public func searchBarCancelButtonClicked(_ searchBar: UIKit.UISearchBar)
+}
+extension CountryPickerViewController : UIKit.UISearchControllerDelegate {
+  @objc dynamic public func willPresentSearchController(_ searchController: UIKit.UISearchController)
+  @objc dynamic public func willDismissSearchController(_ searchController: UIKit.UISearchController)
+}
 public struct PayModels {
 }
 @objc public protocol PaymentManagerDelegate {
@@ -587,6 +518,76 @@ public struct PayModels {
   public static func pay(rootViewController: UIKit.UIViewController, configuration: PaymentSDK.PaymentSDKConfiguration, cardInputView: PaymentSDK.PaymentSDKCardInputView)
   @objc override dynamic public init()
   @objc deinit
+}
+public typealias CPVCountry = PaymentSDK.Country
+public enum SearchBarPosition {
+  case tableViewHeader, navigationBar, hidden
+  public static func == (a: PaymentSDK.SearchBarPosition, b: PaymentSDK.SearchBarPosition) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public struct Country : Swift.Equatable {
+  public let name: Swift.String
+  public let code: Swift.String
+  public let phoneCode: Swift.String
+  public func localizedName(_ locale: Foundation.Locale = Locale.current) -> Swift.String?
+  public var flag: UIKit.UIImage {
+    get
+  }
+}
+public func == (lhs: PaymentSDK.Country, rhs: PaymentSDK.Country) -> Swift.Bool
+public func != (lhs: PaymentSDK.Country, rhs: PaymentSDK.Country) -> Swift.Bool
+@objc @_inheritsConvenienceInitializers public class CountryPickerView : PaymentSDK.NibView {
+  @objc @IBOutlet weak public var flagImageView: UIKit.UIImageView! {
+    @objc get
+    @objc set
+  }
+  @objc @IBOutlet weak public var countryDetailsLabel: UIKit.UILabel!
+  public var showCountryCodeInView: Swift.Bool {
+    get
+    set
+  }
+  public var showPhoneCodeInView: Swift.Bool {
+    get
+    set
+  }
+  public var showCountryNameInView: Swift.Bool {
+    get
+    set
+  }
+  public var font: UIKit.UIFont {
+    get
+    set
+  }
+  public var textColor: UIKit.UIColor {
+    get
+    set
+  }
+  public var flagSpacingInView: CoreGraphics.CGFloat {
+    get
+    set
+  }
+  weak public var dataSource: PaymentSDK.CountryPickerViewDataSource?
+  weak public var delegate: PaymentSDK.CountryPickerViewDelegate?
+  weak public var hostViewController: UIKit.UIViewController?
+  public var selectedCountry: PaymentSDK.Country {
+    get
+  }
+  @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  public func showCountriesList(from viewController: UIKit.UIViewController)
+  final public let countries: [PaymentSDK.Country]
+  @objc deinit
+}
+extension CountryPickerView {
+  public func setCountryByName(_ name: Swift.String)
+  public func setCountryByPhoneCode(_ phoneCode: Swift.String)
+  public func setCountryByCode(_ code: Swift.String)
+  public func getCountryByName(_ name: Swift.String) -> PaymentSDK.Country?
+  public func getCountryByPhoneCode(_ phoneCode: Swift.String) -> PaymentSDK.Country?
+  public func getCountryByCode(_ code: Swift.String) -> PaymentSDK.Country?
 }
 public enum Model : Swift.String {
   case simulator, iPod1, iPod2, iPod3, iPod4, iPod5, iPod6, iPod7, iPad2, iPad3, iPad4, iPadAir, iPadAir2, iPadAir3, iPadAir4, iPad5, iPad6, iPad7, iPad8, iPadMini, iPadMini2, iPadMini3, iPadMini4, iPadMini5, iPadPro9_7, iPadPro10_5, iPadPro11, iPadPro2_11, iPadPro12_9, iPadPro2_12_9, iPadPro3_12_9, iPadPro4_12_9, iPhone4, iPhone4S, iPhone5, iPhone5S, iPhone5C, iPhone6, iPhone6Plus, iPhone6S, iPhone6SPlus, iPhoneSE, iPhone7, iPhone7Plus, iPhone8, iPhone8Plus, iPhoneX, iPhoneXS, iPhoneXSMax, iPhoneXR, iPhone11, iPhone11Pro, iPhone11ProMax, iPhoneSE2, iPhone12Mini, iPhone12, iPhone12Pro, iPhone12ProMax, AppleWatch1, AppleWatchS1, AppleWatchS2, AppleWatchS3, AppleWatchS4, AppleWatchS5, AppleWatchSE, AppleWatchS6, AppleTV1, AppleTV2, AppleTV3, AppleTV4, AppleTV_4K, unrecognized
@@ -645,8 +646,6 @@ extension PaymentSDKError : Foundation.LocalizedError {
 extension PaymentManager {
   public static func startAlternativePaymentMethod(on rootViewController: UIKit.UIViewController, configuration: PaymentSDK.PaymentSDKConfiguration, delegate: PaymentSDK.PaymentManagerDelegate?)
 }
-extension PaymentSDK.SearchBarPosition : Swift.Equatable {}
-extension PaymentSDK.SearchBarPosition : Swift.Hashable {}
 extension PaymentSDK.TransactionType : Swift.Equatable {}
 extension PaymentSDK.TransactionType : Swift.Hashable {}
 extension PaymentSDK.TransactionType : Swift.RawRepresentable {}
@@ -664,6 +663,8 @@ extension PaymentSDK.AlternativePaymentMethod : Swift.Hashable {}
 extension PaymentSDK.AlternativePaymentMethod : Swift.RawRepresentable {}
 extension PaymentSDK.PaymentSDKError : Swift.Equatable {}
 extension PaymentSDK.PaymentSDKError : Swift.Hashable {}
+extension PaymentSDK.SearchBarPosition : Swift.Equatable {}
+extension PaymentSDK.SearchBarPosition : Swift.Hashable {}
 extension PaymentSDK.Model : Swift.Equatable {}
 extension PaymentSDK.Model : Swift.Hashable {}
 extension PaymentSDK.Model : Swift.RawRepresentable {}

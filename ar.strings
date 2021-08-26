@@ -130,3 +130,4 @@
 "payment_sdk_no" = "لا";
 "payment_sdk_error_empty_alternative_payment_methods" = "قائمة وسائل الدفع البديلة فارغة";
 "payment_sdk_country_list_search" = "بحث";
+"payment_sdk_apple_pay_simulator_not_supported" = "Apple Pay غير مدعوم على جهاز المحاكاة ، يرجى المحاولة على جهاز حقيقي";
