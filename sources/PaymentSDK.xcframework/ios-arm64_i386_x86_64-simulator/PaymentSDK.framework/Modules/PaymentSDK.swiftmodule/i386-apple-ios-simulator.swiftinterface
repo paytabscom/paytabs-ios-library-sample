@@ -506,19 +506,6 @@ extension CountryPickerViewController : UIKit.UISearchControllerDelegate {
 }
 public struct PayModels {
 }
-@objc public protocol PaymentManagerDelegate {
-  @objc func paymentManager(didFinishTransaction transactionDetails: PaymentSDK.PaymentSDKTransactionDetails?, error: Swift.Error?)
-  @objc optional func paymentManager(didRecieveValidation error: Swift.Error?)
-  @objc optional func paymentManager(didCancelPayment error: Swift.Error?)
-  @objc optional func paymentManager(didStartPaymentTransaction rootViewController: UIKit.UIViewController)
-}
-@_inheritsConvenienceInitializers @objc public class PaymentManager : ObjectiveC.NSObject {
-  public static func startCardPayment(on rootViewController: UIKit.UIViewController, configuration: PaymentSDK.PaymentSDKConfiguration, delegate: PaymentSDK.PaymentManagerDelegate?)
-  public static func pay(rootViewController: UIKit.UIViewController, cardInputView: PaymentSDK.PaymentSDKCardInputView, profileId: Swift.String, cartID: Swift.String, currency: Swift.String, amount: Swift.Double, cartDescription: Swift.String, languageCode: Swift.String?, serverIP: Swift.String?, billingDetails: PaymentSDK.PaymentSDKBillingDetails?, shippingDetails: PaymentSDK.PaymentSDKShippingDetails?)
-  public static func pay(rootViewController: UIKit.UIViewController, configuration: PaymentSDK.PaymentSDKConfiguration, cardInputView: PaymentSDK.PaymentSDKCardInputView)
-  @objc override dynamic public init()
-  @objc deinit
-}
 public typealias CPVCountry = PaymentSDK.Country
 public enum SearchBarPosition {
   case tableViewHeader, navigationBar, hidden
@@ -589,6 +576,25 @@ extension CountryPickerView {
   public func getCountryByPhoneCode(_ phoneCode: Swift.String) -> PaymentSDK.Country?
   public func getCountryByCode(_ code: Swift.String) -> PaymentSDK.Country?
 }
+@objc public protocol PaymentManagerDelegate {
+  @objc func paymentManager(didFinishTransaction transactionDetails: PaymentSDK.PaymentSDKTransactionDetails?, error: Swift.Error?)
+  @objc optional func paymentManager(didRecieveValidation error: Swift.Error?)
+  @objc optional func paymentManager(didCancelPayment error: Swift.Error?)
+  @objc optional func paymentManager(didStartPaymentTransaction rootViewController: UIKit.UIViewController)
+}
+@_inheritsConvenienceInitializers @objc public class PaymentManager : ObjectiveC.NSObject {
+  public static func startCardPayment(on rootViewController: UIKit.UIViewController, configuration: PaymentSDK.PaymentSDKConfiguration, delegate: PaymentSDK.PaymentManagerDelegate?)
+  public static func pay(rootViewController: UIKit.UIViewController, cardInputView: PaymentSDK.PaymentSDKCardInputView, profileId: Swift.String, cartID: Swift.String, currency: Swift.String, amount: Swift.Double, cartDescription: Swift.String, languageCode: Swift.String?, serverIP: Swift.String?, billingDetails: PaymentSDK.PaymentSDKBillingDetails?, shippingDetails: PaymentSDK.PaymentSDKShippingDetails?)
+  public static func pay(rootViewController: UIKit.UIViewController, configuration: PaymentSDK.PaymentSDKConfiguration, cardInputView: PaymentSDK.PaymentSDKCardInputView)
+  @objc override dynamic public init()
+  @objc deinit
+}
+public func == (lhs: PaymentSDK.CreditCardValidationType, rhs: PaymentSDK.CreditCardValidationType) -> Swift.Bool
+public struct CreditCardValidationType : Swift.Equatable {
+  public var name: Swift.String
+  public var regex: Swift.String
+  public init(dict: [Swift.String : Any])
+}
 public enum Model : Swift.String {
   case simulator, iPod1, iPod2, iPod3, iPod4, iPod5, iPod6, iPod7, iPad2, iPad3, iPad4, iPadAir, iPadAir2, iPadAir3, iPadAir4, iPad5, iPad6, iPad7, iPad8, iPadMini, iPadMini2, iPadMini3, iPadMini4, iPadMini5, iPadPro9_7, iPadPro10_5, iPadPro11, iPadPro2_11, iPadPro12_9, iPadPro2_12_9, iPadPro3_12_9, iPadPro4_12_9, iPhone4, iPhone4S, iPhone5, iPhone5S, iPhone5C, iPhone6, iPhone6Plus, iPhone6S, iPhone6SPlus, iPhoneSE, iPhone7, iPhone7Plus, iPhone8, iPhone8Plus, iPhoneX, iPhoneXS, iPhoneXSMax, iPhoneXR, iPhone11, iPhone11Pro, iPhone11ProMax, iPhoneSE2, iPhone12Mini, iPhone12, iPhone12Pro, iPhone12ProMax, AppleWatch1, AppleWatchS1, AppleWatchS2, AppleWatchS3, AppleWatchS4, AppleWatchS5, AppleWatchSE, AppleWatchS6, AppleTV1, AppleTV2, AppleTV3, AppleTV4, AppleTV_4K, unrecognized
   public init?(rawValue: Swift.String)
@@ -601,24 +607,6 @@ extension UIDevice {
   public var type: PaymentSDK.Model {
     get
   }
-}
-public class CreditCardValidator {
-  public var types: [PaymentSDK.CreditCardValidationType] {
-    get
-    set
-  }
-  public init()
-  public func type(from string: Swift.String) -> PaymentSDK.CreditCardValidationType?
-  public func validate(string: Swift.String) -> Swift.Bool
-  public func validate(string: Swift.String, forType type: PaymentSDK.CreditCardValidationType) -> Swift.Bool
-  public func onlyNumbers(string: Swift.String) -> Swift.String
-  @objc deinit
-}
-public func == (lhs: PaymentSDK.CreditCardValidationType, rhs: PaymentSDK.CreditCardValidationType) -> Swift.Bool
-public struct CreditCardValidationType : Swift.Equatable {
-  public var name: Swift.String
-  public var regex: Swift.String
-  public init(dict: [Swift.String : Any])
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class PaymentSDKShippingDetails : ObjectiveC.NSObject, Swift.Codable {
   @objc public var name: Swift.String?
@@ -642,6 +630,18 @@ extension PaymentSDKError : Foundation.LocalizedError {
   public var errorDescription: Swift.String? {
     get
   }
+}
+public class CreditCardValidator {
+  public var types: [PaymentSDK.CreditCardValidationType] {
+    get
+    set
+  }
+  public init()
+  public func type(from string: Swift.String) -> PaymentSDK.CreditCardValidationType?
+  public func validate(string: Swift.String) -> Swift.Bool
+  public func validate(string: Swift.String, forType type: PaymentSDK.CreditCardValidationType) -> Swift.Bool
+  public func onlyNumbers(string: Swift.String) -> Swift.String
+  @objc deinit
 }
 extension PaymentManager {
   public static func startAlternativePaymentMethod(on rootViewController: UIKit.UIViewController, configuration: PaymentSDK.PaymentSDKConfiguration, delegate: PaymentSDK.PaymentManagerDelegate?)
