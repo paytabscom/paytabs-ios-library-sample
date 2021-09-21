@@ -593,6 +593,7 @@ public func == (lhs: PaymentSDK.CreditCardValidationType, rhs: PaymentSDK.Credit
 public struct CreditCardValidationType : Swift.Equatable {
   public var name: Swift.String
   public var regex: Swift.String
+  public init(name: Swift.String, regex: Swift.String)
   public init(dict: [Swift.String : Any])
 }
 public enum Model : Swift.String {
@@ -637,7 +638,7 @@ public class CreditCardValidator {
     set
   }
   public init()
-  public func type(from string: Swift.String) -> PaymentSDK.CreditCardValidationType?
+  public func getType(from string: Swift.String) -> PaymentSDK.CreditCardValidationType?
   public func validate(string: Swift.String) -> Swift.Bool
   public func validate(string: Swift.String, forType type: PaymentSDK.CreditCardValidationType) -> Swift.Bool
   public func onlyNumbers(string: Swift.String) -> Swift.String
