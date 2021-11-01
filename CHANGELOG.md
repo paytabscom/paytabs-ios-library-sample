@@ -8,4 +8,7 @@
 * The transaction types becomes configurable.
 
 ## 6.1.6 2021-09-21
-* Add mada netwrok.
+* Add Iraq network.
+
+## 6.1.7 2021-11-01
+*Minor issue.
