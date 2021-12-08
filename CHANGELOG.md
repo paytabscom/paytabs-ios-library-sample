@@ -12,3 +12,6 @@
 
 ## 6.1.7 2021-11-01
 *Minor issue.
+
+## 6.1.8 2021-12-08
+* back button's tint to have primary color
