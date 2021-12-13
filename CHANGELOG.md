@@ -18,3 +18,6 @@
 
 ## 6.1.9 2021-12-09
 * Minor fix
+
+## 6.1.10 2021-12-13
+* added backbuttonColor property 
