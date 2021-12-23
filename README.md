@@ -192,7 +192,7 @@ extension ViewController: PaymentManagerDelegate {
 ### Handling Transaction response
 you can use transactionDetails?.isSuccess() to ensure a successful transaction ..
 
-if the transaction is not successful you should check for the corrosponding failure code you will receive the code in 
+if the transaction is not successful you should check for the corresponding failure code you will receive the code in 
 ```transactionDetails?.paymentResult?.responseCode ``` .. all codes can be found in  [Payment Response Codes][responseCodes]
 
 ## Force Shipping Info Validation
