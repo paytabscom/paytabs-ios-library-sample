@@ -83,8 +83,6 @@ class ViewController: UIViewController {
     var configuration: PaymentSDKConfiguration! {
         let theme = PaymentSDKTheme.default
         theme.logoImage = UIImage(named: "Logo")
-        theme.primaryColor = .black
-        theme.secondaryColor = .white
         return PaymentSDKConfiguration(profileID: profileID,
                                        serverKey: serverKey,
                                        clientKey: clientKey,
@@ -228,6 +226,9 @@ extension ViewController: PaymentManagerDelegate {
             print("Token: " + (transactionDetails.token ?? ""))
             print("Transaction Reference: " + (transactionDetails.transactionReference ?? ""))
             print("Transaction Time: " + (transactionDetails.paymentResult?.transactionTime ?? "" ))
+            if transactionDetails.isSuccess() {
+                print("Successful transaction")
+            }
         } else if let error = error {
             showError(message: error.localizedDescription)
         }
