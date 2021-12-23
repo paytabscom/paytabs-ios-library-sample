@@ -29,13 +29,13 @@
 [CocoaPods](https://cocoapods.org) is a dependency manager for Cocoa projects. For usage and installation instructions, visit their website. To integrate **PayTabs SDK** into your Xcode project using CocoaPods, specify it in your `Podfile`:
 
 ```ruby
-pod 'PayTabsSDK', '~> 6.1.10'
+pod 'PayTabsSDK', '~> 6.1.11'
 ```
 ### Carthage
 [Carthage](https://github.com/Carthage/Carthage) is a decentralized dependency manager that builds your dependencies and provides you with binary frameworks. To integrate **PayTabs SDK** into your Xcode project using Carthage, specify it in your `Cartfile`:
 
 ```ogdl
-github "paytabscom/paytabs-ios-library-sample" ~> 6.1.10
+github "paytabscom/paytabs-ios-library-sample" ~> 6.1.11
 ```
 ### Manual
 Follow the below steps:
@@ -69,19 +69,19 @@ import PaymentSDK
 
 ```swift
 let billingDetails = PaymentSDKBillingDetails(name: "John Smith",
-                                     	   email: "email@test.com",
-                                     	   phone: "+2011111111",
-                                     	   addressLine: "address",
-                                     	   city: "Dubai",
+                                            email: "email@test.com",
+                                            phone: "+2011111111",
+                                            addressLine: "address",
+                                            city: "Dubai",
                                            state: "Dubai",
                                            countryCode: "ae", // ISO alpha 2
                                            zip: "12345")
                                                    
 let shippingDetails = PaymentSDKShippingDetails(name: "John Smith",
-                                     	   email: "email@test.com",
-                                     	   phone: "+2011111111",
-                                     	   addressLine: "address",
-                                     	   city: "Dubai",
+                                            email: "email@test.com",
+                                            phone: "+2011111111",
+                                            addressLine: "address",
+                                            city: "Dubai",
                                            state: "Dubai",
                                            countryCode: "ae", // ISO alpha 2
                                            zip: "12345")
@@ -107,8 +107,8 @@ let configuration = PaymentSDKConfiguration(profileID: profileID,
 
 ```swift
 PaymentManager.startCardPayment(on: self, 
-							 configuration: configuration,
-							 delegate: self)
+                             configuration: configuration,
+                             delegate: self)
 
 ```
 
@@ -144,8 +144,8 @@ configuration.simplifyApplePayValidation = true
 
 ```swift
 PaymentManager.startApplePayPayment(on: self, 
-							 configuration: configuration,
-							 delegate: self)
+                             configuration: configuration,
+                             delegate: self)
 ```
 
 ### Pay with Alternative Payment Methods
@@ -162,8 +162,8 @@ configuration.alternativePaymentMethods = [.stcPay]
 
 ```swift
 PaymentManager.startAlternativePaymentMethod(on: self, 
-							 configuration: configuration,
-							 delegate: self)
+                             configuration: configuration,
+                             delegate: self)
 ```
 
 
@@ -179,12 +179,21 @@ extension ViewController: PaymentManagerDelegate {
             print("Token: " + (transactionDetails.token ?? ""))
             print("Transaction Reference: " + (transactionDetails.transactionReference ?? ""))
             print("Transaction Time: " + (transactionDetails.paymentResult?.transactionTime ?? "" ))
+       if transactionDetails.isSuccess() {
+                print("Successful transaction")
+          }
         } else if let error = error {
             // Handle errors
         }
     }
 }
 ```
+
+### Handling Transaction response
+you can use transactionDetails?.isSuccess() to ensure a successful transaction ..
+
+if the transaction is not successful you should check for the corresponding failure code you will receive the code in 
+```transactionDetails?.paymentResult?.responseCode ``` .. all codes can be found in  [Payment Response Codes][responseCodes]
 
 ## Force Shipping Info Validation
 By default, the validation on shipping info is disabled.
@@ -328,3 +337,4 @@ See [LICENSE][license].
  [englishstrings]: https://github.com/paytabscom/paytabs-ios-library-sample/tree/master/en.strings
  [arabicstrings]: https://github.com/paytabscom/paytabs-ios-library-sample/tree/master/ar.strings
  [applepayguide]: https://github.com/paytabscom/paytabs-ios-library-sample/blob/master/ApplePayConfiguration.md
+ [responseCodes]: https://site.paytabs.com/en/pt2-documentation/testing/payment-response-codes/

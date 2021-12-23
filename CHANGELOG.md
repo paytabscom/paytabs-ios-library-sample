@@ -21,3 +21,6 @@
 
 ## 6.1.10 2021-12-13
 * added backbuttonColor property 
+
+## 6.1.11 2021-12-23
+* added transaction response handler for apple pay

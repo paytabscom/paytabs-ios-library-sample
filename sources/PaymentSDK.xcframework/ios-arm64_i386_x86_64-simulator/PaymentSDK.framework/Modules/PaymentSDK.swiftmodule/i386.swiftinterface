@@ -252,6 +252,11 @@ extension PaymentSDKTheme : Foundation.NSCopying {
   @objc final public let paymentInfo: PaymentSDK.PaymentInfoViewModel?
   @objc final public let billingDetails: PaymentSDK.PaymentSDKBillingDetails?
   @objc final public let shippingDetails: PaymentSDK.PaymentSDKShippingDetails?
+  public func isPending() -> Swift.Bool
+  public func isAuthorized() -> Swift.Bool
+  public func isOnHold() -> Swift.Bool
+  public func isProcessed() -> Swift.Bool
+  public func isSuccess() -> Swift.Bool
   @objc override dynamic public init()
   @objc deinit
   open func encode(to encoder: Swift.Encoder) throws
