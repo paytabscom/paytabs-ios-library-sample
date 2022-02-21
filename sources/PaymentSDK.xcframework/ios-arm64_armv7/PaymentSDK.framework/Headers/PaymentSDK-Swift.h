@@ -310,6 +310,7 @@ SWIFT_CLASS("_TtC10PaymentSDK14PaymentManager")
 
 SWIFT_PROTOCOL("_TtP10PaymentSDK22PaymentManagerDelegate_")
 @protocol PaymentManagerDelegate
+/// Here you will receive the transaction details and errors,  you can use transactionDetails?.isSuccess() to ensure a successful transaction .. if the transaction is not successful you should check for the corresponding failure code you will receive the code in transactionDetails?.paymentResult?.responseCode ..
 - (void)paymentManagerWithDidFinishTransaction:(PaymentSDKTransactionDetails * _Nullable)transactionDetails error:(NSError * _Nullable)error;
 @optional
 - (void)paymentManagerWithDidRecieveValidation:(NSError * _Nullable)error;
@@ -722,6 +723,7 @@ SWIFT_CLASS("_TtC10PaymentSDK14PaymentManager")
 
 SWIFT_PROTOCOL("_TtP10PaymentSDK22PaymentManagerDelegate_")
 @protocol PaymentManagerDelegate
+/// Here you will receive the transaction details and errors,  you can use transactionDetails?.isSuccess() to ensure a successful transaction .. if the transaction is not successful you should check for the corresponding failure code you will receive the code in transactionDetails?.paymentResult?.responseCode ..
 - (void)paymentManagerWithDidFinishTransaction:(PaymentSDKTransactionDetails * _Nullable)transactionDetails error:(NSError * _Nullable)error;
 @optional
 - (void)paymentManagerWithDidRecieveValidation:(NSError * _Nullable)error;
