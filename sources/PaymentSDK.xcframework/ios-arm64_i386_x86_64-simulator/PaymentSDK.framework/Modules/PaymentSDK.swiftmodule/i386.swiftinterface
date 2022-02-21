@@ -591,8 +591,6 @@ extension CountryPickerView {
 }
 @_inheritsConvenienceInitializers @objc public class PaymentManager : ObjectiveC.NSObject {
   public static func startCardPayment(on rootViewController: UIKit.UIViewController, configuration: PaymentSDK.PaymentSDKConfiguration, delegate: PaymentSDK.PaymentManagerDelegate?)
-  public static func pay(rootViewController: UIKit.UIViewController, cardInputView: PaymentSDK.PaymentSDKCardInputView, profileId: Swift.String, cartID: Swift.String, currency: Swift.String, amount: Swift.Double, cartDescription: Swift.String, languageCode: Swift.String?, serverIP: Swift.String?, billingDetails: PaymentSDK.PaymentSDKBillingDetails?, shippingDetails: PaymentSDK.PaymentSDKShippingDetails?)
-  public static func pay(rootViewController: UIKit.UIViewController, configuration: PaymentSDK.PaymentSDKConfiguration, cardInputView: PaymentSDK.PaymentSDKCardInputView)
   @objc override dynamic public init()
   @objc deinit
 }

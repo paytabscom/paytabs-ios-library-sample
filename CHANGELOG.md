@@ -24,3 +24,6 @@
 
 ## 6.1.11 2021-12-23
 * added transaction response handler for apple pay
+
+## 6.1.12 2022-02-21
+* Fixed applePay threading issue
