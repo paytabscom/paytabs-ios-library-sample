@@ -27,3 +27,6 @@
 
 ## 6.1.12 2022-02-21
 * Fixed applePay threading issue
+
+## 6.1.13 2022-02-23
+* Fixed minor issue
