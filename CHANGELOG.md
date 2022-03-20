@@ -30,3 +30,6 @@
 
 ## 6.1.13 2022-02-23
 * Fixed minor issue
+
+## 6.1.14 2022-03-20
+* added ability to unlink billing name from card holder name

@@ -29,13 +29,13 @@
 [CocoaPods](https://cocoapods.org) is a dependency manager for Cocoa projects. For usage and installation instructions, visit their website. To integrate **PayTabs SDK** into your Xcode project using CocoaPods, specify it in your `Podfile`:
 
 ```ruby
-pod 'PayTabsSDK', '~> 6.1.13'
+pod 'PayTabsSDK', '~> 6.1.14'
 ```
 ### Carthage
 [Carthage](https://github.com/Carthage/Carthage) is a decentralized dependency manager that builds your dependencies and provides you with binary frameworks. To integrate **PayTabs SDK** into your Xcode project using Carthage, specify it in your `Cartfile`:
 
 ```ogdl
-github "paytabscom/paytabs-ios-library-sample" ~> 6.1.13
+github "paytabscom/paytabs-ios-library-sample" ~> 6.1.14
 ```
 ### Manual
 Follow the below steps:
@@ -208,6 +208,12 @@ By default, the billing and shipping info section is disappeared, sets its flag 
 ```swift
 configuration.showBillingInfo = true
 configuration.showShippingInfo = true
+```
+
+## Link billing name with card holder name
+By default, the billing name is linked with card holder name, if you set its flag to `false` the billing name and the card holder name will be seperated
+```
+configuration.linkBillingNameWithCard = true
 ```
 
 ## Tokenisation
