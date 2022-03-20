@@ -6,7 +6,7 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		jlC7Bsjyz95GiTy2EJlPsOL8EWc=
+		cENvDUbMnPOnof/jiNctdkF8dYw=
 		</data>
 		<key>CameraScanning.wav</key>
 		<data>
@@ -1050,19 +1050,19 @@
 		</data>
 		<key>CountryPickerView.nib</key>
 		<data>
-		fY0o8RKf4KbdIlgv8+hnLimBT2g=
+		P3QP/llIPfNZk9fL3Fz+Bcs+0I0=
 		</data>
 		<key>CreditCardInputView.nib</key>
 		<data>
-		i7gdYt6GdoNvIPnovK+9YO6r8no=
+		cKR0o+2nE10tg20saCiv0HWMMf4=
 		</data>
 		<key>CreditCardScannerViewController.nib</key>
 		<data>
-		GJXTugNBPnLSJnUjlJ3zOqkyw74=
+		TTYS2lX2y8v6b3wyAmR1+dQ3a5Y=
 		</data>
 		<key>HeaderTableViewCell.nib</key>
 		<data>
-		KsRKjCaVY0HSzAtp48TqoSnFFqE=
+		Qq8LhdtJTQGCGjuHBKuAaxHtGS4=
 		</data>
 		<key>Headers/PaymentSDK-Swift.h</key>
 		<data>
@@ -1074,71 +1074,71 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		Himv9saiehfLNKEtImsOkjm7NsY=
+		VmvMnZXVjb6+KXLd200hmQVAIzo=
 		</data>
 		<key>InputTextTableViewCell.nib</key>
 		<data>
-		NNynukKd3cponmAVIMmqZQdVFpA=
+		LQwrcCNvDIapLsYAqrmGhu1Je7I=
 		</data>
 		<key>Modules/PaymentSDK.swiftmodule/arm.swiftdoc</key>
 		<data>
-		92pGIbQScZnuInr1yvXo8HxU9MY=
+		r1Qoqs9R1MT16VV8hmuRgP/Dk2k=
 		</data>
 		<key>Modules/PaymentSDK.swiftmodule/arm.swiftinterface</key>
 		<data>
-		+u+a8bUYilWcDzAvLpCIjdYd8EM=
+		ihUSMaUMC3C9axeAWVj974wJu0M=
 		</data>
 		<key>Modules/PaymentSDK.swiftmodule/arm.swiftmodule</key>
 		<data>
-		XAcexRfpHXihCS4m440vUJSlhvc=
+		zn/6Bi/9jWPEr/jG+Csyuo5sJOw=
 		</data>
 		<key>Modules/PaymentSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		xAsrsHhoKaQE9/fPquXqz5aALyI=
+		Avik9jY37KZjJpdP6jpiyHOt4DY=
 		</data>
 		<key>Modules/PaymentSDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		PbtPU48NOfQPi9jtyjHQH/YKHXM=
+		my1admll94ftMBE8Tm+dyv98Rbw=
 		</data>
 		<key>Modules/PaymentSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		CfXYIpWNLMWywbiSYf14vjf724k=
+		L2KhPpKHqOsnaeo6KQdMfgq/h/A=
 		</data>
 		<key>Modules/PaymentSDK.swiftmodule/arm64.swiftdoc</key>
 		<data>
-		xAsrsHhoKaQE9/fPquXqz5aALyI=
+		Avik9jY37KZjJpdP6jpiyHOt4DY=
 		</data>
 		<key>Modules/PaymentSDK.swiftmodule/arm64.swiftinterface</key>
 		<data>
-		PbtPU48NOfQPi9jtyjHQH/YKHXM=
+		my1admll94ftMBE8Tm+dyv98Rbw=
 		</data>
 		<key>Modules/PaymentSDK.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		CfXYIpWNLMWywbiSYf14vjf724k=
+		L2KhPpKHqOsnaeo6KQdMfgq/h/A=
 		</data>
 		<key>Modules/PaymentSDK.swiftmodule/armv7-apple-ios.swiftdoc</key>
 		<data>
-		92pGIbQScZnuInr1yvXo8HxU9MY=
+		r1Qoqs9R1MT16VV8hmuRgP/Dk2k=
 		</data>
 		<key>Modules/PaymentSDK.swiftmodule/armv7-apple-ios.swiftinterface</key>
 		<data>
-		+u+a8bUYilWcDzAvLpCIjdYd8EM=
+		ihUSMaUMC3C9axeAWVj974wJu0M=
 		</data>
 		<key>Modules/PaymentSDK.swiftmodule/armv7-apple-ios.swiftmodule</key>
 		<data>
-		XAcexRfpHXihCS4m440vUJSlhvc=
+		zn/6Bi/9jWPEr/jG+Csyuo5sJOw=
 		</data>
 		<key>Modules/PaymentSDK.swiftmodule/armv7.swiftdoc</key>
 		<data>
-		92pGIbQScZnuInr1yvXo8HxU9MY=
+		r1Qoqs9R1MT16VV8hmuRgP/Dk2k=
 		</data>
 		<key>Modules/PaymentSDK.swiftmodule/armv7.swiftinterface</key>
 		<data>
-		+u+a8bUYilWcDzAvLpCIjdYd8EM=
+		ihUSMaUMC3C9axeAWVj974wJu0M=
 		</data>
 		<key>Modules/PaymentSDK.swiftmodule/armv7.swiftmodule</key>
 		<data>
-		XAcexRfpHXihCS4m440vUJSlhvc=
+		zn/6Bi/9jWPEr/jG+Csyuo5sJOw=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -1146,19 +1146,19 @@
 		</data>
 		<key>PayButtonTableViewCell.nib</key>
 		<data>
-		uA8RAHSf4dol505LtVHv/3mL3nY=
+		pQ0nxF1QaKkexSnnqN6F75VsBAY=
 		</data>
 		<key>PayWithCardViewController.nib/objects-11.0+.nib</key>
 		<data>
-		4RyX29BapyHYkdsdIXgvDIw1evQ=
+		hZvmKtBXmqsmtIMUNrDVTTwoIGo=
 		</data>
 		<key>PayWithCardViewController.nib/runtime.nib</key>
 		<data>
-		G+rX2b892zRwEBMiOmV7IsfwRLA=
+		7WFBEIY2pVuNcxm/paOOueY4ntE=
 		</data>
 		<key>PaymentSDKCardTableViewCell.nib</key>
 		<data>
-		B7HqZK7YrG1wGOT5LHfGt0Jiplo=
+		9nwY/8VYfSMUBZR+7pSsNhJ80lQ=
 		</data>
 		<key>ar.lproj/Localizable.strings</key>
 		<dict>
@@ -1197,11 +1197,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			jlC7Bsjyz95GiTy2EJlPsOL8EWc=
+			cENvDUbMnPOnof/jiNctdkF8dYw=
 			</data>
 			<key>hash2</key>
 			<data>
-			Iu1AwxKlKtNhOZJR11hwdWag5oOA/Tu5PbOGOzeLD1s=
+			YxTw1E+xfUWBvUkvcMxyIt68qK6AvCXVLZelVxaHnd4=
 			</data>
 		</dict>
 		<key>CameraScanning.wav</key>
@@ -4068,44 +4068,44 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			fY0o8RKf4KbdIlgv8+hnLimBT2g=
+			P3QP/llIPfNZk9fL3Fz+Bcs+0I0=
 			</data>
 			<key>hash2</key>
 			<data>
-			Iz1vHZ/6mpUrJXl6BMqipU8IptjGM2PeKjKjs6xaE54=
+			FQv89X7d4qx+LYPkfemxaw2t45Pl5dMAyhP0YjqehTA=
 			</data>
 		</dict>
 		<key>CreditCardInputView.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			i7gdYt6GdoNvIPnovK+9YO6r8no=
+			cKR0o+2nE10tg20saCiv0HWMMf4=
 			</data>
 			<key>hash2</key>
 			<data>
-			OgZ1V/z3MQ9YcLel7ti92cEaynLkgKLDy53M8DpP/P4=
+			/yJD0mAlo/cpAmaQQuxWscmIegXm4nwUKNuzvmLdW/U=
 			</data>
 		</dict>
 		<key>CreditCardScannerViewController.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			GJXTugNBPnLSJnUjlJ3zOqkyw74=
+			TTYS2lX2y8v6b3wyAmR1+dQ3a5Y=
 			</data>
 			<key>hash2</key>
 			<data>
-			at7MyCc0PIbkf+7a5gM27lTYpapNjK3JGyXBU1Wn41k=
+			SWhP6dwbI04zPqmd5iGmeQrcC3THLMgQdJ4CGDxEeIc=
 			</data>
 		</dict>
 		<key>HeaderTableViewCell.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			KsRKjCaVY0HSzAtp48TqoSnFFqE=
+			Qq8LhdtJTQGCGjuHBKuAaxHtGS4=
 			</data>
 			<key>hash2</key>
 			<data>
-			sAt9I9jZ8b5TgyWFXypxOaUY/I8l+VyhoXph6Z6BCKk=
+			e2dS1Q3hXRUOnRDm7AGS7/nbI6EFkgIHInBilRFtVhg=
 			</data>
 		</dict>
 		<key>Headers/PaymentSDK-Swift.h</key>
@@ -4134,176 +4134,176 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			NNynukKd3cponmAVIMmqZQdVFpA=
+			LQwrcCNvDIapLsYAqrmGhu1Je7I=
 			</data>
 			<key>hash2</key>
 			<data>
-			147VKH68nu0jUXC/kf5wIQpWZK5vYaet1dxAhkble60=
+			ejVgaJHnMRaLLs9qlJbyy50Ryn/U+l5KtlEIZVfznBA=
 			</data>
 		</dict>
 		<key>Modules/PaymentSDK.swiftmodule/arm.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			92pGIbQScZnuInr1yvXo8HxU9MY=
+			r1Qoqs9R1MT16VV8hmuRgP/Dk2k=
 			</data>
 			<key>hash2</key>
 			<data>
-			ZTunifFiF3KcEVyY88lIiSkKdcDEn+G7dL71qESnfkM=
+			Ls8wvsRUeYJcAwiL3q/r9FMuAbZCIVeBp+S3IZcDZro=
 			</data>
 		</dict>
 		<key>Modules/PaymentSDK.swiftmodule/arm.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			+u+a8bUYilWcDzAvLpCIjdYd8EM=
+			ihUSMaUMC3C9axeAWVj974wJu0M=
 			</data>
 			<key>hash2</key>
 			<data>
-			7QWvBOJNW75pvznxrZlc3VzzZGS48rSXLhhK9JsLZXY=
+			pscv1R0+MdXpHBgagY/PWtuLnooWCyVMj2Ko00XkphY=
 			</data>
 		</dict>
 		<key>Modules/PaymentSDK.swiftmodule/arm.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			XAcexRfpHXihCS4m440vUJSlhvc=
+			zn/6Bi/9jWPEr/jG+Csyuo5sJOw=
 			</data>
 			<key>hash2</key>
 			<data>
-			+aFHjZmgV273igkxIMAs0pg/Cvu6Qky6fQweeZGkcsA=
+			0P4JvDo9WgZQsRl4au4mP1WehcvhTaEfyVxV+t2d1tw=
 			</data>
 		</dict>
 		<key>Modules/PaymentSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			xAsrsHhoKaQE9/fPquXqz5aALyI=
+			Avik9jY37KZjJpdP6jpiyHOt4DY=
 			</data>
 			<key>hash2</key>
 			<data>
-			I/0pv4fvfW40QRogQryOy/b1aGVGEfjGkA7QJ7V9DA4=
+			6yzVqh+t6f9MDduLyhNSjasMMWOH5u0C6nQE1k6MoMo=
 			</data>
 		</dict>
 		<key>Modules/PaymentSDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			PbtPU48NOfQPi9jtyjHQH/YKHXM=
+			my1admll94ftMBE8Tm+dyv98Rbw=
 			</data>
 			<key>hash2</key>
 			<data>
-			HDR79Al4CGyYjyCOenF20YLIYt4YSXt8OMPinJ0KsJ0=
+			Zox6FEss0hYnEhezP6jHDZEm/C/8seEU5NApMkAvGWc=
 			</data>
 		</dict>
 		<key>Modules/PaymentSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			CfXYIpWNLMWywbiSYf14vjf724k=
+			L2KhPpKHqOsnaeo6KQdMfgq/h/A=
 			</data>
 			<key>hash2</key>
 			<data>
-			qFAI1uSgAdk7RzbRitNdPG5dBC0Ta+0QAWf4cK0Hog0=
+			ZjFFubWLhf34Z+SIRRL9ACdMNGKGcYaMJSUHMxLglpQ=
 			</data>
 		</dict>
 		<key>Modules/PaymentSDK.swiftmodule/arm64.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			xAsrsHhoKaQE9/fPquXqz5aALyI=
+			Avik9jY37KZjJpdP6jpiyHOt4DY=
 			</data>
 			<key>hash2</key>
 			<data>
-			I/0pv4fvfW40QRogQryOy/b1aGVGEfjGkA7QJ7V9DA4=
+			6yzVqh+t6f9MDduLyhNSjasMMWOH5u0C6nQE1k6MoMo=
 			</data>
 		</dict>
 		<key>Modules/PaymentSDK.swiftmodule/arm64.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			PbtPU48NOfQPi9jtyjHQH/YKHXM=
+			my1admll94ftMBE8Tm+dyv98Rbw=
 			</data>
 			<key>hash2</key>
 			<data>
-			HDR79Al4CGyYjyCOenF20YLIYt4YSXt8OMPinJ0KsJ0=
+			Zox6FEss0hYnEhezP6jHDZEm/C/8seEU5NApMkAvGWc=
 			</data>
 		</dict>
 		<key>Modules/PaymentSDK.swiftmodule/arm64.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			CfXYIpWNLMWywbiSYf14vjf724k=
+			L2KhPpKHqOsnaeo6KQdMfgq/h/A=
 			</data>
 			<key>hash2</key>
 			<data>
-			qFAI1uSgAdk7RzbRitNdPG5dBC0Ta+0QAWf4cK0Hog0=
+			ZjFFubWLhf34Z+SIRRL9ACdMNGKGcYaMJSUHMxLglpQ=
 			</data>
 		</dict>
 		<key>Modules/PaymentSDK.swiftmodule/armv7-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			92pGIbQScZnuInr1yvXo8HxU9MY=
+			r1Qoqs9R1MT16VV8hmuRgP/Dk2k=
 			</data>
 			<key>hash2</key>
 			<data>
-			ZTunifFiF3KcEVyY88lIiSkKdcDEn+G7dL71qESnfkM=
+			Ls8wvsRUeYJcAwiL3q/r9FMuAbZCIVeBp+S3IZcDZro=
 			</data>
 		</dict>
 		<key>Modules/PaymentSDK.swiftmodule/armv7-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			+u+a8bUYilWcDzAvLpCIjdYd8EM=
+			ihUSMaUMC3C9axeAWVj974wJu0M=
 			</data>
 			<key>hash2</key>
 			<data>
-			7QWvBOJNW75pvznxrZlc3VzzZGS48rSXLhhK9JsLZXY=
+			pscv1R0+MdXpHBgagY/PWtuLnooWCyVMj2Ko00XkphY=
 			</data>
 		</dict>
 		<key>Modules/PaymentSDK.swiftmodule/armv7-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			XAcexRfpHXihCS4m440vUJSlhvc=
+			zn/6Bi/9jWPEr/jG+Csyuo5sJOw=
 			</data>
 			<key>hash2</key>
 			<data>
-			+aFHjZmgV273igkxIMAs0pg/Cvu6Qky6fQweeZGkcsA=
+			0P4JvDo9WgZQsRl4au4mP1WehcvhTaEfyVxV+t2d1tw=
 			</data>
 		</dict>
 		<key>Modules/PaymentSDK.swiftmodule/armv7.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			92pGIbQScZnuInr1yvXo8HxU9MY=
+			r1Qoqs9R1MT16VV8hmuRgP/Dk2k=
 			</data>
 			<key>hash2</key>
 			<data>
-			ZTunifFiF3KcEVyY88lIiSkKdcDEn+G7dL71qESnfkM=
+			Ls8wvsRUeYJcAwiL3q/r9FMuAbZCIVeBp+S3IZcDZro=
 			</data>
 		</dict>
 		<key>Modules/PaymentSDK.swiftmodule/armv7.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			+u+a8bUYilWcDzAvLpCIjdYd8EM=
+			ihUSMaUMC3C9axeAWVj974wJu0M=
 			</data>
 			<key>hash2</key>
 			<data>
-			7QWvBOJNW75pvznxrZlc3VzzZGS48rSXLhhK9JsLZXY=
+			pscv1R0+MdXpHBgagY/PWtuLnooWCyVMj2Ko00XkphY=
 			</data>
 		</dict>
 		<key>Modules/PaymentSDK.swiftmodule/armv7.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			XAcexRfpHXihCS4m440vUJSlhvc=
+			zn/6Bi/9jWPEr/jG+Csyuo5sJOw=
 			</data>
 			<key>hash2</key>
 			<data>
-			+aFHjZmgV273igkxIMAs0pg/Cvu6Qky6fQweeZGkcsA=
+			0P4JvDo9WgZQsRl4au4mP1WehcvhTaEfyVxV+t2d1tw=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -4321,44 +4321,44 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			uA8RAHSf4dol505LtVHv/3mL3nY=
+			pQ0nxF1QaKkexSnnqN6F75VsBAY=
 			</data>
 			<key>hash2</key>
 			<data>
-			oPaVCxhiWTBbj9epe2+cB8YMj1DqnNn0E24Kn8PCL3w=
+			YLpPL68yqDbi6+YhA+K2w+Sgu3eKd0qVREW7vSSsm3A=
 			</data>
 		</dict>
 		<key>PayWithCardViewController.nib/objects-11.0+.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			4RyX29BapyHYkdsdIXgvDIw1evQ=
+			hZvmKtBXmqsmtIMUNrDVTTwoIGo=
 			</data>
 			<key>hash2</key>
 			<data>
-			Sh7uu/9QoQaiQEpqOn8STSZQ0V5ePWRPsAt59gGusTE=
+			TuR/zTeOxzueMQaa1SXjW799XKjwpmZTPNvN5wIWNOU=
 			</data>
 		</dict>
 		<key>PayWithCardViewController.nib/runtime.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			G+rX2b892zRwEBMiOmV7IsfwRLA=
+			7WFBEIY2pVuNcxm/paOOueY4ntE=
 			</data>
 			<key>hash2</key>
 			<data>
-			+bJyI/LcWnzKixCCCV7VF01loz0muDbpIhKOJ5l2tn0=
+			Wf2YneFwohNS9GSp+GeuLS3xtM3msn+GvWR+V3b1Qzg=
 			</data>
 		</dict>
 		<key>PaymentSDKCardTableViewCell.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			B7HqZK7YrG1wGOT5LHfGt0Jiplo=
+			9nwY/8VYfSMUBZR+7pSsNhJ80lQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			oD7SNxUt4j8JHuOhlTP86BPtWR0azC0omTxsSTfHJhw=
+			KBlLlyz508peAU4ErlnxDgWNfq7Etr9JvNEg2rY8kqs=
 			</data>
 		</dict>
 		<key>ar.lproj/Localizable.strings</key>
