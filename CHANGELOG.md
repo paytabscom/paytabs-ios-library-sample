@@ -36,3 +36,6 @@
 
 ## 6.1.15 2022-03-23
 * add more validation
+
+## 6.1.16 2022-03-23
+* add validation on first & last name
