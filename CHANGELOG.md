@@ -33,3 +33,6 @@
 
 ## 6.1.14 2022-03-20
 * added ability to unlink billing name from card holder name
+
+## 6.1.15 2022-03-23
+* add more validation
