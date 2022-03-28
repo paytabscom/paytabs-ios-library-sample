@@ -1,0 +1,16 @@
+PODS:
+  - ClickPay (6.1.1)
+
+DEPENDENCIES:
+  - ClickPay (from `/Users/amrmagdy/Desktop/Dev/iOS-Sample(28:3)`)
+
+EXTERNAL SOURCES:
+  ClickPay:
+    :path: "/Users/amrmagdy/Desktop/Dev/iOS-Sample(28:3)"
+
+SPEC CHECKSUMS:
+  ClickPay: 61afbd7e0e6f04208a017232448f1c00fd6f158d
+
+PODFILE CHECKSUM: 7d6428f72cc1e3a3af1c043cd27d655cf623d432
+
+COCOAPODS: 1.11.2

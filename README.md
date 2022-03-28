@@ -28,13 +28,13 @@
 [CocoaPods](https://cocoapods.org) is a dependency manager for Cocoa projects. For usage and installation instructions, visit their website. To integrate **ClickPay SDK** into your Xcode project using CocoaPods, specify it in your `Podfile`:
 
 ```ruby
-pod 'ClickPay', '~> 6.1.1'
+pod 'ClickPay', '~> 6.1.17'
 ```
 ### Carthage
 [Carthage](https://github.com/Carthage/Carthage) is a decentralized dependency manager that builds your dependencies and provides you with binary frameworks. To integrate **ClickPay SDK** into your Xcode project using Carthage, specify it in your `Cartfile`:
 
 ```ogdl
-github "paytabscom/paytabs-ios-library-sample" ~> 6.1.1
+github "paytabscom/paytabs-ios-library-sample" ~> 6.1.17
 ```
 ### Manual
 Follow the below steps:
@@ -203,7 +203,7 @@ configuration.transactionReference = transactionreference
 ## Theme
 Use the following guide to cusomize the colors, font, and logo by configuring the theme and pass it to the payment configuration.
 
-![UI guide](https://user-images.githubusercontent.com/13621658/109432213-d7981380-7a12-11eb-9224-c8fc12b0024d.jpg)
+![UI guide](https://user-images.githubusercontent.com/95287975/160391259-97aaff10-cb9f-4103-bc3e-a938a1111128.png)
 
 ## Localization
 You can use the strings file below to copy the key and add it to your app localizable file and overwrite the value to yours. 
@@ -280,7 +280,7 @@ configuration.transactionType = .sale
 
 Check our complete [example][example].
 
-<img src="https://user-images.githubusercontent.com/13621658/109432386-905e5280-7a13-11eb-847c-63f2c554e2d1.png" width="370">
+<img src="https://user-images.githubusercontent.com/95287975/160391395-a8e591fc-85ed-459d-b0ce-1768d3bddd8a.png" width="370">
 
 ## License
 
