@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.5.2 (swiftlang-1300.0.47.5 clang-1300.0.29.30)
+// swift-compiler-version: Apple Swift version 5.4.2 (swiftlang-1205.0.28.2 clang-1205.0.19.57)
 // swift-module-flags: -target arm64-apple-ios10.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name PaymentSDK
 import AVFoundation
 import CommonCrypto
@@ -13,7 +13,6 @@ import UIKit
 import VideoToolbox
 import Vision
 import WebKit
-import _Concurrency
 public protocol PaymentSDKMerchantConfiguration {
   var profileID: Swift.String { get set }
   var serverKey: Swift.String { get set }
@@ -71,24 +70,24 @@ open class PaymentSDKConfiguration : PaymentSDK.PaymentSDKMerchantConfiguration,
   open func encode(to encoder: Swift.Encoder) throws
   required public init(from decoder: Swift.Decoder) throws
 }
-extension PaymentSDK.PaymentSDKConfiguration : Foundation.NSCopying {
+extension PaymentSDKConfiguration : Foundation.NSCopying {
   @objc dynamic public func copy(with zone: ObjectiveC.NSZone? = nil) -> Any
 }
-@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class PaymentSDKCardInputView : UIKit.UIView {
-  @_Concurrency.MainActor(unsafe) public var paymentSDKCardParams: PaymentSDK.PaymentSDKCardParams? {
+@objc @_inheritsConvenienceInitializers open class PaymentSDKCardInputView : UIKit.UIView {
+  public var paymentSDKCardParams: PaymentSDK.PaymentSDKCardParams? {
     get
     set
   }
-  @_Concurrency.MainActor(unsafe) public var onCardParamsChanged: ((_ cardParams: PaymentSDK.PaymentSDKCardParams?) -> Swift.Void)? {
+  public var onCardParamsChanged: ((PaymentSDK.PaymentSDKCardParams?) -> Swift.Void)? {
     get
     set
   }
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
-  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
-  @_Concurrency.MainActor(unsafe) public func hideCardScanner(isHidden: Swift.Bool)
+  @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @objc required dynamic public init?(coder: Foundation.NSCoder)
+  public func hideCardScanner(isHidden: Swift.Bool)
   @objc deinit
 }
-extension PassKit.PKPaymentMethodType : Swift.CustomStringConvertible {
+extension PKPaymentMethodType : Swift.CustomStringConvertible {
   public var description: Swift.String {
     get
   }
@@ -116,10 +115,10 @@ public struct UIConfiguration {
   public func encode(to encoder: Swift.Encoder) throws
   required public init(from decoder: Swift.Decoder) throws
 }
-extension PaymentSDK.PaymentSDKBillingDetails : Foundation.NSCopying {
+extension PaymentSDKBillingDetails : Foundation.NSCopying {
   @objc dynamic public func copy(with zone: ObjectiveC.NSZone? = nil) -> Any
 }
-extension PaymentSDK.PaymentSDKConfiguration {
+extension PaymentSDKConfiguration {
   @discardableResult
   public func profileID(_ value: Swift.String) -> PaymentSDK.PaymentSDKConfiguration
   @discardableResult
@@ -230,18 +229,20 @@ public class PaymentSDKTheme : PaymentSDK.ThemeConfiguration {
   }
   @objc deinit
 }
-extension PaymentSDK.PaymentSDKTheme : Foundation.NSCopying {
+extension PaymentSDKTheme : Foundation.NSCopying {
   @objc dynamic public func copy(with zone: ObjectiveC.NSZone? = nil) -> Any
 }
 @_hasMissingDesignatedInitializers @objc public class PaymentResultViewModel : ObjectiveC.NSObject, Swift.Codable {
   @objc final public let responseStatus: Swift.String?, responseCode: Swift.String?, responseMessage: Swift.String?
   @objc final public let transactionTime: Swift.String?, acquirerMessage: Swift.String?, acquirerRRN: Swift.String?
+  @objc override dynamic public init()
   @objc deinit
   public func encode(to encoder: Swift.Encoder) throws
   required public init(from decoder: Swift.Decoder) throws
 }
 @_hasMissingDesignatedInitializers @objc public class PaymentInfoViewModel : ObjectiveC.NSObject, Swift.Codable {
   @objc public var cardType: Swift.String?, cardScheme: Swift.String?, paymentDescription: Swift.String?
+  @objc override dynamic public init()
   @objc deinit
   public func encode(to encoder: Swift.Encoder) throws
   required public init(from decoder: Swift.Decoder) throws
@@ -259,6 +260,7 @@ extension PaymentSDK.PaymentSDKTheme : Foundation.NSCopying {
   public func isOnHold() -> Swift.Bool
   public func isProcessed() -> Swift.Bool
   public func isSuccess() -> Swift.Bool
+  @objc override dynamic public init()
   @objc deinit
   open func encode(to encoder: Swift.Encoder) throws
   required public init(from decoder: Swift.Decoder) throws
@@ -287,7 +289,7 @@ public protocol CountryPickerViewDataSource : AnyObject {
   func localeForCountryNameInList(in countryPickerView: PaymentSDK.CountryPickerView) -> Foundation.Locale
   func excludedCountries(in countryPickerView: PaymentSDK.CountryPickerView) -> [PaymentSDK.Country]
 }
-extension PaymentSDK.CountryPickerViewDataSource {
+extension CountryPickerViewDataSource {
   public func preferredCountries(in countryPickerView: PaymentSDK.CountryPickerView) -> [PaymentSDK.Country]
   public func sectionTitleForPreferredCountries(in countryPickerView: PaymentSDK.CountryPickerView) -> Swift.String?
   public func showOnlyPreferredSection(in countryPickerView: PaymentSDK.CountryPickerView) -> Swift.Bool
@@ -306,7 +308,7 @@ extension PaymentSDK.CountryPickerViewDataSource {
   public func localeForCountryNameInList(in countryPickerView: PaymentSDK.CountryPickerView) -> Foundation.Locale
   public func excludedCountries(in countryPickerView: PaymentSDK.CountryPickerView) -> [PaymentSDK.Country]
 }
-extension PaymentSDK.CountryPickerViewDelegate {
+extension CountryPickerViewDelegate {
   public func countryPickerView(_ countryPickerView: PaymentSDK.CountryPickerView, willShow viewController: PaymentSDK.CountryPickerViewController)
   public func countryPickerView(_ countryPickerView: PaymentSDK.CountryPickerView, didShow viewController: PaymentSDK.CountryPickerViewController)
 }
@@ -457,60 +459,60 @@ public enum PaymentSDKError : Swift.Error {
     get
   }
 }
-@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class NibView : UIKit.UIView {
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
-  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+@objc @_inheritsConvenienceInitializers public class NibView : UIKit.UIView {
+  @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
   @objc deinit
 }
-extension PaymentSDK.PaymentSDKCardInputView {
+extension PaymentSDKCardInputView {
   @discardableResult
-  @_Concurrency.MainActor(unsafe) public func setMerchnatLogo(image: UIKit.UIImage) -> PaymentSDK.PaymentSDKCardInputView
+  public func setMerchnatLogo(image: UIKit.UIImage) -> PaymentSDK.PaymentSDKCardInputView
   @discardableResult
-  @_Concurrency.MainActor(unsafe) public func setPrimaryColor(color: UIKit.UIColor) -> PaymentSDK.PaymentSDKCardInputView
+  public func setPrimaryColor(color: UIKit.UIColor) -> PaymentSDK.PaymentSDKCardInputView
   @discardableResult
-  @_Concurrency.MainActor(unsafe) public func setSecondaryColor(color: UIKit.UIColor) -> PaymentSDK.PaymentSDKCardInputView
+  public func setSecondaryColor(color: UIKit.UIColor) -> PaymentSDK.PaymentSDKCardInputView
   @discardableResult
-  @_Concurrency.MainActor(unsafe) public func setSecondaryFontColor(color: UIKit.UIColor) -> PaymentSDK.PaymentSDKCardInputView
+  public func setSecondaryFontColor(color: UIKit.UIColor) -> PaymentSDK.PaymentSDKCardInputView
   @discardableResult
-  @_Concurrency.MainActor(unsafe) public func setPrimaryFont(font: UIKit.UIFont) -> PaymentSDK.PaymentSDKCardInputView
+  public func setPrimaryFont(font: UIKit.UIFont) -> PaymentSDK.PaymentSDKCardInputView
   @discardableResult
-  @_Concurrency.MainActor(unsafe) public func setStrokeColor(color: UIKit.UIColor) -> PaymentSDK.PaymentSDKCardInputView
+  public func setStrokeColor(color: UIKit.UIColor) -> PaymentSDK.PaymentSDKCardInputView
   @discardableResult
-  @_Concurrency.MainActor(unsafe) public func setInputsCornerRadius(radius: CoreGraphics.CGFloat) -> PaymentSDK.PaymentSDKCardInputView
+  public func setInputsCornerRadius(radius: CoreGraphics.CGFloat) -> PaymentSDK.PaymentSDKCardInputView
 }
-extension PaymentSDK.PaymentManager {
+extension PaymentManager {
   public static func startApplePayPayment(on rootViewController: UIKit.UIViewController, configuration: PaymentSDK.PaymentSDKConfiguration, delegate: PaymentSDK.PaymentManagerDelegate?)
 }
-@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class CountryPickerViewController : UIKit.UITableViewController {
-  @_Concurrency.MainActor(unsafe) public var searchController: UIKit.UISearchController?
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(style: UIKit.UITableView.Style)
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
-  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+@objc @_inheritsConvenienceInitializers public class CountryPickerViewController : UIKit.UITableViewController {
+  public var searchController: UIKit.UISearchController?
+  @objc override dynamic public func viewDidLoad()
+  @objc override dynamic public init(style: UIKit.UITableView.Style)
+  @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @objc required dynamic public init?(coder: Foundation.NSCoder)
   @objc deinit
 }
-extension PaymentSDK.CountryPickerViewController {
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public func numberOfSections(in tableView: UIKit.UITableView) -> Swift.Int
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public func tableView(_ tableView: UIKit.UITableView, numberOfRowsInSection section: Swift.Int) -> Swift.Int
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public func tableView(_ tableView: UIKit.UITableView, cellForRowAt indexPath: Foundation.IndexPath) -> UIKit.UITableViewCell
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public func tableView(_ tableView: UIKit.UITableView, titleForHeaderInSection section: Swift.Int) -> Swift.String?
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public func sectionIndexTitles(for tableView: UIKit.UITableView) -> [Swift.String]?
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public func tableView(_ tableView: UIKit.UITableView, sectionForSectionIndexTitle title: Swift.String, at index: Swift.Int) -> Swift.Int
+extension CountryPickerViewController {
+  @objc override dynamic public func numberOfSections(in tableView: UIKit.UITableView) -> Swift.Int
+  @objc override dynamic public func tableView(_ tableView: UIKit.UITableView, numberOfRowsInSection section: Swift.Int) -> Swift.Int
+  @objc override dynamic public func tableView(_ tableView: UIKit.UITableView, cellForRowAt indexPath: Foundation.IndexPath) -> UIKit.UITableViewCell
+  @objc override dynamic public func tableView(_ tableView: UIKit.UITableView, titleForHeaderInSection section: Swift.Int) -> Swift.String?
+  @objc override dynamic public func sectionIndexTitles(for tableView: UIKit.UITableView) -> [Swift.String]?
+  @objc override dynamic public func tableView(_ tableView: UIKit.UITableView, sectionForSectionIndexTitle title: Swift.String, at index: Swift.Int) -> Swift.Int
 }
-extension PaymentSDK.CountryPickerViewController {
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public func tableView(_ tableView: UIKit.UITableView, willDisplayHeaderView view: UIKit.UIView, forSection section: Swift.Int)
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public func tableView(_ tableView: UIKit.UITableView, didSelectRowAt indexPath: Foundation.IndexPath)
+extension CountryPickerViewController {
+  @objc override dynamic public func tableView(_ tableView: UIKit.UITableView, willDisplayHeaderView view: UIKit.UIView, forSection section: Swift.Int)
+  @objc override dynamic public func tableView(_ tableView: UIKit.UITableView, didSelectRowAt indexPath: Foundation.IndexPath)
 }
-extension PaymentSDK.CountryPickerViewController : UIKit.UISearchResultsUpdating {
-  @_Concurrency.MainActor(unsafe) @objc dynamic public func updateSearchResults(for searchController: UIKit.UISearchController)
+extension CountryPickerViewController : UIKit.UISearchResultsUpdating {
+  @objc dynamic public func updateSearchResults(for searchController: UIKit.UISearchController)
 }
-extension PaymentSDK.CountryPickerViewController : UIKit.UISearchBarDelegate {
-  @_Concurrency.MainActor(unsafe) @objc dynamic public func searchBarTextDidBeginEditing(_ searchBar: UIKit.UISearchBar)
-  @_Concurrency.MainActor(unsafe) @objc dynamic public func searchBarCancelButtonClicked(_ searchBar: UIKit.UISearchBar)
+extension CountryPickerViewController : UIKit.UISearchBarDelegate {
+  @objc dynamic public func searchBarTextDidBeginEditing(_ searchBar: UIKit.UISearchBar)
+  @objc dynamic public func searchBarCancelButtonClicked(_ searchBar: UIKit.UISearchBar)
 }
-extension PaymentSDK.CountryPickerViewController : UIKit.UISearchControllerDelegate {
-  @_Concurrency.MainActor(unsafe) @objc dynamic public func willPresentSearchController(_ searchController: UIKit.UISearchController)
-  @_Concurrency.MainActor(unsafe) @objc dynamic public func willDismissSearchController(_ searchController: UIKit.UISearchController)
+extension CountryPickerViewController : UIKit.UISearchControllerDelegate {
+  @objc dynamic public func willPresentSearchController(_ searchController: UIKit.UISearchController)
+  @objc dynamic public func willDismissSearchController(_ searchController: UIKit.UISearchController)
 }
 public struct PayModels {
 }
@@ -534,55 +536,55 @@ public struct Country : Swift.Equatable {
 }
 public func == (lhs: PaymentSDK.Country, rhs: PaymentSDK.Country) -> Swift.Bool
 public func != (lhs: PaymentSDK.Country, rhs: PaymentSDK.Country) -> Swift.Bool
-@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class CountryPickerView : PaymentSDK.NibView {
-  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak public var flagImageView: UIKit.UIImageView! {
+@objc @_inheritsConvenienceInitializers public class CountryPickerView : PaymentSDK.NibView {
+  @objc @IBOutlet weak public var flagImageView: UIKit.UIImageView! {
     @objc get
     @objc set
   }
-  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak public var countryDetailsLabel: UIKit.UILabel!
-  @_Concurrency.MainActor(unsafe) public var showCountryCodeInView: Swift.Bool {
+  @objc @IBOutlet weak public var countryDetailsLabel: UIKit.UILabel!
+  public var showCountryCodeInView: Swift.Bool {
     get
     set
   }
-  @_Concurrency.MainActor(unsafe) public var showPhoneCodeInView: Swift.Bool {
+  public var showPhoneCodeInView: Swift.Bool {
     get
     set
   }
-  @_Concurrency.MainActor(unsafe) public var showCountryNameInView: Swift.Bool {
+  public var showCountryNameInView: Swift.Bool {
     get
     set
   }
-  @_Concurrency.MainActor(unsafe) public var font: UIKit.UIFont {
+  public var font: UIKit.UIFont {
     get
     set
   }
-  @_Concurrency.MainActor(unsafe) public var textColor: UIKit.UIColor {
+  public var textColor: UIKit.UIColor {
     get
     set
   }
-  @_Concurrency.MainActor(unsafe) public var flagSpacingInView: CoreGraphics.CGFloat {
+  public var flagSpacingInView: CoreGraphics.CGFloat {
     get
     set
   }
-  @_Concurrency.MainActor(unsafe) weak public var dataSource: PaymentSDK.CountryPickerViewDataSource?
-  @_Concurrency.MainActor(unsafe) weak public var delegate: PaymentSDK.CountryPickerViewDelegate?
-  @_Concurrency.MainActor(unsafe) weak public var hostViewController: UIKit.UIViewController?
-  @_Concurrency.MainActor(unsafe) public var selectedCountry: PaymentSDK.Country {
+  weak public var dataSource: PaymentSDK.CountryPickerViewDataSource?
+  weak public var delegate: PaymentSDK.CountryPickerViewDelegate?
+  weak public var hostViewController: UIKit.UIViewController?
+  public var selectedCountry: PaymentSDK.Country {
     get
   }
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
-  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
-  @_Concurrency.MainActor(unsafe) public func showCountriesList(from viewController: UIKit.UIViewController)
-  @_Concurrency.MainActor(unsafe) final public let countries: [PaymentSDK.Country]
+  @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  public func showCountriesList(from viewController: UIKit.UIViewController)
+  final public let countries: [PaymentSDK.Country]
   @objc deinit
 }
-extension PaymentSDK.CountryPickerView {
-  @_Concurrency.MainActor(unsafe) public func setCountryByName(_ name: Swift.String)
-  @_Concurrency.MainActor(unsafe) public func setCountryByPhoneCode(_ phoneCode: Swift.String)
-  @_Concurrency.MainActor(unsafe) public func setCountryByCode(_ code: Swift.String)
-  @_Concurrency.MainActor(unsafe) public func getCountryByName(_ name: Swift.String) -> PaymentSDK.Country?
-  @_Concurrency.MainActor(unsafe) public func getCountryByPhoneCode(_ phoneCode: Swift.String) -> PaymentSDK.Country?
-  @_Concurrency.MainActor(unsafe) public func getCountryByCode(_ code: Swift.String) -> PaymentSDK.Country?
+extension CountryPickerView {
+  public func setCountryByName(_ name: Swift.String)
+  public func setCountryByPhoneCode(_ phoneCode: Swift.String)
+  public func setCountryByCode(_ code: Swift.String)
+  public func getCountryByName(_ name: Swift.String) -> PaymentSDK.Country?
+  public func getCountryByPhoneCode(_ phoneCode: Swift.String) -> PaymentSDK.Country?
+  public func getCountryByCode(_ code: Swift.String) -> PaymentSDK.Country?
 }
 @objc public protocol PaymentManagerDelegate {
   @objc func paymentManager(didFinishTransaction transactionDetails: PaymentSDK.PaymentSDKTransactionDetails?, error: Swift.Error?)
@@ -610,8 +612,8 @@ public enum Model : Swift.String {
     get
   }
 }
-extension UIKit.UIDevice {
-  @_Concurrency.MainActor(unsafe) public var type: PaymentSDK.Model {
+extension UIDevice {
+  public var type: PaymentSDK.Model {
     get
   }
 }
@@ -630,10 +632,10 @@ extension UIKit.UIDevice {
   public func encode(to encoder: Swift.Encoder) throws
   required public init(from decoder: Swift.Decoder) throws
 }
-extension PaymentSDK.PaymentSDKShippingDetails : Foundation.NSCopying {
+extension PaymentSDKShippingDetails : Foundation.NSCopying {
   @objc dynamic public func copy(with zone: ObjectiveC.NSZone? = nil) -> Any
 }
-extension PaymentSDK.PaymentSDKError : Foundation.LocalizedError {
+extension PaymentSDKError : Foundation.LocalizedError {
   public var errorDescription: Swift.String? {
     get
   }
@@ -650,7 +652,7 @@ public class CreditCardValidator {
   public func onlyNumbers(string: Swift.String) -> Swift.String
   @objc deinit
 }
-extension PaymentSDK.PaymentManager {
+extension PaymentManager {
   public static func startAlternativePaymentMethod(on rootViewController: UIKit.UIViewController, configuration: PaymentSDK.PaymentSDKConfiguration, delegate: PaymentSDK.PaymentManagerDelegate?)
 }
 extension PaymentSDK.TransactionType : Swift.Equatable {}
