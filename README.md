@@ -37,6 +37,18 @@ pod 'PayTabsSDK', '~> 6.1.19'
 ```ogdl
 github "paytabscom/paytabs-ios-library-sample" ~> 6.1.19
 ```
+
+###Swift Package Manager
+The Swift Package Manager is a tool for automating the distribution of Swift code and is integrated into the swift compiler.
+
+Once you have your Swift package set up, adding PayTabsSDK as a dependency is as easy as adding it to the dependencies value of your Package.swift.
+
+```ruby
+dependencies: [
+    .package(url: "https://github.com/paytabscom/paytabs-ios-library-sample.git", .upToNextMajor(from: "6.1.20"))
+]
+```
+
 ### Manual
 Follow the below steps:
 
