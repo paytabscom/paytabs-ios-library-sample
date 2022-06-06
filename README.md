@@ -38,7 +38,7 @@ pod 'PayTabsSDK', '~> 6.1.19'
 github "paytabscom/paytabs-ios-library-sample" ~> 6.1.19
 ```
 
-###Swift Package Manager
+### Swift Package Manager 
 The Swift Package Manager is a tool for automating the distribution of Swift code and is integrated into the swift compiler.
 
 Once you have your Swift package set up, adding PayTabsSDK as a dependency is as easy as adding it to the dependencies value of your Package.swift.
