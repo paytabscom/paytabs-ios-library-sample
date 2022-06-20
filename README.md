@@ -325,6 +325,8 @@ public enum AlternativePaymentMethod: String {
     case knetCredit  = "knetcredit"
     case knetDebit  = "knetdebit"
     case fawry
+    case aman
+    case URPay = "urpay"
 }
 ```
 
