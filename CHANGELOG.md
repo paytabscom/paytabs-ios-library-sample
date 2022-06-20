@@ -48,3 +48,9 @@
 
 ## 6.1.19 2022-04-07
 * Minor fix
+
+## 6.1.20 2022-06-06
+* Added SPM Support
+
+## 6.1.21 2022-06-19
+* Added support to URPay & Aman
