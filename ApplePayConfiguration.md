@@ -2,7 +2,15 @@
 
 Follow the steps to help you easily configure your Apple Pay with PayTabs
 
-1. Generate CSR via [PayTabs Portal](https://merchant.paytabs.com)
+1. Add Apple Pay capability to your ptoject 
+ 	 * Click on ➕ to add a new capability
+	![](https://user-images.githubusercontent.com/95287975/179398956-07de1619-bf2a-4225-8230-03f2f14bf43c.png)
+	* Choose Apple pay
+	![](https://user-images.githubusercontent.com/95287975/179398957-75206ded-3641-4f62-ada8-ee6766870e13.png)
+	* Add the new merchant id
+	![](https://user-images.githubusercontent.com/95287975/179398955-1da22b7d-401c-4755-9f32-216ff904c7a4.png)
+
+2. Generate CSR via [PayTabs Portal](https://merchant.paytabs.com)
 
 	* Navigate to PayTabs [Certificate Management](https://merchant.paytabs.com/merchant/developers/certs).
 	![](https://user-images.githubusercontent.com/69899730/106730917-911fe680-6617-11eb-952f-ef12a544c916.jpg)
@@ -11,7 +19,7 @@ Follow the steps to help you easily configure your Apple Pay with PayTabs
 	* Wait the proccess to be finished, then download the certificate file. 
 	![](https://user-images.githubusercontent.com/69899730/106731229-ecea6f80-6617-11eb-878e-7ce508b8f1e1.jpg)
 
-2. Create Apple Pay certificate via your account on [Apple Developer](http://developer.apple.com)
+3. Create Apple Pay certificate via your account on [Apple Developer](http://developer.apple.com)
 	* Navigate to the Certificates, Identifiers & Profiles, then click on **Add** certificate button.
 	![](https://user-images.githubusercontent.com/69899730/106731619-58ccd800-6618-11eb-8f38-c4917aca5cf9.jpg)
 	* Check the option **Apple Pay Payment Processing Certificate** under the section **Services**, then click on **Continue** button.
@@ -25,7 +33,7 @@ Follow the steps to help you easily configure your Apple Pay with PayTabs
 	* Download your certificate to your Mac, then double click the **.cer** file to install in **Keychain Access**.
 	![](https://user-images.githubusercontent.com/69899730/106732177-0b049f80-6619-11eb-86b9-9ddee2b6c35e.jpg)
 	
-3. Upload your certificate to PayTabs portal.
+4. Upload your certificate to PayTabs portal.
 	* Navigate to [PayTabs Certificate Management](https://merchant.paytabs.com/merchant/developers/certs).
 		
 	* Enter the **Merchant ID** under the section **COMPLETE CERTIFICATE REQUEST**, then choose the **.cer** file you downloaded in step 2 and click on **Save** button.
