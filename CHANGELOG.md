@@ -54,3 +54,6 @@
 
 ## 6.1.21 2022-06-19
 * Added support to URPay & Aman
+
+## 6.3.0 2022-09-06
+* Added functions to start recurring and 3ds transactions
