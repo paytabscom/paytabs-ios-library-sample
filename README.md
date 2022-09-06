@@ -119,7 +119,7 @@ let configuration = PaymentSDKConfiguration(profileID: profileID,
 	* for normal card payment use
 	
 	```swift
-PaymentManager.startCardPayment(on: self, 
+    PaymentManager.startCardPayment(on: self, 
                              configuration: configuration,
                              delegate: self)
 
@@ -128,33 +128,30 @@ PaymentManager.startCardPayment(on: self,
 	* for recurring payment use 
 	
 	```swift
-PaymentManager.startRecurringCardPayment(on: self, 
+    PaymentManager.startRecurringCardPayment(on: self, 
                              configuration: configuration,
                              token: *token*,
                              transactionRef: *transactionReference*
                              delegate: self)
-
 	```
 	
 	* for recurring payment with 3DS feature enabled (request CVV) use 
 	
 	```swift
-PaymentManager.start3DSRecurringCardPayment(on: self, 
+    PaymentManager.start3DSRecurringCardPayment(on: self, 
                              configuration: configuration,
                              savedCardInfo: SavedCardInfo,
                              token: *token*
                              delegate: self)
-
 	```
 	
 	* for recurring payment with the ability to let SDK save Cards on your behalf and show sheet of saved cards for user to choose from
 	
 	```swift
-startCardPaymentWithSavedCards(on: self, 
+    startCardPaymentWithSavedCards(on: self, 
                              configuration: configuration,
                              support3DS: true,
                              delegate: self)
-
 	```
 ### Pay with Apple Pay
 
