@@ -366,6 +366,15 @@ SWIFT_CLASS("_TtC10PaymentSDK23PaymentSDKCardInputView")
 
 
 
+SWIFT_CLASS("_TtC10PaymentSDK23PaymentSDKSavedCardInfo")
+@interface PaymentSDKSavedCardInfo : NSObject
+@property (nonatomic, copy) NSString * _Nonnull maskedCard;
+@property (nonatomic, copy) NSString * _Nonnull cardType;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
 SWIFT_CLASS("_TtC10PaymentSDK25PaymentSDKShippingDetails")
 @interface PaymentSDKShippingDetails : NSObject
 @property (nonatomic, copy) NSString * _Nullable name;
@@ -785,6 +794,15 @@ SWIFT_CLASS("_TtC10PaymentSDK23PaymentSDKCardInputView")
 
 
 
+SWIFT_CLASS("_TtC10PaymentSDK23PaymentSDKSavedCardInfo")
+@interface PaymentSDKSavedCardInfo : NSObject
+@property (nonatomic, copy) NSString * _Nonnull maskedCard;
+@property (nonatomic, copy) NSString * _Nonnull cardType;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
 SWIFT_CLASS("_TtC10PaymentSDK25PaymentSDKShippingDetails")
 @interface PaymentSDKShippingDetails : NSObject
 @property (nonatomic, copy) NSString * _Nullable name;
@@ -1202,6 +1220,15 @@ SWIFT_CLASS("_TtC10PaymentSDK23PaymentSDKCardInputView")
 @end
 
 
+
+
+SWIFT_CLASS("_TtC10PaymentSDK23PaymentSDKSavedCardInfo")
+@interface PaymentSDKSavedCardInfo : NSObject
+@property (nonatomic, copy) NSString * _Nonnull maskedCard;
+@property (nonatomic, copy) NSString * _Nonnull cardType;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
 
 
 SWIFT_CLASS("_TtC10PaymentSDK25PaymentSDKShippingDetails")

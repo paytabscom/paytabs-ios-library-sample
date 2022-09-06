@@ -55,7 +55,9 @@ open class PaymentSDKConfiguration : PaymentSDK.PaymentSDKMerchantConfiguration,
   public var serverIP: Swift.String?
   public var tokeniseType: PaymentSDK.TokeniseType
   public var tokenFormat: PaymentSDK.TokenFormat
+  @available(swift, deprecated: 6.2.0, obsoleted: 7.0.0, message: "This will be removed in the near future, please use startRecurringCardPayment method instead")
   public var token: Swift.String?
+  @available(swift, deprecated: 6.2.0, obsoleted: 7.0.0, message: "This will be removed in the near future, please use startRecurringCardPayment method instead")
   public var transactionReference: Swift.String?
   public var screenTitle: Swift.String?
   public var merchantName: Swift.String?
@@ -63,10 +65,11 @@ open class PaymentSDKConfiguration : PaymentSDK.PaymentSDKMerchantConfiguration,
   public var simplifyApplePayValidation: Swift.Bool
   public var alternativePaymentMethods: [PaymentSDK.AlternativePaymentMethod]?
   public var linkBillingNameWithCard: Swift.Bool
+  public var callbackURL: Swift.String?
   public init()
   public init(profileID: Swift.String, serverKey: Swift.String, clientKey: Swift.String, currency: Swift.String, amount: Swift.Double, merchantCountryCode: Swift.String)
-  public init(profileID: Swift.String, serverKey: Swift.String, clientKey: Swift.String, cartID: Swift.String, currency: Swift.String, amount: Swift.Double, cartDescription: Swift.String, languageCode: Swift.String? = nil, merchantCountryCode: Swift.String, tokeniseType: PaymentSDK.TokeniseType = .none, tokenFormat: PaymentSDK.TokenFormat = .hex32, token: Swift.String? = nil, transactionreference: Swift.String? = nil, serverIP: Swift.String? = nil, merchantIdentifier: Swift.String? = nil, paymentNetworks: [PassKit.PKPaymentNetwork]? = nil, forceShippingInfo: Swift.Bool = false, showBillingInfo: Swift.Bool = false, showShippingInfo: Swift.Bool = false, screenTitle: Swift.String? = nil, merchantName: Swift.String? = nil, hideCardScanner: Swift.Bool = false, billingDetails: PaymentSDK.PaymentSDKBillingDetails, shippingDetails: PaymentSDK.PaymentSDKShippingDetails? = nil, theme: PaymentSDK.PaymentSDKTheme? = PaymentSDKTheme.default, linkBillingNameWithCard: Swift.Bool = true)
-  public init(profileID: Swift.String, serverKey: Swift.String, clientKey: Swift.String, cartID: Swift.String, currency: Swift.String, amount: Swift.Double, merchantName: Swift.String, cartDescription: Swift.String, languageCode: Swift.String? = nil, tokeniseType: PaymentSDK.TokeniseType = .none, tokenFormat: PaymentSDK.TokenFormat = .hex32, token: Swift.String? = nil, transactionreference: Swift.String? = nil, merchantCountryCode: Swift.String, serverIP: Swift.String? = nil, merchantIdentifier: Swift.String, paymentNetworks: [PassKit.PKPaymentNetwork]?, simplifyApplePayValidation: Swift.Bool = false, forceShippingInfo: Swift.Bool = false, billingDetails: PaymentSDK.PaymentSDKBillingDetails? = nil, shippingDetails: PaymentSDK.PaymentSDKShippingDetails? = nil, linkBillingNameWithCard: Swift.Bool = true)
+  public init(profileID: Swift.String, serverKey: Swift.String, clientKey: Swift.String, cartID: Swift.String, currency: Swift.String, amount: Swift.Double, cartDescription: Swift.String, languageCode: Swift.String? = nil, merchantCountryCode: Swift.String, tokeniseType: PaymentSDK.TokeniseType = .none, tokenFormat: PaymentSDK.TokenFormat = .hex32, token: Swift.String? = nil, transactionreference: Swift.String? = nil, serverIP: Swift.String? = nil, merchantIdentifier: Swift.String? = nil, paymentNetworks: [PassKit.PKPaymentNetwork]? = nil, forceShippingInfo: Swift.Bool = false, showBillingInfo: Swift.Bool = false, showShippingInfo: Swift.Bool = false, screenTitle: Swift.String? = nil, merchantName: Swift.String? = nil, hideCardScanner: Swift.Bool = false, billingDetails: PaymentSDK.PaymentSDKBillingDetails, shippingDetails: PaymentSDK.PaymentSDKShippingDetails? = nil, theme: PaymentSDK.PaymentSDKTheme? = PaymentSDKTheme.default, linkBillingNameWithCard: Swift.Bool = true, showSaveCardsUI: Swift.Bool = false, requestCVV: Swift.Bool = false, savedCardInfo: PaymentSDK.PaymentSDKSavedCardInfo? = nil)
+  public init(profileID: Swift.String, serverKey: Swift.String, clientKey: Swift.String, cartID: Swift.String, currency: Swift.String, amount: Swift.Double, merchantName: Swift.String, cartDescription: Swift.String, languageCode: Swift.String? = nil, tokeniseType: PaymentSDK.TokeniseType = .none, tokenFormat: PaymentSDK.TokenFormat = .hex32, token: Swift.String? = nil, transactionreference: Swift.String? = nil, merchantCountryCode: Swift.String, serverIP: Swift.String? = nil, merchantIdentifier: Swift.String, paymentNetworks: [PassKit.PKPaymentNetwork]?, simplifyApplePayValidation: Swift.Bool = false, forceShippingInfo: Swift.Bool = false, billingDetails: PaymentSDK.PaymentSDKBillingDetails? = nil, shippingDetails: PaymentSDK.PaymentSDKShippingDetails? = nil, linkBillingNameWithCard: Swift.Bool = true, showSaveCardsUI: Swift.Bool = false, requestCVV: Swift.Bool = false, savedCardInfo: PaymentSDK.PaymentSDKSavedCardInfo? = nil)
   @objc deinit
   open func encode(to encoder: Swift.Encoder) throws
   required public init(from decoder: Swift.Decoder) throws
@@ -184,6 +187,7 @@ extension PaymentSDK.PaymentSDKConfiguration {
   public func addAlternativePaymentMethod(_ value: PaymentSDK.AlternativePaymentMethod) -> PaymentSDK.PaymentSDKConfiguration
   @discardableResult
   public func linkBillingNameWithCard(_ value: Swift.Bool) -> PaymentSDK.PaymentSDKConfiguration
+  public func showSavedCardsUI(_ value: Swift.Bool) -> PaymentSDK.PaymentSDKConfiguration
 }
 public protocol ThemeConfiguration {
   var logoImage: UIKit.UIImage? { get set }
@@ -309,6 +313,14 @@ extension PaymentSDK.CountryPickerViewDataSource {
 extension PaymentSDK.CountryPickerViewDelegate {
   public func countryPickerView(_ countryPickerView: PaymentSDK.CountryPickerView, willShow viewController: PaymentSDK.CountryPickerViewController)
   public func countryPickerView(_ countryPickerView: PaymentSDK.CountryPickerView, didShow viewController: PaymentSDK.CountryPickerViewController)
+}
+@objc public class PaymentSDKSavedCardInfo : ObjectiveC.NSObject, Swift.Codable {
+  @objc public var maskedCard: Swift.String
+  @objc public var cardType: Swift.String
+  public init(maskedCard: Swift.String, cardType: Swift.String)
+  @objc deinit
+  public func encode(to encoder: Swift.Encoder) throws
+  required public init(from decoder: Swift.Decoder) throws
 }
 public enum TransactionType : Swift.String, Swift.CaseIterable {
   case sale
@@ -453,6 +465,8 @@ public enum PaymentSDKError : Swift.Error {
   case somethingWentWrong
   case emptyAlternativePaymentMethods
   case applePayOnSimulatorNotSupported
+  case emptyToken
+  case emptySavedCardInfo
   public static func == (a: PaymentSDK.PaymentSDKError, b: PaymentSDK.PaymentSDKError) -> Swift.Bool
   public func hash(into hasher: inout Swift.Hasher)
   public var hashValue: Swift.Int {
@@ -594,6 +608,9 @@ extension PaymentSDK.CountryPickerView {
 }
 @_inheritsConvenienceInitializers @objc public class PaymentManager : ObjectiveC.NSObject {
   public static func startCardPayment(on rootViewController: UIKit.UIViewController, configuration: PaymentSDK.PaymentSDKConfiguration, delegate: PaymentSDK.PaymentManagerDelegate?)
+  public static func start3DSRecurringCardPayment(on rootViewController: UIKit.UIViewController, configuration: PaymentSDK.PaymentSDKConfiguration, savedCardInfo: PaymentSDK.PaymentSDKSavedCardInfo, token: Swift.String, delegate: PaymentSDK.PaymentManagerDelegate?)
+  public static func startRecurringCardPayment(on rootViewController: UIKit.UIViewController, configuration: PaymentSDK.PaymentSDKConfiguration, token: Swift.String, transactionRef: Swift.String, delegate: PaymentSDK.PaymentManagerDelegate?)
+  public static func startCardPaymentWithSavedCards(on rootViewController: UIKit.UIViewController, configuration: PaymentSDK.PaymentSDKConfiguration, support3DS: Swift.Bool, delegate: PaymentSDK.PaymentManagerDelegate?)
   @objc override dynamic public init()
   @objc deinit
 }
@@ -647,6 +664,7 @@ public class CreditCardValidator {
   }
   public init()
   public func getType(from string: Swift.String) -> PaymentSDK.CreditCardValidationType?
+  public func type(from string: Swift.String) -> PaymentSDK.CreditCardValidationType?
   public func validate(string: Swift.String) -> Swift.Bool
   public func validate(string: Swift.String, forType type: PaymentSDK.CreditCardValidationType) -> Swift.Bool
   public func onlyNumbers(string: Swift.String) -> Swift.String

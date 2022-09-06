@@ -29,13 +29,13 @@
 [CocoaPods](https://cocoapods.org) is a dependency manager for Cocoa projects. For usage and installation instructions, visit their website. To integrate **PayTabs SDK** into your Xcode project using CocoaPods, specify it in your `Podfile`:
 
 ```ruby
-pod 'PayTabsSDK', '~> 6.1.21'
+pod 'PayTabsSDK', '~> 6.3.0'
 ```
 ### Carthage
 [Carthage](https://github.com/Carthage/Carthage) is a decentralized dependency manager that builds your dependencies and provides you with binary frameworks. To integrate **PayTabs SDK** into your Xcode project using Carthage, specify it in your `Cartfile`:
 
 ```ogdl
-github "paytabscom/paytabs-ios-library-sample" ~> 6.1.21
+github "paytabscom/paytabs-ios-library-sample" ~> 6.3.0
 ```
 
 ### Swift Package Manager 
@@ -115,15 +115,47 @@ let configuration = PaymentSDKConfiguration(profileID: profileID,
             .billingDetails(billingDetails)
 ```
 
-3. You are now ready to start payment and handle `PaymentManagerDelegate` 
-
-```swift
+3. You are now ready to start payment and handle `PaymentManagerDelegate`
+	* for normal card payment use
+	
+	```swift
 PaymentManager.startCardPayment(on: self, 
                              configuration: configuration,
                              delegate: self)
 
-```
+	```
+	
+	* for recurring payment use 
+	
+	```swift
+PaymentManager.startRecurringCardPayment(on: self, 
+                             configuration: configuration,
+                             token: *token*,
+                             transactionRef: *transactionReference*
+                             delegate: self)
 
+	```
+	
+	* for recurring payment with 3DS feature enabled (request CVV) use 
+	
+	```swift
+PaymentManager.start3DSRecurringCardPayment(on: self, 
+                             configuration: configuration,
+                             savedCardInfo: SavedCardInfo,
+                             token: *token*
+                             delegate: self)
+
+	```
+	
+	* for recurring payment with the ability to let SDK save Cards on your behalf and show sheet of saved cards for user to choose from
+	
+	```swift
+startCardPaymentWithSavedCards(on: self, 
+                             configuration: configuration,
+                             support3DS: true,
+                             delegate: self)
+
+	```
 ### Pay with Apple Pay
 
 1. Follow the guide [Steps to configure Apple Pay][applepayguide] to learn how to configure ApplePay with PayTabs.
