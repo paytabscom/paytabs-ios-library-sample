@@ -116,7 +116,7 @@ let configuration = PaymentSDKConfiguration(profileID: profileID,
 ```
 
 3. You are now ready to start payment and handle `PaymentManagerDelegate`
-	* for normal card payment use
+	* For normal card payment use: 
 	
 	```swift
     PaymentManager.startCardPayment(on: self, 
@@ -125,7 +125,7 @@ let configuration = PaymentSDKConfiguration(profileID: profileID,
 
 	```
 	
-	* for recurring payment use 
+	* For recurring payment use: 
 	
 	```swift
     PaymentManager.startRecurringCardPayment(on: self, 
@@ -135,7 +135,7 @@ let configuration = PaymentSDKConfiguration(profileID: profileID,
                              delegate: self)
 	```
 	
-	* for recurring payment with 3DS feature enabled (request CVV) use 
+	* For recurring payment with 3DS feature enabled (request CVV) use:
 	
 	```swift
     PaymentManager.start3DSRecurringCardPayment(on: self, 
@@ -145,10 +145,10 @@ let configuration = PaymentSDKConfiguration(profileID: profileID,
                              delegate: self)
 	```
 	
-	* for recurring payment with the ability to let SDK save Cards on your behalf and show sheet of saved cards for user to choose from
+	* For recurring payment with the ability to let SDK save Cards on your behalf and show sheet of saved cards for user to choose from. use:
 	
 	```swift
-    startCardPaymentWithSavedCards(on: self, 
+    PaymentManager.startCardPaymentWithSavedCards(on: self, 
                              configuration: configuration,
                              support3DS: true,
                              delegate: self)
