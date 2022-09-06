@@ -16,6 +16,8 @@
 * The SDK size became very light because we removed all the third-party dependencies.
 * Supporting dark mode.
 * Supporting alternative payment methods.
+* Supporting recurring with 3DS.
+* Supporting the ability to save and list cards.
 
 
 ## Requirements
