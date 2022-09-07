@@ -128,6 +128,7 @@ let configuration = PaymentSDKConfiguration(profileID: profileID,
 	```
 	<img src="https://user-images.githubusercontent.com/95287975/188839186-8c4e5996-d9f2-4faa-817d-1550f2c898a6.png" width="370">
 
+
 	* For recurring payment use: 
 	
 	```swift
@@ -147,7 +148,10 @@ let configuration = PaymentSDKConfiguration(profileID: profileID,
                              token: *token*
                              delegate: self)
 	```
+	
 	<img src="https://user-images.githubusercontent.com/95287975/188839218-23f0a37b-7add-4a9e-93e3-8b009f0ec5c0.png" width="370">
+	
+	
 	* For recurring payment with the ability to let SDK save Cards on your behalf and show sheet of saved cards for user to choose from. use:
 	
 	```swift
