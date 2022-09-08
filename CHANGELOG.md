@@ -57,3 +57,6 @@
 
 ## 6.3.0 2022-09-06
 * Added functions to start recurring and 3ds transactions
+
+## 6.3.1 2022-09-08
+* Minor change

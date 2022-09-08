@@ -31,13 +31,13 @@
 [CocoaPods](https://cocoapods.org) is a dependency manager for Cocoa projects. For usage and installation instructions, visit their website. To integrate **PayTabs SDK** into your Xcode project using CocoaPods, specify it in your `Podfile`:
 
 ```ruby
-pod 'PayTabsSDK', '~> 6.3.0'
+pod 'PayTabsSDK', '~> 6.3.1'
 ```
 ### Carthage
 [Carthage](https://github.com/Carthage/Carthage) is a decentralized dependency manager that builds your dependencies and provides you with binary frameworks. To integrate **PayTabs SDK** into your Xcode project using Carthage, specify it in your `Cartfile`:
 
 ```ogdl
-github "paytabscom/paytabs-ios-library-sample" ~> 6.3.0
+github "paytabscom/paytabs-ios-library-sample" ~> 6.3.1
 ```
 
 ### Swift Package Manager 
@@ -127,30 +127,30 @@ let configuration = PaymentSDKConfiguration(profileID: profileID,
 
 	```
 	
-	* For recurring payment use: 
+	* For tokenized payment use: 
 	
 	```swift
-    PaymentManager.startRecurringCardPayment(on: self, 
+    PaymentManager.startTokenizedCardPayment(on: self, 
                              configuration: configuration,
                              token: *token*,
                              transactionRef: *transactionReference*
                              delegate: self)
 	```
 	
-	* For recurring payment with 3DS feature enabled (request CVV) use:
+	* For tokenized payment with 3DS feature enabled (request CVV) use:
 	
 	```swift
-    PaymentManager.start3DSRecurringCardPayment(on: self, 
+    PaymentManager.start3DSecureTokenizedCardPayment(on: self, 
                              configuration: configuration,
                              savedCardInfo: SavedCardInfo,
                              token: *token*
                              delegate: self)
 	```
 	
-	* For recurring payment with the ability to let SDK save Cards on your behalf and show sheet of saved cards for user to choose from. use:
+	* For payment with the ability to let SDK save Cards on your behalf and show sheet of saved cards for user to choose from. use:
 	
 	```swift
-    PaymentManager.startCardPaymentWithSavedCards(on: self, 
+    PaymentManager.startPaymentWithSavedCards(on: self, 
                              configuration: configuration,
                              support3DS: true,
                              delegate: self)

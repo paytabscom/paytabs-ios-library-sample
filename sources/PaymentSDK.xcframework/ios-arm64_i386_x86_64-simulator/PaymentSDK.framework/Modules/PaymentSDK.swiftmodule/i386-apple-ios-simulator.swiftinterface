@@ -55,9 +55,9 @@ open class PaymentSDKConfiguration : PaymentSDK.PaymentSDKMerchantConfiguration,
   public var serverIP: Swift.String?
   public var tokeniseType: PaymentSDK.TokeniseType
   public var tokenFormat: PaymentSDK.TokenFormat
-  @available(swift, deprecated: 6.2.0, obsoleted: 7.0.0, message: "This will be removed in the near future, please use startRecurringCardPayment method instead")
+  @available(swift, deprecated: 6.2.0, obsoleted: 7.0.0, message: "This will be removed in the near future, please use startTokenizedCardPayment method instead")
   public var token: Swift.String?
-  @available(swift, deprecated: 6.2.0, obsoleted: 7.0.0, message: "This will be removed in the near future, please use startRecurringCardPayment method instead")
+  @available(swift, deprecated: 6.2.0, obsoleted: 7.0.0, message: "This will be removed in the near future, please use startTokenizedCardPayment method instead")
   public var transactionReference: Swift.String?
   public var screenTitle: Swift.String?
   public var merchantName: Swift.String?
@@ -608,9 +608,9 @@ extension PaymentSDK.CountryPickerView {
 }
 @_inheritsConvenienceInitializers @objc public class PaymentManager : ObjectiveC.NSObject {
   public static func startCardPayment(on rootViewController: UIKit.UIViewController, configuration: PaymentSDK.PaymentSDKConfiguration, delegate: PaymentSDK.PaymentManagerDelegate?)
-  public static func start3DSRecurringCardPayment(on rootViewController: UIKit.UIViewController, configuration: PaymentSDK.PaymentSDKConfiguration, savedCardInfo: PaymentSDK.PaymentSDKSavedCardInfo, token: Swift.String, delegate: PaymentSDK.PaymentManagerDelegate?)
-  public static func startRecurringCardPayment(on rootViewController: UIKit.UIViewController, configuration: PaymentSDK.PaymentSDKConfiguration, token: Swift.String, transactionRef: Swift.String, delegate: PaymentSDK.PaymentManagerDelegate?)
-  public static func startCardPaymentWithSavedCards(on rootViewController: UIKit.UIViewController, configuration: PaymentSDK.PaymentSDKConfiguration, support3DS: Swift.Bool, delegate: PaymentSDK.PaymentManagerDelegate?)
+  public static func start3DSecureTokenizedCardPayment(on rootViewController: UIKit.UIViewController, configuration: PaymentSDK.PaymentSDKConfiguration, savedCardInfo: PaymentSDK.PaymentSDKSavedCardInfo, token: Swift.String, delegate: PaymentSDK.PaymentManagerDelegate?)
+  public static func startTokenizedCardPayment(on rootViewController: UIKit.UIViewController, configuration: PaymentSDK.PaymentSDKConfiguration, token: Swift.String, transactionRef: Swift.String, delegate: PaymentSDK.PaymentManagerDelegate?)
+  public static func startPaymentWithSavedCards(on rootViewController: UIKit.UIViewController, configuration: PaymentSDK.PaymentSDKConfiguration, support3DS: Swift.Bool, delegate: PaymentSDK.PaymentManagerDelegate?)
   @objc override dynamic public init()
   @objc deinit
 }

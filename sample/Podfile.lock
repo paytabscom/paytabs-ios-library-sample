@@ -1,16 +1,16 @@
 PODS:
-  - PayTabsSDK (6.3.0)
+  - PayTabsSDK (6.3.1)
 
 DEPENDENCIES:
-  - PayTabsSDK (from `/Users/amrmagdy/Desktop/Dev/ios-lib-6:9`)
+  - PayTabsSDK (from `/Users/amrmagdy/Desktop/Dev/Main-IOS-lib-sample`)
 
 EXTERNAL SOURCES:
   PayTabsSDK:
-    :path: "/Users/amrmagdy/Desktop/Dev/ios-lib-6:9"
+    :path: "/Users/amrmagdy/Desktop/Dev/Main-IOS-lib-sample"
 
 SPEC CHECKSUMS:
-  PayTabsSDK: c1b6645e9ade9b566c694267508129e8a250def6
+  PayTabsSDK: 6b8cff85ae262d665d3696a84f6611e0bd2c277a
 
-PODFILE CHECKSUM: dfd5debb717152a89949addac70059f40074d125
+PODFILE CHECKSUM: 43453d51837284a30cb5845f843edfba249c1ecb
 
 COCOAPODS: 1.11.2
