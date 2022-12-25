@@ -212,6 +212,30 @@ PaymentManager.startAlternativePaymentMethod(on: self,
                              delegate: self)
 ```
 
+### Query Transaction
+You can check the status of a transaction
+
+1- first create PaymentSDKQueryConfiguration
+
+```swift
+  let config = PaymentSDKQueryConfiguration(serverKey: "*ServerKey*",
+                                              clientKey: "*ClientKey*",
+                                              merchantCountryCode: "*CountryCode*",
+                                              profileID: "*ProfileId*",
+					      transactionReference: "*TransactionReference*")
+```
+					      
+2- call queryTransaction function
+
+```swift
+          PaymentManager.queryTransaction(queryConfiguration: config) { transactionDetails, error in
+            if let tranDet = transactionDetails {
+                //handle transcation details
+            } else if let err = error {
+                //handle error
+            }
+        }
+```					      
 
 ### Delegates
 Here you will receive the transaction details and errors.
