@@ -63,3 +63,6 @@
 
 ## 6.4.0 2022-12-20
 * Added QueryTransaction function
+
+## 6.4.1 2023-03-08
+* Minor Fix
