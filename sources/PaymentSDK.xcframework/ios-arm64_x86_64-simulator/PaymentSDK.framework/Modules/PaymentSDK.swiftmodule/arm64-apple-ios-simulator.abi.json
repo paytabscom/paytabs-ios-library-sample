@@ -32959,3934 +32959,3934 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PayWithCreditCard\/Views\/Cells\/PayButtonTableViewCell.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PayWithCreditCard\/Views\/Cells\/PayButtonTableViewCell.swift",
       "kind": "StringLiteral",
       "offset": 728,
       "length": 29,
       "value": "\"payment_sdk_card_pay_button\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PayWithCreditCard\/Views\/Cells\/PayButtonTableViewCell.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PayWithCreditCard\/Views\/Cells\/PayButtonTableViewCell.swift",
       "kind": "StringLiteral",
       "offset": 889,
       "length": 58,
       "value": "\"payment_sdk_credit_card_screen_save_card_mandatory_error\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Common\/ResponseStatus.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Common\/ResponseStatus.swift",
       "kind": "StringLiteral",
       "offset": 217,
       "length": 3,
       "value": "\"A\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Common\/ResponseStatus.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Common\/ResponseStatus.swift",
       "kind": "StringLiteral",
       "offset": 241,
       "length": 3,
       "value": "\"D\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Common\/ResponseStatus.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Common\/ResponseStatus.swift",
       "kind": "StringLiteral",
       "offset": 263,
       "length": 3,
       "value": "\"F\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Common\/ResponseStatus.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Common\/ResponseStatus.swift",
       "kind": "StringLiteral",
       "offset": 217,
       "length": 3,
       "value": "\"A\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Common\/ResponseStatus.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Common\/ResponseStatus.swift",
       "kind": "StringLiteral",
       "offset": 241,
       "length": 3,
       "value": "\"D\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Common\/ResponseStatus.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Common\/ResponseStatus.swift",
       "kind": "StringLiteral",
       "offset": 263,
       "length": 3,
       "value": "\"F\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PublicLayer\/PaymentSDKConfiguration.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PublicLayer\/PaymentSDKConfiguration.swift",
       "kind": "StringLiteral",
       "offset": 1125,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PublicLayer\/PaymentSDKConfiguration.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PublicLayer\/PaymentSDKConfiguration.swift",
       "kind": "StringLiteral",
       "offset": 1227,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PublicLayer\/PaymentSDKConfiguration.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PublicLayer\/PaymentSDKConfiguration.swift",
       "kind": "StringLiteral",
       "offset": 1329,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PublicLayer\/PaymentSDKConfiguration.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PublicLayer\/PaymentSDKConfiguration.swift",
       "kind": "StringLiteral",
       "offset": 1544,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PublicLayer\/PaymentSDKConfiguration.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PublicLayer\/PaymentSDKConfiguration.swift",
       "kind": "StringLiteral",
       "offset": 1610,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PublicLayer\/PaymentSDKConfiguration.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PublicLayer\/PaymentSDKConfiguration.swift",
       "kind": "FloatLiteral",
       "offset": 1672,
       "length": 3,
       "value": "0.0"
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PublicLayer\/PaymentSDKConfiguration.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PublicLayer\/PaymentSDKConfiguration.swift",
       "kind": "StringLiteral",
       "offset": 1773,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PublicLayer\/PaymentSDKConfiguration.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PublicLayer\/PaymentSDKConfiguration.swift",
       "kind": "BooleanLiteral",
       "offset": 2160,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PublicLayer\/PaymentSDKConfiguration.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PublicLayer\/PaymentSDKConfiguration.swift",
       "kind": "BooleanLiteral",
       "offset": 2266,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PublicLayer\/PaymentSDKConfiguration.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PublicLayer\/PaymentSDKConfiguration.swift",
       "kind": "BooleanLiteral",
       "offset": 2374,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PublicLayer\/PaymentSDKConfiguration.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PublicLayer\/PaymentSDKConfiguration.swift",
       "kind": "StringLiteral",
       "offset": 2733,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PublicLayer\/PaymentSDKConfiguration.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PublicLayer\/PaymentSDKConfiguration.swift",
       "kind": "BooleanLiteral",
       "offset": 2895,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PublicLayer\/PaymentSDKConfiguration.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PublicLayer\/PaymentSDKConfiguration.swift",
       "kind": "BooleanLiteral",
       "offset": 3679,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PublicLayer\/PaymentSDKConfiguration.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PublicLayer\/PaymentSDKConfiguration.swift",
       "kind": "BooleanLiteral",
       "offset": 3789,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PublicLayer\/PaymentSDKConfiguration.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PublicLayer\/PaymentSDKConfiguration.swift",
       "kind": "BooleanLiteral",
       "offset": 3955,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PublicLayer\/PaymentSDKConfiguration.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PublicLayer\/PaymentSDKConfiguration.swift",
       "kind": "BooleanLiteral",
       "offset": 4031,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PublicLayer\/PaymentSDKConfiguration.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PublicLayer\/PaymentSDKConfiguration.swift",
       "kind": "BooleanLiteral",
       "offset": 4059,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PublicLayer\/PaymentSDKConfiguration.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PublicLayer\/PaymentSDKConfiguration.swift",
       "kind": "BooleanLiteral",
       "offset": 6190,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PublicLayer\/PaymentSDKConfiguration.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PublicLayer\/PaymentSDKConfiguration.swift",
       "kind": "BooleanLiteral",
       "offset": 6237,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PublicLayer\/PaymentSDKConfiguration.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PublicLayer\/PaymentSDKConfiguration.swift",
       "kind": "BooleanLiteral",
       "offset": 6285,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PublicLayer\/PaymentSDKConfiguration.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PublicLayer\/PaymentSDKConfiguration.swift",
       "kind": "BooleanLiteral",
       "offset": 6421,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PublicLayer\/PaymentSDKConfiguration.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PublicLayer\/PaymentSDKConfiguration.swift",
       "kind": "BooleanLiteral",
       "offset": 6668,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PublicLayer\/PaymentSDKConfiguration.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PublicLayer\/PaymentSDKConfiguration.swift",
       "kind": "BooleanLiteral",
       "offset": 6714,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PublicLayer\/PaymentSDKConfiguration.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PublicLayer\/PaymentSDKConfiguration.swift",
       "kind": "BooleanLiteral",
       "offset": 6756,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PublicLayer\/PaymentSDKConfiguration.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PublicLayer\/PaymentSDKConfiguration.swift",
       "kind": "BooleanLiteral",
       "offset": 9152,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PublicLayer\/PaymentSDKConfiguration.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PublicLayer\/PaymentSDKConfiguration.swift",
       "kind": "BooleanLiteral",
       "offset": 9201,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PublicLayer\/PaymentSDKConfiguration.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PublicLayer\/PaymentSDKConfiguration.swift",
       "kind": "BooleanLiteral",
       "offset": 9388,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PublicLayer\/PaymentSDKConfiguration.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PublicLayer\/PaymentSDKConfiguration.swift",
       "kind": "BooleanLiteral",
       "offset": 9434,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PublicLayer\/PaymentSDKConfiguration.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PublicLayer\/PaymentSDKConfiguration.swift",
       "kind": "BooleanLiteral",
       "offset": 9476,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Extensions\/UIView.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Extensions\/UIView.swift",
       "kind": "IntegerLiteral",
       "offset": 1125,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Extensions\/UIView.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Extensions\/UIView.swift",
       "kind": "FloatLiteral",
       "offset": 1662,
       "length": 3,
       "value": "0.8"
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Extensions\/UIView.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Extensions\/UIView.swift",
       "kind": "IntegerLiteral",
       "offset": 1714,
       "length": 1,
       "value": "6"
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Extensions\/UIView.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Extensions\/UIView.swift",
       "kind": "BooleanLiteral",
       "offset": 1789,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Extensions\/UIView.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Extensions\/UIView.swift",
       "kind": "FloatLiteral",
       "offset": 3966,
       "length": 3,
       "value": "0.2"
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Extensions\/UIView.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Extensions\/UIView.swift",
       "kind": "FloatLiteral",
       "offset": 4372,
       "length": 3,
       "value": "0.2"
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Extensions\/UIView.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Extensions\/UIView.swift",
       "kind": "FloatLiteral",
       "offset": 5263,
       "length": 4,
       "value": "85.0"
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PayWithCreditCard\/Views\/CreditCardInputView.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PayWithCreditCard\/Views\/CreditCardInputView.swift",
       "kind": "IntegerLiteral",
       "offset": 1326,
       "length": 3,
       "value": "100"
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Common\/PaymentSDKValidator+ShippingDetails.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Common\/PaymentSDKValidator+ShippingDetails.swift",
       "kind": "BooleanLiteral",
       "offset": 558,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Extensions\/UITextField+Theme.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Extensions\/UITextField+Theme.swift",
       "kind": "BooleanLiteral",
       "offset": 274,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PublicLayer\/PaymentSDKTransactionDetails.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PublicLayer\/PaymentSDKTransactionDetails.swift",
       "kind": "StringLiteral",
       "offset": 233,
       "length": 22,
       "value": "\"PaymentSDK.PaymentResultViewModel\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PublicLayer\/PaymentSDKTransactionDetails.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PublicLayer\/PaymentSDKTransactionDetails.swift",
       "kind": "StringLiteral",
       "offset": 1729,
       "length": 16,
       "value": "\"payment_method\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PublicLayer\/PaymentSDKTransactionDetails.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PublicLayer\/PaymentSDKTransactionDetails.swift",
       "kind": "StringLiteral",
       "offset": 1729,
       "length": 16,
       "value": "\"payment_method\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PublicLayer\/PaymentSDKTransactionDetails.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PublicLayer\/PaymentSDKTransactionDetails.swift",
       "kind": "StringLiteral",
       "offset": 1060,
       "length": 20,
       "value": "\"PaymentSDK.PaymentInfoViewModel\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PublicLayer\/PaymentSDKTransactionDetails.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PublicLayer\/PaymentSDKTransactionDetails.swift",
       "kind": "StringLiteral",
       "offset": 1821,
       "length": 28,
       "value": "\"PaymentSDK.PaymentSDKTransactionDetails\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Security\/AES.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Security\/AES.swift",
       "kind": "StringLiteral",
       "offset": 470,
       "length": 3,
       "value": "\"#\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Show3DSecure\/ThreeDSecureViewController.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Show3DSecure\/ThreeDSecureViewController.swift",
       "kind": "FloatLiteral",
       "offset": 235,
       "length": 4,
       "value": "60.0"
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Show3DSecure\/ThreeDSecureViewController.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Show3DSecure\/ThreeDSecureViewController.swift",
       "kind": "BooleanLiteral",
       "offset": 826,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Show3DSecure\/ThreeDSecureViewController.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Show3DSecure\/ThreeDSecureViewController.swift",
       "kind": "BooleanLiteral",
       "offset": 1417,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PublicLayer\/PaymentSDKSavedCardInfo.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PublicLayer\/PaymentSDKSavedCardInfo.swift",
       "kind": "StringLiteral",
       "offset": 190,
       "length": 23,
       "value": "\"PaymentSDK.PaymentSDKSavedCardInfo\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PublicLayer\/PaymentSDKConfiguration+Enums.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PublicLayer\/PaymentSDKConfiguration+Enums.swift",
       "kind": "StringLiteral",
       "offset": 340,
       "length": 6,
       "value": "\"auth\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PublicLayer\/PaymentSDKConfiguration+Enums.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PublicLayer\/PaymentSDKConfiguration+Enums.swift",
       "kind": "StringLiteral",
       "offset": 340,
       "length": 6,
       "value": "\"auth\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PublicLayer\/PaymentSDKConfiguration+Enums.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PublicLayer\/PaymentSDKConfiguration+Enums.swift",
       "kind": "StringLiteral",
       "offset": 456,
       "length": 6,
       "value": "\"ecom\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PublicLayer\/PaymentSDKConfiguration+Enums.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PublicLayer\/PaymentSDKConfiguration+Enums.swift",
       "kind": "StringLiteral",
       "offset": 522,
       "length": 11,
       "value": "\"recurring\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PublicLayer\/PaymentSDKConfiguration+Enums.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PublicLayer\/PaymentSDKConfiguration+Enums.swift",
       "kind": "StringLiteral",
       "offset": 456,
       "length": 6,
       "value": "\"ecom\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PublicLayer\/PaymentSDKConfiguration+Enums.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PublicLayer\/PaymentSDKConfiguration+Enums.swift",
       "kind": "StringLiteral",
       "offset": 522,
       "length": 11,
       "value": "\"recurring\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PublicLayer\/PaymentSDKConfiguration+Enums.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PublicLayer\/PaymentSDKConfiguration+Enums.swift",
       "kind": "StringLiteral",
       "offset": 601,
       "length": 3,
       "value": "\"1\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PublicLayer\/PaymentSDKConfiguration+Enums.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PublicLayer\/PaymentSDKConfiguration+Enums.swift",
       "kind": "StringLiteral",
       "offset": 622,
       "length": 3,
       "value": "\"2\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PublicLayer\/PaymentSDKConfiguration+Enums.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PublicLayer\/PaymentSDKConfiguration+Enums.swift",
       "kind": "StringLiteral",
       "offset": 648,
       "length": 3,
       "value": "\"3\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PublicLayer\/PaymentSDKConfiguration+Enums.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PublicLayer\/PaymentSDKConfiguration+Enums.swift",
       "kind": "StringLiteral",
       "offset": 671,
       "length": 3,
       "value": "\"4\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PublicLayer\/PaymentSDKConfiguration+Enums.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PublicLayer\/PaymentSDKConfiguration+Enums.swift",
       "kind": "StringLiteral",
       "offset": 694,
       "length": 3,
       "value": "\"5\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PublicLayer\/PaymentSDKConfiguration+Enums.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PublicLayer\/PaymentSDKConfiguration+Enums.swift",
       "kind": "StringLiteral",
       "offset": 720,
       "length": 3,
       "value": "\"6\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PublicLayer\/PaymentSDKConfiguration+Enums.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PublicLayer\/PaymentSDKConfiguration+Enums.swift",
       "kind": "StringLiteral",
       "offset": 601,
       "length": 3,
       "value": "\"1\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PublicLayer\/PaymentSDKConfiguration+Enums.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PublicLayer\/PaymentSDKConfiguration+Enums.swift",
       "kind": "StringLiteral",
       "offset": 622,
       "length": 3,
       "value": "\"2\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PublicLayer\/PaymentSDKConfiguration+Enums.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PublicLayer\/PaymentSDKConfiguration+Enums.swift",
       "kind": "StringLiteral",
       "offset": 648,
       "length": 3,
       "value": "\"3\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PublicLayer\/PaymentSDKConfiguration+Enums.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PublicLayer\/PaymentSDKConfiguration+Enums.swift",
       "kind": "StringLiteral",
       "offset": 671,
       "length": 3,
       "value": "\"4\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PublicLayer\/PaymentSDKConfiguration+Enums.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PublicLayer\/PaymentSDKConfiguration+Enums.swift",
       "kind": "StringLiteral",
       "offset": 694,
       "length": 3,
       "value": "\"5\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PublicLayer\/PaymentSDKConfiguration+Enums.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PublicLayer\/PaymentSDKConfiguration+Enums.swift",
       "kind": "StringLiteral",
       "offset": 720,
       "length": 3,
       "value": "\"6\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PublicLayer\/PaymentSDKConfiguration+Enums.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PublicLayer\/PaymentSDKConfiguration+Enums.swift",
       "kind": "IntegerLiteral",
       "offset": 1003,
       "length": 17,
       "value": "1"
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PublicLayer\/PaymentSDKConfiguration+Enums.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PublicLayer\/PaymentSDKConfiguration+Enums.swift",
       "kind": "IntegerLiteral",
       "offset": 1089,
       "length": 13,
       "value": "2"
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PublicLayer\/PaymentSDKConfiguration+Enums.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PublicLayer\/PaymentSDKConfiguration+Enums.swift",
       "kind": "IntegerLiteral",
       "offset": 1145,
       "length": 12,
       "value": "3"
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PublicLayer\/PaymentSDKConfiguration+Enums.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PublicLayer\/PaymentSDKConfiguration+Enums.swift",
       "kind": "IntegerLiteral",
       "offset": 1003,
       "length": 17,
       "value": "1"
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PublicLayer\/PaymentSDKConfiguration+Enums.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PublicLayer\/PaymentSDKConfiguration+Enums.swift",
       "kind": "IntegerLiteral",
       "offset": 1089,
       "length": 13,
       "value": "2"
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PublicLayer\/PaymentSDKConfiguration+Enums.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PublicLayer\/PaymentSDKConfiguration+Enums.swift",
       "kind": "IntegerLiteral",
       "offset": 1145,
       "length": 12,
       "value": "3"
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PublicLayer\/PaymentSDKConfiguration+Enums.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PublicLayer\/PaymentSDKConfiguration+Enums.swift",
       "kind": "IntegerLiteral",
       "offset": 1003,
       "length": 17,
       "value": "1"
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PublicLayer\/PaymentSDKConfiguration+Enums.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PublicLayer\/PaymentSDKConfiguration+Enums.swift",
       "kind": "IntegerLiteral",
       "offset": 1089,
       "length": 13,
       "value": "2"
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PublicLayer\/PaymentSDKConfiguration+Enums.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PublicLayer\/PaymentSDKConfiguration+Enums.swift",
       "kind": "IntegerLiteral",
       "offset": 1145,
       "length": 12,
       "value": "3"
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PublicLayer\/PaymentSDKConfiguration+Enums.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PublicLayer\/PaymentSDKConfiguration+Enums.swift",
       "kind": "StringLiteral",
       "offset": 1363,
       "length": 10,
       "value": "\"unionpay\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PublicLayer\/PaymentSDKConfiguration+Enums.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PublicLayer\/PaymentSDKConfiguration+Enums.swift",
       "kind": "StringLiteral",
       "offset": 1392,
       "length": 8,
       "value": "\"stcpay\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PublicLayer\/PaymentSDKConfiguration+Enums.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PublicLayer\/PaymentSDKConfiguration+Enums.swift",
       "kind": "StringLiteral",
       "offset": 1434,
       "length": 9,
       "value": "\"meezaqr\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PublicLayer\/PaymentSDKConfiguration+Enums.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PublicLayer\/PaymentSDKConfiguration+Enums.swift",
       "kind": "StringLiteral",
       "offset": 1484,
       "length": 12,
       "value": "\"knetcredit\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PublicLayer\/PaymentSDKConfiguration+Enums.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PublicLayer\/PaymentSDKConfiguration+Enums.swift",
       "kind": "StringLiteral",
       "offset": 1519,
       "length": 11,
       "value": "\"knetdebit\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PublicLayer\/PaymentSDKConfiguration+Enums.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PublicLayer\/PaymentSDKConfiguration+Enums.swift",
       "kind": "StringLiteral",
       "offset": 1577,
       "length": 7,
       "value": "\"urpay\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PublicLayer\/PaymentSDKConfiguration+Enums.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PublicLayer\/PaymentSDKConfiguration+Enums.swift",
       "kind": "StringLiteral",
       "offset": 1363,
       "length": 10,
       "value": "\"unionpay\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PublicLayer\/PaymentSDKConfiguration+Enums.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PublicLayer\/PaymentSDKConfiguration+Enums.swift",
       "kind": "StringLiteral",
       "offset": 1392,
       "length": 8,
       "value": "\"stcpay\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PublicLayer\/PaymentSDKConfiguration+Enums.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PublicLayer\/PaymentSDKConfiguration+Enums.swift",
       "kind": "StringLiteral",
       "offset": 1434,
       "length": 9,
       "value": "\"meezaqr\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PublicLayer\/PaymentSDKConfiguration+Enums.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PublicLayer\/PaymentSDKConfiguration+Enums.swift",
       "kind": "StringLiteral",
       "offset": 1484,
       "length": 12,
       "value": "\"knetcredit\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PublicLayer\/PaymentSDKConfiguration+Enums.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PublicLayer\/PaymentSDKConfiguration+Enums.swift",
       "kind": "StringLiteral",
       "offset": 1519,
       "length": 11,
       "value": "\"knetdebit\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PublicLayer\/PaymentSDKConfiguration+Enums.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PublicLayer\/PaymentSDKConfiguration+Enums.swift",
       "kind": "StringLiteral",
       "offset": 1577,
       "length": 7,
       "value": "\"urpay\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/CreditCardScanner\/ImageAnalyzer.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/CreditCardScanner\/ImageAnalyzer.swift",
       "kind": "IntegerLiteral",
       "offset": 235,
       "length": 1,
       "value": "5"
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/CreditCardScanner\/ImageAnalyzer.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/CreditCardScanner\/ImageAnalyzer.swift",
       "kind": "StringLiteral",
       "offset": 577,
       "length": 23,
       "value": "\"(?:\\d[ -]*?){13,16}\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/CreditCardScanner\/ImageAnalyzer.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/CreditCardScanner\/ImageAnalyzer.swift",
       "kind": "StringLiteral",
       "offset": 631,
       "length": 67,
       "value": "\"^([a-zA-Z]{2,}\\s[a-zA-Z]{1,}'?-?[a-zA-Z]{2,}\\s?([a-zA-Z]{1,})?)\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/CreditCardScanner\/ImageAnalyzer.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/CreditCardScanner\/ImageAnalyzer.swift",
       "kind": "StringLiteral",
       "offset": 725,
       "length": 18,
       "value": "\"(\\d{2}\\\/\\d{2})\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/CreditCardScanner\/ImageAnalyzer.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/CreditCardScanner\/ImageAnalyzer.swift",
       "kind": "StringLiteral",
       "offset": 577,
       "length": 23,
       "value": "\"(?:\\d[ -]*?){13,16}\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/CreditCardScanner\/ImageAnalyzer.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/CreditCardScanner\/ImageAnalyzer.swift",
       "kind": "StringLiteral",
       "offset": 631,
       "length": 67,
       "value": "\"^([a-zA-Z]{2,}\\s[a-zA-Z]{1,}'?-?[a-zA-Z]{2,}\\s?([a-zA-Z]{1,})?)\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/CreditCardScanner\/ImageAnalyzer.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/CreditCardScanner\/ImageAnalyzer.swift",
       "kind": "StringLiteral",
       "offset": 725,
       "length": 18,
       "value": "\"(\\d{2}\\\/\\d{2})\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/CreditCardScanner\/ImageAnalyzer.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/CreditCardScanner\/ImageAnalyzer.swift",
       "kind": "BooleanLiteral",
       "offset": 920,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/CreditCardScanner\/ImageAnalyzer.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/CreditCardScanner\/ImageAnalyzer.swift",
       "kind": "Array",
       "offset": 3276,
       "length": 78,
       "value": "[\"mastercard\", \"jcb\", \"visa\", \"express\", \"bank\", \"card\", \"platinum\", \"reward\"]"
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/CreditCardScanner\/ImageAnalyzer.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/CreditCardScanner\/ImageAnalyzer.swift",
       "kind": "Array",
       "offset": 3382,
       "length": 74,
       "value": "[\"expiration\", \"valid\", \"since\", \"from\", \"until\", \"month\", \"year\", \"name\"]"
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/CreditCardScanner\/ImageAnalyzer.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/CreditCardScanner\/ImageAnalyzer.swift",
       "kind": "IntegerLiteral",
       "offset": 3641,
       "length": 1,
       "value": "5"
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/CreditCardScanner\/ImageAnalyzer.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/CreditCardScanner\/ImageAnalyzer.swift",
       "kind": "FloatLiteral",
       "offset": 3804,
       "length": 3,
       "value": "0.1"
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/CreditCardScanner\/ImageAnalyzer.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/CreditCardScanner\/ImageAnalyzer.swift",
       "kind": "StringLiteral",
       "offset": 4148,
       "length": 3,
       "value": "\" \""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/CreditCardScanner\/ImageAnalyzer.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/CreditCardScanner\/ImageAnalyzer.swift",
       "kind": "StringLiteral",
       "offset": 4159,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/CreditCardScanner\/ImageAnalyzer.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/CreditCardScanner\/ImageAnalyzer.swift",
       "kind": "StringLiteral",
       "offset": 4205,
       "length": 3,
       "value": "\"-\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/CreditCardScanner\/ImageAnalyzer.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/CreditCardScanner\/ImageAnalyzer.swift",
       "kind": "StringLiteral",
       "offset": 4216,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/CreditCardScanner\/ImageAnalyzer.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/CreditCardScanner\/ImageAnalyzer.swift",
       "kind": "IntegerLiteral",
       "offset": 4419,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/CreditCardScanner\/ImageAnalyzer.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/CreditCardScanner\/ImageAnalyzer.swift",
       "kind": "IntegerLiteral",
       "offset": 5187,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/CreditCardScanner\/ImageAnalyzer.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/CreditCardScanner\/ImageAnalyzer.swift",
       "kind": "BooleanLiteral",
       "offset": 5917,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PayWithCreditCard\/PayRouter.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PayWithCreditCard\/PayRouter.swift",
       "kind": "BooleanLiteral",
       "offset": 1222,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/NetworkLayer\/PaymentSDKRequest.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/NetworkLayer\/PaymentSDKRequest.swift",
       "kind": "StringLiteral",
       "offset": 259,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/NetworkLayer\/PaymentSDKRequest.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/NetworkLayer\/PaymentSDKRequest.swift",
       "kind": "StringLiteral",
       "offset": 459,
       "length": 36,
       "value": "\"https:\/\/secure-global.paytabs.com\/\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/NetworkLayer\/PaymentSDKRequest.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/NetworkLayer\/PaymentSDKRequest.swift",
       "kind": "StringLiteral",
       "offset": 516,
       "length": 34,
       "value": "\"https:\/\/secure-demo.paytabs.com\/\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/NetworkLayer\/PaymentSDKRequest.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/NetworkLayer\/PaymentSDKRequest.swift",
       "kind": "StringLiteral",
       "offset": 570,
       "length": 29,
       "value": "\"https:\/\/secure.paytabs.com\/\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/NetworkLayer\/PaymentSDKRequest.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/NetworkLayer\/PaymentSDKRequest.swift",
       "kind": "StringLiteral",
       "offset": 621,
       "length": 35,
       "value": "\"https:\/\/secure-egypt.paytabs.com\/\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/NetworkLayer\/PaymentSDKRequest.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/NetworkLayer\/PaymentSDKRequest.swift",
       "kind": "StringLiteral",
       "offset": 678,
       "length": 28,
       "value": "\"https:\/\/secure.paytabs.sa\/\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/NetworkLayer\/PaymentSDKRequest.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/NetworkLayer\/PaymentSDKRequest.swift",
       "kind": "StringLiteral",
       "offset": 727,
       "length": 34,
       "value": "\"https:\/\/secure-oman.paytabs.com\/\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/NetworkLayer\/PaymentSDKRequest.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/NetworkLayer\/PaymentSDKRequest.swift",
       "kind": "StringLiteral",
       "offset": 784,
       "length": 36,
       "value": "\"https:\/\/secure-jordan.paytabs.com\/\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/NetworkLayer\/PaymentSDKRequest.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/NetworkLayer\/PaymentSDKRequest.swift",
       "kind": "StringLiteral",
       "offset": 841,
       "length": 34,
       "value": "\"https:\/\/secure-iraq.paytabs.com\/\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/NetworkLayer\/PaymentSDKRequest.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/NetworkLayer\/PaymentSDKRequest.swift",
       "kind": "StringLiteral",
       "offset": 259,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/NetworkLayer\/PaymentSDKRequest.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/NetworkLayer\/PaymentSDKRequest.swift",
       "kind": "StringLiteral",
       "offset": 459,
       "length": 36,
       "value": "\"https:\/\/secure-global.paytabs.com\/\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/NetworkLayer\/PaymentSDKRequest.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/NetworkLayer\/PaymentSDKRequest.swift",
       "kind": "StringLiteral",
       "offset": 516,
       "length": 34,
       "value": "\"https:\/\/secure-demo.paytabs.com\/\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/NetworkLayer\/PaymentSDKRequest.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/NetworkLayer\/PaymentSDKRequest.swift",
       "kind": "StringLiteral",
       "offset": 570,
       "length": 29,
       "value": "\"https:\/\/secure.paytabs.com\/\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/NetworkLayer\/PaymentSDKRequest.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/NetworkLayer\/PaymentSDKRequest.swift",
       "kind": "StringLiteral",
       "offset": 621,
       "length": 35,
       "value": "\"https:\/\/secure-egypt.paytabs.com\/\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/NetworkLayer\/PaymentSDKRequest.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/NetworkLayer\/PaymentSDKRequest.swift",
       "kind": "StringLiteral",
       "offset": 678,
       "length": 28,
       "value": "\"https:\/\/secure.paytabs.sa\/\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/NetworkLayer\/PaymentSDKRequest.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/NetworkLayer\/PaymentSDKRequest.swift",
       "kind": "StringLiteral",
       "offset": 727,
       "length": 34,
       "value": "\"https:\/\/secure-oman.paytabs.com\/\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/NetworkLayer\/PaymentSDKRequest.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/NetworkLayer\/PaymentSDKRequest.swift",
       "kind": "StringLiteral",
       "offset": 784,
       "length": 36,
       "value": "\"https:\/\/secure-jordan.paytabs.com\/\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/NetworkLayer\/PaymentSDKRequest.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/NetworkLayer\/PaymentSDKRequest.swift",
       "kind": "StringLiteral",
       "offset": 841,
       "length": 34,
       "value": "\"https:\/\/secure-iraq.paytabs.com\/\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/NetworkLayer\/PaymentSDKRequest.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/NetworkLayer\/PaymentSDKRequest.swift",
       "kind": "StringLiteral",
       "offset": 1695,
       "length": 17,
       "value": "\"payment\/request\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/NetworkLayer\/PaymentSDKRequest.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/NetworkLayer\/PaymentSDKRequest.swift",
       "kind": "StringLiteral",
       "offset": 1734,
       "length": 15,
       "value": "\"payment\/query\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/NetworkLayer\/PaymentSDKRequest.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/NetworkLayer\/PaymentSDKRequest.swift",
       "kind": "StringLiteral",
       "offset": 1695,
       "length": 17,
       "value": "\"payment\/request\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/NetworkLayer\/PaymentSDKRequest.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/NetworkLayer\/PaymentSDKRequest.swift",
       "kind": "StringLiteral",
       "offset": 1734,
       "length": 15,
       "value": "\"payment\/query\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PublicLayer\/PaymentSDKQueryConfiguration.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PublicLayer\/PaymentSDKQueryConfiguration.swift",
       "kind": "StringLiteral",
       "offset": 193,
       "length": 28,
       "value": "\"PaymentSDK.PaymentSDKQueryConfiguration\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Controls\/PickerAccessory.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Controls\/PickerAccessory.swift",
       "kind": "StringLiteral",
       "offset": 254,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Common\/Definitions.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Common\/Definitions.swift",
       "kind": "IntegerLiteral",
       "offset": 199,
       "length": 1,
       "value": "8"
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Common\/Definitions.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Common\/Definitions.swift",
       "kind": "IntegerLiteral",
       "offset": 234,
       "length": 1,
       "value": "8"
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Common\/Definitions.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Common\/Definitions.swift",
       "kind": "StringLiteral",
       "offset": 337,
       "length": 35,
       "value": "\"https:\/\/ptsdk-return.paytabs.com\/\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Common\/Definitions.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Common\/Definitions.swift",
       "kind": "StringLiteral",
       "offset": 452,
       "length": 17,
       "value": "\"255.255.255.255\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Common\/Definitions.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Common\/Definitions.swift",
       "kind": "StringLiteral",
       "offset": 494,
       "length": 8,
       "value": "\"global\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Common\/Definitions.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Common\/Definitions.swift",
       "kind": "StringLiteral",
       "offset": 537,
       "length": 27,
       "value": "\"payment_sdk_language_code\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Themes\/Localization.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Themes\/Localization.swift",
       "kind": "StringLiteral",
       "offset": 679,
       "length": 38,
       "value": "\"payment_sdk_credit_card_screen_title\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Themes\/Localization.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Themes\/Localization.swift",
       "kind": "StringLiteral",
       "offset": 816,
       "length": 36,
       "value": "\"payment_sdk_card_name_on_card_hint\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Themes\/Localization.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Themes\/Localization.swift",
       "kind": "StringLiteral",
       "offset": 950,
       "length": 25,
       "value": "\"payment_sdk_card_number\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Themes\/Localization.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Themes\/Localization.swift",
       "kind": "StringLiteral",
       "offset": 1074,
       "length": 23,
       "value": "\"payment_sdk_card_hint\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Themes\/Localization.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Themes\/Localization.swift",
       "kind": "StringLiteral",
       "offset": 1195,
       "length": 30,
       "value": "\"payment_sdk_card_expiry_date\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Themes\/Localization.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Themes\/Localization.swift",
       "kind": "StringLiteral",
       "offset": 1324,
       "length": 35,
       "value": "\"payment_sdk_card_expiry_date_hint\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Themes\/Localization.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Themes\/Localization.swift",
       "kind": "StringLiteral",
       "offset": 1450,
       "length": 22,
       "value": "\"payment_sdk_card_cvv\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Themes\/Localization.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Themes\/Localization.swift",
       "kind": "StringLiteral",
       "offset": 1564,
       "length": 27,
       "value": "\"payment_sdk_card_cvv_hint\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Common\/CardNetworks.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Common\/CardNetworks.swift",
       "kind": "StringLiteral",
       "offset": 217,
       "length": 11,
       "value": "\"EmptyCard\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Common\/CardNetworks.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Common\/CardNetworks.swift",
       "kind": "StringLiteral",
       "offset": 245,
       "length": 6,
       "value": "\"Visa\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Common\/CardNetworks.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Common\/CardNetworks.swift",
       "kind": "StringLiteral",
       "offset": 274,
       "length": 12,
       "value": "\"MasterCard\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Common\/CardNetworks.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Common\/CardNetworks.swift",
       "kind": "StringLiteral",
       "offset": 303,
       "length": 6,
       "value": "\"Amex\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Common\/CardNetworks.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Common\/CardNetworks.swift",
       "kind": "StringLiteral",
       "offset": 332,
       "length": 13,
       "value": "\"Diners Club\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Common\/CardNetworks.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Common\/CardNetworks.swift",
       "kind": "StringLiteral",
       "offset": 365,
       "length": 9,
       "value": "\"Maestro\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Common\/CardNetworks.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Common\/CardNetworks.swift",
       "kind": "StringLiteral",
       "offset": 390,
       "length": 5,
       "value": "\"JCB\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Common\/CardNetworks.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Common\/CardNetworks.swift",
       "kind": "StringLiteral",
       "offset": 416,
       "length": 10,
       "value": "\"Discover\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Common\/CardNetworks.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Common\/CardNetworks.swift",
       "kind": "StringLiteral",
       "offset": 447,
       "length": 10,
       "value": "\"UnionPay\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Common\/CardNetworks.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Common\/CardNetworks.swift",
       "kind": "StringLiteral",
       "offset": 473,
       "length": 5,
       "value": "\"Mir\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Common\/CardNetworks.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Common\/CardNetworks.swift",
       "kind": "StringLiteral",
       "offset": 495,
       "length": 6,
       "value": "\"Mada\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Common\/CardNetworks.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Common\/CardNetworks.swift",
       "kind": "StringLiteral",
       "offset": 525,
       "length": 13,
       "value": "\"InvalidCard\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Common\/CardNetworks.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Common\/CardNetworks.swift",
       "kind": "StringLiteral",
       "offset": 217,
       "length": 11,
       "value": "\"EmptyCard\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Common\/CardNetworks.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Common\/CardNetworks.swift",
       "kind": "StringLiteral",
       "offset": 245,
       "length": 6,
       "value": "\"Visa\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Common\/CardNetworks.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Common\/CardNetworks.swift",
       "kind": "StringLiteral",
       "offset": 274,
       "length": 12,
       "value": "\"MasterCard\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Common\/CardNetworks.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Common\/CardNetworks.swift",
       "kind": "StringLiteral",
       "offset": 303,
       "length": 6,
       "value": "\"Amex\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Common\/CardNetworks.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Common\/CardNetworks.swift",
       "kind": "StringLiteral",
       "offset": 332,
       "length": 13,
       "value": "\"Diners Club\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Common\/CardNetworks.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Common\/CardNetworks.swift",
       "kind": "StringLiteral",
       "offset": 365,
       "length": 9,
       "value": "\"Maestro\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Common\/CardNetworks.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Common\/CardNetworks.swift",
       "kind": "StringLiteral",
       "offset": 390,
       "length": 5,
       "value": "\"JCB\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Common\/CardNetworks.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Common\/CardNetworks.swift",
       "kind": "StringLiteral",
       "offset": 416,
       "length": 10,
       "value": "\"Discover\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Common\/CardNetworks.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Common\/CardNetworks.swift",
       "kind": "StringLiteral",
       "offset": 447,
       "length": 10,
       "value": "\"UnionPay\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Common\/CardNetworks.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Common\/CardNetworks.swift",
       "kind": "StringLiteral",
       "offset": 473,
       "length": 5,
       "value": "\"Mir\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Common\/CardNetworks.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Common\/CardNetworks.swift",
       "kind": "StringLiteral",
       "offset": 495,
       "length": 6,
       "value": "\"Mada\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Common\/CardNetworks.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Common\/CardNetworks.swift",
       "kind": "StringLiteral",
       "offset": 525,
       "length": 13,
       "value": "\"InvalidCard\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PayWithApplePay\/ApplePayViewController.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PayWithApplePay\/ApplePayViewController.swift",
       "kind": "BooleanLiteral",
       "offset": 431,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/CardSaving\/Views\/SavedCardsViewController.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/CardSaving\/Views\/SavedCardsViewController.swift",
       "kind": "IntegerLiteral",
       "offset": 593,
       "length": 3,
       "value": "150"
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/CardSaving\/Views\/SavedCardsViewController.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/CardSaving\/Views\/SavedCardsViewController.swift",
       "kind": "IntegerLiteral",
       "offset": 618,
       "length": 2,
       "value": "45"
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/CardSaving\/Views\/SavedCardsViewController.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/CardSaving\/Views\/SavedCardsViewController.swift",
       "kind": "IntegerLiteral",
       "offset": 653,
       "length": 1,
       "value": "4"
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/CardSaving\/Views\/SavedCardsViewController.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/CardSaving\/Views\/SavedCardsViewController.swift",
       "kind": "IntegerLiteral",
       "offset": 918,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PayWithCreditCard\/Views\/PayWithCardViewController.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PayWithCreditCard\/Views\/PayWithCardViewController.swift",
       "kind": "StringLiteral",
       "offset": 198,
       "length": 13,
       "value": "\"CountryCell\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PayWithCreditCard\/Views\/PayWithCardViewController.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PayWithCreditCard\/Views\/PayWithCardViewController.swift",
       "kind": "StringLiteral",
       "offset": 242,
       "length": 15,
       "value": "\"PayAmountCell\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PayWithCreditCard\/Views\/PayWithCardViewController.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PayWithCreditCard\/Views\/PayWithCardViewController.swift",
       "kind": "IntegerLiteral",
       "offset": 293,
       "length": 2,
       "value": "44"
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PayWithCreditCard\/Views\/PayWithCardViewController.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PayWithCreditCard\/Views\/PayWithCardViewController.swift",
       "kind": "IntegerLiteral",
       "offset": 331,
       "length": 3,
       "value": "246"
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PayWithCreditCard\/Views\/PayWithCardViewController.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PayWithCreditCard\/Views\/PayWithCardViewController.swift",
       "kind": "IntegerLiteral",
       "offset": 370,
       "length": 3,
       "value": "120"
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PayWithCreditCard\/Views\/PayWithCardViewController.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PayWithCreditCard\/Views\/PayWithCardViewController.swift",
       "kind": "IntegerLiteral",
       "offset": 407,
       "length": 2,
       "value": "96"
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PayWithCreditCard\/Views\/PayWithCardViewController.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PayWithCreditCard\/Views\/PayWithCardViewController.swift",
       "kind": "IntegerLiteral",
       "offset": 469,
       "length": 8,
       "value": "1"
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PayWithCreditCard\/Views\/PayWithCardViewController.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PayWithCreditCard\/Views\/PayWithCardViewController.swift",
       "kind": "IntegerLiteral",
       "offset": 469,
       "length": 8,
       "value": "1"
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PayWithCreditCard\/Views\/PayWithCardViewController.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PayWithCreditCard\/Views\/PayWithCardViewController.swift",
       "kind": "IntegerLiteral",
       "offset": 469,
       "length": 8,
       "value": "1"
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PayWithCreditCard\/Views\/PayWithCardViewController.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PayWithCreditCard\/Views\/PayWithCardViewController.swift",
       "kind": "BooleanLiteral",
       "offset": 1034,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PayWithCreditCard\/Views\/PayWithCardViewController.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PayWithCreditCard\/Views\/PayWithCardViewController.swift",
       "kind": "BooleanLiteral",
       "offset": 1067,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PayWithCreditCard\/Views\/PayWithCardViewController.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PayWithCreditCard\/Views\/PayWithCardViewController.swift",
       "kind": "BooleanLiteral",
       "offset": 1234,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PayWithCreditCard\/Views\/PayWithCardViewController.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PayWithCreditCard\/Views\/PayWithCardViewController.swift",
       "kind": "BooleanLiteral",
       "offset": 1270,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PayWithCreditCard\/Views\/PayWithCardViewController.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PayWithCreditCard\/Views\/PayWithCardViewController.swift",
       "kind": "IntegerLiteral",
       "offset": 1899,
       "length": 1,
       "value": "6"
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PayWithCreditCard\/Views\/PayWithCardViewController.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PayWithCreditCard\/Views\/PayWithCardViewController.swift",
       "kind": "BooleanLiteral",
       "offset": 1951,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PayWithCreditCard\/Views\/PayWithCardViewController.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PayWithCreditCard\/Views\/PayWithCardViewController.swift",
       "kind": "BooleanLiteral",
       "offset": 2101,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PayWithCreditCard\/Views\/PayWithCardViewController.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PayWithCreditCard\/Views\/PayWithCardViewController.swift",
       "kind": "StringLiteral",
       "offset": 2479,
       "length": 24,
       "value": "\"payment_sdk_powered_by\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PayWithCreditCard\/Views\/PayWithCardViewController.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PayWithCreditCard\/Views\/PayWithCardViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 2962,
+      "offset": 2966,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PayWithCreditCard\/Views\/PayWithCardViewController.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PayWithCreditCard\/Views\/PayWithCardViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 3020,
+      "offset": 3024,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PayWithCreditCard\/Views\/PayWithCardViewController.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PayWithCreditCard\/Views\/PayWithCardViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 3183,
+      "offset": 3187,
       "length": 1,
       "value": "3"
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PayWithCreditCard\/Views\/PayWithCardViewController.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PayWithCreditCard\/Views\/PayWithCardViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 3192,
+      "offset": 3196,
       "length": 2,
       "value": "15"
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PayWithCreditCard\/Views\/PayWithCardViewController.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PayWithCreditCard\/Views\/PayWithCardViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 3204,
+      "offset": 3208,
       "length": 1,
       "value": "3"
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PayWithCreditCard\/Views\/PayWithCardViewController.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PayWithCreditCard\/Views\/PayWithCardViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 3214,
+      "offset": 3218,
       "length": 2,
       "value": "15"
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PayWithCreditCard\/Views\/PayWithCardViewController.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PayWithCreditCard\/Views\/PayWithCardViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 4124,
+      "offset": 4128,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/ThirdParty Sources\/CountryPickerView\/CountryPickerViewController.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/ThirdParty Sources\/CountryPickerView\/CountryPickerViewController.swift",
       "kind": "BooleanLiteral",
       "offset": 391,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PayWithCreditCard\/PayModels+Response.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PayWithCreditCard\/PayModels+Response.swift",
       "kind": "StringLiteral",
       "offset": 979,
       "length": 10,
       "value": "\"tran_ref\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PayWithCreditCard\/PayModels+Response.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PayWithCreditCard\/PayModels+Response.swift",
       "kind": "StringLiteral",
       "offset": 1018,
       "length": 11,
       "value": "\"tran_type\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PayWithCreditCard\/PayModels+Response.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PayWithCreditCard\/PayModels+Response.swift",
       "kind": "StringLiteral",
       "offset": 1056,
       "length": 9,
       "value": "\"cart_id\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PayWithCreditCard\/PayModels+Response.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PayWithCreditCard\/PayModels+Response.swift",
       "kind": "StringLiteral",
       "offset": 1101,
       "length": 18,
       "value": "\"cart_description\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PayWithCreditCard\/PayModels+Response.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PayWithCreditCard\/PayModels+Response.swift",
       "kind": "StringLiteral",
       "offset": 1152,
       "length": 15,
       "value": "\"cart_currency\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PayWithCreditCard\/PayModels+Response.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PayWithCreditCard\/PayModels+Response.swift",
       "kind": "StringLiteral",
       "offset": 1198,
       "length": 13,
       "value": "\"cart_amount\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PayWithCreditCard\/PayModels+Response.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PayWithCreditCard\/PayModels+Response.swift",
       "kind": "StringLiteral",
       "offset": 1249,
       "length": 8,
       "value": "\"return\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PayWithCreditCard\/PayModels+Response.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PayWithCreditCard\/PayModels+Response.swift",
       "kind": "StringLiteral",
       "offset": 1292,
       "length": 18,
       "value": "\"customer_details\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PayWithCreditCard\/PayModels+Response.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PayWithCreditCard\/PayModels+Response.swift",
       "kind": "StringLiteral",
       "offset": 1346,
       "length": 18,
       "value": "\"shipping_details\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PayWithCreditCard\/PayModels+Response.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PayWithCreditCard\/PayModels+Response.swift",
       "kind": "StringLiteral",
       "offset": 1398,
       "length": 16,
       "value": "\"payment_result\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PayWithCreditCard\/PayModels+Response.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PayWithCreditCard\/PayModels+Response.swift",
       "kind": "StringLiteral",
       "offset": 1446,
       "length": 14,
       "value": "\"payment_info\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PayWithCreditCard\/PayModels+Response.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PayWithCreditCard\/PayModels+Response.swift",
       "kind": "StringLiteral",
       "offset": 1492,
       "length": 14,
       "value": "\"redirect_url\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PayWithCreditCard\/PayModels+Response.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PayWithCreditCard\/PayModels+Response.swift",
       "kind": "StringLiteral",
       "offset": 1559,
       "length": 6,
       "value": "\"code\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PayWithCreditCard\/PayModels+Response.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PayWithCreditCard\/PayModels+Response.swift",
       "kind": "StringLiteral",
       "offset": 1598,
       "length": 9,
       "value": "\"message\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PayWithCreditCard\/PayModels+Response.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PayWithCreditCard\/PayModels+Response.swift",
       "kind": "StringLiteral",
       "offset": 1640,
       "length": 15,
       "value": "\"tran_currency\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PayWithCreditCard\/PayModels+Response.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PayWithCreditCard\/PayModels+Response.swift",
       "kind": "StringLiteral",
       "offset": 1685,
       "length": 12,
       "value": "\"tran_total\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PayWithCreditCard\/PayModels+Response.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PayWithCreditCard\/PayModels+Response.swift",
       "kind": "StringLiteral",
       "offset": 1727,
       "length": 11,
       "value": "\"serviceId\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PayWithCreditCard\/PayModels+Response.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PayWithCreditCard\/PayModels+Response.swift",
       "kind": "StringLiteral",
       "offset": 1768,
       "length": 11,
       "value": "\"profileId\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PayWithCreditCard\/PayModels+Response.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PayWithCreditCard\/PayModels+Response.swift",
       "kind": "StringLiteral",
       "offset": 1810,
       "length": 12,
       "value": "\"merchantId\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PayWithCreditCard\/PayModels+Response.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PayWithCreditCard\/PayModels+Response.swift",
       "kind": "StringLiteral",
       "offset": 979,
       "length": 10,
       "value": "\"tran_ref\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PayWithCreditCard\/PayModels+Response.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PayWithCreditCard\/PayModels+Response.swift",
       "kind": "StringLiteral",
       "offset": 1018,
       "length": 11,
       "value": "\"tran_type\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PayWithCreditCard\/PayModels+Response.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PayWithCreditCard\/PayModels+Response.swift",
       "kind": "StringLiteral",
       "offset": 1056,
       "length": 9,
       "value": "\"cart_id\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PayWithCreditCard\/PayModels+Response.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PayWithCreditCard\/PayModels+Response.swift",
       "kind": "StringLiteral",
       "offset": 1101,
       "length": 18,
       "value": "\"cart_description\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PayWithCreditCard\/PayModels+Response.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PayWithCreditCard\/PayModels+Response.swift",
       "kind": "StringLiteral",
       "offset": 1152,
       "length": 15,
       "value": "\"cart_currency\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PayWithCreditCard\/PayModels+Response.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PayWithCreditCard\/PayModels+Response.swift",
       "kind": "StringLiteral",
       "offset": 1198,
       "length": 13,
       "value": "\"cart_amount\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PayWithCreditCard\/PayModels+Response.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PayWithCreditCard\/PayModels+Response.swift",
       "kind": "StringLiteral",
       "offset": 1249,
       "length": 8,
       "value": "\"return\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PayWithCreditCard\/PayModels+Response.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PayWithCreditCard\/PayModels+Response.swift",
       "kind": "StringLiteral",
       "offset": 1292,
       "length": 18,
       "value": "\"customer_details\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PayWithCreditCard\/PayModels+Response.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PayWithCreditCard\/PayModels+Response.swift",
       "kind": "StringLiteral",
       "offset": 1346,
       "length": 18,
       "value": "\"shipping_details\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PayWithCreditCard\/PayModels+Response.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PayWithCreditCard\/PayModels+Response.swift",
       "kind": "StringLiteral",
       "offset": 1398,
       "length": 16,
       "value": "\"payment_result\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PayWithCreditCard\/PayModels+Response.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PayWithCreditCard\/PayModels+Response.swift",
       "kind": "StringLiteral",
       "offset": 1446,
       "length": 14,
       "value": "\"payment_info\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PayWithCreditCard\/PayModels+Response.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PayWithCreditCard\/PayModels+Response.swift",
       "kind": "StringLiteral",
       "offset": 1492,
       "length": 14,
       "value": "\"redirect_url\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PayWithCreditCard\/PayModels+Response.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PayWithCreditCard\/PayModels+Response.swift",
       "kind": "StringLiteral",
       "offset": 1559,
       "length": 6,
       "value": "\"code\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PayWithCreditCard\/PayModels+Response.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PayWithCreditCard\/PayModels+Response.swift",
       "kind": "StringLiteral",
       "offset": 1598,
       "length": 9,
       "value": "\"message\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PayWithCreditCard\/PayModels+Response.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PayWithCreditCard\/PayModels+Response.swift",
       "kind": "StringLiteral",
       "offset": 1640,
       "length": 15,
       "value": "\"tran_currency\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PayWithCreditCard\/PayModels+Response.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PayWithCreditCard\/PayModels+Response.swift",
       "kind": "StringLiteral",
       "offset": 1685,
       "length": 12,
       "value": "\"tran_total\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PayWithCreditCard\/PayModels+Response.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PayWithCreditCard\/PayModels+Response.swift",
       "kind": "StringLiteral",
       "offset": 1727,
       "length": 11,
       "value": "\"serviceId\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PayWithCreditCard\/PayModels+Response.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PayWithCreditCard\/PayModels+Response.swift",
       "kind": "StringLiteral",
       "offset": 1768,
       "length": 11,
       "value": "\"profileId\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PayWithCreditCard\/PayModels+Response.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PayWithCreditCard\/PayModels+Response.swift",
       "kind": "StringLiteral",
       "offset": 1810,
       "length": 12,
       "value": "\"merchantId\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PayWithCreditCard\/PayModels+Response.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PayWithCreditCard\/PayModels+Response.swift",
       "kind": "StringLiteral",
       "offset": 2412,
       "length": 11,
       "value": "\"card_type\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PayWithCreditCard\/PayModels+Response.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PayWithCreditCard\/PayModels+Response.swift",
       "kind": "StringLiteral",
       "offset": 2454,
       "length": 13,
       "value": "\"card_scheme\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PayWithCreditCard\/PayModels+Response.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PayWithCreditCard\/PayModels+Response.swift",
       "kind": "StringLiteral",
       "offset": 2506,
       "length": 21,
       "value": "\"payment_description\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PayWithCreditCard\/PayModels+Response.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PayWithCreditCard\/PayModels+Response.swift",
       "kind": "StringLiteral",
       "offset": 2561,
       "length": 16,
       "value": "\"payment_method\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PayWithCreditCard\/PayModels+Response.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PayWithCreditCard\/PayModels+Response.swift",
       "kind": "StringLiteral",
       "offset": 2412,
       "length": 11,
       "value": "\"card_type\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PayWithCreditCard\/PayModels+Response.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PayWithCreditCard\/PayModels+Response.swift",
       "kind": "StringLiteral",
       "offset": 2454,
       "length": 13,
       "value": "\"card_scheme\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PayWithCreditCard\/PayModels+Response.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PayWithCreditCard\/PayModels+Response.swift",
       "kind": "StringLiteral",
       "offset": 2506,
       "length": 21,
       "value": "\"payment_description\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PayWithCreditCard\/PayModels+Response.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PayWithCreditCard\/PayModels+Response.swift",
       "kind": "StringLiteral",
       "offset": 2561,
       "length": 16,
       "value": "\"payment_method\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/CreditCardScanner\/Views\/CameraView.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/CreditCardScanner\/Views\/CameraView.swift",
       "kind": "StringLiteral",
       "offset": 426,
       "length": 11,
       "value": "\"BackLayer\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/CreditCardScanner\/Views\/CameraView.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/CreditCardScanner\/Views\/CameraView.swift",
       "kind": "StringLiteral",
       "offset": 468,
       "length": 13,
       "value": "\"StrokeLayer\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/CreditCardScanner\/Views\/CameraView.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/CreditCardScanner\/Views\/CameraView.swift",
       "kind": "FloatLiteral",
       "offset": 709,
       "length": 3,
       "value": "0.7"
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/CreditCardScanner\/Views\/CameraView.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/CreditCardScanner\/Views\/CameraView.swift",
       "kind": "StringLiteral",
       "offset": 814,
       "length": 56,
       "value": "\"com.paymentsdk.credit-card-scanner.captureSessionQueue\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/CreditCardScanner\/Views\/CameraView.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/CreditCardScanner\/Views\/CameraView.swift",
       "kind": "StringLiteral",
       "offset": 976,
       "length": 54,
       "value": "\"com.paymentsdk.credit-card-scanner.sampleBufferQueue\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/CreditCardScanner\/Views\/CameraView.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/CreditCardScanner\/Views\/CameraView.swift",
       "kind": "IntegerLiteral",
       "offset": 2442,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PayWithCreditCard\/Views\/CollapsibleTableViewHeader.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PayWithCreditCard\/Views\/CollapsibleTableViewHeader.swift",
       "kind": "IntegerLiteral",
       "offset": 469,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/CreditCardScanner\/Views\/CreditCardScannerViewController.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/CreditCardScanner\/Views\/CreditCardScannerViewController.swift",
       "kind": "IntegerLiteral",
       "offset": 252,
       "length": 2,
       "value": "20"
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/CreditCardScanner\/Views\/CreditCardScannerViewController.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/CreditCardScanner\/Views\/CreditCardScannerViewController.swift",
       "kind": "FloatLiteral",
       "offset": 293,
       "length": 3,
       "value": "1.6"
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/CreditCardScanner\/Views\/CreditCardScannerViewController.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/CreditCardScanner\/Views\/CreditCardScannerViewController.swift",
       "kind": "FloatLiteral",
       "offset": 335,
       "length": 4,
       "value": "0.65"
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/CreditCardScanner\/Views\/CreditCardScannerViewController.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/CreditCardScanner\/Views\/CreditCardScannerViewController.swift",
       "kind": "FloatLiteral",
       "offset": 379,
       "length": 3,
       "value": "6.0"
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/CreditCardScanner\/Views\/CreditCardScannerViewController.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/CreditCardScanner\/Views\/CreditCardScannerViewController.swift",
       "kind": "FloatLiteral",
       "offset": 417,
       "length": 3,
       "value": "0.6"
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/CreditCardScanner\/Views\/CreditCardScannerViewController.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/CreditCardScanner\/Views\/CreditCardScannerViewController.swift",
       "kind": "StringLiteral",
       "offset": 455,
       "length": 16,
       "value": "\"CameraScanning\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/CardSaving\/KeychainWorker.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/CardSaving\/KeychainWorker.swift",
       "kind": "StringLiteral",
       "offset": 209,
       "length": 7,
       "value": "\"cards\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/CardSaving\/KeychainWorker.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/CardSaving\/KeychainWorker.swift",
       "kind": "StringLiteral",
       "offset": 209,
       "length": 7,
       "value": "\"cards\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PayWithCreditCard\/PayModels.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PayWithCreditCard\/PayModels.swift",
       "kind": "StringLiteral",
       "offset": 3371,
       "length": 12,
       "value": "\"profile_id\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PayWithCreditCard\/PayModels.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PayWithCreditCard\/PayModels.swift",
       "kind": "StringLiteral",
       "offset": 3412,
       "length": 11,
       "value": "\"tran_type\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PayWithCreditCard\/PayModels.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PayWithCreditCard\/PayModels.swift",
       "kind": "StringLiteral",
       "offset": 3453,
       "length": 12,
       "value": "\"tran_class\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PayWithCreditCard\/PayModels.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PayWithCreditCard\/PayModels.swift",
       "kind": "StringLiteral",
       "offset": 3492,
       "length": 9,
       "value": "\"cart_id\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PayWithCreditCard\/PayModels.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PayWithCreditCard\/PayModels.swift",
       "kind": "StringLiteral",
       "offset": 3534,
       "length": 15,
       "value": "\"cart_currency\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PayWithCreditCard\/PayModels.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PayWithCreditCard\/PayModels.swift",
       "kind": "StringLiteral",
       "offset": 3580,
       "length": 13,
       "value": "\"cart_amount\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PayWithCreditCard\/PayModels.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PayWithCreditCard\/PayModels.swift",
       "kind": "StringLiteral",
       "offset": 3629,
       "length": 18,
       "value": "\"cart_description\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PayWithCreditCard\/PayModels.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PayWithCreditCard\/PayModels.swift",
       "kind": "StringLiteral",
       "offset": 3679,
       "length": 14,
       "value": "\"paypage_lang\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PayWithCreditCard\/PayModels.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PayWithCreditCard\/PayModels.swift",
       "kind": "StringLiteral",
       "offset": 3728,
       "length": 18,
       "value": "\"customer_details\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PayWithCreditCard\/PayModels.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PayWithCreditCard\/PayModels.swift",
       "kind": "StringLiteral",
       "offset": 3782,
       "length": 18,
       "value": "\"shipping_details\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PayWithCreditCard\/PayModels.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PayWithCreditCard\/PayModels.swift",
       "kind": "StringLiteral",
       "offset": 3832,
       "length": 14,
       "value": "\"card_details\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PayWithCreditCard\/PayModels.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PayWithCreditCard\/PayModels.swift",
       "kind": "StringLiteral",
       "offset": 3881,
       "length": 8,
       "value": "\"return\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PayWithCreditCard\/PayModels.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PayWithCreditCard\/PayModels.swift",
       "kind": "StringLiteral",
       "offset": 3923,
       "length": 17,
       "value": "\"apple_pay_token\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PayWithCreditCard\/PayModels.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PayWithCreditCard\/PayModels.swift",
       "kind": "StringLiteral",
       "offset": 3971,
       "length": 13,
       "value": "\"device_info\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PayWithCreditCard\/PayModels.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PayWithCreditCard\/PayModels.swift",
       "kind": "StringLiteral",
       "offset": 4068,
       "length": 10,
       "value": "\"tran_ref\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PayWithCreditCard\/PayModels.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PayWithCreditCard\/PayModels.swift",
       "kind": "StringLiteral",
       "offset": 4113,
       "length": 17,
       "value": "\"payment_methods\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PayWithCreditCard\/PayModels.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PayWithCreditCard\/PayModels.swift",
       "kind": "StringLiteral",
       "offset": 4163,
       "length": 15,
       "value": "\"hide_shipping\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PayWithCreditCard\/PayModels.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PayWithCreditCard\/PayModels.swift",
       "kind": "StringLiteral",
       "offset": 3371,
       "length": 12,
       "value": "\"profile_id\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PayWithCreditCard\/PayModels.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PayWithCreditCard\/PayModels.swift",
       "kind": "StringLiteral",
       "offset": 3412,
       "length": 11,
       "value": "\"tran_type\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PayWithCreditCard\/PayModels.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PayWithCreditCard\/PayModels.swift",
       "kind": "StringLiteral",
       "offset": 3453,
       "length": 12,
       "value": "\"tran_class\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PayWithCreditCard\/PayModels.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PayWithCreditCard\/PayModels.swift",
       "kind": "StringLiteral",
       "offset": 3492,
       "length": 9,
       "value": "\"cart_id\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PayWithCreditCard\/PayModels.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PayWithCreditCard\/PayModels.swift",
       "kind": "StringLiteral",
       "offset": 3534,
       "length": 15,
       "value": "\"cart_currency\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PayWithCreditCard\/PayModels.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PayWithCreditCard\/PayModels.swift",
       "kind": "StringLiteral",
       "offset": 3580,
       "length": 13,
       "value": "\"cart_amount\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PayWithCreditCard\/PayModels.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PayWithCreditCard\/PayModels.swift",
       "kind": "StringLiteral",
       "offset": 3629,
       "length": 18,
       "value": "\"cart_description\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PayWithCreditCard\/PayModels.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PayWithCreditCard\/PayModels.swift",
       "kind": "StringLiteral",
       "offset": 3679,
       "length": 14,
       "value": "\"paypage_lang\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PayWithCreditCard\/PayModels.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PayWithCreditCard\/PayModels.swift",
       "kind": "StringLiteral",
       "offset": 3728,
       "length": 18,
       "value": "\"customer_details\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PayWithCreditCard\/PayModels.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PayWithCreditCard\/PayModels.swift",
       "kind": "StringLiteral",
       "offset": 3782,
       "length": 18,
       "value": "\"shipping_details\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PayWithCreditCard\/PayModels.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PayWithCreditCard\/PayModels.swift",
       "kind": "StringLiteral",
       "offset": 3832,
       "length": 14,
       "value": "\"card_details\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PayWithCreditCard\/PayModels.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PayWithCreditCard\/PayModels.swift",
       "kind": "StringLiteral",
       "offset": 3881,
       "length": 8,
       "value": "\"return\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PayWithCreditCard\/PayModels.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PayWithCreditCard\/PayModels.swift",
       "kind": "StringLiteral",
       "offset": 3923,
       "length": 17,
       "value": "\"apple_pay_token\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PayWithCreditCard\/PayModels.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PayWithCreditCard\/PayModels.swift",
       "kind": "StringLiteral",
       "offset": 3971,
       "length": 13,
       "value": "\"device_info\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PayWithCreditCard\/PayModels.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PayWithCreditCard\/PayModels.swift",
       "kind": "StringLiteral",
       "offset": 4068,
       "length": 10,
       "value": "\"tran_ref\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PayWithCreditCard\/PayModels.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PayWithCreditCard\/PayModels.swift",
       "kind": "StringLiteral",
       "offset": 4113,
       "length": 17,
       "value": "\"payment_methods\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PayWithCreditCard\/PayModels.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PayWithCreditCard\/PayModels.swift",
       "kind": "StringLiteral",
       "offset": 4163,
       "length": 15,
       "value": "\"hide_shipping\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PayWithCreditCard\/PayModels.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PayWithCreditCard\/PayModels.swift",
       "kind": "StringLiteral",
       "offset": 4519,
       "length": 14,
       "value": "\"expiry_month\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PayWithCreditCard\/PayModels.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PayWithCreditCard\/PayModels.swift",
       "kind": "StringLiteral",
       "offset": 4564,
       "length": 13,
       "value": "\"expiry_year\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PayWithCreditCard\/PayModels.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PayWithCreditCard\/PayModels.swift",
       "kind": "StringLiteral",
       "offset": 4629,
       "length": 13,
       "value": "\"masked_card\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PayWithCreditCard\/PayModels.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PayWithCreditCard\/PayModels.swift",
       "kind": "StringLiteral",
       "offset": 4519,
       "length": 14,
       "value": "\"expiry_month\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PayWithCreditCard\/PayModels.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PayWithCreditCard\/PayModels.swift",
       "kind": "StringLiteral",
       "offset": 4564,
       "length": 13,
       "value": "\"expiry_year\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PayWithCreditCard\/PayModels.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PayWithCreditCard\/PayModels.swift",
       "kind": "StringLiteral",
       "offset": 4629,
       "length": 13,
       "value": "\"masked_card\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PayWithCreditCard\/PayModels.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PayWithCreditCard\/PayModels.swift",
       "kind": "StringLiteral",
       "offset": 5284,
       "length": 15,
       "value": "\"transactionId\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PayWithCreditCard\/PayModels.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PayWithCreditCard\/PayModels.swift",
       "kind": "StringLiteral",
       "offset": 5284,
       "length": 15,
       "value": "\"transactionId\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PayWithCreditCard\/PayModels.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PayWithCreditCard\/PayModels.swift",
       "kind": "StringLiteral",
       "offset": 6538,
       "length": 17,
       "value": "\"response_status\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PayWithCreditCard\/PayModels.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PayWithCreditCard\/PayModels.swift",
       "kind": "StringLiteral",
       "offset": 6588,
       "length": 15,
       "value": "\"response_code\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PayWithCreditCard\/PayModels.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PayWithCreditCard\/PayModels.swift",
       "kind": "StringLiteral",
       "offset": 6639,
       "length": 18,
       "value": "\"response_message\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PayWithCreditCard\/PayModels.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PayWithCreditCard\/PayModels.swift",
       "kind": "StringLiteral",
       "offset": 6693,
       "length": 18,
       "value": "\"transaction_time\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PayWithCreditCard\/PayModels.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PayWithCreditCard\/PayModels.swift",
       "kind": "StringLiteral",
       "offset": 6747,
       "length": 18,
       "value": "\"acquirer_message\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PayWithCreditCard\/PayModels.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PayWithCreditCard\/PayModels.swift",
       "kind": "StringLiteral",
       "offset": 6797,
       "length": 14,
       "value": "\"acquirer_rrn\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PayWithCreditCard\/PayModels.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PayWithCreditCard\/PayModels.swift",
       "kind": "StringLiteral",
       "offset": 6538,
       "length": 17,
       "value": "\"response_status\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PayWithCreditCard\/PayModels.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PayWithCreditCard\/PayModels.swift",
       "kind": "StringLiteral",
       "offset": 6588,
       "length": 15,
       "value": "\"response_code\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PayWithCreditCard\/PayModels.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PayWithCreditCard\/PayModels.swift",
       "kind": "StringLiteral",
       "offset": 6639,
       "length": 18,
       "value": "\"response_message\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PayWithCreditCard\/PayModels.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PayWithCreditCard\/PayModels.swift",
       "kind": "StringLiteral",
       "offset": 6693,
       "length": 18,
       "value": "\"transaction_time\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PayWithCreditCard\/PayModels.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PayWithCreditCard\/PayModels.swift",
       "kind": "StringLiteral",
       "offset": 6747,
       "length": 18,
       "value": "\"acquirer_message\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PayWithCreditCard\/PayModels.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PayWithCreditCard\/PayModels.swift",
       "kind": "StringLiteral",
       "offset": 6797,
       "length": 14,
       "value": "\"acquirer_rrn\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PayWithCreditCard\/PayModels.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PayWithCreditCard\/PayModels.swift",
       "kind": "StringLiteral",
       "offset": 7440,
       "length": 11,
       "value": "\"device_id\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PayWithCreditCard\/PayModels.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PayWithCreditCard\/PayModels.swift",
       "kind": "StringLiteral",
       "offset": 7477,
       "length": 8,
       "value": "\"app_id\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PayWithCreditCard\/PayModels.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PayWithCreditCard\/PayModels.swift",
       "kind": "StringLiteral",
       "offset": 7515,
       "length": 4,
       "value": "\"ip\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PayWithCreditCard\/PayModels.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PayWithCreditCard\/PayModels.swift",
       "kind": "StringLiteral",
       "offset": 7624,
       "length": 4,
       "value": "\"os\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PayWithCreditCard\/PayModels.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PayWithCreditCard\/PayModels.swift",
       "kind": "StringLiteral",
       "offset": 7660,
       "length": 14,
       "value": "\"screen_width\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PayWithCreditCard\/PayModels.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PayWithCreditCard\/PayModels.swift",
       "kind": "StringLiteral",
       "offset": 7707,
       "length": 15,
       "value": "\"screen_height\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PayWithCreditCard\/PayModels.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PayWithCreditCard\/PayModels.swift",
       "kind": "StringLiteral",
       "offset": 7750,
       "length": 10,
       "value": "\"app_lang\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PayWithCreditCard\/PayModels.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PayWithCreditCard\/PayModels.swift",
       "kind": "StringLiteral",
       "offset": 7791,
       "length": 13,
       "value": "\"device_lang\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PayWithCreditCard\/PayModels.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PayWithCreditCard\/PayModels.swift",
       "kind": "StringLiteral",
       "offset": 7863,
       "length": 13,
       "value": "\"sdk_version\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PayWithCreditCard\/PayModels.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PayWithCreditCard\/PayModels.swift",
       "kind": "StringLiteral",
       "offset": 7907,
       "length": 13,
       "value": "\"app_version\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PayWithCreditCard\/PayModels.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PayWithCreditCard\/PayModels.swift",
       "kind": "StringLiteral",
       "offset": 7440,
       "length": 11,
       "value": "\"device_id\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PayWithCreditCard\/PayModels.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PayWithCreditCard\/PayModels.swift",
       "kind": "StringLiteral",
       "offset": 7477,
       "length": 8,
       "value": "\"app_id\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PayWithCreditCard\/PayModels.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PayWithCreditCard\/PayModels.swift",
       "kind": "StringLiteral",
       "offset": 7515,
       "length": 4,
       "value": "\"ip\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PayWithCreditCard\/PayModels.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PayWithCreditCard\/PayModels.swift",
       "kind": "StringLiteral",
       "offset": 7624,
       "length": 4,
       "value": "\"os\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PayWithCreditCard\/PayModels.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PayWithCreditCard\/PayModels.swift",
       "kind": "StringLiteral",
       "offset": 7660,
       "length": 14,
       "value": "\"screen_width\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PayWithCreditCard\/PayModels.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PayWithCreditCard\/PayModels.swift",
       "kind": "StringLiteral",
       "offset": 7707,
       "length": 15,
       "value": "\"screen_height\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PayWithCreditCard\/PayModels.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PayWithCreditCard\/PayModels.swift",
       "kind": "StringLiteral",
       "offset": 7750,
       "length": 10,
       "value": "\"app_lang\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PayWithCreditCard\/PayModels.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PayWithCreditCard\/PayModels.swift",
       "kind": "StringLiteral",
       "offset": 7791,
       "length": 13,
       "value": "\"device_lang\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PayWithCreditCard\/PayModels.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PayWithCreditCard\/PayModels.swift",
       "kind": "StringLiteral",
       "offset": 7863,
       "length": 13,
       "value": "\"sdk_version\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PayWithCreditCard\/PayModels.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PayWithCreditCard\/PayModels.swift",
       "kind": "StringLiteral",
       "offset": 7907,
       "length": 13,
       "value": "\"app_version\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Extensions\/UIViewController.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Extensions\/UIViewController.swift",
       "kind": "BooleanLiteral",
       "offset": 2055,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/ThirdParty Sources\/CountryPickerView\/CountryPickerView.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/ThirdParty Sources\/CountryPickerView\/CountryPickerView.swift",
       "kind": "BooleanLiteral",
       "offset": 1394,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/ThirdParty Sources\/CountryPickerView\/CountryPickerView.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/ThirdParty Sources\/CountryPickerView\/CountryPickerView.swift",
       "kind": "BooleanLiteral",
       "offset": 1447,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/ThirdParty Sources\/CountryPickerView\/CountryPickerView.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/ThirdParty Sources\/CountryPickerView\/CountryPickerView.swift",
       "kind": "IntegerLiteral",
       "offset": 1499,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/ThirdParty Sources\/CountryPickerView\/CountryPickerView.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/ThirdParty Sources\/CountryPickerView\/CountryPickerView.swift",
       "kind": "BooleanLiteral",
       "offset": 1797,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/ThirdParty Sources\/CountryPickerView\/CountryPickerView.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/ThirdParty Sources\/CountryPickerView\/CountryPickerView.swift",
       "kind": "BooleanLiteral",
       "offset": 1669,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/ThirdParty Sources\/CountryPickerView\/CountryPickerView.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/ThirdParty Sources\/CountryPickerView\/CountryPickerView.swift",
       "kind": "BooleanLiteral",
       "offset": 1966,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/ThirdParty Sources\/CountryPickerView\/CountryPickerView.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/ThirdParty Sources\/CountryPickerView\/CountryPickerView.swift",
       "kind": "BooleanLiteral",
       "offset": 2227,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/ThirdParty Sources\/CountryPickerView\/CountryPickerView.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/ThirdParty Sources\/CountryPickerView\/CountryPickerView.swift",
       "kind": "BooleanLiteral",
       "offset": 2098,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/ThirdParty Sources\/CountryPickerView\/CountryPickerView.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/ThirdParty Sources\/CountryPickerView\/CountryPickerView.swift",
       "kind": "FloatLiteral",
       "offset": 2399,
       "length": 4,
       "value": "17.0"
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/ThirdParty Sources\/CountryPickerView\/CountryPickerView.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/ThirdParty Sources\/CountryPickerView\/CountryPickerView.swift",
       "kind": "StringLiteral",
       "offset": 6180,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PublicLayer\/PaymentManager.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PublicLayer\/PaymentManager.swift",
       "kind": "BooleanLiteral",
       "offset": 14259,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PublicLayer\/PaymentManager.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PublicLayer\/PaymentManager.swift",
       "kind": "BooleanLiteral",
       "offset": 14345,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PublicLayer\/PaymentManager.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PublicLayer\/PaymentManager.swift",
       "kind": "BooleanLiteral",
       "offset": 14417,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PublicLayer\/PaymentManager.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PublicLayer\/PaymentManager.swift",
       "kind": "BooleanLiteral",
       "offset": 15886,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PublicLayer\/PaymentManager.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PublicLayer\/PaymentManager.swift",
       "kind": "BooleanLiteral",
       "offset": 15966,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PublicLayer\/PaymentManager.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PublicLayer\/PaymentManager.swift",
       "kind": "BooleanLiteral",
       "offset": 17646,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Extensions\/UIView+Gradient.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Extensions\/UIView+Gradient.swift",
       "kind": "StringLiteral",
       "offset": 193,
       "length": 28,
       "value": "\"payment_sdk_gradient_layer\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Controls\/MonthYearPickerView.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Controls\/MonthYearPickerView.swift",
       "kind": "IntegerLiteral",
       "offset": 790,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Controls\/MonthYearPickerView.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Controls\/MonthYearPickerView.swift",
       "kind": "IntegerLiteral",
       "offset": 806,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Controls\/MonthYearPickerView.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Controls\/MonthYearPickerView.swift",
       "kind": "BooleanLiteral",
       "offset": 819,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Controls\/MonthYearPickerView.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Controls\/MonthYearPickerView.swift",
       "kind": "IntegerLiteral",
       "offset": 993,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Controls\/MonthYearPickerView.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Controls\/MonthYearPickerView.swift",
       "kind": "BooleanLiteral",
       "offset": 1006,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Extensions\/UIDevice.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Extensions\/UIDevice.swift",
       "kind": "StringLiteral",
       "offset": 253,
       "length": 19,
       "value": "\"simulator\/sandbox\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Extensions\/UIDevice.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Extensions\/UIDevice.swift",
       "kind": "StringLiteral",
       "offset": 311,
       "length": 8,
       "value": "\"iPod 1\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Extensions\/UIDevice.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Extensions\/UIDevice.swift",
       "kind": "StringLiteral",
       "offset": 346,
       "length": 8,
       "value": "\"iPod 2\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Extensions\/UIDevice.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Extensions\/UIDevice.swift",
       "kind": "StringLiteral",
       "offset": 381,
       "length": 8,
       "value": "\"iPod 3\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Extensions\/UIDevice.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Extensions\/UIDevice.swift",
       "kind": "StringLiteral",
       "offset": 416,
       "length": 8,
       "value": "\"iPod 4\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Extensions\/UIDevice.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Extensions\/UIDevice.swift",
       "kind": "StringLiteral",
       "offset": 451,
       "length": 8,
       "value": "\"iPod 5\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Extensions\/UIDevice.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Extensions\/UIDevice.swift",
       "kind": "StringLiteral",
       "offset": 486,
       "length": 8,
       "value": "\"iPod 6\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Extensions\/UIDevice.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Extensions\/UIDevice.swift",
       "kind": "StringLiteral",
       "offset": 521,
       "length": 8,
       "value": "\"iPod 7\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Extensions\/UIDevice.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Extensions\/UIDevice.swift",
       "kind": "StringLiteral",
       "offset": 568,
       "length": 8,
       "value": "\"iPad 2\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Extensions\/UIDevice.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Extensions\/UIDevice.swift",
       "kind": "StringLiteral",
       "offset": 603,
       "length": 8,
       "value": "\"iPad 3\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Extensions\/UIDevice.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Extensions\/UIDevice.swift",
       "kind": "StringLiteral",
       "offset": 638,
       "length": 8,
       "value": "\"iPad 4\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Extensions\/UIDevice.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Extensions\/UIDevice.swift",
       "kind": "StringLiteral",
       "offset": 673,
       "length": 11,
       "value": "\"iPad Air \""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Extensions\/UIDevice.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Extensions\/UIDevice.swift",
       "kind": "StringLiteral",
       "offset": 711,
       "length": 12,
       "value": "\"iPad Air 2\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Extensions\/UIDevice.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Extensions\/UIDevice.swift",
       "kind": "StringLiteral",
       "offset": 750,
       "length": 12,
       "value": "\"iPad Air 3\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Extensions\/UIDevice.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Extensions\/UIDevice.swift",
       "kind": "StringLiteral",
       "offset": 789,
       "length": 12,
       "value": "\"iPad Air 4\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Extensions\/UIDevice.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Extensions\/UIDevice.swift",
       "kind": "StringLiteral",
       "offset": 828,
       "length": 12,
       "value": "\"iPad Air 5\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Extensions\/UIDevice.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Extensions\/UIDevice.swift",
       "kind": "StringLiteral",
       "offset": 867,
       "length": 8,
       "value": "\"iPad 5\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Extensions\/UIDevice.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Extensions\/UIDevice.swift",
       "kind": "StringLiteral",
       "offset": 914,
       "length": 8,
       "value": "\"iPad 6\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Extensions\/UIDevice.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Extensions\/UIDevice.swift",
       "kind": "StringLiteral",
       "offset": 961,
       "length": 8,
       "value": "\"iPad 7\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Extensions\/UIDevice.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Extensions\/UIDevice.swift",
       "kind": "StringLiteral",
       "offset": 1008,
       "length": 8,
       "value": "\"iPad 8\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Extensions\/UIDevice.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Extensions\/UIDevice.swift",
       "kind": "StringLiteral",
       "offset": 1055,
       "length": 8,
       "value": "\"iPad 9\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Extensions\/UIDevice.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Extensions\/UIDevice.swift",
       "kind": "StringLiteral",
       "offset": 1119,
       "length": 11,
       "value": "\"iPad Mini\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Extensions\/UIDevice.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Extensions\/UIDevice.swift",
       "kind": "StringLiteral",
       "offset": 1157,
       "length": 13,
       "value": "\"iPad Mini 2\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Extensions\/UIDevice.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Extensions\/UIDevice.swift",
       "kind": "StringLiteral",
       "offset": 1197,
       "length": 13,
       "value": "\"iPad Mini 3\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Extensions\/UIDevice.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Extensions\/UIDevice.swift",
       "kind": "StringLiteral",
       "offset": 1237,
       "length": 13,
       "value": "\"iPad Mini 4\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Extensions\/UIDevice.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Extensions\/UIDevice.swift",
       "kind": "StringLiteral",
       "offset": 1277,
       "length": 13,
       "value": "\"iPad Mini 5\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Extensions\/UIDevice.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Extensions\/UIDevice.swift",
       "kind": "StringLiteral",
       "offset": 1317,
       "length": 13,
       "value": "\"iPad Mini 6\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Extensions\/UIDevice.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Extensions\/UIDevice.swift",
       "kind": "StringLiteral",
       "offset": 1373,
       "length": 16,
       "value": "\"iPad Pro 9.7\"\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Extensions\/UIDevice.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Extensions\/UIDevice.swift",
       "kind": "StringLiteral",
       "offset": 1416,
       "length": 17,
       "value": "\"iPad Pro 10.5\"\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Extensions\/UIDevice.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Extensions\/UIDevice.swift",
       "kind": "StringLiteral",
       "offset": 1460,
       "length": 15,
       "value": "\"iPad Pro 11\"\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Extensions\/UIDevice.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Extensions\/UIDevice.swift",
       "kind": "StringLiteral",
       "offset": 1502,
       "length": 23,
       "value": "\"iPad Pro 11\" 2nd gen\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Extensions\/UIDevice.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Extensions\/UIDevice.swift",
       "kind": "StringLiteral",
       "offset": 1552,
       "length": 23,
       "value": "\"iPad Pro 11\" 3rd gen\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Extensions\/UIDevice.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Extensions\/UIDevice.swift",
       "kind": "StringLiteral",
       "offset": 1602,
       "length": 17,
       "value": "\"iPad Pro 12.9\"\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Extensions\/UIDevice.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Extensions\/UIDevice.swift",
       "kind": "StringLiteral",
       "offset": 1646,
       "length": 19,
       "value": "\"iPad Pro 2 12.9\"\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Extensions\/UIDevice.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Extensions\/UIDevice.swift",
       "kind": "StringLiteral",
       "offset": 1692,
       "length": 19,
       "value": "\"iPad Pro 3 12.9\"\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Extensions\/UIDevice.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Extensions\/UIDevice.swift",
       "kind": "StringLiteral",
       "offset": 1738,
       "length": 19,
       "value": "\"iPad Pro 4 12.9\"\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Extensions\/UIDevice.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Extensions\/UIDevice.swift",
       "kind": "StringLiteral",
       "offset": 1784,
       "length": 19,
       "value": "\"iPad Pro 5 12.9\"\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Extensions\/UIDevice.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Extensions\/UIDevice.swift",
       "kind": "StringLiteral",
       "offset": 1844,
       "length": 10,
       "value": "\"iPhone 4\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Extensions\/UIDevice.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Extensions\/UIDevice.swift",
       "kind": "StringLiteral",
       "offset": 1881,
       "length": 11,
       "value": "\"iPhone 4S\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Extensions\/UIDevice.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Extensions\/UIDevice.swift",
       "kind": "StringLiteral",
       "offset": 1919,
       "length": 10,
       "value": "\"iPhone 5\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Extensions\/UIDevice.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Extensions\/UIDevice.swift",
       "kind": "StringLiteral",
       "offset": 1956,
       "length": 11,
       "value": "\"iPhone 5S\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Extensions\/UIDevice.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Extensions\/UIDevice.swift",
       "kind": "StringLiteral",
       "offset": 1994,
       "length": 11,
       "value": "\"iPhone 5C\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Extensions\/UIDevice.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Extensions\/UIDevice.swift",
       "kind": "StringLiteral",
       "offset": 2032,
       "length": 10,
       "value": "\"iPhone 6\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Extensions\/UIDevice.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Extensions\/UIDevice.swift",
       "kind": "StringLiteral",
       "offset": 2069,
       "length": 15,
       "value": "\"iPhone 6 Plus\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Extensions\/UIDevice.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Extensions\/UIDevice.swift",
       "kind": "StringLiteral",
       "offset": 2111,
       "length": 11,
       "value": "\"iPhone 6S\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Extensions\/UIDevice.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Extensions\/UIDevice.swift",
       "kind": "StringLiteral",
       "offset": 2149,
       "length": 16,
       "value": "\"iPhone 6S Plus\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Extensions\/UIDevice.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Extensions\/UIDevice.swift",
       "kind": "StringLiteral",
       "offset": 2192,
       "length": 11,
       "value": "\"iPhone SE\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Extensions\/UIDevice.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Extensions\/UIDevice.swift",
       "kind": "StringLiteral",
       "offset": 2230,
       "length": 10,
       "value": "\"iPhone 7\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Extensions\/UIDevice.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Extensions\/UIDevice.swift",
       "kind": "StringLiteral",
       "offset": 2267,
       "length": 15,
       "value": "\"iPhone 7 Plus\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Extensions\/UIDevice.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Extensions\/UIDevice.swift",
       "kind": "StringLiteral",
       "offset": 2309,
       "length": 10,
       "value": "\"iPhone 8\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Extensions\/UIDevice.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Extensions\/UIDevice.swift",
       "kind": "StringLiteral",
       "offset": 2346,
       "length": 15,
       "value": "\"iPhone 8 Plus\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Extensions\/UIDevice.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Extensions\/UIDevice.swift",
       "kind": "StringLiteral",
       "offset": 2388,
       "length": 10,
       "value": "\"iPhone X\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Extensions\/UIDevice.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Extensions\/UIDevice.swift",
       "kind": "StringLiteral",
       "offset": 2425,
       "length": 11,
       "value": "\"iPhone XS\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Extensions\/UIDevice.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Extensions\/UIDevice.swift",
       "kind": "StringLiteral",
       "offset": 2463,
       "length": 15,
       "value": "\"iPhone XS Max\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Extensions\/UIDevice.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Extensions\/UIDevice.swift",
       "kind": "StringLiteral",
       "offset": 2505,
       "length": 11,
       "value": "\"iPhone XR\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Extensions\/UIDevice.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Extensions\/UIDevice.swift",
       "kind": "StringLiteral",
       "offset": 2543,
       "length": 11,
       "value": "\"iPhone 11\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Extensions\/UIDevice.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Extensions\/UIDevice.swift",
       "kind": "StringLiteral",
       "offset": 2581,
       "length": 15,
       "value": "\"iPhone 11 Pro\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Extensions\/UIDevice.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Extensions\/UIDevice.swift",
       "kind": "StringLiteral",
       "offset": 2623,
       "length": 19,
       "value": "\"iPhone 11 Pro Max\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Extensions\/UIDevice.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Extensions\/UIDevice.swift",
       "kind": "StringLiteral",
       "offset": 2669,
       "length": 19,
       "value": "\"iPhone SE 2nd gen\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Extensions\/UIDevice.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Extensions\/UIDevice.swift",
       "kind": "StringLiteral",
       "offset": 2715,
       "length": 16,
       "value": "\"iPhone 12 Mini\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Extensions\/UIDevice.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Extensions\/UIDevice.swift",
       "kind": "StringLiteral",
       "offset": 2758,
       "length": 11,
       "value": "\"iPhone 12\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Extensions\/UIDevice.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Extensions\/UIDevice.swift",
       "kind": "StringLiteral",
       "offset": 2796,
       "length": 15,
       "value": "\"iPhone 12 Pro\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Extensions\/UIDevice.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Extensions\/UIDevice.swift",
       "kind": "StringLiteral",
       "offset": 2838,
       "length": 19,
       "value": "\"iPhone 12 Pro Max\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Extensions\/UIDevice.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Extensions\/UIDevice.swift",
       "kind": "StringLiteral",
       "offset": 2884,
       "length": 16,
       "value": "\"iPhone 13 Mini\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Extensions\/UIDevice.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Extensions\/UIDevice.swift",
       "kind": "StringLiteral",
       "offset": 2927,
       "length": 11,
       "value": "\"iPhone 13\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Extensions\/UIDevice.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Extensions\/UIDevice.swift",
       "kind": "StringLiteral",
       "offset": 2965,
       "length": 15,
       "value": "\"iPhone 13 Pro\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Extensions\/UIDevice.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Extensions\/UIDevice.swift",
       "kind": "StringLiteral",
       "offset": 3007,
       "length": 19,
       "value": "\"iPhone 13 Pro Max\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Extensions\/UIDevice.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Extensions\/UIDevice.swift",
       "kind": "StringLiteral",
       "offset": 3053,
       "length": 19,
       "value": "\"iPhone SE 3nd gen\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Extensions\/UIDevice.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Extensions\/UIDevice.swift",
       "kind": "StringLiteral",
       "offset": 3099,
       "length": 11,
       "value": "\"iPhone 14\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Extensions\/UIDevice.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Extensions\/UIDevice.swift",
       "kind": "StringLiteral",
       "offset": 3137,
       "length": 16,
       "value": "\"iPhone 14 Plus\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Extensions\/UIDevice.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Extensions\/UIDevice.swift",
       "kind": "StringLiteral",
       "offset": 3180,
       "length": 15,
       "value": "\"iPhone 14 Pro\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Extensions\/UIDevice.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Extensions\/UIDevice.swift",
       "kind": "StringLiteral",
       "offset": 3222,
       "length": 19,
       "value": "\"iPhone 14 Pro Max\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Extensions\/UIDevice.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Extensions\/UIDevice.swift",
       "kind": "StringLiteral",
       "offset": 3289,
       "length": 18,
       "value": "\"Apple Watch 1gen\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Extensions\/UIDevice.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Extensions\/UIDevice.swift",
       "kind": "StringLiteral",
       "offset": 3335,
       "length": 22,
       "value": "\"Apple Watch Series 1\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Extensions\/UIDevice.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Extensions\/UIDevice.swift",
       "kind": "StringLiteral",
       "offset": 3385,
       "length": 22,
       "value": "\"Apple Watch Series 2\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Extensions\/UIDevice.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Extensions\/UIDevice.swift",
       "kind": "StringLiteral",
       "offset": 3435,
       "length": 22,
       "value": "\"Apple Watch Series 3\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Extensions\/UIDevice.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Extensions\/UIDevice.swift",
       "kind": "StringLiteral",
       "offset": 3485,
       "length": 22,
       "value": "\"Apple Watch Series 4\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Extensions\/UIDevice.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Extensions\/UIDevice.swift",
       "kind": "StringLiteral",
       "offset": 3535,
       "length": 22,
       "value": "\"Apple Watch Series 5\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Extensions\/UIDevice.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Extensions\/UIDevice.swift",
       "kind": "StringLiteral",
       "offset": 3585,
       "length": 29,
       "value": "\"Apple Watch Special Edition\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Extensions\/UIDevice.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Extensions\/UIDevice.swift",
       "kind": "StringLiteral",
       "offset": 3642,
       "length": 22,
       "value": "\"Apple Watch Series 6\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Extensions\/UIDevice.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Extensions\/UIDevice.swift",
       "kind": "StringLiteral",
       "offset": 3692,
       "length": 22,
       "value": "\"Apple Watch Series 7\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Extensions\/UIDevice.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Extensions\/UIDevice.swift",
       "kind": "StringLiteral",
       "offset": 3757,
       "length": 15,
       "value": "\"Apple TV 1gen\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Extensions\/UIDevice.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Extensions\/UIDevice.swift",
       "kind": "StringLiteral",
       "offset": 3799,
       "length": 15,
       "value": "\"Apple TV 2gen\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Extensions\/UIDevice.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Extensions\/UIDevice.swift",
       "kind": "StringLiteral",
       "offset": 3841,
       "length": 15,
       "value": "\"Apple TV 3gen\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Extensions\/UIDevice.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Extensions\/UIDevice.swift",
       "kind": "StringLiteral",
       "offset": 3883,
       "length": 15,
       "value": "\"Apple TV 4gen\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Extensions\/UIDevice.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Extensions\/UIDevice.swift",
       "kind": "StringLiteral",
       "offset": 3925,
       "length": 13,
       "value": "\"Apple TV 4K\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Extensions\/UIDevice.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Extensions\/UIDevice.swift",
       "kind": "StringLiteral",
       "offset": 3965,
       "length": 18,
       "value": "\"Apple TV 4K 2gen\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Extensions\/UIDevice.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Extensions\/UIDevice.swift",
       "kind": "StringLiteral",
       "offset": 4011,
       "length": 16,
       "value": "\"?unrecognized?\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Extensions\/UIDevice.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Extensions\/UIDevice.swift",
       "kind": "StringLiteral",
       "offset": 253,
       "length": 19,
       "value": "\"simulator\/sandbox\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Extensions\/UIDevice.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Extensions\/UIDevice.swift",
       "kind": "StringLiteral",
       "offset": 311,
       "length": 8,
       "value": "\"iPod 1\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Extensions\/UIDevice.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Extensions\/UIDevice.swift",
       "kind": "StringLiteral",
       "offset": 346,
       "length": 8,
       "value": "\"iPod 2\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Extensions\/UIDevice.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Extensions\/UIDevice.swift",
       "kind": "StringLiteral",
       "offset": 381,
       "length": 8,
       "value": "\"iPod 3\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Extensions\/UIDevice.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Extensions\/UIDevice.swift",
       "kind": "StringLiteral",
       "offset": 416,
       "length": 8,
       "value": "\"iPod 4\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Extensions\/UIDevice.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Extensions\/UIDevice.swift",
       "kind": "StringLiteral",
       "offset": 451,
       "length": 8,
       "value": "\"iPod 5\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Extensions\/UIDevice.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Extensions\/UIDevice.swift",
       "kind": "StringLiteral",
       "offset": 486,
       "length": 8,
       "value": "\"iPod 6\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Extensions\/UIDevice.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Extensions\/UIDevice.swift",
       "kind": "StringLiteral",
       "offset": 521,
       "length": 8,
       "value": "\"iPod 7\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Extensions\/UIDevice.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Extensions\/UIDevice.swift",
       "kind": "StringLiteral",
       "offset": 568,
       "length": 8,
       "value": "\"iPad 2\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Extensions\/UIDevice.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Extensions\/UIDevice.swift",
       "kind": "StringLiteral",
       "offset": 603,
       "length": 8,
       "value": "\"iPad 3\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Extensions\/UIDevice.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Extensions\/UIDevice.swift",
       "kind": "StringLiteral",
       "offset": 638,
       "length": 8,
       "value": "\"iPad 4\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Extensions\/UIDevice.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Extensions\/UIDevice.swift",
       "kind": "StringLiteral",
       "offset": 673,
       "length": 11,
       "value": "\"iPad Air \""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Extensions\/UIDevice.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Extensions\/UIDevice.swift",
       "kind": "StringLiteral",
       "offset": 711,
       "length": 12,
       "value": "\"iPad Air 2\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Extensions\/UIDevice.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Extensions\/UIDevice.swift",
       "kind": "StringLiteral",
       "offset": 750,
       "length": 12,
       "value": "\"iPad Air 3\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Extensions\/UIDevice.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Extensions\/UIDevice.swift",
       "kind": "StringLiteral",
       "offset": 789,
       "length": 12,
       "value": "\"iPad Air 4\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Extensions\/UIDevice.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Extensions\/UIDevice.swift",
       "kind": "StringLiteral",
       "offset": 828,
       "length": 12,
       "value": "\"iPad Air 5\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Extensions\/UIDevice.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Extensions\/UIDevice.swift",
       "kind": "StringLiteral",
       "offset": 867,
       "length": 8,
       "value": "\"iPad 5\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Extensions\/UIDevice.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Extensions\/UIDevice.swift",
       "kind": "StringLiteral",
       "offset": 914,
       "length": 8,
       "value": "\"iPad 6\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Extensions\/UIDevice.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Extensions\/UIDevice.swift",
       "kind": "StringLiteral",
       "offset": 961,
       "length": 8,
       "value": "\"iPad 7\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Extensions\/UIDevice.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Extensions\/UIDevice.swift",
       "kind": "StringLiteral",
       "offset": 1008,
       "length": 8,
       "value": "\"iPad 8\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Extensions\/UIDevice.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Extensions\/UIDevice.swift",
       "kind": "StringLiteral",
       "offset": 1055,
       "length": 8,
       "value": "\"iPad 9\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Extensions\/UIDevice.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Extensions\/UIDevice.swift",
       "kind": "StringLiteral",
       "offset": 1119,
       "length": 11,
       "value": "\"iPad Mini\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Extensions\/UIDevice.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Extensions\/UIDevice.swift",
       "kind": "StringLiteral",
       "offset": 1157,
       "length": 13,
       "value": "\"iPad Mini 2\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Extensions\/UIDevice.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Extensions\/UIDevice.swift",
       "kind": "StringLiteral",
       "offset": 1197,
       "length": 13,
       "value": "\"iPad Mini 3\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Extensions\/UIDevice.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Extensions\/UIDevice.swift",
       "kind": "StringLiteral",
       "offset": 1237,
       "length": 13,
       "value": "\"iPad Mini 4\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Extensions\/UIDevice.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Extensions\/UIDevice.swift",
       "kind": "StringLiteral",
       "offset": 1277,
       "length": 13,
       "value": "\"iPad Mini 5\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Extensions\/UIDevice.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Extensions\/UIDevice.swift",
       "kind": "StringLiteral",
       "offset": 1317,
       "length": 13,
       "value": "\"iPad Mini 6\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Extensions\/UIDevice.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Extensions\/UIDevice.swift",
       "kind": "StringLiteral",
       "offset": 1373,
       "length": 16,
       "value": "\"iPad Pro 9.7\"\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Extensions\/UIDevice.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Extensions\/UIDevice.swift",
       "kind": "StringLiteral",
       "offset": 1416,
       "length": 17,
       "value": "\"iPad Pro 10.5\"\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Extensions\/UIDevice.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Extensions\/UIDevice.swift",
       "kind": "StringLiteral",
       "offset": 1460,
       "length": 15,
       "value": "\"iPad Pro 11\"\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Extensions\/UIDevice.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Extensions\/UIDevice.swift",
       "kind": "StringLiteral",
       "offset": 1502,
       "length": 23,
       "value": "\"iPad Pro 11\" 2nd gen\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Extensions\/UIDevice.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Extensions\/UIDevice.swift",
       "kind": "StringLiteral",
       "offset": 1552,
       "length": 23,
       "value": "\"iPad Pro 11\" 3rd gen\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Extensions\/UIDevice.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Extensions\/UIDevice.swift",
       "kind": "StringLiteral",
       "offset": 1602,
       "length": 17,
       "value": "\"iPad Pro 12.9\"\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Extensions\/UIDevice.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Extensions\/UIDevice.swift",
       "kind": "StringLiteral",
       "offset": 1646,
       "length": 19,
       "value": "\"iPad Pro 2 12.9\"\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Extensions\/UIDevice.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Extensions\/UIDevice.swift",
       "kind": "StringLiteral",
       "offset": 1692,
       "length": 19,
       "value": "\"iPad Pro 3 12.9\"\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Extensions\/UIDevice.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Extensions\/UIDevice.swift",
       "kind": "StringLiteral",
       "offset": 1738,
       "length": 19,
       "value": "\"iPad Pro 4 12.9\"\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Extensions\/UIDevice.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Extensions\/UIDevice.swift",
       "kind": "StringLiteral",
       "offset": 1784,
       "length": 19,
       "value": "\"iPad Pro 5 12.9\"\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Extensions\/UIDevice.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Extensions\/UIDevice.swift",
       "kind": "StringLiteral",
       "offset": 1844,
       "length": 10,
       "value": "\"iPhone 4\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Extensions\/UIDevice.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Extensions\/UIDevice.swift",
       "kind": "StringLiteral",
       "offset": 1881,
       "length": 11,
       "value": "\"iPhone 4S\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Extensions\/UIDevice.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Extensions\/UIDevice.swift",
       "kind": "StringLiteral",
       "offset": 1919,
       "length": 10,
       "value": "\"iPhone 5\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Extensions\/UIDevice.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Extensions\/UIDevice.swift",
       "kind": "StringLiteral",
       "offset": 1956,
       "length": 11,
       "value": "\"iPhone 5S\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Extensions\/UIDevice.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Extensions\/UIDevice.swift",
       "kind": "StringLiteral",
       "offset": 1994,
       "length": 11,
       "value": "\"iPhone 5C\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Extensions\/UIDevice.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Extensions\/UIDevice.swift",
       "kind": "StringLiteral",
       "offset": 2032,
       "length": 10,
       "value": "\"iPhone 6\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Extensions\/UIDevice.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Extensions\/UIDevice.swift",
       "kind": "StringLiteral",
       "offset": 2069,
       "length": 15,
       "value": "\"iPhone 6 Plus\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Extensions\/UIDevice.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Extensions\/UIDevice.swift",
       "kind": "StringLiteral",
       "offset": 2111,
       "length": 11,
       "value": "\"iPhone 6S\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Extensions\/UIDevice.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Extensions\/UIDevice.swift",
       "kind": "StringLiteral",
       "offset": 2149,
       "length": 16,
       "value": "\"iPhone 6S Plus\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Extensions\/UIDevice.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Extensions\/UIDevice.swift",
       "kind": "StringLiteral",
       "offset": 2192,
       "length": 11,
       "value": "\"iPhone SE\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Extensions\/UIDevice.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Extensions\/UIDevice.swift",
       "kind": "StringLiteral",
       "offset": 2230,
       "length": 10,
       "value": "\"iPhone 7\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Extensions\/UIDevice.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Extensions\/UIDevice.swift",
       "kind": "StringLiteral",
       "offset": 2267,
       "length": 15,
       "value": "\"iPhone 7 Plus\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Extensions\/UIDevice.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Extensions\/UIDevice.swift",
       "kind": "StringLiteral",
       "offset": 2309,
       "length": 10,
       "value": "\"iPhone 8\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Extensions\/UIDevice.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Extensions\/UIDevice.swift",
       "kind": "StringLiteral",
       "offset": 2346,
       "length": 15,
       "value": "\"iPhone 8 Plus\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Extensions\/UIDevice.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Extensions\/UIDevice.swift",
       "kind": "StringLiteral",
       "offset": 2388,
       "length": 10,
       "value": "\"iPhone X\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Extensions\/UIDevice.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Extensions\/UIDevice.swift",
       "kind": "StringLiteral",
       "offset": 2425,
       "length": 11,
       "value": "\"iPhone XS\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Extensions\/UIDevice.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Extensions\/UIDevice.swift",
       "kind": "StringLiteral",
       "offset": 2463,
       "length": 15,
       "value": "\"iPhone XS Max\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Extensions\/UIDevice.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Extensions\/UIDevice.swift",
       "kind": "StringLiteral",
       "offset": 2505,
       "length": 11,
       "value": "\"iPhone XR\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Extensions\/UIDevice.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Extensions\/UIDevice.swift",
       "kind": "StringLiteral",
       "offset": 2543,
       "length": 11,
       "value": "\"iPhone 11\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Extensions\/UIDevice.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Extensions\/UIDevice.swift",
       "kind": "StringLiteral",
       "offset": 2581,
       "length": 15,
       "value": "\"iPhone 11 Pro\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Extensions\/UIDevice.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Extensions\/UIDevice.swift",
       "kind": "StringLiteral",
       "offset": 2623,
       "length": 19,
       "value": "\"iPhone 11 Pro Max\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Extensions\/UIDevice.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Extensions\/UIDevice.swift",
       "kind": "StringLiteral",
       "offset": 2669,
       "length": 19,
       "value": "\"iPhone SE 2nd gen\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Extensions\/UIDevice.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Extensions\/UIDevice.swift",
       "kind": "StringLiteral",
       "offset": 2715,
       "length": 16,
       "value": "\"iPhone 12 Mini\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Extensions\/UIDevice.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Extensions\/UIDevice.swift",
       "kind": "StringLiteral",
       "offset": 2758,
       "length": 11,
       "value": "\"iPhone 12\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Extensions\/UIDevice.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Extensions\/UIDevice.swift",
       "kind": "StringLiteral",
       "offset": 2796,
       "length": 15,
       "value": "\"iPhone 12 Pro\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Extensions\/UIDevice.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Extensions\/UIDevice.swift",
       "kind": "StringLiteral",
       "offset": 2838,
       "length": 19,
       "value": "\"iPhone 12 Pro Max\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Extensions\/UIDevice.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Extensions\/UIDevice.swift",
       "kind": "StringLiteral",
       "offset": 2884,
       "length": 16,
       "value": "\"iPhone 13 Mini\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Extensions\/UIDevice.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Extensions\/UIDevice.swift",
       "kind": "StringLiteral",
       "offset": 2927,
       "length": 11,
       "value": "\"iPhone 13\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Extensions\/UIDevice.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Extensions\/UIDevice.swift",
       "kind": "StringLiteral",
       "offset": 2965,
       "length": 15,
       "value": "\"iPhone 13 Pro\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Extensions\/UIDevice.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Extensions\/UIDevice.swift",
       "kind": "StringLiteral",
       "offset": 3007,
       "length": 19,
       "value": "\"iPhone 13 Pro Max\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Extensions\/UIDevice.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Extensions\/UIDevice.swift",
       "kind": "StringLiteral",
       "offset": 3053,
       "length": 19,
       "value": "\"iPhone SE 3nd gen\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Extensions\/UIDevice.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Extensions\/UIDevice.swift",
       "kind": "StringLiteral",
       "offset": 3099,
       "length": 11,
       "value": "\"iPhone 14\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Extensions\/UIDevice.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Extensions\/UIDevice.swift",
       "kind": "StringLiteral",
       "offset": 3137,
       "length": 16,
       "value": "\"iPhone 14 Plus\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Extensions\/UIDevice.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Extensions\/UIDevice.swift",
       "kind": "StringLiteral",
       "offset": 3180,
       "length": 15,
       "value": "\"iPhone 14 Pro\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Extensions\/UIDevice.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Extensions\/UIDevice.swift",
       "kind": "StringLiteral",
       "offset": 3222,
       "length": 19,
       "value": "\"iPhone 14 Pro Max\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Extensions\/UIDevice.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Extensions\/UIDevice.swift",
       "kind": "StringLiteral",
       "offset": 3289,
       "length": 18,
       "value": "\"Apple Watch 1gen\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Extensions\/UIDevice.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Extensions\/UIDevice.swift",
       "kind": "StringLiteral",
       "offset": 3335,
       "length": 22,
       "value": "\"Apple Watch Series 1\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Extensions\/UIDevice.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Extensions\/UIDevice.swift",
       "kind": "StringLiteral",
       "offset": 3385,
       "length": 22,
       "value": "\"Apple Watch Series 2\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Extensions\/UIDevice.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Extensions\/UIDevice.swift",
       "kind": "StringLiteral",
       "offset": 3435,
       "length": 22,
       "value": "\"Apple Watch Series 3\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Extensions\/UIDevice.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Extensions\/UIDevice.swift",
       "kind": "StringLiteral",
       "offset": 3485,
       "length": 22,
       "value": "\"Apple Watch Series 4\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Extensions\/UIDevice.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Extensions\/UIDevice.swift",
       "kind": "StringLiteral",
       "offset": 3535,
       "length": 22,
       "value": "\"Apple Watch Series 5\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Extensions\/UIDevice.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Extensions\/UIDevice.swift",
       "kind": "StringLiteral",
       "offset": 3585,
       "length": 29,
       "value": "\"Apple Watch Special Edition\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Extensions\/UIDevice.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Extensions\/UIDevice.swift",
       "kind": "StringLiteral",
       "offset": 3642,
       "length": 22,
       "value": "\"Apple Watch Series 6\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Extensions\/UIDevice.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Extensions\/UIDevice.swift",
       "kind": "StringLiteral",
       "offset": 3692,
       "length": 22,
       "value": "\"Apple Watch Series 7\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Extensions\/UIDevice.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Extensions\/UIDevice.swift",
       "kind": "StringLiteral",
       "offset": 3757,
       "length": 15,
       "value": "\"Apple TV 1gen\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Extensions\/UIDevice.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Extensions\/UIDevice.swift",
       "kind": "StringLiteral",
       "offset": 3799,
       "length": 15,
       "value": "\"Apple TV 2gen\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Extensions\/UIDevice.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Extensions\/UIDevice.swift",
       "kind": "StringLiteral",
       "offset": 3841,
       "length": 15,
       "value": "\"Apple TV 3gen\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Extensions\/UIDevice.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Extensions\/UIDevice.swift",
       "kind": "StringLiteral",
       "offset": 3883,
       "length": 15,
       "value": "\"Apple TV 4gen\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Extensions\/UIDevice.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Extensions\/UIDevice.swift",
       "kind": "StringLiteral",
       "offset": 3925,
       "length": 13,
       "value": "\"Apple TV 4K\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Extensions\/UIDevice.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Extensions\/UIDevice.swift",
       "kind": "StringLiteral",
       "offset": 3965,
       "length": 18,
       "value": "\"Apple TV 4K 2gen\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Extensions\/UIDevice.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Extensions\/UIDevice.swift",
       "kind": "StringLiteral",
       "offset": 4011,
       "length": 16,
       "value": "\"?unrecognized?\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PayWithCreditCard\/Views\/Cells\/InputTextTableViewCell.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PayWithCreditCard\/Views\/Cells\/InputTextTableViewCell.swift",
       "kind": "StringLiteral",
       "offset": 639,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PayWithCreditCard\/Views\/Cells\/InputTextTableViewCell.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PayWithCreditCard\/Views\/Cells\/InputTextTableViewCell.swift",
       "kind": "BooleanLiteral",
       "offset": 656,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/ThirdParty Sources\/CreditCardValidator\/CreditCardValidator.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/ThirdParty Sources\/CreditCardValidator\/CreditCardValidator.swift",
       "kind": "StringLiteral",
       "offset": 3282,
       "length": 6,
       "value": "\"Mada\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/ThirdParty Sources\/CreditCardValidator\/CreditCardValidator.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/ThirdParty Sources\/CreditCardValidator\/CreditCardValidator.swift",
       "kind": "StringLiteral",
       "offset": 3305,
       "length": 656,
       "value": "\"^(588845|440647|440795|446404|457865|968208|457997|474491|636120|417633|468540|468541|468542|468543|968201|446393|409201|458456|484783|968205|462220|455708|410621|588848|455036|968203|486094|486095|486096|504300|440533|489318|489319|445564|968211|410685|406996|432328|428671|428672|428673|968206|446672|543357|434107|407197|407395|412565|431361|604906|521076|588850|968202|529415|535825|543085|524130|554180|549760|968209|524514|529741|537767|535989|536023|513213|520058|558563|585265|588983|588982|589005|508160|531095|530906|532013|605141|968204|422817|422818|422819|428331|483010|483011|483012|589206|968207|419593|439954|530060|531196|420132)\\d{0,}$\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/ThirdParty Sources\/CreditCardValidator\/CreditCardValidator.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/ThirdParty Sources\/CreditCardValidator\/CreditCardValidator.swift",
       "kind": "Dictionary",
       "offset": 4627,
       "length": 79,
       "value": "[(\"name\", \"Amex\"), (\"regex\", \"^3[47][0-9]{5,}$\")]"
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/ThirdParty Sources\/CreditCardValidator\/CreditCardValidator.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/ThirdParty Sources\/CreditCardValidator\/CreditCardValidator.swift",
       "kind": "Dictionary",
       "offset": 4708,
       "length": 73,
       "value": "[(\"name\", \"Visa\"), (\"regex\", \"^4\\d{0,}$\")]"
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/ThirdParty Sources\/CreditCardValidator\/CreditCardValidator.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/ThirdParty Sources\/CreditCardValidator\/CreditCardValidator.swift",
       "kind": "Dictionary",
       "offset": 4783,
       "length": 86,
       "value": "[(\"name\", \"MasterCard\"), (\"regex\", \"^5[1-5]\\d{0,14}$\")]"
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/ThirdParty Sources\/CreditCardValidator\/CreditCardValidator.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/ThirdParty Sources\/CreditCardValidator\/CreditCardValidator.swift",
       "kind": "StringLiteral",
       "offset": 4873,
       "length": 6,
       "value": "\"name\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/ThirdParty Sources\/CreditCardValidator\/CreditCardValidator.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/ThirdParty Sources\/CreditCardValidator\/CreditCardValidator.swift",
       "kind": "StringLiteral",
       "offset": 4905,
       "length": 7,
       "value": "\"regex\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/ThirdParty Sources\/CreditCardValidator\/CreditCardValidator.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/ThirdParty Sources\/CreditCardValidator\/CreditCardValidator.swift",
       "kind": "Dictionary",
       "offset": 4936,
       "length": 113,
       "value": "[(\"name\", \"Maestro\"), (\"regex\", \"^(?:5[0678]\\d\\d|6304|6390|67\\d\\d)\\d{8,15}$\")]"
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/ThirdParty Sources\/CreditCardValidator\/CreditCardValidator.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/ThirdParty Sources\/CreditCardValidator\/CreditCardValidator.swift",
       "kind": "Dictionary",
       "offset": 5051,
       "length": 102,
       "value": "[(\"name\", \"Diners Club\"), (\"regex\", \"^3(?:0[0-5]|[68][0-9])[0-9]{4,}$\")]"
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/ThirdParty Sources\/CreditCardValidator\/CreditCardValidator.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/ThirdParty Sources\/CreditCardValidator\/CreditCardValidator.swift",
       "kind": "Dictionary",
       "offset": 5155,
       "length": 97,
       "value": "[(\"name\", \"JCB\"), (\"regex\", \"^(?:2131|1800|35[0-9]{3})[0-9]{3,}$\")]"
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/ThirdParty Sources\/CreditCardValidator\/CreditCardValidator.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/ThirdParty Sources\/CreditCardValidator\/CreditCardValidator.swift",
       "kind": "Dictionary",
       "offset": 5254,
       "length": 96,
       "value": "[(\"name\", \"Discover\"), (\"regex\", \"^6(?:011|5[0-9]{2})[0-9]{3,}$\")]"
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/ThirdParty Sources\/CreditCardValidator\/CreditCardValidator.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/ThirdParty Sources\/CreditCardValidator\/CreditCardValidator.swift",
       "kind": "Dictionary",
       "offset": 5352,
       "length": 86,
       "value": "[(\"name\", \"UnionPay\"), (\"regex\", \"^62[0-5]\\d{13,16}$\")]"
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/ThirdParty Sources\/CreditCardValidator\/CreditCardValidator.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/ThirdParty Sources\/CreditCardValidator\/CreditCardValidator.swift",
       "kind": "Dictionary",
       "offset": 5440,
       "length": 77,
       "value": "[(\"name\", \"Mir\"), (\"regex\", \"^22[0-9]{1,14}$\")]"
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/Common\/LoadingViewController.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/Common\/LoadingViewController.swift",
       "kind": "FloatLiteral",
       "offset": 927,
       "length": 3,
       "value": "0.8"
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PayWithCreditCard\/PayModels+Query.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PayWithCreditCard\/PayModels+Query.swift",
       "kind": "StringLiteral",
       "offset": 416,
       "length": 12,
       "value": "\"profile_id\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PayWithCreditCard\/PayModels+Query.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PayWithCreditCard\/PayModels+Query.swift",
       "kind": "StringLiteral",
       "offset": 469,
       "length": 10,
       "value": "\"tran_ref\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PayWithCreditCard\/PayModels+Query.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PayWithCreditCard\/PayModels+Query.swift",
       "kind": "StringLiteral",
       "offset": 416,
       "length": 12,
       "value": "\"profile_id\""
     },
     {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsSDK\/PayTabs\/PayWithCreditCard\/PayModels+Query.swift",
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PayWithCreditCard\/PayModels+Query.swift",
       "kind": "StringLiteral",
       "offset": 469,
       "length": 10,
