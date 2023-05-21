@@ -34786,6 +34786,13 @@
       "value": "0"
     },
     {
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PayWithCreditCard\/PayInteractor.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1945,
+      "length": 5,
+      "value": "false"
+    },
+    {
       "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/CreditCardScanner\/Views\/CreditCardScannerViewController.swift",
       "kind": "IntegerLiteral",
       "offset": 252,
