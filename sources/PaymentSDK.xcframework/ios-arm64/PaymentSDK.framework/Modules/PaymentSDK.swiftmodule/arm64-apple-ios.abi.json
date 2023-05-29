@@ -32674,6 +32674,23 @@
       },
       {
         "kind": "Import",
+        "name": "CommonCrypto",
+        "printedName": "CommonCrypto",
+        "declKind": "Import",
+        "moduleName": "PaymentSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PaymentSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "PassKit",
         "printedName": "PassKit",
         "declKind": "Import",
@@ -33773,154 +33790,154 @@
     {
       "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/NetworkLayer\/PaymentSDKRequest.swift",
       "kind": "StringLiteral",
-      "offset": 259,
+      "offset": 299,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/NetworkLayer\/PaymentSDKRequest.swift",
       "kind": "StringLiteral",
-      "offset": 459,
+      "offset": 499,
       "length": 36,
       "value": "\"https:\/\/secure-global.paytabs.com\/\""
     },
     {
       "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/NetworkLayer\/PaymentSDKRequest.swift",
       "kind": "StringLiteral",
-      "offset": 516,
+      "offset": 556,
       "length": 34,
       "value": "\"https:\/\/secure-demo.paytabs.com\/\""
     },
     {
       "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/NetworkLayer\/PaymentSDKRequest.swift",
       "kind": "StringLiteral",
-      "offset": 570,
+      "offset": 610,
       "length": 29,
       "value": "\"https:\/\/secure.paytabs.com\/\""
     },
     {
       "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/NetworkLayer\/PaymentSDKRequest.swift",
       "kind": "StringLiteral",
-      "offset": 621,
+      "offset": 661,
       "length": 35,
       "value": "\"https:\/\/secure-egypt.paytabs.com\/\""
     },
     {
       "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/NetworkLayer\/PaymentSDKRequest.swift",
       "kind": "StringLiteral",
-      "offset": 678,
+      "offset": 718,
       "length": 28,
       "value": "\"https:\/\/secure.paytabs.sa\/\""
     },
     {
       "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/NetworkLayer\/PaymentSDKRequest.swift",
       "kind": "StringLiteral",
-      "offset": 727,
+      "offset": 767,
       "length": 34,
       "value": "\"https:\/\/secure-oman.paytabs.com\/\""
     },
     {
       "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/NetworkLayer\/PaymentSDKRequest.swift",
       "kind": "StringLiteral",
-      "offset": 784,
+      "offset": 824,
       "length": 36,
       "value": "\"https:\/\/secure-jordan.paytabs.com\/\""
     },
     {
       "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/NetworkLayer\/PaymentSDKRequest.swift",
       "kind": "StringLiteral",
-      "offset": 841,
+      "offset": 881,
       "length": 34,
       "value": "\"https:\/\/secure-iraq.paytabs.com\/\""
     },
     {
       "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/NetworkLayer\/PaymentSDKRequest.swift",
       "kind": "StringLiteral",
-      "offset": 259,
+      "offset": 299,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/NetworkLayer\/PaymentSDKRequest.swift",
       "kind": "StringLiteral",
-      "offset": 459,
+      "offset": 499,
       "length": 36,
       "value": "\"https:\/\/secure-global.paytabs.com\/\""
     },
     {
       "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/NetworkLayer\/PaymentSDKRequest.swift",
       "kind": "StringLiteral",
-      "offset": 516,
+      "offset": 556,
       "length": 34,
       "value": "\"https:\/\/secure-demo.paytabs.com\/\""
     },
     {
       "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/NetworkLayer\/PaymentSDKRequest.swift",
       "kind": "StringLiteral",
-      "offset": 570,
+      "offset": 610,
       "length": 29,
       "value": "\"https:\/\/secure.paytabs.com\/\""
     },
     {
       "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/NetworkLayer\/PaymentSDKRequest.swift",
       "kind": "StringLiteral",
-      "offset": 621,
+      "offset": 661,
       "length": 35,
       "value": "\"https:\/\/secure-egypt.paytabs.com\/\""
     },
     {
       "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/NetworkLayer\/PaymentSDKRequest.swift",
       "kind": "StringLiteral",
-      "offset": 678,
+      "offset": 718,
       "length": 28,
       "value": "\"https:\/\/secure.paytabs.sa\/\""
     },
     {
       "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/NetworkLayer\/PaymentSDKRequest.swift",
       "kind": "StringLiteral",
-      "offset": 727,
+      "offset": 767,
       "length": 34,
       "value": "\"https:\/\/secure-oman.paytabs.com\/\""
     },
     {
       "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/NetworkLayer\/PaymentSDKRequest.swift",
       "kind": "StringLiteral",
-      "offset": 784,
+      "offset": 824,
       "length": 36,
       "value": "\"https:\/\/secure-jordan.paytabs.com\/\""
     },
     {
       "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/NetworkLayer\/PaymentSDKRequest.swift",
       "kind": "StringLiteral",
-      "offset": 841,
+      "offset": 881,
       "length": 34,
       "value": "\"https:\/\/secure-iraq.paytabs.com\/\""
     },
     {
       "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/NetworkLayer\/PaymentSDKRequest.swift",
       "kind": "StringLiteral",
-      "offset": 1695,
+      "offset": 1735,
       "length": 17,
       "value": "\"payment\/request\""
     },
     {
       "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/NetworkLayer\/PaymentSDKRequest.swift",
       "kind": "StringLiteral",
-      "offset": 1734,
+      "offset": 1774,
       "length": 15,
       "value": "\"payment\/query\""
     },
     {
       "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/NetworkLayer\/PaymentSDKRequest.swift",
       "kind": "StringLiteral",
-      "offset": 1695,
+      "offset": 1735,
       "length": 17,
       "value": "\"payment\/request\""
     },
     {
       "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/NetworkLayer\/PaymentSDKRequest.swift",
       "kind": "StringLiteral",
-      "offset": 1734,
+      "offset": 1774,
       "length": 15,
       "value": "\"payment\/query\""
     },
@@ -36870,6 +36887,20 @@
       "offset": 927,
       "length": 3,
       "value": "0.8"
+    },
+    {
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/NetworkLayer\/URLSessionPinningDelegate.swift",
+      "kind": "Array",
+      "offset": 416,
+      "length": 166,
+      "value": "[0x30, 0x82, 0x01, 0x22, 0x30, 0x0d, 0x06, 0x09, 0x2a, 0x86, 0x48, 0x86, 0xf7, 0x0d, 0x01, 0x01, 0x01, 0x05, 0x00, 0x03, 0x82, 0x01, 0x0f, 0x00]"
+    },
+    {
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/NetworkLayer\/URLSessionPinningDelegate.swift",
+      "kind": "StringLiteral",
+      "offset": 197,
+      "length": 25,
+      "value": "\"PaymentSDK.URLSessionPinningDelegate\""
     },
     {
       "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PayWithCreditCard\/PayModels+Query.swift",
