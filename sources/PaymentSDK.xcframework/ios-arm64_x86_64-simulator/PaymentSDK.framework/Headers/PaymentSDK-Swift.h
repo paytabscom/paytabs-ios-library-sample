@@ -330,6 +330,7 @@ SWIFT_CLASS("_TtC10PaymentSDK27CountryPickerViewController")
 
 
 
+
 SWIFT_CLASS("_TtC10PaymentSDK20PaymentInfoViewModel")
 @interface PaymentInfoViewModel : NSObject
 @property (nonatomic, copy) NSString * _Nullable cardType;
@@ -805,6 +806,7 @@ SWIFT_CLASS("_TtC10PaymentSDK27CountryPickerViewController")
 - (NSArray<NSString *> * _Nullable)sectionIndexTitlesForTableView:(UITableView * _Nonnull)tableView SWIFT_WARN_UNUSED_RESULT;
 - (NSInteger)tableView:(UITableView * _Nonnull)tableView sectionForSectionIndexTitle:(NSString * _Nonnull)title atIndex:(NSInteger)index SWIFT_WARN_UNUSED_RESULT;
 @end
+
 
 
 

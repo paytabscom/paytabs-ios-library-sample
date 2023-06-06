@@ -330,6 +330,7 @@ SWIFT_CLASS("_TtC10PaymentSDK27CountryPickerViewController")
 
 
 
+
 SWIFT_CLASS("_TtC10PaymentSDK20PaymentInfoViewModel")
 @interface PaymentInfoViewModel : NSObject
 @property (nonatomic, copy) NSString * _Nullable cardType;

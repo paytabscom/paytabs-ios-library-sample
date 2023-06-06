@@ -4655,6 +4655,93 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "enableZeroContacts",
+            "printedName": "enableZeroContacts",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10PaymentSDK0A16SDKConfigurationC18enableZeroContactsSbvp",
+            "mangledName": "$s10PaymentSDK0A16SDKConfigurationC18enableZeroContactsSbvp",
+            "moduleName": "PaymentSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10PaymentSDK0A16SDKConfigurationC18enableZeroContactsSbvg",
+                "mangledName": "$s10PaymentSDK0A16SDKConfigurationC18enableZeroContactsSbvg",
+                "moduleName": "PaymentSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10PaymentSDK0A16SDKConfigurationC18enableZeroContactsSbvs",
+                "mangledName": "$s10PaymentSDK0A16SDKConfigurationC18enableZeroContactsSbvs",
+                "moduleName": "PaymentSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10PaymentSDK0A16SDKConfigurationC18enableZeroContactsSbvM",
+                "mangledName": "$s10PaymentSDK0A16SDKConfigurationC18enableZeroContactsSbvM",
+                "moduleName": "PaymentSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init()",
@@ -4735,7 +4822,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(profileID:serverKey:clientKey:cartID:currency:amount:cartDescription:languageCode:merchantCountryCode:tokeniseType:tokenFormat:token:transactionreference:serverIP:merchantIdentifier:paymentNetworks:forceShippingInfo:showBillingInfo:showShippingInfo:screenTitle:merchantName:hideCardScanner:billingDetails:shippingDetails:theme:linkBillingNameWithCard:showSaveCardsUI:requestCVV:savedCardInfo:isDigitalProduct:)",
+            "printedName": "init(profileID:serverKey:clientKey:cartID:currency:amount:cartDescription:languageCode:merchantCountryCode:tokeniseType:tokenFormat:token:transactionreference:serverIP:merchantIdentifier:paymentNetworks:forceShippingInfo:showBillingInfo:showShippingInfo:screenTitle:merchantName:hideCardScanner:billingDetails:shippingDetails:theme:linkBillingNameWithCard:showSaveCardsUI:requestCVV:savedCardInfo:isDigitalProduct:enableZeroContacts:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -5039,11 +5126,18 @@
                 "printedName": "Swift.Bool",
                 "hasDefaultArg": true,
                 "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:10PaymentSDK0A16SDKConfigurationC9profileID9serverKey06clientG004cartE08currency6amount0I11Description12languageCode015merchantCountryN012tokeniseType11tokenFormat0S020transactionreference0F2IP0O10Identifier15paymentNetworks17forceShippingInfo15showBillingInfo16showShippingInfo11screenTitle0O4Name15hideCardScanner14billingDetails15shippingDetails5theme23linkBillingNameWithCard15showSaveCardsUI10requestCVV13savedCardInfo16isDigitalProductACSS_S4SSdS2SSgSSAA08TokeniseR0OAA05TokenT0OA6_A6_A6_A6_SaySo16PKPaymentNetworkaGSgS3bA6_A6_SbAA0A17SDKBillingDetailsCAA0A18SDKShippingDetailsCSgAA0A8SDKThemeCSgS3bAA0A16SDKSavedCardInfoCSgSbtcfc",
-            "mangledName": "$s10PaymentSDK0A16SDKConfigurationC9profileID9serverKey06clientG004cartE08currency6amount0I11Description12languageCode015merchantCountryN012tokeniseType11tokenFormat0S020transactionreference0F2IP0O10Identifier15paymentNetworks17forceShippingInfo15showBillingInfo16showShippingInfo11screenTitle0O4Name15hideCardScanner14billingDetails15shippingDetails5theme23linkBillingNameWithCard15showSaveCardsUI10requestCVV13savedCardInfo16isDigitalProductACSS_S4SSdS2SSgSSAA08TokeniseR0OAA05TokenT0OA6_A6_A6_A6_SaySo16PKPaymentNetworkaGSgS3bA6_A6_SbAA0A17SDKBillingDetailsCAA0A18SDKShippingDetailsCSgAA0A8SDKThemeCSgS3bAA0A16SDKSavedCardInfoCSgSbtcfc",
+            "usr": "s:10PaymentSDK0A16SDKConfigurationC9profileID9serverKey06clientG004cartE08currency6amount0I11Description12languageCode015merchantCountryN012tokeniseType11tokenFormat0S020transactionreference0F2IP0O10Identifier15paymentNetworks17forceShippingInfo15showBillingInfo16showShippingInfo11screenTitle0O4Name15hideCardScanner14billingDetails15shippingDetails5theme23linkBillingNameWithCard15showSaveCardsUI10requestCVV13savedCardInfo16isDigitalProduct18enableZeroContactsACSS_S4SSdS2SSgSSAA08TokeniseR0OAA05TokenT0OA7_A7_A7_A7_SaySo16PKPaymentNetworkaGSgS3bA7_A7_SbAA0A17SDKBillingDetailsCAA0A18SDKShippingDetailsCSgAA0A8SDKThemeCSgS3bAA0A16SDKSavedCardInfoCSgS2btcfc",
+            "mangledName": "$s10PaymentSDK0A16SDKConfigurationC9profileID9serverKey06clientG004cartE08currency6amount0I11Description12languageCode015merchantCountryN012tokeniseType11tokenFormat0S020transactionreference0F2IP0O10Identifier15paymentNetworks17forceShippingInfo15showBillingInfo16showShippingInfo11screenTitle0O4Name15hideCardScanner14billingDetails15shippingDetails5theme23linkBillingNameWithCard15showSaveCardsUI10requestCVV13savedCardInfo16isDigitalProduct18enableZeroContactsACSS_S4SSdS2SSgSSAA08TokeniseR0OAA05TokenT0OA7_A7_A7_A7_SaySo16PKPaymentNetworkaGSgS3bA7_A7_SbAA0A17SDKBillingDetailsCAA0A18SDKShippingDetailsCSgAA0A8SDKThemeCSgS3bAA0A16SDKSavedCardInfoCSgS2btcfc",
             "moduleName": "PaymentSDK",
             "declAttributes": [
               "AccessControl"
@@ -5053,7 +5147,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(profileID:serverKey:clientKey:cartID:currency:amount:merchantName:cartDescription:languageCode:tokeniseType:tokenFormat:token:transactionreference:merchantCountryCode:serverIP:merchantIdentifier:paymentNetworks:simplifyApplePayValidation:forceShippingInfo:billingDetails:shippingDetails:linkBillingNameWithCard:showSaveCardsUI:requestCVV:savedCardInfo:isDigitalProduct:)",
+            "printedName": "init(profileID:serverKey:clientKey:cartID:currency:amount:merchantName:cartDescription:languageCode:tokeniseType:tokenFormat:token:transactionreference:merchantCountryCode:serverIP:merchantIdentifier:paymentNetworks:simplifyApplePayValidation:forceShippingInfo:billingDetails:shippingDetails:linkBillingNameWithCard:showSaveCardsUI:requestCVV:savedCardInfo:isDigitalProduct:enableZeroContacts:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -5303,11 +5397,18 @@
                 "printedName": "Swift.Bool",
                 "hasDefaultArg": true,
                 "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:10PaymentSDK0A16SDKConfigurationC9profileID9serverKey06clientG004cartE08currency6amount12merchantName0I11Description12languageCode12tokeniseType11tokenFormat0S020transactionreference0l7CountryP00F2IP0L10Identifier15paymentNetworks26simplifyApplePayValidation17forceShippingInfo14billingDetails15shippingDetails011linkBillingM8WithCard15showSaveCardsUI10requestCVV13savedCardInfo16isDigitalProductACSS_S4SSdS3SSgAA08TokeniseR0OAA05TokenT0OA2_A2_SSA2_SSSaySo16PKPaymentNetworkaGSgS2bAA0A17SDKBillingDetailsCSgAA0A18SDKShippingDetailsCSgS3bAA0A16SDKSavedCardInfoCSgSbtcfc",
-            "mangledName": "$s10PaymentSDK0A16SDKConfigurationC9profileID9serverKey06clientG004cartE08currency6amount12merchantName0I11Description12languageCode12tokeniseType11tokenFormat0S020transactionreference0l7CountryP00F2IP0L10Identifier15paymentNetworks26simplifyApplePayValidation17forceShippingInfo14billingDetails15shippingDetails011linkBillingM8WithCard15showSaveCardsUI10requestCVV13savedCardInfo16isDigitalProductACSS_S4SSdS3SSgAA08TokeniseR0OAA05TokenT0OA2_A2_SSA2_SSSaySo16PKPaymentNetworkaGSgS2bAA0A17SDKBillingDetailsCSgAA0A18SDKShippingDetailsCSgS3bAA0A16SDKSavedCardInfoCSgSbtcfc",
+            "usr": "s:10PaymentSDK0A16SDKConfigurationC9profileID9serverKey06clientG004cartE08currency6amount12merchantName0I11Description12languageCode12tokeniseType11tokenFormat0S020transactionreference0l7CountryP00F2IP0L10Identifier15paymentNetworks26simplifyApplePayValidation17forceShippingInfo14billingDetails15shippingDetails011linkBillingM8WithCard15showSaveCardsUI10requestCVV13savedCardInfo16isDigitalProduct18enableZeroContactsACSS_S4SSdS3SSgAA08TokeniseR0OAA05TokenT0OA3_A3_SSA3_SSSaySo16PKPaymentNetworkaGSgS2bAA0A17SDKBillingDetailsCSgAA0A18SDKShippingDetailsCSgS3bAA0A16SDKSavedCardInfoCSgS2btcfc",
+            "mangledName": "$s10PaymentSDK0A16SDKConfigurationC9profileID9serverKey06clientG004cartE08currency6amount12merchantName0I11Description12languageCode12tokeniseType11tokenFormat0S020transactionreference0l7CountryP00F2IP0L10Identifier15paymentNetworks26simplifyApplePayValidation17forceShippingInfo14billingDetails15shippingDetails011linkBillingM8WithCard15showSaveCardsUI10requestCVV13savedCardInfo16isDigitalProduct18enableZeroContactsACSS_S4SSdS3SSgAA08TokeniseR0OAA05TokenT0OA3_A3_SSA3_SSSaySo16PKPaymentNetworkaGSgS2bAA0A17SDKBillingDetailsCSgAA0A18SDKShippingDetailsCSgS3bAA0A16SDKSavedCardInfoCSgS2btcfc",
             "moduleName": "PaymentSDK",
             "declAttributes": [
               "AccessControl"
@@ -33300,98 +33401,119 @@
     {
       "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PublicLayer\/PaymentSDKConfiguration.swift",
       "kind": "BooleanLiteral",
-      "offset": 6261,
+      "offset": 4249,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PublicLayer\/PaymentSDKConfiguration.swift",
       "kind": "BooleanLiteral",
-      "offset": 6308,
+      "offset": 6394,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PublicLayer\/PaymentSDKConfiguration.swift",
       "kind": "BooleanLiteral",
-      "offset": 6356,
+      "offset": 6441,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PublicLayer\/PaymentSDKConfiguration.swift",
       "kind": "BooleanLiteral",
-      "offset": 6492,
+      "offset": 6489,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PublicLayer\/PaymentSDKConfiguration.swift",
       "kind": "BooleanLiteral",
-      "offset": 6739,
+      "offset": 6625,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PublicLayer\/PaymentSDKConfiguration.swift",
+      "kind": "BooleanLiteral",
+      "offset": 6872,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PublicLayer\/PaymentSDKConfiguration.swift",
       "kind": "BooleanLiteral",
-      "offset": 6785,
+      "offset": 6918,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PublicLayer\/PaymentSDKConfiguration.swift",
       "kind": "BooleanLiteral",
-      "offset": 6827,
+      "offset": 6960,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PublicLayer\/PaymentSDKConfiguration.swift",
       "kind": "BooleanLiteral",
-      "offset": 6938,
+      "offset": 7071,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PublicLayer\/PaymentSDKConfiguration.swift",
       "kind": "BooleanLiteral",
-      "offset": 9320,
+      "offset": 7121,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PublicLayer\/PaymentSDKConfiguration.swift",
       "kind": "BooleanLiteral",
-      "offset": 9369,
+      "offset": 9547,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PublicLayer\/PaymentSDKConfiguration.swift",
       "kind": "BooleanLiteral",
-      "offset": 9556,
+      "offset": 9596,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PublicLayer\/PaymentSDKConfiguration.swift",
+      "kind": "BooleanLiteral",
+      "offset": 9783,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PublicLayer\/PaymentSDKConfiguration.swift",
       "kind": "BooleanLiteral",
-      "offset": 9602,
+      "offset": 9829,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PublicLayer\/PaymentSDKConfiguration.swift",
       "kind": "BooleanLiteral",
-      "offset": 9644,
+      "offset": 9871,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PublicLayer\/PaymentSDKConfiguration.swift",
       "kind": "BooleanLiteral",
-      "offset": 9755,
+      "offset": 9982,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PublicLayer\/PaymentSDKConfiguration.swift",
+      "kind": "BooleanLiteral",
+      "offset": 10032,
       "length": 5,
       "value": "false"
     },
@@ -34987,7 +35109,7 @@
     {
       "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PayWithCreditCard\/PayInteractor.swift",
       "kind": "BooleanLiteral",
-      "offset": 1945,
+      "offset": 2215,
       "length": 5,
       "value": "false"
     },
@@ -35694,7 +35816,7 @@
     {
       "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PublicLayer\/PaymentManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 17868,
+      "offset": 17891,
       "length": 5,
       "value": "false"
     },

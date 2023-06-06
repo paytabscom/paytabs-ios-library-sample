@@ -358,6 +358,7 @@
 				CODE_SIGN_ENTITLEMENTS = "PayTabs Sample.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = E4D8R9ZYJ8;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -366,11 +367,13 @@
 				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "$(SRCROOT)/sample/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "sample app";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1;
 				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.paytabs.sample;
 				PRODUCT_NAME = "PayTabs Sample";
@@ -390,6 +393,7 @@
 				CODE_SIGN_ENTITLEMENTS = "PayTabs Sample.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = E4D8R9ZYJ8;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -398,11 +402,13 @@
 				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "$(SRCROOT)/sample/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "sample app";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1;
 				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.paytabs.sample;
 				PRODUCT_NAME = "PayTabs Sample";
