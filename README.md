@@ -115,6 +115,7 @@ let configuration = PaymentSDKConfiguration(profileID: profileID,
             .cartID("1234")
             .screenTitle("Pay with Card")
             .billingDetails(billingDetails)
+	    .isDigitalProduct(true)
 ```
 
 3. You are now ready to start payment and handle `PaymentManagerDelegate`
