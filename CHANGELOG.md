@@ -84,3 +84,6 @@
 
 ## 6.4.8 2023-06-06
 * Added trace to error object
+
+## 6.4.9 2023-06-07
+* Minor Fix
