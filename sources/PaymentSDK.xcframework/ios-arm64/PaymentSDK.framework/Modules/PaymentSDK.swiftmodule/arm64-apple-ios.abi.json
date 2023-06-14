@@ -4673,8 +4673,7 @@
             "declAttributes": [
               "HasInitialValue",
               "HasStorage",
-              "AccessControl",
-              "RawDocComment"
+              "AccessControl"
             ],
             "hasStorage": true,
             "accessors": [
@@ -33401,7 +33400,14 @@
     {
       "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PublicLayer\/PaymentSDKConfiguration.swift",
       "kind": "BooleanLiteral",
-      "offset": 4249,
+      "offset": 4202,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PublicLayer\/PaymentSDKConfiguration.swift",
+      "kind": "BooleanLiteral",
+      "offset": 6347,
       "length": 5,
       "value": "false"
     },
@@ -33415,105 +33421,98 @@
     {
       "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PublicLayer\/PaymentSDKConfiguration.swift",
       "kind": "BooleanLiteral",
-      "offset": 6441,
+      "offset": 6442,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PublicLayer\/PaymentSDKConfiguration.swift",
       "kind": "BooleanLiteral",
-      "offset": 6489,
+      "offset": 6578,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PublicLayer\/PaymentSDKConfiguration.swift",
       "kind": "BooleanLiteral",
-      "offset": 6625,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PublicLayer\/PaymentSDKConfiguration.swift",
-      "kind": "BooleanLiteral",
-      "offset": 6872,
+      "offset": 6825,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PublicLayer\/PaymentSDKConfiguration.swift",
       "kind": "BooleanLiteral",
-      "offset": 6918,
+      "offset": 6871,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PublicLayer\/PaymentSDKConfiguration.swift",
       "kind": "BooleanLiteral",
-      "offset": 6960,
+      "offset": 6913,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PublicLayer\/PaymentSDKConfiguration.swift",
       "kind": "BooleanLiteral",
-      "offset": 7071,
+      "offset": 7024,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PublicLayer\/PaymentSDKConfiguration.swift",
       "kind": "BooleanLiteral",
-      "offset": 7121,
+      "offset": 7074,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PublicLayer\/PaymentSDKConfiguration.swift",
       "kind": "BooleanLiteral",
-      "offset": 9547,
+      "offset": 9500,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PublicLayer\/PaymentSDKConfiguration.swift",
       "kind": "BooleanLiteral",
-      "offset": 9596,
+      "offset": 9549,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PublicLayer\/PaymentSDKConfiguration.swift",
       "kind": "BooleanLiteral",
-      "offset": 9783,
+      "offset": 9736,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PublicLayer\/PaymentSDKConfiguration.swift",
       "kind": "BooleanLiteral",
-      "offset": 9829,
+      "offset": 9782,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PublicLayer\/PaymentSDKConfiguration.swift",
       "kind": "BooleanLiteral",
-      "offset": 9871,
+      "offset": 9824,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PublicLayer\/PaymentSDKConfiguration.swift",
       "kind": "BooleanLiteral",
-      "offset": 9982,
+      "offset": 9935,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PublicLayer\/PaymentSDKConfiguration.swift",
       "kind": "BooleanLiteral",
-      "offset": 10032,
+      "offset": 9985,
       "length": 5,
       "value": "false"
     },
