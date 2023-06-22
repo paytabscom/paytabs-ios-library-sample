@@ -19462,6 +19462,43 @@
             "moduleName": "PaymentSDK"
           },
           {
+            "kind": "Var",
+            "name": "applePay",
+            "printedName": "applePay",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PaymentSDK.AlternativePaymentMethod.Type) -> PaymentSDK.AlternativePaymentMethod",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AlternativePaymentMethod",
+                    "printedName": "PaymentSDK.AlternativePaymentMethod",
+                    "usr": "s:10PaymentSDK011AlternativeA6MethodO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "PaymentSDK.AlternativePaymentMethod.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AlternativePaymentMethod",
+                        "printedName": "PaymentSDK.AlternativePaymentMethod",
+                        "usr": "s:10PaymentSDK011AlternativeA6MethodO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:10PaymentSDK011AlternativeA6MethodO8applePayyA2CmF",
+            "mangledName": "$s10PaymentSDK011AlternativeA6MethodO8applePayyA2CmF",
+            "moduleName": "PaymentSDK"
+          },
+          {
             "kind": "Function",
             "name": "getType",
             "printedName": "getType(type:)",
@@ -33911,6 +33948,13 @@
     {
       "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PublicLayer\/PaymentSDKConfiguration+Enums.swift",
       "kind": "StringLiteral",
+      "offset": 1696,
+      "length": 10,
+      "value": "\"applePay\""
+    },
+    {
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PublicLayer\/PaymentSDKConfiguration+Enums.swift",
+      "kind": "StringLiteral",
       "offset": 1454,
       "length": 10,
       "value": "\"unionpay\""
@@ -33949,6 +33993,13 @@
       "offset": 1668,
       "length": 7,
       "value": "\"urpay\""
+    },
+    {
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PublicLayer\/PaymentSDKConfiguration+Enums.swift",
+      "kind": "StringLiteral",
+      "offset": 1696,
+      "length": 10,
+      "value": "\"applePay\""
     },
     {
       "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/CreditCardScanner\/ImageAnalyzer.swift",
