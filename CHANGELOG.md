@@ -93,3 +93,6 @@
 
 ## 6.4.11 2023-06-22
 * Added ApplePay as an Alternative Payment Method
+
+## 6.4.12 2023-06-25
+* Minor Fix

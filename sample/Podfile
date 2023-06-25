@@ -1,5 +1,5 @@
 
 target 'PayTabs Sample' do
- pod 'PayTabsSDK', '~> 6.4.11'
+ pod 'PayTabsSDK', '~> 6.4.12'
 end
 
