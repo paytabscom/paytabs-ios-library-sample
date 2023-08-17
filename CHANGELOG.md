@@ -96,3 +96,6 @@
 
 ## 6.4.12 2023-06-25
 * Minor Fix
+
+## 6.4.13 2023-08-17
+* Added ability to delete all saved cards
