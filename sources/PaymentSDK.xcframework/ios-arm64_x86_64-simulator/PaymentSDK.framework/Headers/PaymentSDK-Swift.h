@@ -233,6 +233,7 @@ using UInt = size_t;
 @import CoreFoundation;
 @import Foundation;
 @import ObjectiveC;
+@import PassKit;
 @import UIKit;
 #endif
 
@@ -254,6 +255,7 @@ using UInt = size_t;
 #endif
 
 #if defined(__OBJC__)
+
 
 
 @class NSCoder;
@@ -324,6 +326,49 @@ SWIFT_CLASS("_TtC10PaymentSDK27CountryPickerViewController")
 - (NSString * _Nullable)tableView:(UITableView * _Nonnull)tableView titleForHeaderInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
 - (NSArray<NSString *> * _Nullable)sectionIndexTitlesForTableView:(UITableView * _Nonnull)tableView SWIFT_WARN_UNUSED_RESULT;
 - (NSInteger)tableView:(UITableView * _Nonnull)tableView sectionForSectionIndexTitle:(NSString * _Nonnull)title atIndex:(NSInteger)index SWIFT_WARN_UNUSED_RESULT;
+@end
+
+
+/// For internal SDK use only.
+SWIFT_CLASS_NAMED("DownloadManager")
+@interface STP_Internal_DownloadManager : NSObject <NSURLSessionDelegate>
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+
+
+
+
+
+
+
+@interface NSError (SWIFT_EXTENSION(PaymentSDK))
+/// Creates an NSError object from a given Stripe API json response.
+/// \param jsonDictionary The root dictionary from the JSON response.
+///
+///
+/// returns:
+/// An NSError object with the error information from the JSON response,
+/// or nil if there was no error information included in the JSON dictionary.
++ (NSError * _Nullable)stp_errorFromStripeResponse:(NSDictionary * _Nullable)jsonDictionary SWIFT_WARN_UNUSED_RESULT;
+@end
+
+
+@interface NSError (SWIFT_EXTENSION(PaymentSDK))
++ (NSError * _Nonnull)stp_genericConnectionError SWIFT_WARN_UNUSED_RESULT;
++ (NSError * _Nonnull)stp_genericFailedToParseResponseError SWIFT_WARN_UNUSED_RESULT;
++ (NSError * _Nonnull)stp_ephemeralKeyDecodingError SWIFT_WARN_UNUSED_RESULT;
++ (NSError * _Nonnull)stp_clientSecretError SWIFT_WARN_UNUSED_RESULT;
++ (NSString * _Nonnull)stp_cardErrorInvalidNumberUserMessage SWIFT_WARN_UNUSED_RESULT;
++ (NSString * _Nonnull)stp_cardInvalidCVCUserMessage SWIFT_WARN_UNUSED_RESULT;
++ (NSString * _Nonnull)stp_cardErrorInvalidExpMonthUserMessage SWIFT_WARN_UNUSED_RESULT;
++ (NSString * _Nonnull)stp_cardErrorInvalidExpYearUserMessage SWIFT_WARN_UNUSED_RESULT;
++ (NSString * _Nonnull)stp_cardErrorExpiredCardUserMessage SWIFT_WARN_UNUSED_RESULT;
++ (NSString * _Nonnull)stp_cardErrorDeclinedUserMessage SWIFT_WARN_UNUSED_RESULT;
++ (NSString * _Nonnull)stp_genericDeclineErrorUserMessage SWIFT_WARN_UNUSED_RESULT;
++ (NSString * _Nonnull)stp_cardErrorProcessingErrorUserMessage SWIFT_WARN_UNUSED_RESULT;
 @end
 
 
@@ -460,6 +505,343 @@ SWIFT_CLASS("_TtC10PaymentSDK28PaymentSDKTransactionDetails")
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
+
+@class STPAppInfo;
+
+/// A client for making connections to the Stripe API.
+SWIFT_CLASS("_TtC10PaymentSDK12STPAPIClient")
+@interface STPAPIClient : NSObject
+/// The current version of this library.
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull STPSDKVersion;)
++ (NSString * _Nonnull)STPSDKVersion SWIFT_WARN_UNUSED_RESULT;
+/// A shared singleton API client.
+/// By default, the SDK uses this instance to make API requests
+/// eg in STPPaymentHandler, STPPaymentContext, STPCustomerContext, etc.
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) STPAPIClient * _Nonnull sharedClient;)
++ (STPAPIClient * _Nonnull)sharedClient SWIFT_WARN_UNUSED_RESULT;
+/// The client’s publishable key.
+/// The default value is <code>StripeAPI.defaultPublishableKey</code>.
+@property (nonatomic, copy) NSString * _Nullable publishableKey;
+/// In order to perform API requests on behalf of a connected account, e.g. to
+/// create a Source or Payment Method on a connected account, set this property to the ID of the
+/// account for which this request is being made.
+/// seealso:
+/// https://stripe.com/docs/connect/authentication#authentication-via-the-stripe-account-header
+@property (nonatomic, copy) NSString * _Nullable stripeAccount;
+/// Libraries wrapping the Stripe SDK should set this, so that Stripe can contact you
+/// about future issues or critical updates.
+/// seealso:
+/// https://stripe.com/docs/building-plugins#setappinfo
+@property (nonatomic, strong) STPAppInfo * _Nullable appInfo;
+/// The API version used to communicate with Stripe.
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull apiVersion;)
++ (NSString * _Nonnull)apiVersion SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+/// Initializes an API client with the given publishable key.
+/// \param publishableKey The publishable key to use.
+///
+///
+/// returns:
+/// An instance of STPAPIClient.
+- (nonnull instancetype)initWithPublishableKey:(NSString * _Nonnull)publishableKey;
+@end
+
+
+
+
+
+SWIFT_CLASS("_TtC10PaymentSDK18STPAnalyticsClient")
+@interface STPAnalyticsClient : NSObject
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) STPAnalyticsClient * _Nonnull sharedClient;)
++ (STPAnalyticsClient * _Nonnull)sharedClient SWIFT_WARN_UNUSED_RESULT;
+@property (nonatomic, copy) NSSet<NSString *> * _Nonnull productUsage;
++ (NSString * _Nullable)tokenTypeFromParameters:(NSDictionary * _Nonnull)parameters SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+
+/// Libraries wrapping the Stripe SDK should use this object to provide information about the
+/// library, and set it in on <code>STPAPIClient</code>.
+/// This information is passed to Stripe so that we can contact you about future issues or
+/// critical updates.
+/// seealso:
+/// https://stripe.com/docs/building-plugins#setappinfo
+SWIFT_CLASS("_TtC10PaymentSDK10STPAppInfo")
+@interface STPAppInfo : NSObject
+/// Initializes an instance of <code>STPAppInfo</code>.
+/// \param name The name of your library (e.g. “MyAwesomeLibrary”).
+///
+/// \param partnerId Your Stripe Partner ID (e.g. “pp_partner_1234”). Required for Stripe Verified Partners, optional otherwise.
+///
+/// \param version The version of your library (e.g. “1.2.34”). Optional.
+///
+/// \param url The website for your library (e.g. “https://myawesomelibrary.info”). Optional.
+///
+- (nonnull instancetype)initWithName:(NSString * _Nonnull)name partnerId:(NSString * _Nullable)partnerId version:(NSString * _Nullable)version url:(NSString * _Nullable)url OBJC_DESIGNATED_INITIALIZER;
+/// The name of your library (e.g. “MyAwesomeLibrary”).
+@property (nonatomic, readonly, copy) NSString * _Nonnull name;
+/// Your Stripe Partner ID (e.g. “pp_partner_1234”).
+@property (nonatomic, readonly, copy) NSString * _Nullable partnerId;
+/// The version of your library (e.g. “1.2.34”).
+@property (nonatomic, readonly, copy) NSString * _Nullable version;
+/// The website for your library (e.g. “https://myawesomelibrary.info”).
+@property (nonatomic, readonly, copy) NSString * _Nullable url;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+/// Top-level class for Stripe error constants.
+SWIFT_CLASS("_TtC10PaymentSDK8STPError")
+@interface STPError : NSObject
+/// All Stripe iOS errors will be under this domain.
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull stripeDomain;)
++ (NSString * _Nonnull)stripeDomain SWIFT_WARN_UNUSED_RESULT;
+/// The error domain for errors in <code>STPPaymentHandler</code>.
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull STPPaymentHandlerErrorDomain;)
++ (NSString * _Nonnull)STPPaymentHandlerErrorDomain SWIFT_WARN_UNUSED_RESULT;
+/// A human-readable message providing more details about the error.
+/// For card errors, these messages can be shown to your users.
+/// seealso:
+/// https://stripe.com/docs/api/errors#errors-message
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull errorMessageKey;)
++ (NSString * _Nonnull)errorMessageKey SWIFT_WARN_UNUSED_RESULT;
+/// An SDK-supplied “hint” that is intended to help you, the developer, fix the error.
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull hintKey;)
++ (NSString * _Nonnull)hintKey SWIFT_WARN_UNUSED_RESULT;
+/// What went wrong with your STPCard (e.g., STPInvalidCVC).
+/// See below for full list).
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull cardErrorCodeKey;)
++ (NSString * _Nonnull)cardErrorCodeKey SWIFT_WARN_UNUSED_RESULT;
+/// Which parameter on the STPCard had an error (e.g., “cvc”).
+/// Useful for marking up the right UI element.
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull errorParameterKey;)
++ (NSString * _Nonnull)errorParameterKey SWIFT_WARN_UNUSED_RESULT;
+/// The error code returned by the Stripe API.
+/// seealso:
+/// https://stripe.com/docs/api#errors-code
+/// seealso:
+/// https://stripe.com/docs/error-codes
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull stripeErrorCodeKey;)
++ (NSString * _Nonnull)stripeErrorCodeKey SWIFT_WARN_UNUSED_RESULT;
+/// The error type returned by the Stripe API.
+/// seealso:
+/// https://stripe.com/docs/api#errors-type
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull stripeErrorTypeKey;)
++ (NSString * _Nonnull)stripeErrorTypeKey SWIFT_WARN_UNUSED_RESULT;
+/// If the value of <code>userInfo[stripeErrorCodeKey]</code> is <code>STPError.cardDeclined</code>,
+/// the value for this key contains the decline code.
+/// seealso:
+/// https://stripe.com/docs/declines/codes
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull stripeDeclineCodeKey;)
++ (NSString * _Nonnull)stripeDeclineCodeKey SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+@interface STPError (SWIFT_EXTENSION(PaymentSDK))
+/// The card number is not a valid credit card number.
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull invalidNumber;)
++ (NSString * _Nonnull)invalidNumber SWIFT_WARN_UNUSED_RESULT;
+/// The card has an invalid expiration month.
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull invalidExpMonth;)
++ (NSString * _Nonnull)invalidExpMonth SWIFT_WARN_UNUSED_RESULT;
+/// The card has an invalid expiration year.
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull invalidExpYear;)
++ (NSString * _Nonnull)invalidExpYear SWIFT_WARN_UNUSED_RESULT;
+/// The card has an invalid CVC.
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull invalidCVC;)
++ (NSString * _Nonnull)invalidCVC SWIFT_WARN_UNUSED_RESULT;
+/// The card number is incorrect.
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull incorrectNumber;)
++ (NSString * _Nonnull)incorrectNumber SWIFT_WARN_UNUSED_RESULT;
+/// The card is expired.
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull expiredCard;)
++ (NSString * _Nonnull)expiredCard SWIFT_WARN_UNUSED_RESULT;
+/// The card was declined.
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull cardDeclined;)
++ (NSString * _Nonnull)cardDeclined SWIFT_WARN_UNUSED_RESULT;
+/// An error occured while processing this card.
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull processingError;)
++ (NSString * _Nonnull)processingError SWIFT_WARN_UNUSED_RESULT;
+/// The card has an incorrect CVC.
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull incorrectCVC;)
++ (NSString * _Nonnull)incorrectCVC SWIFT_WARN_UNUSED_RESULT;
+/// The postal code is incorrect.
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull incorrectZip;)
++ (NSString * _Nonnull)incorrectZip SWIFT_WARN_UNUSED_RESULT;
+@end
+
+/// Possible error code values for NSErrors with the <code>StripeDomain</code> domain.
+typedef SWIFT_ENUM(NSInteger, STPErrorCode, open) {
+/// Trouble connecting to Stripe.
+  STPConnectionError SWIFT_COMPILE_NAME("connectionError") = 40,
+/// Your request had invalid parameters.
+  STPInvalidRequestError SWIFT_COMPILE_NAME("invalidRequestError") = 50,
+/// No valid publishable API key provided.
+  STPAuthenticationError SWIFT_COMPILE_NAME("authenticationError") = 51,
+/// General-purpose API error.
+  STPAPIError SWIFT_COMPILE_NAME("apiError") = 60,
+/// Something was wrong with the given card details.
+  STPCardError SWIFT_COMPILE_NAME("cardError") = 70,
+/// The operation was cancelled.
+  STPCancellationError SWIFT_COMPILE_NAME("cancellationError") = 80,
+/// The ephemeral key could not be decoded. Make sure your backend is sending
+/// the unmodified JSON of the ephemeral key to your app.
+/// https://stripe.com/docs/mobile/ios/basic#prepare-your-api
+  STPEphemeralKeyDecodingError SWIFT_COMPILE_NAME("ephemeralKeyDecodingError") = 1000,
+};
+
+
+SWIFT_CLASS("_TtC10PaymentSDK25STPNumericStringValidator")
+@interface STPNumericStringValidator : NSObject
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC10PaymentSDK18STPTelemetryClient")
+@interface STPTelemetryClient : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+@class NSURL;
+@protocol STPURLCallbackListener;
+
+SWIFT_CLASS("_TtC10PaymentSDK21STPURLCallbackHandler")
+@interface STPURLCallbackHandler : NSObject
++ (STPURLCallbackHandler * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
+- (BOOL)handleURLCallback:(NSURL * _Nonnull)url;
+- (void)registerListener:(id <STPURLCallbackListener> _Nonnull)listener forURL:(NSURL * _Nonnull)url;
+- (void)unregisterListener:(id <STPURLCallbackListener> _Nonnull)listener;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_PROTOCOL("_TtP10PaymentSDK22STPURLCallbackListener_")
+@protocol STPURLCallbackListener <NSObject>
+- (BOOL)handleURLCallback:(NSURL * _Nonnull)url SWIFT_WARN_UNUSED_RESULT;
+@end
+
+@class PKPaymentRequest;
+
+/// A top-level class that imports the rest of the Stripe SDK.
+SWIFT_CLASS("_TtC10PaymentSDK9StripeAPI")
+@interface StripeAPI : NSObject
+/// Set this to your Stripe publishable API key, obtained from https://dashboard.stripe.com/apikeys.
+/// Set this as early as possible in your application’s lifecycle, preferably in your AppDelegate or SceneDelegate.
+/// New instances of STPAPIClient will be initialized with this value.
+/// @warning Make sure not to ship your test API keys to the App Store! This will log a warning if you use your test key in a release build.
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) NSString * _Nullable defaultPublishableKey;)
++ (NSString * _Nullable)defaultPublishableKey SWIFT_WARN_UNUSED_RESULT;
++ (void)setDefaultPublishableKey:(NSString * _Nullable)value;
+/// Set this to your Stripe publishable API key, obtained from https://dashboard.stripe.com/apikeys.
+/// Set this as early as possible in your application’s lifecycle, preferably in your AppDelegate or SceneDelegate.
+/// New instances of STPAPIClient will be initialized with this value.
+/// @warning Make sure not to ship your test API keys to the App Store! This will log a warning if you use your test key in a release build.
+- (void)setDefaultPublishableKey:(NSString * _Nonnull)publishableKey;
+/// A Boolean value that determines whether additional device data is sent to Stripe for fraud prevention.
+/// If YES, additional device signals will be sent to Stripe.
+/// For more details on the information we collect, visit https://stripe.com/docs/disputes/prevention/advanced-fraud-detection
+/// Disabling this setting will reduce Stripe’s ability to protect your business from fraudulent payments.
+/// The default value is YES.
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class) BOOL advancedFraudSignalsEnabled;)
++ (BOOL)advancedFraudSignalsEnabled SWIFT_WARN_UNUSED_RESULT;
++ (void)setAdvancedFraudSignalsEnabled:(BOOL)value;
+/// If the SDK receives a “Too Many Requests” (429) status code from Stripe,
+/// it will automatically retry the request.
+/// The default value is 3.
+/// See https://stripe.com/docs/rate-limits for more information.
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class) NSInteger maxRetries;)
++ (NSInteger)maxRetries SWIFT_WARN_UNUSED_RESULT;
++ (void)setMaxRetries:(NSInteger)value;
+/// Japanese users can enable JCB for Apple Pay by setting this to <code>YES</code>,
+/// after they have been approved by JCB.
+/// The default value is NO.
+/// @note JCB is only supported on iOS 10.1+
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class) BOOL jcbPaymentNetworkSupported;)
++ (BOOL)jcbPaymentNetworkSupported SWIFT_WARN_UNUSED_RESULT;
++ (void)setJcbPaymentNetworkSupported:(BOOL)JCBPaymentNetworkSupported;
+/// The SDK accepts Amex, Mastercard, Visa, and Discover for Apple Pay.
+/// Set this property to enable other card networks in addition to these.
+/// For example, <code>additionalEnabledApplePayNetworks = [.JCB]</code> enables JCB (note this requires onboarding from JCB and Stripe).
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) NSArray<PKPaymentNetwork> * _Nonnull additionalEnabledApplePayNetworks;)
++ (NSArray<PKPaymentNetwork> * _Nonnull)additionalEnabledApplePayNetworks SWIFT_WARN_UNUSED_RESULT;
++ (void)setAdditionalEnabledApplePayNetworks:(NSArray<PKPaymentNetwork> * _Nonnull)value;
+/// Whether or not this device is capable of using Apple Pay.
+/// This checks both whether the device supports Apple Pay, as well as whether or not they have
+/// stored Apple Pay cards on their device.
+/// \param paymentRequest The return value of this method depends on the
+/// <code>supportedNetworks</code> property of this payment request, which by default should be
+/// <code>[.amex, .masterCard, .visa, .discover]</code>.
+///
+///
+/// returns:
+/// whether or not the user is currently able to pay with Apple Pay.
++ (BOOL)canSubmitPaymentRequest:(PKPaymentRequest * _Nonnull)paymentRequest SWIFT_WARN_UNUSED_RESULT;
+/// Whether or not this can make Apple Pay payments via a card network supported
+/// by Stripe.
+/// The Stripe supported Apple Pay card networks are:
+/// American Express, Visa, Mastercard, Discover, Maestro.
+/// Japanese users can enable JCB by setting <code>JCBPaymentNetworkSupported</code> to YES,
+/// after they have been approved by JCB.
+///
+/// returns:
+/// YES if the device is currently able to make Apple Pay payments via one
+/// of the supported networks. NO if the user does not have a saved card of a
+/// supported type, or other restrictions prevent payment (such as parental controls).
++ (BOOL)deviceSupportsApplePay SWIFT_WARN_UNUSED_RESULT;
+/// A convenience method to build a <code>PKPaymentRequest</code> with sane default values.
+/// You will still need to configure the <code>paymentSummaryItems</code> property to indicate
+/// what the user is purchasing, as well as the optional <code>requiredShippingContactFields</code>,
+/// <code>requiredBillingContactFields</code>, and <code>shippingMethods</code> properties to indicate
+/// what additional contact information your application requires.
+/// \param merchantIdentifier Your Apple Merchant ID.
+///
+/// \param countryCode The two-letter code for the country where the payment
+/// will be processed. This should be the country of your Stripe account.
+///
+/// \param currencyCode The three-letter code for the currency used by this
+/// payment request. Apple Pay interprets the amounts provided by the summary items
+/// attached to this request as amounts in this currency.
+///
+///
+/// returns:
+/// a <code>PKPaymentRequest</code> with proper default values.
++ (PKPaymentRequest * _Nonnull)paymentRequestWithMerchantIdentifier:(NSString * _Nonnull)merchantIdentifier country:(NSString * _Nonnull)countryCode currency:(NSString * _Nonnull)currencyCode SWIFT_WARN_UNUSED_RESULT;
+/// Call this method in your app delegate whenever you receive an URL in your
+/// app delegate for a Stripe callback.
+/// For convenience, you can pass all URL’s you receive in your app delegate
+/// to this method first, and check the return value
+/// to easily determine whether it is a callback URL that Stripe will handle
+/// or if your app should process it normally.
+/// If you are using a universal link URL, you will receive the callback in <code>application:continueUserActivity:restorationHandler:</code>
+/// To learn more about universal links, see https://developer.apple.com/library/content/documentation/General/Conceptual/AppSearch/UniversalLinks.html
+/// If you are using a native scheme URL, you will receive the callback in <code>application:openURL:options:</code>
+/// To learn more about native url schemes, see https://developer.apple.com/library/content/documentation/iPhone/Conceptual/iPhoneOSProgrammingGuide/Inter-AppCommunication/Inter-AppCommunication.html#//apple_ref/doc/uid/TP40007072-CH6-SW10
+/// \param url The URL that you received in your app delegate
+///
+///
+/// returns:
+/// YES if the URL is expected and will be handled by Stripe. NO otherwise.
++ (BOOL)handleStripeURLCallbackWithURL:(NSURL * _Nonnull)url;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -714,6 +1096,7 @@ using UInt = size_t;
 @import CoreFoundation;
 @import Foundation;
 @import ObjectiveC;
+@import PassKit;
 @import UIKit;
 #endif
 
@@ -735,6 +1118,7 @@ using UInt = size_t;
 #endif
 
 #if defined(__OBJC__)
+
 
 
 @class NSCoder;
@@ -805,6 +1189,49 @@ SWIFT_CLASS("_TtC10PaymentSDK27CountryPickerViewController")
 - (NSString * _Nullable)tableView:(UITableView * _Nonnull)tableView titleForHeaderInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
 - (NSArray<NSString *> * _Nullable)sectionIndexTitlesForTableView:(UITableView * _Nonnull)tableView SWIFT_WARN_UNUSED_RESULT;
 - (NSInteger)tableView:(UITableView * _Nonnull)tableView sectionForSectionIndexTitle:(NSString * _Nonnull)title atIndex:(NSInteger)index SWIFT_WARN_UNUSED_RESULT;
+@end
+
+
+/// For internal SDK use only.
+SWIFT_CLASS_NAMED("DownloadManager")
+@interface STP_Internal_DownloadManager : NSObject <NSURLSessionDelegate>
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+
+
+
+
+
+
+
+@interface NSError (SWIFT_EXTENSION(PaymentSDK))
+/// Creates an NSError object from a given Stripe API json response.
+/// \param jsonDictionary The root dictionary from the JSON response.
+///
+///
+/// returns:
+/// An NSError object with the error information from the JSON response,
+/// or nil if there was no error information included in the JSON dictionary.
++ (NSError * _Nullable)stp_errorFromStripeResponse:(NSDictionary * _Nullable)jsonDictionary SWIFT_WARN_UNUSED_RESULT;
+@end
+
+
+@interface NSError (SWIFT_EXTENSION(PaymentSDK))
++ (NSError * _Nonnull)stp_genericConnectionError SWIFT_WARN_UNUSED_RESULT;
++ (NSError * _Nonnull)stp_genericFailedToParseResponseError SWIFT_WARN_UNUSED_RESULT;
++ (NSError * _Nonnull)stp_ephemeralKeyDecodingError SWIFT_WARN_UNUSED_RESULT;
++ (NSError * _Nonnull)stp_clientSecretError SWIFT_WARN_UNUSED_RESULT;
++ (NSString * _Nonnull)stp_cardErrorInvalidNumberUserMessage SWIFT_WARN_UNUSED_RESULT;
++ (NSString * _Nonnull)stp_cardInvalidCVCUserMessage SWIFT_WARN_UNUSED_RESULT;
++ (NSString * _Nonnull)stp_cardErrorInvalidExpMonthUserMessage SWIFT_WARN_UNUSED_RESULT;
++ (NSString * _Nonnull)stp_cardErrorInvalidExpYearUserMessage SWIFT_WARN_UNUSED_RESULT;
++ (NSString * _Nonnull)stp_cardErrorExpiredCardUserMessage SWIFT_WARN_UNUSED_RESULT;
++ (NSString * _Nonnull)stp_cardErrorDeclinedUserMessage SWIFT_WARN_UNUSED_RESULT;
++ (NSString * _Nonnull)stp_genericDeclineErrorUserMessage SWIFT_WARN_UNUSED_RESULT;
++ (NSString * _Nonnull)stp_cardErrorProcessingErrorUserMessage SWIFT_WARN_UNUSED_RESULT;
 @end
 
 
@@ -941,6 +1368,343 @@ SWIFT_CLASS("_TtC10PaymentSDK28PaymentSDKTransactionDetails")
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
+
+@class STPAppInfo;
+
+/// A client for making connections to the Stripe API.
+SWIFT_CLASS("_TtC10PaymentSDK12STPAPIClient")
+@interface STPAPIClient : NSObject
+/// The current version of this library.
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull STPSDKVersion;)
++ (NSString * _Nonnull)STPSDKVersion SWIFT_WARN_UNUSED_RESULT;
+/// A shared singleton API client.
+/// By default, the SDK uses this instance to make API requests
+/// eg in STPPaymentHandler, STPPaymentContext, STPCustomerContext, etc.
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) STPAPIClient * _Nonnull sharedClient;)
++ (STPAPIClient * _Nonnull)sharedClient SWIFT_WARN_UNUSED_RESULT;
+/// The client’s publishable key.
+/// The default value is <code>StripeAPI.defaultPublishableKey</code>.
+@property (nonatomic, copy) NSString * _Nullable publishableKey;
+/// In order to perform API requests on behalf of a connected account, e.g. to
+/// create a Source or Payment Method on a connected account, set this property to the ID of the
+/// account for which this request is being made.
+/// seealso:
+/// https://stripe.com/docs/connect/authentication#authentication-via-the-stripe-account-header
+@property (nonatomic, copy) NSString * _Nullable stripeAccount;
+/// Libraries wrapping the Stripe SDK should set this, so that Stripe can contact you
+/// about future issues or critical updates.
+/// seealso:
+/// https://stripe.com/docs/building-plugins#setappinfo
+@property (nonatomic, strong) STPAppInfo * _Nullable appInfo;
+/// The API version used to communicate with Stripe.
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull apiVersion;)
++ (NSString * _Nonnull)apiVersion SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+/// Initializes an API client with the given publishable key.
+/// \param publishableKey The publishable key to use.
+///
+///
+/// returns:
+/// An instance of STPAPIClient.
+- (nonnull instancetype)initWithPublishableKey:(NSString * _Nonnull)publishableKey;
+@end
+
+
+
+
+
+SWIFT_CLASS("_TtC10PaymentSDK18STPAnalyticsClient")
+@interface STPAnalyticsClient : NSObject
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) STPAnalyticsClient * _Nonnull sharedClient;)
++ (STPAnalyticsClient * _Nonnull)sharedClient SWIFT_WARN_UNUSED_RESULT;
+@property (nonatomic, copy) NSSet<NSString *> * _Nonnull productUsage;
++ (NSString * _Nullable)tokenTypeFromParameters:(NSDictionary * _Nonnull)parameters SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+
+/// Libraries wrapping the Stripe SDK should use this object to provide information about the
+/// library, and set it in on <code>STPAPIClient</code>.
+/// This information is passed to Stripe so that we can contact you about future issues or
+/// critical updates.
+/// seealso:
+/// https://stripe.com/docs/building-plugins#setappinfo
+SWIFT_CLASS("_TtC10PaymentSDK10STPAppInfo")
+@interface STPAppInfo : NSObject
+/// Initializes an instance of <code>STPAppInfo</code>.
+/// \param name The name of your library (e.g. “MyAwesomeLibrary”).
+///
+/// \param partnerId Your Stripe Partner ID (e.g. “pp_partner_1234”). Required for Stripe Verified Partners, optional otherwise.
+///
+/// \param version The version of your library (e.g. “1.2.34”). Optional.
+///
+/// \param url The website for your library (e.g. “https://myawesomelibrary.info”). Optional.
+///
+- (nonnull instancetype)initWithName:(NSString * _Nonnull)name partnerId:(NSString * _Nullable)partnerId version:(NSString * _Nullable)version url:(NSString * _Nullable)url OBJC_DESIGNATED_INITIALIZER;
+/// The name of your library (e.g. “MyAwesomeLibrary”).
+@property (nonatomic, readonly, copy) NSString * _Nonnull name;
+/// Your Stripe Partner ID (e.g. “pp_partner_1234”).
+@property (nonatomic, readonly, copy) NSString * _Nullable partnerId;
+/// The version of your library (e.g. “1.2.34”).
+@property (nonatomic, readonly, copy) NSString * _Nullable version;
+/// The website for your library (e.g. “https://myawesomelibrary.info”).
+@property (nonatomic, readonly, copy) NSString * _Nullable url;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+/// Top-level class for Stripe error constants.
+SWIFT_CLASS("_TtC10PaymentSDK8STPError")
+@interface STPError : NSObject
+/// All Stripe iOS errors will be under this domain.
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull stripeDomain;)
++ (NSString * _Nonnull)stripeDomain SWIFT_WARN_UNUSED_RESULT;
+/// The error domain for errors in <code>STPPaymentHandler</code>.
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull STPPaymentHandlerErrorDomain;)
++ (NSString * _Nonnull)STPPaymentHandlerErrorDomain SWIFT_WARN_UNUSED_RESULT;
+/// A human-readable message providing more details about the error.
+/// For card errors, these messages can be shown to your users.
+/// seealso:
+/// https://stripe.com/docs/api/errors#errors-message
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull errorMessageKey;)
++ (NSString * _Nonnull)errorMessageKey SWIFT_WARN_UNUSED_RESULT;
+/// An SDK-supplied “hint” that is intended to help you, the developer, fix the error.
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull hintKey;)
++ (NSString * _Nonnull)hintKey SWIFT_WARN_UNUSED_RESULT;
+/// What went wrong with your STPCard (e.g., STPInvalidCVC).
+/// See below for full list).
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull cardErrorCodeKey;)
++ (NSString * _Nonnull)cardErrorCodeKey SWIFT_WARN_UNUSED_RESULT;
+/// Which parameter on the STPCard had an error (e.g., “cvc”).
+/// Useful for marking up the right UI element.
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull errorParameterKey;)
++ (NSString * _Nonnull)errorParameterKey SWIFT_WARN_UNUSED_RESULT;
+/// The error code returned by the Stripe API.
+/// seealso:
+/// https://stripe.com/docs/api#errors-code
+/// seealso:
+/// https://stripe.com/docs/error-codes
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull stripeErrorCodeKey;)
++ (NSString * _Nonnull)stripeErrorCodeKey SWIFT_WARN_UNUSED_RESULT;
+/// The error type returned by the Stripe API.
+/// seealso:
+/// https://stripe.com/docs/api#errors-type
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull stripeErrorTypeKey;)
++ (NSString * _Nonnull)stripeErrorTypeKey SWIFT_WARN_UNUSED_RESULT;
+/// If the value of <code>userInfo[stripeErrorCodeKey]</code> is <code>STPError.cardDeclined</code>,
+/// the value for this key contains the decline code.
+/// seealso:
+/// https://stripe.com/docs/declines/codes
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull stripeDeclineCodeKey;)
++ (NSString * _Nonnull)stripeDeclineCodeKey SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+@interface STPError (SWIFT_EXTENSION(PaymentSDK))
+/// The card number is not a valid credit card number.
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull invalidNumber;)
++ (NSString * _Nonnull)invalidNumber SWIFT_WARN_UNUSED_RESULT;
+/// The card has an invalid expiration month.
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull invalidExpMonth;)
++ (NSString * _Nonnull)invalidExpMonth SWIFT_WARN_UNUSED_RESULT;
+/// The card has an invalid expiration year.
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull invalidExpYear;)
++ (NSString * _Nonnull)invalidExpYear SWIFT_WARN_UNUSED_RESULT;
+/// The card has an invalid CVC.
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull invalidCVC;)
++ (NSString * _Nonnull)invalidCVC SWIFT_WARN_UNUSED_RESULT;
+/// The card number is incorrect.
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull incorrectNumber;)
++ (NSString * _Nonnull)incorrectNumber SWIFT_WARN_UNUSED_RESULT;
+/// The card is expired.
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull expiredCard;)
++ (NSString * _Nonnull)expiredCard SWIFT_WARN_UNUSED_RESULT;
+/// The card was declined.
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull cardDeclined;)
++ (NSString * _Nonnull)cardDeclined SWIFT_WARN_UNUSED_RESULT;
+/// An error occured while processing this card.
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull processingError;)
++ (NSString * _Nonnull)processingError SWIFT_WARN_UNUSED_RESULT;
+/// The card has an incorrect CVC.
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull incorrectCVC;)
++ (NSString * _Nonnull)incorrectCVC SWIFT_WARN_UNUSED_RESULT;
+/// The postal code is incorrect.
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull incorrectZip;)
++ (NSString * _Nonnull)incorrectZip SWIFT_WARN_UNUSED_RESULT;
+@end
+
+/// Possible error code values for NSErrors with the <code>StripeDomain</code> domain.
+typedef SWIFT_ENUM(NSInteger, STPErrorCode, open) {
+/// Trouble connecting to Stripe.
+  STPConnectionError SWIFT_COMPILE_NAME("connectionError") = 40,
+/// Your request had invalid parameters.
+  STPInvalidRequestError SWIFT_COMPILE_NAME("invalidRequestError") = 50,
+/// No valid publishable API key provided.
+  STPAuthenticationError SWIFT_COMPILE_NAME("authenticationError") = 51,
+/// General-purpose API error.
+  STPAPIError SWIFT_COMPILE_NAME("apiError") = 60,
+/// Something was wrong with the given card details.
+  STPCardError SWIFT_COMPILE_NAME("cardError") = 70,
+/// The operation was cancelled.
+  STPCancellationError SWIFT_COMPILE_NAME("cancellationError") = 80,
+/// The ephemeral key could not be decoded. Make sure your backend is sending
+/// the unmodified JSON of the ephemeral key to your app.
+/// https://stripe.com/docs/mobile/ios/basic#prepare-your-api
+  STPEphemeralKeyDecodingError SWIFT_COMPILE_NAME("ephemeralKeyDecodingError") = 1000,
+};
+
+
+SWIFT_CLASS("_TtC10PaymentSDK25STPNumericStringValidator")
+@interface STPNumericStringValidator : NSObject
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC10PaymentSDK18STPTelemetryClient")
+@interface STPTelemetryClient : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+@class NSURL;
+@protocol STPURLCallbackListener;
+
+SWIFT_CLASS("_TtC10PaymentSDK21STPURLCallbackHandler")
+@interface STPURLCallbackHandler : NSObject
++ (STPURLCallbackHandler * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
+- (BOOL)handleURLCallback:(NSURL * _Nonnull)url;
+- (void)registerListener:(id <STPURLCallbackListener> _Nonnull)listener forURL:(NSURL * _Nonnull)url;
+- (void)unregisterListener:(id <STPURLCallbackListener> _Nonnull)listener;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_PROTOCOL("_TtP10PaymentSDK22STPURLCallbackListener_")
+@protocol STPURLCallbackListener <NSObject>
+- (BOOL)handleURLCallback:(NSURL * _Nonnull)url SWIFT_WARN_UNUSED_RESULT;
+@end
+
+@class PKPaymentRequest;
+
+/// A top-level class that imports the rest of the Stripe SDK.
+SWIFT_CLASS("_TtC10PaymentSDK9StripeAPI")
+@interface StripeAPI : NSObject
+/// Set this to your Stripe publishable API key, obtained from https://dashboard.stripe.com/apikeys.
+/// Set this as early as possible in your application’s lifecycle, preferably in your AppDelegate or SceneDelegate.
+/// New instances of STPAPIClient will be initialized with this value.
+/// @warning Make sure not to ship your test API keys to the App Store! This will log a warning if you use your test key in a release build.
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) NSString * _Nullable defaultPublishableKey;)
++ (NSString * _Nullable)defaultPublishableKey SWIFT_WARN_UNUSED_RESULT;
++ (void)setDefaultPublishableKey:(NSString * _Nullable)value;
+/// Set this to your Stripe publishable API key, obtained from https://dashboard.stripe.com/apikeys.
+/// Set this as early as possible in your application’s lifecycle, preferably in your AppDelegate or SceneDelegate.
+/// New instances of STPAPIClient will be initialized with this value.
+/// @warning Make sure not to ship your test API keys to the App Store! This will log a warning if you use your test key in a release build.
+- (void)setDefaultPublishableKey:(NSString * _Nonnull)publishableKey;
+/// A Boolean value that determines whether additional device data is sent to Stripe for fraud prevention.
+/// If YES, additional device signals will be sent to Stripe.
+/// For more details on the information we collect, visit https://stripe.com/docs/disputes/prevention/advanced-fraud-detection
+/// Disabling this setting will reduce Stripe’s ability to protect your business from fraudulent payments.
+/// The default value is YES.
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class) BOOL advancedFraudSignalsEnabled;)
++ (BOOL)advancedFraudSignalsEnabled SWIFT_WARN_UNUSED_RESULT;
++ (void)setAdvancedFraudSignalsEnabled:(BOOL)value;
+/// If the SDK receives a “Too Many Requests” (429) status code from Stripe,
+/// it will automatically retry the request.
+/// The default value is 3.
+/// See https://stripe.com/docs/rate-limits for more information.
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class) NSInteger maxRetries;)
++ (NSInteger)maxRetries SWIFT_WARN_UNUSED_RESULT;
++ (void)setMaxRetries:(NSInteger)value;
+/// Japanese users can enable JCB for Apple Pay by setting this to <code>YES</code>,
+/// after they have been approved by JCB.
+/// The default value is NO.
+/// @note JCB is only supported on iOS 10.1+
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class) BOOL jcbPaymentNetworkSupported;)
++ (BOOL)jcbPaymentNetworkSupported SWIFT_WARN_UNUSED_RESULT;
++ (void)setJcbPaymentNetworkSupported:(BOOL)JCBPaymentNetworkSupported;
+/// The SDK accepts Amex, Mastercard, Visa, and Discover for Apple Pay.
+/// Set this property to enable other card networks in addition to these.
+/// For example, <code>additionalEnabledApplePayNetworks = [.JCB]</code> enables JCB (note this requires onboarding from JCB and Stripe).
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) NSArray<PKPaymentNetwork> * _Nonnull additionalEnabledApplePayNetworks;)
++ (NSArray<PKPaymentNetwork> * _Nonnull)additionalEnabledApplePayNetworks SWIFT_WARN_UNUSED_RESULT;
++ (void)setAdditionalEnabledApplePayNetworks:(NSArray<PKPaymentNetwork> * _Nonnull)value;
+/// Whether or not this device is capable of using Apple Pay.
+/// This checks both whether the device supports Apple Pay, as well as whether or not they have
+/// stored Apple Pay cards on their device.
+/// \param paymentRequest The return value of this method depends on the
+/// <code>supportedNetworks</code> property of this payment request, which by default should be
+/// <code>[.amex, .masterCard, .visa, .discover]</code>.
+///
+///
+/// returns:
+/// whether or not the user is currently able to pay with Apple Pay.
++ (BOOL)canSubmitPaymentRequest:(PKPaymentRequest * _Nonnull)paymentRequest SWIFT_WARN_UNUSED_RESULT;
+/// Whether or not this can make Apple Pay payments via a card network supported
+/// by Stripe.
+/// The Stripe supported Apple Pay card networks are:
+/// American Express, Visa, Mastercard, Discover, Maestro.
+/// Japanese users can enable JCB by setting <code>JCBPaymentNetworkSupported</code> to YES,
+/// after they have been approved by JCB.
+///
+/// returns:
+/// YES if the device is currently able to make Apple Pay payments via one
+/// of the supported networks. NO if the user does not have a saved card of a
+/// supported type, or other restrictions prevent payment (such as parental controls).
++ (BOOL)deviceSupportsApplePay SWIFT_WARN_UNUSED_RESULT;
+/// A convenience method to build a <code>PKPaymentRequest</code> with sane default values.
+/// You will still need to configure the <code>paymentSummaryItems</code> property to indicate
+/// what the user is purchasing, as well as the optional <code>requiredShippingContactFields</code>,
+/// <code>requiredBillingContactFields</code>, and <code>shippingMethods</code> properties to indicate
+/// what additional contact information your application requires.
+/// \param merchantIdentifier Your Apple Merchant ID.
+///
+/// \param countryCode The two-letter code for the country where the payment
+/// will be processed. This should be the country of your Stripe account.
+///
+/// \param currencyCode The three-letter code for the currency used by this
+/// payment request. Apple Pay interprets the amounts provided by the summary items
+/// attached to this request as amounts in this currency.
+///
+///
+/// returns:
+/// a <code>PKPaymentRequest</code> with proper default values.
++ (PKPaymentRequest * _Nonnull)paymentRequestWithMerchantIdentifier:(NSString * _Nonnull)merchantIdentifier country:(NSString * _Nonnull)countryCode currency:(NSString * _Nonnull)currencyCode SWIFT_WARN_UNUSED_RESULT;
+/// Call this method in your app delegate whenever you receive an URL in your
+/// app delegate for a Stripe callback.
+/// For convenience, you can pass all URL’s you receive in your app delegate
+/// to this method first, and check the return value
+/// to easily determine whether it is a callback URL that Stripe will handle
+/// or if your app should process it normally.
+/// If you are using a universal link URL, you will receive the callback in <code>application:continueUserActivity:restorationHandler:</code>
+/// To learn more about universal links, see https://developer.apple.com/library/content/documentation/General/Conceptual/AppSearch/UniversalLinks.html
+/// If you are using a native scheme URL, you will receive the callback in <code>application:openURL:options:</code>
+/// To learn more about native url schemes, see https://developer.apple.com/library/content/documentation/iPhone/Conceptual/iPhoneOSProgrammingGuide/Inter-AppCommunication/Inter-AppCommunication.html#//apple_ref/doc/uid/TP40007072-CH6-SW10
+/// \param url The URL that you received in your app delegate
+///
+///
+/// returns:
+/// YES if the URL is expected and will be handled by Stripe. NO otherwise.
++ (BOOL)handleStripeURLCallbackWithURL:(NSURL * _Nonnull)url;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

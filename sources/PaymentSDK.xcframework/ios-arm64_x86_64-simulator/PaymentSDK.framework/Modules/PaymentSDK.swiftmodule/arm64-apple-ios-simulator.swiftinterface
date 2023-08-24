@@ -1,9 +1,13 @@
 // swift-interface-format-version: 1.0
 // swift-compiler-version: Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)
-// swift-module-flags: -target arm64-apple-ios10.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name PaymentSDK
+// swift-module-flags: -target arm64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name PaymentSDK
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import AVFoundation
+import AVKit
+import Accelerate
 import CommonCrypto
+import CoreGraphics
+import CoreML
 import CoreTelephony
 import Foundation
 import PassKit
@@ -16,6 +20,8 @@ import Vision
 import WebKit
 import _Concurrency
 import _StringProcessing
+import os.log
+import os
 public protocol PaymentSDKMerchantConfiguration {
   var profileID: Swift.String { get set }
   var serverKey: Swift.String { get set }
@@ -95,6 +101,50 @@ extension PaymentSDK.PaymentSDKConfiguration : Foundation.NSCopying {
   @_Concurrency.MainActor(unsafe) public func hideCardScanner(isHidden: Swift.Bool)
   @objc deinit
 }
+@objc public class STPAppInfo : ObjectiveC.NSObject {
+  @objc public init(name: Swift.String, partnerId: Swift.String?, version: Swift.String?, url: Swift.String?)
+  @objc public var name: Swift.String {
+    get
+  }
+  @objc public var partnerId: Swift.String? {
+    get
+  }
+  @objc public var version: Swift.String? {
+    get
+  }
+  @objc public var url: Swift.String? {
+    get
+  }
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc public class StripeAPI : ObjectiveC.NSObject {
+  @objc public static var defaultPublishableKey: Swift.String?
+  @objc public func setDefaultPublishableKey(_ publishableKey: Swift.String)
+  @objc public static var advancedFraudSignalsEnabled: Swift.Bool
+  @objc public static var maxRetries: Swift.Int
+  @objc public class var jcbPaymentNetworkSupported: Swift.Bool {
+    @objc get
+    @objc set(JCBPaymentNetworkSupported)
+  }
+  @objc public static var additionalEnabledApplePayNetworks: [PassKit.PKPaymentNetwork]
+  @objc public class func canSubmitPaymentRequest(_ paymentRequest: PassKit.PKPaymentRequest) -> Swift.Bool
+  @objc public class func deviceSupportsApplePay() -> Swift.Bool
+  @objc(paymentRequestWithMerchantIdentifier:country:currency:) public class func paymentRequest(withMerchantIdentifier merchantIdentifier: Swift.String, country countryCode: Swift.String, currency currencyCode: Swift.String) -> PassKit.PKPaymentRequest
+  @discardableResult
+  @objc(handleStripeURLCallbackWithURL:) public static func handleURLCallback(with url: Foundation.URL) -> Swift.Bool
+  @objc override dynamic public init()
+  @objc deinit
+}
+@frozen public enum CardImageVerificationSheetResult {
+  case completed(scannedCard: PaymentSDK.ScannedCard)
+  case canceled(reason: PaymentSDK.CancellationReason)
+  case failed(error: Swift.Error)
+}
+final public class CardImageVerificationSheet {
+  public init(cardImageVerificationIntentId: Swift.String, cardImageVerificationIntentSecret: Swift.String, configuration: PaymentSDK.CardImageVerificationSheet.Configuration = Configuration())
+  final public func present(from presentingViewController: UIKit.UIViewController, completion: @escaping (PaymentSDK.CardImageVerificationSheetResult) -> Swift.Void, animated: Swift.Bool = true)
+  @objc deinit
+}
 extension PassKit.PKPaymentMethodType : Swift.CustomStringConvertible {
   public var description: Swift.String {
     get
@@ -107,6 +157,13 @@ public struct UIConfiguration {
     get
   }
   @objc deinit
+}
+extension Swift.Array where Element == Swift.String {
+  public func caseInsensitiveContains(_ other: Swift.String) -> Swift.Bool
+}
+extension Swift.Array where Element : Swift.Equatable {
+  @discardableResult
+  public mutating func remove(_ element: Element) -> Element?
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class PaymentSDKBillingDetails : ObjectiveC.NSObject, Swift.Codable {
   @objc public var name: Swift.String?
@@ -497,10 +554,137 @@ public enum PaymentSDKError : Swift.Error {
   public func encode(to encoder: Swift.Encoder) throws
   required public init(from decoder: Swift.Decoder) throws
 }
+extension PaymentSDK.STPErrorCode : Swift.CustomStringConvertible {
+  public var description: Swift.String {
+    get
+  }
+}
+@objc public enum STPErrorCode : Swift.Int {
+  @objc(STPConnectionError) case connectionError = 40
+  @objc(STPInvalidRequestError) case invalidRequestError = 50
+  @objc(STPAuthenticationError) case authenticationError = 51
+  @objc(STPAPIError) case apiError = 60
+  @objc(STPCardError) case cardError = 70
+  @objc(STPCancellationError) case cancellationError = 80
+  @objc(STPEphemeralKeyDecodingError) case ephemeralKeyDecodingError = 1000
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@_inheritsConvenienceInitializers @objc public class STPError : ObjectiveC.NSObject {
+  @objc public static let stripeDomain: Swift.String
+  @objc public static let STPPaymentHandlerErrorDomain: Swift.String
+  @objc public static let errorMessageKey: Swift.String
+  @objc public static let hintKey: Swift.String
+  @objc public static let cardErrorCodeKey: Swift.String
+  @objc public static let errorParameterKey: Swift.String
+  @objc public static let stripeErrorCodeKey: Swift.String
+  @objc public static let stripeErrorTypeKey: Swift.String
+  @objc public static let stripeDeclineCodeKey: Swift.String
+  @objc override dynamic public init()
+  @objc deinit
+}
+extension Foundation.NSError {
+  @objc(stp_errorFromStripeResponse:) public static func stp_error(fromStripeResponse jsonDictionary: [Swift.AnyHashable : Any]?) -> Foundation.NSError?
+}
+public enum STPCardErrorCode : Swift.String {
+  case invalidNumber
+  case invalidExpMonth
+  case invalidExpYear
+  case invalidCVC
+  case incorrectNumber
+  case expiredCard
+  case cardDeclined
+  case incorrectCVC
+  case processingError
+  case incorrectZip
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+@objc extension PaymentSDK.STPError {
+  @objc public static let invalidNumber: Swift.String
+  @objc public static let invalidExpMonth: Swift.String
+  @objc public static let invalidExpYear: Swift.String
+  @objc public static let invalidCVC: Swift.String
+  @objc public static let incorrectNumber: Swift.String
+  @objc public static let expiredCard: Swift.String
+  @objc public static let cardDeclined: Swift.String
+  @objc public static let processingError: Swift.String
+  @objc public static let incorrectCVC: Swift.String
+  @objc public static let incorrectZip: Swift.String
+}
+public protocol UnknownFieldsDecodable : Swift.Decodable {
+  var _allResponseFieldsStorage: PaymentSDK.NonEncodableParameters? { get set }
+}
+public protocol UnknownFieldsEncodable : Swift.Encodable {
+  var _additionalParametersStorage: PaymentSDK.NonEncodableParameters? { get set }
+}
+public protocol SafeEnumDecodable : Swift.Decodable {
+  static var unparsable: Self { get }
+}
+public protocol SafeEnumCodable : PaymentSDK.SafeEnumDecodable, Swift.Encodable {
+}
+extension PaymentSDK.UnknownFieldsDecodable {
+  public var allResponseFields: [Swift.String : Any] {
+    get
+  }
+}
+extension PaymentSDK.UnknownFieldsEncodable {
+  public var additionalParameters: [Swift.String : Any] {
+    get
+    set
+  }
+}
+public protocol UnknownFieldsCodable : PaymentSDK.UnknownFieldsDecodable, PaymentSDK.UnknownFieldsEncodable {
+}
+public struct NonEncodableParameters {
+}
+extension PaymentSDK.NonEncodableParameters : Swift.Decodable {
+  public init(from decoder: Swift.Decoder) throws
+}
+extension PaymentSDK.NonEncodableParameters : Swift.Encodable {
+  public func encode(to encoder: Swift.Encoder) throws
+}
+extension PaymentSDK.NonEncodableParameters : Swift.Equatable {
+  public static func == (lhs: PaymentSDK.NonEncodableParameters, rhs: PaymentSDK.NonEncodableParameters) -> Swift.Bool
+}
+extension PaymentSDK.NonEncodableParameters : Swift.CustomStringConvertible, Swift.CustomDebugStringConvertible, Swift.CustomLeafReflectable {
+  public var customMirror: Swift.Mirror {
+    get
+  }
+  public var debugDescription: Swift.String {
+    get
+  }
+  public var description: Swift.String {
+    get
+  }
+}
 @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class NibView : UIKit.UIView {
   @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
   @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
   @objc deinit
+}
+@frozen public enum CardScanSheetResult {
+  case completed(card: PaymentSDK.ScannedCard)
+  case canceled
+  case failed(error: Swift.Error)
+}
+public class CardScanSheet {
+  public init()
+  public func present(from presentingViewController: UIKit.UIViewController, completion: @escaping (PaymentSDK.CardScanSheetResult) -> Swift.Void, animated: Swift.Bool = true)
+  @objc deinit
+}
+public struct ScannedCard : Swift.Equatable {
+  public let pan: Swift.String
+  public let expiryMonth: Swift.String?
+  public let expiryYear: Swift.String?
+  public let name: Swift.String?
+  public static func == (a: PaymentSDK.ScannedCard, b: PaymentSDK.ScannedCard) -> Swift.Bool
 }
 extension PaymentSDK.PaymentSDKCardInputView {
   @discardableResult
@@ -517,6 +701,20 @@ extension PaymentSDK.PaymentSDKCardInputView {
   @_Concurrency.MainActor(unsafe) public func setStrokeColor(color: UIKit.UIColor) -> PaymentSDK.PaymentSDKCardInputView
   @discardableResult
   @_Concurrency.MainActor(unsafe) public func setInputsCornerRadius(radius: CoreFoundation.CGFloat) -> PaymentSDK.PaymentSDKCardInputView
+}
+public enum CardScanSheetError : Swift.Error {
+  case invalidClientSecret
+  case unknown(debugDescription: Swift.String)
+}
+extension PaymentSDK.CardScanSheetError : Foundation.LocalizedError {
+  public var localizedDescription: Swift.String {
+    get
+  }
+}
+extension PaymentSDK.CardScanSheetError : Swift.CustomDebugStringConvertible {
+  public var debugDescription: Swift.String {
+    get
+  }
 }
 extension PaymentSDK.PaymentManager {
   public static func startApplePayPayment(on rootViewController: UIKit.UIViewController, configuration: PaymentSDK.PaymentSDKConfiguration, delegate: PaymentSDK.PaymentManagerDelegate?)
@@ -553,6 +751,12 @@ extension PaymentSDK.CountryPickerViewController : UIKit.UISearchControllerDeleg
   @_Concurrency.MainActor(unsafe) @objc dynamic public func willDismissSearchController(_ searchController: UIKit.UISearchController)
 }
 public struct PayModels {
+}
+extension PaymentSDK.CardImageVerificationSheet {
+  public struct Configuration {
+    public var apiClient: PaymentSDK.STPAPIClient
+    public init()
+  }
 }
 public typealias CPVCountry = PaymentSDK.Country
 public enum SearchBarPosition {
@@ -635,7 +839,6 @@ extension PaymentSDK.CountryPickerView {
   public static func start3DSecureTokenizedCardPayment(on rootViewController: UIKit.UIViewController, configuration: PaymentSDK.PaymentSDKConfiguration, savedCardInfo: PaymentSDK.PaymentSDKSavedCardInfo, token: Swift.String, delegate: PaymentSDK.PaymentManagerDelegate?)
   public static func startTokenizedCardPayment(on rootViewController: UIKit.UIViewController, configuration: PaymentSDK.PaymentSDKConfiguration, token: Swift.String, transactionRef: Swift.String, delegate: PaymentSDK.PaymentManagerDelegate?)
   public static func startPaymentWithSavedCards(on rootViewController: UIKit.UIViewController, configuration: PaymentSDK.PaymentSDKConfiguration, support3DS: Swift.Bool, delegate: PaymentSDK.PaymentManagerDelegate?)
-  public static func clearSavedCards(profileId: Swift.String)
   public static func queryTransaction(queryConfiguration: PaymentSDK.PaymentSDKQueryConfiguration, completion: @escaping (PaymentSDK.PaymentSDKTransactionDetails?, Swift.Error?) -> Swift.Void)
   @objc override dynamic public init()
   @objc deinit
@@ -696,6 +899,30 @@ public class CreditCardValidator {
   public func onlyNumbers(string: Swift.String) -> Swift.String
   @objc deinit
 }
+@_inheritsConvenienceInitializers @objc public class STPAPIClient : ObjectiveC.NSObject {
+  @objc public static let STPSDKVersion: Swift.String
+  @objc(sharedClient) public static let shared: PaymentSDK.STPAPIClient
+  @objc public var publishableKey: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc public var stripeAccount: Swift.String?
+  @objc public var appInfo: PaymentSDK.STPAppInfo?
+  @objc public static let apiVersion: Swift.String
+  @objc override dynamic public init()
+  @objc(initWithPublishableKey:) convenience public init(publishableKey: Swift.String)
+  @objc deinit
+}
+public enum CancellationReason : Swift.String, Swift.Equatable {
+  case back
+  case closed
+  case userCannotScan
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
 extension PaymentSDK.PaymentManager {
   public static func startAlternativePaymentMethod(on rootViewController: UIKit.UIViewController, configuration: PaymentSDK.PaymentSDKConfiguration, delegate: PaymentSDK.PaymentManagerDelegate?)
 }
@@ -716,8 +943,16 @@ extension PaymentSDK.AlternativePaymentMethod : Swift.Hashable {}
 extension PaymentSDK.AlternativePaymentMethod : Swift.RawRepresentable {}
 extension PaymentSDK.PaymentSDKError : Swift.Equatable {}
 extension PaymentSDK.PaymentSDKError : Swift.Hashable {}
+extension PaymentSDK.STPErrorCode : Swift.Equatable {}
+extension PaymentSDK.STPErrorCode : Swift.Hashable {}
+extension PaymentSDK.STPErrorCode : Swift.RawRepresentable {}
+extension PaymentSDK.STPCardErrorCode : Swift.Equatable {}
+extension PaymentSDK.STPCardErrorCode : Swift.Hashable {}
+extension PaymentSDK.STPCardErrorCode : Swift.RawRepresentable {}
 extension PaymentSDK.SearchBarPosition : Swift.Equatable {}
 extension PaymentSDK.SearchBarPosition : Swift.Hashable {}
 extension PaymentSDK.Model : Swift.Equatable {}
 extension PaymentSDK.Model : Swift.Hashable {}
 extension PaymentSDK.Model : Swift.RawRepresentable {}
+extension PaymentSDK.CancellationReason : Swift.Hashable {}
+extension PaymentSDK.CancellationReason : Swift.RawRepresentable {}

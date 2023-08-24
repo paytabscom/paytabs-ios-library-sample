@@ -101,7 +101,7 @@
 				DC6890EF2354854100A4F349 /* Sources */,
 				DC6890F02354854100A4F349 /* Frameworks */,
 				DC6890F12354854100A4F349 /* Resources */,
-				1AD6FE0FFD00C54AF9E73C64 /* [CP] Embed Pods Frameworks */,
+				2E3A3247253623AEA5DDD2C8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -160,7 +160,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		1AD6FE0FFD00C54AF9E73C64 /* [CP] Embed Pods Frameworks */ = {
+		2E3A3247253623AEA5DDD2C8 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -368,7 +368,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "$(SRCROOT)/sample/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "sample app";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -403,7 +403,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "$(SRCROOT)/sample/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "sample app";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

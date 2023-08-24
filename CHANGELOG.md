@@ -99,3 +99,7 @@
 
 ## 6.4.13 2023-08-17
 * Added ability to delete all saved cards
+
+## 6.5.0 2023-08-24
+* Enahnced camera scanner
+* upgraded minimum deployment target to iOS 13.0 
