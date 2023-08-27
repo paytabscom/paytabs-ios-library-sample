@@ -1,6 +1,6 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)
-// swift-module-flags: -target x86_64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name PaymentSDK
+// swift-compiler-version: Apple Swift version 5.8.1 (swiftlang-5.8.0.124.5 clang-1403.0.22.11.100)
+// swift-module-flags: -target x86_64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name PaymentSDK
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import AVFoundation
 import AVKit
@@ -22,12 +22,13 @@ import _Concurrency
 import _StringProcessing
 import os.log
 import os
-@_spi(STP) @objc final public class STPTelemetryClient : ObjectiveC.NSObject {
+@_spi(STP) @objc @available(iOS 13.0, *)
+final public class STPTelemetryClient : ObjectiveC.NSObject {
   @_spi(STP) public static var shared: PaymentSDK.STPTelemetryClient
   @_spi(STP) final public func addTelemetryFields(toParams params: inout [Swift.String : Any])
   @_spi(STP) final public func paramsByAddingTelemetryFields(toParams params: [Swift.String : Any]) -> [Swift.String : Any]
-  @_spi(STP) final public func sendTelemetryData(forceSend: Swift.Bool = false, completion: ((Swift.Result<[Swift.String : Any], Swift.Error>) -> Swift.Void)? = nil)
-  @_spi(STP) final public func updateFraudDetectionIfNecessary(completion: @escaping ((Swift.Result<PaymentSDK.FraudDetectionData, Swift.Error>) -> Swift.Void))
+  @_spi(STP) final public func sendTelemetryData(forceSend: Swift.Bool = false, completion: ((Swift.Result<[Swift.String : Any], any Swift.Error>) -> Swift.Void)? = nil)
+  @_spi(STP) final public func updateFraudDetectionIfNecessary(completion: @escaping ((Swift.Result<PaymentSDK.FraudDetectionData, any Swift.Error>) -> Swift.Void))
   @_spi(STP) final public class func shouldSendTelemetry() -> Swift.Bool
   @_spi(STP) public init(sessionConfiguration config: Foundation.URLSessionConfiguration)
   @_spi(STP) @objc deinit
@@ -98,8 +99,8 @@ open class PaymentSDKConfiguration : PaymentSDK.PaymentSDKMerchantConfiguration,
   public init(profileID: Swift.String, serverKey: Swift.String, clientKey: Swift.String, cartID: Swift.String, currency: Swift.String, amount: Swift.Double, cartDescription: Swift.String, languageCode: Swift.String? = nil, merchantCountryCode: Swift.String, tokeniseType: PaymentSDK.TokeniseType = .none, tokenFormat: PaymentSDK.TokenFormat = .hex32, token: Swift.String? = nil, transactionreference: Swift.String? = nil, serverIP: Swift.String? = nil, merchantIdentifier: Swift.String? = nil, paymentNetworks: [PassKit.PKPaymentNetwork]? = nil, forceShippingInfo: Swift.Bool = false, showBillingInfo: Swift.Bool = false, showShippingInfo: Swift.Bool = false, screenTitle: Swift.String? = nil, merchantName: Swift.String? = nil, hideCardScanner: Swift.Bool = false, billingDetails: PaymentSDK.PaymentSDKBillingDetails, shippingDetails: PaymentSDK.PaymentSDKShippingDetails? = nil, theme: PaymentSDK.PaymentSDKTheme? = PaymentSDKTheme.default, linkBillingNameWithCard: Swift.Bool = true, showSaveCardsUI: Swift.Bool = false, requestCVV: Swift.Bool = false, savedCardInfo: PaymentSDK.PaymentSDKSavedCardInfo? = nil, isDigitalProduct: Swift.Bool = false, enableZeroContacts: Swift.Bool = false)
   public init(profileID: Swift.String, serverKey: Swift.String, clientKey: Swift.String, cartID: Swift.String, currency: Swift.String, amount: Swift.Double, merchantName: Swift.String, cartDescription: Swift.String, languageCode: Swift.String? = nil, tokeniseType: PaymentSDK.TokeniseType = .none, tokenFormat: PaymentSDK.TokenFormat = .hex32, token: Swift.String? = nil, transactionreference: Swift.String? = nil, merchantCountryCode: Swift.String, serverIP: Swift.String? = nil, merchantIdentifier: Swift.String, paymentNetworks: [PassKit.PKPaymentNetwork]?, simplifyApplePayValidation: Swift.Bool = false, forceShippingInfo: Swift.Bool = false, billingDetails: PaymentSDK.PaymentSDKBillingDetails? = nil, shippingDetails: PaymentSDK.PaymentSDKShippingDetails? = nil, linkBillingNameWithCard: Swift.Bool = true, showSaveCardsUI: Swift.Bool = false, requestCVV: Swift.Bool = false, savedCardInfo: PaymentSDK.PaymentSDKSavedCardInfo? = nil, isDigitalProduct: Swift.Bool = false, enableZeroContacts: Swift.Bool = false)
   @objc deinit
-  open func encode(to encoder: Swift.Encoder) throws
-  required public init(from decoder: Swift.Decoder) throws
+  open func encode(to encoder: any Swift.Encoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
 }
 extension PaymentSDK.PaymentSDKConfiguration : Foundation.NSCopying {
   @objc dynamic public func copy(with zone: ObjectiveC.NSZone? = nil) -> Any
@@ -158,7 +159,8 @@ extension PaymentSDK.PaymentSDKConfiguration : Foundation.NSCopying {
   }
   @objc deinit
 }
-@_inheritsConvenienceInitializers @objc public class StripeAPI : ObjectiveC.NSObject {
+@_inheritsConvenienceInitializers @available(iOS 13.0, *)
+@objc public class StripeAPI : ObjectiveC.NSObject {
   @objc public static var defaultPublishableKey: Swift.String?
   @objc public func setDefaultPublishableKey(_ publishableKey: Swift.String)
   @objc public static var advancedFraudSignalsEnabled: Swift.Bool
@@ -176,11 +178,13 @@ extension PaymentSDK.PaymentSDKConfiguration : Foundation.NSCopying {
   @objc override dynamic public init()
   @objc deinit
 }
+@available(iOS 13.0, *)
 @frozen public enum CardImageVerificationSheetResult {
   case completed(scannedCard: PaymentSDK.ScannedCard)
   case canceled(reason: PaymentSDK.CancellationReason)
-  case failed(error: Swift.Error)
+  case failed(error: any Swift.Error)
 }
+@available(iOS 13.0, *)
 final public class CardImageVerificationSheet {
   public init(cardImageVerificationIntentId: Swift.String, cardImageVerificationIntentSecret: Swift.String, configuration: PaymentSDK.CardImageVerificationSheet.Configuration = Configuration())
   final public func present(from presentingViewController: UIKit.UIViewController, completion: @escaping (PaymentSDK.CardImageVerificationSheetResult) -> Swift.Void, animated: Swift.Bool = true)
@@ -248,8 +252,8 @@ extension Swift.Array where Element : Swift.Equatable {
   @objc override dynamic public init()
   public init(name: Swift.String?, email: Swift.String?, phone: Swift.String?, addressLine: Swift.String?, city: Swift.String?, state: Swift.String?, countryCode: Swift.String?, zip: Swift.String?)
   @objc deinit
-  public func encode(to encoder: Swift.Encoder) throws
-  required public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
 }
 extension PaymentSDK.PaymentSDKBillingDetails : Foundation.NSCopying {
   @objc dynamic public func copy(with zone: ObjectiveC.NSZone? = nil) -> Any
@@ -321,8 +325,9 @@ extension PaymentSDK.PaymentSDKConfiguration {
   public func linkBillingNameWithCard(_ value: Swift.Bool) -> PaymentSDK.PaymentSDKConfiguration
   public func showSavedCardsUI(_ value: Swift.Bool) -> PaymentSDK.PaymentSDKConfiguration
 }
+@available(iOS 13.0, *)
 extension Foundation.URLSession {
-  @_spi(STP) public func stp_performDataTask(with request: Foundation.URLRequest, completionHandler: @escaping (Foundation.Data?, Foundation.URLResponse?, Swift.Error?) -> Swift.Void, retryCount: Swift.Int = StripeAPI.maxRetries)
+  @_spi(STP) public func stp_performDataTask(with request: Foundation.URLRequest, completionHandler: @escaping (Foundation.Data?, Foundation.URLResponse?, (any Swift.Error)?) -> Swift.Void, retryCount: Swift.Int = StripeAPI.maxRetries)
 }
 public protocol ThemeConfiguration {
   var logoImage: UIKit.UIImage? { get set }
@@ -388,15 +393,15 @@ extension PaymentSDK.PaymentSDKTheme : Foundation.NSCopying {
   @objc final public let responseStatus: Swift.String?, responseCode: Swift.String?, responseMessage: Swift.String?
   @objc final public let transactionTime: Swift.String?, acquirerMessage: Swift.String?, acquirerRRN: Swift.String?
   @objc deinit
-  public func encode(to encoder: Swift.Encoder) throws
-  required public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
 }
 @_hasMissingDesignatedInitializers @objc public class PaymentInfoViewModel : ObjectiveC.NSObject, Swift.Codable {
   @objc public var cardType: Swift.String?, cardScheme: Swift.String?, paymentDescription: Swift.String?, paymentMethod: Swift.String?
   public var expiryMonth: Swift.Int?, expiryYear: Swift.Int?
   @objc deinit
-  public func encode(to encoder: Swift.Encoder) throws
-  required public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
 }
 @_hasMissingDesignatedInitializers @objc open class PaymentSDKTransactionDetails : ObjectiveC.NSObject, Swift.Codable {
   @objc final public let token: Swift.String?, transactionReference: Swift.String?
@@ -418,8 +423,8 @@ extension PaymentSDK.PaymentSDKTheme : Foundation.NSCopying {
   public func isProcessed() -> Swift.Bool
   public func isSuccess() -> Swift.Bool
   @objc deinit
-  open func encode(to encoder: Swift.Encoder) throws
-  required public init(from decoder: Swift.Decoder) throws
+  open func encode(to encoder: any Swift.Encoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
 }
 @_spi(STP) public enum STPTextValidationState : Swift.Int {
   @_spi(STP) case empty
@@ -497,8 +502,8 @@ extension PaymentSDK.CountryPickerViewDelegate {
   @objc public var cardType: Swift.String
   public init(maskedCard: Swift.String, cardType: Swift.String)
   @objc deinit
-  public func encode(to encoder: Swift.Encoder) throws
-  required public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
 }
 @_spi(STP) public enum STPAnalyticEvent : Swift.String {
   @_spi(STP) case tokenCreation
@@ -698,7 +703,8 @@ public enum AlternativePaymentMethod : Swift.String, Swift.CaseIterable {
     get
   }
 }
-@_spi(STP) @_hasMissingDesignatedInitializers public class PaymentsSDKVariant {
+@_spi(STP) @_hasMissingDesignatedInitializers @available(iOS 13.0, *)
+public class PaymentsSDKVariant {
   @_spi(STP) public static let variant: Swift.String
   @_spi(STP) public static var ocrTypeString: Swift.String {
     @_spi(STP) get
@@ -733,12 +739,12 @@ extension Foundation.URLRequest {
     }
   }
   @_spi(STP) public var _allResponseFieldsStorage: PaymentSDK.NonEncodableParameters?
-  @_spi(STP) public init(from decoder: Swift.Decoder) throws
+  @_spi(STP) public init(from decoder: any Swift.Decoder) throws
 }
 @_spi(STP) public struct StripeAPIErrorResponse : PaymentSDK.UnknownFieldsDecodable {
   @_spi(STP) public var error: PaymentSDK.StripeAPIError?
   @_spi(STP) public var _allResponseFieldsStorage: PaymentSDK.NonEncodableParameters?
-  @_spi(STP) public init(from decoder: Swift.Decoder) throws
+  @_spi(STP) public init(from decoder: any Swift.Decoder) throws
 }
 public enum PaymentSDKError : Swift.Error {
   case emptyCreditCardHolderName
@@ -827,9 +833,10 @@ public enum PaymentSDKError : Swift.Error {
   @objc public var transactionReference: Swift.String
   public init(serverKey: Swift.String, clientKey: Swift.String, merchantCountryCode: Swift.String, profileID: Swift.String, transactionReference: Swift.String)
   @objc deinit
-  public func encode(to encoder: Swift.Encoder) throws
-  required public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
 }
+@available(iOS 13.0, *)
 extension PaymentSDK.STPAPIClient {
   @_spi(STP) public typealias FileAndUploadMetrics = (file: PaymentSDK.StripeFile, metrics: PaymentSDK.STPAPIClient.ImageUploadMetrics)
   @_spi(STP) public struct ImageUploadMetrics {
@@ -837,18 +844,20 @@ extension PaymentSDK.STPAPIClient {
     @_spi(STP) public let fileSizeBytes: Swift.Int
   }
   @_spi(STP) public static let defaultImageFileName: Swift.String
-  @_spi(STP) public func uploadImage(_ image: UIKit.UIImage, compressionQuality: CoreFoundation.CGFloat = UIImage.defaultCompressionQuality, purpose: Swift.String, fileName: Swift.String = defaultImageFileName, ownedBy: Swift.String? = nil, ephemeralKeySecret: Swift.String? = nil, completion: @escaping (Swift.Result<PaymentSDK.StripeFile, Swift.Error>) -> Swift.Void)
-  @_spi(STP) public func uploadImageAndGetMetrics(_ image: UIKit.UIImage, compressionQuality: CoreFoundation.CGFloat = UIImage.defaultCompressionQuality, purpose: Swift.String, fileName: Swift.String = defaultImageFileName, ownedBy: Swift.String? = nil, ephemeralKeySecret: Swift.String? = nil, completion: @escaping (Swift.Result<PaymentSDK.STPAPIClient.FileAndUploadMetrics, Swift.Error>) -> Swift.Void)
+  @_spi(STP) public func uploadImage(_ image: UIKit.UIImage, compressionQuality: CoreFoundation.CGFloat = UIImage.defaultCompressionQuality, purpose: Swift.String, fileName: Swift.String = defaultImageFileName, ownedBy: Swift.String? = nil, ephemeralKeySecret: Swift.String? = nil, completion: @escaping (Swift.Result<PaymentSDK.StripeFile, any Swift.Error>) -> Swift.Void)
+  @_spi(STP) public func uploadImageAndGetMetrics(_ image: UIKit.UIImage, compressionQuality: CoreFoundation.CGFloat = UIImage.defaultCompressionQuality, purpose: Swift.String, fileName: Swift.String = defaultImageFileName, ownedBy: Swift.String? = nil, ephemeralKeySecret: Swift.String? = nil, completion: @escaping (Swift.Result<PaymentSDK.STPAPIClient.FileAndUploadMetrics, any Swift.Error>) -> Swift.Void)
   @_spi(STP) public func uploadImage(_ image: UIKit.UIImage, compressionQuality: CoreFoundation.CGFloat = UIImage.defaultCompressionQuality, purpose: Swift.String, fileName: Swift.String = defaultImageFileName, ownedBy: Swift.String? = nil, ephemeralKeySecret: Swift.String? = nil) -> PaymentSDK.Future<PaymentSDK.StripeFile>
   @_spi(STP) public func uploadImageAndGetMetrics(_ image: UIKit.UIImage, compressionQuality: CoreFoundation.CGFloat = UIImage.defaultCompressionQuality, purpose: Swift.String, fileName: Swift.String = defaultImageFileName, ownedBy: Swift.String? = nil, ephemeralKeySecret: Swift.String? = nil) -> PaymentSDK.Future<PaymentSDK.STPAPIClient.FileAndUploadMetrics>
 }
-@_spi(STP) @objc(STP_Internal_DownloadManager) public class DownloadManager : ObjectiveC.NSObject, Foundation.URLSessionDelegate {
+@_spi(STP) @available(iOS 13.0, *)
+@objc(STP_Internal_DownloadManager) public class DownloadManager : ObjectiveC.NSObject, Foundation.URLSessionDelegate {
   @_spi(STP) public typealias UpdateImageHandler = (UIKit.UIImage) -> Swift.Void
   @_spi(STP) public static let sharedManager: PaymentSDK.DownloadManager
   @_spi(STP) public init(urlSessionConfiguration: Foundation.URLSessionConfiguration = .default)
   @_spi(STP) @objc deinit
 }
-@_spi(STP) extension PaymentSDK.DownloadManager {
+@_spi(STP) @available(iOS 13.0, *)
+extension PaymentSDK.DownloadManager {
   @_spi(STP) public func imagePlaceHolder() -> UIKit.UIImage
 }
 extension Foundation.Bundle {
@@ -974,10 +983,10 @@ public struct NonEncodableParameters {
   }
 }
 extension PaymentSDK.NonEncodableParameters : Swift.Decodable {
-  public init(from decoder: Swift.Decoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 extension PaymentSDK.NonEncodableParameters : Swift.Encodable {
-  public func encode(to encoder: Swift.Encoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
 }
 extension PaymentSDK.NonEncodableParameters : Swift.Equatable {
   public static func == (lhs: PaymentSDK.NonEncodableParameters, rhs: PaymentSDK.NonEncodableParameters) -> Swift.Bool
@@ -993,25 +1002,29 @@ extension PaymentSDK.NonEncodableParameters : Swift.CustomStringConvertible, Swi
     get
   }
 }
-@_spi(STP) public protocol STPAnalyticsProtocol {
+@_spi(STP) @available(iOS 13.0, *)
+public protocol STPAnalyticsProtocol {
   @_spi(STP) static var stp_analyticsIdentifier: Swift.String { get }
 }
-@_spi(STP) public protocol STPAnalyticsClientProtocol {
+@_spi(STP) @available(iOS 13.0, *)
+public protocol STPAnalyticsClientProtocol {
   @_spi(STP) func addClass<T>(toProductUsageIfNecessary klass: T.Type) where T : PaymentSDK.STPAnalyticsProtocol
-  @_spi(STP) func log(analytic: PaymentSDK.Analytic, apiClient: PaymentSDK.STPAPIClient)
+  @_spi(STP) func log(analytic: any PaymentSDK.Analytic, apiClient: PaymentSDK.STPAPIClient)
 }
-@_spi(STP) @objc @_inheritsConvenienceInitializers public class STPAnalyticsClient : ObjectiveC.NSObject, PaymentSDK.STPAnalyticsClientProtocol {
+@_spi(STP) @objc @_inheritsConvenienceInitializers @available(iOS 13.0, *)
+public class STPAnalyticsClient : ObjectiveC.NSObject, PaymentSDK.STPAnalyticsClientProtocol {
   @_spi(STP) @objc public static let sharedClient: PaymentSDK.STPAnalyticsClient
   @_spi(STP) @objc public var productUsage: Swift.Set<Swift.String>
   @_spi(STP) @objc public class func tokenType(fromParameters parameters: [Swift.AnyHashable : Any]) -> Swift.String?
   @_spi(STP) public func addClass<T>(toProductUsageIfNecessary klass: T.Type) where T : PaymentSDK.STPAnalyticsProtocol
   @_spi(STP) public func clearAdditionalInfo()
   @_spi(STP) public func additionalInfo() -> [Swift.String]
-  @_spi(STP) public func log(analytic: PaymentSDK.Analytic, apiClient: PaymentSDK.STPAPIClient = .shared)
+  @_spi(STP) public func log(analytic: any PaymentSDK.Analytic, apiClient: PaymentSDK.STPAPIClient = .shared)
   @_spi(STP) @objc override dynamic public init()
   @_spi(STP) @objc deinit
 }
-@_spi(STP) extension PaymentSDK.STPAnalyticsClient {
+@_spi(STP) @available(iOS 13.0, *)
+extension PaymentSDK.STPAnalyticsClient {
   @_spi(STP) public func commonPayload(_ apiClient: PaymentSDK.STPAPIClient) -> [Swift.String : Any]
 }
 @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class NibView : UIKit.UIView {
@@ -1019,11 +1032,13 @@ extension PaymentSDK.NonEncodableParameters : Swift.CustomStringConvertible, Swi
   @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
   @objc deinit
 }
+@available(iOS 13, *)
 @frozen public enum CardScanSheetResult {
   case completed(card: PaymentSDK.ScannedCard)
   case canceled
-  case failed(error: Swift.Error)
+  case failed(error: any Swift.Error)
 }
+@available(iOS 13, *)
 public class CardScanSheet {
   public init()
   public func present(from presentingViewController: UIKit.UIViewController, completion: @escaping (PaymentSDK.CardScanSheetResult) -> Swift.Void, animated: Swift.Bool = true)
@@ -1087,7 +1102,7 @@ extension PaymentSDK.CardScanSheetError : Swift.CustomDebugStringConvertible {
   }
 }
 extension PaymentSDK.PaymentManager {
-  public static func startApplePayPayment(on rootViewController: UIKit.UIViewController, configuration: PaymentSDK.PaymentSDKConfiguration, delegate: PaymentSDK.PaymentManagerDelegate?)
+  public static func startApplePayPayment(on rootViewController: UIKit.UIViewController, configuration: PaymentSDK.PaymentSDKConfiguration, delegate: (any PaymentSDK.PaymentManagerDelegate)?)
 }
 @_spi(STP) public func stpDispatchToMainThreadIfNecessary(_ block: @escaping () -> Swift.Void)
 @_spi(STP) public struct StripeFile : PaymentSDK.UnknownFieldsDecodable, Swift.Equatable {
@@ -1109,7 +1124,7 @@ extension PaymentSDK.PaymentManager {
   @_spi(STP) public let type: Swift.String?
   @_spi(STP) public var _allResponseFieldsStorage: PaymentSDK.NonEncodableParameters?
   @_spi(STP) public static func == (a: PaymentSDK.StripeFile, b: PaymentSDK.StripeFile) -> Swift.Bool
-  @_spi(STP) public init(from decoder: Swift.Decoder) throws
+  @_spi(STP) public init(from decoder: any Swift.Decoder) throws
 }
 @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class CountryPickerViewController : UIKit.UITableViewController {
   @_Concurrency.MainActor(unsafe) public var searchController: UIKit.UISearchController?
@@ -1142,11 +1157,13 @@ extension PaymentSDK.CountryPickerViewController : UIKit.UISearchControllerDeleg
   @_Concurrency.MainActor(unsafe) @objc dynamic public func willPresentSearchController(_ searchController: UIKit.UISearchController)
   @_Concurrency.MainActor(unsafe) @objc dynamic public func willDismissSearchController(_ searchController: UIKit.UISearchController)
 }
-@_spi(STP) @_hasMissingDesignatedInitializers public class UxAnalyzer : PaymentSDK.CreditCardOcrImplementation {
+@_spi(STP) @_hasMissingDesignatedInitializers @available(iOS 13.0, *)
+public class UxAnalyzer : PaymentSDK.CreditCardOcrImplementation {
   @_spi(STP) public static func loadModelFromBundle() -> PaymentSDK.UxModel?
   @_spi(STP) @objc deinit
 }
-@_spi(STP) @_hasMissingDesignatedInitializers public class SSDOcrDetect {
+@_spi(STP) @_hasMissingDesignatedInitializers @available(iOS 13.0, *)
+public class SSDOcrDetect {
   @_spi(STP) public static func loadModelFromBundle() -> PaymentSDK.SSDOcr?
   @_spi(STP) @objc deinit
 }
@@ -1158,7 +1175,7 @@ extension PaymentSDK.CountryPickerViewController : UIKit.UISearchControllerDeleg
   @_spi(STP) final public let clientId: Swift.String
   @_spi(STP) final public let origin: Swift.String
   @_spi(STP) public init(clientId: Swift.String, origin: Swift.String)
-  @_spi(STP) public static func serialize(error: Swift.Error, filePath: Swift.StaticString?, line: Swift.UInt?) -> [Swift.String : Any]
+  @_spi(STP) public static func serialize(error: any Swift.Error, filePath: Swift.StaticString?, line: Swift.UInt?) -> [Swift.String : Any]
   @_spi(STP) public func log(eventName: Swift.String, parameters: [Swift.String : Any])
   @_spi(STP) @objc deinit
 }
@@ -1184,8 +1201,8 @@ extension PaymentSDK.CountryPickerViewController : UIKit.UISearchControllerDeleg
   @_spi(STP) final public var guid: Swift.String?
   @_spi(STP) final public var sid: Swift.String?
   @_spi(STP) @objc deinit
-  @_spi(STP) final public func encode(to encoder: Swift.Encoder) throws
-  @_spi(STP) public init(from decoder: Swift.Decoder) throws
+  @_spi(STP) final public func encode(to encoder: any Swift.Encoder) throws
+  @_spi(STP) public init(from decoder: any Swift.Decoder) throws
 }
 @_spi(STP) extension PaymentSDK.FraudDetectionData : Swift.Equatable {
   @_spi(STP) public static func == (lhs: PaymentSDK.FraudDetectionData, rhs: PaymentSDK.FraudDetectionData) -> Swift.Bool
@@ -1195,6 +1212,7 @@ extension PaymentSDK.CountryPickerViewController : UIKit.UISearchControllerDeleg
 }
 public struct PayModels {
 }
+@available(iOS 13.0, *)
 extension PaymentSDK.CardImageVerificationSheet {
   public struct Configuration {
     public var apiClient: PaymentSDK.STPAPIClient
@@ -1218,7 +1236,7 @@ extension PaymentSDK.CardImageVerificationSheet {
   @_spi(STP) var params: [Swift.String : Any] { get }
 }
 @_spi(STP) public protocol ErrorAnalytic : PaymentSDK.Analytic {
-  @_spi(STP) var error: Swift.Error { get }
+  @_spi(STP) var error: any Swift.Error { get }
 }
 @_spi(STP) public struct GenericAnalytic : PaymentSDK.Analytic {
   @_spi(STP) public let event: PaymentSDK.STPAnalyticEvent
@@ -1227,14 +1245,14 @@ extension PaymentSDK.CardImageVerificationSheet {
 }
 @_spi(STP) public struct EmptyResponse : PaymentSDK.UnknownFieldsDecodable {
   @_spi(STP) public var _allResponseFieldsStorage: PaymentSDK.NonEncodableParameters?
-  @_spi(STP) public init(from decoder: Swift.Decoder) throws
+  @_spi(STP) public init(from decoder: any Swift.Decoder) throws
 }
 @_spi(STP) @_hasMissingDesignatedInitializers @available(macOS 10.13.2, iOS 11.2, tvOS 11.2, watchOS 4.2, *)
 public class UxModel {
   @_spi(STP) @objc deinit
 }
 @_spi(STP) @_hasMissingDesignatedInitializers final public class STPLocalizationUtils {
-  @_spi(STP) final public class func localizedStripeString(forKey key: Swift.String, bundleLocator: PaymentSDK.BundleLocatorProtocol.Type) -> Swift.String
+  @_spi(STP) final public class func localizedStripeString(forKey key: Swift.String, bundleLocator: any PaymentSDK.BundleLocatorProtocol.Type) -> Swift.String
   @_spi(STP) @objc deinit
 }
 @_spi(STP) @inline(__always) public func STPNonLocalizedString(_ string: Swift.String) -> Swift.String
@@ -1288,8 +1306,8 @@ public func != (lhs: PaymentSDK.Country, rhs: PaymentSDK.Country) -> Swift.Bool
     get
     set
   }
-  @_Concurrency.MainActor(unsafe) weak public var dataSource: PaymentSDK.CountryPickerViewDataSource?
-  @_Concurrency.MainActor(unsafe) weak public var delegate: PaymentSDK.CountryPickerViewDelegate?
+  @_Concurrency.MainActor(unsafe) weak public var dataSource: (any PaymentSDK.CountryPickerViewDataSource)?
+  @_Concurrency.MainActor(unsafe) weak public var delegate: (any PaymentSDK.CountryPickerViewDelegate)?
   @_Concurrency.MainActor(unsafe) weak public var hostViewController: UIKit.UIViewController?
   @_Concurrency.MainActor(unsafe) public var selectedCountry: PaymentSDK.Country {
     get
@@ -1309,17 +1327,17 @@ extension PaymentSDK.CountryPickerView {
   @_Concurrency.MainActor(unsafe) public func getCountryByCode(_ code: Swift.String) -> PaymentSDK.Country?
 }
 @objc public protocol PaymentManagerDelegate {
-  @objc func paymentManager(didFinishTransaction transactionDetails: PaymentSDK.PaymentSDKTransactionDetails?, error: Swift.Error?)
-  @objc optional func paymentManager(didRecieveValidation error: Swift.Error?)
-  @objc optional func paymentManager(didCancelPayment error: Swift.Error?)
+  @objc func paymentManager(didFinishTransaction transactionDetails: PaymentSDK.PaymentSDKTransactionDetails?, error: (any Swift.Error)?)
+  @objc optional func paymentManager(didRecieveValidation error: (any Swift.Error)?)
+  @objc optional func paymentManager(didCancelPayment error: (any Swift.Error)?)
   @objc optional func paymentManager(didStartPaymentTransaction rootViewController: UIKit.UIViewController)
 }
 @_inheritsConvenienceInitializers @objc public class PaymentManager : ObjectiveC.NSObject {
-  public static func startCardPayment(on rootViewController: UIKit.UIViewController, configuration: PaymentSDK.PaymentSDKConfiguration, delegate: PaymentSDK.PaymentManagerDelegate?)
-  public static func start3DSecureTokenizedCardPayment(on rootViewController: UIKit.UIViewController, configuration: PaymentSDK.PaymentSDKConfiguration, savedCardInfo: PaymentSDK.PaymentSDKSavedCardInfo, token: Swift.String, delegate: PaymentSDK.PaymentManagerDelegate?)
-  public static func startTokenizedCardPayment(on rootViewController: UIKit.UIViewController, configuration: PaymentSDK.PaymentSDKConfiguration, token: Swift.String, transactionRef: Swift.String, delegate: PaymentSDK.PaymentManagerDelegate?)
-  public static func startPaymentWithSavedCards(on rootViewController: UIKit.UIViewController, configuration: PaymentSDK.PaymentSDKConfiguration, support3DS: Swift.Bool, delegate: PaymentSDK.PaymentManagerDelegate?)
-  public static func queryTransaction(queryConfiguration: PaymentSDK.PaymentSDKQueryConfiguration, completion: @escaping (PaymentSDK.PaymentSDKTransactionDetails?, Swift.Error?) -> Swift.Void)
+  public static func startCardPayment(on rootViewController: UIKit.UIViewController, configuration: PaymentSDK.PaymentSDKConfiguration, delegate: (any PaymentSDK.PaymentManagerDelegate)?)
+  public static func start3DSecureTokenizedCardPayment(on rootViewController: UIKit.UIViewController, configuration: PaymentSDK.PaymentSDKConfiguration, savedCardInfo: PaymentSDK.PaymentSDKSavedCardInfo, token: Swift.String, delegate: (any PaymentSDK.PaymentManagerDelegate)?)
+  public static func startTokenizedCardPayment(on rootViewController: UIKit.UIViewController, configuration: PaymentSDK.PaymentSDKConfiguration, token: Swift.String, transactionRef: Swift.String, delegate: (any PaymentSDK.PaymentManagerDelegate)?)
+  public static func startPaymentWithSavedCards(on rootViewController: UIKit.UIViewController, configuration: PaymentSDK.PaymentSDKConfiguration, support3DS: Swift.Bool, delegate: (any PaymentSDK.PaymentManagerDelegate)?)
+  public static func queryTransaction(queryConfiguration: PaymentSDK.PaymentSDKQueryConfiguration, completion: @escaping (PaymentSDK.PaymentSDKTransactionDetails?, (any Swift.Error)?) -> Swift.Void)
   @objc override dynamic public init()
   @objc deinit
 }
@@ -1330,16 +1348,19 @@ public struct CreditCardValidationType : Swift.Equatable {
   public init(name: Swift.String, regex: Swift.String)
   public init(dict: [Swift.String : Any])
 }
-@_spi(STP) @frozen public enum FinancialConnectionsSDKResult {
-  @_spi(STP) case completed(linkedBank: PaymentSDK.LinkedBank)
+@_spi(STP) @available(iOS 13.0, *)
+@frozen public enum FinancialConnectionsSDKResult {
+  @_spi(STP) case completed(linkedBank: any PaymentSDK.LinkedBank)
   @_spi(STP) case cancelled
-  @_spi(STP) case failed(error: Swift.Error)
+  @_spi(STP) case failed(error: any Swift.Error)
 }
-@_spi(STP) public protocol FinancialConnectionsSDKInterface {
+@_spi(STP) @available(iOS 13.0, *)
+public protocol FinancialConnectionsSDKInterface {
   @_spi(STP) init()
   @_spi(STP) func presentFinancialConnectionsSheet(apiClient: PaymentSDK.STPAPIClient, clientSecret: Swift.String, returnURL: Swift.String?, from presentingViewController: UIKit.UIViewController, completion: @escaping (PaymentSDK.FinancialConnectionsSDKResult) -> Swift.Void)
 }
-@_spi(STP) public protocol LinkedBank {
+@_spi(STP) @available(iOS 13.0, *)
+public protocol LinkedBank {
   @_spi(STP) var sessionId: Swift.String { get }
   @_spi(STP) var accountId: Swift.String { get }
   @_spi(STP) var displayName: Swift.String? { get }
@@ -1355,8 +1376,8 @@ public struct CreditCardValidationType : Swift.Equatable {
   @_spi(STP) @objc public class func shared() -> PaymentSDK.STPURLCallbackHandler
   @_spi(STP) @discardableResult
   @objc public func handleURLCallback(_ url: Foundation.URL) -> Swift.Bool
-  @_spi(STP) @objc(registerListener:forURL:) public func register(_ listener: PaymentSDK.STPURLCallbackListener, for url: Foundation.URL)
-  @_spi(STP) @objc public func unregisterListener(_ listener: PaymentSDK.STPURLCallbackListener)
+  @_spi(STP) @objc(registerListener:forURL:) public func register(_ listener: any PaymentSDK.STPURLCallbackListener, for url: Foundation.URL)
+  @_spi(STP) @objc public func unregisterListener(_ listener: any PaymentSDK.STPURLCallbackListener)
   @_spi(STP) @objc override dynamic public init()
   @_spi(STP) @objc deinit
 }
@@ -1373,7 +1394,8 @@ extension UIKit.UIDevice {
     get
   }
 }
-@_spi(STP) @_hasMissingDesignatedInitializers public class CreditCardOcrImplementation {
+@_spi(STP) @_hasMissingDesignatedInitializers @available(iOS 13.0, *)
+public class CreditCardOcrImplementation {
   @_spi(STP) @objc deinit
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class PaymentSDKShippingDetails : ObjectiveC.NSObject, Swift.Codable {
@@ -1388,24 +1410,24 @@ extension UIKit.UIDevice {
   @objc override dynamic public init()
   public init(name: Swift.String?, email: Swift.String?, phone: Swift.String?, addressLine: Swift.String?, city: Swift.String?, state: Swift.String?, countryCode: Swift.String?, zip: Swift.String?)
   @objc deinit
-  public func encode(to encoder: Swift.Encoder) throws
-  required public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
 }
 extension PaymentSDK.PaymentSDKShippingDetails : Foundation.NSCopying {
   @objc dynamic public func copy(with zone: ObjectiveC.NSZone? = nil) -> Any
 }
 @_spi(STP) @_hasMissingDesignatedInitializers public class Future<Value> {
-  @_spi(STP) public func observe(on queue: Dispatch.DispatchQueue? = nil, using callback: @escaping (Swift.Result<Value, Swift.Error>) -> Swift.Void)
+  @_spi(STP) public func observe(on queue: Dispatch.DispatchQueue? = nil, using callback: @escaping (Swift.Result<Value, any Swift.Error>) -> Swift.Void)
   @_spi(STP) public func chained<T>(on queue: Dispatch.DispatchQueue? = nil, using closure: @escaping (Value) throws -> PaymentSDK.Future<T>) -> PaymentSDK.Future<T>
   @_spi(STP) @objc deinit
 }
 @_spi(STP) @_inheritsConvenienceInitializers public class Promise<Value> : PaymentSDK.Future<Value> {
   @_spi(STP) public init()
   @_spi(STP) convenience public init(value: Value)
-  @_spi(STP) convenience public init(error: Swift.Error)
+  @_spi(STP) convenience public init(error: any Swift.Error)
   @_spi(STP) public func resolve(with value: Value)
-  @_spi(STP) public func reject(with error: Swift.Error)
-  @_spi(STP) public func fullfill(with result: Swift.Result<Value, Swift.Error>)
+  @_spi(STP) public func reject(with error: any Swift.Error)
+  @_spi(STP) public func fullfill(with result: Swift.Result<Value, any Swift.Error>)
   @_spi(STP) public func fulfill(with block: () throws -> Value)
   @_spi(STP) @objc deinit
 }
@@ -1435,7 +1457,8 @@ public class SSDOcr {
   @_spi(STP) @_Concurrency.MainActor(unsafe) public func stp_startAnimatingAndShow()
   @_spi(STP) @_Concurrency.MainActor(unsafe) public func stp_stopAnimatingAndHide()
 }
-@_inheritsConvenienceInitializers @objc public class STPAPIClient : ObjectiveC.NSObject {
+@_inheritsConvenienceInitializers @available(iOS 13.0, *)
+@objc public class STPAPIClient : ObjectiveC.NSObject {
   @objc public static let STPSDKVersion: Swift.String
   @objc(sharedClient) public static let shared: PaymentSDK.STPAPIClient
   @objc public var publishableKey: Swift.String? {
@@ -1464,15 +1487,16 @@ public class SSDOcr {
   }
   @objc deinit
 }
+@available(iOS 13.0, *)
 extension PaymentSDK.STPAPIClient {
-  @_spi(STP) public func get<T>(resource: Swift.String, parameters: [Swift.String : Any], ephemeralKeySecret: Swift.String? = nil, completion: @escaping (Swift.Result<T, Swift.Error>) -> Swift.Void) where T : Swift.Decodable
-  @_spi(STP) public func get<T>(url: Foundation.URL, parameters: [Swift.String : Any], ephemeralKeySecret: Swift.String? = nil, completion: @escaping (Swift.Result<T, Swift.Error>) -> Swift.Void) where T : Swift.Decodable
-  @_spi(STP) public func post<T>(url: Foundation.URL, parameters: [Swift.String : Any], ephemeralKeySecret: Swift.String? = nil, completion: @escaping (Swift.Result<T, Swift.Error>) -> Swift.Void) where T : Swift.Decodable
+  @_spi(STP) public func get<T>(resource: Swift.String, parameters: [Swift.String : Any], ephemeralKeySecret: Swift.String? = nil, completion: @escaping (Swift.Result<T, any Swift.Error>) -> Swift.Void) where T : Swift.Decodable
+  @_spi(STP) public func get<T>(url: Foundation.URL, parameters: [Swift.String : Any], ephemeralKeySecret: Swift.String? = nil, completion: @escaping (Swift.Result<T, any Swift.Error>) -> Swift.Void) where T : Swift.Decodable
+  @_spi(STP) public func post<T>(url: Foundation.URL, parameters: [Swift.String : Any], ephemeralKeySecret: Swift.String? = nil, completion: @escaping (Swift.Result<T, any Swift.Error>) -> Swift.Void) where T : Swift.Decodable
   @_spi(STP) public func post<T>(resource: Swift.String, parameters: [Swift.String : Any], ephemeralKeySecret: Swift.String? = nil) -> PaymentSDK.Promise<T> where T : Swift.Decodable
   @_spi(STP) public func post<I, O>(resource: Swift.String, object: I, ephemeralKeySecret: Swift.String? = nil) -> PaymentSDK.Promise<O> where I : Swift.Encodable, O : Swift.Decodable
-  @_spi(STP) public func post<I, O>(resource: Swift.String, object: I, ephemeralKeySecret: Swift.String? = nil, completion: @escaping (Swift.Result<O, Swift.Error>) -> Swift.Void) where I : Swift.Encodable, O : Swift.Decodable
-  @_spi(STP) public func post<I, O>(url: Foundation.URL, object: I, ephemeralKeySecret: Swift.String? = nil, completion: @escaping (Swift.Result<O, Swift.Error>) -> Swift.Void) where I : Swift.Encodable, O : Swift.Decodable
-  @_spi(STP) public static func decodeResponse<T>(data: Foundation.Data?, error: Swift.Error?, response: Foundation.URLResponse?) -> Swift.Result<T, Swift.Error> where T : Swift.Decodable
+  @_spi(STP) public func post<I, O>(resource: Swift.String, object: I, ephemeralKeySecret: Swift.String? = nil, completion: @escaping (Swift.Result<O, any Swift.Error>) -> Swift.Void) where I : Swift.Encodable, O : Swift.Decodable
+  @_spi(STP) public func post<I, O>(url: Foundation.URL, object: I, ephemeralKeySecret: Swift.String? = nil, completion: @escaping (Swift.Result<O, any Swift.Error>) -> Swift.Void) where I : Swift.Encodable, O : Swift.Decodable
+  @_spi(STP) public static func decodeResponse<T>(data: Foundation.Data?, error: (any Swift.Error)?, response: Foundation.URLResponse?) -> Swift.Result<T, any Swift.Error> where T : Swift.Decodable
 }
 @_spi(STP) public typealias ImageDataAndSize = (imageData: Foundation.Data, imageSize: CoreFoundation.CGSize)
 extension UIKit.UIImage {
@@ -1517,17 +1541,17 @@ public enum CancellationReason : Swift.String, Swift.Equatable {
   @_spi(STP) public static func computeResourcesBundle() -> Foundation.Bundle
 }
 extension PaymentSDK.PaymentManager {
-  public static func startAlternativePaymentMethod(on rootViewController: UIKit.UIViewController, configuration: PaymentSDK.PaymentSDKConfiguration, delegate: PaymentSDK.PaymentManagerDelegate?)
+  public static func startAlternativePaymentMethod(on rootViewController: UIKit.UIViewController, configuration: PaymentSDK.PaymentSDKConfiguration, delegate: (any PaymentSDK.PaymentManagerDelegate)?)
 }
 @_spi(STP) public struct StripeAPIConfiguration {
   @_spi(STP) public static let sharedUrlSessionConfiguration: Foundation.URLSessionConfiguration
 }
-extension PaymentSDK.STPTextValidationState : Swift.Equatable {}
-extension PaymentSDK.STPTextValidationState : Swift.Hashable {}
-extension PaymentSDK.STPTextValidationState : Swift.RawRepresentable {}
-extension PaymentSDK.STPAnalyticEvent : Swift.Equatable {}
-extension PaymentSDK.STPAnalyticEvent : Swift.Hashable {}
-extension PaymentSDK.STPAnalyticEvent : Swift.RawRepresentable {}
+@_spi(STP) extension PaymentSDK.STPTextValidationState : Swift.Equatable {}
+@_spi(STP) extension PaymentSDK.STPTextValidationState : Swift.Hashable {}
+@_spi(STP) extension PaymentSDK.STPTextValidationState : Swift.RawRepresentable {}
+@_spi(STP) extension PaymentSDK.STPAnalyticEvent : Swift.Equatable {}
+@_spi(STP) extension PaymentSDK.STPAnalyticEvent : Swift.Hashable {}
+@_spi(STP) extension PaymentSDK.STPAnalyticEvent : Swift.RawRepresentable {}
 extension PaymentSDK.TransactionType : Swift.Equatable {}
 extension PaymentSDK.TransactionType : Swift.Hashable {}
 extension PaymentSDK.TransactionType : Swift.RawRepresentable {}
@@ -1543,24 +1567,26 @@ extension PaymentSDK.TokeniseType : Swift.RawRepresentable {}
 extension PaymentSDK.AlternativePaymentMethod : Swift.Equatable {}
 extension PaymentSDK.AlternativePaymentMethod : Swift.Hashable {}
 extension PaymentSDK.AlternativePaymentMethod : Swift.RawRepresentable {}
-extension PaymentSDK.StripeAPIError.ErrorType : Swift.Equatable {}
-extension PaymentSDK.StripeAPIError.ErrorType : Swift.Hashable {}
-extension PaymentSDK.StripeAPIError.ErrorType : Swift.RawRepresentable {}
+@_spi(STP) extension PaymentSDK.StripeAPIError.ErrorType : Swift.Equatable {}
+@_spi(STP) extension PaymentSDK.StripeAPIError.ErrorType : Swift.Hashable {}
+@_spi(STP) extension PaymentSDK.StripeAPIError.ErrorType : Swift.RawRepresentable {}
 extension PaymentSDK.PaymentSDKError : Swift.Equatable {}
 extension PaymentSDK.PaymentSDKError : Swift.Hashable {}
-extension PaymentSDK.StripeFile.Purpose : Swift.Hashable {}
-extension PaymentSDK.StripeFile.Purpose : Swift.RawRepresentable {}
-extension PaymentSDK.StripeFile.Purpose : Swift.Sendable {}
+@_spi(STP) extension PaymentSDK.StripeFile.Purpose : Swift.Hashable {}
+@_spi(STP) extension PaymentSDK.StripeFile.Purpose : Swift.RawRepresentable {}
+@_spi(STP) extension PaymentSDK.StripeFile.Purpose : Swift.Sendable {}
 extension PaymentSDK.STPErrorCode : Swift.Equatable {}
 extension PaymentSDK.STPErrorCode : Swift.Hashable {}
 extension PaymentSDK.STPErrorCode : Swift.RawRepresentable {}
 extension PaymentSDK.STPCardErrorCode : Swift.Equatable {}
 extension PaymentSDK.STPCardErrorCode : Swift.Hashable {}
 extension PaymentSDK.STPCardErrorCode : Swift.RawRepresentable {}
-extension PaymentSDK.UnknownFieldsCodableFloats : Swift.Equatable {}
-extension PaymentSDK.UnknownFieldsCodableFloats : Swift.Hashable {}
-extension PaymentSDK.UnknownFieldsCodableFloats : Swift.RawRepresentable {}
+@_spi(STP) extension PaymentSDK.UnknownFieldsCodableFloats : Swift.Equatable {}
+@_spi(STP) extension PaymentSDK.UnknownFieldsCodableFloats : Swift.Hashable {}
+@_spi(STP) extension PaymentSDK.UnknownFieldsCodableFloats : Swift.RawRepresentable {}
+@_spi(STP) @available(iOS 13.0, *)
 extension PaymentSDK.CardImageVerificationSheet.StrictModeFrameCount : Swift.Hashable {}
+@_spi(STP) @available(iOS 13.0, *)
 extension PaymentSDK.CardImageVerificationSheet.StrictModeFrameCount : Swift.RawRepresentable {}
 extension PaymentSDK.SearchBarPosition : Swift.Equatable {}
 extension PaymentSDK.SearchBarPosition : Swift.Hashable {}

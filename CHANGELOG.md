@@ -102,4 +102,7 @@
 
 ## 6.5.0 2023-08-24
 * Enahnced camera scanner
-* upgraded minimum deployment target to iOS 13.0 
+* Upgraded minimum deployment target to iOS 13.0 
+
+## 6.5.1 2023-08-27
+* Downgrade minimum deployment target to iOS 11.0

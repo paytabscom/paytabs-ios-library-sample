@@ -4,14 +4,14 @@
 [![Platform](https://img.shields.io/cocoapods/p/PayTabsSDK.svg?style=flat)](https://github.com/paytabscom/paytabs-ios-library-sample/tree/master)
 
 # PayTabs SDK
-**PayTabs SDk** makes the intergation with PayTabs payment gateway very easy by providing ready made payment screen that handles the card entry and billing & shipping info and complete the missing details. 
+**PayTabs SDk** makes the intergation with the PayTabs payment gateway very easy by providing ready-made payment screen that handles the card entry and billing & shipping info and completes the missing details. 
 
 ## Features
 
-* The SDk offers a ready-made card payment screen.
+* The SDK offers a ready-made card payment screen.
 * **Card Scanner** for quick & easy entry of card details (iOS 13.0+). 
 * Handle the missing required billing and shipping details.
-* Logo, colors, and fonts become easy to be customized.
+* Logo, colors, and fonts become easy to customize.
 * **Apple Pay** supported.
 * The SDK size became very light because we removed all the third-party dependencies.
 * Supporting dark mode.
@@ -21,8 +21,8 @@
 
 
 ## Requirements
-* iOS 10.0+, Swift 5.0+
-* Xcode 10.0+
+* iOS 11.0+, Swift 5.0+
+* Xcode 11.0+
 * Create a [PayTabs](www.paytabs.com) merchant account relative to your country.
 
 ## Installation
@@ -31,17 +31,17 @@
 [CocoaPods](https://cocoapods.org) is a dependency manager for Cocoa projects. For usage and installation instructions, visit their website. To integrate **PayTabs SDK** into your Xcode project using CocoaPods, specify it in your `Podfile`:
 
 ```ruby
-pod 'PayTabsSDK', '~> 6.5.0'
+pod 'PayTabsSDK', '~> 6.5.1'
 ```
 ### Carthage
 [Carthage](https://github.com/Carthage/Carthage) is a decentralized dependency manager that builds your dependencies and provides you with binary frameworks. To integrate **PayTabs SDK** into your Xcode project using Carthage, specify it in your `Cartfile`:
 
 ```ogdl
-github "paytabscom/paytabs-ios-library-sample" ~> 6.5.0
+github "paytabscom/paytabs-ios-library-sample" ~> 6.5.1
 ```
 
 ### Swift Package Manager 
-The Swift Package Manager is a tool for automating the distribution of Swift code and is integrated into the swift compiler.
+The Swift Package Manager is a tool for automating the distribution of Swift code and is integrated into the Swift compiler.
 
 Once you have your Swift package set up, adding PayTabsSDK as a dependency is as easy as adding it to the dependencies value of your Package.swift.
 
