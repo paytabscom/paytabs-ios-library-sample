@@ -106,3 +106,6 @@
 
 ## 6.5.1 2023-08-27
 * Downgrade minimum deployment target to iOS 11.0
+
+## 6.5.2 2023-08-29
+* Minor Fix
