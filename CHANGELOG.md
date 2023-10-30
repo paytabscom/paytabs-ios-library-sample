@@ -115,3 +115,9 @@
 
 ## 6.6.0 2023-09-24
 * Bug Fix
+
+## 6.6.1 2023-10-21
+* Cancel payment feature 
+
+## 6.6.2 2023-10-30
+* Minor Fix 

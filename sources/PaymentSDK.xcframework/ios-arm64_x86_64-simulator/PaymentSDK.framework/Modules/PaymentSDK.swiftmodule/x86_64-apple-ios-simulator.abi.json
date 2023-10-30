@@ -29748,6 +29748,13 @@
         ]
       },
       {
+        "kind": "Import",
+        "name": "PassKit",
+        "printedName": "PassKit",
+        "declKind": "Import",
+        "moduleName": "PaymentSDK"
+      },
+      {
         "kind": "TypeDecl",
         "name": "PaymentManagerDelegate",
         "printedName": "PaymentManagerDelegate",
@@ -29981,6 +29988,60 @@
               "Final",
               "AccessControl",
               "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "startPaymentWithApplePayToken",
+            "printedName": "startPaymentWithApplePayToken(on:configuration:applePayPayment:delegate:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIViewController",
+                "printedName": "UIKit.UIViewController",
+                "usr": "c:objc(cs)UIViewController"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "PaymentSDKConfiguration",
+                "printedName": "PaymentSDK.PaymentSDKConfiguration",
+                "usr": "s:10PaymentSDK0A16SDKConfigurationC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "PKPayment",
+                "printedName": "PassKit.PKPayment",
+                "usr": "c:objc(cs)PKPayment"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "PaymentSDK.PaymentManagerDelegate?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PaymentManagerDelegate",
+                    "printedName": "PaymentSDK.PaymentManagerDelegate",
+                    "usr": "c:@M@PaymentSDK@objc(pl)PaymentManagerDelegate"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10PaymentSDK0A7ManagerC05startA17WithApplePayToken2on13configuration05applegA08delegateySo16UIViewControllerC_AA0A16SDKConfigurationCSo9PKPaymentCAA0aC8Delegate_pSgtFZ",
+            "mangledName": "$s10PaymentSDK0A7ManagerC05startA17WithApplePayToken2on13configuration05applegA08delegateySo16UIViewControllerC_AA0A16SDKConfigurationCSo9PKPaymentCAA0aC8Delegate_pSgtFZ",
+            "moduleName": "PaymentSDK",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -42296,42 +42357,42 @@
     {
       "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PublicLayer\/PaymentManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 14900,
+      "offset": 16868,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PublicLayer\/PaymentManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 14986,
+      "offset": 16954,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PublicLayer\/PaymentManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 15058,
+      "offset": 17026,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PublicLayer\/PaymentManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 16527,
+      "offset": 18495,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PublicLayer\/PaymentManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 16607,
+      "offset": 18575,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PublicLayer\/PaymentManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 18532,
+      "offset": 20500,
       "length": 5,
       "value": "false"
     },
