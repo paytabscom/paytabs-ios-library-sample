@@ -118,6 +118,22 @@ let configuration = PaymentSDKConfiguration(profileID: profileID,
 	    .isDigitalProduct(true)
 ```
 
+
+Options to set expiry timeout for the card payment screen
+
+```
+configuration.expiryTime =120
+```
+
+You have the option to close the payment screen if there are no ongoing transactions.
+```swift
+ PaymentManager.cancelPayment { didCancel in
+                if didCancel {
+			//do something
+            }
+```
+
+
 3. You are now ready to start payment and handle `PaymentManagerDelegate`
 	* For normal card payment use: 
 	
