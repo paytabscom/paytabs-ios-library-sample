@@ -698,6 +698,7 @@ extension PaymentSDK.CountryPickerView {
   public static func startPaymentWithSavedCards(on rootViewController: UIKit.UIViewController, configuration: PaymentSDK.PaymentSDKConfiguration, support3DS: Swift.Bool, delegate: PaymentSDK.PaymentManagerDelegate?)
   public static func queryTransaction(queryConfiguration: PaymentSDK.PaymentSDKQueryConfiguration, completion: @escaping (PaymentSDK.PaymentSDKTransactionDetails?, Swift.Error?) -> Swift.Void)
   public static func cancelPayment(completion: @escaping (Swift.Bool?) -> Swift.Void)
+  public static func clearSavedCards()
   @objc override dynamic public init()
   @objc deinit
 }
