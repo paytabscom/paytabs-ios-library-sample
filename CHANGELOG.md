@@ -130,3 +130,6 @@
 
 ## 6.6.5 2023-12-3
 * Clear saved cards feature
+
+## 6.6.6 2023-12-16
+* Minor Fix 
