@@ -37,7 +37,7 @@ pod 'PayTabsSDK', '~> 6.6.6'
 [Carthage](https://github.com/Carthage/Carthage) is a decentralized dependency manager that builds your dependencies and provides you with binary frameworks. To integrate **PayTabs SDK** into your Xcode project using Carthage, specify it in your `Cartfile`:
 
 ```ogdl
-github "paytabscom/paytabs-ios-library-sample" ~> 6.6.5
+github "paytabscom/paytabs-ios-library-sample" ~> 6.6.6
 ```
 
 ### Swift Package Manager 
@@ -47,7 +47,7 @@ Once you have your Swift package set up, adding PayTabsSDK as a dependency is as
 
 ```ruby
 dependencies: [
-    .package(url: "https://github.com/paytabscom/paytabs-ios-library-sample.git", .upToNextMajor(from: "6.1.20"))
+    .package(url: "https://github.com/paytabscom/paytabs-ios-library-sample.git", .upToNextMajor(from: "6.6.6"))
 ]
 ```
 
