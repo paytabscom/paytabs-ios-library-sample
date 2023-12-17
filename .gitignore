@@ -1,4 +1,5 @@
 **/.DS_Store
 sample/Pods/*
 sample/Pods
+sample-swiftui/Pods
 xcschememanagement.plist
