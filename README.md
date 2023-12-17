@@ -412,7 +412,7 @@ configuration.transactionType = .sale
 
 ## Demo application
 
-Check our complete [example][example].
+Check our complete examples [For UIKit][example], [For SwiftUI][swiftui].
 
 <img src="https://user-images.githubusercontent.com/13621658/109432386-905e5280-7a13-11eb-847c-63f2c554e2d1.png" width="370">
 
@@ -429,6 +429,7 @@ See [LICENSE][license].
  [3]: https://www.paytabs.com/en/privacy-policy/
  [license]: https://github.com/paytabscom/paytabs-ios-library-sample/blob/master/LICENSE
  [example]: https://github.com/paytabscom/paytabs-ios-library-sample/tree/master/sample
+ [swiftui]: https://github.com/paytabscom/paytabs-ios-library-sample/tree/master/sample-swiftui
  [englishstrings]: https://github.com/paytabscom/paytabs-ios-library-sample/tree/master/en.strings
  [arabicstrings]: https://github.com/paytabscom/paytabs-ios-library-sample/tree/master/ar.strings
  [applepayguide]: https://github.com/paytabscom/paytabs-ios-library-sample/blob/master/ApplePayConfiguration.md
