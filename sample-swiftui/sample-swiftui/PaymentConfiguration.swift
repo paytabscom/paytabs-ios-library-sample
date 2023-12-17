@@ -7,6 +7,7 @@
 
 import Foundation
 import PaymentSDK
+import UIKit
 
 class PaymentConfiguration {
     static let profileID = "profile id"
