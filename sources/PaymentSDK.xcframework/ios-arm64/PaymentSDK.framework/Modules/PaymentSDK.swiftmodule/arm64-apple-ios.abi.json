@@ -20803,6 +20803,43 @@
             "moduleName": "PaymentSDK"
           },
           {
+            "kind": "Var",
+            "name": "Tabby",
+            "printedName": "Tabby",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PaymentSDK.AlternativePaymentMethod.Type) -> PaymentSDK.AlternativePaymentMethod",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AlternativePaymentMethod",
+                    "printedName": "PaymentSDK.AlternativePaymentMethod",
+                    "usr": "s:10PaymentSDK011AlternativeA6MethodO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "PaymentSDK.AlternativePaymentMethod.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AlternativePaymentMethod",
+                        "printedName": "PaymentSDK.AlternativePaymentMethod",
+                        "usr": "s:10PaymentSDK011AlternativeA6MethodO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:10PaymentSDK011AlternativeA6MethodO5TabbyyA2CmF",
+            "mangledName": "$s10PaymentSDK011AlternativeA6MethodO5TabbyyA2CmF",
+            "moduleName": "PaymentSDK"
+          },
+          {
             "kind": "Function",
             "name": "getType",
             "printedName": "getType(type:)",
@@ -39362,6 +39399,13 @@
     {
       "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PublicLayer\/PaymentSDKConfiguration+Enums.swift",
       "kind": "StringLiteral",
+      "offset": 1755,
+      "length": 7,
+      "value": "\"tabby\""
+    },
+    {
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PublicLayer\/PaymentSDKConfiguration+Enums.swift",
+      "kind": "StringLiteral",
       "offset": 1454,
       "length": 10,
       "value": "\"unionpay\""
@@ -39414,6 +39458,13 @@
       "offset": 1727,
       "length": 10,
       "value": "\"souhoola\""
+    },
+    {
+      "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/PublicLayer\/PaymentSDKConfiguration+Enums.swift",
+      "kind": "StringLiteral",
+      "offset": 1755,
+      "length": 7,
+      "value": "\"tabby\""
     },
     {
       "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/StrCardScanner\/CardVerify\/CardBase.swift",
@@ -43821,91 +43872,91 @@
     {
       "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/ThirdParty Sources\/CreditCardValidator\/CreditCardValidator.swift",
       "kind": "StringLiteral",
-      "offset": 3571,
+      "offset": 3324,
       "length": 6,
       "value": "\"Mada\""
     },
     {
       "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/ThirdParty Sources\/CreditCardValidator\/CreditCardValidator.swift",
       "kind": "StringLiteral",
-      "offset": 3594,
+      "offset": 3347,
       "length": 656,
       "value": "\"^(588845|440647|440795|446404|457865|968208|457997|474491|636120|417633|468540|468541|468542|468543|968201|446393|409201|458456|484783|968205|462220|455708|410621|588848|455036|968203|486094|486095|486096|504300|440533|489318|489319|445564|968211|410685|406996|432328|428671|428672|428673|968206|446672|543357|434107|407197|407395|412565|431361|604906|521076|588850|968202|529415|535825|543085|524130|554180|549760|968209|524514|529741|537767|535989|536023|513213|520058|558563|585265|588983|588982|589005|508160|531095|530906|532013|605141|968204|422817|422818|422819|428331|483010|483011|483012|589206|968207|419593|439954|530060|531196|420132)\\d{0,}$\""
     },
     {
       "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/ThirdParty Sources\/CreditCardValidator\/CreditCardValidator.swift",
       "kind": "Dictionary",
-      "offset": 4916,
+      "offset": 4669,
       "length": 79,
       "value": "[(\"name\", \"Amex\"), (\"regex\", \"^3[47][0-9]{5,}$\")]"
     },
     {
       "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/ThirdParty Sources\/CreditCardValidator\/CreditCardValidator.swift",
       "kind": "Dictionary",
-      "offset": 4997,
+      "offset": 4750,
       "length": 73,
       "value": "[(\"name\", \"Visa\"), (\"regex\", \"^4\\d{0,}$\")]"
     },
     {
       "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/ThirdParty Sources\/CreditCardValidator\/CreditCardValidator.swift",
       "kind": "Dictionary",
-      "offset": 5072,
+      "offset": 4825,
       "length": 86,
       "value": "[(\"name\", \"MasterCard\"), (\"regex\", \"^5[1-5]\\d{0,14}$\")]"
     },
     {
       "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/ThirdParty Sources\/CreditCardValidator\/CreditCardValidator.swift",
       "kind": "StringLiteral",
-      "offset": 5162,
+      "offset": 4915,
       "length": 6,
       "value": "\"name\""
     },
     {
       "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/ThirdParty Sources\/CreditCardValidator\/CreditCardValidator.swift",
       "kind": "StringLiteral",
-      "offset": 5194,
+      "offset": 4947,
       "length": 7,
       "value": "\"regex\""
     },
     {
       "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/ThirdParty Sources\/CreditCardValidator\/CreditCardValidator.swift",
       "kind": "Dictionary",
-      "offset": 5225,
+      "offset": 4978,
       "length": 113,
       "value": "[(\"name\", \"Maestro\"), (\"regex\", \"^(?:5[0678]\\d\\d|6304|6390|67\\d\\d)\\d{8,15}$\")]"
     },
     {
       "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/ThirdParty Sources\/CreditCardValidator\/CreditCardValidator.swift",
       "kind": "Dictionary",
-      "offset": 5340,
+      "offset": 5093,
       "length": 102,
       "value": "[(\"name\", \"Diners Club\"), (\"regex\", \"^3(?:0[0-5]|[68][0-9])[0-9]{4,}$\")]"
     },
     {
       "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/ThirdParty Sources\/CreditCardValidator\/CreditCardValidator.swift",
       "kind": "Dictionary",
-      "offset": 5444,
+      "offset": 5197,
       "length": 97,
       "value": "[(\"name\", \"JCB\"), (\"regex\", \"^(?:2131|1800|35[0-9]{3})[0-9]{3,}$\")]"
     },
     {
       "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/ThirdParty Sources\/CreditCardValidator\/CreditCardValidator.swift",
       "kind": "Dictionary",
-      "offset": 5543,
+      "offset": 5296,
       "length": 96,
       "value": "[(\"name\", \"Discover\"), (\"regex\", \"^6(?:011|5[0-9]{2})[0-9]{3,}$\")]"
     },
     {
       "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/ThirdParty Sources\/CreditCardValidator\/CreditCardValidator.swift",
       "kind": "Dictionary",
-      "offset": 5641,
+      "offset": 5394,
       "length": 86,
       "value": "[(\"name\", \"UnionPay\"), (\"regex\", \"^62[0-5]\\d{13,16}$\")]"
     },
     {
       "filePath": "\/Users\/amrmagdy\/Desktop\/Dev\/iOSSDK\/PayTabs\/ThirdParty Sources\/CreditCardValidator\/CreditCardValidator.swift",
       "kind": "Dictionary",
-      "offset": 5729,
+      "offset": 5482,
       "length": 77,
       "value": "[(\"name\", \"Mir\"), (\"regex\", \"^22[0-9]{1,14}$\")]"
     },

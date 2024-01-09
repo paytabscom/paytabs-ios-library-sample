@@ -426,6 +426,7 @@ public enum AlternativePaymentMethod : Swift.String, Swift.CaseIterable {
   case URPay
   case applePay
   case souhoola
+  case Tabby
   public static func getType(type: Swift.String) -> PaymentSDK.AlternativePaymentMethod?
   public init?(rawValue: Swift.String)
   public typealias AllCases = [PaymentSDK.AlternativePaymentMethod]

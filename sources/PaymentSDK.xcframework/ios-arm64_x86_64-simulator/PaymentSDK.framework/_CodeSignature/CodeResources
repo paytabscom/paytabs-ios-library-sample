@@ -10,7 +10,7 @@
 		</data>
 		<key>Assets.car</key>
 		<data>
-		lGeXG3Oep9Fq4yQAwu47OyGckTo=
+		jNuVvqCbKgmnrfBBqiHb0nSo2gc=
 		</data>
 		<key>CameraScanning.wav</key>
 		<data>
@@ -1086,11 +1086,11 @@
 		</data>
 		<key>Modules/PaymentSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		0emb990QE6Uc9vOCHt3g2tGKh6Q=
+		TJYqyZUvsbfXsbtD+qgxPA3i4k4=
 		</data>
 		<key>Modules/PaymentSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		UEyp0Ejdnxct8grJ/E4r3vZWdo8=
+		n2IzgVGLci3MQL8H65rPT0tCxdw=
 		</data>
 		<key>Modules/PaymentSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -1098,19 +1098,19 @@
 		</data>
 		<key>Modules/PaymentSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		FKrNkfEphW2LFakBdbUDPOxDbEI=
+		PVo35iy3ZfNIMxSJs3T7rWFEzlQ=
 		</data>
 		<key>Modules/PaymentSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		BYSaIlHGS10eIicu3HK7F5Cndsg=
+		z/r0+PHObChFLLupAqN89W58IYU=
 		</data>
 		<key>Modules/PaymentSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		0emb990QE6Uc9vOCHt3g2tGKh6Q=
+		TJYqyZUvsbfXsbtD+qgxPA3i4k4=
 		</data>
 		<key>Modules/PaymentSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		ArmYvFCgXLPQ7iUx2B8suAsMqx4=
+		YGMQo3so0I3ke5HNNo0q1vUE/vQ=
 		</data>
 		<key>Modules/PaymentSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -1118,11 +1118,11 @@
 		</data>
 		<key>Modules/PaymentSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		AfmZAuZ5ddIahYMBkdDZYao64ME=
+		f0WFFpBU4Q/zzgvR1quLRqmA6S8=
 		</data>
 		<key>Modules/PaymentSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		8xoBkNyhD0QNTUkwXX/L0xOAG4U=
+		wmWbg+hgnYbn3tNBDm0RFmr+NhQ=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -1256,7 +1256,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			DEuFhBEvVRMyBSwbUZkAV8N5rstgUOQcsjyllVe9NTE=
+			EZQOPyxUFtwz71qW9vlk49hSi2fCunrhqbWCN5qhHCY=
 			</data>
 		</dict>
 		<key>CameraScanning.wav</key>
@@ -3132,14 +3132,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			de6OO/W2N/yvZO++LvJwhdHNa9ReX+qIlrnAeGQq6gg=
+			b3ehC2Fps1l/2wi4pDp5c0a8F5ywvgTQn6UszP9gEsg=
 			</data>
 		</dict>
 		<key>Modules/PaymentSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			1/ZwlUAVDKQ+Yoks7wEWOueGPnaEDQZw5hCZ6kSrVlA=
+			mBfp/mC+uNsoRgc/4ZwqXBuzI8JVksmX9yLEZtYqhC8=
 			</data>
 		</dict>
 		<key>Modules/PaymentSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -3153,28 +3153,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			HepalX8HHA5/dMLAbNlkm8TFzFOGneA7d4I4Eaua7b4=
+			Wux01glehiNzYPH4G6Qv/M12QSupcBw9M7P7Nc0tTEs=
 			</data>
 		</dict>
 		<key>Modules/PaymentSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			21byEQ6k1rqs0wS2bEYqMGSTAT1s6e5dXLq0TBedGWY=
+			O+YVR+ae+6PwrL9IxFlKxr/uN5nCI0J/mRXYGOZ6Fgs=
 			</data>
 		</dict>
 		<key>Modules/PaymentSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			de6OO/W2N/yvZO++LvJwhdHNa9ReX+qIlrnAeGQq6gg=
+			b3ehC2Fps1l/2wi4pDp5c0a8F5ywvgTQn6UszP9gEsg=
 			</data>
 		</dict>
 		<key>Modules/PaymentSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			XyI3Yaa3megGSWW+E1d+fI330b8eutn2LUO8cyqnYUM=
+			Oye8n+8UmmmyHJfvEPsAeSJDulLCb+SrYIIR30gGbA0=
 			</data>
 		</dict>
 		<key>Modules/PaymentSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -3188,14 +3188,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			oXoswpJhXhqEcO69DSX+Oy8SA8ywYrBLrsic/TL+kt0=
+			1T4aOvtZnJaV0+LQd033faT8hcsPvkUdQwuC6U1jJ1g=
 			</data>
 		</dict>
 		<key>Modules/PaymentSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			61qLMBr9r4EtPM7v3U7YLlcXt3J22gHLa+x7h5KhZo8=
+			XGLMGvCjTLr8qGhjx7+nS6goinm7JrOWdATdGU6rFug=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

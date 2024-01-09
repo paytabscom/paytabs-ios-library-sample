@@ -136,3 +136,6 @@
 
 ## 6.6.7 2023-12-26
 * Minor Fix 
+
+## 6.6.8 2023-01-09
+* Added Tabby as alternative payment method
