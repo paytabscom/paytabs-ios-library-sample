@@ -139,3 +139,6 @@
 
 ## 6.6.8 2023-01-09
 * Added Tabby as alternative payment method
+
+## 6.6.9 2023-01-10
+* Disabled screen capturing 
