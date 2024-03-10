@@ -142,3 +142,6 @@
 
 ## 6.6.9 2023-01-10
 * Disabled screen capturing 
+
+## 6.6.10 2024-03-10
+* Added Discounts Feature
