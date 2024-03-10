@@ -125,6 +125,21 @@ Options to set expiry timeout for the card payment screen
 configuration.expiryTime =120
 ```
 
+Options to add discounts on card payment
+
+```
+  let cardDiscounts: [PaymentSDKCardDiscount] = [
+            PaymentSDKCardDiscount(discountCards: ["4001"], dicsountValue: 90.0, discountTitle: "● 90% discount - 40001, 90% discount - 40001, 90% discount - 40001", isPercentage: true),
+            PaymentSDKCardDiscount(discountCards: ["4000", "4111", "400012"], dicsountValue: 1.0, discountTitle: "● 1% discount - 4000,4111,400012", isPercentage: true),
+            PaymentSDKCardDiscount(discountCards: ["5498", "5200"], dicsountValue: 2.0, discountTitle: "● 2% discount - 5498,5299 (977)", isPercentage: true),
+            PaymentSDKCardDiscount(discountCards: ["4012"], dicsountValue: 5.0, discountTitle: "● 5 discount - 4012 (530)", isPercentage: false)
+        ]
+configuration.cardDiscounts = cardDiscounts
+```
+Each instance of PaymentSDKCardDiscount is initialized with parameters corresponding to the accepted card types (discountCards), the value of the discount (discountValue), the title of the discount (discountTitle), and whether the discount is a percentage (isPercentage).
+
+
+
 You have the option to close the payment screen if there are no ongoing transactions.
 ```swift
  PaymentManager.cancelPayment { didCancel in
