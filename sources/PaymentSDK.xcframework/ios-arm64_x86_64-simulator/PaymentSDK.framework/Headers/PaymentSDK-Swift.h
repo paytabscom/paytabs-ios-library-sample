@@ -445,7 +445,7 @@ SWIFT_CLASS("_TtC10PaymentSDK24PaymentSDKBillingDetails")
 SWIFT_CLASS("_TtC10PaymentSDK22PaymentSDKCardDiscount")
 @interface PaymentSDKCardDiscount : NSObject
 @property (nonatomic, copy) NSArray<NSString *> * _Nonnull discountCards;
-@property (nonatomic) double dicsountValue;
+@property (nonatomic) double discountValue;
 @property (nonatomic, copy) NSString * _Nonnull discountTitle;
 @property (nonatomic) BOOL isPercentage;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
@@ -996,7 +996,7 @@ SWIFT_CLASS("_TtC10PaymentSDK24PaymentSDKBillingDetails")
 SWIFT_CLASS("_TtC10PaymentSDK22PaymentSDKCardDiscount")
 @interface PaymentSDKCardDiscount : NSObject
 @property (nonatomic, copy) NSArray<NSString *> * _Nonnull discountCards;
-@property (nonatomic) double dicsountValue;
+@property (nonatomic) double discountValue;
 @property (nonatomic, copy) NSString * _Nonnull discountTitle;
 @property (nonatomic) BOOL isPercentage;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;

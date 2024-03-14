@@ -145,3 +145,6 @@
 
 ## 6.6.10 2024-03-10
 * Added Discounts Feature
+
+## 6.6.11 2024-03-14
+* Minor Fix 

@@ -621,7 +621,7 @@ extension PaymentSDK.CountryPickerViewController : UIKit.UISearchControllerDeleg
 }
 @objc public class PaymentSDKCardDiscount : ObjectiveC.NSObject, Swift.Codable {
   @objc public var discountCards: [Swift.String]
-  @objc public var dicsountValue: Swift.Double
+  @objc public var discountValue: Swift.Double
   @objc public var discountTitle: Swift.String
   @objc public var isPercentage: Swift.Bool
   public init(discountCards: [Swift.String], dicsountValue: Swift.Double, discountTitle: Swift.String, isPercentage: Swift.Bool)
