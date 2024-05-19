@@ -14,7 +14,7 @@
 		</data>
 		<key>Assets.car</key>
 		<data>
-		Bckn1ziLvxldfy2KJWaOSc3dGFc=
+		RbDRVInmvBpKO+YRWl0FgG/Kpa8=
 		</data>
 		<key>CameraScanning.wav</key>
 		<data>
@@ -1070,11 +1070,11 @@
 		</data>
 		<key>DiscountDetailsCell.nib</key>
 		<data>
-		qrVPTEL4MAl0vGupyT2kP4h12ow=
+		TcYTEhOt8R2nRj5B8vhHJYrCjbU=
 		</data>
 		<key>DiscountItemTableViewCell.nib</key>
 		<data>
-		lxGSvC9qjvy+mUBV6OW9UVfM6H0=
+		2XBLGZk9PfiVLI0ZGzW2glzW0ww=
 		</data>
 		<key>HeaderTableViewCell.nib</key>
 		<data>
@@ -1082,7 +1082,7 @@
 		</data>
 		<key>Headers/PaymentSDK-Swift.h</key>
 		<data>
-		+6FFTTlZbMocltu0fMSU+RyiY2w=
+		SKJoVqqfCNPUk9zU9vYZhpkEfLY=
 		</data>
 		<key>Headers/PaymentSDK.h</key>
 		<data>
@@ -1090,31 +1090,31 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		7RzWK/P43admp4YezAMucapIb/A=
+		JUKIhBE3xQmUDXC2SY7B4WZq264=
 		</data>
 		<key>InputTextTableViewCell.nib</key>
 		<data>
-		a4SQbfBWISwzy/0tJMrr0GM2yXo=
+		O0/cKnRV54qfsusT6k2RK8OdYnI=
 		</data>
 		<key>Modules/PaymentSDK.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		MJ6cL4tUrSvAbYhOHBkmnBWswMg=
+		esB5qxlvjp7Eg+i3CEX64XT+GfY=
 		</data>
 		<key>Modules/PaymentSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		IKKlrHv5FXPRd8I8DHG+Mb0HyMA=
+		vNFKJ+HD4cRb/KQXmXVc9rpX/KY=
 		</data>
 		<key>Modules/PaymentSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		DposA/O7Hwb9+ScU13obseE4qxo=
+		dcgpYY5qdBjiZekBdG5wx8cy5sk=
 		</data>
 		<key>Modules/PaymentSDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		EJ9h0jQPPzzmDyZZRMPUpGL3SuE=
+		0RMLtP62PL+MIlP7VLy8sm3PlJ8=
 		</data>
 		<key>Modules/PaymentSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		iP7NnARq8eQpo3Mly1MFBrI/wPs=
+		qvjWgoYGjYSaJkiqWPEm2zc9ljQ=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -1259,7 +1259,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			bT0BqVIPCcDpspMInIoE4btI1b519vFB575nBEtVaME=
+			EvE0QpNGJtZHI3zQtyl9Joii6JEnLxPswSH4LBxhdrk=
 			</data>
 		</dict>
 		<key>CameraScanning.wav</key>
@@ -3107,14 +3107,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			B+H1pslrZM4wgkt/HpaxLxP5z7nxTeBPjzSfKT3TvyA=
+			nuMMHEbYjAI+LdZpSLRn+/zWKllc4eFRrg7/5VoauxE=
 			</data>
 		</dict>
 		<key>DiscountItemTableViewCell.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			68Nf1KNKAettEQ2dO/aorx+D5hgxW7yp/295mZukzWE=
+			QHar5SA5WFSl65eQXTJa0ZVnH5IE6WlK2M/EMl1EqYA=
 			</data>
 		</dict>
 		<key>HeaderTableViewCell.nib</key>
@@ -3128,7 +3128,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			i9MFLfgnXw9ybrP2XZS2JQfB333VuDwkrGj7l5qlsDE=
+			NAR8tmSx+Dpc/icQBhELQTnGLFurZKsSFCQIxa+kAvU=
 			</data>
 		</dict>
 		<key>Headers/PaymentSDK.h</key>
@@ -3142,42 +3142,42 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			TNedN6Rwx7rXZjqpOD74ZxXxOXLcuRXHrcKcmBa9Zjs=
+			R67b5VSlxgrSuOfSyYAFC7+aDkOZpH3TR/utYcOvtec=
 			</data>
 		</dict>
 		<key>Modules/PaymentSDK.swiftmodule/arm64-apple-ios.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			/0BJDGcMiX9fz1yQXUbubX5zUmd3XxYmu7IbB+GW9oc=
+			ktcgA6XBZZbbe8fM+DkCo6G7IN4MovtA9hGyqtxQLO8=
 			</data>
 		</dict>
 		<key>Modules/PaymentSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ve0NK+VrmF6imHgHux1l+IYm5kPTPzGzRPZG+bB+hQQ=
+			xxJnKX4CjC/PVTNKSn2LdBnYwyqzR5PE2n9vqXZGeKA=
 			</data>
 		</dict>
 		<key>Modules/PaymentSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Fx+3JRSEoENxJI23GvI2nEZPvREtEHYpdN5YAi83H7g=
+			fCy0BSAwiJ2CL5WlvWMl0wh5M4SkdiYhK6GpBGegVi4=
 			</data>
 		</dict>
 		<key>Modules/PaymentSDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			wMD1QtH0Hw/H1vgKp1GU8lJFTN79kSjd2EeEI28a+iw=
+			ZdlO0Hf6HGrO+MidAiaTys0UuV4BamciGrAiFWWHYvE=
 			</data>
 		</dict>
 		<key>Modules/PaymentSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			i2dcn62hwsSnzjlBlX1sIz1cuarmoOGBn+WGp7BgVhc=
+			deJtqNEmlSXoc9/EByj6SF8sORpOfFEmN8vF7EUGY34=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

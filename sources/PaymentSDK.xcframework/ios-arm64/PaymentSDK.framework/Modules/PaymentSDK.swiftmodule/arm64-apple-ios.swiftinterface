@@ -1,7 +1,6 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.9.2 (swiftlang-5.9.2.2.56 clang-1500.1.0.2.5)
-// swift-module-flags: -target arm64-apple-ios11.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name PaymentSDK
-// swift-module-flags-ignorable: -enable-bare-slash-regex
+// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
+// swift-module-flags: -target arm64-apple-ios11.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name PaymentSDK
 import AVFoundation
 import AVKit
 import Accelerate
@@ -243,6 +242,7 @@ public protocol ThemeConfiguration {
   var strokeThinckness: CoreFoundation.CGFloat? { get set }
   var inputsCornerRadius: CoreFoundation.CGFloat? { get set }
   var backButtonColor: UIKit.UIColor? { get set }
+  var inputFieldBackgroundColor: UIKit.UIColor? { get set }
 }
 public class PaymentSDKTheme : PaymentSDK.ThemeConfiguration {
   public var logoImage: UIKit.UIImage?
@@ -263,6 +263,7 @@ public class PaymentSDKTheme : PaymentSDK.ThemeConfiguration {
   public var backgroundColor: UIKit.UIColor?
   public var placeholderColor: UIKit.UIColor?
   public var backButtonColor: UIKit.UIColor?
+  public var inputFieldBackgroundColor: UIKit.UIColor?
   public init()
   public static var `default`: PaymentSDK.PaymentSDKTheme {
     get
