@@ -340,7 +340,7 @@ configuration.transactionReference = transactionreference
 ## Theme
 Use the following guide to cusomize the colors, font, and logo by configuring the theme and pass it to the payment configuration.
 
-![UI guide](https://user-images.githubusercontent.com/13621658/109432213-d7981380-7a12-11eb-9224-c8fc12b0024d.jpg)
+![UI guide](https://github-production-user-asset-6210df.s3.amazonaws.com/95287975/332021756-2c9742d7-7651-4f57-a919-2b9bf54aa37c.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20240520%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20240520T095553Z&X-Amz-Expires=300&X-Amz-Signature=529d9fb31eb99f9d7a1cd388a98b7433ebc70db979d25f15a682332546297da6&X-Amz-SignedHeaders=host&actor_id=95287975&key_id=0&repo_id=165845609)
 
 ```swift
 let theme = PaymentSDKTheme.default
