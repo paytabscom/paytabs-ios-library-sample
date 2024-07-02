@@ -41615,34 +41615,34 @@
       "filePath": "\/Users\/amr\/Desktop\/Projects\/Native\/ios-sdk\/PayTabs\/StrCardScanner\/CardScan\/UI\/SimpleScanViewController.swift",
       "kind": "StringLiteral",
       "offset": 4236,
-      "length": 39,
-      "value": "\"String.Localized.enable_camera_access\""
+      "length": 34,
+      "value": "\"payment_sdk_enable_camera_access\""
     },
     {
       "filePath": "\/Users\/amr\/Desktop\/Projects\/Native\/ios-sdk\/PayTabs\/StrCardScanner\/CardScan\/UI\/SimpleScanViewController.swift",
       "kind": "StringLiteral",
-      "offset": 4334,
-      "length": 40,
-      "value": "\"String.Localized.update_phone_settings\""
+      "offset": 4339,
+      "length": 35,
+      "value": "\"payment_sdk_update_phone_settings\""
     },
     {
       "filePath": "\/Users\/amr\/Desktop\/Projects\/Native\/ios-sdk\/PayTabs\/StrCardScanner\/CardScan\/UI\/SimpleScanViewController.swift",
       "kind": "StringLiteral",
-      "offset": 4410,
+      "offset": 4420,
       "length": 30,
       "value": "\"payment_sdk_scan_cards_close\""
     },
     {
       "filePath": "\/Users\/amr\/Desktop\/Projects\/Native\/ios-sdk\/PayTabs\/StrCardScanner\/CardScan\/UI\/SimpleScanViewController.swift",
       "kind": "StringLiteral",
-      "offset": 4486,
+      "offset": 4496,
       "length": 30,
       "value": "\"payment_sdk_scan_cards_torch\""
     },
     {
       "filePath": "\/Users\/amr\/Desktop\/Projects\/Native\/ios-sdk\/PayTabs\/StrCardScanner\/CardScan\/UI\/SimpleScanViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 4761,
+      "offset": 4771,
       "length": 3,
       "value": "4.0"
     },

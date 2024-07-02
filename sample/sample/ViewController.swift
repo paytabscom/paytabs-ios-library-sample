@@ -55,6 +55,8 @@ class ViewController: UIViewController {
         buttonStackView.insertArrangedSubview(applePayButton, at: 1)
     }
     
+
+    
     let profileID = "profile id"
     let serverKey = "server key"
     let clientKey = "client key"
@@ -91,10 +93,9 @@ class ViewController: UIViewController {
                                        merchantCountryCode: "AE")
             .cartDescription("Flowers")
             .cartID("1234")
-            .screenTitle("Pay with Card")
-            .theme(theme)
-            .billingDetails(billingDetails)
-    }
+            .languageCode("ar")
+            .showBillingInfo(true)
+                }
     
     var applePayConfiguration: PaymentSDKConfiguration! {
         return PaymentSDKConfiguration(profileID: profileID,
