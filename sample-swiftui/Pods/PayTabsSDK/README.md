@@ -31,13 +31,13 @@
 [CocoaPods](https://cocoapods.org) is a dependency manager for Cocoa projects. For usage and installation instructions, visit their website. To integrate **PayTabs SDK** into your Xcode project using CocoaPods, specify it in your `Podfile`:
 
 ```ruby
-pod 'PayTabsSDK', '~> 6.6.6'
+pod 'PayTabsSDK', '~> 6.6.16'
 ```
 ### Carthage
 [Carthage](https://github.com/Carthage/Carthage) is a decentralized dependency manager that builds your dependencies and provides you with binary frameworks. To integrate **PayTabs SDK** into your Xcode project using Carthage, specify it in your `Cartfile`:
 
 ```ogdl
-github "paytabscom/paytabs-ios-library-sample" ~> 6.6.5
+github "paytabscom/paytabs-ios-library-sample" ~> 6.6.16
 ```
 
 ### Swift Package Manager 
@@ -47,7 +47,7 @@ Once you have your Swift package set up, adding PayTabsSDK as a dependency is as
 
 ```ruby
 dependencies: [
-    .package(url: "https://github.com/paytabscom/paytabs-ios-library-sample.git", .upToNextMajor(from: "6.1.20"))
+    .package(url: "https://github.com/paytabscom/paytabs-ios-library-sample.git", .upToNextMajor(from: "6.6.16"))
 ]
 ```
 
@@ -124,6 +124,21 @@ Options to set expiry timeout for the card payment screen
 ```
 configuration.expiryTime =120
 ```
+
+Options to add discounts on card payment
+
+```
+  let cardDiscounts: [PaymentSDKCardDiscount] = [
+            PaymentSDKCardDiscount(discountCards: ["4001"], dicsountValue: 90.0, discountTitle: "● 90% discount - 40001, 90% discount - 40001, 90% discount - 40001", isPercentage: true),
+            PaymentSDKCardDiscount(discountCards: ["4000", "4111", "400012"], dicsountValue: 1.0, discountTitle: "● 1% discount - 4000,4111,400012", isPercentage: true),
+            PaymentSDKCardDiscount(discountCards: ["5498", "5200"], dicsountValue: 2.0, discountTitle: "● 2% discount - 5498,5299 (977)", isPercentage: true),
+            PaymentSDKCardDiscount(discountCards: ["4012"], dicsountValue: 5.0, discountTitle: "● 5 discount - 4012 (530)", isPercentage: false)
+        ]
+configuration.cardDiscounts = cardDiscounts
+```
+Each instance of PaymentSDKCardDiscount is initialized with parameters corresponding to the accepted card types (discountCards), the value of the discount (discountValue), the title of the discount (discountTitle), and whether the discount is a percentage (isPercentage).
+
+
 
 You have the option to close the payment screen if there are no ongoing transactions.
 ```swift
@@ -325,7 +340,7 @@ configuration.transactionReference = transactionreference
 ## Theme
 Use the following guide to cusomize the colors, font, and logo by configuring the theme and pass it to the payment configuration.
 
-![UI guide](https://user-images.githubusercontent.com/13621658/109432213-d7981380-7a12-11eb-9224-c8fc12b0024d.jpg)
+![UI guide](https://github-production-user-asset-6210df.s3.amazonaws.com/95287975/332021756-2c9742d7-7651-4f57-a919-2b9bf54aa37c.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20240520%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20240520T095553Z&X-Amz-Expires=300&X-Amz-Signature=529d9fb31eb99f9d7a1cd388a98b7433ebc70db979d25f15a682332546297da6&X-Amz-SignedHeaders=host&actor_id=95287975&key_id=0&repo_id=165845609)
 
 ```swift
 let theme = PaymentSDKTheme.default
@@ -402,6 +417,9 @@ public enum AlternativePaymentMethod: String {
     case fawry
     case aman
     case URPay = "urpay"
+    case applePay = "applePay"
+    case souhoola = "souhoola"
+    case Tabby = "tabby" 
 }
 ```
 
@@ -412,7 +430,7 @@ configuration.transactionType = .sale
 
 ## Demo application
 
-Check our complete [example][example].
+Check our complete examples [For UIKit][example], [For SwiftUI][swiftui].
 
 <img src="https://user-images.githubusercontent.com/13621658/109432386-905e5280-7a13-11eb-847c-63f2c554e2d1.png" width="370">
 
@@ -429,6 +447,7 @@ See [LICENSE][license].
  [3]: https://www.paytabs.com/en/privacy-policy/
  [license]: https://github.com/paytabscom/paytabs-ios-library-sample/blob/master/LICENSE
  [example]: https://github.com/paytabscom/paytabs-ios-library-sample/tree/master/sample
+ [swiftui]: https://github.com/paytabscom/paytabs-ios-library-sample/tree/master/sample-swiftui
  [englishstrings]: https://github.com/paytabscom/paytabs-ios-library-sample/tree/master/en.strings
  [arabicstrings]: https://github.com/paytabscom/paytabs-ios-library-sample/tree/master/ar.strings
  [applepayguide]: https://github.com/paytabscom/paytabs-ios-library-sample/blob/master/ApplePayConfiguration.md

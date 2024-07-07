@@ -14,7 +14,7 @@
 		</data>
 		<key>Assets.car</key>
 		<data>
-		RbDRVInmvBpKO+YRWl0FgG/Kpa8=
+		KV2SmJ4VFhoBaJulM4da8xMFNG8=
 		</data>
 		<key>CameraScanning.wav</key>
 		<data>
@@ -1090,7 +1090,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		Vz0HXy6PyXaFAYdm3iSZlr1R+Qc=
+		b3B1oeQro2/HEE7RXD8qg3UiOH0=
 		</data>
 		<key>InputTextTableViewCell.nib</key>
 		<data>
@@ -1098,11 +1098,11 @@
 		</data>
 		<key>Modules/PaymentSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		f8jkQ5ZhMAaph1iCBCriAE6y52k=
+		2Qcnj6t2Ms5s2ce3aEshJlOaK5I=
 		</data>
 		<key>Modules/PaymentSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		edNKufNTWEmA5Q/rXnPabXfUYo4=
+		xmIVuFP+k3vccrPGRJrhdIEPo+E=
 		</data>
 		<key>Modules/PaymentSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -1110,19 +1110,19 @@
 		</data>
 		<key>Modules/PaymentSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		rS8UFMsaQBlg2ZBRb7tLD2vU7r0=
+		p5lvtYwiCc3fVGhDnp3eY5u01Ng=
 		</data>
 		<key>Modules/PaymentSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		F1T9QyB/wX4GggwFU9seiNblMz0=
+		+HpYM8NBsoWTllRGHq+nsl9ySlw=
 		</data>
 		<key>Modules/PaymentSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		f8jkQ5ZhMAaph1iCBCriAE6y52k=
+		2Qcnj6t2Ms5s2ce3aEshJlOaK5I=
 		</data>
 		<key>Modules/PaymentSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		ahE+3HlZprZKxPIS43+NEhrTE84=
+		loM3pCp0wtODEwWGrNU0TnHLx08=
 		</data>
 		<key>Modules/PaymentSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -1130,11 +1130,11 @@
 		</data>
 		<key>Modules/PaymentSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		P6qPuqfloOXnj3cAtwRenxPqaW4=
+		AxSQmkiPmS2fXPz4P5k2kkmAPZY=
 		</data>
 		<key>Modules/PaymentSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		VBjpLfvZeuXyLUgvKUBHXCHksDU=
+		Z2zIxiYi6GAbcADwJYxul+mWy3I=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -1279,7 +1279,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			EvE0QpNGJtZHI3zQtyl9Joii6JEnLxPswSH4LBxhdrk=
+			nSRi3tn0aDdwaAXr5T09YZjYjE+k4GyCl+sYWnquGM8=
 			</data>
 		</dict>
 		<key>CameraScanning.wav</key>
@@ -3169,14 +3169,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			pJzSrYmxDBrCJ7bt5JgGszVVY7QmZE/1nsbuGNz6wpU=
+			raeq+gA+eN+KnI/Ov1qKKJTEqZYSpgBlc3aOQ2bfbqQ=
 			</data>
 		</dict>
 		<key>Modules/PaymentSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			okYn/wpqCifRNKEkGJ+cndh+iKUS1zsFRNJoeUhHpFE=
+			YKy60l3/0Oe66T5Cd2fq58/Vt7YIJqIup/DwxDMS83A=
 			</data>
 		</dict>
 		<key>Modules/PaymentSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -3190,28 +3190,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			eVUdftnrs6tDS9QltMkBzXVPSbcDZu4Herfc3UaMcGk=
+			phaiSFAt85lRTeU9F/ATnkCcSkDXd/TNMrGi7T4piQE=
 			</data>
 		</dict>
 		<key>Modules/PaymentSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			3ZQ50/HwyN+80sCMqsEwgEYEzdUfJrGD2kAXkJfO+ig=
+			iAbPuTjQ9drSPs8Jv2XmKb6VaDDVBtwDyi0dqqA/KHc=
 			</data>
 		</dict>
 		<key>Modules/PaymentSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			pJzSrYmxDBrCJ7bt5JgGszVVY7QmZE/1nsbuGNz6wpU=
+			raeq+gA+eN+KnI/Ov1qKKJTEqZYSpgBlc3aOQ2bfbqQ=
 			</data>
 		</dict>
 		<key>Modules/PaymentSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Ar8EjoE3DwG7rWRQ3rxK2voV81TuwSCN7gyxa4EBbW4=
+			u6/2fUgiWFwbvU1KDLRgb3fcq5O8olzWqMFvqZOvFQs=
 			</data>
 		</dict>
 		<key>Modules/PaymentSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -3225,14 +3225,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			svCsNm178RNIznh+OJxvT5ODDLiJJwdGh9OkQXNno4U=
+			v+D8gtauy71cId1IroEnBvfZZdZBesc5dqwFwpk7o4s=
 			</data>
 		</dict>
 		<key>Modules/PaymentSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			DOxb1iN+hz38ww8cYuUwTBSGqxdFjSe0czqUfV04sh4=
+			7H8V7RUvUxXTM7YxHRxMwcllwmX+TYFbVIGW576M6IY=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

@@ -31892,9 +31892,11 @@
             "mangledName": "$s10PaymentSDK0A7ManagerC05startA14WithSavedCards2on13configuration10support3DS8delegateySo16UIViewControllerC_AA0A16SDKConfigurationCSbAA0aC8Delegate_pSgtFZ",
             "moduleName": "PaymentSDK",
             "static": true,
+            "deprecated": true,
             "declAttributes": [
               "Final",
               "AccessControl",
+              "Available",
               "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
@@ -44351,42 +44353,42 @@
     {
       "filePath": "\/Users\/amr\/Desktop\/Projects\/Native\/ios-sdk\/PayTabs\/PublicLayer\/PaymentManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 16966,
+      "offset": 17084,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/amr\/Desktop\/Projects\/Native\/ios-sdk\/PayTabs\/PublicLayer\/PaymentManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 17052,
+      "offset": 17170,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/amr\/Desktop\/Projects\/Native\/ios-sdk\/PayTabs\/PublicLayer\/PaymentManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 17124,
+      "offset": 17242,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/amr\/Desktop\/Projects\/Native\/ios-sdk\/PayTabs\/PublicLayer\/PaymentManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 18925,
+      "offset": 19043,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/amr\/Desktop\/Projects\/Native\/ios-sdk\/PayTabs\/PublicLayer\/PaymentManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 19005,
+      "offset": 19123,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/amr\/Desktop\/Projects\/Native\/ios-sdk\/PayTabs\/PublicLayer\/PaymentManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 20930,
+      "offset": 21048,
       "length": 5,
       "value": "false"
     },

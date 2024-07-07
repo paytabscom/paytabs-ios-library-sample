@@ -12,7 +12,10 @@ import UIKit
 struct PayTabsPaymentView: View {
  
     var body: some View {
-        Button("Start Payment") {
+        
+        Button(NSLocalizedString("welcome_screen_title", comment: "")) {
+            print(NSLocalizedString("welcome_screen_title", comment: ""))
+                  
             guard let topVC = getTOPVC() else { return }
             PaymentManager.startCardPayment(on: topVC, configuration: PaymentConfiguration.configuration, delegate: PaymentDelegate())
         }

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C53168AB2C36B2B5003F4006 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = C53168A92C36B2B5003F4006 /* Localizable.strings */; };
 		CF86309F2B2EF5B7002B0C07 /* sample_swiftuiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF86309E2B2EF5B7002B0C07 /* sample_swiftuiApp.swift */; };
 		CF8630A12B2EF5B7002B0C07 /* PayTabsPaymentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8630A02B2EF5B7002B0C07 /* PayTabsPaymentView.swift */; };
 		CF8630A32B2EF5BA002B0C07 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF8630A22B2EF5BA002B0C07 /* Assets.xcassets */; };
@@ -19,6 +20,8 @@
 		35A099C980BAA1084660819E /* Pods-sample-swiftui.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sample-swiftui.debug.xcconfig"; path = "Target Support Files/Pods-sample-swiftui/Pods-sample-swiftui.debug.xcconfig"; sourceTree = "<group>"; };
 		55A8242E3C11C8F87749A392 /* Pods-sample-swiftui.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sample-swiftui.release.xcconfig"; path = "Target Support Files/Pods-sample-swiftui/Pods-sample-swiftui.release.xcconfig"; sourceTree = "<group>"; };
 		5AB4A0CB64645452EDCFBBE0 /* Pods_sample_swiftui.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_sample_swiftui.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C53168AA2C36B2B5003F4006 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		C53168AC2C3AAE02003F4006 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Localizable.strings; sourceTree = "<group>"; };
 		CF86309B2B2EF5B7002B0C07 /* sample-swiftui.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "sample-swiftui.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF86309E2B2EF5B7002B0C07 /* sample_swiftuiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sample_swiftuiApp.swift; sourceTree = "<group>"; };
 		CF8630A02B2EF5B7002B0C07 /* PayTabsPaymentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayTabsPaymentView.swift; sourceTree = "<group>"; };
@@ -82,6 +85,7 @@
 				CF8630A22B2EF5BA002B0C07 /* Assets.xcassets */,
 				CF8630A42B2EF5BA002B0C07 /* Preview Content */,
 				CF8630AE2B2F0262002B0C07 /* PaymentConfiguration.swift */,
+				C53168A92C36B2B5003F4006 /* Localizable.strings */,
 			);
 			path = "sample-swiftui";
 			sourceTree = "<group>";
@@ -138,6 +142,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ar,
 			);
 			mainGroup = CF8630922B2EF5B7002B0C07;
 			productRefGroup = CF86309C2B2EF5B7002B0C07 /* Products */;
@@ -155,6 +160,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CF8630A62B2EF5BA002B0C07 /* Preview Assets.xcassets in Resources */,
+				C53168AB2C36B2B5003F4006 /* Localizable.strings in Resources */,
 				CF8630A32B2EF5BA002B0C07 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -216,11 +222,24 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXVariantGroup section */
+		C53168A92C36B2B5003F4006 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C53168AA2C36B2B5003F4006 /* en */,
+				C53168AC2C3AAE02003F4006 /* ar */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
 		CF8630A72B2EF5BA002B0C07 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -281,6 +300,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";

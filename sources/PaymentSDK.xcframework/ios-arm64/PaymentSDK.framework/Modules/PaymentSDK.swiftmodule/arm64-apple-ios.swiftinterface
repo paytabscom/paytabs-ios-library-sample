@@ -723,6 +723,7 @@ extension PaymentSDK.CountryPickerView {
   public static func startPaymentWithApplePayToken(on rootViewController: UIKit.UIViewController, configuration: PaymentSDK.PaymentSDKConfiguration, applePayPayment: PassKit.PKPayment, delegate: (any PaymentSDK.PaymentManagerDelegate)?)
   public static func start3DSecureTokenizedCardPayment(on rootViewController: UIKit.UIViewController, configuration: PaymentSDK.PaymentSDKConfiguration, savedCardInfo: PaymentSDK.PaymentSDKSavedCardInfo, token: Swift.String, delegate: (any PaymentSDK.PaymentManagerDelegate)?)
   public static func startTokenizedCardPayment(on rootViewController: UIKit.UIViewController, configuration: PaymentSDK.PaymentSDKConfiguration, token: Swift.String, transactionRef: Swift.String, delegate: (any PaymentSDK.PaymentManagerDelegate)?)
+  @available(*, deprecated, message: "This function is deprecated. and will be removed in next major releases.")
   public static func startPaymentWithSavedCards(on rootViewController: UIKit.UIViewController, configuration: PaymentSDK.PaymentSDKConfiguration, support3DS: Swift.Bool, delegate: (any PaymentSDK.PaymentManagerDelegate)?)
   public static func queryTransaction(queryConfiguration: PaymentSDK.PaymentSDKQueryConfiguration, completion: @escaping (PaymentSDK.PaymentSDKTransactionDetails?, (any Swift.Error)?) -> Swift.Void)
   public static func cancelPayment(completion: @escaping (Swift.Bool?) -> Swift.Void)

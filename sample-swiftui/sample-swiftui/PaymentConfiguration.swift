@@ -49,5 +49,6 @@ class PaymentConfiguration {
         .screenTitle("Pay with Card")
         .theme(theme)
         .billingDetails(billingDetails)
+        .languageCode("ar")
     }
 }
