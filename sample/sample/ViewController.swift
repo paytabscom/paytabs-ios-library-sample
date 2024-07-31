@@ -93,7 +93,7 @@ class ViewController: UIViewController {
                                        merchantCountryCode: "AE")
             .cartDescription("Flowers")
             .cartID("1234")
-            .languageCode("ar")
+            .languageCode("en")
             .showBillingInfo(true)
                 }
     

@@ -24118,6 +24118,43 @@
           },
           {
             "kind": "Var",
+            "name": "thisDeviceCannotMakeApplePayments",
+            "printedName": "thisDeviceCannotMakeApplePayments",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PaymentSDK.PaymentSDKError.Type) -> PaymentSDK.PaymentSDKError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PaymentSDKError",
+                    "printedName": "PaymentSDK.PaymentSDKError",
+                    "usr": "s:10PaymentSDK0A8SDKErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "PaymentSDK.PaymentSDKError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PaymentSDKError",
+                        "printedName": "PaymentSDK.PaymentSDKError",
+                        "usr": "s:10PaymentSDK0A8SDKErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:10PaymentSDK0A8SDKErrorO33thisDeviceCannotMakeApplePaymentsyA2CmF",
+            "mangledName": "$s10PaymentSDK0A8SDKErrorO33thisDeviceCannotMakeApplePaymentsyA2CmF",
+            "moduleName": "PaymentSDK"
+          },
+          {
+            "kind": "Var",
             "name": "somethingWentWrong",
             "printedName": "somethingWentWrong",
             "children": [

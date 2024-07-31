@@ -509,6 +509,7 @@ public enum PaymentSDKError : Swift.Error {
   case missingMerchantCountryCode
   case invalidMerchantCountryCode
   case userNotAuthorizeForSelectedNetworks
+  case thisDeviceCannotMakeApplePayments
   case somethingWentWrong
   case emptyAlternativePaymentMethods
   case applePayOnSimulatorNotSupported
