@@ -561,6 +561,9 @@ public struct ScannedCard : Swift.Equatable {
   public let name: Swift.String?
   public static func == (a: PaymentSDK.ScannedCard, b: PaymentSDK.ScannedCard) -> Swift.Bool
 }
+extension PassKit.PKPaymentNetwork {
+  public static func fromString(_ paymentNetworkString: Swift.String) -> PassKit.PKPaymentNetwork?
+}
 extension PaymentSDK.PaymentSDKCardInputView {
   @discardableResult
   @_Concurrency.MainActor(unsafe) public func setMerchnatLogo(image: UIKit.UIImage) -> PaymentSDK.PaymentSDKCardInputView
