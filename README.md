@@ -147,6 +147,22 @@ You have the option to close the payment screen if there are no ongoing transact
 			//do something
             }
 ```
+#### Card Approval
+
+The Payment SDK allows you to customize BIN-based discounts through the `PaymentSdkCardApproval` class, which collects approval details via an API.
+
+##### Example Usage
+
+```swift
+configuration.cardApproval = PaymentSDKCardApproval(validationUrl: " https://yourdomain.com/validate",
+ binLength: 8,
+ blockIfNoResponse: false)
+
+```
+
+- **`validationUrl`**: The endpoint provided by the business where the Payment SDK will pass transaction information and receive a response.
+- **`binLength`**: The length of the BIN (default is 6 digits, can be set to 8).
+- **`blockIfNoResponse`**: Determines whether to block the transaction if there is no response from the validation endpoint.
 
 
 3. You are now ready to start payment and handle `PaymentManagerDelegate`
@@ -395,7 +411,8 @@ The default type is sale
 ```swift
 public enum TransactionType: String, CaseIterable {
     case sale
-    case authorize = "auth"
+    case authorize
+    case register
 }
 ```
 
