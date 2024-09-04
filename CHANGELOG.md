@@ -172,3 +172,8 @@
 
 ## 6.6.19 2024-08-27
 * Minor Fix 
+
+## 6.6.20 2024-04-09
+* Card Approval feature
+* Register feature
+

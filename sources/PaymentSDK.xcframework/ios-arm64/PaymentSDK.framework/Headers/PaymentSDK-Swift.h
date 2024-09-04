@@ -442,6 +442,16 @@ SWIFT_CLASS("_TtC10PaymentSDK24PaymentSDKBillingDetails")
 @end
 
 
+SWIFT_CLASS("_TtC10PaymentSDK22PaymentSDKCardApproval")
+@interface PaymentSDKCardApproval : NSObject
+@property (nonatomic, copy) NSString * _Nonnull validationUrl;
+@property (nonatomic) NSInteger binLength;
+@property (nonatomic) BOOL blockIfNoResponse;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
 SWIFT_CLASS("_TtC10PaymentSDK22PaymentSDKCardDiscount")
 @interface PaymentSDKCardDiscount : NSObject
 @property (nonatomic, copy) NSArray<NSString *> * _Nonnull discountCards;
