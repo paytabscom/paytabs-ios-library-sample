@@ -177,3 +177,7 @@
 * Card Approval feature
 * Register feature
 
+## 6.6.21 2024-18-09
+* Added Kuwait Instance
+* Minor Fix 
+

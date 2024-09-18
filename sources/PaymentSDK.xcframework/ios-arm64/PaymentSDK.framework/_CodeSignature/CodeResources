@@ -1090,7 +1090,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		Aqbs9L0kHbj1Kt3bvN7vqUJisiE=
+		ngJBd0G8JjRadfqGQFQyKg/9Buw=
 		</data>
 		<key>InputTextTableViewCell.nib</key>
 		<data>
@@ -1098,7 +1098,7 @@
 		</data>
 		<key>Modules/PaymentSDK.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		MQGLgCBn3C15c7gT1uk9Mrq7xsU=
+		AsXQIHjPViRkinXWmSq5HAvH6VI=
 		</data>
 		<key>Modules/PaymentSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
@@ -1114,7 +1114,7 @@
 		</data>
 		<key>Modules/PaymentSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		IlGmpzDhfBAmJSrYJUFghIb45YI=
+		1HNYCIOVcqtwJABk/iv88PB3kPk=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -3149,7 +3149,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			bpws0u3F4X7hcEPhft5p8H4QUxhtlE1/H2BECjMFyho=
+			K+mforXd/+qtCnS3uO+9nTLzEMiNOVjkbg5bukXVVpY=
 			</data>
 		</dict>
 		<key>Modules/PaymentSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
@@ -3177,7 +3177,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			dNzY3E3L+Hm9msYzNpkLnyNSWtwfYcMEKfep3rlP64Y=
+			Jszqjy6NNuoweds/FPzrb2+CoAlrr9xLjD5zTK4F4hw=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

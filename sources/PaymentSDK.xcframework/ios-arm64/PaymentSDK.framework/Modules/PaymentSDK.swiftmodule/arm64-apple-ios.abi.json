@@ -41749,7 +41749,7 @@
       "kind": "StringLiteral",
       "offset": 367,
       "length": 10,
-      "value": "\"Register\""
+      "value": "\"register\""
     },
     {
       "filePath": "\/Users\/amr\/Desktop\/Projects\/Native\/ios-sdk\/PayTabs\/PublicLayer\/PaymentSDKConfiguration+Enums.swift",
@@ -41763,7 +41763,7 @@
       "kind": "StringLiteral",
       "offset": 367,
       "length": 10,
-      "value": "\"Register\""
+      "value": "\"register\""
     },
     {
       "filePath": "\/Users\/amr\/Desktop\/Projects\/Native\/ios-sdk\/PayTabs\/PublicLayer\/PaymentSDKConfiguration+Enums.swift",
@@ -42328,6 +42328,13 @@
     {
       "filePath": "\/Users\/amr\/Desktop\/Projects\/Native\/ios-sdk\/PayTabs\/NetworkLayer\/PaymentSDKRequest.swift",
       "kind": "StringLiteral",
+      "offset": 938,
+      "length": 36,
+      "value": "\"https:\/\/secure-kuwait.paytabs.com\/\""
+    },
+    {
+      "filePath": "\/Users\/amr\/Desktop\/Projects\/Native\/ios-sdk\/PayTabs\/NetworkLayer\/PaymentSDKRequest.swift",
+      "kind": "StringLiteral",
       "offset": 299,
       "length": 2,
       "value": "\"\""
@@ -42391,28 +42398,35 @@
     {
       "filePath": "\/Users\/amr\/Desktop\/Projects\/Native\/ios-sdk\/PayTabs\/NetworkLayer\/PaymentSDKRequest.swift",
       "kind": "StringLiteral",
-      "offset": 1735,
+      "offset": 938,
+      "length": 36,
+      "value": "\"https:\/\/secure-kuwait.paytabs.com\/\""
+    },
+    {
+      "filePath": "\/Users\/amr\/Desktop\/Projects\/Native\/ios-sdk\/PayTabs\/NetworkLayer\/PaymentSDKRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 1852,
       "length": 17,
       "value": "\"payment\/request\""
     },
     {
       "filePath": "\/Users\/amr\/Desktop\/Projects\/Native\/ios-sdk\/PayTabs\/NetworkLayer\/PaymentSDKRequest.swift",
       "kind": "StringLiteral",
-      "offset": 1774,
+      "offset": 1891,
       "length": 15,
       "value": "\"payment\/query\""
     },
     {
       "filePath": "\/Users\/amr\/Desktop\/Projects\/Native\/ios-sdk\/PayTabs\/NetworkLayer\/PaymentSDKRequest.swift",
       "kind": "StringLiteral",
-      "offset": 1735,
+      "offset": 1852,
       "length": 17,
       "value": "\"payment\/request\""
     },
     {
       "filePath": "\/Users\/amr\/Desktop\/Projects\/Native\/ios-sdk\/PayTabs\/NetworkLayer\/PaymentSDKRequest.swift",
       "kind": "StringLiteral",
-      "offset": 1774,
+      "offset": 1891,
       "length": 15,
       "value": "\"payment\/query\""
     },
@@ -43539,105 +43553,105 @@
     {
       "filePath": "\/Users\/amr\/Desktop\/Projects\/Native\/ios-sdk\/PayTabs\/PayWithCreditCard\/Views\/PayWithCardViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 2030,
+      "offset": 2056,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/amr\/Desktop\/Projects\/Native\/ios-sdk\/PayTabs\/PayWithCreditCard\/Views\/PayWithCardViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 2064,
+      "offset": 2090,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/amr\/Desktop\/Projects\/Native\/ios-sdk\/PayTabs\/PayWithCreditCard\/Views\/PayWithCardViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 2162,
+      "offset": 2188,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/amr\/Desktop\/Projects\/Native\/ios-sdk\/PayTabs\/PayWithCreditCard\/Views\/PayWithCardViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 2198,
+      "offset": 2224,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/amr\/Desktop\/Projects\/Native\/ios-sdk\/PayTabs\/PayWithCreditCard\/Views\/PayWithCardViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 2827,
+      "offset": 2853,
       "length": 1,
       "value": "6"
     },
     {
       "filePath": "\/Users\/amr\/Desktop\/Projects\/Native\/ios-sdk\/PayTabs\/PayWithCreditCard\/Views\/PayWithCardViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 2879,
+      "offset": 2905,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/amr\/Desktop\/Projects\/Native\/ios-sdk\/PayTabs\/PayWithCreditCard\/Views\/PayWithCardViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 3029,
+      "offset": 3055,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/amr\/Desktop\/Projects\/Native\/ios-sdk\/PayTabs\/PayWithCreditCard\/Views\/PayWithCardViewController.swift",
       "kind": "StringLiteral",
-      "offset": 3407,
+      "offset": 3433,
       "length": 24,
       "value": "\"payment_sdk_powered_by\""
     },
     {
       "filePath": "\/Users\/amr\/Desktop\/Projects\/Native\/ios-sdk\/PayTabs\/PayWithCreditCard\/Views\/PayWithCardViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 3975,
+      "offset": 4001,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/amr\/Desktop\/Projects\/Native\/ios-sdk\/PayTabs\/PayWithCreditCard\/Views\/PayWithCardViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 4033,
+      "offset": 4059,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/amr\/Desktop\/Projects\/Native\/ios-sdk\/PayTabs\/PayWithCreditCard\/Views\/PayWithCardViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 4196,
+      "offset": 4222,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/amr\/Desktop\/Projects\/Native\/ios-sdk\/PayTabs\/PayWithCreditCard\/Views\/PayWithCardViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 4205,
+      "offset": 4231,
       "length": 2,
       "value": "15"
     },
     {
       "filePath": "\/Users\/amr\/Desktop\/Projects\/Native\/ios-sdk\/PayTabs\/PayWithCreditCard\/Views\/PayWithCardViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 4217,
+      "offset": 4243,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/amr\/Desktop\/Projects\/Native\/ios-sdk\/PayTabs\/PayWithCreditCard\/Views\/PayWithCardViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 4227,
+      "offset": 4253,
       "length": 2,
       "value": "15"
     },
     {
       "filePath": "\/Users\/amr\/Desktop\/Projects\/Native\/ios-sdk\/PayTabs\/PayWithCreditCard\/Views\/PayWithCardViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 5137,
+      "offset": 5163,
       "length": 5,
       "value": "false"
     },
