@@ -181,3 +181,5 @@
 * Added Kuwait Instance
 * Minor Fix 
 
+## 6.6.22 2024-10-07
+* Minor Localization Fix 

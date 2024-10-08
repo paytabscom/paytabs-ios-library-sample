@@ -10,11 +10,11 @@
 		</data>
 		<key>AmountTableViewCell.nib</key>
 		<data>
-		xh8JzHWwa0RBGP2hGMHn70NAEQM=
+		UP7Zdyjj6/3qsFE1kPxr8f9CsOc=
 		</data>
 		<key>Assets.car</key>
 		<data>
-		KV2SmJ4VFhoBaJulM4da8xMFNG8=
+		9Ro4ni/WgZHvAAzJeJVcdcsBgI4=
 		</data>
 		<key>CameraScanning.wav</key>
 		<data>
@@ -1078,11 +1078,11 @@
 		</data>
 		<key>HeaderTableViewCell.nib</key>
 		<data>
-		2A4+fUy5xKbsVpsuMFKi5cyBIZs=
+		nf9ozZdoGTh0BQ3ez5jHiRr84iU=
 		</data>
 		<key>Headers/PaymentSDK-Swift.h</key>
 		<data>
-		NJ6J2n4KzVFGgRZMH/J3NYzCyOI=
+		wup7glRls3/wH+1hRVlzrVTfG+Q=
 		</data>
 		<key>Headers/PaymentSDK.h</key>
 		<data>
@@ -1090,51 +1090,51 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		wJPPnbCYdG93dgBmuaDeTJN0qek=
+		xH6Xk9E/NsWiVU40F5sTPMXB+u8=
 		</data>
 		<key>InputTextTableViewCell.nib</key>
 		<data>
-		O0/cKnRV54qfsusT6k2RK8OdYnI=
+		I5S8fCi+iNoMHv3CdxcZ40VcmqA=
 		</data>
 		<key>Modules/PaymentSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		bxrZ7S9VpFbigzdVgfkAqHnUsSA=
+		mqyfGJyyMIWxSC166GeXqxWgeU0=
 		</data>
 		<key>Modules/PaymentSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		8PJdan+d5NrbKKGjT6Ez/6mFO9w=
+		02pMoIq0aoSbveMEgkT4erKqLsk=
 		</data>
 		<key>Modules/PaymentSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		HVji8wFFhDvAb59b1242/vLWfXY=
+		gJSgimQon21zSUa9qZXg0c+V77s=
 		</data>
 		<key>Modules/PaymentSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		nBDSJsjdz5wcw48AdbOxyS753uk=
+		RgfL5svWXKGnv+VXYFSK648e4SU=
 		</data>
 		<key>Modules/PaymentSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		4wXdam0Na77vGsGfGL9bp36M5NE=
+		k4IOuuT1LJkQQHPEbEqJHDRVJb0=
 		</data>
 		<key>Modules/PaymentSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		bxrZ7S9VpFbigzdVgfkAqHnUsSA=
+		mqyfGJyyMIWxSC166GeXqxWgeU0=
 		</data>
 		<key>Modules/PaymentSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		0X698zkRZVl3nq1w888Exd6UjoU=
+		ubDwkFadEB6x2wXwNbesGaCLPR4=
 		</data>
 		<key>Modules/PaymentSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		MT2hn+lwqEKsRj6Fp8PAIswQvTs=
+		NFcZHBvSp4uWacSaxELE08L+Prs=
 		</data>
 		<key>Modules/PaymentSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		FxsALixNsBoa4MqYPhPUYwztjSw=
+		tiVTLn3IonhxjQ8hdfNhly51780=
 		</data>
 		<key>Modules/PaymentSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		vgC6tqPkLe7JxE/1SG5v9fhu0T4=
+		ROalVmuZatsU6MXU3rcjAaZ2PME=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -1142,11 +1142,11 @@
 		</data>
 		<key>PayButtonTableViewCell.nib</key>
 		<data>
-		K8vgO1WGyPr9T4Q9evncLsoLnTk=
+		5VIu1wW5Birp5KCjINmfQ3tB710=
 		</data>
 		<key>PayWithCardViewController.nib</key>
 		<data>
-		wvKV0/Li5zBt37XOQfaDOvypCpg=
+		xYsgeAQXJsFP+Ea2cBsGjzUyD1s=
 		</data>
 		<key>PaymentAmountTableViewCell.nib</key>
 		<data>
@@ -1154,7 +1154,7 @@
 		</data>
 		<key>PaymentSDKCardTableViewCell.nib</key>
 		<data>
-		wNKP+UYYZlEPROu3mIa/9G2xGn4=
+		na3Z0VaNZNKdBqmUuheL0k/cVi0=
 		</data>
 		<key>SSDOcr.mlmodelc/analytics/coremldata.bin</key>
 		<data>
@@ -1232,7 +1232,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			M9Ah86cwvMZDHl1vufLtdOgqYJQ=
+			hRseN/FEi4YJyOwkfatpN1StPwQ=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1253,7 +1253,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			uzxXluANucfe+MX9DwoayppKVkI=
+			8cGdPdRP3dWIqddbgM9+Ybol8O8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1272,14 +1272,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Za37fcankeUcTy7Wfyw+l4aXfFiCZ5BoWDtqtke8O+U=
+			nai5HbjYeMDuXDb63SGs+Awl5cwL2Dzupuufg/vNaBo=
 			</data>
 		</dict>
 		<key>Assets.car</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			nSRi3tn0aDdwaAXr5T09YZjYjE+k4GyCl+sYWnquGM8=
+			+xRv12NdW/0y4kxHdN76Ldvg7HcCFUdrglh5U6r747w=
 			</data>
 		</dict>
 		<key>CameraScanning.wav</key>
@@ -3141,14 +3141,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			NYI6JEZUK6nz+1xnlw0gQL6qoq2SlGmRZPPesaUlTjA=
+			qljtoUcknbgnYk6ROYI8ZLaXDuQT+aPBuLnV/jEqXdc=
 			</data>
 		</dict>
 		<key>Headers/PaymentSDK-Swift.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			wM8Qgpr3rwjbG6qGqEzwmmpJNPwVmZeSvF51P/9hw6Y=
+			SDnNuz5Joc1rDYvytXFB3yAjybWkbPnwYW/1PlldJRg=
 			</data>
 		</dict>
 		<key>Headers/PaymentSDK.h</key>
@@ -3162,77 +3162,77 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			R67b5VSlxgrSuOfSyYAFC7+aDkOZpH3TR/utYcOvtec=
+			kdOOaijeIbSkiANp7+6oRFlQkH0QzqNOsYq+z/cW7as=
 			</data>
 		</dict>
 		<key>Modules/PaymentSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			WEBFaY5OACxi2XDmCaY7ygcF6QSPIYW9HF5pbVkFS1Y=
+			PBd0mzsfPjW/uyYZxKpKcPmQbynrXBzfrSZFVZbCZq0=
 			</data>
 		</dict>
 		<key>Modules/PaymentSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			YauCGNoyW7LHjYUPoA2lmnfmcI5OlyEewvhpO2n575Q=
+			s367adPh4xV79nRWlEEOk2QvBOddr6ny2x3E5KxtNgI=
 			</data>
 		</dict>
 		<key>Modules/PaymentSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			u0rMTM78kjPs6SnuYGvV+0nRc2ZmbSKfpD7yT+WXTps=
+			khzzV8psXqBbUylwU0Ec3AWFAekeLMaljNXYEtdoIbM=
 			</data>
 		</dict>
 		<key>Modules/PaymentSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			yw76oGKJDiUNxiAu+OzkKczDBfIHPBjmWIVbjdx946E=
+			WJsDPX9cfTdjPa5uPKqJygbh1E7yWkEgoLLPYuMq9ec=
 			</data>
 		</dict>
 		<key>Modules/PaymentSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ULqiHXV1vCWoPYrL81LfF0GtgvQGjPfTFicfjX+j+lE=
+			X6duZp/WMHk+Ecjg0p+5Ej6ULEica48+r1eObomEUi8=
 			</data>
 		</dict>
 		<key>Modules/PaymentSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			WEBFaY5OACxi2XDmCaY7ygcF6QSPIYW9HF5pbVkFS1Y=
+			PBd0mzsfPjW/uyYZxKpKcPmQbynrXBzfrSZFVZbCZq0=
 			</data>
 		</dict>
 		<key>Modules/PaymentSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			nS44ObuLLAEeT06o/FGZV5sIAZrr7pRimpAODfEE0A4=
+			IwZdPZ2RUrD4VizU84xH8lmIZJR4c7Q9xVzfTVYmVFU=
 			</data>
 		</dict>
 		<key>Modules/PaymentSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			oSXezTOHuC0WB3+YN6avm3OmWtAGqIZjQuPT3IbHa9o=
+			8f/YhatFqt6wMJZN5tO5IrYLbOzJjRMGH31Zqn2dv2o=
 			</data>
 		</dict>
 		<key>Modules/PaymentSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			12ZmND2XVlnxwqzUuuM/jJxYr+XhCnrxmcCd79pkUyQ=
+			p0PmSmF19IatjXMFV3DcsFwObVftpU658ER2F5wBlmU=
 			</data>
 		</dict>
 		<key>Modules/PaymentSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Yd/tiuI5KkGQQWEF8sm2lYOfDYtYAwp2K89J0/3VV50=
+			fY4ub5Ao4xISpCE4n4QZmGvRPRzJqSkX0c/49VgJ8Ao=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -3246,14 +3246,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			O1ai3IOjmRNjYxc0cLtjSQATfHEaoYp0lc0pNvaWw/I=
+			6ZfGq5IBuXc0UydmePiO2tOtm28UgYRehmy404NkTE8=
 			</data>
 		</dict>
 		<key>PayWithCardViewController.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			1MSznTLFjv/0im9gltl6UXwRgtEZKp65PORLNnvK2iM=
+			miXgGaQYKR/LK4hQfk1XYwcNS5HKfxLbial3Wcitl2M=
 			</data>
 		</dict>
 		<key>PaymentAmountTableViewCell.nib</key>
@@ -3267,7 +3267,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			xy/O+ugf8z5O2HKWcY6mBUkTyHHHyXj+J6D2Ff+bjrk=
+			YOXwW4jLqtO6qxHSIwlDhL3ulyW/cztiiRC9roPJk/w=
 			</data>
 		</dict>
 		<key>SSDOcr.mlmodelc/analytics/coremldata.bin</key>
@@ -3400,7 +3400,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			yaYBujtoRtUcLP7iahsGQtP1JX9PNt28v58g6CBh8ng=
+			bkSrNwaDIxXyncG8FF9kGf7h7vbo0rX5rXz0gJHkkv8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -3430,7 +3430,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			seVu+KelGEJArQIB0uUWB2SmR0gdxL9xHFJpGPZqvLE=
+			n10Z6rGhS/V7ocuAiHp20uCYy+/4BscfwpwUkFxaInE=
 			</data>
 			<key>optional</key>
 			<true/>
