@@ -1,8 +1,8 @@
 ## 6.1.2 2021-08-2
-*Fixed localization issues.
+* Fixed localization issues.
 
 ## 6.1.0 2021-05-27
-*Added alternative payment methods.
+* Added alternative payment methods.
 
 ## 6.0.21 2021-05-09
 * The transaction types becomes configurable.
@@ -11,7 +11,7 @@
 * Add Iraq network.
 
 ## 6.1.7 2021-11-01
-*Minor issue.
+* Minor issue.
 
 ## 6.1.8 2021-12-08
 * back button's tint to have primary color
@@ -183,3 +183,6 @@
 
 ## 6.6.22 2024-10-07
 * Minor Localization Fix 
+
+## 6.6.23 2024-10-14
+* Hide card number when taking a screenshot or screen recording
