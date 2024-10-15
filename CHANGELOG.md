@@ -186,3 +186,6 @@
 
 ## 6.6.23 2024-10-14
 * Hide card number when taking a screenshot or screen recording
+
+## 6.6.24 2024-10-15
+* minor change
