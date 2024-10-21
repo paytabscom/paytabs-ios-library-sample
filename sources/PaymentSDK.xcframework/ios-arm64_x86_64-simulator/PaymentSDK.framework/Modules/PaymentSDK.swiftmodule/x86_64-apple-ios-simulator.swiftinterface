@@ -234,6 +234,22 @@ extension PaymentSDK.PaymentSDKConfiguration {
   public func linkBillingNameWithCard(_ value: Swift.Bool) -> PaymentSDK.PaymentSDKConfiguration
   public func showSavedCardsUI(_ value: Swift.Bool) -> PaymentSDK.PaymentSDKConfiguration
 }
+public enum GradientPoint {
+  case topLeft
+  case centerLeft
+  case bottomLeft
+  case topCenter
+  case center
+  case bottomCenter
+  case topRight
+  case centerRight
+  case bottomRight
+  public static func == (a: PaymentSDK.GradientPoint, b: PaymentSDK.GradientPoint) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
 public protocol ThemeConfiguration {
   var logoImage: UIKit.UIImage? { get set }
   var secondaryColor: UIKit.UIColor? { get set }
@@ -250,10 +266,23 @@ public protocol ThemeConfiguration {
   var backgroundColor: UIKit.UIColor? { get set }
   var placeholderColor: UIKit.UIColor? { get set }
   var strokeColor: UIKit.UIColor? { get set }
-  var strokeThinckness: CoreFoundation.CGFloat? { get set }
-  var inputsCornerRadius: CoreFoundation.CGFloat? { get set }
+  var strokeThinckness: CoreFoundation.CGFloat { get set }
+  var inputsCornerRadius: CoreFoundation.CGFloat { get set }
+  var buttonsCornerRadius: CoreFoundation.CGFloat { get set }
   var backButtonColor: UIKit.UIColor? { get set }
   var inputFieldBackgroundColor: UIKit.UIColor? { get set }
+  var cardMargin: CoreFoundation.CGFloat { get set }
+  var viewsCornerRadius: CoreFoundation.CGFloat { get set }
+  var hideViewsShadow: Swift.Bool { get set }
+  var hideScreenTitleBackground: Swift.Bool { get set }
+  var screenTitleMargin: CoreFoundation.CGFloat { get set }
+  var screenTitleTextAlignment: UIKit.NSTextAlignment { get set }
+  var toggleOnImage: UIKit.UIImage? { get set }
+  var toggleOffImage: UIKit.UIImage? { get set }
+  var billingHeaderMargin: CoreFoundation.CGFloat { get set }
+  var billingHeaderCornerRadius: CoreFoundation.CGFloat { get set }
+  var billingHeaderBackgroundColor: UIKit.UIColor? { get set }
+  var billingHeaderTextColor: UIKit.UIColor? { get set }
 }
 public class PaymentSDKTheme : PaymentSDK.ThemeConfiguration {
   public var logoImage: UIKit.UIImage?
@@ -264,8 +293,9 @@ public class PaymentSDKTheme : PaymentSDK.ThemeConfiguration {
   public var secondaryFontColor: UIKit.UIColor?
   public var secondaryFont: UIKit.UIFont?
   public var strokeColor: UIKit.UIColor?
-  public var strokeThinckness: CoreFoundation.CGFloat?
-  public var inputsCornerRadius: CoreFoundation.CGFloat?
+  public var strokeThinckness: CoreFoundation.CGFloat
+  public var inputsCornerRadius: CoreFoundation.CGFloat
+  public var buttonsCornerRadius: CoreFoundation.CGFloat
   public var buttonColor: UIKit.UIColor?
   public var buttonFontColor: UIKit.UIColor?
   public var buttonFont: UIKit.UIFont?
@@ -275,6 +305,18 @@ public class PaymentSDKTheme : PaymentSDK.ThemeConfiguration {
   public var placeholderColor: UIKit.UIColor?
   public var backButtonColor: UIKit.UIColor?
   public var inputFieldBackgroundColor: UIKit.UIColor?
+  public var cardMargin: CoreFoundation.CGFloat
+  public var viewsCornerRadius: CoreFoundation.CGFloat
+  public var hideViewsShadow: Swift.Bool
+  public var hideScreenTitleBackground: Swift.Bool
+  public var screenTitleMargin: CoreFoundation.CGFloat
+  public var screenTitleTextAlignment: UIKit.NSTextAlignment
+  public var toggleOnImage: UIKit.UIImage?
+  public var toggleOffImage: UIKit.UIImage?
+  public var billingHeaderMargin: CoreFoundation.CGFloat
+  public var billingHeaderCornerRadius: CoreFoundation.CGFloat
+  public var billingHeaderBackgroundColor: UIKit.UIColor?
+  public var billingHeaderTextColor: UIKit.UIColor?
   public init()
   public static var `default`: PaymentSDK.PaymentSDKTheme {
     get
@@ -816,6 +858,8 @@ public enum CancellationReason : Swift.String, Swift.Equatable {
 extension PaymentSDK.PaymentManager {
   public static func startAlternativePaymentMethod(on rootViewController: UIKit.UIViewController, configuration: PaymentSDK.PaymentSDKConfiguration, delegate: (any PaymentSDK.PaymentManagerDelegate)?)
 }
+extension PaymentSDK.GradientPoint : Swift.Equatable {}
+extension PaymentSDK.GradientPoint : Swift.Hashable {}
 extension PaymentSDK.TransactionType : Swift.Equatable {}
 extension PaymentSDK.TransactionType : Swift.Hashable {}
 extension PaymentSDK.TransactionType : Swift.RawRepresentable {}

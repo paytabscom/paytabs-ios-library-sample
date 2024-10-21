@@ -11339,6 +11339,479 @@
       },
       {
         "kind": "TypeDecl",
+        "name": "GradientPoint",
+        "printedName": "GradientPoint",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "topLeft",
+            "printedName": "topLeft",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PaymentSDK.GradientPoint.Type) -> PaymentSDK.GradientPoint",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GradientPoint",
+                    "printedName": "PaymentSDK.GradientPoint",
+                    "usr": "s:10PaymentSDK13GradientPointO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "PaymentSDK.GradientPoint.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GradientPoint",
+                        "printedName": "PaymentSDK.GradientPoint",
+                        "usr": "s:10PaymentSDK13GradientPointO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:10PaymentSDK13GradientPointO7topLeftyA2CmF",
+            "mangledName": "$s10PaymentSDK13GradientPointO7topLeftyA2CmF",
+            "moduleName": "PaymentSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "centerLeft",
+            "printedName": "centerLeft",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PaymentSDK.GradientPoint.Type) -> PaymentSDK.GradientPoint",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GradientPoint",
+                    "printedName": "PaymentSDK.GradientPoint",
+                    "usr": "s:10PaymentSDK13GradientPointO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "PaymentSDK.GradientPoint.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GradientPoint",
+                        "printedName": "PaymentSDK.GradientPoint",
+                        "usr": "s:10PaymentSDK13GradientPointO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:10PaymentSDK13GradientPointO10centerLeftyA2CmF",
+            "mangledName": "$s10PaymentSDK13GradientPointO10centerLeftyA2CmF",
+            "moduleName": "PaymentSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "bottomLeft",
+            "printedName": "bottomLeft",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PaymentSDK.GradientPoint.Type) -> PaymentSDK.GradientPoint",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GradientPoint",
+                    "printedName": "PaymentSDK.GradientPoint",
+                    "usr": "s:10PaymentSDK13GradientPointO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "PaymentSDK.GradientPoint.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GradientPoint",
+                        "printedName": "PaymentSDK.GradientPoint",
+                        "usr": "s:10PaymentSDK13GradientPointO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:10PaymentSDK13GradientPointO10bottomLeftyA2CmF",
+            "mangledName": "$s10PaymentSDK13GradientPointO10bottomLeftyA2CmF",
+            "moduleName": "PaymentSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "topCenter",
+            "printedName": "topCenter",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PaymentSDK.GradientPoint.Type) -> PaymentSDK.GradientPoint",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GradientPoint",
+                    "printedName": "PaymentSDK.GradientPoint",
+                    "usr": "s:10PaymentSDK13GradientPointO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "PaymentSDK.GradientPoint.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GradientPoint",
+                        "printedName": "PaymentSDK.GradientPoint",
+                        "usr": "s:10PaymentSDK13GradientPointO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:10PaymentSDK13GradientPointO9topCenteryA2CmF",
+            "mangledName": "$s10PaymentSDK13GradientPointO9topCenteryA2CmF",
+            "moduleName": "PaymentSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "center",
+            "printedName": "center",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PaymentSDK.GradientPoint.Type) -> PaymentSDK.GradientPoint",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GradientPoint",
+                    "printedName": "PaymentSDK.GradientPoint",
+                    "usr": "s:10PaymentSDK13GradientPointO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "PaymentSDK.GradientPoint.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GradientPoint",
+                        "printedName": "PaymentSDK.GradientPoint",
+                        "usr": "s:10PaymentSDK13GradientPointO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:10PaymentSDK13GradientPointO6centeryA2CmF",
+            "mangledName": "$s10PaymentSDK13GradientPointO6centeryA2CmF",
+            "moduleName": "PaymentSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "bottomCenter",
+            "printedName": "bottomCenter",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PaymentSDK.GradientPoint.Type) -> PaymentSDK.GradientPoint",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GradientPoint",
+                    "printedName": "PaymentSDK.GradientPoint",
+                    "usr": "s:10PaymentSDK13GradientPointO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "PaymentSDK.GradientPoint.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GradientPoint",
+                        "printedName": "PaymentSDK.GradientPoint",
+                        "usr": "s:10PaymentSDK13GradientPointO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:10PaymentSDK13GradientPointO12bottomCenteryA2CmF",
+            "mangledName": "$s10PaymentSDK13GradientPointO12bottomCenteryA2CmF",
+            "moduleName": "PaymentSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "topRight",
+            "printedName": "topRight",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PaymentSDK.GradientPoint.Type) -> PaymentSDK.GradientPoint",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GradientPoint",
+                    "printedName": "PaymentSDK.GradientPoint",
+                    "usr": "s:10PaymentSDK13GradientPointO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "PaymentSDK.GradientPoint.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GradientPoint",
+                        "printedName": "PaymentSDK.GradientPoint",
+                        "usr": "s:10PaymentSDK13GradientPointO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:10PaymentSDK13GradientPointO8topRightyA2CmF",
+            "mangledName": "$s10PaymentSDK13GradientPointO8topRightyA2CmF",
+            "moduleName": "PaymentSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "centerRight",
+            "printedName": "centerRight",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PaymentSDK.GradientPoint.Type) -> PaymentSDK.GradientPoint",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GradientPoint",
+                    "printedName": "PaymentSDK.GradientPoint",
+                    "usr": "s:10PaymentSDK13GradientPointO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "PaymentSDK.GradientPoint.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GradientPoint",
+                        "printedName": "PaymentSDK.GradientPoint",
+                        "usr": "s:10PaymentSDK13GradientPointO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:10PaymentSDK13GradientPointO11centerRightyA2CmF",
+            "mangledName": "$s10PaymentSDK13GradientPointO11centerRightyA2CmF",
+            "moduleName": "PaymentSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "bottomRight",
+            "printedName": "bottomRight",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PaymentSDK.GradientPoint.Type) -> PaymentSDK.GradientPoint",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GradientPoint",
+                    "printedName": "PaymentSDK.GradientPoint",
+                    "usr": "s:10PaymentSDK13GradientPointO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "PaymentSDK.GradientPoint.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GradientPoint",
+                        "printedName": "PaymentSDK.GradientPoint",
+                        "usr": "s:10PaymentSDK13GradientPointO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:10PaymentSDK13GradientPointO11bottomRightyA2CmF",
+            "mangledName": "$s10PaymentSDK13GradientPointO11bottomRightyA2CmF",
+            "moduleName": "PaymentSDK"
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "GradientPoint",
+                "printedName": "PaymentSDK.GradientPoint",
+                "usr": "s:10PaymentSDK13GradientPointO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "GradientPoint",
+                "printedName": "PaymentSDK.GradientPoint",
+                "usr": "s:10PaymentSDK13GradientPointO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10PaymentSDK13GradientPointO2eeoiySbAC_ACtFZ",
+            "mangledName": "$s10PaymentSDK13GradientPointO2eeoiySbAC_ACtFZ",
+            "moduleName": "PaymentSDK",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "hashValue",
+            "printedName": "hashValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10PaymentSDK13GradientPointO9hashValueSivp",
+            "mangledName": "$s10PaymentSDK13GradientPointO9hashValueSivp",
+            "moduleName": "PaymentSDK",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10PaymentSDK13GradientPointO9hashValueSivg",
+                "mangledName": "$s10PaymentSDK13GradientPointO9hashValueSivg",
+                "moduleName": "PaymentSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "hash",
+            "printedName": "hash(into:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Hasher",
+                "printedName": "Swift.Hasher",
+                "paramValueOwnership": "InOut",
+                "usr": "s:s6HasherV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10PaymentSDK13GradientPointO4hash4intoys6HasherVz_tF",
+            "mangledName": "$s10PaymentSDK13GradientPointO4hash4intoys6HasherVz_tF",
+            "moduleName": "PaymentSDK",
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:10PaymentSDK13GradientPointO",
+        "mangledName": "$s10PaymentSDK13GradientPointO",
+        "moduleName": "PaymentSDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
         "name": "ThemeConfiguration",
         "printedName": "ThemeConfiguration",
         "children": [
@@ -13074,22 +13547,14 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "CoreGraphics.CGFloat?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "CGFloat",
-                    "printedName": "CoreGraphics.CGFloat",
-                    "usr": "s:14CoreFoundation7CGFloatV"
-                  }
-                ],
-                "usr": "s:Sq"
+                "name": "CGFloat",
+                "printedName": "CoreGraphics.CGFloat",
+                "usr": "s:14CoreFoundation7CGFloatV"
               }
             ],
             "declKind": "Var",
-            "usr": "s:10PaymentSDK18ThemeConfigurationP16strokeThinckness14CoreFoundation7CGFloatVSgvp",
-            "mangledName": "$s10PaymentSDK18ThemeConfigurationP16strokeThinckness12CoreGraphics7CGFloatVSgvp",
+            "usr": "s:10PaymentSDK18ThemeConfigurationP16strokeThinckness14CoreFoundation7CGFloatVvp",
+            "mangledName": "$s10PaymentSDK18ThemeConfigurationP16strokeThinckness12CoreGraphics7CGFloatVvp",
             "moduleName": "PaymentSDK",
             "protocolReq": true,
             "accessors": [
@@ -13100,22 +13565,14 @@
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "CoreGraphics.CGFloat?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "CGFloat",
-                        "printedName": "CoreGraphics.CGFloat",
-                        "usr": "s:14CoreFoundation7CGFloatV"
-                      }
-                    ],
-                    "usr": "s:Sq"
+                    "name": "CGFloat",
+                    "printedName": "CoreGraphics.CGFloat",
+                    "usr": "s:14CoreFoundation7CGFloatV"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:10PaymentSDK18ThemeConfigurationP16strokeThinckness14CoreFoundation7CGFloatVSgvg",
-                "mangledName": "$s10PaymentSDK18ThemeConfigurationP16strokeThinckness12CoreGraphics7CGFloatVSgvg",
+                "usr": "s:10PaymentSDK18ThemeConfigurationP16strokeThinckness14CoreFoundation7CGFloatVvg",
+                "mangledName": "$s10PaymentSDK18ThemeConfigurationP16strokeThinckness12CoreGraphics7CGFloatVvg",
                 "moduleName": "PaymentSDK",
                 "genericSig": "<τ_0_0 where τ_0_0 : PaymentSDK.ThemeConfiguration>",
                 "sugared_genericSig": "<Self where Self : PaymentSDK.ThemeConfiguration>",
@@ -13135,22 +13592,14 @@
                   },
                   {
                     "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "CoreGraphics.CGFloat?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "CGFloat",
-                        "printedName": "CoreGraphics.CGFloat",
-                        "usr": "s:14CoreFoundation7CGFloatV"
-                      }
-                    ],
-                    "usr": "s:Sq"
+                    "name": "CGFloat",
+                    "printedName": "CoreGraphics.CGFloat",
+                    "usr": "s:14CoreFoundation7CGFloatV"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:10PaymentSDK18ThemeConfigurationP16strokeThinckness14CoreFoundation7CGFloatVSgvs",
-                "mangledName": "$s10PaymentSDK18ThemeConfigurationP16strokeThinckness12CoreGraphics7CGFloatVSgvs",
+                "usr": "s:10PaymentSDK18ThemeConfigurationP16strokeThinckness14CoreFoundation7CGFloatVvs",
+                "mangledName": "$s10PaymentSDK18ThemeConfigurationP16strokeThinckness12CoreGraphics7CGFloatVvs",
                 "moduleName": "PaymentSDK",
                 "genericSig": "<τ_0_0 where τ_0_0 : PaymentSDK.ThemeConfiguration>",
                 "sugared_genericSig": "<Self where Self : PaymentSDK.ThemeConfiguration>",
@@ -13170,8 +13619,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:10PaymentSDK18ThemeConfigurationP16strokeThinckness14CoreFoundation7CGFloatVSgvM",
-                "mangledName": "$s10PaymentSDK18ThemeConfigurationP16strokeThinckness12CoreGraphics7CGFloatVSgvM",
+                "usr": "s:10PaymentSDK18ThemeConfigurationP16strokeThinckness14CoreFoundation7CGFloatVvM",
+                "mangledName": "$s10PaymentSDK18ThemeConfigurationP16strokeThinckness12CoreGraphics7CGFloatVvM",
                 "moduleName": "PaymentSDK",
                 "genericSig": "<τ_0_0 where τ_0_0 : PaymentSDK.ThemeConfiguration>",
                 "sugared_genericSig": "<Self where Self : PaymentSDK.ThemeConfiguration>",
@@ -13189,22 +13638,14 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "CoreGraphics.CGFloat?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "CGFloat",
-                    "printedName": "CoreGraphics.CGFloat",
-                    "usr": "s:14CoreFoundation7CGFloatV"
-                  }
-                ],
-                "usr": "s:Sq"
+                "name": "CGFloat",
+                "printedName": "CoreGraphics.CGFloat",
+                "usr": "s:14CoreFoundation7CGFloatV"
               }
             ],
             "declKind": "Var",
-            "usr": "s:10PaymentSDK18ThemeConfigurationP18inputsCornerRadius14CoreFoundation7CGFloatVSgvp",
-            "mangledName": "$s10PaymentSDK18ThemeConfigurationP18inputsCornerRadius12CoreGraphics7CGFloatVSgvp",
+            "usr": "s:10PaymentSDK18ThemeConfigurationP18inputsCornerRadius14CoreFoundation7CGFloatVvp",
+            "mangledName": "$s10PaymentSDK18ThemeConfigurationP18inputsCornerRadius12CoreGraphics7CGFloatVvp",
             "moduleName": "PaymentSDK",
             "protocolReq": true,
             "accessors": [
@@ -13215,22 +13656,14 @@
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "CoreGraphics.CGFloat?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "CGFloat",
-                        "printedName": "CoreGraphics.CGFloat",
-                        "usr": "s:14CoreFoundation7CGFloatV"
-                      }
-                    ],
-                    "usr": "s:Sq"
+                    "name": "CGFloat",
+                    "printedName": "CoreGraphics.CGFloat",
+                    "usr": "s:14CoreFoundation7CGFloatV"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:10PaymentSDK18ThemeConfigurationP18inputsCornerRadius14CoreFoundation7CGFloatVSgvg",
-                "mangledName": "$s10PaymentSDK18ThemeConfigurationP18inputsCornerRadius12CoreGraphics7CGFloatVSgvg",
+                "usr": "s:10PaymentSDK18ThemeConfigurationP18inputsCornerRadius14CoreFoundation7CGFloatVvg",
+                "mangledName": "$s10PaymentSDK18ThemeConfigurationP18inputsCornerRadius12CoreGraphics7CGFloatVvg",
                 "moduleName": "PaymentSDK",
                 "genericSig": "<τ_0_0 where τ_0_0 : PaymentSDK.ThemeConfiguration>",
                 "sugared_genericSig": "<Self where Self : PaymentSDK.ThemeConfiguration>",
@@ -13250,22 +13683,14 @@
                   },
                   {
                     "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "CoreGraphics.CGFloat?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "CGFloat",
-                        "printedName": "CoreGraphics.CGFloat",
-                        "usr": "s:14CoreFoundation7CGFloatV"
-                      }
-                    ],
-                    "usr": "s:Sq"
+                    "name": "CGFloat",
+                    "printedName": "CoreGraphics.CGFloat",
+                    "usr": "s:14CoreFoundation7CGFloatV"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:10PaymentSDK18ThemeConfigurationP18inputsCornerRadius14CoreFoundation7CGFloatVSgvs",
-                "mangledName": "$s10PaymentSDK18ThemeConfigurationP18inputsCornerRadius12CoreGraphics7CGFloatVSgvs",
+                "usr": "s:10PaymentSDK18ThemeConfigurationP18inputsCornerRadius14CoreFoundation7CGFloatVvs",
+                "mangledName": "$s10PaymentSDK18ThemeConfigurationP18inputsCornerRadius12CoreGraphics7CGFloatVvs",
                 "moduleName": "PaymentSDK",
                 "genericSig": "<τ_0_0 where τ_0_0 : PaymentSDK.ThemeConfiguration>",
                 "sugared_genericSig": "<Self where Self : PaymentSDK.ThemeConfiguration>",
@@ -13285,8 +13710,99 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:10PaymentSDK18ThemeConfigurationP18inputsCornerRadius14CoreFoundation7CGFloatVSgvM",
-                "mangledName": "$s10PaymentSDK18ThemeConfigurationP18inputsCornerRadius12CoreGraphics7CGFloatVSgvM",
+                "usr": "s:10PaymentSDK18ThemeConfigurationP18inputsCornerRadius14CoreFoundation7CGFloatVvM",
+                "mangledName": "$s10PaymentSDK18ThemeConfigurationP18inputsCornerRadius12CoreGraphics7CGFloatVvM",
+                "moduleName": "PaymentSDK",
+                "genericSig": "<τ_0_0 where τ_0_0 : PaymentSDK.ThemeConfiguration>",
+                "sugared_genericSig": "<Self where Self : PaymentSDK.ThemeConfiguration>",
+                "protocolReq": true,
+                "implicit": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "buttonsCornerRadius",
+            "printedName": "buttonsCornerRadius",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CGFloat",
+                "printedName": "CoreGraphics.CGFloat",
+                "usr": "s:14CoreFoundation7CGFloatV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10PaymentSDK18ThemeConfigurationP19buttonsCornerRadius14CoreFoundation7CGFloatVvp",
+            "mangledName": "$s10PaymentSDK18ThemeConfigurationP19buttonsCornerRadius12CoreGraphics7CGFloatVvp",
+            "moduleName": "PaymentSDK",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGFloat",
+                    "printedName": "CoreGraphics.CGFloat",
+                    "usr": "s:14CoreFoundation7CGFloatV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10PaymentSDK18ThemeConfigurationP19buttonsCornerRadius14CoreFoundation7CGFloatVvg",
+                "mangledName": "$s10PaymentSDK18ThemeConfigurationP19buttonsCornerRadius12CoreGraphics7CGFloatVvg",
+                "moduleName": "PaymentSDK",
+                "genericSig": "<τ_0_0 where τ_0_0 : PaymentSDK.ThemeConfiguration>",
+                "sugared_genericSig": "<Self where Self : PaymentSDK.ThemeConfiguration>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGFloat",
+                    "printedName": "CoreGraphics.CGFloat",
+                    "usr": "s:14CoreFoundation7CGFloatV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10PaymentSDK18ThemeConfigurationP19buttonsCornerRadius14CoreFoundation7CGFloatVvs",
+                "mangledName": "$s10PaymentSDK18ThemeConfigurationP19buttonsCornerRadius12CoreGraphics7CGFloatVvs",
+                "moduleName": "PaymentSDK",
+                "genericSig": "<τ_0_0 where τ_0_0 : PaymentSDK.ThemeConfiguration>",
+                "sugared_genericSig": "<Self where Self : PaymentSDK.ThemeConfiguration>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10PaymentSDK18ThemeConfigurationP19buttonsCornerRadius14CoreFoundation7CGFloatVvM",
+                "mangledName": "$s10PaymentSDK18ThemeConfigurationP19buttonsCornerRadius12CoreGraphics7CGFloatVvM",
                 "moduleName": "PaymentSDK",
                 "genericSig": "<τ_0_0 where τ_0_0 : PaymentSDK.ThemeConfiguration>",
                 "sugared_genericSig": "<Self where Self : PaymentSDK.ThemeConfiguration>",
@@ -13517,6 +14033,1200 @@
                 "declKind": "Accessor",
                 "usr": "s:10PaymentSDK18ThemeConfigurationP25inputFieldBackgroundColorSo7UIColorCSgvM",
                 "mangledName": "$s10PaymentSDK18ThemeConfigurationP25inputFieldBackgroundColorSo7UIColorCSgvM",
+                "moduleName": "PaymentSDK",
+                "genericSig": "<τ_0_0 where τ_0_0 : PaymentSDK.ThemeConfiguration>",
+                "sugared_genericSig": "<Self where Self : PaymentSDK.ThemeConfiguration>",
+                "protocolReq": true,
+                "implicit": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "cardMargin",
+            "printedName": "cardMargin",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CGFloat",
+                "printedName": "CoreGraphics.CGFloat",
+                "usr": "s:14CoreFoundation7CGFloatV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10PaymentSDK18ThemeConfigurationP10cardMargin14CoreFoundation7CGFloatVvp",
+            "mangledName": "$s10PaymentSDK18ThemeConfigurationP10cardMargin12CoreGraphics7CGFloatVvp",
+            "moduleName": "PaymentSDK",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGFloat",
+                    "printedName": "CoreGraphics.CGFloat",
+                    "usr": "s:14CoreFoundation7CGFloatV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10PaymentSDK18ThemeConfigurationP10cardMargin14CoreFoundation7CGFloatVvg",
+                "mangledName": "$s10PaymentSDK18ThemeConfigurationP10cardMargin12CoreGraphics7CGFloatVvg",
+                "moduleName": "PaymentSDK",
+                "genericSig": "<τ_0_0 where τ_0_0 : PaymentSDK.ThemeConfiguration>",
+                "sugared_genericSig": "<Self where Self : PaymentSDK.ThemeConfiguration>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGFloat",
+                    "printedName": "CoreGraphics.CGFloat",
+                    "usr": "s:14CoreFoundation7CGFloatV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10PaymentSDK18ThemeConfigurationP10cardMargin14CoreFoundation7CGFloatVvs",
+                "mangledName": "$s10PaymentSDK18ThemeConfigurationP10cardMargin12CoreGraphics7CGFloatVvs",
+                "moduleName": "PaymentSDK",
+                "genericSig": "<τ_0_0 where τ_0_0 : PaymentSDK.ThemeConfiguration>",
+                "sugared_genericSig": "<Self where Self : PaymentSDK.ThemeConfiguration>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10PaymentSDK18ThemeConfigurationP10cardMargin14CoreFoundation7CGFloatVvM",
+                "mangledName": "$s10PaymentSDK18ThemeConfigurationP10cardMargin12CoreGraphics7CGFloatVvM",
+                "moduleName": "PaymentSDK",
+                "genericSig": "<τ_0_0 where τ_0_0 : PaymentSDK.ThemeConfiguration>",
+                "sugared_genericSig": "<Self where Self : PaymentSDK.ThemeConfiguration>",
+                "protocolReq": true,
+                "implicit": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "viewsCornerRadius",
+            "printedName": "viewsCornerRadius",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CGFloat",
+                "printedName": "CoreGraphics.CGFloat",
+                "usr": "s:14CoreFoundation7CGFloatV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10PaymentSDK18ThemeConfigurationP17viewsCornerRadius14CoreFoundation7CGFloatVvp",
+            "mangledName": "$s10PaymentSDK18ThemeConfigurationP17viewsCornerRadius12CoreGraphics7CGFloatVvp",
+            "moduleName": "PaymentSDK",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGFloat",
+                    "printedName": "CoreGraphics.CGFloat",
+                    "usr": "s:14CoreFoundation7CGFloatV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10PaymentSDK18ThemeConfigurationP17viewsCornerRadius14CoreFoundation7CGFloatVvg",
+                "mangledName": "$s10PaymentSDK18ThemeConfigurationP17viewsCornerRadius12CoreGraphics7CGFloatVvg",
+                "moduleName": "PaymentSDK",
+                "genericSig": "<τ_0_0 where τ_0_0 : PaymentSDK.ThemeConfiguration>",
+                "sugared_genericSig": "<Self where Self : PaymentSDK.ThemeConfiguration>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGFloat",
+                    "printedName": "CoreGraphics.CGFloat",
+                    "usr": "s:14CoreFoundation7CGFloatV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10PaymentSDK18ThemeConfigurationP17viewsCornerRadius14CoreFoundation7CGFloatVvs",
+                "mangledName": "$s10PaymentSDK18ThemeConfigurationP17viewsCornerRadius12CoreGraphics7CGFloatVvs",
+                "moduleName": "PaymentSDK",
+                "genericSig": "<τ_0_0 where τ_0_0 : PaymentSDK.ThemeConfiguration>",
+                "sugared_genericSig": "<Self where Self : PaymentSDK.ThemeConfiguration>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10PaymentSDK18ThemeConfigurationP17viewsCornerRadius14CoreFoundation7CGFloatVvM",
+                "mangledName": "$s10PaymentSDK18ThemeConfigurationP17viewsCornerRadius12CoreGraphics7CGFloatVvM",
+                "moduleName": "PaymentSDK",
+                "genericSig": "<τ_0_0 where τ_0_0 : PaymentSDK.ThemeConfiguration>",
+                "sugared_genericSig": "<Self where Self : PaymentSDK.ThemeConfiguration>",
+                "protocolReq": true,
+                "implicit": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "hideViewsShadow",
+            "printedName": "hideViewsShadow",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10PaymentSDK18ThemeConfigurationP15hideViewsShadowSbvp",
+            "mangledName": "$s10PaymentSDK18ThemeConfigurationP15hideViewsShadowSbvp",
+            "moduleName": "PaymentSDK",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10PaymentSDK18ThemeConfigurationP15hideViewsShadowSbvg",
+                "mangledName": "$s10PaymentSDK18ThemeConfigurationP15hideViewsShadowSbvg",
+                "moduleName": "PaymentSDK",
+                "genericSig": "<τ_0_0 where τ_0_0 : PaymentSDK.ThemeConfiguration>",
+                "sugared_genericSig": "<Self where Self : PaymentSDK.ThemeConfiguration>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10PaymentSDK18ThemeConfigurationP15hideViewsShadowSbvs",
+                "mangledName": "$s10PaymentSDK18ThemeConfigurationP15hideViewsShadowSbvs",
+                "moduleName": "PaymentSDK",
+                "genericSig": "<τ_0_0 where τ_0_0 : PaymentSDK.ThemeConfiguration>",
+                "sugared_genericSig": "<Self where Self : PaymentSDK.ThemeConfiguration>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10PaymentSDK18ThemeConfigurationP15hideViewsShadowSbvM",
+                "mangledName": "$s10PaymentSDK18ThemeConfigurationP15hideViewsShadowSbvM",
+                "moduleName": "PaymentSDK",
+                "genericSig": "<τ_0_0 where τ_0_0 : PaymentSDK.ThemeConfiguration>",
+                "sugared_genericSig": "<Self where Self : PaymentSDK.ThemeConfiguration>",
+                "protocolReq": true,
+                "implicit": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "hideScreenTitleBackground",
+            "printedName": "hideScreenTitleBackground",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10PaymentSDK18ThemeConfigurationP25hideScreenTitleBackgroundSbvp",
+            "mangledName": "$s10PaymentSDK18ThemeConfigurationP25hideScreenTitleBackgroundSbvp",
+            "moduleName": "PaymentSDK",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10PaymentSDK18ThemeConfigurationP25hideScreenTitleBackgroundSbvg",
+                "mangledName": "$s10PaymentSDK18ThemeConfigurationP25hideScreenTitleBackgroundSbvg",
+                "moduleName": "PaymentSDK",
+                "genericSig": "<τ_0_0 where τ_0_0 : PaymentSDK.ThemeConfiguration>",
+                "sugared_genericSig": "<Self where Self : PaymentSDK.ThemeConfiguration>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10PaymentSDK18ThemeConfigurationP25hideScreenTitleBackgroundSbvs",
+                "mangledName": "$s10PaymentSDK18ThemeConfigurationP25hideScreenTitleBackgroundSbvs",
+                "moduleName": "PaymentSDK",
+                "genericSig": "<τ_0_0 where τ_0_0 : PaymentSDK.ThemeConfiguration>",
+                "sugared_genericSig": "<Self where Self : PaymentSDK.ThemeConfiguration>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10PaymentSDK18ThemeConfigurationP25hideScreenTitleBackgroundSbvM",
+                "mangledName": "$s10PaymentSDK18ThemeConfigurationP25hideScreenTitleBackgroundSbvM",
+                "moduleName": "PaymentSDK",
+                "genericSig": "<τ_0_0 where τ_0_0 : PaymentSDK.ThemeConfiguration>",
+                "sugared_genericSig": "<Self where Self : PaymentSDK.ThemeConfiguration>",
+                "protocolReq": true,
+                "implicit": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "screenTitleMargin",
+            "printedName": "screenTitleMargin",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CGFloat",
+                "printedName": "CoreGraphics.CGFloat",
+                "usr": "s:14CoreFoundation7CGFloatV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10PaymentSDK18ThemeConfigurationP17screenTitleMargin14CoreFoundation7CGFloatVvp",
+            "mangledName": "$s10PaymentSDK18ThemeConfigurationP17screenTitleMargin12CoreGraphics7CGFloatVvp",
+            "moduleName": "PaymentSDK",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGFloat",
+                    "printedName": "CoreGraphics.CGFloat",
+                    "usr": "s:14CoreFoundation7CGFloatV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10PaymentSDK18ThemeConfigurationP17screenTitleMargin14CoreFoundation7CGFloatVvg",
+                "mangledName": "$s10PaymentSDK18ThemeConfigurationP17screenTitleMargin12CoreGraphics7CGFloatVvg",
+                "moduleName": "PaymentSDK",
+                "genericSig": "<τ_0_0 where τ_0_0 : PaymentSDK.ThemeConfiguration>",
+                "sugared_genericSig": "<Self where Self : PaymentSDK.ThemeConfiguration>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGFloat",
+                    "printedName": "CoreGraphics.CGFloat",
+                    "usr": "s:14CoreFoundation7CGFloatV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10PaymentSDK18ThemeConfigurationP17screenTitleMargin14CoreFoundation7CGFloatVvs",
+                "mangledName": "$s10PaymentSDK18ThemeConfigurationP17screenTitleMargin12CoreGraphics7CGFloatVvs",
+                "moduleName": "PaymentSDK",
+                "genericSig": "<τ_0_0 where τ_0_0 : PaymentSDK.ThemeConfiguration>",
+                "sugared_genericSig": "<Self where Self : PaymentSDK.ThemeConfiguration>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10PaymentSDK18ThemeConfigurationP17screenTitleMargin14CoreFoundation7CGFloatVvM",
+                "mangledName": "$s10PaymentSDK18ThemeConfigurationP17screenTitleMargin12CoreGraphics7CGFloatVvM",
+                "moduleName": "PaymentSDK",
+                "genericSig": "<τ_0_0 where τ_0_0 : PaymentSDK.ThemeConfiguration>",
+                "sugared_genericSig": "<Self where Self : PaymentSDK.ThemeConfiguration>",
+                "protocolReq": true,
+                "implicit": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "screenTitleTextAlignment",
+            "printedName": "screenTitleTextAlignment",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "NSTextAlignment",
+                "printedName": "UIKit.NSTextAlignment",
+                "usr": "c:@E@NSTextAlignment"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10PaymentSDK18ThemeConfigurationP24screenTitleTextAlignmentSo06NSTextH0Vvp",
+            "mangledName": "$s10PaymentSDK18ThemeConfigurationP24screenTitleTextAlignmentSo06NSTextH0Vvp",
+            "moduleName": "PaymentSDK",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSTextAlignment",
+                    "printedName": "UIKit.NSTextAlignment",
+                    "usr": "c:@E@NSTextAlignment"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10PaymentSDK18ThemeConfigurationP24screenTitleTextAlignmentSo06NSTextH0Vvg",
+                "mangledName": "$s10PaymentSDK18ThemeConfigurationP24screenTitleTextAlignmentSo06NSTextH0Vvg",
+                "moduleName": "PaymentSDK",
+                "genericSig": "<τ_0_0 where τ_0_0 : PaymentSDK.ThemeConfiguration>",
+                "sugared_genericSig": "<Self where Self : PaymentSDK.ThemeConfiguration>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSTextAlignment",
+                    "printedName": "UIKit.NSTextAlignment",
+                    "usr": "c:@E@NSTextAlignment"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10PaymentSDK18ThemeConfigurationP24screenTitleTextAlignmentSo06NSTextH0Vvs",
+                "mangledName": "$s10PaymentSDK18ThemeConfigurationP24screenTitleTextAlignmentSo06NSTextH0Vvs",
+                "moduleName": "PaymentSDK",
+                "genericSig": "<τ_0_0 where τ_0_0 : PaymentSDK.ThemeConfiguration>",
+                "sugared_genericSig": "<Self where Self : PaymentSDK.ThemeConfiguration>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10PaymentSDK18ThemeConfigurationP24screenTitleTextAlignmentSo06NSTextH0VvM",
+                "mangledName": "$s10PaymentSDK18ThemeConfigurationP24screenTitleTextAlignmentSo06NSTextH0VvM",
+                "moduleName": "PaymentSDK",
+                "genericSig": "<τ_0_0 where τ_0_0 : PaymentSDK.ThemeConfiguration>",
+                "sugared_genericSig": "<Self where Self : PaymentSDK.ThemeConfiguration>",
+                "protocolReq": true,
+                "implicit": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "toggleOnImage",
+            "printedName": "toggleOnImage",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIImage?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIImage",
+                    "printedName": "UIKit.UIImage",
+                    "usr": "c:objc(cs)UIImage"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10PaymentSDK18ThemeConfigurationP13toggleOnImageSo7UIImageCSgvp",
+            "mangledName": "$s10PaymentSDK18ThemeConfigurationP13toggleOnImageSo7UIImageCSgvp",
+            "moduleName": "PaymentSDK",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "UIKit.UIImage?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIImage",
+                        "printedName": "UIKit.UIImage",
+                        "usr": "c:objc(cs)UIImage"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10PaymentSDK18ThemeConfigurationP13toggleOnImageSo7UIImageCSgvg",
+                "mangledName": "$s10PaymentSDK18ThemeConfigurationP13toggleOnImageSo7UIImageCSgvg",
+                "moduleName": "PaymentSDK",
+                "genericSig": "<τ_0_0 where τ_0_0 : PaymentSDK.ThemeConfiguration>",
+                "sugared_genericSig": "<Self where Self : PaymentSDK.ThemeConfiguration>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "UIKit.UIImage?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIImage",
+                        "printedName": "UIKit.UIImage",
+                        "usr": "c:objc(cs)UIImage"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10PaymentSDK18ThemeConfigurationP13toggleOnImageSo7UIImageCSgvs",
+                "mangledName": "$s10PaymentSDK18ThemeConfigurationP13toggleOnImageSo7UIImageCSgvs",
+                "moduleName": "PaymentSDK",
+                "genericSig": "<τ_0_0 where τ_0_0 : PaymentSDK.ThemeConfiguration>",
+                "sugared_genericSig": "<Self where Self : PaymentSDK.ThemeConfiguration>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10PaymentSDK18ThemeConfigurationP13toggleOnImageSo7UIImageCSgvM",
+                "mangledName": "$s10PaymentSDK18ThemeConfigurationP13toggleOnImageSo7UIImageCSgvM",
+                "moduleName": "PaymentSDK",
+                "genericSig": "<τ_0_0 where τ_0_0 : PaymentSDK.ThemeConfiguration>",
+                "sugared_genericSig": "<Self where Self : PaymentSDK.ThemeConfiguration>",
+                "protocolReq": true,
+                "implicit": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "toggleOffImage",
+            "printedName": "toggleOffImage",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIImage?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIImage",
+                    "printedName": "UIKit.UIImage",
+                    "usr": "c:objc(cs)UIImage"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10PaymentSDK18ThemeConfigurationP14toggleOffImageSo7UIImageCSgvp",
+            "mangledName": "$s10PaymentSDK18ThemeConfigurationP14toggleOffImageSo7UIImageCSgvp",
+            "moduleName": "PaymentSDK",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "UIKit.UIImage?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIImage",
+                        "printedName": "UIKit.UIImage",
+                        "usr": "c:objc(cs)UIImage"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10PaymentSDK18ThemeConfigurationP14toggleOffImageSo7UIImageCSgvg",
+                "mangledName": "$s10PaymentSDK18ThemeConfigurationP14toggleOffImageSo7UIImageCSgvg",
+                "moduleName": "PaymentSDK",
+                "genericSig": "<τ_0_0 where τ_0_0 : PaymentSDK.ThemeConfiguration>",
+                "sugared_genericSig": "<Self where Self : PaymentSDK.ThemeConfiguration>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "UIKit.UIImage?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIImage",
+                        "printedName": "UIKit.UIImage",
+                        "usr": "c:objc(cs)UIImage"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10PaymentSDK18ThemeConfigurationP14toggleOffImageSo7UIImageCSgvs",
+                "mangledName": "$s10PaymentSDK18ThemeConfigurationP14toggleOffImageSo7UIImageCSgvs",
+                "moduleName": "PaymentSDK",
+                "genericSig": "<τ_0_0 where τ_0_0 : PaymentSDK.ThemeConfiguration>",
+                "sugared_genericSig": "<Self where Self : PaymentSDK.ThemeConfiguration>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10PaymentSDK18ThemeConfigurationP14toggleOffImageSo7UIImageCSgvM",
+                "mangledName": "$s10PaymentSDK18ThemeConfigurationP14toggleOffImageSo7UIImageCSgvM",
+                "moduleName": "PaymentSDK",
+                "genericSig": "<τ_0_0 where τ_0_0 : PaymentSDK.ThemeConfiguration>",
+                "sugared_genericSig": "<Self where Self : PaymentSDK.ThemeConfiguration>",
+                "protocolReq": true,
+                "implicit": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "billingHeaderMargin",
+            "printedName": "billingHeaderMargin",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CGFloat",
+                "printedName": "CoreGraphics.CGFloat",
+                "usr": "s:14CoreFoundation7CGFloatV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10PaymentSDK18ThemeConfigurationP19billingHeaderMargin14CoreFoundation7CGFloatVvp",
+            "mangledName": "$s10PaymentSDK18ThemeConfigurationP19billingHeaderMargin12CoreGraphics7CGFloatVvp",
+            "moduleName": "PaymentSDK",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGFloat",
+                    "printedName": "CoreGraphics.CGFloat",
+                    "usr": "s:14CoreFoundation7CGFloatV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10PaymentSDK18ThemeConfigurationP19billingHeaderMargin14CoreFoundation7CGFloatVvg",
+                "mangledName": "$s10PaymentSDK18ThemeConfigurationP19billingHeaderMargin12CoreGraphics7CGFloatVvg",
+                "moduleName": "PaymentSDK",
+                "genericSig": "<τ_0_0 where τ_0_0 : PaymentSDK.ThemeConfiguration>",
+                "sugared_genericSig": "<Self where Self : PaymentSDK.ThemeConfiguration>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGFloat",
+                    "printedName": "CoreGraphics.CGFloat",
+                    "usr": "s:14CoreFoundation7CGFloatV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10PaymentSDK18ThemeConfigurationP19billingHeaderMargin14CoreFoundation7CGFloatVvs",
+                "mangledName": "$s10PaymentSDK18ThemeConfigurationP19billingHeaderMargin12CoreGraphics7CGFloatVvs",
+                "moduleName": "PaymentSDK",
+                "genericSig": "<τ_0_0 where τ_0_0 : PaymentSDK.ThemeConfiguration>",
+                "sugared_genericSig": "<Self where Self : PaymentSDK.ThemeConfiguration>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10PaymentSDK18ThemeConfigurationP19billingHeaderMargin14CoreFoundation7CGFloatVvM",
+                "mangledName": "$s10PaymentSDK18ThemeConfigurationP19billingHeaderMargin12CoreGraphics7CGFloatVvM",
+                "moduleName": "PaymentSDK",
+                "genericSig": "<τ_0_0 where τ_0_0 : PaymentSDK.ThemeConfiguration>",
+                "sugared_genericSig": "<Self where Self : PaymentSDK.ThemeConfiguration>",
+                "protocolReq": true,
+                "implicit": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "billingHeaderCornerRadius",
+            "printedName": "billingHeaderCornerRadius",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CGFloat",
+                "printedName": "CoreGraphics.CGFloat",
+                "usr": "s:14CoreFoundation7CGFloatV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10PaymentSDK18ThemeConfigurationP25billingHeaderCornerRadius14CoreFoundation7CGFloatVvp",
+            "mangledName": "$s10PaymentSDK18ThemeConfigurationP25billingHeaderCornerRadius12CoreGraphics7CGFloatVvp",
+            "moduleName": "PaymentSDK",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGFloat",
+                    "printedName": "CoreGraphics.CGFloat",
+                    "usr": "s:14CoreFoundation7CGFloatV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10PaymentSDK18ThemeConfigurationP25billingHeaderCornerRadius14CoreFoundation7CGFloatVvg",
+                "mangledName": "$s10PaymentSDK18ThemeConfigurationP25billingHeaderCornerRadius12CoreGraphics7CGFloatVvg",
+                "moduleName": "PaymentSDK",
+                "genericSig": "<τ_0_0 where τ_0_0 : PaymentSDK.ThemeConfiguration>",
+                "sugared_genericSig": "<Self where Self : PaymentSDK.ThemeConfiguration>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGFloat",
+                    "printedName": "CoreGraphics.CGFloat",
+                    "usr": "s:14CoreFoundation7CGFloatV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10PaymentSDK18ThemeConfigurationP25billingHeaderCornerRadius14CoreFoundation7CGFloatVvs",
+                "mangledName": "$s10PaymentSDK18ThemeConfigurationP25billingHeaderCornerRadius12CoreGraphics7CGFloatVvs",
+                "moduleName": "PaymentSDK",
+                "genericSig": "<τ_0_0 where τ_0_0 : PaymentSDK.ThemeConfiguration>",
+                "sugared_genericSig": "<Self where Self : PaymentSDK.ThemeConfiguration>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10PaymentSDK18ThemeConfigurationP25billingHeaderCornerRadius14CoreFoundation7CGFloatVvM",
+                "mangledName": "$s10PaymentSDK18ThemeConfigurationP25billingHeaderCornerRadius12CoreGraphics7CGFloatVvM",
+                "moduleName": "PaymentSDK",
+                "genericSig": "<τ_0_0 where τ_0_0 : PaymentSDK.ThemeConfiguration>",
+                "sugared_genericSig": "<Self where Self : PaymentSDK.ThemeConfiguration>",
+                "protocolReq": true,
+                "implicit": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "billingHeaderBackgroundColor",
+            "printedName": "billingHeaderBackgroundColor",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIColor?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIColor",
+                    "printedName": "UIKit.UIColor",
+                    "usr": "c:objc(cs)UIColor"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10PaymentSDK18ThemeConfigurationP28billingHeaderBackgroundColorSo7UIColorCSgvp",
+            "mangledName": "$s10PaymentSDK18ThemeConfigurationP28billingHeaderBackgroundColorSo7UIColorCSgvp",
+            "moduleName": "PaymentSDK",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "UIKit.UIColor?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIColor",
+                        "printedName": "UIKit.UIColor",
+                        "usr": "c:objc(cs)UIColor"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10PaymentSDK18ThemeConfigurationP28billingHeaderBackgroundColorSo7UIColorCSgvg",
+                "mangledName": "$s10PaymentSDK18ThemeConfigurationP28billingHeaderBackgroundColorSo7UIColorCSgvg",
+                "moduleName": "PaymentSDK",
+                "genericSig": "<τ_0_0 where τ_0_0 : PaymentSDK.ThemeConfiguration>",
+                "sugared_genericSig": "<Self where Self : PaymentSDK.ThemeConfiguration>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "UIKit.UIColor?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIColor",
+                        "printedName": "UIKit.UIColor",
+                        "usr": "c:objc(cs)UIColor"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10PaymentSDK18ThemeConfigurationP28billingHeaderBackgroundColorSo7UIColorCSgvs",
+                "mangledName": "$s10PaymentSDK18ThemeConfigurationP28billingHeaderBackgroundColorSo7UIColorCSgvs",
+                "moduleName": "PaymentSDK",
+                "genericSig": "<τ_0_0 where τ_0_0 : PaymentSDK.ThemeConfiguration>",
+                "sugared_genericSig": "<Self where Self : PaymentSDK.ThemeConfiguration>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10PaymentSDK18ThemeConfigurationP28billingHeaderBackgroundColorSo7UIColorCSgvM",
+                "mangledName": "$s10PaymentSDK18ThemeConfigurationP28billingHeaderBackgroundColorSo7UIColorCSgvM",
+                "moduleName": "PaymentSDK",
+                "genericSig": "<τ_0_0 where τ_0_0 : PaymentSDK.ThemeConfiguration>",
+                "sugared_genericSig": "<Self where Self : PaymentSDK.ThemeConfiguration>",
+                "protocolReq": true,
+                "implicit": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "billingHeaderTextColor",
+            "printedName": "billingHeaderTextColor",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIColor?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIColor",
+                    "printedName": "UIKit.UIColor",
+                    "usr": "c:objc(cs)UIColor"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10PaymentSDK18ThemeConfigurationP22billingHeaderTextColorSo7UIColorCSgvp",
+            "mangledName": "$s10PaymentSDK18ThemeConfigurationP22billingHeaderTextColorSo7UIColorCSgvp",
+            "moduleName": "PaymentSDK",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "UIKit.UIColor?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIColor",
+                        "printedName": "UIKit.UIColor",
+                        "usr": "c:objc(cs)UIColor"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10PaymentSDK18ThemeConfigurationP22billingHeaderTextColorSo7UIColorCSgvg",
+                "mangledName": "$s10PaymentSDK18ThemeConfigurationP22billingHeaderTextColorSo7UIColorCSgvg",
+                "moduleName": "PaymentSDK",
+                "genericSig": "<τ_0_0 where τ_0_0 : PaymentSDK.ThemeConfiguration>",
+                "sugared_genericSig": "<Self where Self : PaymentSDK.ThemeConfiguration>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "UIKit.UIColor?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIColor",
+                        "printedName": "UIKit.UIColor",
+                        "usr": "c:objc(cs)UIColor"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10PaymentSDK18ThemeConfigurationP22billingHeaderTextColorSo7UIColorCSgvs",
+                "mangledName": "$s10PaymentSDK18ThemeConfigurationP22billingHeaderTextColorSo7UIColorCSgvs",
+                "moduleName": "PaymentSDK",
+                "genericSig": "<τ_0_0 where τ_0_0 : PaymentSDK.ThemeConfiguration>",
+                "sugared_genericSig": "<Self where Self : PaymentSDK.ThemeConfiguration>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10PaymentSDK18ThemeConfigurationP22billingHeaderTextColorSo7UIColorCSgvM",
+                "mangledName": "$s10PaymentSDK18ThemeConfigurationP22billingHeaderTextColorSo7UIColorCSgvM",
                 "moduleName": "PaymentSDK",
                 "genericSig": "<τ_0_0 where τ_0_0 : PaymentSDK.ThemeConfiguration>",
                 "sugared_genericSig": "<Self where Self : PaymentSDK.ThemeConfiguration>",
@@ -14444,22 +16154,14 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "CoreGraphics.CGFloat?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "CGFloat",
-                    "printedName": "CoreGraphics.CGFloat",
-                    "usr": "s:14CoreFoundation7CGFloatV"
-                  }
-                ],
-                "usr": "s:Sq"
+                "name": "CGFloat",
+                "printedName": "CoreGraphics.CGFloat",
+                "usr": "s:14CoreFoundation7CGFloatV"
               }
             ],
             "declKind": "Var",
-            "usr": "s:10PaymentSDK0A8SDKThemeC16strokeThinckness14CoreFoundation7CGFloatVSgvp",
-            "mangledName": "$s10PaymentSDK0A8SDKThemeC16strokeThinckness12CoreGraphics7CGFloatVSgvp",
+            "usr": "s:10PaymentSDK0A8SDKThemeC16strokeThinckness14CoreFoundation7CGFloatVvp",
+            "mangledName": "$s10PaymentSDK0A8SDKThemeC16strokeThinckness12CoreGraphics7CGFloatVvp",
             "moduleName": "PaymentSDK",
             "declAttributes": [
               "HasInitialValue",
@@ -14475,22 +16177,14 @@
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "CoreGraphics.CGFloat?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "CGFloat",
-                        "printedName": "CoreGraphics.CGFloat",
-                        "usr": "s:14CoreFoundation7CGFloatV"
-                      }
-                    ],
-                    "usr": "s:Sq"
+                    "name": "CGFloat",
+                    "printedName": "CoreGraphics.CGFloat",
+                    "usr": "s:14CoreFoundation7CGFloatV"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:10PaymentSDK0A8SDKThemeC16strokeThinckness14CoreFoundation7CGFloatVSgvg",
-                "mangledName": "$s10PaymentSDK0A8SDKThemeC16strokeThinckness12CoreGraphics7CGFloatVSgvg",
+                "usr": "s:10PaymentSDK0A8SDKThemeC16strokeThinckness14CoreFoundation7CGFloatVvg",
+                "mangledName": "$s10PaymentSDK0A8SDKThemeC16strokeThinckness12CoreGraphics7CGFloatVvg",
                 "moduleName": "PaymentSDK",
                 "implicit": true,
                 "accessorKind": "get"
@@ -14507,22 +16201,14 @@
                   },
                   {
                     "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "CoreGraphics.CGFloat?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "CGFloat",
-                        "printedName": "CoreGraphics.CGFloat",
-                        "usr": "s:14CoreFoundation7CGFloatV"
-                      }
-                    ],
-                    "usr": "s:Sq"
+                    "name": "CGFloat",
+                    "printedName": "CoreGraphics.CGFloat",
+                    "usr": "s:14CoreFoundation7CGFloatV"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:10PaymentSDK0A8SDKThemeC16strokeThinckness14CoreFoundation7CGFloatVSgvs",
-                "mangledName": "$s10PaymentSDK0A8SDKThemeC16strokeThinckness12CoreGraphics7CGFloatVSgvs",
+                "usr": "s:10PaymentSDK0A8SDKThemeC16strokeThinckness14CoreFoundation7CGFloatVvs",
+                "mangledName": "$s10PaymentSDK0A8SDKThemeC16strokeThinckness12CoreGraphics7CGFloatVvs",
                 "moduleName": "PaymentSDK",
                 "implicit": true,
                 "accessorKind": "set"
@@ -14539,8 +16225,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:10PaymentSDK0A8SDKThemeC16strokeThinckness14CoreFoundation7CGFloatVSgvM",
-                "mangledName": "$s10PaymentSDK0A8SDKThemeC16strokeThinckness12CoreGraphics7CGFloatVSgvM",
+                "usr": "s:10PaymentSDK0A8SDKThemeC16strokeThinckness14CoreFoundation7CGFloatVvM",
+                "mangledName": "$s10PaymentSDK0A8SDKThemeC16strokeThinckness12CoreGraphics7CGFloatVvM",
                 "moduleName": "PaymentSDK",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -14554,22 +16240,14 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "CoreGraphics.CGFloat?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "CGFloat",
-                    "printedName": "CoreGraphics.CGFloat",
-                    "usr": "s:14CoreFoundation7CGFloatV"
-                  }
-                ],
-                "usr": "s:Sq"
+                "name": "CGFloat",
+                "printedName": "CoreGraphics.CGFloat",
+                "usr": "s:14CoreFoundation7CGFloatV"
               }
             ],
             "declKind": "Var",
-            "usr": "s:10PaymentSDK0A8SDKThemeC18inputsCornerRadius14CoreFoundation7CGFloatVSgvp",
-            "mangledName": "$s10PaymentSDK0A8SDKThemeC18inputsCornerRadius12CoreGraphics7CGFloatVSgvp",
+            "usr": "s:10PaymentSDK0A8SDKThemeC18inputsCornerRadius14CoreFoundation7CGFloatVvp",
+            "mangledName": "$s10PaymentSDK0A8SDKThemeC18inputsCornerRadius12CoreGraphics7CGFloatVvp",
             "moduleName": "PaymentSDK",
             "declAttributes": [
               "HasInitialValue",
@@ -14585,22 +16263,14 @@
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "CoreGraphics.CGFloat?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "CGFloat",
-                        "printedName": "CoreGraphics.CGFloat",
-                        "usr": "s:14CoreFoundation7CGFloatV"
-                      }
-                    ],
-                    "usr": "s:Sq"
+                    "name": "CGFloat",
+                    "printedName": "CoreGraphics.CGFloat",
+                    "usr": "s:14CoreFoundation7CGFloatV"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:10PaymentSDK0A8SDKThemeC18inputsCornerRadius14CoreFoundation7CGFloatVSgvg",
-                "mangledName": "$s10PaymentSDK0A8SDKThemeC18inputsCornerRadius12CoreGraphics7CGFloatVSgvg",
+                "usr": "s:10PaymentSDK0A8SDKThemeC18inputsCornerRadius14CoreFoundation7CGFloatVvg",
+                "mangledName": "$s10PaymentSDK0A8SDKThemeC18inputsCornerRadius12CoreGraphics7CGFloatVvg",
                 "moduleName": "PaymentSDK",
                 "implicit": true,
                 "accessorKind": "get"
@@ -14617,22 +16287,14 @@
                   },
                   {
                     "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "CoreGraphics.CGFloat?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "CGFloat",
-                        "printedName": "CoreGraphics.CGFloat",
-                        "usr": "s:14CoreFoundation7CGFloatV"
-                      }
-                    ],
-                    "usr": "s:Sq"
+                    "name": "CGFloat",
+                    "printedName": "CoreGraphics.CGFloat",
+                    "usr": "s:14CoreFoundation7CGFloatV"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:10PaymentSDK0A8SDKThemeC18inputsCornerRadius14CoreFoundation7CGFloatVSgvs",
-                "mangledName": "$s10PaymentSDK0A8SDKThemeC18inputsCornerRadius12CoreGraphics7CGFloatVSgvs",
+                "usr": "s:10PaymentSDK0A8SDKThemeC18inputsCornerRadius14CoreFoundation7CGFloatVvs",
+                "mangledName": "$s10PaymentSDK0A8SDKThemeC18inputsCornerRadius12CoreGraphics7CGFloatVvs",
                 "moduleName": "PaymentSDK",
                 "implicit": true,
                 "accessorKind": "set"
@@ -14649,8 +16311,94 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:10PaymentSDK0A8SDKThemeC18inputsCornerRadius14CoreFoundation7CGFloatVSgvM",
-                "mangledName": "$s10PaymentSDK0A8SDKThemeC18inputsCornerRadius12CoreGraphics7CGFloatVSgvM",
+                "usr": "s:10PaymentSDK0A8SDKThemeC18inputsCornerRadius14CoreFoundation7CGFloatVvM",
+                "mangledName": "$s10PaymentSDK0A8SDKThemeC18inputsCornerRadius12CoreGraphics7CGFloatVvM",
+                "moduleName": "PaymentSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "buttonsCornerRadius",
+            "printedName": "buttonsCornerRadius",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CGFloat",
+                "printedName": "CoreGraphics.CGFloat",
+                "usr": "s:14CoreFoundation7CGFloatV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10PaymentSDK0A8SDKThemeC19buttonsCornerRadius14CoreFoundation7CGFloatVvp",
+            "mangledName": "$s10PaymentSDK0A8SDKThemeC19buttonsCornerRadius12CoreGraphics7CGFloatVvp",
+            "moduleName": "PaymentSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGFloat",
+                    "printedName": "CoreGraphics.CGFloat",
+                    "usr": "s:14CoreFoundation7CGFloatV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10PaymentSDK0A8SDKThemeC19buttonsCornerRadius14CoreFoundation7CGFloatVvg",
+                "mangledName": "$s10PaymentSDK0A8SDKThemeC19buttonsCornerRadius12CoreGraphics7CGFloatVvg",
+                "moduleName": "PaymentSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGFloat",
+                    "printedName": "CoreGraphics.CGFloat",
+                    "usr": "s:14CoreFoundation7CGFloatV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10PaymentSDK0A8SDKThemeC19buttonsCornerRadius14CoreFoundation7CGFloatVvs",
+                "mangledName": "$s10PaymentSDK0A8SDKThemeC19buttonsCornerRadius12CoreGraphics7CGFloatVvs",
+                "moduleName": "PaymentSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10PaymentSDK0A8SDKThemeC19buttonsCornerRadius14CoreFoundation7CGFloatVvM",
+                "mangledName": "$s10PaymentSDK0A8SDKThemeC19buttonsCornerRadius12CoreGraphics7CGFloatVvM",
                 "moduleName": "PaymentSDK",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -15648,6 +17396,1136 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "cardMargin",
+            "printedName": "cardMargin",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CGFloat",
+                "printedName": "CoreGraphics.CGFloat",
+                "usr": "s:14CoreFoundation7CGFloatV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10PaymentSDK0A8SDKThemeC10cardMargin14CoreFoundation7CGFloatVvp",
+            "mangledName": "$s10PaymentSDK0A8SDKThemeC10cardMargin12CoreGraphics7CGFloatVvp",
+            "moduleName": "PaymentSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGFloat",
+                    "printedName": "CoreGraphics.CGFloat",
+                    "usr": "s:14CoreFoundation7CGFloatV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10PaymentSDK0A8SDKThemeC10cardMargin14CoreFoundation7CGFloatVvg",
+                "mangledName": "$s10PaymentSDK0A8SDKThemeC10cardMargin12CoreGraphics7CGFloatVvg",
+                "moduleName": "PaymentSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGFloat",
+                    "printedName": "CoreGraphics.CGFloat",
+                    "usr": "s:14CoreFoundation7CGFloatV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10PaymentSDK0A8SDKThemeC10cardMargin14CoreFoundation7CGFloatVvs",
+                "mangledName": "$s10PaymentSDK0A8SDKThemeC10cardMargin12CoreGraphics7CGFloatVvs",
+                "moduleName": "PaymentSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10PaymentSDK0A8SDKThemeC10cardMargin14CoreFoundation7CGFloatVvM",
+                "mangledName": "$s10PaymentSDK0A8SDKThemeC10cardMargin12CoreGraphics7CGFloatVvM",
+                "moduleName": "PaymentSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "viewsCornerRadius",
+            "printedName": "viewsCornerRadius",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CGFloat",
+                "printedName": "CoreGraphics.CGFloat",
+                "usr": "s:14CoreFoundation7CGFloatV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10PaymentSDK0A8SDKThemeC17viewsCornerRadius14CoreFoundation7CGFloatVvp",
+            "mangledName": "$s10PaymentSDK0A8SDKThemeC17viewsCornerRadius12CoreGraphics7CGFloatVvp",
+            "moduleName": "PaymentSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGFloat",
+                    "printedName": "CoreGraphics.CGFloat",
+                    "usr": "s:14CoreFoundation7CGFloatV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10PaymentSDK0A8SDKThemeC17viewsCornerRadius14CoreFoundation7CGFloatVvg",
+                "mangledName": "$s10PaymentSDK0A8SDKThemeC17viewsCornerRadius12CoreGraphics7CGFloatVvg",
+                "moduleName": "PaymentSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGFloat",
+                    "printedName": "CoreGraphics.CGFloat",
+                    "usr": "s:14CoreFoundation7CGFloatV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10PaymentSDK0A8SDKThemeC17viewsCornerRadius14CoreFoundation7CGFloatVvs",
+                "mangledName": "$s10PaymentSDK0A8SDKThemeC17viewsCornerRadius12CoreGraphics7CGFloatVvs",
+                "moduleName": "PaymentSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10PaymentSDK0A8SDKThemeC17viewsCornerRadius14CoreFoundation7CGFloatVvM",
+                "mangledName": "$s10PaymentSDK0A8SDKThemeC17viewsCornerRadius12CoreGraphics7CGFloatVvM",
+                "moduleName": "PaymentSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "hideViewsShadow",
+            "printedName": "hideViewsShadow",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10PaymentSDK0A8SDKThemeC15hideViewsShadowSbvp",
+            "mangledName": "$s10PaymentSDK0A8SDKThemeC15hideViewsShadowSbvp",
+            "moduleName": "PaymentSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10PaymentSDK0A8SDKThemeC15hideViewsShadowSbvg",
+                "mangledName": "$s10PaymentSDK0A8SDKThemeC15hideViewsShadowSbvg",
+                "moduleName": "PaymentSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10PaymentSDK0A8SDKThemeC15hideViewsShadowSbvs",
+                "mangledName": "$s10PaymentSDK0A8SDKThemeC15hideViewsShadowSbvs",
+                "moduleName": "PaymentSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10PaymentSDK0A8SDKThemeC15hideViewsShadowSbvM",
+                "mangledName": "$s10PaymentSDK0A8SDKThemeC15hideViewsShadowSbvM",
+                "moduleName": "PaymentSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "hideScreenTitleBackground",
+            "printedName": "hideScreenTitleBackground",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10PaymentSDK0A8SDKThemeC25hideScreenTitleBackgroundSbvp",
+            "mangledName": "$s10PaymentSDK0A8SDKThemeC25hideScreenTitleBackgroundSbvp",
+            "moduleName": "PaymentSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10PaymentSDK0A8SDKThemeC25hideScreenTitleBackgroundSbvg",
+                "mangledName": "$s10PaymentSDK0A8SDKThemeC25hideScreenTitleBackgroundSbvg",
+                "moduleName": "PaymentSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10PaymentSDK0A8SDKThemeC25hideScreenTitleBackgroundSbvs",
+                "mangledName": "$s10PaymentSDK0A8SDKThemeC25hideScreenTitleBackgroundSbvs",
+                "moduleName": "PaymentSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10PaymentSDK0A8SDKThemeC25hideScreenTitleBackgroundSbvM",
+                "mangledName": "$s10PaymentSDK0A8SDKThemeC25hideScreenTitleBackgroundSbvM",
+                "moduleName": "PaymentSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "screenTitleMargin",
+            "printedName": "screenTitleMargin",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CGFloat",
+                "printedName": "CoreGraphics.CGFloat",
+                "usr": "s:14CoreFoundation7CGFloatV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10PaymentSDK0A8SDKThemeC17screenTitleMargin14CoreFoundation7CGFloatVvp",
+            "mangledName": "$s10PaymentSDK0A8SDKThemeC17screenTitleMargin12CoreGraphics7CGFloatVvp",
+            "moduleName": "PaymentSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGFloat",
+                    "printedName": "CoreGraphics.CGFloat",
+                    "usr": "s:14CoreFoundation7CGFloatV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10PaymentSDK0A8SDKThemeC17screenTitleMargin14CoreFoundation7CGFloatVvg",
+                "mangledName": "$s10PaymentSDK0A8SDKThemeC17screenTitleMargin12CoreGraphics7CGFloatVvg",
+                "moduleName": "PaymentSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGFloat",
+                    "printedName": "CoreGraphics.CGFloat",
+                    "usr": "s:14CoreFoundation7CGFloatV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10PaymentSDK0A8SDKThemeC17screenTitleMargin14CoreFoundation7CGFloatVvs",
+                "mangledName": "$s10PaymentSDK0A8SDKThemeC17screenTitleMargin12CoreGraphics7CGFloatVvs",
+                "moduleName": "PaymentSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10PaymentSDK0A8SDKThemeC17screenTitleMargin14CoreFoundation7CGFloatVvM",
+                "mangledName": "$s10PaymentSDK0A8SDKThemeC17screenTitleMargin12CoreGraphics7CGFloatVvM",
+                "moduleName": "PaymentSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "screenTitleTextAlignment",
+            "printedName": "screenTitleTextAlignment",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "NSTextAlignment",
+                "printedName": "UIKit.NSTextAlignment",
+                "usr": "c:@E@NSTextAlignment"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10PaymentSDK0A8SDKThemeC24screenTitleTextAlignmentSo06NSTextG0Vvp",
+            "mangledName": "$s10PaymentSDK0A8SDKThemeC24screenTitleTextAlignmentSo06NSTextG0Vvp",
+            "moduleName": "PaymentSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSTextAlignment",
+                    "printedName": "UIKit.NSTextAlignment",
+                    "usr": "c:@E@NSTextAlignment"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10PaymentSDK0A8SDKThemeC24screenTitleTextAlignmentSo06NSTextG0Vvg",
+                "mangledName": "$s10PaymentSDK0A8SDKThemeC24screenTitleTextAlignmentSo06NSTextG0Vvg",
+                "moduleName": "PaymentSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSTextAlignment",
+                    "printedName": "UIKit.NSTextAlignment",
+                    "usr": "c:@E@NSTextAlignment"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10PaymentSDK0A8SDKThemeC24screenTitleTextAlignmentSo06NSTextG0Vvs",
+                "mangledName": "$s10PaymentSDK0A8SDKThemeC24screenTitleTextAlignmentSo06NSTextG0Vvs",
+                "moduleName": "PaymentSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10PaymentSDK0A8SDKThemeC24screenTitleTextAlignmentSo06NSTextG0VvM",
+                "mangledName": "$s10PaymentSDK0A8SDKThemeC24screenTitleTextAlignmentSo06NSTextG0VvM",
+                "moduleName": "PaymentSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "toggleOnImage",
+            "printedName": "toggleOnImage",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIImage?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIImage",
+                    "printedName": "UIKit.UIImage",
+                    "usr": "c:objc(cs)UIImage"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10PaymentSDK0A8SDKThemeC13toggleOnImageSo7UIImageCSgvp",
+            "mangledName": "$s10PaymentSDK0A8SDKThemeC13toggleOnImageSo7UIImageCSgvp",
+            "moduleName": "PaymentSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "UIKit.UIImage?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIImage",
+                        "printedName": "UIKit.UIImage",
+                        "usr": "c:objc(cs)UIImage"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10PaymentSDK0A8SDKThemeC13toggleOnImageSo7UIImageCSgvg",
+                "mangledName": "$s10PaymentSDK0A8SDKThemeC13toggleOnImageSo7UIImageCSgvg",
+                "moduleName": "PaymentSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "UIKit.UIImage?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIImage",
+                        "printedName": "UIKit.UIImage",
+                        "usr": "c:objc(cs)UIImage"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10PaymentSDK0A8SDKThemeC13toggleOnImageSo7UIImageCSgvs",
+                "mangledName": "$s10PaymentSDK0A8SDKThemeC13toggleOnImageSo7UIImageCSgvs",
+                "moduleName": "PaymentSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10PaymentSDK0A8SDKThemeC13toggleOnImageSo7UIImageCSgvM",
+                "mangledName": "$s10PaymentSDK0A8SDKThemeC13toggleOnImageSo7UIImageCSgvM",
+                "moduleName": "PaymentSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "toggleOffImage",
+            "printedName": "toggleOffImage",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIImage?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIImage",
+                    "printedName": "UIKit.UIImage",
+                    "usr": "c:objc(cs)UIImage"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10PaymentSDK0A8SDKThemeC14toggleOffImageSo7UIImageCSgvp",
+            "mangledName": "$s10PaymentSDK0A8SDKThemeC14toggleOffImageSo7UIImageCSgvp",
+            "moduleName": "PaymentSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "UIKit.UIImage?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIImage",
+                        "printedName": "UIKit.UIImage",
+                        "usr": "c:objc(cs)UIImage"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10PaymentSDK0A8SDKThemeC14toggleOffImageSo7UIImageCSgvg",
+                "mangledName": "$s10PaymentSDK0A8SDKThemeC14toggleOffImageSo7UIImageCSgvg",
+                "moduleName": "PaymentSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "UIKit.UIImage?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIImage",
+                        "printedName": "UIKit.UIImage",
+                        "usr": "c:objc(cs)UIImage"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10PaymentSDK0A8SDKThemeC14toggleOffImageSo7UIImageCSgvs",
+                "mangledName": "$s10PaymentSDK0A8SDKThemeC14toggleOffImageSo7UIImageCSgvs",
+                "moduleName": "PaymentSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10PaymentSDK0A8SDKThemeC14toggleOffImageSo7UIImageCSgvM",
+                "mangledName": "$s10PaymentSDK0A8SDKThemeC14toggleOffImageSo7UIImageCSgvM",
+                "moduleName": "PaymentSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "billingHeaderMargin",
+            "printedName": "billingHeaderMargin",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CGFloat",
+                "printedName": "CoreGraphics.CGFloat",
+                "usr": "s:14CoreFoundation7CGFloatV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10PaymentSDK0A8SDKThemeC19billingHeaderMargin14CoreFoundation7CGFloatVvp",
+            "mangledName": "$s10PaymentSDK0A8SDKThemeC19billingHeaderMargin12CoreGraphics7CGFloatVvp",
+            "moduleName": "PaymentSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGFloat",
+                    "printedName": "CoreGraphics.CGFloat",
+                    "usr": "s:14CoreFoundation7CGFloatV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10PaymentSDK0A8SDKThemeC19billingHeaderMargin14CoreFoundation7CGFloatVvg",
+                "mangledName": "$s10PaymentSDK0A8SDKThemeC19billingHeaderMargin12CoreGraphics7CGFloatVvg",
+                "moduleName": "PaymentSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGFloat",
+                    "printedName": "CoreGraphics.CGFloat",
+                    "usr": "s:14CoreFoundation7CGFloatV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10PaymentSDK0A8SDKThemeC19billingHeaderMargin14CoreFoundation7CGFloatVvs",
+                "mangledName": "$s10PaymentSDK0A8SDKThemeC19billingHeaderMargin12CoreGraphics7CGFloatVvs",
+                "moduleName": "PaymentSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10PaymentSDK0A8SDKThemeC19billingHeaderMargin14CoreFoundation7CGFloatVvM",
+                "mangledName": "$s10PaymentSDK0A8SDKThemeC19billingHeaderMargin12CoreGraphics7CGFloatVvM",
+                "moduleName": "PaymentSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "billingHeaderCornerRadius",
+            "printedName": "billingHeaderCornerRadius",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CGFloat",
+                "printedName": "CoreGraphics.CGFloat",
+                "usr": "s:14CoreFoundation7CGFloatV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10PaymentSDK0A8SDKThemeC25billingHeaderCornerRadius14CoreFoundation7CGFloatVvp",
+            "mangledName": "$s10PaymentSDK0A8SDKThemeC25billingHeaderCornerRadius12CoreGraphics7CGFloatVvp",
+            "moduleName": "PaymentSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGFloat",
+                    "printedName": "CoreGraphics.CGFloat",
+                    "usr": "s:14CoreFoundation7CGFloatV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10PaymentSDK0A8SDKThemeC25billingHeaderCornerRadius14CoreFoundation7CGFloatVvg",
+                "mangledName": "$s10PaymentSDK0A8SDKThemeC25billingHeaderCornerRadius12CoreGraphics7CGFloatVvg",
+                "moduleName": "PaymentSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGFloat",
+                    "printedName": "CoreGraphics.CGFloat",
+                    "usr": "s:14CoreFoundation7CGFloatV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10PaymentSDK0A8SDKThemeC25billingHeaderCornerRadius14CoreFoundation7CGFloatVvs",
+                "mangledName": "$s10PaymentSDK0A8SDKThemeC25billingHeaderCornerRadius12CoreGraphics7CGFloatVvs",
+                "moduleName": "PaymentSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10PaymentSDK0A8SDKThemeC25billingHeaderCornerRadius14CoreFoundation7CGFloatVvM",
+                "mangledName": "$s10PaymentSDK0A8SDKThemeC25billingHeaderCornerRadius12CoreGraphics7CGFloatVvM",
+                "moduleName": "PaymentSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "billingHeaderBackgroundColor",
+            "printedName": "billingHeaderBackgroundColor",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIColor?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIColor",
+                    "printedName": "UIKit.UIColor",
+                    "usr": "c:objc(cs)UIColor"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10PaymentSDK0A8SDKThemeC28billingHeaderBackgroundColorSo7UIColorCSgvp",
+            "mangledName": "$s10PaymentSDK0A8SDKThemeC28billingHeaderBackgroundColorSo7UIColorCSgvp",
+            "moduleName": "PaymentSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "UIKit.UIColor?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIColor",
+                        "printedName": "UIKit.UIColor",
+                        "usr": "c:objc(cs)UIColor"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10PaymentSDK0A8SDKThemeC28billingHeaderBackgroundColorSo7UIColorCSgvg",
+                "mangledName": "$s10PaymentSDK0A8SDKThemeC28billingHeaderBackgroundColorSo7UIColorCSgvg",
+                "moduleName": "PaymentSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "UIKit.UIColor?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIColor",
+                        "printedName": "UIKit.UIColor",
+                        "usr": "c:objc(cs)UIColor"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10PaymentSDK0A8SDKThemeC28billingHeaderBackgroundColorSo7UIColorCSgvs",
+                "mangledName": "$s10PaymentSDK0A8SDKThemeC28billingHeaderBackgroundColorSo7UIColorCSgvs",
+                "moduleName": "PaymentSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10PaymentSDK0A8SDKThemeC28billingHeaderBackgroundColorSo7UIColorCSgvM",
+                "mangledName": "$s10PaymentSDK0A8SDKThemeC28billingHeaderBackgroundColorSo7UIColorCSgvM",
+                "moduleName": "PaymentSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "billingHeaderTextColor",
+            "printedName": "billingHeaderTextColor",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIColor?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIColor",
+                    "printedName": "UIKit.UIColor",
+                    "usr": "c:objc(cs)UIColor"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10PaymentSDK0A8SDKThemeC22billingHeaderTextColorSo7UIColorCSgvp",
+            "mangledName": "$s10PaymentSDK0A8SDKThemeC22billingHeaderTextColorSo7UIColorCSgvp",
+            "moduleName": "PaymentSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "UIKit.UIColor?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIColor",
+                        "printedName": "UIKit.UIColor",
+                        "usr": "c:objc(cs)UIColor"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10PaymentSDK0A8SDKThemeC22billingHeaderTextColorSo7UIColorCSgvg",
+                "mangledName": "$s10PaymentSDK0A8SDKThemeC22billingHeaderTextColorSo7UIColorCSgvg",
+                "moduleName": "PaymentSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "UIKit.UIColor?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIColor",
+                        "printedName": "UIKit.UIColor",
+                        "usr": "c:objc(cs)UIColor"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10PaymentSDK0A8SDKThemeC22billingHeaderTextColorSo7UIColorCSgvs",
+                "mangledName": "$s10PaymentSDK0A8SDKThemeC22billingHeaderTextColorSo7UIColorCSgvs",
+                "moduleName": "PaymentSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10PaymentSDK0A8SDKThemeC22billingHeaderTextColorSo7UIColorCSgvM",
+                "mangledName": "$s10PaymentSDK0A8SDKThemeC22billingHeaderTextColorSo7UIColorCSgvM",
+                "moduleName": "PaymentSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init()",
@@ -15664,7 +18542,8 @@
             "mangledName": "$s10PaymentSDK0A8SDKThemeCACycfc",
             "moduleName": "PaymentSDK",
             "declAttributes": [
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
             ],
             "init_kind": "Designated"
           },
@@ -42568,70 +45447,91 @@
     {
       "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsiOSSDK\/PayTabs\/Extensions\/UIView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1125,
+      "offset": 1090,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsiOSSDK\/PayTabs\/Extensions\/UIView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1434,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsiOSSDK\/PayTabs\/Extensions\/UIView.swift",
       "kind": "FloatLiteral",
-      "offset": 1662,
+      "offset": 1971,
       "length": 3,
       "value": "0.8"
     },
     {
       "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsiOSSDK\/PayTabs\/Extensions\/UIView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1714,
+      "offset": 2023,
       "length": 1,
       "value": "6"
     },
     {
       "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsiOSSDK\/PayTabs\/Extensions\/UIView.swift",
       "kind": "BooleanLiteral",
-      "offset": 1789,
+      "offset": 2098,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsiOSSDK\/PayTabs\/Extensions\/UIView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2123,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsiOSSDK\/PayTabs\/Extensions\/UIView.swift",
       "kind": "FloatLiteral",
-      "offset": 2633,
+      "offset": 3065,
       "length": 3,
       "value": "0.8"
     },
     {
       "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsiOSSDK\/PayTabs\/Extensions\/UIView.swift",
       "kind": "IntegerLiteral",
-      "offset": 2694,
+      "offset": 3126,
       "length": 1,
       "value": "6"
     },
     {
       "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsiOSSDK\/PayTabs\/Extensions\/UIView.swift",
       "kind": "BooleanLiteral",
-      "offset": 2779,
+      "offset": 3211,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsiOSSDK\/PayTabs\/Extensions\/UIView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3236,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsiOSSDK\/PayTabs\/Extensions\/UIView.swift",
       "kind": "FloatLiteral",
-      "offset": 5242,
+      "offset": 5810,
       "length": 3,
       "value": "0.2"
     },
     {
       "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsiOSSDK\/PayTabs\/Extensions\/UIView.swift",
       "kind": "FloatLiteral",
-      "offset": 5648,
+      "offset": 6216,
       "length": 3,
       "value": "0.2"
     },
     {
       "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsiOSSDK\/PayTabs\/Extensions\/UIView.swift",
       "kind": "FloatLiteral",
-      "offset": 6539,
+      "offset": 7107,
       "length": 4,
       "value": "85.0"
     },
@@ -42830,6 +45730,76 @@
       "offset": 219,
       "length": 2,
       "value": "[]"
+    },
+    {
+      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsiOSSDK\/PayTabs\/Themes\/PaymentSDKTheme.swift",
+      "kind": "FloatLiteral",
+      "offset": 3973,
+      "length": 3,
+      "value": "0.2"
+    },
+    {
+      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsiOSSDK\/PayTabs\/Themes\/PaymentSDKTheme.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4022,
+      "length": 1,
+      "value": "6"
+    },
+    {
+      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsiOSSDK\/PayTabs\/Themes\/PaymentSDKTheme.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4070,
+      "length": 1,
+      "value": "6"
+    },
+    {
+      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsiOSSDK\/PayTabs\/Themes\/PaymentSDKTheme.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4471,
+      "length": 2,
+      "value": "16"
+    },
+    {
+      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsiOSSDK\/PayTabs\/Themes\/PaymentSDKTheme.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4518,
+      "length": 1,
+      "value": "6"
+    },
+    {
+      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsiOSSDK\/PayTabs\/Themes\/PaymentSDKTheme.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4559,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsiOSSDK\/PayTabs\/Themes\/PaymentSDKTheme.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4614,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsiOSSDK\/PayTabs\/Themes\/PaymentSDKTheme.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4664,
+      "length": 2,
+      "value": "44"
+    },
+    {
+      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsiOSSDK\/PayTabs\/Themes\/PaymentSDKTheme.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4956,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsiOSSDK\/PayTabs\/Themes\/PaymentSDKTheme.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5010,
+      "length": 1,
+      "value": "0"
     },
     {
       "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsiOSSDK\/PayTabs\/PublicLayer\/PaymentSDKTransactionDetails.swift",
@@ -44423,77 +47393,77 @@
     {
       "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsiOSSDK\/PayTabs\/PayWithCreditCard\/Views\/PayWithCardViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 2853,
+      "offset": 3072,
       "length": 1,
       "value": "6"
     },
     {
       "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsiOSSDK\/PayTabs\/PayWithCreditCard\/Views\/PayWithCardViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 2905,
+      "offset": 3124,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsiOSSDK\/PayTabs\/PayWithCreditCard\/Views\/PayWithCardViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 3055,
+      "offset": 3274,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsiOSSDK\/PayTabs\/PayWithCreditCard\/Views\/PayWithCardViewController.swift",
       "kind": "StringLiteral",
-      "offset": 3433,
+      "offset": 3652,
       "length": 24,
       "value": "\"payment_sdk_powered_by\""
     },
     {
       "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsiOSSDK\/PayTabs\/PayWithCreditCard\/Views\/PayWithCardViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 4001,
+      "offset": 4387,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsiOSSDK\/PayTabs\/PayWithCreditCard\/Views\/PayWithCardViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 4059,
+      "offset": 4445,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsiOSSDK\/PayTabs\/PayWithCreditCard\/Views\/PayWithCardViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 4222,
+      "offset": 4608,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsiOSSDK\/PayTabs\/PayWithCreditCard\/Views\/PayWithCardViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 4231,
+      "offset": 4617,
       "length": 2,
       "value": "15"
     },
     {
       "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsiOSSDK\/PayTabs\/PayWithCreditCard\/Views\/PayWithCardViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 4243,
+      "offset": 4629,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsiOSSDK\/PayTabs\/PayWithCreditCard\/Views\/PayWithCardViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 4253,
+      "offset": 4639,
       "length": 2,
       "value": "15"
     },
     {
       "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsiOSSDK\/PayTabs\/PayWithCreditCard\/Views\/PayWithCardViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 5163,
+      "offset": 5549,
       "length": 5,
       "value": "false"
     },
@@ -46509,16 +49479,30 @@
     {
       "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsiOSSDK\/PayTabs\/PayWithCreditCard\/Views\/Cells\/InputTextTableViewCell.swift",
       "kind": "StringLiteral",
-      "offset": 758,
+      "offset": 919,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsiOSSDK\/PayTabs\/PayWithCreditCard\/Views\/Cells\/InputTextTableViewCell.swift",
       "kind": "BooleanLiteral",
-      "offset": 775,
+      "offset": 936,
       "length": 5,
       "value": "false"
+    },
+    {
+      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsiOSSDK\/PayTabs\/PayWithCreditCard\/Views\/Cells\/InputTextTableViewCell.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1086,
+      "length": 1,
+      "value": "6"
+    },
+    {
+      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsiOSSDK\/PayTabs\/PayWithCreditCard\/Views\/Cells\/InputTextTableViewCell.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1174,
+      "length": 1,
+      "value": "6"
     },
     {
       "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsiOSSDK\/PayTabs\/ThirdParty Sources\/CreditCardValidator\/CreditCardValidator.swift",
@@ -46733,154 +49717,168 @@
     {
       "filePath": "\/Users\/mohamedadly\/Library\/Developer\/Xcode\/DerivedData\/PaymentSDK-bwslfqmscgrkhacqnxwynvduduye\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymentSDK\/IntermediateBuildFilesPath\/PaymentSDK.build\/Release-iphonesimulator\/PaymentSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 1268,
+      "offset": 1306,
+      "length": 34,
+      "value": "\"Billing Section Background Color\""
+    },
+    {
+      "filePath": "\/Users\/mohamedadly\/Library\/Developer\/Xcode\/DerivedData\/PaymentSDK-bwslfqmscgrkhacqnxwynvduduye\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymentSDK\/IntermediateBuildFilesPath\/PaymentSDK.build\/Release-iphonesimulator\/PaymentSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 1468,
       "length": 14,
       "value": "\"Button Color\""
     },
     {
       "filePath": "\/Users\/mohamedadly\/Library\/Developer\/Xcode\/DerivedData\/PaymentSDK-bwslfqmscgrkhacqnxwynvduduye\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymentSDK\/IntermediateBuildFilesPath\/PaymentSDK.build\/Release-iphonesimulator\/PaymentSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 1419,
+      "offset": 1619,
       "length": 19,
       "value": "\"Button Font Color\""
     },
     {
       "filePath": "\/Users\/mohamedadly\/Library\/Developer\/Xcode\/DerivedData\/PaymentSDK-bwslfqmscgrkhacqnxwynvduduye\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymentSDK\/IntermediateBuildFilesPath\/PaymentSDK.build\/Release-iphonesimulator\/PaymentSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 1568,
+      "offset": 1768,
       "length": 15,
       "value": "\"Primary Color\""
     },
     {
       "filePath": "\/Users\/mohamedadly\/Library\/Developer\/Xcode\/DerivedData\/PaymentSDK-bwslfqmscgrkhacqnxwynvduduye\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymentSDK\/IntermediateBuildFilesPath\/PaymentSDK.build\/Release-iphonesimulator\/PaymentSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 1722,
+      "offset": 1922,
       "length": 20,
       "value": "\"Primary Font Color\""
     },
     {
       "filePath": "\/Users\/mohamedadly\/Library\/Developer\/Xcode\/DerivedData\/PaymentSDK-bwslfqmscgrkhacqnxwynvduduye\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymentSDK\/IntermediateBuildFilesPath\/PaymentSDK.build\/Release-iphonesimulator\/PaymentSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 1876,
+      "offset": 2076,
       "length": 17,
       "value": "\"Secondary Color\""
     },
     {
       "filePath": "\/Users\/mohamedadly\/Library\/Developer\/Xcode\/DerivedData\/PaymentSDK-bwslfqmscgrkhacqnxwynvduduye\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymentSDK\/IntermediateBuildFilesPath\/PaymentSDK.build\/Release-iphonesimulator\/PaymentSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 2036,
+      "offset": 2236,
       "length": 22,
       "value": "\"Secondary Font Color\""
     },
     {
       "filePath": "\/Users\/mohamedadly\/Library\/Developer\/Xcode\/DerivedData\/PaymentSDK-bwslfqmscgrkhacqnxwynvduduye\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymentSDK\/IntermediateBuildFilesPath\/PaymentSDK.build\/Release-iphonesimulator\/PaymentSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 2193,
+      "offset": 2406,
+      "length": 25,
+      "value": "\"Section Text Font Color\""
+    },
+    {
+      "filePath": "\/Users\/mohamedadly\/Library\/Developer\/Xcode\/DerivedData\/PaymentSDK-bwslfqmscgrkhacqnxwynvduduye\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymentSDK\/IntermediateBuildFilesPath\/PaymentSDK.build\/Release-iphonesimulator\/PaymentSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 2566,
       "length": 18,
       "value": "\"Title Font Color\""
     },
     {
       "filePath": "\/Users\/mohamedadly\/Library\/Developer\/Xcode\/DerivedData\/PaymentSDK-bwslfqmscgrkhacqnxwynvduduye\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymentSDK\/IntermediateBuildFilesPath\/PaymentSDK.build\/Release-iphonesimulator\/PaymentSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 2434,
+      "offset": 2807,
       "length": 6,
       "value": "\"Amex\""
     },
     {
       "filePath": "\/Users\/mohamedadly\/Library\/Developer\/Xcode\/DerivedData\/PaymentSDK-bwslfqmscgrkhacqnxwynvduduye\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymentSDK\/IntermediateBuildFilesPath\/PaymentSDK.build\/Release-iphonesimulator\/PaymentSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 2566,
+      "offset": 2939,
       "length": 10,
       "value": "\"ApplePay\""
     },
     {
       "filePath": "\/Users\/mohamedadly\/Library\/Developer\/Xcode\/DerivedData\/PaymentSDK-bwslfqmscgrkhacqnxwynvduduye\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymentSDK\/IntermediateBuildFilesPath\/PaymentSDK.build\/Release-iphonesimulator\/PaymentSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 2704,
+      "offset": 3077,
       "length": 11,
       "value": "\"EmptyCard\""
     },
     {
       "filePath": "\/Users\/mohamedadly\/Library\/Developer\/Xcode\/DerivedData\/PaymentSDK-bwslfqmscgrkhacqnxwynvduduye\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymentSDK\/IntermediateBuildFilesPath\/PaymentSDK.build\/Release-iphonesimulator\/PaymentSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 2847,
+      "offset": 3220,
       "length": 13,
       "value": "\"InvalidCard\""
     },
     {
       "filePath": "\/Users\/mohamedadly\/Library\/Developer\/Xcode\/DerivedData\/PaymentSDK-bwslfqmscgrkhacqnxwynvduduye\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymentSDK\/IntermediateBuildFilesPath\/PaymentSDK.build\/Release-iphonesimulator\/PaymentSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 2978,
+      "offset": 3351,
       "length": 6,
       "value": "\"Mada\""
     },
     {
       "filePath": "\/Users\/mohamedadly\/Library\/Developer\/Xcode\/DerivedData\/PaymentSDK-bwslfqmscgrkhacqnxwynvduduye\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymentSDK\/IntermediateBuildFilesPath\/PaymentSDK.build\/Release-iphonesimulator\/PaymentSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 3114,
+      "offset": 3487,
       "length": 12,
       "value": "\"MasterCard\""
     },
     {
       "filePath": "\/Users\/mohamedadly\/Library\/Developer\/Xcode\/DerivedData\/PaymentSDK-bwslfqmscgrkhacqnxwynvduduye\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymentSDK\/IntermediateBuildFilesPath\/PaymentSDK.build\/Release-iphonesimulator\/PaymentSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 3244,
+      "offset": 3617,
       "length": 6,
       "value": "\"Visa\""
     },
     {
       "filePath": "\/Users\/mohamedadly\/Library\/Developer\/Xcode\/DerivedData\/PaymentSDK-bwslfqmscgrkhacqnxwynvduduye\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymentSDK\/IntermediateBuildFilesPath\/PaymentSDK.build\/Release-iphonesimulator\/PaymentSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 3379,
+      "offset": 3752,
       "length": 12,
       "value": "\"arrow down\""
     },
     {
       "filePath": "\/Users\/mohamedadly\/Library\/Developer\/Xcode\/DerivedData\/PaymentSDK-bwslfqmscgrkhacqnxwynvduduye\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymentSDK\/IntermediateBuildFilesPath\/PaymentSDK.build\/Release-iphonesimulator\/PaymentSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 3522,
+      "offset": 3895,
       "length": 13,
       "value": "\"arrow_white\""
     },
     {
       "filePath": "\/Users\/mohamedadly\/Library\/Developer\/Xcode\/DerivedData\/PaymentSDK-bwslfqmscgrkhacqnxwynvduduye\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymentSDK\/IntermediateBuildFilesPath\/PaymentSDK.build\/Release-iphonesimulator\/PaymentSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 3657,
+      "offset": 4030,
       "length": 8,
       "value": "\"camera\""
     },
     {
       "filePath": "\/Users\/mohamedadly\/Library\/Developer\/Xcode\/DerivedData\/PaymentSDK-bwslfqmscgrkhacqnxwynvduduye\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymentSDK\/IntermediateBuildFilesPath\/PaymentSDK.build\/Release-iphonesimulator\/PaymentSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 3798,
+      "offset": 4171,
       "length": 14,
       "value": "\"close-button\""
     },
     {
       "filePath": "\/Users\/mohamedadly\/Library\/Developer\/Xcode\/DerivedData\/PaymentSDK-bwslfqmscgrkhacqnxwynvduduye\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymentSDK\/IntermediateBuildFilesPath\/PaymentSDK.build\/Release-iphonesimulator\/PaymentSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 3945,
+      "offset": 4318,
       "length": 14,
       "value": "\"paytabs-logo\""
     },
     {
       "filePath": "\/Users\/mohamedadly\/Library\/Developer\/Xcode\/DerivedData\/PaymentSDK-bwslfqmscgrkhacqnxwynvduduye\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymentSDK\/IntermediateBuildFilesPath\/PaymentSDK.build\/Release-iphonesimulator\/PaymentSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 4094,
+      "offset": 4467,
       "length": 15,
       "value": "\"section-arrow\""
     },
     {
       "filePath": "\/Users\/mohamedadly\/Library\/Developer\/Xcode\/DerivedData\/PaymentSDK-bwslfqmscgrkhacqnxwynvduduye\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymentSDK\/IntermediateBuildFilesPath\/PaymentSDK.build\/Release-iphonesimulator\/PaymentSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 4238,
+      "offset": 4611,
       "length": 12,
       "value": "\"toggle-off\""
     },
     {
       "filePath": "\/Users\/mohamedadly\/Library\/Developer\/Xcode\/DerivedData\/PaymentSDK-bwslfqmscgrkhacqnxwynvduduye\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PaymentSDK\/IntermediateBuildFilesPath\/PaymentSDK.build\/Release-iphonesimulator\/PaymentSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 4377,
+      "offset": 4750,
       "length": 11,
       "value": "\"toggle-on\""
     }

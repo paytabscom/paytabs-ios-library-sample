@@ -189,3 +189,6 @@
 
 ## 6.6.24 2024-10-15
 * minor change
+
+## 6.6.25 2024-10-21
+* add more theme options
