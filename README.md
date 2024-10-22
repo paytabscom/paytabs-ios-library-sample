@@ -21,8 +21,8 @@
 
 
 ## Requirements
-* iOS 11.0+, Swift 5.0+
-* Xcode 11.0+
+* iOS 13.0+, Swift 5.0+
+* Xcode 15.0+
 * Create a [PayTabs](www.paytabs.com) merchant account relative to your country.
 
 ## Installation
