@@ -5,7 +5,7 @@ target 'sample-swiftui' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
 
-  # Pods for sample-swiftui
-pod 'PayTabsSDK', '~> 6.6.25'
+  # Pods for sample-swift
+pod 'PayTabsSDK', '~> 6.6.26'
 
 end
