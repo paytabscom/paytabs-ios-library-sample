@@ -279,6 +279,8 @@ public protocol ThemeConfiguration {
   var screenTitleTextAlignment: UIKit.NSTextAlignment { get set }
   var toggleOnImage: UIKit.UIImage? { get set }
   var toggleOffImage: UIKit.UIImage? { get set }
+  var toggleOnTintColor: UIKit.UIColor? { get set }
+  var toggleThumbTintColor: UIKit.UIColor? { get set }
   var billingHeaderMargin: CoreFoundation.CGFloat { get set }
   var billingHeaderCornerRadius: CoreFoundation.CGFloat { get set }
   var billingHeaderBackgroundColor: UIKit.UIColor? { get set }
@@ -313,6 +315,8 @@ public class PaymentSDKTheme : PaymentSDK.ThemeConfiguration {
   public var screenTitleTextAlignment: UIKit.NSTextAlignment
   public var toggleOnImage: UIKit.UIImage?
   public var toggleOffImage: UIKit.UIImage?
+  public var toggleOnTintColor: UIKit.UIColor?
+  public var toggleThumbTintColor: UIKit.UIColor?
   public var billingHeaderMargin: CoreFoundation.CGFloat
   public var billingHeaderCornerRadius: CoreFoundation.CGFloat
   public var billingHeaderBackgroundColor: UIKit.UIColor?

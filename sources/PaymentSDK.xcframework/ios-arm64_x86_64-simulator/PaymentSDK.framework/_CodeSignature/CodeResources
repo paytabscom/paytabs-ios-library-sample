@@ -14,7 +14,7 @@
 		</data>
 		<key>Assets.car</key>
 		<data>
-		TOVUp3fSF3bodyv/hagn9B9jvi8=
+		uusrtEANTwbnR1/TXa8zI12WLFA=
 		</data>
 		<key>CameraScanning.wav</key>
 		<data>
@@ -1060,17 +1060,13 @@
 		<data>
 		Zlr2XjQBflGL+TUFPJrRraxA9DM=
 		</data>
-		<key>CountrySelectionTableViewCell.nib/objects-14.0+.nib</key>
+		<key>CountrySelectionTableViewCell.nib</key>
 		<data>
-		9RqOMn5APBmAcdgRKqb/OLHaQ9w=
-		</data>
-		<key>CountrySelectionTableViewCell.nib/runtime.nib</key>
-		<data>
-		CIbeYkZgBpvLQ7Lh/KvF86NOAwk=
+		auEZfVCj14M4JRHC+BrHUbl3MDE=
 		</data>
 		<key>CreditCardInputView.nib</key>
 		<data>
-		LId+p3E2zUaL3C+iLXppasy2V0g=
+		JuXNuYMm+pemRaK1VbjJC4gyZFQ=
 		</data>
 		<key>CreditCardScannerViewController.nib</key>
 		<data>
@@ -1098,19 +1094,19 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		f62ONMWKYLfxcj6filaelqyeFfc=
+		T46af1bJg/kg/Om+l2NgZbO2+t8=
 		</data>
 		<key>InputTextTableViewCell.nib</key>
 		<data>
-		C3ESa88beMxECZlGefhz/bv1WRY=
+		ZL8++GQEOTeBldXoWHx8qcagJtY=
 		</data>
 		<key>Modules/PaymentSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		Ht9xkufkB3H1DIZJuAfTw4aIgQg=
+		5kcKEmlmG6MV9jJq0NzCVkYWCAM=
 		</data>
 		<key>Modules/PaymentSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		9iB39Lj21cOw/gonCMKFproIxI0=
+		vkSa1UkdASsmsTDY9zCUYnLCl18=
 		</data>
 		<key>Modules/PaymentSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -1118,19 +1114,19 @@
 		</data>
 		<key>Modules/PaymentSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		XeW7sB8CVebpd0oZR6aQjj8KMnY=
+		0N2UN8BwybCRU4Gm6OwuXxszBWk=
 		</data>
 		<key>Modules/PaymentSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		NAFOqCFABKrAil3XlchU3YJXMpM=
+		Apan7LPu8ACKfMstnS3BoexBvoA=
 		</data>
 		<key>Modules/PaymentSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		Ht9xkufkB3H1DIZJuAfTw4aIgQg=
+		5kcKEmlmG6MV9jJq0NzCVkYWCAM=
 		</data>
 		<key>Modules/PaymentSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		VjghpfTMV2KRykAkwX0wxLAP4A8=
+		BCuxT/ZanSGJgHlvrIg8jbRW174=
 		</data>
 		<key>Modules/PaymentSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -1138,11 +1134,11 @@
 		</data>
 		<key>Modules/PaymentSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		soo1yAifCg/g2cQht/+fVkA5A8o=
+		qngGvnpisO7aTi8ZJOC/lXmISlA=
 		</data>
 		<key>Modules/PaymentSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		Go7kqJXeNcrzy3CATX2JNwj8adQ=
+		8bc20e43v8B374Xu5sTCVVGKRp8=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -1158,11 +1154,15 @@
 		</data>
 		<key>PaymentAmountTableViewCell.nib</key>
 		<data>
-		YpjQ3rqi1/sbAiGH/AABAdfC0E4=
+		5ZvEGN3etnL10GI0mLwibqBUtjc=
 		</data>
-		<key>PaymentSDKCardTableViewCell.nib</key>
+		<key>PaymentSDKCardTableViewCell.nib/objects-13.0+.nib</key>
 		<data>
-		gsBgzWMtPhTY1U0ahN0393CLfcA=
+		QghX0PMnEcP519o+YdtNmF9+lfA=
+		</data>
+		<key>PaymentSDKCardTableViewCell.nib/runtime.nib</key>
+		<data>
+		FDrIJ+VsbmulzokK7bd0mf7uskQ=
 		</data>
 		<key>SSDOcr.mlmodelc/analytics/coremldata.bin</key>
 		<data>
@@ -1204,6 +1204,10 @@
 		<data>
 		N7FL7OAaLzc6/T5ojHgtfa41COI=
 		</data>
+		<key>TableViewHeaderFooterView.nib</key>
+		<data>
+		e7Nl84tlsDmP9nGuqe8wTEJNxOg=
+		</data>
 		<key>UxModel.mlmodelc/analytics/coremldata.bin</key>
 		<data>
 		RURDr5W+w8sdEATQUqd+da/Ulj0=
@@ -1240,7 +1244,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			hRseN/FEi4YJyOwkfatpN1StPwQ=
+			OC6X6ZM6kK4f7s0oXZB9ridVklE=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1287,7 +1291,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			sOetOjIr3BaguonX9dz3Ne0ENVG+m1vX1M2Cuv7uzQ4=
+			3FhW7VjpA3E4ukmjbjzacP+ST2HRZvIAO84FCco5UJo=
 			</data>
 		</dict>
 		<key>CameraScanning.wav</key>
@@ -3117,25 +3121,18 @@
 			zT7WURUKG7jSSy2NSyAZ77MWEFgAyLQUckYHz8w9OLQ=
 			</data>
 		</dict>
-		<key>CountrySelectionTableViewCell.nib/objects-14.0+.nib</key>
+		<key>CountrySelectionTableViewCell.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			tNZjidhXY8JbusmI5EgrJjA5lgiXDSsdAboBWlMJK+Y=
-			</data>
-		</dict>
-		<key>CountrySelectionTableViewCell.nib/runtime.nib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			to9gddjDhhfiyRtWXKV3HA8S4MSMD6zy4ZPCEwRmksg=
+			+N2H0ChZbvmnwjg6HA6l5x3BY8BXut/Lxsla/i+xdlc=
 			</data>
 		</dict>
 		<key>CreditCardInputView.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			LSUmcp+4ON2upD+nFMg/j57q3rc4eEH0BjC0n+b+hnw=
+			JwSc5JyaQcQ569bttIuG7UXhSB72mtDGvQ8h6X9h4MQ=
 			</data>
 		</dict>
 		<key>CreditCardScannerViewController.nib</key>
@@ -3184,21 +3181,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			hzmc4Fw+/E7KO72qzMDiLa0vPTIGPA72McIu+4yapQI=
+			JtxWCRit11BPae7GE7cNmr7a3CjlK7XHYo+wEMfUVyg=
 			</data>
 		</dict>
 		<key>Modules/PaymentSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ta4pHe50d79G+SK356qx8AhU6C6D47SbYqsXSSdhlAI=
+			j1c29spkwEWERT1ALdGfAcw1x1Xqek7qNi7pz4UzVPA=
 			</data>
 		</dict>
 		<key>Modules/PaymentSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			0L2pbwv4EeaOEpLTq26bPGVqfWT6hDzmF+p+LvU3XYo=
+			7lTme7H/GSYOlQ5wWMrKt5D7AjjcjcboJ1Qms9fYqlE=
 			</data>
 		</dict>
 		<key>Modules/PaymentSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -3212,28 +3209,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ZUdfdny8GuWZx7D6tuwVDrE40RvypJ7W3VcSyDa5My4=
+			MAO+K6PF5liTtzqYJXw1iNrMICrHebvcDWxiowf0N7s=
 			</data>
 		</dict>
 		<key>Modules/PaymentSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Bk6TQAQ4AnX9YlxjvffQ9PYyaTWdLDLLFDA3kSf/dyU=
+			cfFjSnRJKpriwhe9qOVkHjbmCUNtWVgOOez1LL13KK0=
 			</data>
 		</dict>
 		<key>Modules/PaymentSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ta4pHe50d79G+SK356qx8AhU6C6D47SbYqsXSSdhlAI=
+			j1c29spkwEWERT1ALdGfAcw1x1Xqek7qNi7pz4UzVPA=
 			</data>
 		</dict>
 		<key>Modules/PaymentSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			aePcZWfL7H4iu1FIw8dOcvetRzowUHxqEbeHLgaqLh0=
+			B+Bkwf0arowWHjeXcJV5agWTpS3HoWCGGGU0w9WXO/c=
 			</data>
 		</dict>
 		<key>Modules/PaymentSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -3247,14 +3244,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			R1q93plaS/7iSu/bb8D/7RX7lnjsLjJnV5X7fqTGeww=
+			Gn7oFptLxBm6Hb4b5vjvJz65zlGa+UTbvQlK0AGQZr4=
 			</data>
 		</dict>
 		<key>Modules/PaymentSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			aB42NmIPCFwFHgpPagq6+4k+FySEsjcYh2DxQa9l66Q=
+			9R17jUJb6lXsyZZZMQ+sG1npPGE/ni6doP5eh66ql3w=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -3282,14 +3279,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			CxQedHybkP3VJeVN9kMpma+ajKdRS/FTiG2xshKl+bc=
+			hcrTJeUYdG2lukK5eAQ9n9nTGSg5sqwYsCWf9DFPKF0=
 			</data>
 		</dict>
-		<key>PaymentSDKCardTableViewCell.nib</key>
+		<key>PaymentSDKCardTableViewCell.nib/objects-13.0+.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			3oYwplJcLZ4SBaSKvZ9PXqKxpAGIcTD0E/QjOPrCxyI=
+			NfAzfAfYIQf9+a4zlf7ZXQ5ErZDm7EBTnsi++VLTYnA=
+			</data>
+		</dict>
+		<key>PaymentSDKCardTableViewCell.nib/runtime.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Q3XbqNnvCN00ggvX7V5DZIhpHU45CNuE5zR8GeML8eQ=
 			</data>
 		</dict>
 		<key>SSDOcr.mlmodelc/analytics/coremldata.bin</key>
@@ -3362,6 +3366,13 @@
 			tPyIn7SxcZdBrYhzi0NJwtf2//QOyXbGe/qsH4gP55c=
 			</data>
 		</dict>
+		<key>TableViewHeaderFooterView.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			bGAsM3f+RAb4CE/tGB21IXSo7Wsvn3MEc6CzYSiU6c8=
+			</data>
+		</dict>
 		<key>UxModel.mlmodelc/analytics/coremldata.bin</key>
 		<dict>
 			<key>hash2</key>
@@ -3422,7 +3433,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			bkSrNwaDIxXyncG8FF9kGf7h7vbo0rX5rXz0gJHkkv8=
+			81N0d0JcY4RUV2VB+Dknc5Wjzx81aynZMf6kP/7wiwI=
 			</data>
 			<key>optional</key>
 			<true/>

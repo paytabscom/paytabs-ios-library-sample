@@ -193,5 +193,8 @@
 ## 6.6.25 2024-10-21
 * add more theme options
 
-## 6.6.25 2024-10-22
+## 6.6.26 2024-10-22
 * minor fix
+
+## 6.6.27 2024-10-27
+* theme issue fixed

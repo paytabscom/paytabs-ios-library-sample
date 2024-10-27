@@ -94,6 +94,7 @@ class ViewController: UIViewController {
             .cartDescription("Flowers")
             .cartID("1234")
             .languageCode("en")
+            .screenTitle("Pay with Card")
             .showBillingInfo(true)
                 }
     

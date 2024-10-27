@@ -14827,6 +14827,236 @@
           },
           {
             "kind": "Var",
+            "name": "toggleOnTintColor",
+            "printedName": "toggleOnTintColor",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIColor?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIColor",
+                    "printedName": "UIKit.UIColor",
+                    "usr": "c:objc(cs)UIColor"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10PaymentSDK18ThemeConfigurationP17toggleOnTintColorSo7UIColorCSgvp",
+            "mangledName": "$s10PaymentSDK18ThemeConfigurationP17toggleOnTintColorSo7UIColorCSgvp",
+            "moduleName": "PaymentSDK",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "UIKit.UIColor?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIColor",
+                        "printedName": "UIKit.UIColor",
+                        "usr": "c:objc(cs)UIColor"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10PaymentSDK18ThemeConfigurationP17toggleOnTintColorSo7UIColorCSgvg",
+                "mangledName": "$s10PaymentSDK18ThemeConfigurationP17toggleOnTintColorSo7UIColorCSgvg",
+                "moduleName": "PaymentSDK",
+                "genericSig": "<τ_0_0 where τ_0_0 : PaymentSDK.ThemeConfiguration>",
+                "sugared_genericSig": "<Self where Self : PaymentSDK.ThemeConfiguration>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "UIKit.UIColor?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIColor",
+                        "printedName": "UIKit.UIColor",
+                        "usr": "c:objc(cs)UIColor"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10PaymentSDK18ThemeConfigurationP17toggleOnTintColorSo7UIColorCSgvs",
+                "mangledName": "$s10PaymentSDK18ThemeConfigurationP17toggleOnTintColorSo7UIColorCSgvs",
+                "moduleName": "PaymentSDK",
+                "genericSig": "<τ_0_0 where τ_0_0 : PaymentSDK.ThemeConfiguration>",
+                "sugared_genericSig": "<Self where Self : PaymentSDK.ThemeConfiguration>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10PaymentSDK18ThemeConfigurationP17toggleOnTintColorSo7UIColorCSgvM",
+                "mangledName": "$s10PaymentSDK18ThemeConfigurationP17toggleOnTintColorSo7UIColorCSgvM",
+                "moduleName": "PaymentSDK",
+                "genericSig": "<τ_0_0 where τ_0_0 : PaymentSDK.ThemeConfiguration>",
+                "sugared_genericSig": "<Self where Self : PaymentSDK.ThemeConfiguration>",
+                "protocolReq": true,
+                "implicit": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "toggleThumbTintColor",
+            "printedName": "toggleThumbTintColor",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIColor?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIColor",
+                    "printedName": "UIKit.UIColor",
+                    "usr": "c:objc(cs)UIColor"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10PaymentSDK18ThemeConfigurationP20toggleThumbTintColorSo7UIColorCSgvp",
+            "mangledName": "$s10PaymentSDK18ThemeConfigurationP20toggleThumbTintColorSo7UIColorCSgvp",
+            "moduleName": "PaymentSDK",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "UIKit.UIColor?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIColor",
+                        "printedName": "UIKit.UIColor",
+                        "usr": "c:objc(cs)UIColor"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10PaymentSDK18ThemeConfigurationP20toggleThumbTintColorSo7UIColorCSgvg",
+                "mangledName": "$s10PaymentSDK18ThemeConfigurationP20toggleThumbTintColorSo7UIColorCSgvg",
+                "moduleName": "PaymentSDK",
+                "genericSig": "<τ_0_0 where τ_0_0 : PaymentSDK.ThemeConfiguration>",
+                "sugared_genericSig": "<Self where Self : PaymentSDK.ThemeConfiguration>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "UIKit.UIColor?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIColor",
+                        "printedName": "UIKit.UIColor",
+                        "usr": "c:objc(cs)UIColor"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10PaymentSDK18ThemeConfigurationP20toggleThumbTintColorSo7UIColorCSgvs",
+                "mangledName": "$s10PaymentSDK18ThemeConfigurationP20toggleThumbTintColorSo7UIColorCSgvs",
+                "moduleName": "PaymentSDK",
+                "genericSig": "<τ_0_0 where τ_0_0 : PaymentSDK.ThemeConfiguration>",
+                "sugared_genericSig": "<Self where Self : PaymentSDK.ThemeConfiguration>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10PaymentSDK18ThemeConfigurationP20toggleThumbTintColorSo7UIColorCSgvM",
+                "mangledName": "$s10PaymentSDK18ThemeConfigurationP20toggleThumbTintColorSo7UIColorCSgvM",
+                "moduleName": "PaymentSDK",
+                "genericSig": "<τ_0_0 where τ_0_0 : PaymentSDK.ThemeConfiguration>",
+                "sugared_genericSig": "<Self where Self : PaymentSDK.ThemeConfiguration>",
+                "protocolReq": true,
+                "implicit": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "billingHeaderMargin",
             "printedName": "billingHeaderMargin",
             "children": [
@@ -18127,6 +18357,226 @@
                 "declKind": "Accessor",
                 "usr": "s:10PaymentSDK0A8SDKThemeC14toggleOffImageSo7UIImageCSgvM",
                 "mangledName": "$s10PaymentSDK0A8SDKThemeC14toggleOffImageSo7UIImageCSgvM",
+                "moduleName": "PaymentSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "toggleOnTintColor",
+            "printedName": "toggleOnTintColor",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIColor?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIColor",
+                    "printedName": "UIKit.UIColor",
+                    "usr": "c:objc(cs)UIColor"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10PaymentSDK0A8SDKThemeC17toggleOnTintColorSo7UIColorCSgvp",
+            "mangledName": "$s10PaymentSDK0A8SDKThemeC17toggleOnTintColorSo7UIColorCSgvp",
+            "moduleName": "PaymentSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "UIKit.UIColor?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIColor",
+                        "printedName": "UIKit.UIColor",
+                        "usr": "c:objc(cs)UIColor"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10PaymentSDK0A8SDKThemeC17toggleOnTintColorSo7UIColorCSgvg",
+                "mangledName": "$s10PaymentSDK0A8SDKThemeC17toggleOnTintColorSo7UIColorCSgvg",
+                "moduleName": "PaymentSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "UIKit.UIColor?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIColor",
+                        "printedName": "UIKit.UIColor",
+                        "usr": "c:objc(cs)UIColor"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10PaymentSDK0A8SDKThemeC17toggleOnTintColorSo7UIColorCSgvs",
+                "mangledName": "$s10PaymentSDK0A8SDKThemeC17toggleOnTintColorSo7UIColorCSgvs",
+                "moduleName": "PaymentSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10PaymentSDK0A8SDKThemeC17toggleOnTintColorSo7UIColorCSgvM",
+                "mangledName": "$s10PaymentSDK0A8SDKThemeC17toggleOnTintColorSo7UIColorCSgvM",
+                "moduleName": "PaymentSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "toggleThumbTintColor",
+            "printedName": "toggleThumbTintColor",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIColor?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIColor",
+                    "printedName": "UIKit.UIColor",
+                    "usr": "c:objc(cs)UIColor"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10PaymentSDK0A8SDKThemeC20toggleThumbTintColorSo7UIColorCSgvp",
+            "mangledName": "$s10PaymentSDK0A8SDKThemeC20toggleThumbTintColorSo7UIColorCSgvp",
+            "moduleName": "PaymentSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "UIKit.UIColor?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIColor",
+                        "printedName": "UIKit.UIColor",
+                        "usr": "c:objc(cs)UIColor"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10PaymentSDK0A8SDKThemeC20toggleThumbTintColorSo7UIColorCSgvg",
+                "mangledName": "$s10PaymentSDK0A8SDKThemeC20toggleThumbTintColorSo7UIColorCSgvg",
+                "moduleName": "PaymentSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "UIKit.UIColor?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIColor",
+                        "printedName": "UIKit.UIColor",
+                        "usr": "c:objc(cs)UIColor"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10PaymentSDK0A8SDKThemeC20toggleThumbTintColorSo7UIColorCSgvs",
+                "mangledName": "$s10PaymentSDK0A8SDKThemeC20toggleThumbTintColorSo7UIColorCSgvs",
+                "moduleName": "PaymentSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10PaymentSDK0A8SDKThemeC20toggleThumbTintColorSo7UIColorCSgvM",
+                "mangledName": "$s10PaymentSDK0A8SDKThemeC20toggleThumbTintColorSo7UIColorCSgvM",
                 "moduleName": "PaymentSDK",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -25880,6 +26330,16 @@
       },
       {
         "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "PaymentSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -33172,16 +33632,6 @@
         "printedName": "VideoToolbox",
         "declKind": "Import",
         "moduleName": "PaymentSDK"
-      },
-      {
-        "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "PaymentSDK",
-        "declAttributes": [
-          "RawDocComment"
-        ]
       },
       {
         "kind": "Import",
@@ -45565,14 +46015,14 @@
     {
       "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsiOSSDK\/PayTabs\/PayWithCreditCard\/Views\/CreditCardInputView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1268,
+      "offset": 1459,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsiOSSDK\/PayTabs\/PayWithCreditCard\/Views\/CreditCardInputView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1373,
+      "offset": 1564,
       "length": 3,
       "value": "100"
     },
@@ -45754,72 +46204,86 @@
     {
       "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsiOSSDK\/PayTabs\/Themes\/PaymentSDKTheme.swift",
       "kind": "FloatLiteral",
-      "offset": 3973,
+      "offset": 4073,
       "length": 3,
       "value": "0.2"
     },
     {
       "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsiOSSDK\/PayTabs\/Themes\/PaymentSDKTheme.swift",
       "kind": "IntegerLiteral",
-      "offset": 4022,
+      "offset": 4122,
       "length": 1,
       "value": "6"
     },
     {
       "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsiOSSDK\/PayTabs\/Themes\/PaymentSDKTheme.swift",
       "kind": "IntegerLiteral",
-      "offset": 4070,
+      "offset": 4170,
       "length": 1,
       "value": "6"
     },
     {
       "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsiOSSDK\/PayTabs\/Themes\/PaymentSDKTheme.swift",
       "kind": "IntegerLiteral",
-      "offset": 4471,
+      "offset": 4571,
       "length": 2,
       "value": "16"
     },
     {
       "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsiOSSDK\/PayTabs\/Themes\/PaymentSDKTheme.swift",
       "kind": "IntegerLiteral",
-      "offset": 4518,
+      "offset": 4618,
       "length": 1,
       "value": "6"
     },
     {
       "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsiOSSDK\/PayTabs\/Themes\/PaymentSDKTheme.swift",
       "kind": "BooleanLiteral",
-      "offset": 4559,
+      "offset": 4659,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsiOSSDK\/PayTabs\/Themes\/PaymentSDKTheme.swift",
       "kind": "BooleanLiteral",
-      "offset": 4614,
+      "offset": 4714,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsiOSSDK\/PayTabs\/Themes\/PaymentSDKTheme.swift",
       "kind": "IntegerLiteral",
-      "offset": 4664,
+      "offset": 4764,
       "length": 2,
       "value": "44"
     },
     {
       "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsiOSSDK\/PayTabs\/Themes\/PaymentSDKTheme.swift",
       "kind": "IntegerLiteral",
-      "offset": 4956,
+      "offset": 5145,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsiOSSDK\/PayTabs\/Themes\/PaymentSDKTheme.swift",
       "kind": "IntegerLiteral",
-      "offset": 5010,
+      "offset": 5199,
       "length": 1,
       "value": "0"
+    },
+    {
+      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsiOSSDK\/PayTabs\/PayWithCreditCard\/Views\/Cells\/PaymentSDKCardTableViewCell.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1839,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsiOSSDK\/PayTabs\/PayWithCreditCard\/Views\/Cells\/PaymentSDKCardTableViewCell.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1896,
+      "length": 5,
+      "value": "false"
     },
     {
       "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsiOSSDK\/PayTabs\/PublicLayer\/PaymentSDKTransactionDetails.swift",
@@ -45901,30 +46365,16 @@
     {
       "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsiOSSDK\/PayTabs\/PayWithCreditCard\/Views\/Cells\/CountrySelectionTableViewCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 812,
+      "offset": 898,
       "length": 2,
       "value": "40"
     },
     {
       "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsiOSSDK\/PayTabs\/PayWithCreditCard\/Views\/Cells\/CountrySelectionTableViewCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 883,
+      "offset": 969,
       "length": 1,
       "value": "0"
-    },
-    {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsiOSSDK\/PayTabs\/PayWithCreditCard\/Views\/Cells\/CountrySelectionTableViewCell.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1403,
-      "length": 1,
-      "value": "6"
-    },
-    {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsiOSSDK\/PayTabs\/PayWithCreditCard\/Views\/Cells\/CountrySelectionTableViewCell.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1491,
-      "length": 1,
-      "value": "6"
     },
     {
       "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsiOSSDK\/PayTabs\/Show3DSecure\/ThreeDSecureViewController.swift",
@@ -46310,6 +46760,13 @@
       "offset": 246,
       "length": 5,
       "value": "false"
+    },
+    {
+      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsiOSSDK\/PayTabs\/PayWithCreditCard\/Views\/Cells\/TableViewHeaderFooterView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 724,
+      "length": 1,
+      "value": "0"
     },
     {
       "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsiOSSDK\/PayTabs\/CreditCardScanner\/ImageAnalyzer.swift",
@@ -47371,147 +47828,147 @@
     {
       "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsiOSSDK\/PayTabs\/PayWithCreditCard\/Views\/PayWithCardViewController.swift",
       "kind": "StringLiteral",
-      "offset": 1111,
+      "offset": 1225,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsiOSSDK\/PayTabs\/PayWithCreditCard\/Views\/PayWithCardViewController.swift",
       "kind": "Array",
-      "offset": 1187,
+      "offset": 1301,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsiOSSDK\/PayTabs\/PayWithCreditCard\/Views\/PayWithCardViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 1435,
+      "offset": 1549,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsiOSSDK\/PayTabs\/PayWithCreditCard\/Views\/PayWithCardViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 1438,
+      "offset": 1552,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsiOSSDK\/PayTabs\/PayWithCreditCard\/Views\/PayWithCardViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 1765,
+      "offset": 1879,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsiOSSDK\/PayTabs\/PayWithCreditCard\/Views\/PayWithCardViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 1798,
+      "offset": 1912,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsiOSSDK\/PayTabs\/PayWithCreditCard\/Views\/PayWithCardViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 2056,
+      "offset": 2170,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsiOSSDK\/PayTabs\/PayWithCreditCard\/Views\/PayWithCardViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 2090,
+      "offset": 2204,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsiOSSDK\/PayTabs\/PayWithCreditCard\/Views\/PayWithCardViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 2188,
+      "offset": 2302,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsiOSSDK\/PayTabs\/PayWithCreditCard\/Views\/PayWithCardViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 2224,
+      "offset": 2338,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsiOSSDK\/PayTabs\/PayWithCreditCard\/Views\/PayWithCardViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 3072,
+      "offset": 3186,
       "length": 1,
       "value": "6"
     },
     {
       "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsiOSSDK\/PayTabs\/PayWithCreditCard\/Views\/PayWithCardViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 3124,
+      "offset": 3238,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsiOSSDK\/PayTabs\/PayWithCreditCard\/Views\/PayWithCardViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 3274,
+      "offset": 3388,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsiOSSDK\/PayTabs\/PayWithCreditCard\/Views\/PayWithCardViewController.swift",
       "kind": "StringLiteral",
-      "offset": 3652,
+      "offset": 3766,
       "length": 24,
       "value": "\"payment_sdk_powered_by\""
     },
     {
       "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsiOSSDK\/PayTabs\/PayWithCreditCard\/Views\/PayWithCardViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 4387,
+      "offset": 4501,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsiOSSDK\/PayTabs\/PayWithCreditCard\/Views\/PayWithCardViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 4445,
+      "offset": 4559,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsiOSSDK\/PayTabs\/PayWithCreditCard\/Views\/PayWithCardViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 4608,
+      "offset": 4722,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsiOSSDK\/PayTabs\/PayWithCreditCard\/Views\/PayWithCardViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 4617,
+      "offset": 4731,
       "length": 2,
       "value": "15"
     },
     {
       "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsiOSSDK\/PayTabs\/PayWithCreditCard\/Views\/PayWithCardViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 4629,
+      "offset": 4743,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsiOSSDK\/PayTabs\/PayWithCreditCard\/Views\/PayWithCardViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 4639,
+      "offset": 4753,
       "length": 2,
       "value": "15"
     },
     {
       "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsiOSSDK\/PayTabs\/PayWithCreditCard\/Views\/PayWithCardViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 5549,
+      "offset": 5663,
       "length": 5,
       "value": "false"
     },
@@ -47843,13 +48300,6 @@
       "offset": 2442,
       "length": 1,
       "value": "1"
-    },
-    {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsiOSSDK\/PayTabs\/PayWithCreditCard\/Views\/CollapsibleTableViewHeader.swift",
-      "kind": "IntegerLiteral",
-      "offset": 469,
-      "length": 1,
-      "value": "0"
     },
     {
       "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsiOSSDK\/PayTabs\/StrCardScanner\/CardVerify\/CardScanFraudData.swift",
@@ -48424,6 +48874,20 @@
       "offset": 198,
       "length": 2,
       "value": "[]"
+    },
+    {
+      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsiOSSDK\/PayTabs\/PayWithCreditCard\/Views\/PayWithCardViewController+TableViewDelegates.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2114,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsiOSSDK\/PayTabs\/PayWithCreditCard\/Views\/PayWithCardViewController+TableViewDelegates.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2183,
+      "length": 5,
+      "value": "false"
     },
     {
       "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsiOSSDK\/PayTabs\/StrCardScanner\/CardScan\/MLModels\/UxModel.swift",
@@ -49527,30 +49991,16 @@
     {
       "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsiOSSDK\/PayTabs\/PayWithCreditCard\/Views\/Cells\/InputTextTableViewCell.swift",
       "kind": "StringLiteral",
-      "offset": 919,
+      "offset": 960,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsiOSSDK\/PayTabs\/PayWithCreditCard\/Views\/Cells\/InputTextTableViewCell.swift",
       "kind": "BooleanLiteral",
-      "offset": 936,
+      "offset": 977,
       "length": 5,
       "value": "false"
-    },
-    {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsiOSSDK\/PayTabs\/PayWithCreditCard\/Views\/Cells\/InputTextTableViewCell.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1086,
-      "length": 1,
-      "value": "6"
-    },
-    {
-      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsiOSSDK\/PayTabs\/PayWithCreditCard\/Views\/Cells\/InputTextTableViewCell.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1174,
-      "length": 1,
-      "value": "6"
     },
     {
       "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsiOSSDK\/PayTabs\/ThirdParty Sources\/CreditCardValidator\/CreditCardValidator.swift",
