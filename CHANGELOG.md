@@ -198,3 +198,6 @@
 
 ## 6.6.27 2024-10-27
 * theme issue fixed
+
+## 6.6.28 2024-10-28
+* build issue
