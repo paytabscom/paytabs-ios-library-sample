@@ -16,8 +16,7 @@ let package = Package(
         // .package(url: /* package url */, from: "1.0.0"),
     ],
     targets: [
-        .binaryTarget(name: "PaymentSDK", url: "https://github.com/paytabscom/paytabs-ios-library-sample/raw/master/sources/PaymentSDK.xcframework.zip", checksum: "bc1dd754f5517237e8ea4e70558bbce3c03ef0de75c6f7dab0a778b1ba891517")
+        .binaryTarget(name: "PaymentSDK", url: "https://github.com/paytabscom/paytabs-ios-library-sample/raw/master/sources/PaymentSDK.xcframework.zip", checksum: "19140198f089ec81b413bc9317e7c696725d8d075395526dcdee7fee051b0a83")
     ]
 )
-
 

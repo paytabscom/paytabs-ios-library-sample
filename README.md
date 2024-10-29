@@ -31,13 +31,13 @@
 [CocoaPods](https://cocoapods.org) is a dependency manager for Cocoa projects. For usage and installation instructions, visit their website. To integrate **PayTabs SDK** into your Xcode project using CocoaPods, specify it in your `Podfile`:
 
 ```ruby
-pod 'PayTabsSDK', '~> 6.6.28'
+pod 'PayTabsSDK', '~> 6.6.29'
 ```
 ### Carthage
 [Carthage](https://github.com/Carthage/Carthage) is a decentralized dependency manager that builds your dependencies and provides you with binary frameworks. To integrate **PayTabs SDK** into your Xcode project using Carthage, specify it in your `Cartfile`:
 
 ```ogdl
-github "paytabscom/paytabs-ios-library-sample" ~> 6.6.28
+github "paytabscom/paytabs-ios-library-sample" ~> 6.6.29
 ```
 
 ### Swift Package Manager 
@@ -47,7 +47,7 @@ Once you have your Swift package set up, adding PayTabsSDK as a dependency is as
 
 ```ruby
 dependencies: [
-    .package(url: "https://github.com/paytabscom/paytabs-ios-library-sample.git", .upToNextMajor(from: "6.6.28"))
+    .package(url: "https://github.com/paytabscom/paytabs-ios-library-sample.git", .upToNextMajor(from: "6.6.29"))
 ]
 ```
 
@@ -371,6 +371,9 @@ You can use the strings file below to copy the key and add it to your app locali
 
 * [English][englishstrings]
 * [Arabic][arabicstrings]
+* [French][frenchstrings]
+* [Turkish][turkishstrings]
+* [Urdu][urdustrings]
 
 ## Enums
 
@@ -467,5 +470,8 @@ See [LICENSE][license].
  [swiftui]: https://github.com/paytabscom/paytabs-ios-library-sample/tree/master/sample-swiftui
  [englishstrings]: https://github.com/paytabscom/paytabs-ios-library-sample/tree/master/en.strings
  [arabicstrings]: https://github.com/paytabscom/paytabs-ios-library-sample/tree/master/ar.strings
+ [frenchstrings]: https://github.com/paytabscom/paytabs-ios-library-sample/tree/master/fr.strings
+ [turkishstrings]: https://github.com/paytabscom/paytabs-ios-library-sample/tree/master/tr.strings
+ [urdustrings]: https://github.com/paytabscom/paytabs-ios-library-sample/tree/master/ur.strings
  [applepayguide]: https://github.com/paytabscom/paytabs-ios-library-sample/blob/master/ApplePayConfiguration.md
  [responseCodes]: https://site.paytabs.com/en/pt2-documentation/testing/payment-response-codes/

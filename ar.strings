@@ -6,12 +6,12 @@
 "payment_sdk_card_number_hint" = "0000 0000 0000 0000";
 "payment_sdk_card_expiry_date" = "تاريخ الانتهاء";
 "payment_sdk_card_expiry_date_hint" = "شهر / سنة";
-"payment_sdk_card_cvv" = "CVV";
-"payment_sdk_card_cvc" = "CVC";
-"payment_sdk_card_cid" = "CID";
-"payment_sdk_card_cvn" = "CVN";
-"payment_sdk_card_cav" = "CAV";
-"payment_sdk_card_cvd" = "CVD";
+"payment_sdk_card_cvv" = "رمز الأمان";
+"payment_sdk_card_cvc" = "رمز الأمان";
+"payment_sdk_card_cid" = "رمز الأمان";
+"payment_sdk_card_cvn" = "رمز الأمان";
+"payment_sdk_card_cav" = "رمز الأمان";
+"payment_sdk_card_cvd" = "رمز الأمان";
 "payment_sdk_card_cvv_hint" = "CVV";
 "payment_sdk_card_cvc_hint" = "CVC";
 "payment_sdk_card_cid_hint" = "CID";
@@ -126,18 +126,15 @@
 "payment_sdk_apple_pay_error_missing_merchant_name" = "اسم التاجر فارغ!";
 "payment_sdk_error_missing_token" = "يرجى تقديم الرمز";
 "payment_sdk_error_saved_card_info" = "يرجى تقديم بيانات البطاقة المستخدمة";
-
 "payment_sdk_cancel_alert" = "هل أنت متأكد من إلغاء عملية الدفع؟";
 "payment_sdk_yes" = "نعم";
 "payment_sdk_no" = "لا";
 "payment_sdk_error_empty_alternative_payment_methods" = "قائمة وسائل الدفع البديلة فارغة";
 "payment_sdk_country_list_search" = "بحث";
 "payment_sdk_apple_pay_simulator_not_supported" = "Apple Pay غير مدعوم على جهاز المحاكاة ، يرجى المحاولة على جهاز حقيقي";
-
 "payment_sdk_done" = "تم";
 "payment_sdk_cancel" = "إلغاء";
 "payment_sdk_save_cards_edit" = "تعديل";
-"payment_sdk_save_cards_cancel_editing" = "إلغاء";
 "payment_sdk_save_cards_close" = "غلق";
 "payment_sdk_saved_cards" = "الكروت المحفوظة";
 "payment_sdk_pay_with_card" = "إضافة كارت جديد";
@@ -147,18 +144,21 @@
 "payment_sdk_scan_cards_torch" = "اضاءة";
 "payment_sdk_scan_cards_close" = "اغلاق";
 "payment_sdk_error_timeـout" = "انتهي الوقت المتاح";
-
 "payment_sdk_error_invalid_percentage" = "قيمة النسبة المئوية غير صالحة.";
 "payment_sdk_error_invalid_discount_value" = "قيمة الخصم غير صالحة.";
 "payment_sdk_error_empty_title" = "عنوان الخصم فارغ.";
 "payment_sdk_error_invalid_card_length" = "مصفوفة بطاقات الخصم فارغة، أو تحتوي على عنوان فارغ، أو تتضمن رقم بطاقة بطول غير صالح (يجب أن يكون بين ٤ و١٠ أحرف).";
-
 "payment_sdk_see_all" = "عرض الكل";
 "payment_sdk_discounts" = "الخصومات";
 "payment_sdk_enable_camera_access" = "تمكين الوصول إلى الكاميرا";
 "payment_sdk_update_phone_settings" = "لتتمكن من مسح بطاقتك، ستحتاج إلى تحديث إعدادات هاتفك";
-
 "payment_sdk_apple_pay_error_unsupported_device" = "هذا الجهاز لا يمكنه إجراء طلبات Apple Pay";
-
-
-
+"EGP" = "ج.م";
+"AED" = "درهم";
+"SAR" = "ريال";
+"IQD" = "دينار";
+"USD" = "دولار";
+"EUR" = "يورو";
+"GBP" = "جنيه إسترليني";
+"JOD" = "دينار";
+"OMR" = "ريال";

@@ -19,7 +19,7 @@
 "payment_sdk_card_cav_hint" = "CAV";
 "payment_sdk_card_cvd_hint" = "CVD";
 "payment_sdk_card_pay_button" = "PAY NOW";
-"" = "You're paying";
+"payment_sdk_credit_card_pay_amount" = "You're paying";
 "payment_sdk_billing_details" = "Billing Details";
 "payment_sdk_billing_address_full_name" = "Full Name";
 "payment_sdk_billing_address_email" = "Email";
@@ -56,8 +56,6 @@
 "payment_sdk_card_error_invalid_cid" = "Invalid CID!";
 "payment_sdk_card_error_invalid_cvn" = "Invalid CVN!";
 "payment_sdk_error_missing_profile_id" = "Profile ID is empty!";
-
-/*Fuzzy*/
 "payment_sdk_error_missing_server_key" = "Missing server key!";
 "payment_sdk_error_invalid_amount" = "Invalid amount";
 "payment_sdk_error_missing_cart_id" = "Cart ID is empty!";
@@ -99,7 +97,6 @@
 "payment_sdk_apple_pay_error_missing_merchant_identifier" = "Apple Pay identifier is empty!";
 "payment_sdk_apple_pay_error_unauthorized_networks" = "ApplePay is available on your device, but it may not be supported in your country, or the selected card type isn’t currently added to your wallet.";
 "payment_sdk_apple_pay_error_unsupported_device" = "This Device cannot make Apple Pay requests";
-
 "payment_sdk_apple_pay_error_missing_country_code" = "Apple Pay country code is empty!";
 "payment_sdk_error_generic" = "Something went wrong!";
 "payment_sdk_card_scanner_line_up_hint" = "Line up card within the lines";
@@ -130,7 +127,6 @@
 "payment_sdk_apple_pay_error_missing_merchant_name" = "Merchant name is empty!";
 "payment_sdk_error_missing_token" = "Please provide token";
 "payment_sdk_error_saved_card_info" = "Please provide saved card info";
-
 "payment_sdk_cancel_alert" = "Are you sure you want to cancel the payment?";
 "payment_sdk_yes" = "Yes";
 "payment_sdk_no" = "No";
@@ -145,18 +141,24 @@
 "payment_sdk_pay_with_card" = "Add new card";
 "payment_sdk_pay_with_apple_pay" = "Pay with Apple Pay";
 "payment_sdk_save_cards_delete" = "Delete";
-
 "payment_sdk_scan_cards" = "Scan Card";
 "payment_sdk_scan_cards_torch" = "Torch";
 "payment_sdk_scan_cards_close" = "Close";
 "payment_sdk_error_timeـout" = "timed out";
-
 "payment_sdk_error_invalid_percentage" = "The percentage value is invalid.";
 "payment_sdk_error_invalid_discount_value" = "The discount value is invalid.";
 "payment_sdk_error_empty_title" = "The discount title is empty.";
 "payment_sdk_error_invalid_card_length" = "The discount cards array is either empty, contains an empty title, or includes a card number with invalid length (must be between 4 and 10 characters).";
-
 "payment_sdk_see_all" = "See All";
 "payment_sdk_discounts" = "Discounts";
 "payment_sdk_enable_camera_access" = "Enable camera access";
 "payment_sdk_update_phone_settings" = "To scan your card you'll need to update your phone settings";
+"EGP" = "EGP";
+"AED" = "AED";
+"SAR" = "SAR";
+"IQD" = "IQD";
+"USD" = "$";
+"EUR" = "€";
+"GBP" = "£";
+"JOD" = "JOD";
+"OMR" = "OMR";

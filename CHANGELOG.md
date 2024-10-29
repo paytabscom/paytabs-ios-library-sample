@@ -201,3 +201,6 @@
 
 ## 6.6.28 2024-10-28
 * build issue
+
+## 6.6.28 2024-10-29
+* more theme options

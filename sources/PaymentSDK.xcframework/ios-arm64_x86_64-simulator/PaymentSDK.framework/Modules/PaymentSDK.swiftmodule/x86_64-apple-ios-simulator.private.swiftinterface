@@ -285,6 +285,8 @@ public protocol ThemeConfiguration {
   var billingHeaderCornerRadius: CoreFoundation.CGFloat { get set }
   var billingHeaderBackgroundColor: UIKit.UIColor? { get set }
   var billingHeaderTextColor: UIKit.UIColor? { get set }
+  var amountFont: UIKit.UIFont? { get set }
+  var amountFontColor: UIKit.UIColor? { get set }
 }
 public class PaymentSDKTheme : PaymentSDK.ThemeConfiguration {
   public var logoImage: UIKit.UIImage?
@@ -321,6 +323,8 @@ public class PaymentSDKTheme : PaymentSDK.ThemeConfiguration {
   public var billingHeaderCornerRadius: CoreFoundation.CGFloat
   public var billingHeaderBackgroundColor: UIKit.UIColor?
   public var billingHeaderTextColor: UIKit.UIColor?
+  public var amountFontColor: UIKit.UIColor?
+  public var amountFont: UIKit.UIFont?
   public init()
   public static var `default`: PaymentSDK.PaymentSDKTheme {
     get
