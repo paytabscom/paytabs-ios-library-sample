@@ -48230,160 +48230,167 @@
       "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsiOSSDK\/PayTabs\/PayWithCreditCard\/Views\/PayWithCardViewController.swift",
       "kind": "IntegerLiteral",
       "offset": 483,
+      "length": 3,
+      "value": "-54"
+    },
+    {
+      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsiOSSDK\/PayTabs\/PayWithCreditCard\/Views\/PayWithCardViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 521,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsiOSSDK\/PayTabs\/PayWithCreditCard\/Views\/PayWithCardViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 543,
+      "offset": 582,
       "length": 8,
       "value": "1"
     },
     {
       "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsiOSSDK\/PayTabs\/PayWithCreditCard\/Views\/PayWithCardViewController.swift",
       "kind": "StringLiteral",
-      "offset": 1225,
+      "offset": 1264,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsiOSSDK\/PayTabs\/PayWithCreditCard\/Views\/PayWithCardViewController.swift",
       "kind": "Array",
-      "offset": 1301,
+      "offset": 1340,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsiOSSDK\/PayTabs\/PayWithCreditCard\/Views\/PayWithCardViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 1549,
+      "offset": 1588,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsiOSSDK\/PayTabs\/PayWithCreditCard\/Views\/PayWithCardViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 1552,
+      "offset": 1591,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsiOSSDK\/PayTabs\/PayWithCreditCard\/Views\/PayWithCardViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 1879,
+      "offset": 1918,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsiOSSDK\/PayTabs\/PayWithCreditCard\/Views\/PayWithCardViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 1912,
+      "offset": 1951,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsiOSSDK\/PayTabs\/PayWithCreditCard\/Views\/PayWithCardViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 2170,
+      "offset": 2209,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsiOSSDK\/PayTabs\/PayWithCreditCard\/Views\/PayWithCardViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 2204,
+      "offset": 2243,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsiOSSDK\/PayTabs\/PayWithCreditCard\/Views\/PayWithCardViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 2302,
+      "offset": 2341,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsiOSSDK\/PayTabs\/PayWithCreditCard\/Views\/PayWithCardViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 2338,
+      "offset": 2377,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsiOSSDK\/PayTabs\/PayWithCreditCard\/Views\/PayWithCardViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 3186,
+      "offset": 3298,
       "length": 1,
       "value": "6"
     },
     {
       "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsiOSSDK\/PayTabs\/PayWithCreditCard\/Views\/PayWithCardViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 3238,
+      "offset": 3350,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsiOSSDK\/PayTabs\/PayWithCreditCard\/Views\/PayWithCardViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 3388,
+      "offset": 3500,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsiOSSDK\/PayTabs\/PayWithCreditCard\/Views\/PayWithCardViewController.swift",
       "kind": "StringLiteral",
-      "offset": 3766,
+      "offset": 3878,
       "length": 24,
       "value": "\"payment_sdk_powered_by\""
     },
     {
       "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsiOSSDK\/PayTabs\/PayWithCreditCard\/Views\/PayWithCardViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 4501,
+      "offset": 4613,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsiOSSDK\/PayTabs\/PayWithCreditCard\/Views\/PayWithCardViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 4559,
+      "offset": 4671,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsiOSSDK\/PayTabs\/PayWithCreditCard\/Views\/PayWithCardViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 4722,
+      "offset": 4834,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsiOSSDK\/PayTabs\/PayWithCreditCard\/Views\/PayWithCardViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 4731,
+      "offset": 4843,
       "length": 2,
       "value": "15"
     },
     {
       "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsiOSSDK\/PayTabs\/PayWithCreditCard\/Views\/PayWithCardViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 4743,
+      "offset": 4855,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsiOSSDK\/PayTabs\/PayWithCreditCard\/Views\/PayWithCardViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 4753,
+      "offset": 4865,
       "length": 2,
       "value": "15"
     },
     {
       "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsiOSSDK\/PayTabs\/PayWithCreditCard\/Views\/PayWithCardViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 5663,
+      "offset": 5775,
       "length": 5,
       "value": "false"
     },
@@ -49258,7 +49265,7 @@
     {
       "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsiOSSDK\/PayTabs\/Extensions\/UIViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 2055,
+      "offset": 4145,
       "length": 4,
       "value": "true"
     },
@@ -49293,14 +49300,14 @@
     {
       "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsiOSSDK\/PayTabs\/PayWithCreditCard\/Views\/PayWithCardViewController+TableViewDelegates.swift",
       "kind": "BooleanLiteral",
-      "offset": 2114,
+      "offset": 2103,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsiOSSDK\/PayTabs\/PayWithCreditCard\/Views\/PayWithCardViewController+TableViewDelegates.swift",
       "kind": "BooleanLiteral",
-      "offset": 2183,
+      "offset": 2172,
       "length": 5,
       "value": "false"
     },
@@ -49391,49 +49398,56 @@
     {
       "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsiOSSDK\/PayTabs\/ThirdParty Sources\/CountryPickerView\/CountryPickerView.swift",
       "kind": "StringLiteral",
-      "offset": 6180,
+      "offset": 6415,
       "length": 2,
       "value": "\"\""
     },
     {
+      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsiOSSDK\/PayTabs\/ThirdParty Sources\/CountryPickerView\/CountryPickerView.swift",
+      "kind": "Array",
+      "offset": 6432,
+      "length": 2,
+      "value": "[]"
+    },
+    {
       "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsiOSSDK\/PayTabs\/PublicLayer\/PaymentManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 17084,
+      "offset": 17076,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsiOSSDK\/PayTabs\/PublicLayer\/PaymentManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 17170,
+      "offset": 17162,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsiOSSDK\/PayTabs\/PublicLayer\/PaymentManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 17242,
+      "offset": 17234,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsiOSSDK\/PayTabs\/PublicLayer\/PaymentManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 19043,
+      "offset": 19064,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsiOSSDK\/PayTabs\/PublicLayer\/PaymentManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 19123,
+      "offset": 19144,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsiOSSDK\/PayTabs\/PublicLayer\/PaymentManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 21048,
+      "offset": 21127,
       "length": 5,
       "value": "false"
     },

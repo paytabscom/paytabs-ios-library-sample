@@ -204,3 +204,6 @@
 
 ## 6.6.28 2024-10-29
 * more theme options
+
+## 6.6.30 2024-10-31
+* more theme options
