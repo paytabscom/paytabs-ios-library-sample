@@ -6,6 +6,6 @@ target 'sample-swiftui' do
   use_frameworks!
 
   # Pods for sample-swift
-pod 'PayTabsSDK', '~> 6.6.30'
+pod 'PayTabsSDK', '~> 6.6.31'
 
 end

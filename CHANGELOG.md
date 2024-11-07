@@ -207,3 +207,6 @@
 
 ## 6.6.30 2024-10-31
 * more theme options
+
+## 6.6.31 2024-11-07
+* fixed alter message issue in the dark mode.
