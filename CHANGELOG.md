@@ -210,3 +210,6 @@
 
 ## 6.6.31 2024-11-07
 * fixed alter message issue in the dark mode.
+
+## 6.6.32 2024-11-18
+* added Halan to the APMs.

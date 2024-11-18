@@ -14,7 +14,7 @@
 		</data>
 		<key>Assets.car</key>
 		<data>
-		TOVUp3fSF3bodyv/hagn9B9jvi8=
+		uusrtEANTwbnR1/TXa8zI12WLFA=
 		</data>
 		<key>CameraScanning.wav</key>
 		<data>
@@ -1098,7 +1098,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		hkhU75PAVEEFU8PWt/ubg5bg4Vk=
+		4UsB1ka5vZVf844HAFYvcMB9qSU=
 		</data>
 		<key>InputTextTableViewCell.nib</key>
 		<data>
@@ -1106,11 +1106,11 @@
 		</data>
 		<key>Modules/PaymentSDK.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		hmIZDE+yiw1149Nnn8efQFoGl1w=
+		YPenSLKHd5Vh/LuFzGddLF4Qo/Y=
 		</data>
 		<key>Modules/PaymentSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		28GxSxgDPB7rAgNZMOQslcrrCkU=
+		R0Wppa9+fo7RgWNNAgGOSxjxOco=
 		</data>
 		<key>Modules/PaymentSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -1118,11 +1118,11 @@
 		</data>
 		<key>Modules/PaymentSDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		1QmMAaxTq9mpUUh/NCGOwzx+bX8=
+		31o5IEh+qj9cysvrvfohlAdBcag=
 		</data>
 		<key>Modules/PaymentSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		pMleEuA37pSsetM6x7V/WZuIHYA=
+		FhBJTnkc5uDdU8u68Lx0qprUMOM=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -1302,7 +1302,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			sOetOjIr3BaguonX9dz3Ne0ENVG+m1vX1M2Cuv7uzQ4=
+			3FhW7VjpA3E4ukmjbjzacP+ST2HRZvIAO84FCco5UJo=
 			</data>
 		</dict>
 		<key>CameraScanning.wav</key>
@@ -3206,14 +3206,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			J94iFibPDKsYemXFJQqiemJAriLXE6sZ2vd9nYWRycU=
+			YfjbEiDB9LnSoxJUqZTxVpH9kDnVrEtJg73aZ2MV4V0=
 			</data>
 		</dict>
 		<key>Modules/PaymentSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			c8BrA87Rh5toGR7By3kE5OIelhHw1hrYnQY9Zizcuis=
+			vXz9YeYo5A79Pt6aOgglPb6FocnmpuuAMbkYxQY4dh4=
 			</data>
 		</dict>
 		<key>Modules/PaymentSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
@@ -3227,14 +3227,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			0Dgu31A3caNW7whGu69ykJdxKuR5gbJbzG3Wema9ME4=
+			Nhvt2/s8YehPAfzoGxqwrFes4Rotxc373NTgCM75+DI=
 			</data>
 		</dict>
 		<key>Modules/PaymentSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			WDib9QqD0OJCPqNREH88PaxkYUC8HYxxOUiVDMBqNOo=
+			IOOD/dv8tBSB973aXFiK83xqmw5Xxlec1MwdlFzwELQ=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

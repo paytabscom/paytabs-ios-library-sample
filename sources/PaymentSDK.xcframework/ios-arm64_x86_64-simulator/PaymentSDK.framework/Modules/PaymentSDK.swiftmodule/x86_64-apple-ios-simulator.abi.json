@@ -26499,6 +26499,43 @@
             "moduleName": "PaymentSDK"
           },
           {
+            "kind": "Var",
+            "name": "Halan",
+            "printedName": "Halan",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PaymentSDK.AlternativePaymentMethod.Type) -> PaymentSDK.AlternativePaymentMethod",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AlternativePaymentMethod",
+                    "printedName": "PaymentSDK.AlternativePaymentMethod",
+                    "usr": "s:10PaymentSDK011AlternativeA6MethodO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "PaymentSDK.AlternativePaymentMethod.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AlternativePaymentMethod",
+                        "printedName": "PaymentSDK.AlternativePaymentMethod",
+                        "usr": "s:10PaymentSDK011AlternativeA6MethodO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:10PaymentSDK011AlternativeA6MethodO5HalanyA2CmF",
+            "mangledName": "$s10PaymentSDK011AlternativeA6MethodO5HalanyA2CmF",
+            "moduleName": "PaymentSDK"
+          },
+          {
             "kind": "Function",
             "name": "getType",
             "printedName": "getType(type:)",
@@ -47189,6 +47226,13 @@
       "offset": 1786,
       "length": 7,
       "value": "\"tabby\""
+    },
+    {
+      "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsiOSSDK\/PayTabs\/PublicLayer\/PaymentSDKConfiguration+Enums.swift",
+      "kind": "StringLiteral",
+      "offset": 1811,
+      "length": 7,
+      "value": "\"halan\""
     },
     {
       "filePath": "\/Volumes\/Work\/PayTabs\/PayTabsiOSSDK\/PayTabs\/StrCardScanner\/CardVerify\/CardBase.swift",
