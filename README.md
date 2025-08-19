@@ -9,7 +9,7 @@
 ## Features
 
 * The SDK offers a ready-made card payment screen.
-* **Card Scanner** for quick & easy entry of card details (iOS 13.0+). 
+* **Card Scanner** for quick & easy entry of card details (iOS 15.0+). 
 * Handle the missing required billing and shipping details.
 * Logo, colors, and fonts become easy to customize.
 * **Apple Pay** supported.
@@ -21,7 +21,7 @@
 
 
 ## Requirements
-* iOS 13.0+, Swift 5.0+
+* iOS 15.0+, Swift 5.0+
 * Xcode 15.0+
 * Create a [PayTabs](www.paytabs.com) merchant account relative to your country.
 
@@ -31,13 +31,13 @@
 [CocoaPods](https://cocoapods.org) is a dependency manager for Cocoa projects. For usage and installation instructions, visit their website. To integrate **PayTabs SDK** into your Xcode project using CocoaPods, specify it in your `Podfile`:
 
 ```ruby
-pod 'PayTabsSDK', '~> 6.6.32'
+pod 'PayTabsSDK', '~> 6.6.33'
 ```
 ### Carthage
 [Carthage](https://github.com/Carthage/Carthage) is a decentralized dependency manager that builds your dependencies and provides you with binary frameworks. To integrate **PayTabs SDK** into your Xcode project using Carthage, specify it in your `Cartfile`:
 
 ```ogdl
-github "paytabscom/paytabs-ios-library-sample" ~> 6.6.32
+github "paytabscom/paytabs-ios-library-sample" ~> 6.6.33
 ```
 
 ### Swift Package Manager 
@@ -47,7 +47,7 @@ Once you have your Swift package set up, adding PayTabsSDK as a dependency is as
 
 ```ruby
 dependencies: [
-    .package(url: "https://github.com/paytabscom/paytabs-ios-library-sample.git", .upToNextMajor(from: "6.6.32"))
+    .package(url: "https://github.com/paytabscom/paytabs-ios-library-sample.git", .upToNextMajor(from: "6.6.33"))
 ]
 ```
 
@@ -197,15 +197,6 @@ configuration.cardApproval = PaymentSDKCardApproval(validationUrl: " https://you
 	```
 	<img src="https://user-images.githubusercontent.com/95287975/188839218-23f0a37b-7add-4a9e-93e3-8b009f0ec5c0.png" width="370">
 	
-	* For payment with the ability to let SDK save Cards on your behalf and show sheet of saved cards for user to choose from. use:
-	
-	```swift
-    PaymentManager.startPaymentWithSavedCards(on: self, 
-                             configuration: configuration,
-                             support3DS: true,
-                             delegate: self)
-	```
-	<img src="https://user-images.githubusercontent.com/95287975/188841787-44d172e9-3791-4d33-90ea-7dbe9f2d04af.png" width="370">
 ### Pay with Apple Pay
 
 1. Follow the guide [Steps to configure Apple Pay][applepayguide] to learn how to configure ApplePay with PayTabs.
@@ -439,7 +430,10 @@ public enum AlternativePaymentMethod: String {
     case URPay = "urpay"
     case applePay = "applePay"
     case souhoola = "souhoola"
-    case Tabby = "tabby" 
+    case Tabby = "tabby",
+    case tamara = "tamara",
+    case tru = "tru",
+    case forsa = "forsa"
 }
 ```
 

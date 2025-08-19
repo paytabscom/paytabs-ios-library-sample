@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.0 effective-5.10 (swiftlang-6.0.0.9.10 clang-1600.0.26.2)
-// swift-module-flags: -target x86_64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name PaymentSDK
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface
+// swift-compiler-version: Apple Swift version 6.1 effective-5.10 (swiftlang-6.1.0.110.21 clang-1700.0.13.3)
+// swift-module-flags: -target x86_64-apple-ios15.6-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name PaymentSDK
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1
 import AVFoundation
 import AVKit
 import Accelerate
@@ -503,6 +503,9 @@ public enum AlternativePaymentMethod : Swift.String, Swift.CaseIterable {
   case souhoola
   case Tabby
   case Halan
+  case tru
+  case tamara
+  case forsa
   public static func getType(type: Swift.String) -> PaymentSDK.AlternativePaymentMethod?
   public init?(rawValue: Swift.String)
   public typealias AllCases = [PaymentSDK.AlternativePaymentMethod]
@@ -835,8 +838,6 @@ extension PaymentSDK.CountryPickerView {
   public static func startPaymentWithApplePayToken(on rootViewController: UIKit.UIViewController, configuration: PaymentSDK.PaymentSDKConfiguration, applePayPayment: PassKit.PKPayment, delegate: (any PaymentSDK.PaymentManagerDelegate)?)
   public static func start3DSecureTokenizedCardPayment(on rootViewController: UIKit.UIViewController, configuration: PaymentSDK.PaymentSDKConfiguration, savedCardInfo: PaymentSDK.PaymentSDKSavedCardInfo, token: Swift.String, delegate: (any PaymentSDK.PaymentManagerDelegate)?)
   public static func startTokenizedCardPayment(on rootViewController: UIKit.UIViewController, configuration: PaymentSDK.PaymentSDKConfiguration, token: Swift.String, transactionRef: Swift.String, delegate: (any PaymentSDK.PaymentManagerDelegate)?)
-  @available(*, deprecated, message: "This function is deprecated. and will be removed in next major releases.")
-  public static func startPaymentWithSavedCards(on rootViewController: UIKit.UIViewController, configuration: PaymentSDK.PaymentSDKConfiguration, support3DS: Swift.Bool, delegate: (any PaymentSDK.PaymentManagerDelegate)?)
   public static func queryTransaction(queryConfiguration: PaymentSDK.PaymentSDKQueryConfiguration, completion: @escaping (PaymentSDK.PaymentSDKTransactionDetails?, (any Swift.Error)?) -> Swift.Void)
   public static func cancelPayment(completion: @escaping (Swift.Bool?) -> Swift.Void)
   public static func clearSavedCards()

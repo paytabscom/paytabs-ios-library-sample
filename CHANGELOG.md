@@ -213,3 +213,6 @@
 
 ## 6.6.32 2024-11-18
 * added Halan to the APMs.
+
+## 6.6.33 2024-08-19
+* added Tamara, Tru, and Forsa to the APMs.
