@@ -1,3 +1,5 @@
+platform :ios, '15.0'
+
 target 'PayTabs Sample' do
  pod 'PayTabsSDK', '~> 6.6.33'
 end

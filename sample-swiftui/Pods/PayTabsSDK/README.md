@@ -9,7 +9,7 @@
 ## Features
 
 * The SDK offers a ready-made card payment screen.
-* **Card Scanner** for quick & easy entry of card details (iOS 13.0+). 
+* **Card Scanner** for quick & easy entry of card details (iOS 15.0+). 
 * Handle the missing required billing and shipping details.
 * Logo, colors, and fonts become easy to customize.
 * **Apple Pay** supported.
@@ -21,8 +21,8 @@
 
 
 ## Requirements
-* iOS 11.0+, Swift 5.0+
-* Xcode 11.0+
+* iOS 15.0+, Swift 5.0+
+* Xcode 15.0+
 * Create a [PayTabs](www.paytabs.com) merchant account relative to your country.
 
 ## Installation
@@ -31,13 +31,13 @@
 [CocoaPods](https://cocoapods.org) is a dependency manager for Cocoa projects. For usage and installation instructions, visit their website. To integrate **PayTabs SDK** into your Xcode project using CocoaPods, specify it in your `Podfile`:
 
 ```ruby
-pod 'PayTabsSDK', '~> 6.6.17'
+pod 'PayTabsSDK', '~> 6.6.33'
 ```
 ### Carthage
 [Carthage](https://github.com/Carthage/Carthage) is a decentralized dependency manager that builds your dependencies and provides you with binary frameworks. To integrate **PayTabs SDK** into your Xcode project using Carthage, specify it in your `Cartfile`:
 
 ```ogdl
-github "paytabscom/paytabs-ios-library-sample" ~> 6.6.17
+github "paytabscom/paytabs-ios-library-sample" ~> 6.6.33
 ```
 
 ### Swift Package Manager 
@@ -47,7 +47,7 @@ Once you have your Swift package set up, adding PayTabsSDK as a dependency is as
 
 ```ruby
 dependencies: [
-    .package(url: "https://github.com/paytabscom/paytabs-ios-library-sample.git", .upToNextMajor(from: "6.6.17"))
+    .package(url: "https://github.com/paytabscom/paytabs-ios-library-sample.git", .upToNextMajor(from: "6.6.33"))
 ]
 ```
 
@@ -147,6 +147,22 @@ You have the option to close the payment screen if there are no ongoing transact
 			//do something
             }
 ```
+#### Card Approval
+
+The Payment SDK allows you to customize BIN-based discounts through the `PaymentSdkCardApproval` class, which collects approval details via an API.
+
+##### Example Usage
+
+```swift
+configuration.cardApproval = PaymentSDKCardApproval(validationUrl: " https://yourdomain.com/validate",
+ binLength: 8,
+ blockIfNoResponse: false)
+
+```
+
+- **`validationUrl`**: The endpoint provided by the business where the Payment SDK will pass transaction information and receive a response.
+- **`binLength`**: The length of the BIN (default is 6 digits, can be set to 8).
+- **`blockIfNoResponse`**: Determines whether to block the transaction if there is no response from the validation endpoint.
 
 
 3. You are now ready to start payment and handle `PaymentManagerDelegate`
@@ -181,15 +197,6 @@ You have the option to close the payment screen if there are no ongoing transact
 	```
 	<img src="https://user-images.githubusercontent.com/95287975/188839218-23f0a37b-7add-4a9e-93e3-8b009f0ec5c0.png" width="370">
 	
-	* For payment with the ability to let SDK save Cards on your behalf and show sheet of saved cards for user to choose from. use:
-	
-	```swift
-    PaymentManager.startPaymentWithSavedCards(on: self, 
-                             configuration: configuration,
-                             support3DS: true,
-                             delegate: self)
-	```
-	<img src="https://user-images.githubusercontent.com/95287975/188841787-44d172e9-3791-4d33-90ea-7dbe9f2d04af.png" width="370">
 ### Pay with Apple Pay
 
 1. Follow the guide [Steps to configure Apple Pay][applepayguide] to learn how to configure ApplePay with PayTabs.
@@ -227,7 +234,7 @@ PaymentManager.startApplePayPayment(on: self,
 ```
 
 ### Pay with Alternative Payment Methods
-It becomes easy to integrate with other payment methods in your region like STCPay, OmanNet, KNet, Valu, Fawry, UnionPay, and Meeza, to serve a large sector of customers.
+It becomes easy to integrate with other payment methods in your region like STCPay, OmanNet, KNet, Valu, Fawry, UnionPay, Halan, and Meeza, to serve a large sector of customers.
 
 1. Do the steps 1 and 2 from **Pay with Card**
 2. Choose one or more of the payment methods you want to support
@@ -340,7 +347,7 @@ configuration.transactionReference = transactionreference
 ## Theme
 Use the following guide to cusomize the colors, font, and logo by configuring the theme and pass it to the payment configuration.
 
-![UI guide](https://github-production-user-asset-6210df.s3.amazonaws.com/95287975/332021756-2c9742d7-7651-4f57-a919-2b9bf54aa37c.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20240520%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20240520T095553Z&X-Amz-Expires=300&X-Amz-Signature=529d9fb31eb99f9d7a1cd388a98b7433ebc70db979d25f15a682332546297da6&X-Amz-SignedHeaders=host&actor_id=95287975&key_id=0&repo_id=165845609)
+![UI guide](https://github.com/user-attachments/assets/40748e02-c602-40c8-826a-a18dc9a7aeaa)
 
 ```swift
 let theme = PaymentSDKTheme.default
@@ -355,6 +362,9 @@ You can use the strings file below to copy the key and add it to your app locali
 
 * [English][englishstrings]
 * [Arabic][arabicstrings]
+* [French][frenchstrings]
+* [Turkish][turkishstrings]
+* [Urdu][urdustrings]
 
 ## Enums
 
@@ -395,7 +405,8 @@ The default type is sale
 ```swift
 public enum TransactionType: String, CaseIterable {
     case sale
-    case authorize = "auth"
+    case authorize
+    case register
 }
 ```
 
@@ -419,7 +430,10 @@ public enum AlternativePaymentMethod: String {
     case URPay = "urpay"
     case applePay = "applePay"
     case souhoola = "souhoola"
-    case Tabby = "tabby" 
+    case Tabby = "tabby",
+    case tamara = "tamara",
+    case tru = "tru",
+    case forsa = "forsa"
 }
 ```
 
@@ -450,5 +464,8 @@ See [LICENSE][license].
  [swiftui]: https://github.com/paytabscom/paytabs-ios-library-sample/tree/master/sample-swiftui
  [englishstrings]: https://github.com/paytabscom/paytabs-ios-library-sample/tree/master/en.strings
  [arabicstrings]: https://github.com/paytabscom/paytabs-ios-library-sample/tree/master/ar.strings
+ [frenchstrings]: https://github.com/paytabscom/paytabs-ios-library-sample/tree/master/fr.strings
+ [turkishstrings]: https://github.com/paytabscom/paytabs-ios-library-sample/tree/master/tr.strings
+ [urdustrings]: https://github.com/paytabscom/paytabs-ios-library-sample/tree/master/ur.strings
  [applepayguide]: https://github.com/paytabscom/paytabs-ios-library-sample/blob/master/ApplePayConfiguration.md
  [responseCodes]: https://site.paytabs.com/en/pt2-documentation/testing/payment-response-codes/
