@@ -278,6 +278,14 @@ struct PayTabsPaymentView: View {
 
         let theme = PaymentSDKTheme.default
         theme.logoImage = UIImage(named: "Logo")
+        theme.backgroundColor = .dynamic(light: .white, dark: .black)
+        theme.inputFieldBackgroundColor = .dynamic(light: .white, dark: UIColor(white: 0.15, alpha: 1.0))
+        theme.primaryFontColor = .dynamic(light: .black, dark: .white)
+        theme.secondaryFontColor = .dynamic(light: .black, dark: .white)
+        theme.titleFontColor = .dynamic(light: .black, dark: .white)
+        theme.placeholderColor = .dynamic(light: .darkGray, dark: .lightGray)
+        theme.buttonColor = .dynamic(light: .systemBlue, dark: .systemBlue)
+        theme.buttonFontColor = .dynamic(light: .white, dark: .white)
 
         let cfg = PaymentSDKConfiguration(profileID: profileIdInput.trimmingCharacters(in: .whitespacesAndNewlines),
                                            serverKey: serverKeyInput.trimmingCharacters(in: .whitespacesAndNewlines),
