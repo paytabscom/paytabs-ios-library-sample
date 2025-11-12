@@ -15,7 +15,11 @@ if [[ -z "${IPA_PATH}" ]]; then
   exit 1
 fi
 
+# Distribute to Firebase App Distribution
+# The --token flag authenticates the Firebase CLI
+echo "Distributing IPA to Firebase App Distribution..."
 firebase appdistribution:distribute "$IPA_PATH" \
   --app "$FIREBASE_APP_ID" \
   --groups "$FIREBASE_GROUPS" \
-  --release-notes "${RELEASE_NOTES:-Automated build from Codemagic}"
+  --release-notes "${RELEASE_NOTES:-Automated build from Codemagic}" \
+  --token "$FIREBASE_TOKEN"

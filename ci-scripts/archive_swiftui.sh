@@ -12,6 +12,7 @@ xcodebuild \
   -destination 'generic/platform=iOS' \
   clean archive \
   -archivePath $CM_BUILD_DIR/build/App.xcarchive \
+  -allowProvisioningUpdates \
   IPHONEOS_DEPLOYMENT_TARGET=15.0 \
   CODE_SIGN_STYLE=Automatic \
   DEVELOPMENT_TEAM=$DEVELOPMENT_TEAM
