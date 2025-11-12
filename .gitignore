@@ -3,3 +3,14 @@ sample/Pods/*
 sample/Pods
 sample-swiftui/Pods
 xcschememanagement.plist
+
+# User-specific workspace files
+**/xcuserdata/
+**/xcshareddata/swiftpm/
+*.xcuserstate
+*.xcuserdatad/
+
+# CocoaPods
+Podfile.lock
+**/Podfile.lock
+**/Pods/Manifest.lock

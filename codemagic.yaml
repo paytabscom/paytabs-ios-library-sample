@@ -1,111 +1,67 @@
 workflows:
-  ios_swiftui_release:
-    name: iOS SwiftUI - Release (TestFlight)
+  publish_podspec:
+    name: Publish Podspec (Version Increment & CocoaPods)
+    max_build_duration: 30
+    environment:
+      xcode: 15.4
+      cocoapods: default
+      groups:
+        - environment variables
+      # Environment variables are set in the group above:
+      # - COCOAPODS_USERNAME: Your CocoaPods username
+      # - COCOAPODS_PASSWORD: Your CocoaPods password/token
+      # - GITHUB_TOKEN: GitHub token for creating tags (optional if using git)
+    cache:
+      cache_paths:
+        - ~/.cocoapods
+    scripts:
+      - name: Extract current version from podspec
+        script: bash ci-scripts/extract_version.sh
+      - name: Update podspec version
+        script: bash ci-scripts/update_podspec.sh
+      - name: Create and push git tag
+        script: bash ci-scripts/create_and_push_tag.sh
+      - name: Validate podspec
+        script: bash ci-scripts/validate_podspec.sh
+      - name: Setup CocoaPods trunk authentication
+        script: bash ci-scripts/setup_trunk_auth.sh
+      - name: Push podspec to CocoaPods trunk
+        script: bash ci-scripts/push_podspec_trunk.sh
+
+  ios_swiftui_firebase:
+    name: iOS SwiftUI - Firebase Distribution
     max_build_duration: 60
     environment:
       xcode: 15.4
       cocoapods: default
-      # Set these environment variables in Codemagic UI:
-      # - DEVELOPMENT_TEAM: Your Apple Developer Team ID
-      # - APP_STORE_CONNECT_KEY_ID: App Store Connect API Key ID
-      # - APP_STORE_CONNECT_ISSUER_ID: App Store Connect Issuer ID
-      # - APP_STORE_CONNECT_PRIVATE_KEY: App Store Connect Private Key (full content)
+      groups:
+        - environment variables
       vars:
         XCODE_WORKSPACE: sample-swiftui/sample-swiftui.xcworkspace
         XCODE_SCHEME: sample-swiftui
-        BUNDLE_ID: paytabs.sdk.ios.native.simple
-        EXPORT_METHOD: app-store
+        EXPORT_METHOD: ad-hoc
+        FIREBASE_APP_ID: $FIREBASE_APP_ID    # Firebase iOS App ID for paytabs.sdk.ios.native.simple
+        FIREBASE_GROUPS: "Testers"           # Default distribution group
+        RELEASE_NOTES: "Automated build from Codemagic"
     cache:
       cache_paths:
         - ~/.cocoapods
         - sample-swiftui/Pods
     scripts:
+      - name: Place GoogleService-Info.plist (optional)
+        script: bash ci-scripts/place_google_service.sh
       - name: Install pods
-        script: |
-          cd sample-swiftui
-          pod install --repo-update
+        script: bash ci-scripts/install_pods_swiftui.sh
       - name: Clean and archive
-        script: |
-          set -euo pipefail
-          xcodebuild \
-            -workspace "$XCODE_WORKSPACE" \
-            -scheme "$XCODE_SCHEME" \
-            -configuration Release \
-            -sdk iphoneos \
-            -destination 'generic/platform=iOS' \
-            clean archive \
-            -archivePath $CM_BUILD_DIR/build/App.xcarchive \
-            IPHONEOS_DEPLOYMENT_TARGET=15.0 \
-            CODE_SIGN_STYLE=Automatic \
-            DEVELOPMENT_TEAM=$DEVELOPMENT_TEAM
+        script: bash ci-scripts/archive_swiftui.sh
       - name: Export .ipa
-        script: |
-          set -euo pipefail
-          cat > ExportOptions.plist <<'PLIST'
-          <?xml version="1.0" encoding="UTF-8"?>
-          <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-          <plist version="1.0">
-          <dict>
-            <key>method</key>
-            <string>${EXPORT_METHOD}</string>
-            <key>uploadBitcode</key>
-            <false/>
-            <key>uploadSymbols</key>
-            <true/>
-            <key>signingStyle</key>
-            <string>automatic</string>
-            <key>stripSwiftSymbols</key>
-            <true/>
-          </dict>
-          </plist>
-          PLIST
-          xcodebuild -exportArchive \
-            -archivePath $CM_BUILD_DIR/build/App.xcarchive \
-            -exportOptionsPlist ExportOptions.plist \
-            -exportPath $CM_BUILD_DIR/build/export
+        script: bash ci-scripts/export_ipa.sh
+      - name: Install Firebase CLI
+        script: bash ci-scripts/install_firebase_cli.sh
+      - name: Distribute to Firebase App Distribution
+        script: bash ci-scripts/distribute_firebase.sh
     artifacts:
       - build/export/*.ipa
       - build/App.xcarchive
       - $CM_BUILD_DIR/ExportOptions.plist
-    publishing:
-      app_store_connect:
-        key_id: $APP_STORE_CONNECT_KEY_ID
-        issuer_id: $APP_STORE_CONNECT_ISSUER_ID
-        api_key: $APP_STORE_CONNECT_PRIVATE_KEY
-        submit_to_testflight: true
-        beta_groups:
-          - Internal Testers
-
-  ios_swiftui_debug:
-    name: iOS SwiftUI - Debug (build only)
-    max_build_duration: 45
-    environment:
-      xcode: 15.4
-      cocoapods: default
-      vars:
-        XCODE_WORKSPACE: sample-swiftui/sample-swiftui.xcworkspace
-        XCODE_SCHEME: sample-swiftui
-    cache:
-      cache_paths:
-        - ~/.cocoapods
-        - sample-swiftui/Pods
-    scripts:
-      - name: Install pods
-        script: |
-          cd sample-swiftui
-          pod install --repo-update
-      - name: Build for device (no signing)
-        script: |
-          set -euo pipefail
-          xcodebuild \
-            -workspace "$XCODE_WORKSPACE" \
-            -scheme "$XCODE_SCHEME" \
-            -configuration Debug \
-            -sdk iphoneos \
-            -destination 'generic/platform=iOS' \
-            build \
-            CODE_SIGNING_ALLOWED=NO IPHONEOS_DEPLOYMENT_TARGET=15.0
-    artifacts:
-      - ~/Library/Developer/Xcode/DerivedData/**/Build/**/*.app
-
 
