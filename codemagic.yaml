@@ -71,10 +71,16 @@ workflows:
     integrations:
       app_store_connect: $APP_STORE_CONNECT_KEY_NAME
     environment:
-      xcode: latest
-      cocoapods: default
       groups:
         - environment variables
+      ios_signing:
+        provisioning_profiles:
+          - PROFILE
+        certificates:
+          - CERTIFICATE
+      xcode: latest
+      cocoapods: default
+
       vars:
         XCODE_WORKSPACE: sample-swiftui/sample-swiftui.xcworkspace
         XCODE_SCHEME: sample-swiftui
