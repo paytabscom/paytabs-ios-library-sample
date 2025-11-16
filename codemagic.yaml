@@ -101,8 +101,12 @@ workflows:
         script: bash ci-scripts/place_google_service.sh
       - name: Install pods
         script: bash ci-scripts/install_pods_swiftui.sh
-      - name: Clean and archive
-        script: bash ci-scripts/archive_swiftui.sh
+      - name: Build IPA for App Store distribution
+        script: |
+          xcode-project build-ipa \
+          --workspace "$XCODE_WORKSPACE" \
+          --scheme "$XCODE_SCHEME" \
+          --archive-flags="-destination 'generic/platform=iOS'"
       - name: Export .ipa
         script: bash ci-scripts/export_ipa.sh
     artifacts:
