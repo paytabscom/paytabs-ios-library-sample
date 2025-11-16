@@ -65,3 +65,51 @@ workflows:
       - build/App.xcarchive
       - $CM_BUILD_DIR/ExportOptions.plist
 
+  ios_testflight:
+    name: iOS TestFlight
+    instance_type: mac_mini_m2
+    environment:
+      xcode: latest
+      cocoapods: default
+      groups:
+        - environment variables
+      vars:
+        XCODE_WORKSPACE: sample-swiftui/sample-swiftui.xcworkspace
+        XCODE_SCHEME: sample-swiftui
+        EXPORT_METHOD: app-store
+        RELEASE_NOTES: "Automated build from Codemagic"
+      app_store_connect: $APP_STORE_CONNECT_KEY_NAME
+    cache:
+      cache_paths:
+        - ~/.cocoapods
+        - sample-swiftui/Pods
+    scripts:
+      - name: Set up provisioning profiles settings on Xcode project
+        script: xcode-project use-profiles
+      - name: Extract current version from podspec
+        script: bash ci-scripts/extract_version.sh
+      - name: Update podspec version
+        script: bash ci-scripts/update_podspec.sh
+      - name: Place GoogleService-Info.plist (optional)
+        script: bash ci-scripts/place_google_service.sh
+      - name: Install pods
+        script: bash ci-scripts/install_pods_swiftui.sh
+      - name: Clean and archive
+        script: bash ci-scripts/archive_swiftui.sh
+      - name: Export .ipa
+        script: bash ci-scripts/export_ipa.sh
+    artifacts:
+      - build/export/*.ipa
+      - build/App.xcarchive
+      - $CM_BUILD_DIR/ExportOptions.plist
+    publishing:
+      email:
+        recipients:
+          - mobile.devop@paytabs.com
+        notify:
+          success: true
+          failure: true
+      app_store_connect:
+        auth: integration
+        submit_to_testflight: true
+        submit_to_app_store: false
