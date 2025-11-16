@@ -68,6 +68,8 @@ workflows:
   ios_testflight:
     name: iOS TestFlight
     instance_type: mac_mini_m2
+    integrations:
+      app_store_connect: $APP_STORE_CONNECT_KEY_NAME
     environment:
       xcode: latest
       cocoapods: default
@@ -78,7 +80,6 @@ workflows:
         XCODE_SCHEME: sample-swiftui
         EXPORT_METHOD: app-store
         RELEASE_NOTES: "Automated build from Codemagic"
-      app_store_connect: $APP_STORE_CONNECT_KEY_NAME
     cache:
       cache_paths:
         - ~/.cocoapods
