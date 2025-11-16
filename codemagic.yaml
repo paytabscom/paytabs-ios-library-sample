@@ -75,9 +75,9 @@ workflows:
         - environment variables
       ios_signing:
         provisioning_profiles:
-          - PROFILE
+          - $PROFILE
         certificates:
-          - CERTIFICATE
+          - $CERTIFICATE
       xcode: latest
       cocoapods: default
 
