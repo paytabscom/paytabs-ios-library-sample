@@ -108,8 +108,8 @@ workflows:
           --scheme "$XCODE_SCHEME" \
           --archive-flags="-destination 'generic/platform=iOS'"
     artifacts:
-      - build/export/*.ipa
-      - build/App.xcarchive
+      - build/ios/ipa/*.ipa
+      - build/ios/archive/*.xcarchive
       - $CM_BUILD_DIR/ExportOptions.plist
     publishing:
       email:
