@@ -86,6 +86,7 @@ workflows:
         XCODE_SCHEME: sample-swiftui
         EXPORT_METHOD: app-store
         RELEASE_NOTES: "Automated build from Codemagic"
+        APP_STORE_APPLE_ID: 6754967249
     cache:
       cache_paths:
         - ~/.cocoapods
@@ -93,10 +94,11 @@ workflows:
     scripts:
       - name: Set up provisioning profiles settings on Xcode project
         script: xcode-project use-profiles
-      - name: Extract current version from podspec
-        script: bash ci-scripts/extract_version.sh
-      - name: Update podspec version
-        script: bash ci-scripts/update_podspec.sh
+      - name: Increment build number
+        script: |
+          cd $CM_BUILD_DIR
+          LATEST_BUILD_NUMBER=$(app-store-connect get-latest-app-store-build-number "$APP_STORE_APPLE_ID")
+          agvtool new-version -all $(($LATEST_BUILD_NUMBER + 1))
       - name: Place GoogleService-Info.plist (optional)
         script: bash ci-scripts/place_google_service.sh
       - name: Install pods
