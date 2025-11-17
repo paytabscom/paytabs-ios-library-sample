@@ -95,7 +95,7 @@ workflows:
         script: xcode-project use-profiles
       - name: Increment build number
         script: |
-          cd $CM_BUILD_DIR
+          cd sample-swiftui
           echo "Current PROJECT_BUILD_NUMBER is $PROJECT_BUILD_NUMBER"
           agvtool new-version -all "$PROJECT_BUILD_NUMBER"
       - name: Place GoogleService-Info.plist (optional)
