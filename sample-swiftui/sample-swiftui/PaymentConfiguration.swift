@@ -18,12 +18,12 @@ extension UIColor {
 }
 
 class PaymentConfiguration {
-    static let profileID = "profile id"
-    static let serverKey = "server key"
-    static let clientKey = "client key"
-    static let defaultCurrency = "AED"
-    static let defaultAmount: Double = 5.0
-    static let defaultMerchantCountryCode = "AE"
+    static let profileID = "100181"
+    static let serverKey = "SRJNGJBG2D-JDRGZTMJBB-LHLJJBZJLB"
+    static let clientKey = "CBKMN9-Q2GP6D-RT97N6-72HNHM"
+    static let defaultCurrency = "EGP"
+    static let defaultAmount: Double = 1.0
+    static let defaultMerchantCountryCode = "EG"
     
     static var billingDetails: PaymentSDKBillingDetails! {
         return PaymentSDKBillingDetails(name: "John Smith",

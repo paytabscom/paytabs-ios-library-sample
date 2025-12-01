@@ -12,7 +12,20 @@ import UIKit
 struct PayTabsPaymentView: View {
     @State private var amount: String = String(PaymentConfiguration.defaultAmount)
     @State private var currency: String = PaymentConfiguration.defaultCurrency
+    /// Selected merchant country code (used for `merchantCountryCode` in configuration).
+    @State private var merchantCountryCode: String = PaymentConfiguration.defaultMerchantCountryCode
     private let availableCurrencies: [String] = ["AED", "SAR", "USD", "EGP"]
+    /// Country dropdown options: show full country name, send ISO2 code.
+    private let availableCountries: [(name: String, code: String)] = [
+        ("United Arab Emirates", "AE"),
+        ("Saudi Arabia", "SA"),
+        ("Kuwait", "KW"),
+        ("Egypt", "EG"),
+        ("United States", "US"),
+        ("Qatar", "QA"),
+        ("Bahrain", "BH"),
+        ("Oman", "OM")
+    ]
     // Credentials
     @State private var profileIdInput: String = PaymentConfiguration.profileID
     @State private var serverKeyInput: String = PaymentConfiguration.serverKey
@@ -41,6 +54,7 @@ struct PayTabsPaymentView: View {
     enum PaymentMethod: String, CaseIterable, Identifiable {
         case card = "Card"
         case applePay = "Apple Pay"
+        case stcPay = "STC Pay"
         var id: String { rawValue }
     }
 
@@ -52,7 +66,7 @@ struct PayTabsPaymentView: View {
     @State private var showReceipt: Bool = false
     @State private var receiptText: String = ""
     @State private var paymentDelegate: PaymentDelegate?
-
+ 
     var body: some View {
         NavigationView {
             Form {
@@ -62,6 +76,13 @@ struct PayTabsPaymentView: View {
                     Picker("Currency", selection: $currency) {
                         ForEach(availableCurrencies, id: \.self) { code in
                             Text(code).tag(code)
+                        }
+                    }
+                    .pickerStyle(.menu)
+                    // Single dropdown to pick merchant country code.
+                    Picker("Merchant Country", selection: $merchantCountryCode) {
+                        ForEach(availableCountries, id: \.code) { country in
+                            Text(country.name).tag(country.code)
                         }
                     }
                     .pickerStyle(.menu)
@@ -104,10 +125,12 @@ struct PayTabsPaymentView: View {
                             Text("State").font(.subheadline)
                             TextField("", text: $billState)
                                 .textFieldStyle(.roundedBorder)
-                            Text("Country (ISO2)").font(.subheadline)
-                            TextField("", text: $billCountry)
-                                .textInputAutocapitalization(.characters)
-                                .textFieldStyle(.roundedBorder)
+                            Picker("Country", selection: $billCountry) {
+                                ForEach(availableCountries, id: \.code) { country in
+                                    Text(country.name).tag(country.code)
+                                }
+                            }
+                            .pickerStyle(.menu)
                             Text("ZIP").font(.subheadline)
                             TextField("", text: $billZip)
                                 .textFieldStyle(.roundedBorder)
@@ -144,10 +167,12 @@ struct PayTabsPaymentView: View {
                             Text("State").font(.subheadline)
                             TextField("", text: $shipState)
                                 .textFieldStyle(.roundedBorder)
-                            Text("Country (ISO2)").font(.subheadline)
-                            TextField("", text: $shipCountry)
-                                .textInputAutocapitalization(.characters)
-                                .textFieldStyle(.roundedBorder)
+                            Picker("Country", selection: $shipCountry) {
+                                ForEach(availableCountries, id: \.code) { country in
+                                    Text(country.name).tag(country.code)
+                                }
+                            }
+                            .pickerStyle(.menu)
                             Text("ZIP").font(.subheadline)
                             TextField("", text: $shipZip)
                                 .textFieldStyle(.roundedBorder)
@@ -226,14 +251,14 @@ struct PayTabsPaymentView: View {
                 lines.append("  Name: \(billName)")
                 lines.append("  Email: \(billEmail)")
                 lines.append("  Phone: \(billPhone)")
-                lines.append("  Address: \(billAddress), \(billCity), \(billState), \(billCountry.uppercased()) \(billZip)")
+                lines.append("  Address: \(billAddress), \(billCity), \(billState), \(countryName(for: billCountry)) (\(billCountry.uppercased())) \(billZip)")
                 if showShipping {
                     lines.append("")
                     lines.append("Shipping:")
                     lines.append("  Name: \(shipName)")
                     lines.append("  Email: \(shipEmail)")
                     lines.append("  Phone: \(shipPhone)")
-                    lines.append("  Address: \(shipAddress), \(shipCity), \(shipState), \(shipCountry.uppercased()) \(shipZip)")
+                    lines.append("  Address: \(shipAddress), \(shipCity), \(shipState), \(countryName(for: shipCountry)) (\(shipCountry.uppercased())) \(shipZip)")
                 }
                 lines.append("")
                 lines.append("Transaction:")
@@ -270,29 +295,28 @@ struct PayTabsPaymentView: View {
                                   zip: shipZip)
     }
 
+    /// Resolve display name from ISO2 code; falls back to uppercased code.
+    private func countryName(for code: String) -> String {
+        if let match = availableCountries.first(where: { $0.code.caseInsensitiveCompare(code) == .orderedSame }) {
+            return match.name
+        }
+        return code.uppercased()
+    }
+
     private func makeConfig() -> PaymentSDKConfiguration? {
         guard let amt = Double(amount) else {
             errorMessage = "Invalid amount"
             return nil
         }
 
-        let theme = PaymentSDKTheme.default
-        theme.logoImage = UIImage(named: "Logo")
-        theme.backgroundColor = .dynamic(light: .white, dark: .black)
-        theme.inputFieldBackgroundColor = .dynamic(light: .white, dark: UIColor(white: 0.15, alpha: 1.0))
-        theme.primaryFontColor = .dynamic(light: .black, dark: .white)
-        theme.secondaryFontColor = .dynamic(light: .black, dark: .white)
-        theme.titleFontColor = .dynamic(light: .black, dark: .white)
-        theme.placeholderColor = .dynamic(light: .darkGray, dark: .lightGray)
-        theme.buttonColor = .dynamic(light: .systemBlue, dark: .systemBlue)
-        theme.buttonFontColor = .dynamic(light: .white, dark: .white)
+        let theme = makeTheme()
 
         let cfg = PaymentSDKConfiguration(profileID: profileIdInput.trimmingCharacters(in: .whitespacesAndNewlines),
                                            serverKey: serverKeyInput.trimmingCharacters(in: .whitespacesAndNewlines),
                                            clientKey: clientKeyInput.trimmingCharacters(in: .whitespacesAndNewlines),
                                            currency: currency,
                                            amount: amt,
-                                           merchantCountryCode: PaymentConfiguration.defaultMerchantCountryCode)
+                                           merchantCountryCode: merchantCountryCode)
             .cartDescription("Sample Order")
             .cartID(UUID().uuidString)
             .screenTitle("Pay with Card")
@@ -310,24 +334,91 @@ struct PayTabsPaymentView: View {
         return cfg
     }
 
+    /// Theme used for all payment methods (card, Apple Pay, alternative payments).
+    private func makeTheme() -> PaymentSDKTheme {
+        let theme = PaymentSDKTheme.default
+        theme.logoImage = UIImage(named: "Logo")
+        theme.backgroundColor = .dynamic(light: .white, dark: .black)
+        theme.inputFieldBackgroundColor = .dynamic(light: .white, dark: UIColor(white: 0.15, alpha: 1.0))
+        theme.primaryFontColor = .dynamic(light: .black, dark: .white)
+        theme.secondaryFontColor = .dynamic(light: .black, dark: .white)
+        theme.titleFontColor = .dynamic(light: .black, dark: .white)
+        theme.placeholderColor = .dynamic(light: .darkGray, dark: .lightGray)
+        theme.buttonColor = .dynamic(light: .systemBlue, dark: .systemBlue)
+        theme.buttonFontColor = .dynamic(light: .white, dark: .white)
+        return theme
+    }
+
+    /// Builds configuration for alternative payment methods (currently STC Pay only).
+    private func makeAlternativeConfig(for method: PaymentMethod) -> PaymentSDKConfiguration? {
+        guard let amt = Double(amount) else {
+            errorMessage = "Invalid amount"
+            return nil
+        }
+
+        let theme = makeTheme()
+
+        // Build configuration per method (values mirror the UIKit sample).
+        let baseProfileID = profileIdInput.trimmingCharacters(in: .whitespacesAndNewlines)
+        let baseServerKey = serverKeyInput.trimmingCharacters(in: .whitespacesAndNewlines)
+        let baseClientKey = clientKeyInput.trimmingCharacters(in: .whitespacesAndNewlines)
+
+        switch method {
+        case .stcPay:
+            let cfg = PaymentSDKConfiguration(profileID: baseProfileID,
+                                              serverKey: baseServerKey,
+                                              clientKey: baseClientKey,
+                                              currency: "SAR",
+                                              amount: amt,
+                                              merchantCountryCode: "SA")
+                .cartDescription("Sample Order")
+                .cartID(UUID().uuidString)
+                .screenTitle(method.rawValue)
+                .theme(theme)
+                .billingDetails(makeBilling())
+                .addAlternativePaymentMethod(.stcPay)
+            cfg.showBillingInfo = showBilling
+            cfg.showShippingInfo = showShipping
+            cfg.forceShippingInfo = false
+
+            if showShipping {
+                cfg.shippingDetails = makeShipping()
+            }
+            return cfg
+
+        case .card, .applePay:
+            // Should not be called for these.
+            return nil
+        }
+    }
+
     private func startPayment() {
         errorMessage = nil
         guard let topVC = getTOPVC() else { return }
-        guard let configuration = makeConfig() else { return }
+        // For card and Apple Pay we use the standard configuration,
+        // for alternative payments we build a specific configuration.
 
         switch selectedMethod {
         case .card:
+            guard let configuration = makeConfig() else { return }
             let del = PaymentDelegate()
             paymentDelegate = del
             PaymentManager.startCardPayment(on: topVC, configuration: configuration, delegate: del)
+
         case .applePay:
+            guard let configuration = makeConfig() else { return }
             // Requires proper Apple Pay setup; set merchant fields before starting
             configuration.merchantName("Your Store Name")
             configuration.merchantAppleBundleID("merchant.com.your.bundle")
             let del = PaymentDelegate()
             paymentDelegate = del
             PaymentManager.startApplePayPayment(on: topVC, configuration: configuration, delegate: del)
-        
+
+        case .stcPay:
+            guard let altConfig = makeAlternativeConfig(for: selectedMethod) else { return }
+            let del = PaymentDelegate()
+            paymentDelegate = del
+            PaymentManager.startAlternativePaymentMethod(on: topVC, configuration: altConfig, delegate: del)
         }
         // No loader UI
     }
