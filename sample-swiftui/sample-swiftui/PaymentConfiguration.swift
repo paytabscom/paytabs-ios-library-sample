@@ -24,6 +24,8 @@ class PaymentConfiguration {
     static let defaultCurrency = "EGP"
     static let defaultAmount: Double = 1.0
     static let defaultMerchantCountryCode = "EG"
+    static let defaultMerchantName = "Your Store Name"
+    static let defaultMerchantAppleBundleID = "merchant.com.your.bundle"
     
     static var billingDetails: PaymentSDKBillingDetails! {
         return PaymentSDKBillingDetails(name: "John Smith",

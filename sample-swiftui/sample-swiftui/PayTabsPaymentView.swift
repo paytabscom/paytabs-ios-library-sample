@@ -30,6 +30,8 @@ struct PayTabsPaymentView: View {
     @State private var profileIdInput: String = PaymentConfiguration.profileID
     @State private var serverKeyInput: String = PaymentConfiguration.serverKey
     @State private var clientKeyInput: String = PaymentConfiguration.clientKey
+    @State private var merchantNameInput: String = PaymentConfiguration.defaultMerchantName
+    @State private var merchantAppleBundleIdInput: String = PaymentConfiguration.defaultMerchantAppleBundleID
 
     // Billing
     @State private var billName: String = PaymentConfiguration.billingDetails.name ?? ""
@@ -96,6 +98,12 @@ struct PayTabsPaymentView: View {
                         .textFieldStyle(.roundedBorder)
                     Text("Client Key").font(.subheadline)
                     SecureField("", text: $clientKeyInput)
+                        .textFieldStyle(.roundedBorder)
+                    Text("Apple Pay Merchant Name").font(.subheadline)
+                    TextField("", text: $merchantNameInput)
+                        .textFieldStyle(.roundedBorder)
+                    Text("Apple Pay Merchant ID").font(.subheadline)
+                    TextField("", text: $merchantAppleBundleIdInput)
                         .textFieldStyle(.roundedBorder)
                 }
                 Section (){
@@ -408,8 +416,8 @@ struct PayTabsPaymentView: View {
         case .applePay:
             guard let configuration = makeConfig() else { return }
             // Requires proper Apple Pay setup; set merchant fields before starting
-            configuration.merchantName("Your Store Name")
-            configuration.merchantAppleBundleID("merchant.com.your.bundle")
+            configuration.merchantName(merchantNameInput.trimmingCharacters(in: .whitespacesAndNewlines))
+            configuration.merchantAppleBundleID(merchantAppleBundleIdInput.trimmingCharacters(in: .whitespacesAndNewlines))
             let del = PaymentDelegate()
             paymentDelegate = del
             PaymentManager.startApplePayPayment(on: topVC, configuration: configuration, delegate: del)
@@ -427,8 +435,8 @@ struct PayTabsPaymentView: View {
         errorMessage = nil
         guard let topVC = getTOPVC() else { return }
         guard let configuration = makeConfig() else { return }
-        configuration.merchantName("Your Store Name")
-        configuration.merchantAppleBundleID("merchant.com.your.bundle")
+        configuration.merchantName(merchantNameInput.trimmingCharacters(in: .whitespacesAndNewlines))
+        configuration.merchantAppleBundleID(merchantAppleBundleIdInput.trimmingCharacters(in: .whitespacesAndNewlines))
         let del = PaymentDelegate()
         paymentDelegate = del
         PaymentManager.startApplePayPayment(on: topVC, configuration: configuration, delegate: del)
