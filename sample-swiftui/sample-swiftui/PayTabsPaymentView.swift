@@ -8,6 +8,7 @@
 import SwiftUI
 import PaymentSDK
 import UIKit
+import PassKit
 
 struct PayTabsPaymentView: View {
     @State private var amount: String = String(PaymentConfiguration.defaultAmount)
@@ -61,13 +62,30 @@ struct PayTabsPaymentView: View {
     }
 
     @State private var selectedMethod: PaymentMethod = .card
+    @State private var selectedApplePayNetwork: PKPaymentNetwork?
     @State private var showBilling: Bool = false
     @State private var showShipping: Bool = false
+    @State private var selectedLanguage: String = "en"
     @State private var isPaying: Bool = false
     @State private var errorMessage: String?
     @State private var showReceipt: Bool = false
     @State private var receiptText: String = ""
     @State private var paymentDelegate: PaymentDelegate?
+    
+    // Apple Pay specific features (matching iOS SDK sample)
+    @State private var simplifyApplePayValidation: Bool = true
+    @State private var forceShippingInfo: Bool = false
+    @State private var isDigitalProduct: Bool = false
+    @State private var enableZeroContacts: Bool = false
+    @State private var selectedPaymentNetworks: Set<PKPaymentNetwork> = []
+    
+    private let availableLanguages: [(name: String, code: String)] = [
+        ("English", "en"),
+        ("Arabic", "ar"),
+        ("Urdu", "ur"),
+        ("Turkish", "tr"),
+        ("French", "fr")
+    ]
  
     var body: some View {
         NavigationView {
@@ -89,6 +107,18 @@ struct PayTabsPaymentView: View {
                     }
                     .pickerStyle(.menu)
                 }
+                Section(header: Text("Language")) {
+                    Picker("Language", selection: $selectedLanguage) {
+                        ForEach(availableLanguages, id: \.code) { language in
+                            Text(language.name).tag(language.code)
+                        }
+                    }
+                    .pickerStyle(.menu)
+                    .onChange(of: selectedLanguage) { newLanguage in
+                        // Save locale immediately when language changes
+                        saveLanguageCode(newLanguage)
+                    }
+                }
                 Section(header: Text("Credentials")) {
                     Text("Profile ID").font(.subheadline)
                     TextField("", text: $profileIdInput)
@@ -106,8 +136,21 @@ struct PayTabsPaymentView: View {
                     TextField("", text: $merchantAppleBundleIdInput)
                         .textFieldStyle(.roundedBorder)
                 }
+                // Apple Pay Configuration Section (matching iOS SDK sample)
+                if selectedMethod == .applePay {
+                    Section(header: Text("Apple Pay Options")) {
+                        Toggle("Simplify Apple Pay Validation", isOn: $simplifyApplePayValidation)
+                        Toggle("Force Shipping Info", isOn: $forceShippingInfo)
+                        Toggle("Digital Product", isOn: $isDigitalProduct)
+                        Toggle("Enable Zero Contacts", isOn: $enableZeroContacts)
+                    }
+                }
+                
                 Section (){
                     Toggle("Show Billing Details", isOn: $showBilling)
+                    if selectedMethod == .applePay {
+                        Toggle("Show Shipping Details", isOn: $showShipping)
+                    }
                 }
                  if showBilling {
                 Section(header: Text("Billing")) {
@@ -202,7 +245,18 @@ struct PayTabsPaymentView: View {
                         .frame(height: 44)
                     }
                 }
-
+                
+                if selectedMethod == .applePay {
+                    Section(header: Text("Apple Pay Network")) {
+                        Picker("Network", selection: $selectedApplePayNetwork) {
+                            Text("All Supported").tag(nil as PKPaymentNetwork?)
+                            ForEach(availablePaymentNetworks, id: \.self) { network in
+                                Text(displayName(for: network)).tag(network as PKPaymentNetwork?)
+                            }
+                        }
+                    }
+                }
+ 
                 if let errorMessage = errorMessage {
                     Section {
                         Text(errorMessage).foregroundColor(.red)
@@ -238,6 +292,20 @@ struct PayTabsPaymentView: View {
                     .padding(.horizontal)
                 }
                 .padding(.top)
+            }
+            .onAppear {
+                // Save initial locale when view appears
+                saveLanguageCode(selectedLanguage)
+            }
+            .onReceive(NotificationCenter.default.publisher(for: .ptPaymentValidationError)) { notification in
+                isPaying = false
+                if let error = notification.userInfo?["error"] as? Error {
+                    print("❌ [SwiftUI] Received validation error: \(error.localizedDescription)")
+                    errorMessage = error.localizedDescription
+                } else {
+                    print("❌ [SwiftUI] Received validation error but no error object")
+                    errorMessage = "Apple Pay validation failed. Please check your configuration."
+                }
             }
             .onReceive(NotificationCenter.default.publisher(for: .ptPaymentFinished)) { notification in
                 isPaying = false
@@ -330,10 +398,18 @@ struct PayTabsPaymentView: View {
             .screenTitle("Pay with Card")
             .theme(theme)
             .billingDetails(makeBilling())
+            .languageCode(selectedLanguage)
 
         cfg.showBillingInfo = showBilling
         cfg.showShippingInfo = showShipping
-        cfg.forceShippingInfo = false
+        // Apply Apple Pay specific settings if Apple Pay is selected
+        if selectedMethod == .applePay {
+            cfg.forceShippingInfo = forceShippingInfo
+            cfg.isDigitalProduct = isDigitalProduct
+            cfg.enableZeroContacts = enableZeroContacts
+        } else {
+            cfg.forceShippingInfo = false
+        }
 
         // optional shipping
         if showShipping {
@@ -409,21 +485,40 @@ struct PayTabsPaymentView: View {
         switch selectedMethod {
         case .card:
             guard let configuration = makeConfig() else { return }
+            // Save locale before starting payment
+            saveLanguageCode(selectedLanguage)
             let del = PaymentDelegate()
             paymentDelegate = del
             PaymentManager.startCardPayment(on: topVC, configuration: configuration, delegate: del)
 
         case .applePay:
+            // CRITICAL: Save locale FIRST before creating configuration
+            // This ensures SDK error messages are localized correctly
+            saveLanguageCode(selectedLanguage)
+            
             guard let configuration = makeConfig() else { return }
-            // Requires proper Apple Pay setup; set merchant fields before starting
+            // Apply all Apple Pay configuration (matching iOS SDK sample)
             configuration.merchantName(merchantNameInput.trimmingCharacters(in: .whitespacesAndNewlines))
-            configuration.merchantAppleBundleID(merchantAppleBundleIdInput.trimmingCharacters(in: .whitespacesAndNewlines))
+            // Normalize merchant ID to lowercase (Apple Pay merchant IDs are case-sensitive and should be lowercase)
+            configuration.merchantAppleBundleID(merchantAppleBundleIdInput.trimmingCharacters(in: .whitespacesAndNewlines).lowercased())
+            applyDefaultApplePayNetworksIfNeeded(on: configuration)
+            configuration.simplifyApplePayValidation = simplifyApplePayValidation
+            configuration.forceShippingInfo = forceShippingInfo
+            configuration.isDigitalProduct = isDigitalProduct
+            configuration.enableZeroContacts = enableZeroContacts
+            configuration.languageCode = selectedLanguage
+            
+            // Save again to ensure it's set (SDK will also save it, but we do it early)
+            saveLanguageCode(selectedLanguage)
+            
             let del = PaymentDelegate()
             paymentDelegate = del
             PaymentManager.startApplePayPayment(on: topVC, configuration: configuration, delegate: del)
 
         case .stcPay:
             guard let altConfig = makeAlternativeConfig(for: selectedMethod) else { return }
+            altConfig.languageCode = selectedLanguage
+            saveLanguageCode(selectedLanguage)
             let del = PaymentDelegate()
             paymentDelegate = del
             PaymentManager.startAlternativePaymentMethod(on: topVC, configuration: altConfig, delegate: del)
@@ -433,13 +528,220 @@ struct PayTabsPaymentView: View {
 
     private func startApplePay() {
         errorMessage = nil
-        guard let topVC = getTOPVC() else { return }
-        guard let configuration = makeConfig() else { return }
-        configuration.merchantName(merchantNameInput.trimmingCharacters(in: .whitespacesAndNewlines))
-        configuration.merchantAppleBundleID(merchantAppleBundleIdInput.trimmingCharacters(in: .whitespacesAndNewlines))
+        isPaying = true
+        
+        print("🍎 [Apple Pay] Starting Apple Pay flow...")
+        
+        // CRITICAL: Save locale FIRST before creating configuration
+        // This ensures SDK error messages are localized correctly
+        saveLanguageCode(selectedLanguage)
+        
+        guard let topVC = getTOPVC() else {
+            print("❌ [Apple Pay] Failed to get top view controller")
+            errorMessage = "Failed to get view controller"
+            isPaying = false
+            return
+        }
+        
+        guard let configuration = makeConfig() else {
+            print("❌ [Apple Pay] Failed to create configuration")
+            isPaying = false
+            return
+        }
+        
+        // Apply all Apple Pay configuration (matching iOS SDK sample)
+        let merchantName = merchantNameInput.trimmingCharacters(in: .whitespacesAndNewlines)
+        // Normalize merchant ID to lowercase (Apple Pay merchant IDs are case-sensitive and should be lowercase)
+        let merchantID = merchantAppleBundleIdInput.trimmingCharacters(in: .whitespacesAndNewlines).lowercased()
+        
+        print("🍎 [Apple Pay] Merchant Name: '\(merchantName)'")
+        print("🍎 [Apple Pay] Merchant ID: '\(merchantID)'")
+        
+        // Validate required fields
+        if merchantID.isEmpty {
+            print("❌ [Apple Pay] Merchant ID is empty")
+            errorMessage = "Apple Pay Merchant ID is required. Please enter it in the Credentials section."
+            isPaying = false
+            return
+        }
+        
+        if merchantName.isEmpty {
+            print("❌ [Apple Pay] Merchant Name is empty")
+            errorMessage = "Apple Pay Merchant Name is required. Please enter it in the Credentials section."
+            isPaying = false
+            return
+        }
+        
+        configuration.merchantName(merchantName)
+        configuration.merchantAppleBundleID(merchantID)
+        applyDefaultApplePayNetworksIfNeeded(on: configuration)
+        configuration.simplifyApplePayValidation = simplifyApplePayValidation
+        configuration.forceShippingInfo = forceShippingInfo
+        configuration.isDigitalProduct = isDigitalProduct
+        configuration.enableZeroContacts = enableZeroContacts
+        configuration.languageCode = selectedLanguage
+        
+        // Log network configuration
+        if let networks = configuration.paymentNetworks {
+            let networkNames = networks.map { displayName(for: $0) }.joined(separator: ", ")
+            print("🍎 [Apple Pay] Payment Networks: \(networkNames)")
+        } else {
+            print("🍎 [Apple Pay] Payment Networks: (will use defaults)")
+        }
+        
+        // Check if device can make payments with the selected networks
+        // Only check if a specific network is selected (not "All Supported")
+        if let selected = selectedApplePayNetwork {
+            // User selected a specific network - check if device supports it
+            print("🍎 [Apple Pay] Checking specific network: \(displayName(for: selected))")
+            if !PKPaymentAuthorizationViewController.canMakePayments(usingNetworks: [selected]) {
+                let networkName = displayName(for: selected)
+                print("❌ [Apple Pay] Device cannot make payments with \(networkName)")
+                errorMessage = "Apple Pay is not available with \(networkName) on this device. Please add a \(networkName) card in Wallet or select 'All Supported' networks."
+                isPaying = false
+                return
+            }
+            print("✅ [Apple Pay] Device supports \(displayName(for: selected))")
+        } else {
+            // "All Supported" selected - check if device can make payments at all
+            print("🍎 [Apple Pay] Checking if device can make payments (All Supported)")
+            if !PKPaymentAuthorizationViewController.canMakePayments() {
+                print("❌ [Apple Pay] Device cannot make payments")
+                errorMessage = "Apple Pay is not available on this device. Please set up Apple Pay in Settings."
+                isPaying = false
+                return
+            }
+            print("✅ [Apple Pay] Device can make payments")
+        }
+        
+        // Save again to ensure it's set (SDK will also save it, but we do it early)
+        saveLanguageCode(selectedLanguage)
+        
+        print("🍎 [Apple Pay] Calling PaymentManager.startApplePayPayment...")
         let del = PaymentDelegate()
         paymentDelegate = del
         PaymentManager.startApplePayPayment(on: topVC, configuration: configuration, delegate: del)
+        print("🍎 [Apple Pay] PaymentManager.startApplePayPayment called successfully")
+    }
+    
+    /// Mirrors the iOS SDK sample logic: if no networks are set, use default Apple Pay networks
+    private func applyDefaultApplePayNetworksIfNeeded(on configuration: PaymentSDKConfiguration) {
+        // If user selected a specific network, use that
+        if let selected = selectedApplePayNetwork {
+            configuration.paymentNetworks = [selected]
+            return
+        }
+        
+        // If configuration already has networks, use them
+        if let existingNetworks = configuration.paymentNetworks, !existingNetworks.isEmpty {
+            return
+        }
+        
+        // Otherwise, use default networks (matching iOS SDK sample)
+        var defaultNetworks: [PKPaymentNetwork] = [.visa, .masterCard, .amex]
+        if #available(iOS 12.1.1, *) {
+            defaultNetworks.append(.mada)
+        }
+        configuration.paymentNetworks = defaultNetworks
+    }
+    
+    /// All Apple Pay payment networks this app should support (matching iOS SDK sample)
+    private var availablePaymentNetworks: [PKPaymentNetwork] {
+        var networks = [PKPaymentNetwork]()
+        
+        networks.append(contentsOf: [.visa, .masterCard, .amex])
+        
+        if #available(iOS 12.1.1, *) {
+            networks.append(.mada)
+        }
+        
+        networks.append(.discover)
+        networks.append(.privateLabel)
+        
+        if #available(iOS 9.2, *) {
+            networks.append(.chinaUnionPay)
+        }
+        
+        if #available(iOS 10.3, *) {
+            networks.append(.carteBancaire)
+        }
+        
+        if #available(iOS 11.0, *) {
+            networks.append(.carteBancaires)
+        }
+        
+        if #available(iOS 11.2, *) {
+            networks.append(.cartesBancaires)
+        }
+        
+        if #available(iOS 12.0, *) {
+            networks.append(contentsOf: [.eftpos, .electron])
+        }
+        
+        if #available(iOS 12.1.1, *) {
+            networks.append(.elo)
+        }
+        
+        if #available(iOS 10.3, *) {
+            networks.append(.idCredit)
+        }
+        
+        if #available(iOS 9.2, *) {
+            networks.append(.interac)
+        }
+        
+        if #available(iOS 10.1, *) {
+            networks.append(.JCB)
+        }
+        
+        if #available(iOS 12.0, *) {
+            networks.append(.maestro)
+        }
+        
+        if #available(iOS 10.3, *) {
+            networks.append(.quicPay)
+        }
+        
+        if #available(iOS 10.1, *) {
+            networks.append(.suica)
+        }
+        
+        if #available(iOS 12.0, *) {
+            networks.append(.vPay)
+        }
+        
+        if #available(iOS 14.0, *) {
+            networks.append(contentsOf: [.barcode, .girocard])
+        }
+        
+        return networks
+    }
+    
+    /// Human-readable names for Apple Pay networks
+    private func displayName(for network: PKPaymentNetwork) -> String {
+        switch network {
+        case .visa: return "Visa"
+        case .masterCard: return "Mastercard"
+        case .amex: return "American Express"
+        case .mada: return "Mada"
+        case .discover: return "Discover"
+        case .privateLabel: return "Private Label"
+        case .chinaUnionPay: return "China UnionPay"
+        case .carteBancaire, .carteBancaires, .cartesBancaires: return "Cartes Bancaires"
+        case .eftpos: return "EFTPOS"
+        case .electron: return "Electron"
+        case .elo: return "Elo"
+        case .idCredit: return "ID Credit"
+        case .interac: return "Interac"
+        case .JCB: return "JCB"
+        case .maestro: return "Maestro"
+        case .quicPay: return "QUICPay"
+        case .suica: return "Suica"
+        case .vPay: return "V Pay"
+        case .barcode: return "Barcode"
+        case .girocard: return "Girocard"
+        default: return "\(network)"
+        }
     }
 
     private func shareReceipt() {
@@ -469,17 +771,39 @@ class PaymentDelegate: NSObject, PaymentManagerDelegate {
     func paymentManager(didFinishTransaction transactionDetails: PaymentSDK.PaymentSDKTransactionDetails?, error: Error?) {
         NotificationCenter.default.post(name: .ptPaymentFinished, object: nil, userInfo: ["details": transactionDetails as Any, "error": error as Any])
         if let transactionDetails = transactionDetails {
-            print("Response Code: " + (transactionDetails.paymentResult?.responseCode ?? ""))
-            print("Result: " + (transactionDetails.paymentResult?.responseMessage ?? ""))
-            print("Token: " + (transactionDetails.token ?? ""))
-            print("Transaction Reference: " + (transactionDetails.transactionReference ?? ""))
-            print("Transaction Time: " + (transactionDetails.paymentResult?.transactionTime ?? "" ))
+            print("✅ Response Code: " + (transactionDetails.paymentResult?.responseCode ?? ""))
+            print("✅ Result: " + (transactionDetails.paymentResult?.responseMessage ?? ""))
+            print("✅ Token: " + (transactionDetails.token ?? ""))
+            print("✅ Transaction Reference: " + (transactionDetails.transactionReference ?? ""))
+            print("✅ Transaction Time: " + (transactionDetails.paymentResult?.transactionTime ?? "" ))
             if transactionDetails.isSuccess() {
-                print("Successful transaction")
+                print("✅ Successful transaction")
             }
         } else if let error = error {
-            print("Error: \(error.localizedDescription)")
+            print("❌ Payment Error: \(error.localizedDescription)")
         }
+    }
+    
+    // Handle validation errors (e.g., when selected network is not available, invalid configuration, etc.)
+    @objc func paymentManager(didRecieveValidation error: Error?) {
+        if let error = error {
+            print("❌ Validation Error: \(error.localizedDescription)")
+            // Post notification so SwiftUI view can display the error
+            NotificationCenter.default.post(name: .ptPaymentValidationError, object: nil, userInfo: ["error": error])
+        }
+    }
+    
+    // Handle payment cancellation
+    @objc func paymentManager(didCancelPayment error: Error?) {
+        print("⚠️ Payment Cancelled")
+        if let error = error {
+            print("⚠️ Cancel Error: \(error.localizedDescription)")
+        }
+    }
+    
+    // Handle payment start (for debugging)
+    @objc func paymentManager(didStartPaymentTransaction rootViewController: UIViewController) {
+        print("🚀 Payment Started")
     }
 }
 
@@ -492,7 +816,6 @@ struct PayTabsPaymentView_Previews: PreviewProvider {
 }
 
 // Native Apple Pay button for SwiftUI
-import PassKit
 struct ApplePayButtonView: UIViewRepresentable {
     let action: () -> Void
     func makeUIView(context: Context) -> PKPaymentButton {
@@ -511,4 +834,19 @@ struct ApplePayButtonView: UIViewRepresentable {
 
 extension Notification.Name {
     static let ptPaymentFinished = Notification.Name("PTPaymentFinished")
+    static let ptPaymentValidationError = Notification.Name("PTPaymentValidationError")
+}
+
+// MARK: - Helper Functions
+/// Helper function to save language code to UserDefaults
+/// Uses the same key as the SDK: "payment_sdk_language_code"
+private func saveLanguageCode(_ code: String?) {
+    UserDefaults.standard.setValue(code, forKey: "payment_sdk_language_code")
+    // Force synchronize to ensure it's saved immediately
+    UserDefaults.standard.synchronize()
+    // Also set AppleLanguages for system-wide locale support (matching iOS SDK sample)
+    if let code = code {
+        UserDefaults.standard.set([code], forKey: "AppleLanguages")
+        UserDefaults.standard.synchronize()
+    }
 }

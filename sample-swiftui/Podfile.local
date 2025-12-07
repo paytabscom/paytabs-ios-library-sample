@@ -1,0 +1,14 @@
+# Define a global platform for your project
+platform :ios, '15.0'
+
+target 'sample-swiftui' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for sample-swift
+  # Use local SDK path for development
+  # Change this path to match your local SDK location
+  pod 'PayTabsSDK', :path => '../../ios-sdk'
+
+end
+

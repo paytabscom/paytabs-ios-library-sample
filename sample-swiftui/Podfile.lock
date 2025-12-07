@@ -1,5 +1,5 @@
 PODS:
-  - PayTabsSDK (6.6.34)
+  - PayTabsSDK (6.6.39)
 
 DEPENDENCIES:
   - PayTabsSDK (~> 6.6.34)
@@ -9,7 +9,7 @@ SPEC REPOS:
     - PayTabsSDK
 
 SPEC CHECKSUMS:
-  PayTabsSDK: f39cc9033c60936e52456fd9133fbfbf4d5fa82d
+  PayTabsSDK: 48a8187c47172f0aab066bb665c562fa2f3fe42a
 
 PODFILE CHECKSUM: 6b8ecd23c406f8a1790414a3ca45ccca8b604bb7
 
