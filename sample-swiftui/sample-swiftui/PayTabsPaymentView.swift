@@ -70,7 +70,9 @@ struct PayTabsPaymentView: View {
     @State private var errorMessage: String?
     @State private var showReceipt: Bool = false
     @State private var receiptText: String = ""
+    @State private var isLoadingReceipt: Bool = false
     @State private var paymentDelegate: PaymentDelegate?
+    @State private var lastPaymentConfig: PaymentSDKConfiguration?
     
     // Apple Pay specific features (matching iOS SDK sample)
     @State private var simplifyApplePayValidation: Bool = true
@@ -281,17 +283,42 @@ struct PayTabsPaymentView: View {
                         Spacer()
                     }
                     ScrollView {
-                        Text(receiptText)
-                            .font(.system(.body, design: .monospaced))
-                            .padding(.horizontal)
+                        if isLoadingReceipt || receiptText.isEmpty {
+                            VStack(spacing: 16) {
+                                ProgressView()
+                                Text("Loading receipt...")
+                                    .foregroundColor(.secondary)
+                            }
+                            .frame(maxWidth: .infinity, maxHeight: .infinity)
+                            .padding()
+                        } else {
+                            Text(receiptText)
+                                .font(.system(.body, design: .monospaced))
+                                .padding(.horizontal)
+                                .frame(maxWidth: .infinity, alignment: .leading)
+                        }
                     }
                     Button(action: shareReceipt) {
                         HStack { Image(systemName: "square.and.arrow.up"); Text("Share Receipt") }
                     }
                     .buttonStyle(.borderedProminent)
                     .padding(.horizontal)
+                    .disabled(isLoadingReceipt || receiptText.isEmpty)
                 }
                 .padding(.top)
+                .onChange(of: receiptText) { newValue in
+                    if !newValue.isEmpty {
+                        isLoadingReceipt = false
+                    } else {
+                        isLoadingReceipt = true
+                    }
+                }
+                .onChange(of: isLoadingReceipt) { newValue in
+                    // Ensure loading state is cleared when receipt text is available
+                    if !receiptText.isEmpty && newValue {
+                        isLoadingReceipt = false
+                    }
+                }
             }
             .onAppear {
                 // Save initial locale when view appears
@@ -300,51 +327,41 @@ struct PayTabsPaymentView: View {
             .onReceive(NotificationCenter.default.publisher(for: .ptPaymentValidationError)) { notification in
                 isPaying = false
                 if let error = notification.userInfo?["error"] as? Error {
-                    print("❌ [SwiftUI] Received validation error: \(error.localizedDescription)")
                     errorMessage = error.localizedDescription
                 } else {
-                    print("❌ [SwiftUI] Received validation error but no error object")
                     errorMessage = "Apple Pay validation failed. Please check your configuration."
                 }
             }
             .onReceive(NotificationCenter.default.publisher(for: .ptPaymentFinished)) { notification in
                 isPaying = false
+                
+                // Check for error first
                 if let error = notification.userInfo?["error"] as? Error {
                     errorMessage = error.localizedDescription
                     return
                 }
-                let d = notification.userInfo?["details"] as? PaymentSDK.PaymentSDKTransactionDetails
-                guard let details = d else {
+                
+                // Get transaction details
+                guard let details = notification.userInfo?["details"] as? PaymentSDK.PaymentSDKTransactionDetails else {
                     errorMessage = "Unknown payment result"
                     return
                 }
-                var lines: [String] = []
-                lines.append("=== Receipt ===")
-                lines.append("Method: \(selectedMethod.rawValue)")
-                lines.append("Amount: \(amount) \(currency)")
-                lines.append("")
-                lines.append("Billing:")
-                lines.append("  Name: \(billName)")
-                lines.append("  Email: \(billEmail)")
-                lines.append("  Phone: \(billPhone)")
-                lines.append("  Address: \(billAddress), \(billCity), \(billState), \(countryName(for: billCountry)) (\(billCountry.uppercased())) \(billZip)")
-                if showShipping {
-                    lines.append("")
-                    lines.append("Shipping:")
-                    lines.append("  Name: \(shipName)")
-                    lines.append("  Email: \(shipEmail)")
-                    lines.append("  Phone: \(shipPhone)")
-                    lines.append("  Address: \(shipAddress), \(shipCity), \(shipState), \(countryName(for: shipCountry)) (\(shipCountry.uppercased())) \(shipZip)")
+                
+                // Validate that we have meaningful transaction data
+                // Check if transaction reference or payment result exists
+                let hasTransactionData = (details.transactionReference != nil && !details.transactionReference!.isEmpty) || 
+                                        (details.paymentResult != nil && details.paymentResult?.responseCode != nil) ||
+                                        (details.token != nil && !details.token!.isEmpty)
+                
+                if !hasTransactionData {
+                    // For webview payments, the delegate might be called before webview fully completes
+                    // Wait longer and retry multiple times
+                    self.retryReceiptWithDelay(details: details, attempt: 1, maxAttempts: 5)
+                    return
                 }
-                lines.append("")
-                lines.append("Transaction:")
-                lines.append("  Reference: \(details.transactionReference ?? "-")")
-                lines.append("  Code: \(details.paymentResult?.responseCode ?? "-")")
-                lines.append("  Message: \(details.paymentResult?.responseMessage ?? "-")")
-                lines.append("  Time: \(details.paymentResult?.transactionTime ?? "-")")
-                lines.append("  Status: \(details.isSuccess() ? "SUCCESS" : "FAILED")")
-                receiptText = lines.joined(separator: "\n")
-                showReceipt = true
+                
+                // Build and show receipt immediately if we have data
+                buildAndShowReceipt(details: details)
             }
         }
     }
@@ -478,6 +495,10 @@ struct PayTabsPaymentView: View {
 
     private func startPayment() {
         errorMessage = nil
+        // Reset receipt state for new payment
+        receiptText = ""
+        isLoadingReceipt = false
+        showReceipt = false
         guard let topVC = getTOPVC() else { return }
         // For card and Apple Pay we use the standard configuration,
         // for alternative payments we build a specific configuration.
@@ -487,6 +508,8 @@ struct PayTabsPaymentView: View {
             guard let configuration = makeConfig() else { return }
             // Save locale before starting payment
             saveLanguageCode(selectedLanguage)
+            // Store configuration for potential transaction query later
+            lastPaymentConfig = configuration
             let del = PaymentDelegate()
             paymentDelegate = del
             PaymentManager.startCardPayment(on: topVC, configuration: configuration, delegate: del)
@@ -519,6 +542,8 @@ struct PayTabsPaymentView: View {
             guard let altConfig = makeAlternativeConfig(for: selectedMethod) else { return }
             altConfig.languageCode = selectedLanguage
             saveLanguageCode(selectedLanguage)
+            // Store configuration for potential transaction query later
+            lastPaymentConfig = altConfig
             let del = PaymentDelegate()
             paymentDelegate = del
             PaymentManager.startAlternativePaymentMethod(on: topVC, configuration: altConfig, delegate: del)
@@ -530,21 +555,17 @@ struct PayTabsPaymentView: View {
         errorMessage = nil
         isPaying = true
         
-        print("🍎 [Apple Pay] Starting Apple Pay flow...")
-        
         // CRITICAL: Save locale FIRST before creating configuration
         // This ensures SDK error messages are localized correctly
         saveLanguageCode(selectedLanguage)
         
         guard let topVC = getTOPVC() else {
-            print("❌ [Apple Pay] Failed to get top view controller")
             errorMessage = "Failed to get view controller"
             isPaying = false
             return
         }
         
         guard let configuration = makeConfig() else {
-            print("❌ [Apple Pay] Failed to create configuration")
             isPaying = false
             return
         }
@@ -554,19 +575,14 @@ struct PayTabsPaymentView: View {
         // Normalize merchant ID to lowercase (Apple Pay merchant IDs are case-sensitive and should be lowercase)
         let merchantID = merchantAppleBundleIdInput.trimmingCharacters(in: .whitespacesAndNewlines).lowercased()
         
-        print("🍎 [Apple Pay] Merchant Name: '\(merchantName)'")
-        print("🍎 [Apple Pay] Merchant ID: '\(merchantID)'")
-        
         // Validate required fields
         if merchantID.isEmpty {
-            print("❌ [Apple Pay] Merchant ID is empty")
             errorMessage = "Apple Pay Merchant ID is required. Please enter it in the Credentials section."
             isPaying = false
             return
         }
         
         if merchantName.isEmpty {
-            print("❌ [Apple Pay] Merchant Name is empty")
             errorMessage = "Apple Pay Merchant Name is required. Please enter it in the Credentials section."
             isPaying = false
             return
@@ -581,47 +597,31 @@ struct PayTabsPaymentView: View {
         configuration.enableZeroContacts = enableZeroContacts
         configuration.languageCode = selectedLanguage
         
-        // Log network configuration
-        if let networks = configuration.paymentNetworks {
-            let networkNames = networks.map { displayName(for: $0) }.joined(separator: ", ")
-            print("🍎 [Apple Pay] Payment Networks: \(networkNames)")
-        } else {
-            print("🍎 [Apple Pay] Payment Networks: (will use defaults)")
-        }
-        
         // Check if device can make payments with the selected networks
         // Only check if a specific network is selected (not "All Supported")
         if let selected = selectedApplePayNetwork {
             // User selected a specific network - check if device supports it
-            print("🍎 [Apple Pay] Checking specific network: \(displayName(for: selected))")
             if !PKPaymentAuthorizationViewController.canMakePayments(usingNetworks: [selected]) {
                 let networkName = displayName(for: selected)
-                print("❌ [Apple Pay] Device cannot make payments with \(networkName)")
                 errorMessage = "Apple Pay is not available with \(networkName) on this device. Please add a \(networkName) card in Wallet or select 'All Supported' networks."
                 isPaying = false
                 return
             }
-            print("✅ [Apple Pay] Device supports \(displayName(for: selected))")
         } else {
             // "All Supported" selected - check if device can make payments at all
-            print("🍎 [Apple Pay] Checking if device can make payments (All Supported)")
             if !PKPaymentAuthorizationViewController.canMakePayments() {
-                print("❌ [Apple Pay] Device cannot make payments")
                 errorMessage = "Apple Pay is not available on this device. Please set up Apple Pay in Settings."
                 isPaying = false
                 return
             }
-            print("✅ [Apple Pay] Device can make payments")
         }
         
         // Save again to ensure it's set (SDK will also save it, but we do it early)
         saveLanguageCode(selectedLanguage)
         
-        print("🍎 [Apple Pay] Calling PaymentManager.startApplePayPayment...")
         let del = PaymentDelegate()
         paymentDelegate = del
         PaymentManager.startApplePayPayment(on: topVC, configuration: configuration, delegate: del)
-        print("🍎 [Apple Pay] PaymentManager.startApplePayPayment called successfully")
     }
     
     /// Mirrors the iOS SDK sample logic: if no networks are set, use default Apple Pay networks
@@ -744,19 +744,138 @@ struct PayTabsPaymentView: View {
         }
     }
 
+    private func retryReceiptWithDelay(details: PaymentSDK.PaymentSDKTransactionDetails, attempt: Int, maxAttempts: Int) {
+        let delay = Double(attempt) * 0.8 // Increasing delay: 0.8s, 1.6s, 2.4s, 3.2s, 4.0s
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + delay) {
+            // Check if we have transaction data now
+            let hasData = (details.transactionReference != nil && !details.transactionReference!.isEmpty) ||
+                         (details.paymentResult != nil && details.paymentResult?.responseCode != nil) ||
+                         (details.token != nil && !details.token!.isEmpty)
+            
+            if hasData {
+                // Don't show receipt if it's already showing - just update the text
+                if self.showReceipt {
+                    self.updateReceiptText(details: details)
+                } else {
+                    self.buildAndShowReceipt(details: details)
+                }
+            } else if attempt < maxAttempts {
+                self.retryReceiptWithDelay(details: details, attempt: attempt + 1, maxAttempts: maxAttempts)
+            } else {
+                // Try to query transaction if we have a reference
+                if let transactionRef = details.transactionReference, !transactionRef.isEmpty {
+                    self.queryTransactionDetails(reference: transactionRef)
+                } else {
+                    // Build receipt with empty data message
+                    self.buildAndShowReceipt(details: details)
+                }
+            }
+        }
+    }
+    
+    private func updateReceiptText(details: PaymentSDK.PaymentSDKTransactionDetails) {
+        buildAndShowReceipt(details: details)
+    }
+    
+    private func queryTransactionDetails(reference: String) {
+        guard let config = lastPaymentConfig else {
+            errorMessage = "Payment completed but transaction details are not available. Transaction Reference: \(reference)"
+            return
+        }
+        
+        let queryConfig = PaymentSDKQueryConfiguration(
+            serverKey: config.serverKey,
+            clientKey: config.clientKey,
+            merchantCountryCode: config.merchantCountryCode,
+            profileID: config.profileID,
+            transactionReference: reference
+        )
+        
+        PaymentManager.queryTransaction(queryConfiguration: queryConfig) { transactionDetails, error in
+            DispatchQueue.main.async {
+                if let error = error {
+                    self.errorMessage = "Failed to retrieve transaction details: \(error.localizedDescription)"
+                } else if let transactionDetails = transactionDetails {
+                    self.buildAndShowReceipt(details: transactionDetails)
+                } else {
+                    self.errorMessage = "Transaction completed but details could not be retrieved."
+                }
+            }
+        }
+    }
+    
+    private func buildAndShowReceipt(details: PaymentSDK.PaymentSDKTransactionDetails) {
+        // Check if we have meaningful transaction data
+        let hasValidData = (details.transactionReference != nil && !details.transactionReference!.isEmpty) ||
+                          (details.paymentResult != nil) ||
+                          (details.token != nil && !details.token!.isEmpty)
+        
+        var lines: [String] = []
+        lines.append("=== Receipt ===")
+        lines.append("Method: \(selectedMethod.rawValue)")
+        lines.append("Amount: \(amount) \(currency)")
+        lines.append("")
+        lines.append("Billing:")
+        lines.append("  Name: \(billName)")
+        lines.append("  Email: \(billEmail)")
+        lines.append("  Phone: \(billPhone)")
+        lines.append("  Address: \(billAddress), \(billCity), \(billState), \(countryName(for: billCountry)) (\(billCountry.uppercased())) \(billZip)")
+        if showShipping {
+            lines.append("")
+            lines.append("Shipping:")
+            lines.append("  Name: \(shipName)")
+            lines.append("  Email: \(shipEmail)")
+            lines.append("  Phone: \(shipPhone)")
+            lines.append("  Address: \(shipAddress), \(shipCity), \(shipState), \(countryName(for: shipCountry)) (\(shipCountry.uppercased())) \(shipZip)")
+        }
+        lines.append("")
+        lines.append("Transaction:")
+        
+        if hasValidData {
+            lines.append("  Reference: \(details.transactionReference ?? "-")")
+            lines.append("  Code: \(details.paymentResult?.responseCode ?? "-")")
+            lines.append("  Message: \(details.paymentResult?.responseMessage ?? "-")")
+            lines.append("  Time: \(details.paymentResult?.transactionTime ?? "-")")
+            lines.append("  Status: \(details.isSuccess() ? "SUCCESS" : "FAILED")")
+            if let token = details.token, !token.isEmpty {
+                lines.append("  Token: \(token)")
+            }
+        } else {
+            lines.append("  ⚠️ Transaction details are still being processed...")
+            lines.append("  Please wait a moment and check again.")
+            lines.append("  (This can happen with webview payments)")
+        }
+        
+        let receiptContent = lines.joined(separator: "\n")
+        
+        // Set receipt text and show sheet on main thread
+        // Ensure loading state is cleared before showing receipt
+        DispatchQueue.main.async {
+            // Clear loading state first
+            self.isLoadingReceipt = false
+            
+            // Set receipt text
+            self.receiptText = receiptContent
+            
+            // Show sheet
+            self.showReceipt = true
+        }
+    }
+    
     private func shareReceipt() {
         guard !receiptText.isEmpty else { return }
         guard let topVC = getTOPVC() else { return }
         let activity = UIActivityViewController(activityItems: [receiptText], applicationActivities: nil)
         topVC.present(activity, animated: true)
     }
-
+    
     /// Returns the topmost view controller in the application's view hierarchy.
     ///
     /// - Returns: The topmost view controller, or `nil` if not found.
     func getTOPVC() -> UIViewController? {
         let keyWindow = UIApplication.shared.windows.filter { $0.isKeyWindow }.first
-
+        
         if var topController = keyWindow?.rootViewController {
             while let presentedViewController = topController.presentedViewController {
                 topController = presentedViewController
@@ -769,25 +888,34 @@ struct PayTabsPaymentView: View {
 
 class PaymentDelegate: NSObject, PaymentManagerDelegate {
     func paymentManager(didFinishTransaction transactionDetails: PaymentSDK.PaymentSDKTransactionDetails?, error: Error?) {
-        NotificationCenter.default.post(name: .ptPaymentFinished, object: nil, userInfo: ["details": transactionDetails as Any, "error": error as Any])
+        // Build userInfo dictionary properly - only include non-nil values
+        var userInfo: [String: Any] = [:]
+        
         if let transactionDetails = transactionDetails {
-            print("✅ Response Code: " + (transactionDetails.paymentResult?.responseCode ?? ""))
-            print("✅ Result: " + (transactionDetails.paymentResult?.responseMessage ?? ""))
-            print("✅ Token: " + (transactionDetails.token ?? ""))
-            print("✅ Transaction Reference: " + (transactionDetails.transactionReference ?? ""))
-            print("✅ Transaction Time: " + (transactionDetails.paymentResult?.transactionTime ?? "" ))
-            if transactionDetails.isSuccess() {
-                print("✅ Successful transaction")
+            userInfo["details"] = transactionDetails
+            
+            // Post notification on main thread to ensure UI updates happen correctly
+            DispatchQueue.main.async {
+                NotificationCenter.default.post(name: .ptPaymentFinished, object: nil, userInfo: userInfo)
             }
         } else if let error = error {
-            print("❌ Payment Error: \(error.localizedDescription)")
+            userInfo["error"] = error
+            
+            // Post notification on main thread
+            DispatchQueue.main.async {
+                NotificationCenter.default.post(name: .ptPaymentFinished, object: nil, userInfo: userInfo)
+            }
+        } else {
+            // Still post notification but with empty userInfo so the handler can deal with it
+            DispatchQueue.main.async {
+                NotificationCenter.default.post(name: .ptPaymentFinished, object: nil, userInfo: [:])
+            }
         }
     }
     
     // Handle validation errors (e.g., when selected network is not available, invalid configuration, etc.)
     @objc func paymentManager(didRecieveValidation error: Error?) {
         if let error = error {
-            print("❌ Validation Error: \(error.localizedDescription)")
             // Post notification so SwiftUI view can display the error
             NotificationCenter.default.post(name: .ptPaymentValidationError, object: nil, userInfo: ["error": error])
         }
@@ -795,15 +923,12 @@ class PaymentDelegate: NSObject, PaymentManagerDelegate {
     
     // Handle payment cancellation
     @objc func paymentManager(didCancelPayment error: Error?) {
-        print("⚠️ Payment Cancelled")
-        if let error = error {
-            print("⚠️ Cancel Error: \(error.localizedDescription)")
-        }
+        // Payment was cancelled by user
     }
     
     // Handle payment start (for debugging)
     @objc func paymentManager(didStartPaymentTransaction rootViewController: UIViewController) {
-        print("🚀 Payment Started")
+        // Payment transaction started
     }
 }
 
