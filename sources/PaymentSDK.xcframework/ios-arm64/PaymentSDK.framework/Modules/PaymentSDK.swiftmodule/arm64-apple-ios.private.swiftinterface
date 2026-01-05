@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.1 effective-5.10 (swiftlang-6.1.0.110.21 clang-1700.0.13.3)
+// swift-compiler-version: Apple Swift version 6.2.1 effective-5.10 (swiftlang-6.2.1.4.8 clang-1700.4.4.1)
 // swift-module-flags: -target arm64-apple-ios15.6 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name PaymentSDK
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.1
 import AVFoundation
 import AVKit
 import Accelerate
@@ -42,15 +42,23 @@ public protocol PaymentSDKMerchantConfiguration {
   var currency: Swift.String { get set }
   var amount: Swift.Double { get set }
   var cartDescription: Swift.String { get set }
+  #if compiler(>=5.3) && $NonescapableTypes
   var languageCode: Swift.String? { get set }
+  #endif
   var tokeniseType: PaymentSDK.TokeniseType { get set }
   var tokenFormat: PaymentSDK.TokenFormat { get set }
   var merchantCountryCode: Swift.String { get set }
 }
 public protocol PaymentSDKApplePayConfiguration {
+  #if compiler(>=5.3) && $NonescapableTypes
   var merchantIdentifier: Swift.String? { get set }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   var merchantName: Swift.String? { get set }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   var paymentNetworks: [PassKit.PKPaymentNetwork]? { get set }
+  #endif
 }
 open class PaymentSDKConfiguration : PaymentSDK.PaymentSDKMerchantConfiguration, PaymentSDK.PaymentSDKApplePayConfiguration, Swift.Codable {
   public var profileID: Swift.String
@@ -97,20 +105,28 @@ open class PaymentSDKConfiguration : PaymentSDK.PaymentSDKMerchantConfiguration,
   }
   public init()
   public init(profileID: Swift.String, serverKey: Swift.String, clientKey: Swift.String, currency: Swift.String, amount: Swift.Double, merchantCountryCode: Swift.String)
+  #if compiler(>=5.3) && $NonescapableTypes
   public init(profileID: Swift.String, serverKey: Swift.String, clientKey: Swift.String, cartID: Swift.String, currency: Swift.String, amount: Swift.Double, cartDescription: Swift.String, languageCode: Swift.String? = nil, merchantCountryCode: Swift.String, tokeniseType: PaymentSDK.TokeniseType = .none, tokenFormat: PaymentSDK.TokenFormat = .hex32, token: Swift.String? = nil, transactionreference: Swift.String? = nil, serverIP: Swift.String? = nil, merchantIdentifier: Swift.String? = nil, paymentNetworks: [PassKit.PKPaymentNetwork]? = nil, forceShippingInfo: Swift.Bool = false, showBillingInfo: Swift.Bool = false, showShippingInfo: Swift.Bool = false, screenTitle: Swift.String? = nil, merchantName: Swift.String? = nil, hideCardScanner: Swift.Bool = false, billingDetails: PaymentSDK.PaymentSDKBillingDetails, shippingDetails: PaymentSDK.PaymentSDKShippingDetails? = nil, theme: PaymentSDK.PaymentSDKTheme? = PaymentSDKTheme.default, linkBillingNameWithCard: Swift.Bool = true, showSaveCardsUI: Swift.Bool = false, requestCVV: Swift.Bool = false, savedCardInfo: PaymentSDK.PaymentSDKSavedCardInfo? = nil, isDigitalProduct: Swift.Bool = false, enableZeroContacts: Swift.Bool = false, expiryTime: Swift.Int? = nil, cardDiscounts: [PaymentSDK.PaymentSDKCardDiscount]? = nil, metaData: [Swift.String : Any]? = nil, cardApproval: PaymentSDK.PaymentSDKCardApproval? = nil)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public init(profileID: Swift.String, serverKey: Swift.String, clientKey: Swift.String, cartID: Swift.String, currency: Swift.String, amount: Swift.Double, merchantName: Swift.String, cartDescription: Swift.String, languageCode: Swift.String? = nil, tokeniseType: PaymentSDK.TokeniseType = .none, tokenFormat: PaymentSDK.TokenFormat = .hex32, token: Swift.String? = nil, transactionreference: Swift.String? = nil, merchantCountryCode: Swift.String, serverIP: Swift.String? = nil, merchantIdentifier: Swift.String, paymentNetworks: [PassKit.PKPaymentNetwork]?, simplifyApplePayValidation: Swift.Bool = false, forceShippingInfo: Swift.Bool = false, billingDetails: PaymentSDK.PaymentSDKBillingDetails? = nil, shippingDetails: PaymentSDK.PaymentSDKShippingDetails? = nil, linkBillingNameWithCard: Swift.Bool = true, showSaveCardsUI: Swift.Bool = false, requestCVV: Swift.Bool = false, savedCardInfo: PaymentSDK.PaymentSDKSavedCardInfo? = nil, isDigitalProduct: Swift.Bool = false, enableZeroContacts: Swift.Bool = false, expiryTime: Swift.Int? = nil, cardDiscounts: [PaymentSDK.PaymentSDKCardDiscount]? = nil, metaData: [Swift.String : Any]? = nil, cardApproval: PaymentSDK.PaymentSDKCardApproval? = nil)
+  #endif
   @objc deinit
   open func encode(to encoder: any Swift.Encoder) throws
   required public init(from decoder: any Swift.Decoder) throws
 }
 extension PaymentSDK.PaymentSDKConfiguration : Foundation.NSCopying {
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc dynamic public func copy(with zone: ObjectiveC.NSZone? = nil) -> Any
+  #endif
 }
 @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency open class PaymentSDKCardInputView : UIKit.UIView {
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency public var paymentSDKCardParams: PaymentSDK.PaymentSDKCardParams? {
     get
     set
   }
+  #endif
   @_Concurrency.MainActor @preconcurrency public var onCardParamsChanged: ((_ cardParams: PaymentSDK.PaymentSDKCardParams?) -> Swift.Void)? {
     get
     set
@@ -120,7 +136,9 @@ extension PaymentSDK.PaymentSDKConfiguration : Foundation.NSCopying {
     set
   }
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
+  #endif
   @_Concurrency.MainActor @preconcurrency public func hideCardScanner(isHidden: Swift.Bool)
   @objc deinit
 }
@@ -159,13 +177,17 @@ public struct UIConfiguration {
   @objc public var countryCode: Swift.String?
   @objc public var zip: Swift.String?
   @objc override dynamic public init()
+  #if compiler(>=5.3) && $NonescapableTypes
   public init(name: Swift.String?, email: Swift.String?, phone: Swift.String?, addressLine: Swift.String?, city: Swift.String?, state: Swift.String?, countryCode: Swift.String?, zip: Swift.String?)
+  #endif
   @objc deinit
   public func encode(to encoder: any Swift.Encoder) throws
   required public init(from decoder: any Swift.Decoder) throws
 }
 extension PaymentSDK.PaymentSDKBillingDetails : Foundation.NSCopying {
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc dynamic public func copy(with zone: ObjectiveC.NSZone? = nil) -> Any
+  #endif
 }
 extension PaymentSDK.PaymentSDKConfiguration {
   @discardableResult
@@ -251,42 +273,92 @@ public enum GradientPoint {
   }
 }
 public protocol ThemeConfiguration {
+  #if compiler(>=5.3) && $NonescapableTypes
   var logoImage: UIKit.UIImage? { get set }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   var secondaryColor: UIKit.UIColor? { get set }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   var secondaryFontColor: UIKit.UIColor? { get set }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   var secondaryFont: UIKit.UIFont? { get set }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   var primaryColor: UIKit.UIColor? { get set }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   var primaryFontColor: UIKit.UIColor? { get set }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   var primaryFont: UIKit.UIFont? { get set }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   var buttonColor: UIKit.UIColor? { get set }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   var buttonFontColor: UIKit.UIColor? { get set }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   var buttonFont: UIKit.UIFont? { get set }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   var titleFontColor: UIKit.UIColor? { get set }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   var titleFont: UIKit.UIFont? { get set }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   var backgroundColor: UIKit.UIColor? { get set }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   var placeholderColor: UIKit.UIColor? { get set }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   var strokeColor: UIKit.UIColor? { get set }
+  #endif
   var strokeThinckness: CoreFoundation.CGFloat { get set }
   var inputsCornerRadius: CoreFoundation.CGFloat { get set }
   var buttonsCornerRadius: CoreFoundation.CGFloat { get set }
+  #if compiler(>=5.3) && $NonescapableTypes
   var backButtonColor: UIKit.UIColor? { get set }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   var inputFieldBackgroundColor: UIKit.UIColor? { get set }
+  #endif
   var cardMargin: CoreFoundation.CGFloat { get set }
   var viewsCornerRadius: CoreFoundation.CGFloat { get set }
   var hideViewsShadow: Swift.Bool { get set }
   var hideScreenTitleBackground: Swift.Bool { get set }
   var screenTitleMargin: CoreFoundation.CGFloat { get set }
   var screenTitleTextAlignment: UIKit.NSTextAlignment { get set }
+  #if compiler(>=5.3) && $NonescapableTypes
   var toggleOnImage: UIKit.UIImage? { get set }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   var toggleOffImage: UIKit.UIImage? { get set }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   var toggleOnTintColor: UIKit.UIColor? { get set }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   var toggleThumbTintColor: UIKit.UIColor? { get set }
+  #endif
   var billingHeaderMargin: CoreFoundation.CGFloat { get set }
   var billingHeaderCornerRadius: CoreFoundation.CGFloat { get set }
+  #if compiler(>=5.3) && $NonescapableTypes
   var billingHeaderBackgroundColor: UIKit.UIColor? { get set }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   var billingHeaderTextColor: UIKit.UIColor? { get set }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   var amountFont: UIKit.UIFont? { get set }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   var amountFontColor: UIKit.UIColor? { get set }
+  #endif
 }
 public class PaymentSDKTheme : PaymentSDK.ThemeConfiguration {
   public var logoImage: UIKit.UIImage?
@@ -332,7 +404,9 @@ public class PaymentSDKTheme : PaymentSDK.ThemeConfiguration {
   @objc deinit
 }
 extension PaymentSDK.PaymentSDKTheme : Foundation.NSCopying {
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc dynamic public func copy(with zone: ObjectiveC.NSZone? = nil) -> Any
+  #endif
 }
 @_hasMissingDesignatedInitializers @objc public class PaymentResultViewModel : ObjectiveC.NSObject, Swift.Codable {
   @objc final public let responseStatus: Swift.String?, responseCode: Swift.String?, responseMessage: Swift.String?
@@ -378,16 +452,26 @@ public protocol CountryPickerViewDelegate : AnyObject {
 }
 public protocol CountryPickerViewDataSource : AnyObject {
   func preferredCountries(in countryPickerView: PaymentSDK.CountryPickerView) -> [PaymentSDK.Country]
+  #if compiler(>=5.3) && $NonescapableTypes
   func sectionTitleForPreferredCountries(in countryPickerView: PaymentSDK.CountryPickerView) -> Swift.String?
+  #endif
   func showOnlyPreferredSection(in countryPickerView: PaymentSDK.CountryPickerView) -> Swift.Bool
   func sectionTitleLabelFont(in countryPickerView: PaymentSDK.CountryPickerView) -> UIKit.UIFont
+  #if compiler(>=5.3) && $NonescapableTypes
   func sectionTitleLabelColor(in countryPickerView: PaymentSDK.CountryPickerView) -> UIKit.UIColor?
+  #endif
   func cellLabelFont(in countryPickerView: PaymentSDK.CountryPickerView) -> UIKit.UIFont
+  #if compiler(>=5.3) && $NonescapableTypes
   func cellLabelColor(in countryPickerView: PaymentSDK.CountryPickerView) -> UIKit.UIColor?
+  #endif
   func cellImageViewSize(in countryPickerView: PaymentSDK.CountryPickerView) -> CoreFoundation.CGSize
   func cellImageViewCornerRadius(in countryPickerView: PaymentSDK.CountryPickerView) -> CoreFoundation.CGFloat
+  #if compiler(>=5.3) && $NonescapableTypes
   func navigationTitle(in countryPickerView: PaymentSDK.CountryPickerView) -> Swift.String?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   func closeButtonNavigationItem(in countryPickerView: PaymentSDK.CountryPickerView) -> UIKit.UIBarButtonItem?
+  #endif
   func searchBarPosition(in countryPickerView: PaymentSDK.CountryPickerView) -> PaymentSDK.SearchBarPosition
   func showPhoneCodeInList(in countryPickerView: PaymentSDK.CountryPickerView) -> Swift.Bool
   func showCountryCodeInList(in countryPickerView: PaymentSDK.CountryPickerView) -> Swift.Bool
@@ -397,16 +481,26 @@ public protocol CountryPickerViewDataSource : AnyObject {
 }
 extension PaymentSDK.CountryPickerViewDataSource {
   public func preferredCountries(in countryPickerView: PaymentSDK.CountryPickerView) -> [PaymentSDK.Country]
+  #if compiler(>=5.3) && $NonescapableTypes
   public func sectionTitleForPreferredCountries(in countryPickerView: PaymentSDK.CountryPickerView) -> Swift.String?
+  #endif
   public func showOnlyPreferredSection(in countryPickerView: PaymentSDK.CountryPickerView) -> Swift.Bool
   public func sectionTitleLabelFont(in countryPickerView: PaymentSDK.CountryPickerView) -> UIKit.UIFont
+  #if compiler(>=5.3) && $NonescapableTypes
   public func sectionTitleLabelColor(in countryPickerView: PaymentSDK.CountryPickerView) -> UIKit.UIColor?
+  #endif
   public func cellLabelFont(in countryPickerView: PaymentSDK.CountryPickerView) -> UIKit.UIFont
+  #if compiler(>=5.3) && $NonescapableTypes
   public func cellLabelColor(in countryPickerView: PaymentSDK.CountryPickerView) -> UIKit.UIColor?
+  #endif
   public func cellImageViewCornerRadius(in countryPickerView: PaymentSDK.CountryPickerView) -> CoreFoundation.CGFloat
   public func cellImageViewSize(in countryPickerView: PaymentSDK.CountryPickerView) -> CoreFoundation.CGSize
+  #if compiler(>=5.3) && $NonescapableTypes
   public func navigationTitle(in countryPickerView: PaymentSDK.CountryPickerView) -> Swift.String?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func closeButtonNavigationItem(in countryPickerView: PaymentSDK.CountryPickerView) -> UIKit.UIBarButtonItem?
+  #endif
   public func searchBarPosition(in countryPickerView: PaymentSDK.CountryPickerView) -> PaymentSDK.SearchBarPosition
   public func showPhoneCodeInList(in countryPickerView: PaymentSDK.CountryPickerView) -> Swift.Bool
   public func showCountryCodeInList(in countryPickerView: PaymentSDK.CountryPickerView) -> Swift.Bool
@@ -430,7 +524,9 @@ public enum TransactionType : Swift.String, Swift.CaseIterable {
   case sale
   case authorize
   case register
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
+  #endif
   public typealias AllCases = [PaymentSDK.TransactionType]
   public typealias RawValue = Swift.String
   nonisolated public static var allCases: [PaymentSDK.TransactionType] {
@@ -443,7 +539,9 @@ public enum TransactionType : Swift.String, Swift.CaseIterable {
 public enum TransactionClass : Swift.String, Swift.CaseIterable {
   case ecom
   case recur
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
+  #endif
   public typealias AllCases = [PaymentSDK.TransactionClass]
   public typealias RawValue = Swift.String
   nonisolated public static var allCases: [PaymentSDK.TransactionClass] {
@@ -460,8 +558,12 @@ public enum TokenFormat : Swift.String, Swift.CaseIterable {
   case digit22
   case digit16
   case alphaNum32
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func getType(type: Swift.String) -> PaymentSDK.TokenFormat?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
+  #endif
   public typealias AllCases = [PaymentSDK.TokenFormat]
   public typealias RawValue = Swift.String
   nonisolated public static var allCases: [PaymentSDK.TokenFormat] {
@@ -477,8 +579,12 @@ public enum TokeniseType : Swift.Int, Swift.Codable, Swift.CaseIterable {
   case userMandatory
   case userOptinoal
   case userOptinoalDefaultOn
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func getType(type: Swift.Int) -> PaymentSDK.TokeniseType?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias AllCases = [PaymentSDK.TokeniseType]
   public typealias RawValue = Swift.Int
   nonisolated public static var allCases: [PaymentSDK.TokeniseType] {
@@ -506,8 +612,12 @@ public enum AlternativePaymentMethod : Swift.String, Swift.CaseIterable {
   case tru
   case tamara
   case forsa
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func getType(type: Swift.String) -> PaymentSDK.AlternativePaymentMethod?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
+  #endif
   public typealias AllCases = [PaymentSDK.AlternativePaymentMethod]
   public typealias RawValue = Swift.String
   nonisolated public static var allCases: [PaymentSDK.AlternativePaymentMethod] {
@@ -614,16 +724,26 @@ public enum PaymentSDKError : Swift.Error {
 @_spi(STP) public typealias ImageDataAndSize = (imageData: Foundation.Data, imageSize: CoreFoundation.CGSize)
 extension UIKit.UIImage {
   @_spi(STP) public static let defaultCompressionQuality: CoreFoundation.CGFloat
+  #if compiler(>=5.3) && $NonescapableTypes
   @_spi(STP) public func jpegDataAndDimensions(maxBytes: Swift.Int? = nil, compressionQuality: CoreFoundation.CGFloat = defaultCompressionQuality) -> PaymentSDK.ImageDataAndSize
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @_spi(STP) public func heicDataAndDimensions(maxBytes: Swift.Int? = nil, compressionQuality: CoreFoundation.CGFloat = defaultCompressionQuality) -> PaymentSDK.ImageDataAndSize
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @_spi(STP) public func resized(to scale: CoreFoundation.CGFloat) -> UIKit.UIImage?
+  #endif
 }
 extension Swift.Array where Element : UIKit.UIImage {
+  #if compiler(>=5.3) && $NonescapableTypes
   @_spi(STP) public func heicData(compressionQuality: CoreFoundation.CGFloat = UIImage.defaultCompressionQuality) -> Foundation.Data?
+  #endif
 }
 @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency public class NibView : UIKit.UIView {
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  #endif
   @objc deinit
 }
 @available(iOS 13, *)
@@ -646,7 +766,9 @@ public struct ScannedCard : Swift.Equatable {
   public static func == (a: PaymentSDK.ScannedCard, b: PaymentSDK.ScannedCard) -> Swift.Bool
 }
 extension PassKit.PKPaymentNetwork {
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func fromString(_ paymentNetworkString: Swift.String) -> PassKit.PKPaymentNetwork?
+  #endif
 }
 extension PaymentSDK.PaymentSDKCardInputView {
   @discardableResult
@@ -679,22 +801,32 @@ extension PaymentSDK.CardScanSheetError : Swift.CustomDebugStringConvertible {
   }
 }
 extension PaymentSDK.PaymentManager {
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func startApplePayPayment(on rootViewController: UIKit.UIViewController, configuration: PaymentSDK.PaymentSDKConfiguration, delegate: (any PaymentSDK.PaymentManagerDelegate)?)
+  #endif
 }
 @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency public class CountryPickerViewController : UIKit.UITableViewController {
   @_Concurrency.MainActor @preconcurrency public var searchController: UIKit.UISearchController?
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public func viewDidLoad()
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(style: UIKit.UITableView.Style)
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
+  #endif
   @objc deinit
 }
 extension PaymentSDK.CountryPickerViewController {
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public func numberOfSections(in tableView: UIKit.UITableView) -> Swift.Int
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public func tableView(_ tableView: UIKit.UITableView, numberOfRowsInSection section: Swift.Int) -> Swift.Int
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public func tableView(_ tableView: UIKit.UITableView, cellForRowAt indexPath: Foundation.IndexPath) -> UIKit.UITableViewCell
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public func tableView(_ tableView: UIKit.UITableView, titleForHeaderInSection section: Swift.Int) -> Swift.String?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public func sectionIndexTitles(for tableView: UIKit.UITableView) -> [Swift.String]?
+  #endif
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public func tableView(_ tableView: UIKit.UITableView, sectionForSectionIndexTitle title: Swift.String, at index: Swift.Int) -> Swift.Int
 }
 extension PaymentSDK.CountryPickerViewController {
@@ -714,7 +846,9 @@ extension PaymentSDK.CountryPickerViewController : UIKit.UISearchControllerDeleg
 }
 @_spi(STP) @_hasMissingDesignatedInitializers @available(iOS 13.0, *)
 public class UxAnalyzer : PaymentSDK.CreditCardOcrImplementation {
+  #if compiler(>=5.3) && $NonescapableTypes
   @_spi(STP) public static func loadModelFromBundle() -> PaymentSDK.UxModel?
+  #endif
   @_spi(STP) @objc deinit
 }
 @objc public class PaymentSDKCardDiscount : ObjectiveC.NSObject, Swift.Codable {
@@ -729,7 +863,9 @@ public class UxAnalyzer : PaymentSDK.CreditCardOcrImplementation {
 }
 @_spi(STP) @_hasMissingDesignatedInitializers @available(iOS 13.0, *)
 public class SSDOcrDetect {
+  #if compiler(>=5.3) && $NonescapableTypes
   @_spi(STP) public static func loadModelFromBundle() -> PaymentSDK.SSDOcr?
+  #endif
   @_spi(STP) @objc deinit
 }
 public struct PayModels {
@@ -745,7 +881,9 @@ extension PaymentSDK.CardImageVerificationSheet {
     @_spi(STP) case low
     @_spi(STP) case medium
     @_spi(STP) case high
+    #if compiler(>=5.3) && $NonescapableTypes
     @_spi(STP) public init?(rawValue: Swift.Int)
+    #endif
     @_spi(STP) @available(iOS 13.0, *)
     public typealias RawValue = Swift.Int
     @_spi(STP) public var rawValue: Swift.Int {
@@ -770,7 +908,9 @@ public struct Country : Swift.Equatable {
   public let name: Swift.String
   public let code: Swift.String
   public let phoneCode: Swift.String
+  #if compiler(>=5.3) && $NonescapableTypes
   public func localizedName(_ locale: Foundation.Locale = Locale.current) -> Swift.String?
+  #endif
   public var flag: UIKit.UIImage {
     get
   }
@@ -814,7 +954,9 @@ public func != (lhs: PaymentSDK.Country, rhs: PaymentSDK.Country) -> Swift.Bool
     get
   }
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  #endif
   @_Concurrency.MainActor @preconcurrency public func showCountriesList(from viewController: UIKit.UIViewController)
   @_Concurrency.MainActor @preconcurrency final public let countries: [PaymentSDK.Country]
   @objc deinit
@@ -823,23 +965,47 @@ extension PaymentSDK.CountryPickerView {
   @_Concurrency.MainActor @preconcurrency public func setCountryByName(_ name: Swift.String)
   @_Concurrency.MainActor @preconcurrency public func setCountryByPhoneCode(_ phoneCode: Swift.String)
   @_Concurrency.MainActor @preconcurrency public func setCountryByCode(_ code: Swift.String)
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency public func getCountryByName(_ name: Swift.String) -> PaymentSDK.Country?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency public func getCountryByPhoneCode(_ phoneCode: Swift.String) -> PaymentSDK.Country?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency public func getCountryByCode(_ code: Swift.String) -> PaymentSDK.Country?
+  #endif
 }
 @objc public protocol PaymentManagerDelegate {
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc func paymentManager(didFinishTransaction transactionDetails: PaymentSDK.PaymentSDKTransactionDetails?, error: (any Swift.Error)?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc optional func paymentManager(didRecieveValidation error: (any Swift.Error)?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc optional func paymentManager(didCancelPayment error: (any Swift.Error)?)
+  #endif
   @objc optional func paymentManager(didStartPaymentTransaction rootViewController: UIKit.UIViewController)
 }
 @_inheritsConvenienceInitializers @objc public class PaymentManager : ObjectiveC.NSObject {
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func startCardPayment(on rootViewController: UIKit.UIViewController, configuration: PaymentSDK.PaymentSDKConfiguration, delegate: (any PaymentSDK.PaymentManagerDelegate)?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func startPaymentWithApplePayToken(on rootViewController: UIKit.UIViewController, configuration: PaymentSDK.PaymentSDKConfiguration, applePayPayment: PassKit.PKPayment, delegate: (any PaymentSDK.PaymentManagerDelegate)?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func start3DSecureTokenizedCardPayment(on rootViewController: UIKit.UIViewController, configuration: PaymentSDK.PaymentSDKConfiguration, savedCardInfo: PaymentSDK.PaymentSDKSavedCardInfo, token: Swift.String, delegate: (any PaymentSDK.PaymentManagerDelegate)?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func startTokenizedCardPayment(on rootViewController: UIKit.UIViewController, configuration: PaymentSDK.PaymentSDKConfiguration, token: Swift.String, transactionRef: Swift.String, delegate: (any PaymentSDK.PaymentManagerDelegate)?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func queryTransaction(queryConfiguration: PaymentSDK.PaymentSDKQueryConfiguration, completion: @escaping (PaymentSDK.PaymentSDKTransactionDetails?, (any Swift.Error)?) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func cancelPayment(completion: @escaping (Swift.Bool?) -> Swift.Void)
+  #endif
   public static func clearSavedCards()
   @objc override dynamic public init()
   @objc deinit
@@ -853,7 +1019,9 @@ public struct CreditCardValidationType : Swift.Equatable {
 }
 public enum Model : Swift.String {
   case simulator, iPod1, iPod2, iPod3, iPod4, iPod5, iPod6, iPod7, iPad2, iPad3, iPad4, iPadAir, iPadAir2, iPadAir3, iPadAir4, iPadAir5, iPadAir6, iPad5, iPad6, iPad7, iPad8, iPad9, iPad10, iPad11, iPadMini, iPadMini2, iPadMini3, iPadMini4, iPadMini5, iPadMini6, iPadMini7, iPadPro9_7, iPadPro10_5, iPadPro11, iPadPro2_11, iPadPro3_11, iPadPro4_11, iPadPro5_11, iPadPro12_9, iPadPro2_12_9, iPadPro3_12_9, iPadPro4_12_9, iPadPro5_12_9, iPadPro6_12_9, iPhone4, iPhone4S, iPhone5, iPhone5S, iPhone5C, iPhone6, iPhone6Plus, iPhone6S, iPhone6SPlus, iPhoneSE, iPhone7, iPhone7Plus, iPhone8, iPhone8Plus, iPhoneX, iPhoneXS, iPhoneXSMax, iPhoneXR, iPhone11, iPhone11Pro, iPhone11ProMax, iPhoneSE2, iPhone12Mini, iPhone12, iPhone12Pro, iPhone12ProMax, iPhone13Mini, iPhone13, iPhone13Pro, iPhone13ProMax, iPhoneSE3, iPhone14, iPhone14Plus, iPhone14Pro, iPhone14ProMax, iPhone15, iPhone15Plus, iPhone15Pro, iPhone15ProMax, AppleWatch1, AppleWatchS1, AppleWatchS2, AppleWatchS3, AppleWatchS4, AppleWatchS5, AppleWatchSE, AppleWatchS6, AppleWatchS7, AppleWatchS8, AppleWatchS9, AppleWatchU1, AppleWatchU2, AppleTV1, AppleTV2, AppleTV3, AppleTV4, AppleTV_4K, AppleTV2_4K, AppleTV3_4K, unrecognized
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
+  #endif
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
@@ -878,18 +1046,24 @@ public class CreditCardOcrImplementation {
   @objc public var countryCode: Swift.String?
   @objc public var zip: Swift.String?
   @objc override dynamic public init()
+  #if compiler(>=5.3) && $NonescapableTypes
   public init(name: Swift.String?, email: Swift.String?, phone: Swift.String?, addressLine: Swift.String?, city: Swift.String?, state: Swift.String?, countryCode: Swift.String?, zip: Swift.String?)
+  #endif
   @objc deinit
   public func encode(to encoder: any Swift.Encoder) throws
   required public init(from decoder: any Swift.Decoder) throws
 }
 extension PaymentSDK.PaymentSDKShippingDetails : Foundation.NSCopying {
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc dynamic public func copy(with zone: ObjectiveC.NSZone? = nil) -> Any
+  #endif
 }
 extension PaymentSDK.PaymentSDKError : Foundation.LocalizedError {
+  #if compiler(>=5.3) && $NonescapableTypes
   public var errorDescription: Swift.String? {
     get
   }
+  #endif
 }
 public class CreditCardValidator {
   public var types: [PaymentSDK.CreditCardValidationType] {
@@ -897,8 +1071,12 @@ public class CreditCardValidator {
     set
   }
   public init()
+  #if compiler(>=5.3) && $NonescapableTypes
   public func getType(from string: Swift.String) -> PaymentSDK.CreditCardValidationType?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func type(from string: Swift.String) -> PaymentSDK.CreditCardValidationType?
+  #endif
   public func validate(string: Swift.String) -> Swift.Bool
   public func validate(string: Swift.String, forType type: PaymentSDK.CreditCardValidationType) -> Swift.Bool
   public func onlyNumbers(string: Swift.String) -> Swift.String
@@ -912,14 +1090,18 @@ public enum CancellationReason : Swift.String, Swift.Equatable {
   case back
   case closed
   case userCannotScan
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
+  #endif
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
   }
 }
 extension PaymentSDK.PaymentManager {
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func startAlternativePaymentMethod(on rootViewController: UIKit.UIViewController, configuration: PaymentSDK.PaymentSDKConfiguration, delegate: (any PaymentSDK.PaymentManagerDelegate)?)
+  #endif
 }
 extension PaymentSDK.GradientPoint : Swift.Equatable {}
 extension PaymentSDK.GradientPoint : Swift.Hashable {}
