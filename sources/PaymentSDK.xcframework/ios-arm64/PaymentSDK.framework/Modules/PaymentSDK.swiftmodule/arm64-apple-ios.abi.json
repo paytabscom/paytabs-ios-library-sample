@@ -47023,14 +47023,14 @@
     {
       "filePath": "\/Users\/builder\/clone\/PayTabs\/Show3DSecure\/ThreeDSecureViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 826,
+      "offset": 827,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/builder\/clone\/PayTabs\/Show3DSecure\/ThreeDSecureViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 1417,
+      "offset": 1593,
       "length": 5,
       "value": "false"
     },
@@ -47625,14 +47625,28 @@
     {
       "filePath": "\/Users\/builder\/clone\/PayTabs\/NetworkLayer\/PaymentSDKRequest.swift",
       "kind": "StringLiteral",
-      "offset": 1852,
+      "offset": 998,
+      "length": 37,
+      "value": "\"https:\/\/secure-morocco.paytabs.com\/\""
+    },
+    {
+      "filePath": "\/Users\/builder\/clone\/PayTabs\/NetworkLayer\/PaymentSDKRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 1057,
+      "length": 34,
+      "value": "\"https:\/\/secure-doha.paytabs.com\/\""
+    },
+    {
+      "filePath": "\/Users\/builder\/clone\/PayTabs\/NetworkLayer\/PaymentSDKRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 2099,
       "length": 17,
       "value": "\"payment\/request\""
     },
     {
       "filePath": "\/Users\/builder\/clone\/PayTabs\/NetworkLayer\/PaymentSDKRequest.swift",
       "kind": "StringLiteral",
-      "offset": 1891,
+      "offset": 2138,
       "length": 15,
       "value": "\"payment\/query\""
     },
@@ -48115,7 +48129,7 @@
     {
       "filePath": "\/Users\/builder\/clone\/PayTabs\/PayWithApplePay\/ApplePayViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 431,
+      "offset": 436,
       "length": 4,
       "value": "true"
     },
@@ -48297,28 +48311,28 @@
     {
       "filePath": "\/Users\/builder\/clone\/PayTabs\/CardSaving\/Views\/SavedCardsViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 593,
+      "offset": 595,
       "length": 3,
       "value": "150"
     },
     {
       "filePath": "\/Users\/builder\/clone\/PayTabs\/CardSaving\/Views\/SavedCardsViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 618,
+      "offset": 620,
       "length": 2,
       "value": "45"
     },
     {
       "filePath": "\/Users\/builder\/clone\/PayTabs\/CardSaving\/Views\/SavedCardsViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 653,
+      "offset": 655,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/builder\/clone\/PayTabs\/CardSaving\/Views\/SavedCardsViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 918,
+      "offset": 920,
       "length": 1,
       "value": "1"
     },
@@ -48479,147 +48493,147 @@
     {
       "filePath": "\/Users\/builder\/clone\/PayTabs\/PayWithCreditCard\/Views\/PayWithCardViewController.swift",
       "kind": "StringLiteral",
-      "offset": 1264,
+      "offset": 1269,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/builder\/clone\/PayTabs\/PayWithCreditCard\/Views\/PayWithCardViewController.swift",
       "kind": "Array",
-      "offset": 1340,
+      "offset": 1345,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/builder\/clone\/PayTabs\/PayWithCreditCard\/Views\/PayWithCardViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 1588,
+      "offset": 1593,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/builder\/clone\/PayTabs\/PayWithCreditCard\/Views\/PayWithCardViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 1591,
+      "offset": 1596,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/builder\/clone\/PayTabs\/PayWithCreditCard\/Views\/PayWithCardViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 1918,
+      "offset": 1923,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/builder\/clone\/PayTabs\/PayWithCreditCard\/Views\/PayWithCardViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 1951,
+      "offset": 1956,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/builder\/clone\/PayTabs\/PayWithCreditCard\/Views\/PayWithCardViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 2209,
+      "offset": 2214,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/builder\/clone\/PayTabs\/PayWithCreditCard\/Views\/PayWithCardViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 2243,
+      "offset": 2248,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/builder\/clone\/PayTabs\/PayWithCreditCard\/Views\/PayWithCardViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 2341,
+      "offset": 2346,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/builder\/clone\/PayTabs\/PayWithCreditCard\/Views\/PayWithCardViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 2377,
+      "offset": 2382,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/builder\/clone\/PayTabs\/PayWithCreditCard\/Views\/PayWithCardViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 3298,
+      "offset": 3303,
       "length": 1,
       "value": "6"
     },
     {
       "filePath": "\/Users\/builder\/clone\/PayTabs\/PayWithCreditCard\/Views\/PayWithCardViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 3350,
+      "offset": 3355,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/builder\/clone\/PayTabs\/PayWithCreditCard\/Views\/PayWithCardViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 3500,
+      "offset": 3505,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/builder\/clone\/PayTabs\/PayWithCreditCard\/Views\/PayWithCardViewController.swift",
       "kind": "StringLiteral",
-      "offset": 3878,
+      "offset": 3883,
       "length": 24,
       "value": "\"payment_sdk_powered_by\""
     },
     {
       "filePath": "\/Users\/builder\/clone\/PayTabs\/PayWithCreditCard\/Views\/PayWithCardViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 4613,
+      "offset": 4618,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/builder\/clone\/PayTabs\/PayWithCreditCard\/Views\/PayWithCardViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 4671,
+      "offset": 4676,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/builder\/clone\/PayTabs\/PayWithCreditCard\/Views\/PayWithCardViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 4834,
+      "offset": 4839,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/builder\/clone\/PayTabs\/PayWithCreditCard\/Views\/PayWithCardViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 4843,
+      "offset": 4848,
       "length": 2,
       "value": "15"
     },
     {
       "filePath": "\/Users\/builder\/clone\/PayTabs\/PayWithCreditCard\/Views\/PayWithCardViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 4855,
+      "offset": 4860,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/builder\/clone\/PayTabs\/PayWithCreditCard\/Views\/PayWithCardViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 4865,
+      "offset": 4870,
       "length": 2,
       "value": "15"
     },
     {
       "filePath": "\/Users\/builder\/clone\/PayTabs\/PayWithCreditCard\/Views\/PayWithCardViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 5775,
+      "offset": 5781,
       "length": 5,
       "value": "false"
     },
@@ -49109,7 +49123,7 @@
     {
       "filePath": "\/Users\/builder\/clone\/PayTabs\/CreditCardScanner\/Views\/CreditCardScannerViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 3947,
+      "offset": 4046,
       "length": 5,
       "value": "false"
     },
@@ -49641,42 +49655,42 @@
     {
       "filePath": "\/Users\/builder\/clone\/PayTabs\/PublicLayer\/PaymentManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 16027,
+      "offset": 16037,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/builder\/clone\/PayTabs\/PublicLayer\/PaymentManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 16113,
+      "offset": 16123,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/builder\/clone\/PayTabs\/PublicLayer\/PaymentManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 16185,
+      "offset": 16195,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/builder\/clone\/PayTabs\/PublicLayer\/PaymentManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 18015,
+      "offset": 18025,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/builder\/clone\/PayTabs\/PublicLayer\/PaymentManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 18095,
+      "offset": 18105,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/builder\/clone\/PayTabs\/PublicLayer\/PaymentManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 20078,
+      "offset": 20088,
       "length": 5,
       "value": "false"
     },
