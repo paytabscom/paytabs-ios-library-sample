@@ -37037,6 +37037,43 @@
         "children": [
           {
             "kind": "Function",
+            "name": "saveConfigurationLanguageCode",
+            "printedName": "saveConfigurationLanguageCode(code:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10PaymentSDK0A7ManagerC29saveConfigurationLanguageCode4codeySSSg_tFZ",
+            "mangledName": "$s10PaymentSDK0A7ManagerC29saveConfigurationLanguageCode4codeySSSg_tFZ",
+            "moduleName": "PaymentSDK",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "startCardPayment",
             "printedName": "startCardPayment(on:configuration:delegate:)",
             "children": [
@@ -49508,7 +49545,7 @@
     {
       "filePath": "\/Users\/builder\/clone\/PayTabs\/Extensions\/UIViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 4391,
+      "offset": 5045,
       "length": 4,
       "value": "true"
     },
@@ -49655,42 +49692,42 @@
     {
       "filePath": "\/Users\/builder\/clone\/PayTabs\/PublicLayer\/PaymentManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 16037,
+      "offset": 17426,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/builder\/clone\/PayTabs\/PublicLayer\/PaymentManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 16123,
+      "offset": 17512,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/builder\/clone\/PayTabs\/PublicLayer\/PaymentManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 16195,
+      "offset": 17584,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/builder\/clone\/PayTabs\/PublicLayer\/PaymentManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 18025,
+      "offset": 19414,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/builder\/clone\/PayTabs\/PublicLayer\/PaymentManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 18105,
+      "offset": 19494,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/builder\/clone\/PayTabs\/PublicLayer\/PaymentManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 20088,
+      "offset": 21477,
       "length": 5,
       "value": "false"
     },
