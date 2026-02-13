@@ -930,9 +930,6 @@ extension PaymentSDK.CountryPickerView {
 }
 @_inheritsConvenienceInitializers @objc public class PaymentManager : ObjectiveC.NSObject {
   #if compiler(>=5.3) && $NonescapableTypes
-  public static func saveConfigurationLanguageCode(code: Swift.String?)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public static func startCardPayment(on rootViewController: UIKit.UIViewController, configuration: PaymentSDK.PaymentSDKConfiguration, delegate: (any PaymentSDK.PaymentManagerDelegate)?)
   #endif
   #if compiler(>=5.3) && $NonescapableTypes
