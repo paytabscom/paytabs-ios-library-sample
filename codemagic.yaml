@@ -107,7 +107,7 @@ workflows:
           xcode-project build-ipa \
           --workspace "$XCODE_WORKSPACE" \
           --scheme "$XCODE_SCHEME" \
-          --archive-flags="-destination 'generic/platform=iOS'"
+          --archive-flags="-destination 'generic/platform=iOS' -allowProvisioningUpdates"
     artifacts:
       - build/ios/ipa/*.ipa
       - build/ios/archive/*.xcarchive
