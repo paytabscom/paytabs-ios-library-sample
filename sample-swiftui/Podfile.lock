@@ -1,16 +1,16 @@
 PODS:
-  - PayTabsSDK (6.6.39)
+  - PayTabsSDK (6.6.47)
 
 DEPENDENCIES:
-  - PayTabsSDK (~> 6.6.34)
+  - PayTabsSDK
 
 SPEC REPOS:
-  trunk:
+  https://github.com/CocoaPods/Specs:
     - PayTabsSDK
 
 SPEC CHECKSUMS:
-  PayTabsSDK: 48a8187c47172f0aab066bb665c562fa2f3fe42a
+  PayTabsSDK: 53d0136846304e16d6a674ea5cab13dcc2abe5af
 
-PODFILE CHECKSUM: 6b8ecd23c406f8a1790414a3ca45ccca8b604bb7
+PODFILE CHECKSUM: 95eba57f4b727272d87c40c7966de50b46c2b9cf
 
 COCOAPODS: 1.16.2
