@@ -26294,6 +26294,43 @@
           },
           {
             "kind": "Var",
+            "name": "kent",
+            "printedName": "kent",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PaymentSDK.AlternativePaymentMethod.Type) -> PaymentSDK.AlternativePaymentMethod",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AlternativePaymentMethod",
+                    "printedName": "PaymentSDK.AlternativePaymentMethod",
+                    "usr": "s:10PaymentSDK011AlternativeA6MethodO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "PaymentSDK.AlternativePaymentMethod.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AlternativePaymentMethod",
+                        "printedName": "PaymentSDK.AlternativePaymentMethod",
+                        "usr": "s:10PaymentSDK011AlternativeA6MethodO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:10PaymentSDK011AlternativeA6MethodO4kentyA2CmF",
+            "mangledName": "$s10PaymentSDK011AlternativeA6MethodO4kentyA2CmF",
+            "moduleName": "PaymentSDK"
+          },
+          {
+            "kind": "Var",
             "name": "fawry",
             "printedName": "fawry",
             "children": [
@@ -47366,35 +47403,35 @@
     {
       "filePath": "\/Users\/builder\/clone\/PayTabs\/PublicLayer\/PaymentSDKConfiguration+Enums.swift",
       "kind": "StringLiteral",
-      "offset": 1699,
+      "offset": 1713,
       "length": 7,
       "value": "\"urpay\""
     },
     {
       "filePath": "\/Users\/builder\/clone\/PayTabs\/PublicLayer\/PaymentSDKConfiguration+Enums.swift",
       "kind": "StringLiteral",
-      "offset": 1727,
+      "offset": 1741,
       "length": 10,
       "value": "\"applePay\""
     },
     {
       "filePath": "\/Users\/builder\/clone\/PayTabs\/PublicLayer\/PaymentSDKConfiguration+Enums.swift",
       "kind": "StringLiteral",
-      "offset": 1758,
+      "offset": 1772,
       "length": 10,
       "value": "\"souhoola\""
     },
     {
       "filePath": "\/Users\/builder\/clone\/PayTabs\/PublicLayer\/PaymentSDKConfiguration+Enums.swift",
       "kind": "StringLiteral",
-      "offset": 1786,
+      "offset": 1800,
       "length": 7,
       "value": "\"tabby\""
     },
     {
       "filePath": "\/Users\/builder\/clone\/PayTabs\/PublicLayer\/PaymentSDKConfiguration+Enums.swift",
       "kind": "StringLiteral",
-      "offset": 1811,
+      "offset": 1825,
       "length": 7,
       "value": "\"halan\""
     },
