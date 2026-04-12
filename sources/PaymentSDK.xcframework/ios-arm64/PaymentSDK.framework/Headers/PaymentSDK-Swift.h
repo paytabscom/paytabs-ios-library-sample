@@ -455,6 +455,9 @@ SWIFT_CLASS("_TtC10PaymentSDK28PaymentSDKQueryConfiguration")
 @property (nonatomic, copy) NSString * _Nonnull merchantCountryCode;
 @property (nonatomic, copy) NSString * _Nonnull profileID;
 @property (nonatomic, copy) NSString * _Nonnull transactionReference;
+@property (nonatomic, copy) NSString * _Nullable paymentApiBaseUrl;
+- (nonnull instancetype)initWithServerKey:(NSString * _Nonnull)serverKey clientKey:(NSString * _Nonnull)clientKey merchantCountryCode:(NSString * _Nonnull)merchantCountryCode profileID:(NSString * _Nonnull)profileID transactionReference:(NSString * _Nonnull)transactionReference;
+- (nonnull instancetype)initWithServerKey:(NSString * _Nonnull)serverKey clientKey:(NSString * _Nonnull)clientKey merchantCountryCode:(NSString * _Nonnull)merchantCountryCode profileID:(NSString * _Nonnull)profileID transactionReference:(NSString * _Nonnull)transactionReference paymentApiBaseUrl:(NSString * _Nullable)paymentApiBaseUrl OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end

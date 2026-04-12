@@ -80,6 +80,7 @@ open class PaymentSDKConfiguration : PaymentSDK.PaymentSDKMerchantConfiguration,
   public var merchantIdentifier: Swift.String?
   public var paymentNetworks: [PassKit.PKPaymentNetwork]?
   public var merchantCountryCode: Swift.String
+  public var paymentApiBaseUrl: Swift.String?
   public var serverIP: Swift.String?
   public var tokeniseType: PaymentSDK.TokeniseType
   public var tokenFormat: PaymentSDK.TokenFormat
@@ -228,6 +229,10 @@ extension PaymentSDK.PaymentSDKConfiguration {
   public func applePayPaymentNetworks(_ value: [PassKit.PKPaymentNetwork]) -> PaymentSDK.PaymentSDKConfiguration
   @discardableResult
   public func merchantCountryCode(_ value: Swift.String) -> PaymentSDK.PaymentSDKConfiguration
+  #if compiler(>=5.3) && $NonescapableTypes
+  @discardableResult
+  public func paymentApiBaseUrl(_ value: Swift.String?) -> PaymentSDK.PaymentSDKConfiguration
+  #endif
   @discardableResult
   public func serverIP(_ value: Swift.String) -> PaymentSDK.PaymentSDKConfiguration
   @discardableResult
@@ -717,7 +722,11 @@ public enum PaymentSDKError : Swift.Error {
   @objc public var merchantCountryCode: Swift.String
   @objc public var profileID: Swift.String
   @objc public var transactionReference: Swift.String
-  public init(serverKey: Swift.String, clientKey: Swift.String, merchantCountryCode: Swift.String, profileID: Swift.String, transactionReference: Swift.String)
+  @objc public var paymentApiBaseUrl: Swift.String?
+  @objc convenience public init(serverKey: Swift.String, clientKey: Swift.String, merchantCountryCode: Swift.String, profileID: Swift.String, transactionReference: Swift.String)
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc public init(serverKey: Swift.String, clientKey: Swift.String, merchantCountryCode: Swift.String, profileID: Swift.String, transactionReference: Swift.String, paymentApiBaseUrl: Swift.String?)
+  #endif
   @objc deinit
   public func encode(to encoder: any Swift.Encoder) throws
   required public init(from decoder: any Swift.Decoder) throws

@@ -3974,6 +3974,117 @@
           },
           {
             "kind": "Var",
+            "name": "paymentApiBaseUrl",
+            "printedName": "paymentApiBaseUrl",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10PaymentSDK0A16SDKConfigurationC17paymentApiBaseUrlSSSgvp",
+            "mangledName": "$s10PaymentSDK0A16SDKConfigurationC17paymentApiBaseUrlSSSgvp",
+            "moduleName": "PaymentSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10PaymentSDK0A16SDKConfigurationC17paymentApiBaseUrlSSSgvg",
+                "mangledName": "$s10PaymentSDK0A16SDKConfigurationC17paymentApiBaseUrlSSSgvg",
+                "moduleName": "PaymentSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10PaymentSDK0A16SDKConfigurationC17paymentApiBaseUrlSSSgvs",
+                "mangledName": "$s10PaymentSDK0A16SDKConfigurationC17paymentApiBaseUrlSSSgvs",
+                "moduleName": "PaymentSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10PaymentSDK0A16SDKConfigurationC17paymentApiBaseUrlSSSgvM",
+                "mangledName": "$s10PaymentSDK0A16SDKConfigurationC17paymentApiBaseUrlSSSgvM",
+                "moduleName": "PaymentSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "serverIP",
             "printedName": "serverIP",
             "children": [
@@ -7368,6 +7479,43 @@
             "declKind": "Func",
             "usr": "s:10PaymentSDK0A16SDKConfigurationC19merchantCountryCodeyACSSF",
             "mangledName": "$s10PaymentSDK0A16SDKConfigurationC19merchantCountryCodeyACSSF",
+            "moduleName": "PaymentSDK",
+            "declAttributes": [
+              "AccessControl",
+              "DiscardableResult"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "paymentApiBaseUrl",
+            "printedName": "paymentApiBaseUrl(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PaymentSDKConfiguration",
+                "printedName": "PaymentSDK.PaymentSDKConfiguration",
+                "usr": "s:10PaymentSDK0A16SDKConfigurationC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10PaymentSDK0A16SDKConfigurationC17paymentApiBaseUrlyACSSSgF",
+            "mangledName": "$s10PaymentSDK0A16SDKConfigurationC17paymentApiBaseUrlyACSSSgF",
             "moduleName": "PaymentSDK",
             "declAttributes": [
               "AccessControl",
@@ -30600,6 +30748,123 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "paymentApiBaseUrl",
+            "printedName": "paymentApiBaseUrl",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@PaymentSDK@objc(cs)PaymentSDKQueryConfiguration(py)paymentApiBaseUrl",
+            "mangledName": "$s10PaymentSDK0A21SDKQueryConfigurationC17paymentApiBaseUrlSSSgvp",
+            "moduleName": "PaymentSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@PaymentSDK@objc(cs)PaymentSDKQueryConfiguration(im)paymentApiBaseUrl",
+                "mangledName": "$s10PaymentSDK0A21SDKQueryConfigurationC17paymentApiBaseUrlSSSgvg",
+                "moduleName": "PaymentSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@PaymentSDK@objc(cs)PaymentSDKQueryConfiguration(im)setPaymentApiBaseUrl:",
+                "mangledName": "$s10PaymentSDK0A21SDKQueryConfigurationC17paymentApiBaseUrlSSSgvs",
+                "moduleName": "PaymentSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10PaymentSDK0A21SDKQueryConfigurationC17paymentApiBaseUrlSSSgvM",
+                "mangledName": "$s10PaymentSDK0A21SDKQueryConfigurationC17paymentApiBaseUrlSSSgvM",
+                "moduleName": "PaymentSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init(serverKey:clientKey:merchantCountryCode:profileID:transactionReference:)",
@@ -30642,11 +30907,81 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:10PaymentSDK0A21SDKQueryConfigurationC9serverKey06clientF019merchantCountryCode9profileID20transactionReferenceACSS_S4Stcfc",
+            "usr": "c:@M@PaymentSDK@objc(cs)PaymentSDKQueryConfiguration(im)initWithServerKey:clientKey:merchantCountryCode:profileID:transactionReference:",
             "mangledName": "$s10PaymentSDK0A21SDKQueryConfigurationC9serverKey06clientF019merchantCountryCode9profileID20transactionReferenceACSS_S4Stcfc",
             "moduleName": "PaymentSDK",
+            "objc_name": "initWithServerKey:clientKey:merchantCountryCode:profileID:transactionReference:",
             "declAttributes": [
-              "AccessControl"
+              "Convenience",
+              "AccessControl",
+              "ObjC"
+            ],
+            "init_kind": "Convenience"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(serverKey:clientKey:merchantCountryCode:profileID:transactionReference:paymentApiBaseUrl:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PaymentSDKQueryConfiguration",
+                "printedName": "PaymentSDK.PaymentSDKQueryConfiguration",
+                "usr": "c:@M@PaymentSDK@objc(cs)PaymentSDKQueryConfiguration"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@PaymentSDK@objc(cs)PaymentSDKQueryConfiguration(im)initWithServerKey:clientKey:merchantCountryCode:profileID:transactionReference:paymentApiBaseUrl:",
+            "mangledName": "$s10PaymentSDK0A21SDKQueryConfigurationC9serverKey06clientF019merchantCountryCode9profileID20transactionReference17paymentApiBaseUrlACSS_S5SSgtcfc",
+            "moduleName": "PaymentSDK",
+            "objc_name": "initWithServerKey:clientKey:merchantCountryCode:profileID:transactionReference:paymentApiBaseUrl:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
             ],
             "init_kind": "Designated"
           },
@@ -46444,182 +46779,182 @@
     {
       "filePath": "\/Users\/builder\/clone\/PayTabs\/PublicLayer\/PaymentSDKConfiguration.swift",
       "kind": "BooleanLiteral",
-      "offset": 2895,
+      "offset": 3284,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/builder\/clone\/PayTabs\/PublicLayer\/PaymentSDKConfiguration.swift",
       "kind": "BooleanLiteral",
-      "offset": 3679,
+      "offset": 4068,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/builder\/clone\/PayTabs\/PublicLayer\/PaymentSDKConfiguration.swift",
       "kind": "BooleanLiteral",
-      "offset": 3789,
+      "offset": 4178,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/builder\/clone\/PayTabs\/PublicLayer\/PaymentSDKConfiguration.swift",
       "kind": "BooleanLiteral",
-      "offset": 3955,
+      "offset": 4344,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/builder\/clone\/PayTabs\/PublicLayer\/PaymentSDKConfiguration.swift",
       "kind": "BooleanLiteral",
-      "offset": 4031,
+      "offset": 4420,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/builder\/clone\/PayTabs\/PublicLayer\/PaymentSDKConfiguration.swift",
       "kind": "BooleanLiteral",
-      "offset": 4059,
+      "offset": 4448,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/builder\/clone\/PayTabs\/PublicLayer\/PaymentSDKConfiguration.swift",
       "kind": "BooleanLiteral",
-      "offset": 4154,
+      "offset": 4543,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/builder\/clone\/PayTabs\/PublicLayer\/PaymentSDKConfiguration.swift",
       "kind": "BooleanLiteral",
-      "offset": 4202,
+      "offset": 4591,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/builder\/clone\/PayTabs\/PublicLayer\/PaymentSDKConfiguration.swift",
       "kind": "StringLiteral",
-      "offset": 4534,
+      "offset": 4923,
       "length": 22,
       "value": "\"PaymentSDKPluginName\""
     },
     {
       "filePath": "\/Users\/builder\/clone\/PayTabs\/PublicLayer\/PaymentSDKConfiguration.swift",
       "kind": "StringLiteral",
-      "offset": 4577,
+      "offset": 4966,
       "length": 25,
       "value": "\"PaymentSDKPluginVersion\""
     },
     {
       "filePath": "\/Users\/builder\/clone\/PayTabs\/PublicLayer\/PaymentSDKConfiguration.swift",
       "kind": "BooleanLiteral",
-      "offset": 6898,
+      "offset": 7318,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/builder\/clone\/PayTabs\/PublicLayer\/PaymentSDKConfiguration.swift",
       "kind": "BooleanLiteral",
-      "offset": 6945,
+      "offset": 7365,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/builder\/clone\/PayTabs\/PublicLayer\/PaymentSDKConfiguration.swift",
       "kind": "BooleanLiteral",
-      "offset": 6993,
+      "offset": 7413,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/builder\/clone\/PayTabs\/PublicLayer\/PaymentSDKConfiguration.swift",
       "kind": "BooleanLiteral",
-      "offset": 7129,
+      "offset": 7549,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/builder\/clone\/PayTabs\/PublicLayer\/PaymentSDKConfiguration.swift",
       "kind": "BooleanLiteral",
-      "offset": 7376,
+      "offset": 7796,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/builder\/clone\/PayTabs\/PublicLayer\/PaymentSDKConfiguration.swift",
       "kind": "BooleanLiteral",
-      "offset": 7422,
+      "offset": 7842,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/builder\/clone\/PayTabs\/PublicLayer\/PaymentSDKConfiguration.swift",
       "kind": "BooleanLiteral",
-      "offset": 7464,
+      "offset": 7884,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/builder\/clone\/PayTabs\/PublicLayer\/PaymentSDKConfiguration.swift",
       "kind": "BooleanLiteral",
-      "offset": 7575,
+      "offset": 7995,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/builder\/clone\/PayTabs\/PublicLayer\/PaymentSDKConfiguration.swift",
       "kind": "BooleanLiteral",
-      "offset": 7625,
+      "offset": 8045,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/builder\/clone\/PayTabs\/PublicLayer\/PaymentSDKConfiguration.swift",
       "kind": "BooleanLiteral",
-      "offset": 10418,
+      "offset": 10838,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/builder\/clone\/PayTabs\/PublicLayer\/PaymentSDKConfiguration.swift",
       "kind": "BooleanLiteral",
-      "offset": 10467,
+      "offset": 10887,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/builder\/clone\/PayTabs\/PublicLayer\/PaymentSDKConfiguration.swift",
       "kind": "BooleanLiteral",
-      "offset": 10654,
+      "offset": 11074,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/builder\/clone\/PayTabs\/PublicLayer\/PaymentSDKConfiguration.swift",
       "kind": "BooleanLiteral",
-      "offset": 10700,
+      "offset": 11120,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/builder\/clone\/PayTabs\/PublicLayer\/PaymentSDKConfiguration.swift",
       "kind": "BooleanLiteral",
-      "offset": 10742,
+      "offset": 11162,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/builder\/clone\/PayTabs\/PublicLayer\/PaymentSDKConfiguration.swift",
       "kind": "BooleanLiteral",
-      "offset": 10853,
+      "offset": 11273,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/builder\/clone\/PayTabs\/PublicLayer\/PaymentSDKConfiguration.swift",
       "kind": "BooleanLiteral",
-      "offset": 10903,
+      "offset": 11323,
       "length": 5,
       "value": "false"
     },
@@ -49727,42 +50062,42 @@
     {
       "filePath": "\/Users\/builder\/clone\/PayTabs\/PublicLayer\/PaymentManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 16027,
+      "offset": 16106,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/builder\/clone\/PayTabs\/PublicLayer\/PaymentManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 16113,
+      "offset": 16192,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/builder\/clone\/PayTabs\/PublicLayer\/PaymentManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 16185,
+      "offset": 16264,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/builder\/clone\/PayTabs\/PublicLayer\/PaymentManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 18015,
+      "offset": 18094,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/builder\/clone\/PayTabs\/PublicLayer\/PaymentManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 18095,
+      "offset": 18174,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/builder\/clone\/PayTabs\/PublicLayer\/PaymentManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 20078,
+      "offset": 20157,
       "length": 5,
       "value": "false"
     },
