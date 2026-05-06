@@ -499,7 +499,7 @@ public enum AlternativePaymentMethod : Swift.String, Swift.CaseIterable {
   case omannet
   case knetCredit
   case knetDebit
-  case kent
+  case knet
   case fawry
   case aman
   case URPay

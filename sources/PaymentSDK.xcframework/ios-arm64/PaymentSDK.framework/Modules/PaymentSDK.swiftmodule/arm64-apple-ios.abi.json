@@ -26442,8 +26442,8 @@
           },
           {
             "kind": "Var",
-            "name": "kent",
-            "printedName": "kent",
+            "name": "knet",
+            "printedName": "knet",
             "children": [
               {
                 "kind": "TypeFunc",
@@ -26473,8 +26473,8 @@
               }
             ],
             "declKind": "EnumElement",
-            "usr": "s:10PaymentSDK011AlternativeA6MethodO4kentyA2CmF",
-            "mangledName": "$s10PaymentSDK011AlternativeA6MethodO4kentyA2CmF",
+            "usr": "s:10PaymentSDK011AlternativeA6MethodO4knetyA2CmF",
+            "mangledName": "$s10PaymentSDK011AlternativeA6MethodO4knetyA2CmF",
             "moduleName": "PaymentSDK"
           },
           {
