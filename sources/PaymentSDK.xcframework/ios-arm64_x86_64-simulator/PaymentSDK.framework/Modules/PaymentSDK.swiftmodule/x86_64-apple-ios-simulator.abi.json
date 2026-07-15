@@ -48094,43 +48094,85 @@
     },
     {
       "filePath": "\/Users\/builder\/clone\/PayTabs\/StrCardScanner\/CardScan\/UI\/SimpleScanViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3423,
+      "length": 2,
+      "value": "22"
+    },
+    {
+      "filePath": "\/Users\/builder\/clone\/PayTabs\/StrCardScanner\/CardScan\/UI\/SimpleScanViewController.swift",
       "kind": "StringLiteral",
-      "offset": 4155,
+      "offset": 3489,
+      "length": 7,
+      "value": "\"xmark\""
+    },
+    {
+      "filePath": "\/Users\/builder\/clone\/PayTabs\/StrCardScanner\/CardScan\/UI\/SimpleScanViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3837,
+      "length": 2,
+      "value": "22"
+    },
+    {
+      "filePath": "\/Users\/builder\/clone\/PayTabs\/StrCardScanner\/CardScan\/UI\/SimpleScanViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 3903,
+      "length": 6,
+      "value": "\"bolt\""
+    },
+    {
+      "filePath": "\/Users\/builder\/clone\/PayTabs\/StrCardScanner\/CardScan\/UI\/SimpleScanViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 4751,
       "length": 24,
       "value": "\"payment_sdk_scan_cards\""
     },
     {
       "filePath": "\/Users\/builder\/clone\/PayTabs\/StrCardScanner\/CardScan\/UI\/SimpleScanViewController.swift",
       "kind": "StringLiteral",
-      "offset": 4236,
+      "offset": 4832,
       "length": 34,
       "value": "\"payment_sdk_enable_camera_access\""
     },
     {
       "filePath": "\/Users\/builder\/clone\/PayTabs\/StrCardScanner\/CardScan\/UI\/SimpleScanViewController.swift",
       "kind": "StringLiteral",
-      "offset": 4339,
+      "offset": 4935,
       "length": 35,
       "value": "\"payment_sdk_update_phone_settings\""
     },
     {
       "filePath": "\/Users\/builder\/clone\/PayTabs\/StrCardScanner\/CardScan\/UI\/SimpleScanViewController.swift",
       "kind": "StringLiteral",
-      "offset": 4420,
+      "offset": 5016,
       "length": 30,
       "value": "\"payment_sdk_scan_cards_close\""
     },
     {
       "filePath": "\/Users\/builder\/clone\/PayTabs\/StrCardScanner\/CardScan\/UI\/SimpleScanViewController.swift",
       "kind": "StringLiteral",
-      "offset": 4496,
+      "offset": 5092,
       "length": 30,
       "value": "\"payment_sdk_scan_cards_torch\""
     },
     {
       "filePath": "\/Users\/builder\/clone\/PayTabs\/StrCardScanner\/CardScan\/UI\/SimpleScanViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 5165,
+      "length": 32,
+      "value": "\"payment_sdk_card_scan_security\""
+    },
+    {
+      "filePath": "\/Users\/builder\/clone\/PayTabs\/StrCardScanner\/CardScan\/UI\/SimpleScanViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 5249,
+      "length": 33,
+      "value": "\"payment_sdk_enter_card_manually\""
+    },
+    {
+      "filePath": "\/Users\/builder\/clone\/PayTabs\/StrCardScanner\/CardScan\/UI\/SimpleScanViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 4771,
+      "offset": 5527,
       "length": 3,
       "value": "4.0"
     },
