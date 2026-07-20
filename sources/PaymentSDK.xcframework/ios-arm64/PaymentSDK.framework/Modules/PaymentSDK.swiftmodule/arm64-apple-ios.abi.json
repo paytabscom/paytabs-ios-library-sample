@@ -47381,16 +47381,23 @@
     {
       "filePath": "\/Users\/builder\/clone\/PayTabs\/PayWithCreditCard\/Views\/Cells\/CountrySelectionTableViewCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 898,
+      "offset": 942,
       "length": 2,
       "value": "40"
     },
     {
       "filePath": "\/Users\/builder\/clone\/PayTabs\/PayWithCreditCard\/Views\/Cells\/CountrySelectionTableViewCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 969,
+      "offset": 1013,
       "length": 1,
       "value": "0"
+    },
+    {
+      "filePath": "\/Users\/builder\/clone\/PayTabs\/Extensions\/CardNumberTextField.swift",
+      "kind": "IntegerLiteral",
+      "offset": 441,
+      "length": 1,
+      "value": "8"
     },
     {
       "filePath": "\/Users\/builder\/clone\/PayTabs\/Show3DSecure\/ThreeDSecureViewController.swift",
@@ -48213,29 +48220,36 @@
     },
     {
       "filePath": "\/Users\/builder\/clone\/PayTabs\/Common\/Definitions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 423,
+      "length": 1,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/builder\/clone\/PayTabs\/Common\/Definitions.swift",
       "kind": "StringLiteral",
-      "offset": 337,
+      "offset": 526,
       "length": 35,
       "value": "\"https:\/\/ptsdk-return.paytabs.com\/\""
     },
     {
       "filePath": "\/Users\/builder\/clone\/PayTabs\/Common\/Definitions.swift",
       "kind": "StringLiteral",
-      "offset": 452,
+      "offset": 641,
       "length": 17,
       "value": "\"255.255.255.255\""
     },
     {
       "filePath": "\/Users\/builder\/clone\/PayTabs\/Common\/Definitions.swift",
       "kind": "StringLiteral",
-      "offset": 494,
+      "offset": 683,
       "length": 8,
       "value": "\"global\""
     },
     {
       "filePath": "\/Users\/builder\/clone\/PayTabs\/Common\/Definitions.swift",
       "kind": "StringLiteral",
-      "offset": 537,
+      "offset": 726,
       "length": 27,
       "value": "\"payment_sdk_language_code\""
     },
@@ -49929,7 +49943,7 @@
     {
       "filePath": "\/Users\/builder\/clone\/PayTabs\/Extensions\/UIViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 4391,
+      "offset": 4483,
       "length": 4,
       "value": "true"
     },
@@ -49964,14 +49978,14 @@
     {
       "filePath": "\/Users\/builder\/clone\/PayTabs\/PayWithCreditCard\/Views\/PayWithCardViewController+TableViewDelegates.swift",
       "kind": "BooleanLiteral",
-      "offset": 2103,
+      "offset": 2237,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/builder\/clone\/PayTabs\/PayWithCreditCard\/Views\/PayWithCardViewController+TableViewDelegates.swift",
       "kind": "BooleanLiteral",
-      "offset": 2172,
+      "offset": 2306,
       "length": 5,
       "value": "false"
     },
@@ -51084,14 +51098,14 @@
     {
       "filePath": "\/Users\/builder\/clone\/PayTabs\/PayWithCreditCard\/Views\/Cells\/InputTextTableViewCell.swift",
       "kind": "StringLiteral",
-      "offset": 960,
+      "offset": 996,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/builder\/clone\/PayTabs\/PayWithCreditCard\/Views\/Cells\/InputTextTableViewCell.swift",
       "kind": "BooleanLiteral",
-      "offset": 977,
+      "offset": 1013,
       "length": 5,
       "value": "false"
     },
